@@ -1,7 +1,47 @@
-
-The Runner/Temp/UnityTempFile-8b05a7663af0b42a59d15d7188e64652
+ #For Mac developers
+ # Unity generated #
+ # =============== #
+ Temp/
+ obj/
+ Build
+ Library/
+  
+ 
+     # ===================================== #
+     # Visual Studio / MonoDevelop generated #
+     # ===================================== #
+     ExportedObj/
+     *.svd
+     *.userprefs
+     *.csproj
+     *.pidb
+     *.suo
+     *.sln
+     *.user
+     *.unityproj
+     *.booproj
+     *.orig
+     *.app
+     *.exe
+     *.*_data
+     
+     Build/iOS
+     Build/android
+     
+     *.[od]
+     
+     # ============ #
+     # OS generated #
+     # ============ #
+     .DS_Store
+     .DS_Store?
+     ._*
+     .Spotlight-V100
+     .Trashes
+     Icon?
+     ehthumbs.db
+     Thumbs.db
 The Runner/Library/assetDatabase3
-*.cpp
+The Runner/Library/metadata/00/0000000000000000b000000000000000
 *.dll
-The Runner/Library/assetDatabase3
-The Runner/Library/metadata/00/00000000000000004000000000000000
+*.mdb
