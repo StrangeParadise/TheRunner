@@ -41,8 +41,8 @@
 #include "UnityEngine_UnityEngine_RectTransform3349966182.h"
 #include "AssemblyU2DCSharp_ChatController2669781690.h"
 #include "AssemblyU2DCSharp_GameController3607102586.h"
-#include "UnityEngine_UnityEngine_Canvas209405766.h"
 #include "UnityEngine_UnityEngine_Camera189460977.h"
+#include "UnityEngine_UnityEngine_Canvas209405766.h"
 #include "AssemblyU2DCSharp_GPS3691620964.h"
 #include "AssemblyU2DCSharp_GPS_U3CStartLocationServiceU3Ec__560764166.h"
 #include "UnityEngine_UnityEngine_Coroutine2299508840.h"
@@ -208,6 +208,8 @@ extern Il2CppCodeGenString* _stringLiteral634607365;
 extern Il2CppCodeGenString* _stringLiteral335743509;
 extern Il2CppCodeGenString* _stringLiteral703727900;
 extern const uint32_t AR_Start_m1351794542_MetadataUsageId;
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern const uint32_t GameController_rotateMapWithCamera_m4088657527_MetadataUsageId;
 extern Il2CppClass* GPS_t3691620964_il2cpp_TypeInfo_var;
 extern const uint32_t GPS_get_Instance_m2061733234_MetadataUsageId;
 extern const uint32_t GPS_set_Instance_m2330582003_MetadataUsageId;
@@ -632,6 +634,8 @@ extern "C"  void GameController_rotateMapWithCamera_m4088657527 (GameController_
 extern "C"  Quaternion_t4030073918  Transform_get_rotation_m1033555130 (Transform_t3275118058 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Quaternion::get_eulerAngles()
 extern "C"  Vector3_t2243707580  Quaternion_get_eulerAngles_m3302573991 (Quaternion_t4030073918 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Mathf::Clamp(System.Single,System.Single,System.Single)
+extern "C"  float Mathf_Clamp_m2354025655 (Il2CppObject * __this /* static, unused */, float p0, float p1, float p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Quaternion UnityEngine.Quaternion::Euler(UnityEngine.Vector3)
 extern "C"  Quaternion_t4030073918  Quaternion_Euler_m3586339259 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GPS/<StartLocationService>c__Iterator0::.ctor()
@@ -1124,6 +1128,12 @@ extern "C"  void GameController_Update_m1556003900 (GameController_t3607102586 *
 // System.Void GameController::rotateMapWithCamera()
 extern "C"  void GameController_rotateMapWithCamera_m4088657527 (GameController_t3607102586 * __this, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (GameController_rotateMapWithCamera_m4088657527_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
 	Quaternion_t4030073918  V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	Vector3_t2243707580  V_1;
@@ -1136,11 +1146,23 @@ extern "C"  void GameController_rotateMapWithCamera_m4088657527 (GameController_
 	memset(&V_4, 0, sizeof(V_4));
 	Vector3_t2243707580  V_5;
 	memset(&V_5, 0, sizeof(V_5));
+	Quaternion_t4030073918  V_6;
+	memset(&V_6, 0, sizeof(V_6));
+	Vector3_t2243707580  V_7;
+	memset(&V_7, 0, sizeof(V_7));
+	Quaternion_t4030073918  V_8;
+	memset(&V_8, 0, sizeof(V_8));
+	Vector3_t2243707580  V_9;
+	memset(&V_9, 0, sizeof(V_9));
+	Quaternion_t4030073918  V_10;
+	memset(&V_10, 0, sizeof(V_10));
+	Vector3_t2243707580  V_11;
+	memset(&V_11, 0, sizeof(V_11));
 	{
-		Canvas_t209405766 * L_0 = __this->get_mapCanvas_2();
+		Camera_t189460977 * L_0 = __this->get_mainCamera_3();
 		NullCheck(L_0);
 		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(L_0, /*hidden argument*/NULL);
-		Canvas_t209405766 * L_2 = __this->get_mapCanvas_2();
+		Camera_t189460977 * L_2 = __this->get_mainCamera_3();
 		NullCheck(L_2);
 		Transform_t3275118058 * L_3 = Component_get_transform_m2697483695(L_2, /*hidden argument*/NULL);
 		NullCheck(L_3);
@@ -1158,21 +1180,59 @@ extern "C"  void GameController_rotateMapWithCamera_m4088657527 (GameController_
 		Vector3_t2243707580  L_10 = Quaternion_get_eulerAngles_m3302573991((&V_2), /*hidden argument*/NULL);
 		V_3 = L_10;
 		float L_11 = (&V_3)->get_y_2();
-		Canvas_t209405766 * L_12 = __this->get_mapCanvas_2();
-		NullCheck(L_12);
-		Transform_t3275118058 * L_13 = Component_get_transform_m2697483695(L_12, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_12 = Mathf_Clamp_m2354025655(NULL /*static, unused*/, L_11, (0.0f), (180.0f), /*hidden argument*/NULL);
+		Camera_t189460977 * L_13 = __this->get_mainCamera_3();
 		NullCheck(L_13);
-		Quaternion_t4030073918  L_14 = Transform_get_rotation_m1033555130(L_13, /*hidden argument*/NULL);
-		V_4 = L_14;
-		Vector3_t2243707580  L_15 = Quaternion_get_eulerAngles_m3302573991((&V_4), /*hidden argument*/NULL);
-		V_5 = L_15;
-		float L_16 = (&V_5)->get_z_3();
-		Vector3_t2243707580  L_17;
-		memset(&L_17, 0, sizeof(L_17));
-		Vector3__ctor_m2638739322(&L_17, L_6, L_11, L_16, /*hidden argument*/NULL);
-		Quaternion_t4030073918  L_18 = Quaternion_Euler_m3586339259(NULL /*static, unused*/, L_17, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_14 = Component_get_transform_m2697483695(L_13, /*hidden argument*/NULL);
+		NullCheck(L_14);
+		Quaternion_t4030073918  L_15 = Transform_get_rotation_m1033555130(L_14, /*hidden argument*/NULL);
+		V_4 = L_15;
+		Vector3_t2243707580  L_16 = Quaternion_get_eulerAngles_m3302573991((&V_4), /*hidden argument*/NULL);
+		V_5 = L_16;
+		float L_17 = (&V_5)->get_z_3();
+		Vector3_t2243707580  L_18;
+		memset(&L_18, 0, sizeof(L_18));
+		Vector3__ctor_m2638739322(&L_18, L_6, L_12, L_17, /*hidden argument*/NULL);
+		Quaternion_t4030073918  L_19 = Quaternion_Euler_m3586339259(NULL /*static, unused*/, L_18, /*hidden argument*/NULL);
 		NullCheck(L_1);
-		Transform_set_rotation_m3411284563(L_1, L_18, /*hidden argument*/NULL);
+		Transform_set_rotation_m3411284563(L_1, L_19, /*hidden argument*/NULL);
+		Canvas_t209405766 * L_20 = __this->get_mapCanvas_2();
+		NullCheck(L_20);
+		Transform_t3275118058 * L_21 = Component_get_transform_m2697483695(L_20, /*hidden argument*/NULL);
+		Canvas_t209405766 * L_22 = __this->get_mapCanvas_2();
+		NullCheck(L_22);
+		Transform_t3275118058 * L_23 = Component_get_transform_m2697483695(L_22, /*hidden argument*/NULL);
+		NullCheck(L_23);
+		Quaternion_t4030073918  L_24 = Transform_get_rotation_m1033555130(L_23, /*hidden argument*/NULL);
+		V_6 = L_24;
+		Vector3_t2243707580  L_25 = Quaternion_get_eulerAngles_m3302573991((&V_6), /*hidden argument*/NULL);
+		V_7 = L_25;
+		float L_26 = (&V_7)->get_x_1();
+		Camera_t189460977 * L_27 = __this->get_mainCamera_3();
+		NullCheck(L_27);
+		Transform_t3275118058 * L_28 = Component_get_transform_m2697483695(L_27, /*hidden argument*/NULL);
+		NullCheck(L_28);
+		Quaternion_t4030073918  L_29 = Transform_get_rotation_m1033555130(L_28, /*hidden argument*/NULL);
+		V_8 = L_29;
+		Vector3_t2243707580  L_30 = Quaternion_get_eulerAngles_m3302573991((&V_8), /*hidden argument*/NULL);
+		V_9 = L_30;
+		float L_31 = (&V_9)->get_y_2();
+		Canvas_t209405766 * L_32 = __this->get_mapCanvas_2();
+		NullCheck(L_32);
+		Transform_t3275118058 * L_33 = Component_get_transform_m2697483695(L_32, /*hidden argument*/NULL);
+		NullCheck(L_33);
+		Quaternion_t4030073918  L_34 = Transform_get_rotation_m1033555130(L_33, /*hidden argument*/NULL);
+		V_10 = L_34;
+		Vector3_t2243707580  L_35 = Quaternion_get_eulerAngles_m3302573991((&V_10), /*hidden argument*/NULL);
+		V_11 = L_35;
+		float L_36 = (&V_11)->get_z_3();
+		Vector3_t2243707580  L_37;
+		memset(&L_37, 0, sizeof(L_37));
+		Vector3__ctor_m2638739322(&L_37, L_26, L_31, L_36, /*hidden argument*/NULL);
+		Quaternion_t4030073918  L_38 = Quaternion_Euler_m3586339259(NULL /*static, unused*/, L_37, /*hidden argument*/NULL);
+		NullCheck(L_21);
+		Transform_set_rotation_m3411284563(L_21, L_38, /*hidden argument*/NULL);
 		return;
 	}
 }
