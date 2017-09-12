@@ -14,6 +14,9 @@
 <assembly fullname="Assembly-UnityScript">
 <type fullname="testSingleChat" preserve="all"/>
 </assembly>
+<assembly fullname="UnityEngine.Analytics">
+<type fullname="UnityEngine.Analytics.AnalyticsTracker" preserve="all"/>
+</assembly>
 <assembly fullname="UnityEngine.UI">
 <type fullname="UnityEngine.EventSystems.EventSystem" preserve="all"/>
 <type fullname="UnityEngine.EventSystems.EventTrigger" preserve="all"/>
@@ -57,8 +60,5 @@
 <type fullname="UnityEngine.UI.Outline" preserve="all"/>
 <type fullname="UnityEngine.UI.PositionAsUV1" preserve="all"/>
 <type fullname="UnityEngine.UI.Shadow" preserve="all"/>
-</assembly>
-<assembly fullname="UnityEngine.Analytics">
-<type fullname="UnityEngine.Analytics.AnalyticsTracker" preserve="all"/>
 </assembly>
 </linker>
