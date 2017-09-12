@@ -2511,12 +2511,20 @@ extern "C"  bool Plane_Raycast_m2870142810 (Plane_t3727654732 * __this, Ray_t246
 extern "C"  void Quaternion__ctor_m3196903881 (Quaternion_t4030073918 * __this, float ___x0, float ___y1, float ___z2, float ___w3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Quaternion::INTERNAL_CALL_Inverse(UnityEngine.Quaternion&,UnityEngine.Quaternion&)
 extern "C"  void Quaternion_INTERNAL_CALL_Inverse_m1043108654 (Il2CppObject * __this /* static, unused */, Quaternion_t4030073918 * ___rotation0, Quaternion_t4030073918 * ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Vector3::.ctor(System.Single,System.Single,System.Single)
-extern "C"  void Vector3__ctor_m2638739322 (Vector3_t2243707580 * __this, float ___x0, float ___y1, float ___z2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Quaternion::Internal_ToEulerRad(UnityEngine.Quaternion)
+extern "C"  Vector3_t2243707580  Quaternion_Internal_ToEulerRad_m2807508879 (Il2CppObject * __this /* static, unused */, Quaternion_t4030073918  ___rotation0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Vector3::op_Multiply(UnityEngine.Vector3,System.Single)
 extern "C"  Vector3_t2243707580  Vector3_op_Multiply_m1351554733 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580  ___a0, float ___d1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Quaternion::Internal_MakePositive(UnityEngine.Vector3)
+extern "C"  Vector3_t2243707580  Quaternion_Internal_MakePositive_m2921671247 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580  ___euler0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Quaternion::get_eulerAngles()
+extern "C"  Vector3_t2243707580  Quaternion_get_eulerAngles_m3302573991 (Quaternion_t4030073918 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Vector3::.ctor(System.Single,System.Single,System.Single)
+extern "C"  void Vector3__ctor_m2638739322 (Vector3_t2243707580 * __this, float ___x0, float ___y1, float ___z2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Quaternion UnityEngine.Quaternion::Internal_FromEulerRad(UnityEngine.Vector3)
 extern "C"  Quaternion_t4030073918  Quaternion_Internal_FromEulerRad_m1121344272 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580  ___euler0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Quaternion::INTERNAL_CALL_Internal_ToEulerRad(UnityEngine.Quaternion&,UnityEngine.Vector3&)
+extern "C"  void Quaternion_INTERNAL_CALL_Internal_ToEulerRad_m1077217777 (Il2CppObject * __this /* static, unused */, Quaternion_t4030073918 * ___rotation0, Vector3_t2243707580 * ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Quaternion::INTERNAL_CALL_Internal_FromEulerRad(UnityEngine.Vector3&,UnityEngine.Quaternion&)
 extern "C"  void Quaternion_INTERNAL_CALL_Internal_FromEulerRad_m1113788132 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580 * ___euler0, Quaternion_t4030073918 * ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Quaternion::Dot(UnityEngine.Quaternion,UnityEngine.Quaternion)
@@ -24899,6 +24907,30 @@ extern "C"  void Quaternion_INTERNAL_CALL_Inverse_m1043108654 (Il2CppObject * __
 	_il2cpp_icall_func = (Quaternion_INTERNAL_CALL_Inverse_m1043108654_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Quaternion::INTERNAL_CALL_Inverse(UnityEngine.Quaternion&,UnityEngine.Quaternion&)");
 	_il2cpp_icall_func(___rotation0, ___value1);
 }
+// UnityEngine.Vector3 UnityEngine.Quaternion::get_eulerAngles()
+extern "C"  Vector3_t2243707580  Quaternion_get_eulerAngles_m3302573991 (Quaternion_t4030073918 * __this, const MethodInfo* method)
+{
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Vector3_t2243707580  L_0 = Quaternion_Internal_ToEulerRad_m2807508879(NULL /*static, unused*/, (*(Quaternion_t4030073918 *)__this), /*hidden argument*/NULL);
+		Vector3_t2243707580  L_1 = Vector3_op_Multiply_m1351554733(NULL /*static, unused*/, L_0, (57.29578f), /*hidden argument*/NULL);
+		Vector3_t2243707580  L_2 = Quaternion_Internal_MakePositive_m2921671247(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		goto IL_0021;
+	}
+
+IL_0021:
+	{
+		Vector3_t2243707580  L_3 = V_0;
+		return L_3;
+	}
+}
+extern "C"  Vector3_t2243707580  Quaternion_get_eulerAngles_m3302573991_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
+{
+	Quaternion_t4030073918 * _thisAdjusted = reinterpret_cast<Quaternion_t4030073918 *>(__this + 1);
+	return Quaternion_get_eulerAngles_m3302573991(_thisAdjusted, method);
+}
 // UnityEngine.Quaternion UnityEngine.Quaternion::Euler(System.Single,System.Single,System.Single)
 extern "C"  Quaternion_t4030073918  Quaternion_Euler_m2887458175 (Il2CppObject * __this /* static, unused */, float ___x0, float ___y1, float ___z2, const MethodInfo* method)
 {
@@ -24941,6 +24973,35 @@ IL_0017:
 		Quaternion_t4030073918  L_3 = V_0;
 		return L_3;
 	}
+}
+// UnityEngine.Vector3 UnityEngine.Quaternion::Internal_ToEulerRad(UnityEngine.Quaternion)
+extern "C"  Vector3_t2243707580  Quaternion_Internal_ToEulerRad_m2807508879 (Il2CppObject * __this /* static, unused */, Quaternion_t4030073918  ___rotation0, const MethodInfo* method)
+{
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		Quaternion_INTERNAL_CALL_Internal_ToEulerRad_m1077217777(NULL /*static, unused*/, (&___rotation0), (&V_0), /*hidden argument*/NULL);
+		Vector3_t2243707580  L_0 = V_0;
+		V_1 = L_0;
+		goto IL_0011;
+	}
+
+IL_0011:
+	{
+		Vector3_t2243707580  L_1 = V_1;
+		return L_1;
+	}
+}
+// System.Void UnityEngine.Quaternion::INTERNAL_CALL_Internal_ToEulerRad(UnityEngine.Quaternion&,UnityEngine.Vector3&)
+extern "C"  void Quaternion_INTERNAL_CALL_Internal_ToEulerRad_m1077217777 (Il2CppObject * __this /* static, unused */, Quaternion_t4030073918 * ___rotation0, Vector3_t2243707580 * ___value1, const MethodInfo* method)
+{
+	typedef void (*Quaternion_INTERNAL_CALL_Internal_ToEulerRad_m1077217777_ftn) (Quaternion_t4030073918 *, Vector3_t2243707580 *);
+	static Quaternion_INTERNAL_CALL_Internal_ToEulerRad_m1077217777_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Quaternion_INTERNAL_CALL_Internal_ToEulerRad_m1077217777_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Quaternion::INTERNAL_CALL_Internal_ToEulerRad(UnityEngine.Quaternion&,UnityEngine.Vector3&)");
+	_il2cpp_icall_func(___rotation0, ___value1);
 }
 // UnityEngine.Quaternion UnityEngine.Quaternion::Internal_FromEulerRad(UnityEngine.Vector3)
 extern "C"  Quaternion_t4030073918  Quaternion_Internal_FromEulerRad_m1121344272 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580  ___euler0, const MethodInfo* method)
@@ -25173,6 +25234,121 @@ IL_0046:
 	{
 		float L_8 = V_0;
 		return L_8;
+	}
+}
+// UnityEngine.Vector3 UnityEngine.Quaternion::Internal_MakePositive(UnityEngine.Vector3)
+extern "C"  Vector3_t2243707580  Quaternion_Internal_MakePositive_m2921671247 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580  ___euler0, const MethodInfo* method)
+{
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	Vector3_t2243707580  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	{
+		V_0 = (-0.005729578f);
+		float L_0 = V_0;
+		V_1 = ((float)((float)(360.0f)+(float)L_0));
+		float L_1 = (&___euler0)->get_x_1();
+		float L_2 = V_0;
+		if ((!(((float)L_1) < ((float)L_2))))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		Vector3_t2243707580 * L_3 = (&___euler0);
+		float L_4 = L_3->get_x_1();
+		L_3->set_x_1(((float)((float)L_4+(float)(360.0f))));
+		goto IL_0054;
+	}
+
+IL_0034:
+	{
+		float L_5 = (&___euler0)->get_x_1();
+		float L_6 = V_1;
+		if ((!(((float)L_5) > ((float)L_6))))
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		Vector3_t2243707580 * L_7 = (&___euler0);
+		float L_8 = L_7->get_x_1();
+		L_7->set_x_1(((float)((float)L_8-(float)(360.0f))));
+	}
+
+IL_0054:
+	{
+		float L_9 = (&___euler0)->get_y_2();
+		float L_10 = V_0;
+		if ((!(((float)L_9) < ((float)L_10))))
+		{
+			goto IL_0079;
+		}
+	}
+	{
+		Vector3_t2243707580 * L_11 = (&___euler0);
+		float L_12 = L_11->get_y_2();
+		L_11->set_y_2(((float)((float)L_12+(float)(360.0f))));
+		goto IL_0099;
+	}
+
+IL_0079:
+	{
+		float L_13 = (&___euler0)->get_y_2();
+		float L_14 = V_1;
+		if ((!(((float)L_13) > ((float)L_14))))
+		{
+			goto IL_0099;
+		}
+	}
+	{
+		Vector3_t2243707580 * L_15 = (&___euler0);
+		float L_16 = L_15->get_y_2();
+		L_15->set_y_2(((float)((float)L_16-(float)(360.0f))));
+	}
+
+IL_0099:
+	{
+		float L_17 = (&___euler0)->get_z_3();
+		float L_18 = V_0;
+		if ((!(((float)L_17) < ((float)L_18))))
+		{
+			goto IL_00be;
+		}
+	}
+	{
+		Vector3_t2243707580 * L_19 = (&___euler0);
+		float L_20 = L_19->get_z_3();
+		L_19->set_z_3(((float)((float)L_20+(float)(360.0f))));
+		goto IL_00de;
+	}
+
+IL_00be:
+	{
+		float L_21 = (&___euler0)->get_z_3();
+		float L_22 = V_1;
+		if ((!(((float)L_21) > ((float)L_22))))
+		{
+			goto IL_00de;
+		}
+	}
+	{
+		Vector3_t2243707580 * L_23 = (&___euler0);
+		float L_24 = L_23->get_z_3();
+		L_23->set_z_3(((float)((float)L_24-(float)(360.0f))));
+	}
+
+IL_00de:
+	{
+		Vector3_t2243707580  L_25 = ___euler0;
+		V_2 = L_25;
+		goto IL_00e5;
+	}
+
+IL_00e5:
+	{
+		Vector3_t2243707580  L_26 = V_2;
+		return L_26;
 	}
 }
 // System.Int32 UnityEngine.Quaternion::GetHashCode()

@@ -1,12 +1,15 @@
 <linker>
 <assembly fullname="Assembly-CSharp">
 <type fullname="AR" preserve="all"/>
+<type fullname="ChatController" preserve="all"/>
+<type fullname="testExtendClass" preserve="all"/>
+<type fullname="testTwoChat" preserve="all"/>
 <type fullname="GPS" preserve="all"/>
 <type fullname="Map" preserve="all"/>
 <type fullname="UpdateGPS" preserve="all"/>
+<type fullname="GameController" preserve="all"/>
+<type fullname="testMoveScript" preserve="all"/>
 <type fullname="LoginGUI" preserve="all"/>
-<type fullname="testExtendClass" preserve="all"/>
-<type fullname="testTwoChat" preserve="all"/>
 </assembly>
 <assembly fullname="Assembly-UnityScript">
 <type fullname="testSingleChat" preserve="all"/>

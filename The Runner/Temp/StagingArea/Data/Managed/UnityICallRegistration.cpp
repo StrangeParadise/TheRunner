@@ -1822,6 +1822,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Quaternion_INTERNAL_CALL_Internal_FromEulerRad();
 		Register_UnityEngine_Quaternion_INTERNAL_CALL_Internal_FromEulerRad();
 
+		//System.Void UnityEngine.Quaternion::INTERNAL_CALL_Internal_ToEulerRad(UnityEngine.Quaternion&,UnityEngine.Vector3&)
+		void Register_UnityEngine_Quaternion_INTERNAL_CALL_Internal_ToEulerRad();
+		Register_UnityEngine_Quaternion_INTERNAL_CALL_Internal_ToEulerRad();
+
 		//System.Void UnityEngine.Quaternion::INTERNAL_CALL_Inverse(UnityEngine.Quaternion&,UnityEngine.Quaternion&)
 		void Register_UnityEngine_Quaternion_INTERNAL_CALL_Inverse();
 		Register_UnityEngine_Quaternion_INTERNAL_CALL_Inverse();

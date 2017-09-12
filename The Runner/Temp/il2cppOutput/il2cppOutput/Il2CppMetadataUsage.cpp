@@ -1403,10 +1403,10 @@ Il2CppClass* U3CGetGoogleMapU3Ec__Iterator0_t1695079217_il2cpp_TypeInfo_var;
 Il2CppClass* mapType_t3017953257_il2cpp_TypeInfo_var;
 Il2CppClass* SimpleChat_t403391640_il2cpp_TypeInfo_var;
 Il2CppClass* SimChat_t2635359255_il2cpp_TypeInfo_var;
-Il2CppClass* U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_t2411697332_il2cpp_TypeInfo_var;
+Il2CppClass* U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_t3950328187_il2cpp_TypeInfo_var;
 Il2CppClass* Array_t1396575355_il2cpp_TypeInfo_var;
 Il2CppClass* MonoBehaviour_t1158329972_il2cpp_TypeInfo_var;
-Il2CppClass* __testSingleChat_StartU24callable0U2429_31___t4062619781_il2cpp_TypeInfo_var;
+Il2CppClass* __testSingleChat_StartU24callable0U2431_31___t2076937298_il2cpp_TypeInfo_var;
 Il2CppClass* IEventSystemHandler_t2741188318_il2cpp_TypeInfo_var;
 Il2CppClass* ICollection_1_t3693263623_il2cpp_TypeInfo_var;
 Il2CppClass* CastHelper_1_t3207297272_il2cpp_TypeInfo_var;
@@ -2058,7 +2058,7 @@ const MethodInfo* Enumerator_Dispose_m2205157096_MethodInfo_var;
 const MethodInfo* GameObject_GetComponent_TisMonoBehaviour_t1158329972_m3597292854_MethodInfo_var;
 const MethodInfo* testTwoChat_receiveMessage1_m1668380777_MethodInfo_var;
 const MethodInfo* testTwoChat_receiveMessage2_m2913369038_MethodInfo_var;
-const MethodInfo* U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_Invoke_m935701907_MethodInfo_var;
+const MethodInfo* U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_Invoke_m3726459120_MethodInfo_var;
 const MethodInfo* ObjectPool_1_Get_m1059967947_MethodInfo_var;
 const MethodInfo* List_1_get_Count_m2376850473_MethodInfo_var;
 const MethodInfo* ObjectPool_1_Release_m1049318251_MethodInfo_var;
@@ -5066,7 +5066,6 @@ Il2CppCodeGenString* _stringLiteral3015944840;
 Il2CppCodeGenString* _stringLiteral634607365;
 Il2CppCodeGenString* _stringLiteral335743509;
 Il2CppCodeGenString* _stringLiteral703727900;
-Il2CppCodeGenString* _stringLiteral172602210;
 Il2CppCodeGenString* _stringLiteral3795465923;
 Il2CppCodeGenString* _stringLiteral2305357508;
 Il2CppCodeGenString* _stringLiteral1462296621;
@@ -5112,6 +5111,10 @@ Il2CppCodeGenString* _stringLiteral2313303675;
 Il2CppCodeGenString* _stringLiteral2328242528;
 Il2CppCodeGenString* _stringLiteral3918381725;
 Il2CppCodeGenString* _stringLiteral4136223372;
+Il2CppCodeGenString* _stringLiteral1193422747;
+Il2CppCodeGenString* _stringLiteral1608755752;
+Il2CppCodeGenString* _stringLiteral3927423290;
+Il2CppCodeGenString* _stringLiteral3416448035;
 Il2CppCodeGenString* _stringLiteral1884851282;
 Il2CppCodeGenString* _stringLiteral1502599131;
 Il2CppCodeGenString* _stringLiteral3542905434;
@@ -5158,7 +5161,7 @@ Il2CppCodeGenString* _stringLiteral3025533088;
 Il2CppCodeGenString* _stringLiteral3687436746;
 Il2CppCodeGenString* _stringLiteral2779811765;
 Il2CppCodeGenString* _stringLiteral273729679;
-extern void** const g_MetadataUsages[5144] = 
+extern void** const g_MetadataUsages[5147] = 
 {
 	(void**)&Contraction_t1673853792_0_0_0_var,
 	(void**)&Level2Map_t3322505726_0_0_0_var,
@@ -6549,10 +6552,10 @@ extern void** const g_MetadataUsages[5144] =
 	(void**)&mapType_t3017953257_il2cpp_TypeInfo_var,
 	(void**)&SimpleChat_t403391640_il2cpp_TypeInfo_var,
 	(void**)&SimChat_t2635359255_il2cpp_TypeInfo_var,
-	(void**)&U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_t2411697332_il2cpp_TypeInfo_var,
+	(void**)&U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_t3950328187_il2cpp_TypeInfo_var,
 	(void**)&Array_t1396575355_il2cpp_TypeInfo_var,
 	(void**)&MonoBehaviour_t1158329972_il2cpp_TypeInfo_var,
-	(void**)&__testSingleChat_StartU24callable0U2429_31___t4062619781_il2cpp_TypeInfo_var,
+	(void**)&__testSingleChat_StartU24callable0U2431_31___t2076937298_il2cpp_TypeInfo_var,
 	(void**)&IEventSystemHandler_t2741188318_il2cpp_TypeInfo_var,
 	(void**)&ICollection_1_t3693263623_il2cpp_TypeInfo_var,
 	(void**)&CastHelper_1_t3207297272_il2cpp_TypeInfo_var,
@@ -7204,7 +7207,7 @@ extern void** const g_MetadataUsages[5144] =
 	(void**)&GameObject_GetComponent_TisMonoBehaviour_t1158329972_m3597292854_MethodInfo_var,
 	(void**)&testTwoChat_receiveMessage1_m1668380777_MethodInfo_var,
 	(void**)&testTwoChat_receiveMessage2_m2913369038_MethodInfo_var,
-	(void**)&U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_Invoke_m935701907_MethodInfo_var,
+	(void**)&U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_Invoke_m3726459120_MethodInfo_var,
 	(void**)&ObjectPool_1_Get_m1059967947_MethodInfo_var,
 	(void**)&List_1_get_Count_m2376850473_MethodInfo_var,
 	(void**)&ObjectPool_1_Release_m1049318251_MethodInfo_var,
@@ -10212,7 +10215,6 @@ extern void** const g_MetadataUsages[5144] =
 	(void**)&_stringLiteral634607365,
 	(void**)&_stringLiteral335743509,
 	(void**)&_stringLiteral703727900,
-	(void**)&_stringLiteral172602210,
 	(void**)&_stringLiteral3795465923,
 	(void**)&_stringLiteral2305357508,
 	(void**)&_stringLiteral1462296621,
@@ -10258,6 +10260,10 @@ extern void** const g_MetadataUsages[5144] =
 	(void**)&_stringLiteral2328242528,
 	(void**)&_stringLiteral3918381725,
 	(void**)&_stringLiteral4136223372,
+	(void**)&_stringLiteral1193422747,
+	(void**)&_stringLiteral1608755752,
+	(void**)&_stringLiteral3927423290,
+	(void**)&_stringLiteral3416448035,
 	(void**)&_stringLiteral1884851282,
 	(void**)&_stringLiteral1502599131,
 	(void**)&_stringLiteral3542905434,
@@ -16442,7 +16448,7 @@ extern const uint32_t TypeLoadException__ctor_m3218688554_MetadataUsageId = 6133
 extern const uint32_t TypeLoadException__ctor_m517092917_MetadataUsageId = 6134;
 extern const uint32_t TypeLoadException_get_Message_m700586697_MetadataUsageId = 6135;
 extern const uint32_t TypeLoadException_GetObjectData_m2885802706_MetadataUsageId = 6136;
-extern const uint32_t U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_Adapt_m135217591_MetadataUsageId = 6137;
+extern const uint32_t U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_Adapt_m3815301171_MetadataUsageId = 6137;
 extern const uint32_t U3CCaretBlinkU3Ec__Iterator0_Reset_m2035249179_MetadataUsageId = 6138;
 extern const uint32_t U3CClickRepeatU3Ec__Iterator0_MoveNext_m1747924386_MetadataUsageId = 6139;
 extern const uint32_t U3CClickRepeatU3Ec__Iterator0_Reset_m1177396749_MetadataUsageId = 6140;

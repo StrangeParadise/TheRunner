@@ -336,8 +336,8 @@ extern "C" void SpriteState_t1353336012_marshal_pinvoke(void* managedStructure, 
 extern "C" void SpriteState_t1353336012_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 extern "C" void SpriteState_t1353336012_marshal_pinvoke_cleanup(void* marshaledStructure);
 extern const Il2CppType SpriteState_t1353336012_0_0_0;
-extern "C" void DelegatePInvokeWrapper___testSingleChat_StartU24callable0U2429_31___t4062619781();
-extern const Il2CppType __testSingleChat_StartU24callable0U2429_31___t4062619781_0_0_0;
+extern "C" void DelegatePInvokeWrapper___testSingleChat_StartU24callable0U2431_31___t2076937298();
+extern const Il2CppType __testSingleChat_StartU24callable0U2431_31___t2076937298_0_0_0;
 extern Il2CppInteropData g_Il2CppInteropData[94] = 
 {
 	{ NULL, Context_t2636657155_marshal_pinvoke, Context_t2636657155_marshal_pinvoke_back, Context_t2636657155_marshal_pinvoke_cleanup, NULL, NULL, &Context_t2636657155_0_0_0 } /* Mono.Globalization.Unicode.SimpleCollator/Context */,
@@ -432,6 +432,6 @@ extern Il2CppInteropData g_Il2CppInteropData[94] =
 	{ DelegatePInvokeWrapper_OnValidateInput_t1946318473, NULL, NULL, NULL, NULL, NULL, &OnValidateInput_t1946318473_0_0_0 } /* UnityEngine.UI.InputField/OnValidateInput */,
 	{ NULL, Navigation_t1571958496_marshal_pinvoke, Navigation_t1571958496_marshal_pinvoke_back, Navigation_t1571958496_marshal_pinvoke_cleanup, NULL, NULL, &Navigation_t1571958496_0_0_0 } /* UnityEngine.UI.Navigation */,
 	{ NULL, SpriteState_t1353336012_marshal_pinvoke, SpriteState_t1353336012_marshal_pinvoke_back, SpriteState_t1353336012_marshal_pinvoke_cleanup, NULL, NULL, &SpriteState_t1353336012_0_0_0 } /* UnityEngine.UI.SpriteState */,
-	{ DelegatePInvokeWrapper___testSingleChat_StartU24callable0U2429_31___t4062619781, NULL, NULL, NULL, NULL, NULL, &__testSingleChat_StartU24callable0U2429_31___t4062619781_0_0_0 } /* CompilerGenerated.__testSingleChat_Start$callable0$29_31__ */,
+	{ DelegatePInvokeWrapper___testSingleChat_StartU24callable0U2431_31___t2076937298, NULL, NULL, NULL, NULL, NULL, &__testSingleChat_StartU24callable0U2431_31___t2076937298_0_0_0 } /* CompilerGenerated.__testSingleChat_Start$callable0$31_31__ */,
 	NULL,
 };

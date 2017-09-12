@@ -263,6 +263,7 @@ extern const Il2CppType String_t_0_0_19 = { (void*)27, 19, IL2CPP_TYPE_STRING, 0
 extern const Il2CppType String_t_0_0_32851 = { (void*)27, 32851, IL2CPP_TYPE_STRING, 0, 0, 0 };
 extern const Il2CppType String_t_0_0_5 = { (void*)27, 5, IL2CPP_TYPE_STRING, 0, 0, 0 };
 extern const Il2CppType String_t_0_0_20 = { (void*)27, 20, IL2CPP_TYPE_STRING, 0, 0, 0 };
+extern const Il2CppType String_t_0_0_22 = { (void*)27, 22, IL2CPP_TYPE_STRING, 0, 0, 0 };
 
 Il2CppGenericClass IEquatable_1_t4233202402_GenericClass = { 13, { &GenInst_String_t_0_0_0, NULL }, NULL };
 extern const Il2CppType IEquatable_1_t4233202402_0_0_0 = { &IEquatable_1_t4233202402_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
@@ -6073,6 +6074,7 @@ extern const Il2CppType Canvas_t209405766_0_0_0 = { (void*)1359, 0, IL2CPP_TYPE_
 extern const Il2CppType Canvas_t209405766_1_0_0 = { (void*)1359, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 extern const Il2CppType Canvas_t209405766_0_0_129 = { (void*)1359, 129, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType Canvas_t209405766_0_0_1 = { (void*)1359, 1, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType Canvas_t209405766_0_0_6 = { (void*)1359, 6, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 
 Il2CppGenericClass IEnumerator_1_t1979896889_GenericClass = { 25, { &GenInst_Canvas_t209405766_0_0_0, NULL }, NULL };
 extern const Il2CppType IEnumerator_1_t1979896889_0_0_0 = { &IEnumerator_1_t1979896889_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
@@ -14519,64 +14521,76 @@ extern const Il2CppType U3CModuleU3E_t3783534224_1_0_0 = { (void*)1739, 0, IL2CP
 extern const Il2CppType AR_t2523137185_0_0_0 = { (void*)1740, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType AR_t2523137185_1_0_0 = { (void*)1740, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType GPS_t3691620964_0_0_0 = { (void*)1741, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType GPS_t3691620964_1_0_0 = { (void*)1741, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
-extern const Il2CppType GPS_t3691620964_0_0_17 = { (void*)1741, 17, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType GPS_t3691620964_0_0_3 = { (void*)1741, 3, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType ChatController_t2669781690_0_0_0 = { (void*)1741, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType ChatController_t2669781690_1_0_0 = { (void*)1741, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType U3CStartLocationServiceU3Ec__Iterator0_t560764166_0_0_0 = { (void*)1742, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType U3CStartLocationServiceU3Ec__Iterator0_t560764166_1_0_0 = { (void*)1742, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType testExtendClass_t3109871312_0_0_0 = { (void*)1742, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType testExtendClass_t3109871312_1_0_0 = { (void*)1742, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType Map_t4262919222_0_0_0 = { (void*)1743, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType Map_t4262919222_1_0_0 = { (void*)1743, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
-extern const Il2CppType Map_t4262919222_0_0_3 = { (void*)1743, 3, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType SimpleChat_t403391640_0_0_1 = { (void*)1743, 1, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType SimpleChat_t403391640_0_0_0 = { (void*)1743, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType SimpleChat_t403391640_1_0_0 = { (void*)1743, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType mapType_t3017953257_0_0_6 = { (void*)1744, 6, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
-extern const Il2CppType mapType_t3017953257_0_0_0 = { (void*)1744, 0, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
-extern const Il2CppType mapType_t3017953257_1_0_0 = { (void*)1744, 0, IL2CPP_TYPE_VALUETYPE, 0, 1, 0 };
-extern const Il2CppType mapType_t3017953257_0_0_32854 = { (void*)1744, 32854, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
+extern const Il2CppType testTwoChat_t1019399252_0_0_0 = { (void*)1744, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType testTwoChat_t1019399252_1_0_0 = { (void*)1744, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType U3CGetGoogleMapU3Ec__Iterator0_t1695079217_0_0_0 = { (void*)1745, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType U3CGetGoogleMapU3Ec__Iterator0_t1695079217_1_0_0 = { (void*)1745, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType GPS_t3691620964_0_0_0 = { (void*)1745, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType GPS_t3691620964_1_0_0 = { (void*)1745, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType GPS_t3691620964_0_0_17 = { (void*)1745, 17, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType GPS_t3691620964_0_0_3 = { (void*)1745, 3, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 
-extern const Il2CppType UpdateGPS_t2150053955_0_0_0 = { (void*)1746, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType UpdateGPS_t2150053955_1_0_0 = { (void*)1746, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType U3CStartLocationServiceU3Ec__Iterator0_t560764166_0_0_0 = { (void*)1746, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType U3CStartLocationServiceU3Ec__Iterator0_t560764166_1_0_0 = { (void*)1746, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType LoginGUI_t4073642432_0_0_0 = { (void*)1747, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType LoginGUI_t4073642432_1_0_0 = { (void*)1747, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
-extern const Il2CppType LoginGUI_t4073642432_0_0_3 = { (void*)1747, 3, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType Map_t4262919222_0_0_0 = { (void*)1747, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType Map_t4262919222_1_0_0 = { (void*)1747, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType Map_t4262919222_0_0_3 = { (void*)1747, 3, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 
-extern const Il2CppType U3CLoginU3Ec__Iterator0_t1563009217_0_0_0 = { (void*)1748, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType U3CLoginU3Ec__Iterator0_t1563009217_1_0_0 = { (void*)1748, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType mapType_t3017953257_0_0_6 = { (void*)1748, 6, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
+extern const Il2CppType mapType_t3017953257_0_0_0 = { (void*)1748, 0, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
+extern const Il2CppType mapType_t3017953257_1_0_0 = { (void*)1748, 0, IL2CPP_TYPE_VALUETYPE, 0, 1, 0 };
+extern const Il2CppType mapType_t3017953257_0_0_32854 = { (void*)1748, 32854, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
 
-extern const Il2CppType U3CCreateAccountU3Ec__Iterator1_t4116917652_0_0_0 = { (void*)1749, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType U3CCreateAccountU3Ec__Iterator1_t4116917652_1_0_0 = { (void*)1749, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType U3CGetGoogleMapU3Ec__Iterator0_t1695079217_0_0_0 = { (void*)1749, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType U3CGetGoogleMapU3Ec__Iterator0_t1695079217_1_0_0 = { (void*)1749, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType U3CloadGameAsyncU3Ec__Iterator2_t152900926_0_0_0 = { (void*)1750, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType U3CloadGameAsyncU3Ec__Iterator2_t152900926_1_0_0 = { (void*)1750, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType UpdateGPS_t2150053955_0_0_0 = { (void*)1750, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType UpdateGPS_t2150053955_1_0_0 = { (void*)1750, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType testExtendClass_t3109871312_0_0_0 = { (void*)1751, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType testExtendClass_t3109871312_1_0_0 = { (void*)1751, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType GameController_t3607102586_0_0_0 = { (void*)1751, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType GameController_t3607102586_1_0_0 = { (void*)1751, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType SimpleChat_t403391640_0_0_1 = { (void*)1752, 1, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType SimpleChat_t403391640_0_0_0 = { (void*)1752, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType SimpleChat_t403391640_1_0_0 = { (void*)1752, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType testMoveScript_t950253042_0_0_0 = { (void*)1752, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType testMoveScript_t950253042_1_0_0 = { (void*)1752, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType testTwoChat_t1019399252_0_0_0 = { (void*)1753, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType testTwoChat_t1019399252_1_0_0 = { (void*)1753, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType UserInfo_t2259970173_0_0_0 = { (void*)1753, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType UserInfo_t2259970173_1_0_0 = { (void*)1753, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType U3CModuleU3E_t3783534225_0_0_0 = { (void*)1754, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType U3CModuleU3E_t3783534225_1_0_0 = { (void*)1754, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType LoginGUI_t4073642432_0_0_0 = { (void*)1754, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType LoginGUI_t4073642432_1_0_0 = { (void*)1754, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType LoginGUI_t4073642432_0_0_3 = { (void*)1754, 3, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 
-extern const Il2CppType testSingleChat_t1743952810_0_0_0 = { (void*)1755, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType testSingleChat_t1743952810_1_0_0 = { (void*)1755, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType U3CLoginU3Ec__Iterator0_t1563009217_0_0_0 = { (void*)1755, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType U3CLoginU3Ec__Iterator0_t1563009217_1_0_0 = { (void*)1755, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType __testSingleChat_StartU24callable0U2429_31___t4062619781_0_0_0 = { (void*)1756, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType __testSingleChat_StartU24callable0U2429_31___t4062619781_1_0_0 = { (void*)1756, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
-extern const Il2CppType __testSingleChat_StartU24callable0U2429_31___t4062619781_0_0_4 = { (void*)1756, 4, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType U3CCreateAccountU3Ec__Iterator1_t4116917652_0_0_0 = { (void*)1756, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType U3CCreateAccountU3Ec__Iterator1_t4116917652_1_0_0 = { (void*)1756, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_t2411697332_0_0_0 = { (void*)1757, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_t2411697332_1_0_0 = { (void*)1757, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType U3CloadGameAsyncU3Ec__Iterator2_t152900926_0_0_0 = { (void*)1757, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType U3CloadGameAsyncU3Ec__Iterator2_t152900926_1_0_0 = { (void*)1757, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+
+extern const Il2CppType U3CModuleU3E_t3783534225_0_0_0 = { (void*)1758, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType U3CModuleU3E_t3783534225_1_0_0 = { (void*)1758, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+
+extern const Il2CppType testSingleChat_t1743952810_0_0_0 = { (void*)1759, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType testSingleChat_t1743952810_1_0_0 = { (void*)1759, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+
+extern const Il2CppType __testSingleChat_StartU24callable0U2431_31___t2076937298_0_0_0 = { (void*)1760, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType __testSingleChat_StartU24callable0U2431_31___t2076937298_1_0_0 = { (void*)1760, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType __testSingleChat_StartU24callable0U2431_31___t2076937298_0_0_4 = { (void*)1760, 4, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+
+extern const Il2CppType U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_t3950328187_0_0_0 = { (void*)1761, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_t3950328187_1_0_0 = { (void*)1761, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
 Il2CppGenericClass IComparer_1_t1676750663_GenericClass = { 168, { &GenInst_DefaultComparer_t3074655092_gp_0_0_0_0, NULL }, NULL };
 extern const Il2CppType IComparer_1_t1676750663_0_0_0 = { &IComparer_1_t1676750663_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
@@ -14628,7 +14642,7 @@ extern const Il2CppType TypeTagU5BU5D_t582616213_0_0_0 = { (void*)&TypeTag_t1412
 
 extern const Il2CppType ITrackingHandler_t2759960940_0_0_0;
 extern const Il2CppType ITrackingHandlerU5BU5D_t194660197_0_0_0 = { (void*)&ITrackingHandler_t2759960940_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
-extern const Il2CppType* const  g_Il2CppTypeTable[7662] = 
+extern const Il2CppType* const  g_Il2CppTypeTable[7672] = 
 {
 	&IEnumerator_1_t164973122_0_0_0,
 	&Il2CppObject_0_0_0,
@@ -22180,6 +22194,18 @@ extern const Il2CppType* const  g_Il2CppTypeTable[7662] =
 	&WebCamTexture_t1079476942_0_0_1,
 	&RawImage_t2749640213_0_0_6,
 	&AspectRatioFitter_t3114550109_0_0_6,
+	&ChatController_t2669781690_0_0_0,
+	&ChatController_t2669781690_1_0_0,
+	&testExtendClass_t3109871312_0_0_0,
+	&testExtendClass_t3109871312_1_0_0,
+	&SimpleChat_t403391640_0_0_1,
+	&SimpleChat_t403391640_0_0_0,
+	&SimpleChat_t403391640_1_0_0,
+	&Color_t2020392075_0_0_4,
+	&List_1_t1398341365_0_0_4,
+	&testTwoChat_t1019399252_0_0_0,
+	&testTwoChat_t1019399252_1_0_0,
+	&SimChat_t2635359255_0_0_1,
 	&GPS_t3691620964_0_0_0,
 	&GPS_t3691620964_1_0_0,
 	&GPS_t3691620964_0_0_17,
@@ -22199,6 +22225,14 @@ extern const Il2CppType* const  g_Il2CppTypeTable[7662] =
 	&Map_t4262919222_0_0_3,
 	&UpdateGPS_t2150053955_0_0_0,
 	&UpdateGPS_t2150053955_1_0_0,
+	&GameController_t3607102586_0_0_0,
+	&GameController_t3607102586_1_0_0,
+	&Canvas_t209405766_0_0_6,
+	&testMoveScript_t950253042_0_0_0,
+	&testMoveScript_t950253042_1_0_0,
+	&UserInfo_t2259970173_0_0_0,
+	&UserInfo_t2259970173_1_0_0,
+	&String_t_0_0_22,
 	&LoginGUI_t4073642432_0_0_0,
 	&LoginGUI_t4073642432_1_0_0,
 	&U3CLoginU3Ec__Iterator0_t1563009217_0_0_0,
@@ -22209,26 +22243,16 @@ extern const Il2CppType* const  g_Il2CppTypeTable[7662] =
 	&U3CloadGameAsyncU3Ec__Iterator2_t152900926_0_0_0,
 	&U3CloadGameAsyncU3Ec__Iterator2_t152900926_1_0_0,
 	&AsyncOperation_t3814632279_0_0_3,
-	&testExtendClass_t3109871312_0_0_0,
-	&testExtendClass_t3109871312_1_0_0,
-	&SimpleChat_t403391640_0_0_1,
-	&SimpleChat_t403391640_0_0_0,
-	&SimpleChat_t403391640_1_0_0,
-	&Color_t2020392075_0_0_4,
-	&List_1_t1398341365_0_0_4,
-	&testTwoChat_t1019399252_0_0_0,
-	&testTwoChat_t1019399252_1_0_0,
-	&SimChat_t2635359255_0_0_1,
 	&U3CModuleU3E_t3783534225_0_0_0,
 	&U3CModuleU3E_t3783534225_1_0_0,
 	&testSingleChat_t1743952810_0_0_0,
 	&testSingleChat_t1743952810_1_0_0,
 	&Array_t1396575355_0_0_1,
-	&__testSingleChat_StartU24callable0U2429_31___t4062619781_0_0_0,
-	&__testSingleChat_StartU24callable0U2429_31___t4062619781_1_0_0,
-	&U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_t2411697332_0_0_0,
-	&U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_t2411697332_1_0_0,
-	&__testSingleChat_StartU24callable0U2429_31___t4062619781_0_0_4,
+	&__testSingleChat_StartU24callable0U2431_31___t2076937298_0_0_0,
+	&__testSingleChat_StartU24callable0U2431_31___t2076937298_1_0_0,
+	&U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_t3950328187_0_0_0,
+	&U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_t3950328187_1_0_0,
+	&__testSingleChat_StartU24callable0U2431_31___t2076937298_0_0_4,
 	&IEnumerator_1_t1705424029_0_0_0,
 	&IEnumerator_1_t4085313661_0_0_0,
 	&IList_1_t260801773_0_0_0,

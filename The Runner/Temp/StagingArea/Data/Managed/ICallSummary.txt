@@ -409,6 +409,7 @@ UnityEngine.Object::FindObjectsOfType
 UnityEngine.Object::FindObjectsOfTypeIncludingAssets
 UnityEngine.Object::FindSceneObjectsOfType
 UnityEngine.Quaternion::INTERNAL_CALL_Internal_FromEulerRad
+UnityEngine.Quaternion::INTERNAL_CALL_Internal_ToEulerRad
 UnityEngine.Quaternion::INTERNAL_CALL_Inverse
 UnityEngine.Random::RandomRangeInt
 UnityEngine.RectOffset::get_bottom

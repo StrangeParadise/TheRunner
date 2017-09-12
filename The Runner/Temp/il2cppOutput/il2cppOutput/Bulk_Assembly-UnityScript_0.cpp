@@ -17,8 +17,8 @@
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
 #include "AssemblyU2DUnityScript_U3CModuleU3E3783534214.h"
-#include "AssemblyU2DUnityScript_CompilerGenerated_U24adapto2411697332.h"
-#include "AssemblyU2DUnityScript_CompilerGenerated___testSin4062619781.h"
+#include "AssemblyU2DUnityScript_CompilerGenerated_U24adapto3950328187.h"
+#include "AssemblyU2DUnityScript_CompilerGenerated___testSin2076937298.h"
 #include "mscorlib_System_Void1841601450.h"
 #include "mscorlib_System_Object2689449295.h"
 #include "wwwChat_SimpleMessage1037894399.h"
@@ -45,10 +45,10 @@
 #include "UnityEngine_UnityEngine_GUILayoutOption4183744904.h"
 #include "UnityEngine_UnityEngine_Event3028476042.h"
 
-// CompilerGenerated.$adaptor$__testSingleChat_Start$callable0$29_31__$Action$0
-struct U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_t2411697332;
-// CompilerGenerated.__testSingleChat_Start$callable0$29_31__
-struct __testSingleChat_StartU24callable0U2429_31___t4062619781;
+// CompilerGenerated.$adaptor$__testSingleChat_Start$callable0$31_31__$Action$0
+struct U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_t3950328187;
+// CompilerGenerated.__testSingleChat_Start$callable0$31_31__
+struct __testSingleChat_StartU24callable0U2431_31___t2076937298;
 // System.Object
 struct Il2CppObject;
 // SimpleMessage[]
@@ -95,28 +95,22 @@ struct GUILayoutOptionU5BU5D_t2108882777;
 struct Event_t3028476042;
 // UnityEngine.GUILayoutOption
 struct GUILayoutOption_t4183744904;
-extern Il2CppClass* U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_t2411697332_il2cpp_TypeInfo_var;
+extern Il2CppClass* U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_t3950328187_il2cpp_TypeInfo_var;
 extern Il2CppClass* Action_1_t2368512252_il2cpp_TypeInfo_var;
-extern const MethodInfo* U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_Invoke_m935701907_MethodInfo_var;
+extern const MethodInfo* U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_Invoke_m3726459120_MethodInfo_var;
 extern const MethodInfo* Action_1__ctor_m4077604895_MethodInfo_var;
-extern const uint32_t U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_Adapt_m135217591_MetadataUsageId;
+extern const uint32_t U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_Adapt_m3815301171_MetadataUsageId;
 extern Il2CppClass* StringU5BU5D_t1642385972_il2cpp_TypeInfo_var;
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* Array_t1396575355_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral3015944840;
-extern Il2CppCodeGenString* _stringLiteral1884851282;
-extern Il2CppCodeGenString* _stringLiteral1502599131;
-extern Il2CppCodeGenString* _stringLiteral3989186809;
-extern Il2CppCodeGenString* _stringLiteral3542905434;
-extern Il2CppCodeGenString* _stringLiteral2913846051;
-extern Il2CppCodeGenString* _stringLiteral1589616170;
-extern Il2CppCodeGenString* _stringLiteral3097239528;
-extern Il2CppCodeGenString* _stringLiteral943704929;
-extern Il2CppCodeGenString* _stringLiteral2959663652;
+extern Il2CppCodeGenString* _stringLiteral1193422747;
+extern Il2CppCodeGenString* _stringLiteral3416448035;
+extern Il2CppCodeGenString* _stringLiteral1608755752;
+extern Il2CppCodeGenString* _stringLiteral3927423290;
 extern const uint32_t testSingleChat__ctor_m346963636_MetadataUsageId;
 extern Il2CppClass* MonoBehaviour_t1158329972_il2cpp_TypeInfo_var;
 extern Il2CppClass* SimChat_t2635359255_il2cpp_TypeInfo_var;
-extern Il2CppClass* __testSingleChat_StartU24callable0U2429_31___t4062619781_il2cpp_TypeInfo_var;
+extern Il2CppClass* __testSingleChat_StartU24callable0U2431_31___t2076937298_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral3564902503;
 extern Il2CppCodeGenString* _stringLiteral1644205752;
 extern const uint32_t testSingleChat_Start_m1190730460_MetadataUsageId;
@@ -292,10 +286,10 @@ extern "C"  Il2CppObject * List_1_get_Item_m2062981835_gshared (List_1_t20585704
 
 // System.Void System.Object::.ctor()
 extern "C"  void Object__ctor_m2551263788 (Il2CppObject * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void CompilerGenerated.__testSingleChat_Start$callable0$29_31__::Invoke()
-extern "C"  void __testSingleChat_StartU24callable0U2429_31___Invoke_m1350630071 (__testSingleChat_StartU24callable0U2429_31___t4062619781 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void CompilerGenerated.$adaptor$__testSingleChat_Start$callable0$29_31__$Action$0::.ctor(CompilerGenerated.__testSingleChat_Start$callable0$29_31__)
-extern "C"  void U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240__ctor_m1975581249 (U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_t2411697332 * __this, __testSingleChat_StartU24callable0U2429_31___t4062619781 * ___from0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void CompilerGenerated.__testSingleChat_Start$callable0$31_31__::Invoke()
+extern "C"  void __testSingleChat_StartU24callable0U2431_31___Invoke_m428054688 (__testSingleChat_StartU24callable0U2431_31___t2076937298 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void CompilerGenerated.$adaptor$__testSingleChat_Start$callable0$31_31__$Action$0::.ctor(CompilerGenerated.__testSingleChat_Start$callable0$31_31__)
+extern "C"  void U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240__ctor_m2495576693 (U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_t3950328187 * __this, __testSingleChat_StartU24callable0U2431_31___t2076937298 * ___from0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Action`1<SimpleMessage[]>::.ctor(System.Object,System.IntPtr)
 #define Action_1__ctor_m4077604895(__this, p0, p1, method) ((  void (*) (Action_1_t2368512252 *, Il2CppObject *, IntPtr_t, const MethodInfo*))Action_1__ctor_m584977596_gshared)(__this, p0, p1, method)
 // System.Void UnityEngine.MonoBehaviour::.ctor()
@@ -324,10 +318,10 @@ extern "C"  Component_t3819376471 * GameObject_GetComponent_m1488468710 (GameObj
 extern "C"  void SimChat__ctor_m1036284394 (SimChat_t2635359255 * __this, String_t* p0, MonoBehaviour_t1158329972 * p1, String_t* p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void SimChat::continueCheckMessages()
 extern "C"  void SimChat_continueCheckMessages_m1003954020 (SimChat_t2635359255 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void CompilerGenerated.__testSingleChat_Start$callable0$29_31__::.ctor(System.Object,System.IntPtr)
-extern "C"  void __testSingleChat_StartU24callable0U2429_31____ctor_m869180355 (__testSingleChat_StartU24callable0U2429_31___t4062619781 * __this, Il2CppObject * ___instance0, IntPtr_t ___method1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Action`1<SimpleMessage[]> CompilerGenerated.$adaptor$__testSingleChat_Start$callable0$29_31__$Action$0::Adapt(CompilerGenerated.__testSingleChat_Start$callable0$29_31__)
-extern "C"  Action_1_t2368512252 * U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_Adapt_m135217591 (Il2CppObject * __this /* static, unused */, __testSingleChat_StartU24callable0U2429_31___t4062619781 * ___from0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void CompilerGenerated.__testSingleChat_Start$callable0$31_31__::.ctor(System.Object,System.IntPtr)
+extern "C"  void __testSingleChat_StartU24callable0U2431_31____ctor_m1337668986 (__testSingleChat_StartU24callable0U2431_31___t2076937298 * __this, Il2CppObject * ___instance0, IntPtr_t ___method1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Action`1<SimpleMessage[]> CompilerGenerated.$adaptor$__testSingleChat_Start$callable0$31_31__$Action$0::Adapt(CompilerGenerated.__testSingleChat_Start$callable0$31_31__)
+extern "C"  Action_1_t2368512252 * U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_Adapt_m3815301171 (Il2CppObject * __this /* static, unused */, __testSingleChat_StartU24callable0U2431_31___t2076937298 * ___from0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void SimChat::setReceiveFunction(System.Action`1<SimpleMessage[]>)
 extern "C"  void SimChat_setReceiveFunction_m3855945349 (SimChat_t2635359255 * __this, Action_1_t2368512252 * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Collections.Generic.List`1<SimpleMessage>::get_Count()
@@ -405,47 +399,47 @@ extern "C"  void GUILayout_EndArea_m1904221074 (Il2CppObject * __this /* static,
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void CompilerGenerated.$adaptor$__testSingleChat_Start$callable0$29_31__$Action$0::.ctor(CompilerGenerated.__testSingleChat_Start$callable0$29_31__)
-extern "C"  void U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240__ctor_m1975581249 (U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_t2411697332 * __this, __testSingleChat_StartU24callable0U2429_31___t4062619781 * ___from0, const MethodInfo* method)
+// System.Void CompilerGenerated.$adaptor$__testSingleChat_Start$callable0$31_31__$Action$0::.ctor(CompilerGenerated.__testSingleChat_Start$callable0$31_31__)
+extern "C"  void U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240__ctor_m2495576693 (U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_t3950328187 * __this, __testSingleChat_StartU24callable0U2431_31___t2076937298 * ___from0, const MethodInfo* method)
 {
 	{
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		__testSingleChat_StartU24callable0U2429_31___t4062619781 * L_0 = ___from0;
+		__testSingleChat_StartU24callable0U2431_31___t2076937298 * L_0 = ___from0;
 		__this->set_U24from_0(L_0);
 		return;
 	}
 }
-// System.Void CompilerGenerated.$adaptor$__testSingleChat_Start$callable0$29_31__$Action$0::Invoke(SimpleMessage[])
-extern "C"  void U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_Invoke_m935701907 (U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_t2411697332 * __this, SimpleMessageU5BU5D_t2566712870* ___obj0, const MethodInfo* method)
+// System.Void CompilerGenerated.$adaptor$__testSingleChat_Start$callable0$31_31__$Action$0::Invoke(SimpleMessage[])
+extern "C"  void U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_Invoke_m3726459120 (U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_t3950328187 * __this, SimpleMessageU5BU5D_t2566712870* ___obj0, const MethodInfo* method)
 {
 	{
-		__testSingleChat_StartU24callable0U2429_31___t4062619781 * L_0 = __this->get_U24from_0();
+		__testSingleChat_StartU24callable0U2431_31___t2076937298 * L_0 = __this->get_U24from_0();
 		NullCheck(L_0);
-		__testSingleChat_StartU24callable0U2429_31___Invoke_m1350630071(L_0, /*hidden argument*/NULL);
+		__testSingleChat_StartU24callable0U2431_31___Invoke_m428054688(L_0, /*hidden argument*/NULL);
 		return;
 	}
 }
-// System.Action`1<SimpleMessage[]> CompilerGenerated.$adaptor$__testSingleChat_Start$callable0$29_31__$Action$0::Adapt(CompilerGenerated.__testSingleChat_Start$callable0$29_31__)
-extern "C"  Action_1_t2368512252 * U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_Adapt_m135217591 (Il2CppObject * __this /* static, unused */, __testSingleChat_StartU24callable0U2429_31___t4062619781 * ___from0, const MethodInfo* method)
+// System.Action`1<SimpleMessage[]> CompilerGenerated.$adaptor$__testSingleChat_Start$callable0$31_31__$Action$0::Adapt(CompilerGenerated.__testSingleChat_Start$callable0$31_31__)
+extern "C"  Action_1_t2368512252 * U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_Adapt_m3815301171 (Il2CppObject * __this /* static, unused */, __testSingleChat_StartU24callable0U2431_31___t2076937298 * ___from0, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_Adapt_m135217591_MetadataUsageId);
+		il2cpp_codegen_initialize_method (U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_Adapt_m3815301171_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		__testSingleChat_StartU24callable0U2429_31___t4062619781 * L_0 = ___from0;
-		U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_t2411697332 * L_1 = (U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_t2411697332 *)il2cpp_codegen_object_new(U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_t2411697332_il2cpp_TypeInfo_var);
-		U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240__ctor_m1975581249(L_1, L_0, /*hidden argument*/NULL);
+		__testSingleChat_StartU24callable0U2431_31___t2076937298 * L_0 = ___from0;
+		U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_t3950328187 * L_1 = (U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_t3950328187 *)il2cpp_codegen_object_new(U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_t3950328187_il2cpp_TypeInfo_var);
+		U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240__ctor_m2495576693(L_1, L_0, /*hidden argument*/NULL);
 		IntPtr_t L_2;
-		L_2.set_m_value_0((void*)(void*)U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_Invoke_m935701907_MethodInfo_var);
+		L_2.set_m_value_0((void*)(void*)U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_Invoke_m3726459120_MethodInfo_var);
 		Action_1_t2368512252 * L_3 = (Action_1_t2368512252 *)il2cpp_codegen_object_new(Action_1_t2368512252_il2cpp_TypeInfo_var);
 		Action_1__ctor_m4077604895(L_3, L_1, L_2, /*hidden argument*/Action_1__ctor_m4077604895_MethodInfo_var);
 		return L_3;
 	}
 }
-extern "C"  void DelegatePInvokeWrapper___testSingleChat_StartU24callable0U2429_31___t4062619781 (__testSingleChat_StartU24callable0U2429_31___t4062619781 * __this, const MethodInfo* method)
+extern "C"  void DelegatePInvokeWrapper___testSingleChat_StartU24callable0U2431_31___t2076937298 (__testSingleChat_StartU24callable0U2431_31___t2076937298 * __this, const MethodInfo* method)
 {
 	typedef void (STDCALL *PInvokeFunc)();
 	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
@@ -454,27 +448,27 @@ extern "C"  void DelegatePInvokeWrapper___testSingleChat_StartU24callable0U2429_
 	il2cppPInvokeFunc();
 
 }
-// System.Void CompilerGenerated.__testSingleChat_Start$callable0$29_31__::.ctor(System.Object,System.IntPtr)
-extern "C"  void __testSingleChat_StartU24callable0U2429_31____ctor_m869180355 (__testSingleChat_StartU24callable0U2429_31___t4062619781 * __this, Il2CppObject * ___instance0, IntPtr_t ___method1, const MethodInfo* method)
+// System.Void CompilerGenerated.__testSingleChat_Start$callable0$31_31__::.ctor(System.Object,System.IntPtr)
+extern "C"  void __testSingleChat_StartU24callable0U2431_31____ctor_m1337668986 (__testSingleChat_StartU24callable0U2431_31___t2076937298 * __this, Il2CppObject * ___instance0, IntPtr_t ___method1, const MethodInfo* method)
 {
 	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___instance0);
 }
-// System.Object CompilerGenerated.__testSingleChat_Start$callable0$29_31__::Call(System.Object[])
-extern "C"  Il2CppObject * __testSingleChat_StartU24callable0U2429_31___Call_m2033526684 (__testSingleChat_StartU24callable0U2429_31___t4062619781 * __this, ObjectU5BU5D_t3614634134* ___args0, const MethodInfo* method)
+// System.Object CompilerGenerated.__testSingleChat_Start$callable0$31_31__::Call(System.Object[])
+extern "C"  Il2CppObject * __testSingleChat_StartU24callable0U2431_31___Call_m1318928325 (__testSingleChat_StartU24callable0U2431_31___t2076937298 * __this, ObjectU5BU5D_t3614634134* ___args0, const MethodInfo* method)
 {
 	{
-		__testSingleChat_StartU24callable0U2429_31___Invoke_m1350630071(__this, /*hidden argument*/NULL);
+		__testSingleChat_StartU24callable0U2431_31___Invoke_m428054688(__this, /*hidden argument*/NULL);
 		return NULL;
 	}
 }
-// System.Void CompilerGenerated.__testSingleChat_Start$callable0$29_31__::Invoke()
-extern "C"  void __testSingleChat_StartU24callable0U2429_31___Invoke_m1350630071 (__testSingleChat_StartU24callable0U2429_31___t4062619781 * __this, const MethodInfo* method)
+// System.Void CompilerGenerated.__testSingleChat_Start$callable0$31_31__::Invoke()
+extern "C"  void __testSingleChat_StartU24callable0U2431_31___Invoke_m428054688 (__testSingleChat_StartU24callable0U2431_31___t2076937298 * __this, const MethodInfo* method)
 {
 	if(__this->get_prev_9() != NULL)
 	{
-		__testSingleChat_StartU24callable0U2429_31___Invoke_m1350630071((__testSingleChat_StartU24callable0U2429_31___t4062619781 *)__this->get_prev_9(), method);
+		__testSingleChat_StartU24callable0U2431_31___Invoke_m428054688((__testSingleChat_StartU24callable0U2431_31___t2076937298 *)__this->get_prev_9(), method);
 	}
 	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
 	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
@@ -489,14 +483,14 @@ extern "C"  void __testSingleChat_StartU24callable0U2429_31___Invoke_m1350630071
 		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
 	}
 }
-// System.IAsyncResult CompilerGenerated.__testSingleChat_Start$callable0$29_31__::BeginInvoke(System.AsyncCallback,System.Object)
-extern "C"  Il2CppObject * __testSingleChat_StartU24callable0U2429_31___BeginInvoke_m2258450942 (__testSingleChat_StartU24callable0U2429_31___t4062619781 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___asyncState1, const MethodInfo* method)
+// System.IAsyncResult CompilerGenerated.__testSingleChat_Start$callable0$31_31__::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * __testSingleChat_StartU24callable0U2431_31___BeginInvoke_m1384043637 (__testSingleChat_StartU24callable0U2431_31___t2076937298 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___asyncState1, const MethodInfo* method)
 {
 	void *__d_args[1] = {0};
 	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback0, (Il2CppObject*)___asyncState1);
 }
-// System.Void CompilerGenerated.__testSingleChat_Start$callable0$29_31__::EndInvoke(System.IAsyncResult)
-extern "C"  void __testSingleChat_StartU24callable0U2429_31___EndInvoke_m810428921 (__testSingleChat_StartU24callable0U2429_31___t4062619781 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+// System.Void CompilerGenerated.__testSingleChat_Start$callable0$31_31__::EndInvoke(System.IAsyncResult)
+extern "C"  void __testSingleChat_StartU24callable0U2431_31___EndInvoke_m2910142704 (__testSingleChat_StartU24callable0U2431_31___t2076937298 * __this, Il2CppObject * ___result0, const MethodInfo* method)
 {
 	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
 }
@@ -511,65 +505,41 @@ extern "C"  void testSingleChat__ctor_m346963636 (testSingleChat_t1743952810 * _
 	}
 	{
 		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
-		StringU5BU5D_t1642385972* L_0 = ((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)((int32_t)10)));
+		StringU5BU5D_t1642385972* L_0 = ((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)4));
 		NullCheck(L_0);
-		ArrayElementTypeCheck (L_0, _stringLiteral3015944840);
-		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral3015944840);
+		ArrayElementTypeCheck (L_0, _stringLiteral1193422747);
+		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral1193422747);
 		StringU5BU5D_t1642385972* L_1 = L_0;
 		NullCheck(L_1);
-		ArrayElementTypeCheck (L_1, _stringLiteral1884851282);
-		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteral1884851282);
+		ArrayElementTypeCheck (L_1, _stringLiteral3416448035);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteral3416448035);
 		StringU5BU5D_t1642385972* L_2 = L_1;
 		NullCheck(L_2);
-		ArrayElementTypeCheck (L_2, _stringLiteral1502599131);
-		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral1502599131);
+		ArrayElementTypeCheck (L_2, _stringLiteral1608755752);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral1608755752);
 		StringU5BU5D_t1642385972* L_3 = L_2;
 		NullCheck(L_3);
-		ArrayElementTypeCheck (L_3, _stringLiteral3989186809);
-		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteral3989186809);
-		StringU5BU5D_t1642385972* L_4 = L_3;
-		NullCheck(L_4);
-		ArrayElementTypeCheck (L_4, _stringLiteral3542905434);
-		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral3542905434);
-		StringU5BU5D_t1642385972* L_5 = L_4;
-		NullCheck(L_5);
-		ArrayElementTypeCheck (L_5, _stringLiteral2913846051);
-		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)_stringLiteral2913846051);
-		StringU5BU5D_t1642385972* L_6 = L_5;
-		NullCheck(L_6);
-		ArrayElementTypeCheck (L_6, _stringLiteral1589616170);
-		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteral1589616170);
-		StringU5BU5D_t1642385972* L_7 = L_6;
-		NullCheck(L_7);
-		ArrayElementTypeCheck (L_7, _stringLiteral3097239528);
-		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(7), (String_t*)_stringLiteral3097239528);
-		StringU5BU5D_t1642385972* L_8 = L_7;
-		NullCheck(L_8);
-		ArrayElementTypeCheck (L_8, _stringLiteral943704929);
-		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(8), (String_t*)_stringLiteral943704929);
-		StringU5BU5D_t1642385972* L_9 = L_8;
-		NullCheck(L_9);
-		ArrayElementTypeCheck (L_9, _stringLiteral2959663652);
-		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (String_t*)_stringLiteral2959663652);
-		__this->set_names_3(L_9);
+		ArrayElementTypeCheck (L_3, _stringLiteral3927423290);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteral3927423290);
+		__this->set_names_3(L_3);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_10 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
-		__this->set_chatName_4(L_10);
+		String_t* L_4 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		__this->set_chatName_4(L_4);
 		__this->set_show_5((bool)1);
-		Vector2_t2243707579  L_11 = Vector2_get_zero_m3966848876(NULL /*static, unused*/, /*hidden argument*/NULL);
-		__this->set_sp_6(L_11);
-		int32_t L_12 = Screen_get_width_m41137238(NULL /*static, unused*/, /*hidden argument*/NULL);
-		int32_t L_13 = Screen_get_height_m1051800773(NULL /*static, unused*/, /*hidden argument*/NULL);
-		int32_t L_14 = Screen_get_width_m41137238(NULL /*static, unused*/, /*hidden argument*/NULL);
-		int32_t L_15 = Screen_get_height_m1051800773(NULL /*static, unused*/, /*hidden argument*/NULL);
-		Rect_t3681755626  L_16;
-		memset(&L_16, 0, sizeof(L_16));
-		Rect__ctor_m1220545469(&L_16, ((float)((float)(((float)((float)L_12)))*(float)(0.6f))), ((float)((float)(((float)((float)L_13)))*(float)(0.6f))), ((float)((float)(((float)((float)L_14)))*(float)(0.4f))), ((float)((float)(((float)((float)L_15)))*(float)(0.4f))), /*hidden argument*/NULL);
-		__this->set_chatRect_7(L_16);
+		Vector2_t2243707579  L_5 = Vector2_get_zero_m3966848876(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_sp_6(L_5);
+		int32_t L_6 = Screen_get_width_m41137238(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_7 = Screen_get_height_m1051800773(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_8 = Screen_get_width_m41137238(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_9 = Screen_get_height_m1051800773(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Rect_t3681755626  L_10;
+		memset(&L_10, 0, sizeof(L_10));
+		Rect__ctor_m1220545469(&L_10, ((float)((float)(((float)((float)L_6)))*(float)(0.6f))), ((float)((float)(((float)((float)L_7)))*(float)(0.6f))), ((float)((float)(((float)((float)L_8)))*(float)(0.4f))), ((float)((float)(((float)((float)L_9)))*(float)(0.4f))), /*hidden argument*/NULL);
+		__this->set_chatRect_7(L_10);
 		__this->set_rt_9((((float)((float)((int32_t)-3)))));
-		Array_t1396575355 * L_17 = (Array_t1396575355 *)il2cpp_codegen_object_new(Array_t1396575355_il2cpp_TypeInfo_var);
-		Array__ctor_m4252655432(L_17, /*hidden argument*/NULL);
-		__this->set_sendingMessages_10(L_17);
+		Array_t1396575355 * L_11 = (Array_t1396575355 *)il2cpp_codegen_object_new(Array_t1396575355_il2cpp_TypeInfo_var);
+		Array__ctor_m4252655432(L_11, /*hidden argument*/NULL);
+		__this->set_sendingMessages_10(L_11);
 		return;
 	}
 }
@@ -618,9 +588,9 @@ IL_0033:
 		SimChat_t2635359255 * L_14 = __this->get_sc_2();
 		IntPtr_t L_15;
 		L_15.set_m_value_0((void*)(void*)GetVirtualMethodInfo(__this, 5));
-		__testSingleChat_StartU24callable0U2429_31___t4062619781 * L_16 = (__testSingleChat_StartU24callable0U2429_31___t4062619781 *)il2cpp_codegen_object_new(__testSingleChat_StartU24callable0U2429_31___t4062619781_il2cpp_TypeInfo_var);
-		__testSingleChat_StartU24callable0U2429_31____ctor_m869180355(L_16, __this, L_15, /*hidden argument*/NULL);
-		Action_1_t2368512252 * L_17 = U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_Adapt_m135217591(NULL /*static, unused*/, L_16, /*hidden argument*/NULL);
+		__testSingleChat_StartU24callable0U2431_31___t2076937298 * L_16 = (__testSingleChat_StartU24callable0U2431_31___t2076937298 *)il2cpp_codegen_object_new(__testSingleChat_StartU24callable0U2431_31___t2076937298_il2cpp_TypeInfo_var);
+		__testSingleChat_StartU24callable0U2431_31____ctor_m1337668986(L_16, __this, L_15, /*hidden argument*/NULL);
+		Action_1_t2368512252 * L_17 = U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_Adapt_m3815301171(NULL /*static, unused*/, L_16, /*hidden argument*/NULL);
 		NullCheck(L_14);
 		SimChat_setReceiveFunction_m3855945349(L_14, L_17, /*hidden argument*/NULL);
 		return;

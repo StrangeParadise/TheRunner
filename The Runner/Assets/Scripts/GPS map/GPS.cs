@@ -13,7 +13,7 @@ public class GPS : MonoBehaviour {
 	private IEnumerator StartLocationService()
 	{
 		if (!Input.location.isEnabledByUser) {
-			print("Location service not allowed!");
+//			print("Location service not allowed!");
 			yield break;
 		}
 		Input.location.Start();

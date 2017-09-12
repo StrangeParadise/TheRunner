@@ -8851,8 +8851,11 @@ extern "C" void PropertyAttribute__ctor_m3663555848 ();
 extern "C" void Quaternion__ctor_m3196903881_AdjustorThunk ();
 extern "C" void Quaternion_Inverse_m3931399088 ();
 extern "C" void Quaternion_INTERNAL_CALL_Inverse_m1043108654 ();
+extern "C" void Quaternion_get_eulerAngles_m3302573991_AdjustorThunk ();
 extern "C" void Quaternion_Euler_m2887458175 ();
 extern "C" void Quaternion_Euler_m3586339259 ();
+extern "C" void Quaternion_Internal_ToEulerRad_m2807508879 ();
+extern "C" void Quaternion_INTERNAL_CALL_Internal_ToEulerRad_m1077217777 ();
 extern "C" void Quaternion_Internal_FromEulerRad_m1121344272 ();
 extern "C" void Quaternion_INTERNAL_CALL_Internal_FromEulerRad_m1113788132 ();
 extern "C" void Quaternion_op_Multiply_m2426727589 ();
@@ -8860,6 +8863,7 @@ extern "C" void Quaternion_op_Multiply_m1483423721 ();
 extern "C" void Quaternion_op_Equality_m2308156925 ();
 extern "C" void Quaternion_op_Inequality_m3629786166 ();
 extern "C" void Quaternion_Dot_m952616600 ();
+extern "C" void Quaternion_Internal_MakePositive_m2921671247 ();
 extern "C" void Quaternion_GetHashCode_m2270520528_AdjustorThunk ();
 extern "C" void Quaternion_Equals_m3730391696_AdjustorThunk ();
 extern "C" void Quaternion_ToString_m2638853272_AdjustorThunk ();
@@ -11185,6 +11189,14 @@ extern "C" void FieldWithTarget_GetValue_m3773769385 ();
 extern "C" void AR__ctor_m4196075462 ();
 extern "C" void AR_Start_m1351794542 ();
 extern "C" void AR_Update_m3244983845 ();
+extern "C" void ChatController__ctor_m281900101 ();
+extern "C" void ChatController_Start_m1354071973 ();
+extern "C" void ChatController_Update_m1939549468 ();
+extern "C" void GameController__ctor_m1439649957 ();
+extern "C" void GameController_Start_m239487205 ();
+extern "C" void GameController_Update_m1556003900 ();
+extern "C" void GameController_rotateMapWithCamera_m4088657527 ();
+extern "C" void GameController_positionMapWithCamera_m3500126895 ();
 extern "C" void GPS__ctor_m2952425523 ();
 extern "C" void GPS_get_Instance_m2061733234 ();
 extern "C" void GPS_set_Instance_m2330582003 ();
@@ -11237,6 +11249,9 @@ extern "C" void SimpleChat_draw_m869370447 ();
 extern "C" void testExtendClass__ctor_m3783322273 ();
 extern "C" void testExtendClass_Start_m4225937281 ();
 extern "C" void testExtendClass_OnGUI_m134770207 ();
+extern "C" void testMoveScript__ctor_m2105956303 ();
+extern "C" void testMoveScript_Start_m1820570707 ();
+extern "C" void testMoveScript_Update_m1868215872 ();
 extern "C" void testTwoChat__ctor_m2988851851 ();
 extern "C" void testTwoChat_Start_m819919023 ();
 extern "C" void testTwoChat_receiveMessage1_m1668380777 ();
@@ -11245,20 +11260,23 @@ extern "C" void testTwoChat_OnGUI_m3836617937 ();
 extern "C" void testTwoChat_displayChat_m520120199 ();
 extern "C" void UpdateGPS__ctor_m1886973562 ();
 extern "C" void UpdateGPS_Update_m2320639175 ();
-extern "C" void U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240__ctor_m1975581249 ();
-extern "C" void U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_Invoke_m935701907 ();
-extern "C" void U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_Adapt_m135217591 ();
-extern "C" void __testSingleChat_StartU24callable0U2429_31____ctor_m869180355 ();
-extern "C" void __testSingleChat_StartU24callable0U2429_31___Call_m2033526684 ();
-extern "C" void __testSingleChat_StartU24callable0U2429_31___Invoke_m1350630071 ();
-extern "C" void __testSingleChat_StartU24callable0U2429_31___BeginInvoke_m2258450942 ();
-extern "C" void __testSingleChat_StartU24callable0U2429_31___EndInvoke_m810428921 ();
+extern "C" void UserInfo__ctor_m4058170710 ();
+extern "C" void UserInfo_Start_m3702512862 ();
+extern "C" void UserInfo_Update_m2989846877 ();
+extern "C" void U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240__ctor_m2495576693 ();
+extern "C" void U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_Invoke_m3726459120 ();
+extern "C" void U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_Adapt_m3815301171 ();
+extern "C" void __testSingleChat_StartU24callable0U2431_31____ctor_m1337668986 ();
+extern "C" void __testSingleChat_StartU24callable0U2431_31___Call_m1318928325 ();
+extern "C" void __testSingleChat_StartU24callable0U2431_31___Invoke_m428054688 ();
+extern "C" void __testSingleChat_StartU24callable0U2431_31___BeginInvoke_m1384043637 ();
+extern "C" void __testSingleChat_StartU24callable0U2431_31___EndInvoke_m2910142704 ();
 extern "C" void testSingleChat__ctor_m346963636 ();
 extern "C" void testSingleChat_Start_m1190730460 ();
 extern "C" void testSingleChat_receiveMessage_m3194079398 ();
 extern "C" void testSingleChat_OnGUI_m361319688 ();
 extern "C" void testSingleChat_Main_m1511507263 ();
-extern const Il2CppMethodPointer g_MethodPointers[11244] = 
+extern const Il2CppMethodPointer g_MethodPointers[11262] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -20097,8 +20115,11 @@ extern const Il2CppMethodPointer g_MethodPointers[11244] =
 	Quaternion__ctor_m3196903881_AdjustorThunk,
 	Quaternion_Inverse_m3931399088,
 	Quaternion_INTERNAL_CALL_Inverse_m1043108654,
+	Quaternion_get_eulerAngles_m3302573991_AdjustorThunk,
 	Quaternion_Euler_m2887458175,
 	Quaternion_Euler_m3586339259,
+	Quaternion_Internal_ToEulerRad_m2807508879,
+	Quaternion_INTERNAL_CALL_Internal_ToEulerRad_m1077217777,
 	Quaternion_Internal_FromEulerRad_m1121344272,
 	Quaternion_INTERNAL_CALL_Internal_FromEulerRad_m1113788132,
 	Quaternion_op_Multiply_m2426727589,
@@ -20106,6 +20127,7 @@ extern const Il2CppMethodPointer g_MethodPointers[11244] =
 	Quaternion_op_Equality_m2308156925,
 	Quaternion_op_Inequality_m3629786166,
 	Quaternion_Dot_m952616600,
+	Quaternion_Internal_MakePositive_m2921671247,
 	Quaternion_GetHashCode_m2270520528_AdjustorThunk,
 	Quaternion_Equals_m3730391696_AdjustorThunk,
 	Quaternion_ToString_m2638853272_AdjustorThunk,
@@ -22431,6 +22453,14 @@ extern const Il2CppMethodPointer g_MethodPointers[11244] =
 	AR__ctor_m4196075462,
 	AR_Start_m1351794542,
 	AR_Update_m3244983845,
+	ChatController__ctor_m281900101,
+	ChatController_Start_m1354071973,
+	ChatController_Update_m1939549468,
+	GameController__ctor_m1439649957,
+	GameController_Start_m239487205,
+	GameController_Update_m1556003900,
+	GameController_rotateMapWithCamera_m4088657527,
+	GameController_positionMapWithCamera_m3500126895,
 	GPS__ctor_m2952425523,
 	GPS_get_Instance_m2061733234,
 	GPS_set_Instance_m2330582003,
@@ -22483,6 +22513,9 @@ extern const Il2CppMethodPointer g_MethodPointers[11244] =
 	testExtendClass__ctor_m3783322273,
 	testExtendClass_Start_m4225937281,
 	testExtendClass_OnGUI_m134770207,
+	testMoveScript__ctor_m2105956303,
+	testMoveScript_Start_m1820570707,
+	testMoveScript_Update_m1868215872,
 	testTwoChat__ctor_m2988851851,
 	testTwoChat_Start_m819919023,
 	testTwoChat_receiveMessage1_m1668380777,
@@ -22491,14 +22524,17 @@ extern const Il2CppMethodPointer g_MethodPointers[11244] =
 	testTwoChat_displayChat_m520120199,
 	UpdateGPS__ctor_m1886973562,
 	UpdateGPS_Update_m2320639175,
-	U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240__ctor_m1975581249,
-	U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_Invoke_m935701907,
-	U24adaptorU24__testSingleChat_StartU24callable0U2429_31__U24ActionU240_Adapt_m135217591,
-	__testSingleChat_StartU24callable0U2429_31____ctor_m869180355,
-	__testSingleChat_StartU24callable0U2429_31___Call_m2033526684,
-	__testSingleChat_StartU24callable0U2429_31___Invoke_m1350630071,
-	__testSingleChat_StartU24callable0U2429_31___BeginInvoke_m2258450942,
-	__testSingleChat_StartU24callable0U2429_31___EndInvoke_m810428921,
+	UserInfo__ctor_m4058170710,
+	UserInfo_Start_m3702512862,
+	UserInfo_Update_m2989846877,
+	U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240__ctor_m2495576693,
+	U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_Invoke_m3726459120,
+	U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_Adapt_m3815301171,
+	__testSingleChat_StartU24callable0U2431_31____ctor_m1337668986,
+	__testSingleChat_StartU24callable0U2431_31___Call_m1318928325,
+	__testSingleChat_StartU24callable0U2431_31___Invoke_m428054688,
+	__testSingleChat_StartU24callable0U2431_31___BeginInvoke_m1384043637,
+	__testSingleChat_StartU24callable0U2431_31___EndInvoke_m2910142704,
 	testSingleChat__ctor_m346963636,
 	testSingleChat_Start_m1190730460,
 	testSingleChat_receiveMessage_m3194079398,

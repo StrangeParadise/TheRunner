@@ -42,3 +42,4 @@
 /Users/wuxixiang/Documents/Github/Healthy-boys/The Runner/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/wuxixiang/Documents/Github/Healthy-boys/The Runner/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/wuxixiang/Documents/Github/Healthy-boys/The Runner/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/wuxixiang/Documents/Github/Healthy-boys/The Runner/Temp/bin/Debug/wwwChat.dll
