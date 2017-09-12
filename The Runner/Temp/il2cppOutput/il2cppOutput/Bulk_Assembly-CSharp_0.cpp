@@ -55,13 +55,33 @@
 #include "UnityEngine_UnityEngine_WWW2919945039.h"
 #include "AssemblyU2DCSharp_LoginGUI_U3CLoginU3Ec__Iterator01563009217.h"
 #include "AssemblyU2DCSharp_LoginGUI_U3CCreateAccountU3Ec__I4116917652.h"
-#include "AssemblyU2DCSharp_LoginGUI_U3CloadGameU3Ec__Iterato431962752.h"
+#include "UnityEngine_UnityEngine_SceneManagement_LoadSceneM2981886439.h"
 #include "UnityEngine_UnityEngine_AsyncOperation3814632279.h"
+#include "AssemblyU2DCSharp_LoginGUI_U3CloadGameAsyncU3Ec__It152900926.h"
 #include "AssemblyU2DCSharp_Map4262919222.h"
 #include "UnityEngine_UI_UnityEngine_UI_Text356221433.h"
 #include "AssemblyU2DCSharp_Map_U3CGetGoogleMapU3Ec__Iterato1695079217.h"
 #include "AssemblyU2DCSharp_Map_mapType3017953257.h"
 #include "UnityEngine_UnityEngine_Texture2D3542995729.h"
+#include "AssemblyU2DCSharp_SimpleChat403391640.h"
+#include "UnityEngine_UnityEngine_Color2020392075.h"
+#include "UnityEngine_UnityEngine_Vector22243707579.h"
+#include "mscorlib_System_IntPtr2504060609.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen1398341365.h"
+#include "wwwChat_SimChat2635359255.h"
+#include "wwwChat_SimpleMessage1037894399.h"
+#include "mscorlib_System_Action_1_gen2368512252.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen407015531.h"
+#include "UnityEngine_UnityEngine_GUIStyle1799908754.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumera4236712501.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumera1593300101.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumerat933071039.h"
+#include "UnityEngine_UnityEngine_KeyCode2283395152.h"
+#include "UnityEngine_UnityEngine_GUISkin1436893342.h"
+#include "UnityEngine_UnityEngine_GUILayoutOption4183744904.h"
+#include "UnityEngine_UnityEngine_Event3028476042.h"
+#include "AssemblyU2DCSharp_testExtendClass3109871312.h"
+#include "AssemblyU2DCSharp_testTwoChat1019399252.h"
 #include "AssemblyU2DCSharp_UpdateGPS2150053955.h"
 
 // AR
@@ -120,10 +140,10 @@ struct WWW_t2919945039;
 struct U3CLoginU3Ec__Iterator0_t1563009217;
 // LoginGUI/<CreateAccount>c__Iterator1
 struct U3CCreateAccountU3Ec__Iterator1_t4116917652;
-// LoginGUI/<loadGame>c__Iterator2
-struct U3CloadGameU3Ec__Iterator2_t431962752;
 // UnityEngine.AsyncOperation
 struct AsyncOperation_t3814632279;
+// LoginGUI/<loadGameAsync>c__Iterator2
+struct U3CloadGameAsyncU3Ec__Iterator2_t152900926;
 // Map
 struct Map_t4262919222;
 // Map/<GetGoogleMap>c__Iterator0
@@ -132,6 +152,38 @@ struct U3CGetGoogleMapU3Ec__Iterator0_t1695079217;
 struct ObjectU5BU5D_t3614634134;
 // UnityEngine.Texture2D
 struct Texture2D_t3542995729;
+// SimpleChat
+struct SimpleChat_t403391640;
+// System.Collections.Generic.List`1<System.String>
+struct List_1_t1398341365;
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_t2058570427;
+// SimChat
+struct SimChat_t2635359255;
+// System.Action`1<SimpleMessage[]>
+struct Action_1_t2368512252;
+// System.Action`1<System.Object>
+struct Action_1_t2491248677;
+// SimpleMessage
+struct SimpleMessage_t1037894399;
+// SimpleMessage[]
+struct SimpleMessageU5BU5D_t2566712870;
+// System.Collections.Generic.List`1<SimpleMessage>
+struct List_1_t407015531;
+// UnityEngine.GUISkin
+struct GUISkin_t1436893342;
+// UnityEngine.GUIStyle
+struct GUIStyle_t1799908754;
+// UnityEngine.GUILayoutOption[]
+struct GUILayoutOptionU5BU5D_t2108882777;
+// UnityEngine.Event
+struct Event_t3028476042;
+// UnityEngine.GUILayoutOption
+struct GUILayoutOption_t4183744904;
+// testExtendClass
+struct testExtendClass_t3109871312;
+// testTwoChat
+struct testTwoChat_t1019399252;
 // UpdateGPS
 struct UpdateGPS_t2150053955;
 extern Il2CppClass* WebCamTexture_t1079476942_il2cpp_TypeInfo_var;
@@ -188,19 +240,22 @@ extern Il2CppClass* U3CLoginU3Ec__Iterator0_t1563009217_il2cpp_TypeInfo_var;
 extern const uint32_t LoginGUI_Login_m158678506_MetadataUsageId;
 extern Il2CppClass* U3CCreateAccountU3Ec__Iterator1_t4116917652_il2cpp_TypeInfo_var;
 extern const uint32_t LoginGUI_CreateAccount_m3064127964_MetadataUsageId;
-extern Il2CppClass* U3CloadGameU3Ec__Iterator2_t431962752_il2cpp_TypeInfo_var;
-extern const uint32_t LoginGUI_loadGame_m1332632965_MetadataUsageId;
+extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2255930277;
+extern Il2CppCodeGenString* _stringLiteral2640409048;
+extern Il2CppCodeGenString* _stringLiteral2640882096;
+extern const uint32_t LoginGUI_loadGame_m195638551_MetadataUsageId;
+extern Il2CppClass* U3CloadGameAsyncU3Ec__Iterator2_t152900926_il2cpp_TypeInfo_var;
+extern const uint32_t LoginGUI_loadGameAsync_m1229451883_MetadataUsageId;
 extern Il2CppCodeGenString* _stringLiteral22442200;
 extern const uint32_t U3CCreateAccountU3Ec__Iterator1_MoveNext_m3388553989_MetadataUsageId;
 extern const uint32_t U3CCreateAccountU3Ec__Iterator1_Reset_m866869412_MetadataUsageId;
-extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2648965589;
-extern Il2CppCodeGenString* _stringLiteral2640882096;
 extern Il2CppCodeGenString* _stringLiteral3267066694;
 extern Il2CppCodeGenString* _stringLiteral3231012702;
 extern Il2CppCodeGenString* _stringLiteral1949808675;
-extern const uint32_t U3CloadGameU3Ec__Iterator2_MoveNext_m1900517239_MetadataUsageId;
-extern const uint32_t U3CloadGameU3Ec__Iterator2_Reset_m3487147748_MetadataUsageId;
+extern const uint32_t U3CloadGameAsyncU3Ec__Iterator2_MoveNext_m2243395097_MetadataUsageId;
+extern const uint32_t U3CloadGameAsyncU3Ec__Iterator2_Reset_m4147414_MetadataUsageId;
 extern Il2CppCodeGenString* _stringLiteral3018578246;
 extern Il2CppCodeGenString* _stringLiteral3683487199;
 extern const uint32_t U3CLoginU3Ec__Iterator0_MoveNext_m4166444560_MetadataUsageId;
@@ -226,6 +281,57 @@ extern Il2CppCodeGenString* _stringLiteral2313303675;
 extern Il2CppCodeGenString* _stringLiteral2328242528;
 extern const uint32_t U3CGetGoogleMapU3Ec__Iterator0_MoveNext_m2744658934_MetadataUsageId;
 extern const uint32_t U3CGetGoogleMapU3Ec__Iterator0_Reset_m2581645829_MetadataUsageId;
+extern Il2CppClass* List_1_t1398341365_il2cpp_TypeInfo_var;
+extern Il2CppClass* Action_1_t2368512252_il2cpp_TypeInfo_var;
+extern const MethodInfo* List_1__ctor_m3854603248_MethodInfo_var;
+extern const MethodInfo* SimpleChat_receive_m3000470043_MethodInfo_var;
+extern const MethodInfo* Action_1__ctor_m4077604895_MethodInfo_var;
+extern const uint32_t SimpleChat__ctor_m1147096138_MetadataUsageId;
+extern const MethodInfo* List_1_get_Count_m3828712489_MethodInfo_var;
+extern const MethodInfo* List_1_get_Item_m378422711_MethodInfo_var;
+extern const uint32_t SimpleChat_receive_m3000470043_MetadataUsageId;
+extern Il2CppClass* GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var;
+extern Il2CppClass* GUIStyle_t1799908754_il2cpp_TypeInfo_var;
+extern const MethodInfo* List_1_GetEnumerator_m2667932065_MethodInfo_var;
+extern const MethodInfo* Enumerator_get_Current_m2734703333_MethodInfo_var;
+extern const MethodInfo* Enumerator_MoveNext_m4050449165_MethodInfo_var;
+extern const MethodInfo* Enumerator_Dispose_m2762253675_MethodInfo_var;
+extern const MethodInfo* List_1_GetEnumerator_m804483696_MethodInfo_var;
+extern const MethodInfo* Enumerator_get_Current_m870713862_MethodInfo_var;
+extern const MethodInfo* Enumerator_MoveNext_m4175023932_MethodInfo_var;
+extern const MethodInfo* Enumerator_Dispose_m2205157096_MethodInfo_var;
+extern const MethodInfo* List_1_Add_m4061286785_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3918381725;
+extern Il2CppCodeGenString* _stringLiteral811305496;
+extern Il2CppCodeGenString* _stringLiteral1502598545;
+extern Il2CppCodeGenString* _stringLiteral4136223372;
+extern const uint32_t SimpleChat_draw_m869370447_MetadataUsageId;
+extern Il2CppClass* StringU5BU5D_t1642385972_il2cpp_TypeInfo_var;
+extern Il2CppClass* SimpleChat_t403391640_il2cpp_TypeInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisMonoBehaviour_t1158329972_m3597292854_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3015944840;
+extern Il2CppCodeGenString* _stringLiteral1884851282;
+extern Il2CppCodeGenString* _stringLiteral1502599131;
+extern Il2CppCodeGenString* _stringLiteral3989186809;
+extern Il2CppCodeGenString* _stringLiteral3542905434;
+extern Il2CppCodeGenString* _stringLiteral2913846051;
+extern Il2CppCodeGenString* _stringLiteral1589616170;
+extern Il2CppCodeGenString* _stringLiteral3097239528;
+extern Il2CppCodeGenString* _stringLiteral943704929;
+extern Il2CppCodeGenString* _stringLiteral2959663652;
+extern Il2CppCodeGenString* _stringLiteral3564902503;
+extern const uint32_t testExtendClass_Start_m4225937281_MetadataUsageId;
+extern const uint32_t testTwoChat__ctor_m2988851851_MetadataUsageId;
+extern Il2CppClass* SimChat_t2635359255_il2cpp_TypeInfo_var;
+extern const MethodInfo* testTwoChat_receiveMessage1_m1668380777_MethodInfo_var;
+extern const MethodInfo* testTwoChat_receiveMessage2_m2913369038_MethodInfo_var;
+extern const uint32_t testTwoChat_Start_m819919023_MetadataUsageId;
+extern Il2CppCodeGenString* _stringLiteral3170287199;
+extern Il2CppCodeGenString* _stringLiteral2413812957;
+extern Il2CppCodeGenString* _stringLiteral4221026011;
+extern const uint32_t testTwoChat_OnGUI_m3836617937_MetadataUsageId;
+extern Il2CppCodeGenString* _stringLiteral2391892769;
+extern const uint32_t testTwoChat_displayChat_m520120199_MetadataUsageId;
 extern Il2CppCodeGenString* _stringLiteral2528641049;
 extern const uint32_t UpdateGPS_Update_m2320639175_MetadataUsageId;
 
@@ -301,10 +407,141 @@ public:
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
+// SimpleMessage[]
+struct SimpleMessageU5BU5D_t2566712870  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) SimpleMessage_t1037894399 * m_Items[1];
+
+public:
+	inline SimpleMessage_t1037894399 * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline SimpleMessage_t1037894399 ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, SimpleMessage_t1037894399 * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline SimpleMessage_t1037894399 * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline SimpleMessage_t1037894399 ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, SimpleMessage_t1037894399 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// UnityEngine.GUILayoutOption[]
+struct GUILayoutOptionU5BU5D_t2108882777  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) GUILayoutOption_t4183744904 * m_Items[1];
+
+public:
+	inline GUILayoutOption_t4183744904 * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline GUILayoutOption_t4183744904 ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, GUILayoutOption_t4183744904 * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline GUILayoutOption_t4183744904 * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline GUILayoutOption_t4183744904 ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, GUILayoutOption_t4183744904 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// System.String[]
+struct StringU5BU5D_t1642385972  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) String_t* m_Items[1];
+
+public:
+	inline String_t* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, String_t* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline String_t* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, String_t* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
 
 
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m4109961936_gshared (Component_t3819376471 * __this, const MethodInfo* method);
+// System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
+extern "C"  void List_1__ctor_m310736118_gshared (List_1_t2058570427 * __this, const MethodInfo* method);
+// System.Void System.Action`1<System.Object>::.ctor(System.Object,System.IntPtr)
+extern "C"  void Action_1__ctor_m584977596_gshared (Action_1_t2491248677 * __this, Il2CppObject * p0, IntPtr_t p1, const MethodInfo* method);
+// System.Int32 System.Collections.Generic.List`1<System.Object>::get_Count()
+extern "C"  int32_t List_1_get_Count_m2375293942_gshared (List_1_t2058570427 * __this, const MethodInfo* method);
+// !0 System.Collections.Generic.List`1<System.Object>::get_Item(System.Int32)
+extern "C"  Il2CppObject * List_1_get_Item_m2062981835_gshared (List_1_t2058570427 * __this, int32_t p0, const MethodInfo* method);
+// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<System.Object>::GetEnumerator()
+extern "C"  Enumerator_t1593300101  List_1_GetEnumerator_m2837081829_gshared (List_1_t2058570427 * __this, const MethodInfo* method);
+// !0 System.Collections.Generic.List`1/Enumerator<System.Object>::get_Current()
+extern "C"  Il2CppObject * Enumerator_get_Current_m2577424081_gshared (Enumerator_t1593300101 * __this, const MethodInfo* method);
+// System.Boolean System.Collections.Generic.List`1/Enumerator<System.Object>::MoveNext()
+extern "C"  bool Enumerator_MoveNext_m44995089_gshared (Enumerator_t1593300101 * __this, const MethodInfo* method);
+// System.Void System.Collections.Generic.List`1/Enumerator<System.Object>::Dispose()
+extern "C"  void Enumerator_Dispose_m3736175406_gshared (Enumerator_t1593300101 * __this, const MethodInfo* method);
+// System.Void System.Collections.Generic.List`1<System.Object>::Add(!0)
+extern "C"  void List_1_Add_m4157722533_gshared (List_1_t2058570427 * __this, Il2CppObject * p0, const MethodInfo* method);
+// !!0 UnityEngine.GameObject::GetComponent<System.Object>()
+extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2812611596_gshared (GameObject_t1756533147 * __this, const MethodInfo* method);
 
 // System.Void UnityEngine.MonoBehaviour::.ctor()
 extern "C"  void MonoBehaviour__ctor_m2464341955 (MonoBehaviour_t1158329972 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -436,16 +673,20 @@ extern "C"  Il2CppObject * LoginGUI_CreateAccount_m3064127964 (LoginGUI_t4073642
 extern "C"  void U3CLoginU3Ec__Iterator0__ctor_m3424683784 (U3CLoginU3Ec__Iterator0_t1563009217 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void LoginGUI/<CreateAccount>c__Iterator1::.ctor()
 extern "C"  void U3CCreateAccountU3Ec__Iterator1__ctor_m1663879251 (U3CCreateAccountU3Ec__Iterator1_t4116917652 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void LoginGUI/<loadGame>c__Iterator2::.ctor()
-extern "C"  void U3CloadGameU3Ec__Iterator2__ctor_m1729965841 (U3CloadGameU3Ec__Iterator2_t431962752 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Debug::Log(System.Object)
+extern "C"  void Debug_Log_m920475918 (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.AsyncOperation UnityEngine.SceneManagement.SceneManager::UnloadSceneAsync(System.String)
+extern "C"  AsyncOperation_t3814632279 * SceneManager_UnloadSceneAsync_m4016707407 (Il2CppObject * __this /* static, unused */, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.SceneManagement.SceneManager::LoadScene(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+extern "C"  void SceneManager_LoadScene_m1386820036 (Il2CppObject * __this /* static, unused */, String_t* p0, int32_t p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void LoginGUI/<loadGameAsync>c__Iterator2::.ctor()
+extern "C"  void U3CloadGameAsyncU3Ec__Iterator2__ctor_m3228149975 (U3CloadGameAsyncU3Ec__Iterator2_t152900926 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String UnityEngine.WWW::get_error()
 extern "C"  String_t* WWW_get_error_m3092701216 (WWW_t2919945039 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String UnityEngine.WWW::get_text()
 extern "C"  String_t* WWW_get_text_m1558985139 (WWW_t2919945039 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.String::Concat(System.String,System.String)
 extern "C"  String_t* String_Concat_m2596409543 (Il2CppObject * __this /* static, unused */, String_t* p0, String_t* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Debug::Log(System.Object)
-extern "C"  void Debug_Log_m920475918 (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.AsyncOperation UnityEngine.SceneManagement.SceneManager::LoadSceneAsync(System.String)
 extern "C"  AsyncOperation_t3814632279 * SceneManager_LoadSceneAsync_m4130852156 (Il2CppObject * __this /* static, unused */, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.AsyncOperation::set_allowSceneActivation(System.Boolean)
@@ -456,8 +697,8 @@ extern "C"  float AsyncOperation_get_progress_m478775228 (AsyncOperation_t381463
 extern "C"  String_t* Single_ToString_m2359963436 (float* __this, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.AsyncOperation::get_isDone()
 extern "C"  bool AsyncOperation_get_isDone_m1085614149 (AsyncOperation_t3814632279 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Collections.IEnumerator LoginGUI::loadGame()
-extern "C"  Il2CppObject * LoginGUI_loadGame_m1332632965 (LoginGUI_t4073642432 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void LoginGUI::loadGame()
+extern "C"  void LoginGUI_loadGame_m195638551 (LoginGUI_t4073642432 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Time::get_time()
 extern "C"  float Time_get_time_m2216684562 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // GPS GPS::get_Instance()
@@ -480,6 +721,112 @@ extern "C"  void WWW__ctor_m2024029190 (WWW_t2919945039 * __this, String_t* p0, 
 extern "C"  Texture2D_t3542995729 * WWW_get_texture_m1121178301 (WWW_t2919945039 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.MonoBehaviour::StopCoroutine(System.Collections.IEnumerator)
 extern "C"  void MonoBehaviour_StopCoroutine_m1170478282 (MonoBehaviour_t1158329972 * __this, Il2CppObject * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Color UnityEngine.Color::get_red()
+extern "C"  Color_t2020392075  Color_get_red_m2410286591 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Color UnityEngine.Color::get_green()
+extern "C"  Color_t2020392075  Color_get_green_m2671273823 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector2 UnityEngine.Vector2::get_zero()
+extern "C"  Vector2_t2243707579  Vector2_get_zero_m3966848876 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Collections.Generic.List`1<System.String>::.ctor()
+#define List_1__ctor_m3854603248(__this, method) ((  void (*) (List_1_t1398341365 *, const MethodInfo*))List_1__ctor_m310736118_gshared)(__this, method)
+// System.Void SimChat::.ctor(System.String,UnityEngine.MonoBehaviour,System.String)
+extern "C"  void SimChat__ctor_m1036284394 (SimChat_t2635359255 * __this, String_t* p0, MonoBehaviour_t1158329972 * p1, String_t* p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void SimChat::continueCheckMessages()
+extern "C"  void SimChat_continueCheckMessages_m1003954020 (SimChat_t2635359255 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Action`1<SimpleMessage[]>::.ctor(System.Object,System.IntPtr)
+#define Action_1__ctor_m4077604895(__this, p0, p1, method) ((  void (*) (Action_1_t2368512252 *, Il2CppObject *, IntPtr_t, const MethodInfo*))Action_1__ctor_m584977596_gshared)(__this, p0, p1, method)
+// System.Void SimChat::setReceiveFunction(System.Action`1<SimpleMessage[]>)
+extern "C"  void SimChat_setReceiveFunction_m3855945349 (SimChat_t2635359255 * __this, Action_1_t2368512252 * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 System.Collections.Generic.List`1<SimpleMessage>::get_Count()
+#define List_1_get_Count_m3828712489(__this, method) ((  int32_t (*) (List_1_t407015531 *, const MethodInfo*))List_1_get_Count_m2375293942_gshared)(__this, method)
+// !0 System.Collections.Generic.List`1<SimpleMessage>::get_Item(System.Int32)
+#define List_1_get_Item_m378422711(__this, p0, method) ((  SimpleMessage_t1037894399 * (*) (List_1_t407015531 *, int32_t, const MethodInfo*))List_1_get_Item_m2062981835_gshared)(__this, p0, method)
+// System.String SimChat::get_senderName()
+extern "C"  String_t* SimChat_get_senderName_m1698608763 (SimChat_t2635359255 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.GUISkin UnityEngine.GUI::get_skin()
+extern "C"  GUISkin_t1436893342 * GUI_get_skin_m2309570990 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.GUIStyle UnityEngine.GUISkin::get_label()
+extern "C"  GUIStyle_t1799908754 * GUISkin_get_label_m2703078986 (GUISkin_t1436893342 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.GUIStyle::set_fontSize(System.Int32)
+extern "C"  void GUIStyle_set_fontSize_m4015341543 (GUIStyle_t1799908754 * __this, int32_t p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.GUILayout::Label(System.String,UnityEngine.GUILayoutOption[])
+extern "C"  void GUILayout_Label_m3466110979 (Il2CppObject * __this /* static, unused */, String_t* p0, GUILayoutOptionU5BU5D_t2108882777* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.GUIStyle UnityEngine.GUISkin::get_textField()
+extern "C"  GUIStyle_t1799908754 * GUISkin_get_textField_m757680403 (GUISkin_t1436893342 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.GUIStyle UnityEngine.GUISkin::get_button()
+extern "C"  GUIStyle_t1799908754 * GUISkin_get_button_m797402546 (GUISkin_t1436893342 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.GUIStyle::set_wordWrap(System.Boolean)
+extern "C"  void GUIStyle_set_wordWrap_m2043927261 (GUIStyle_t1799908754 * __this, bool p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.GUILayout::BeginArea(UnityEngine.Rect)
+extern "C"  void GUILayout_BeginArea_m3297699023 (Il2CppObject * __this /* static, unused */, Rect_t3681755626  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.GUIStyle UnityEngine.GUIStyle::op_Implicit(System.String)
+extern "C"  GUIStyle_t1799908754 * GUIStyle_op_Implicit_m781448948 (Il2CppObject * __this /* static, unused */, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.GUILayout::BeginVertical(UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])
+extern "C"  void GUILayout_BeginVertical_m4288558889 (Il2CppObject * __this /* static, unused */, GUIStyle_t1799908754 * p0, GUILayoutOptionU5BU5D_t2108882777* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector2 UnityEngine.GUILayout::BeginScrollView(UnityEngine.Vector2,UnityEngine.GUILayoutOption[])
+extern "C"  Vector2_t2243707579  GUILayout_BeginScrollView_m4280181007 (Il2CppObject * __this /* static, unused */, Vector2_t2243707579  p0, GUILayoutOptionU5BU5D_t2108882777* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.GUILayout::FlexibleSpace()
+extern "C"  void GUILayout_FlexibleSpace_m2019304577 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Color UnityEngine.GUI::get_contentColor()
+extern "C"  Color_t2020392075  GUI_get_contentColor_m1106662582 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<SimpleMessage>::GetEnumerator()
+#define List_1_GetEnumerator_m2667932065(__this, method) ((  Enumerator_t4236712501  (*) (List_1_t407015531 *, const MethodInfo*))List_1_GetEnumerator_m2837081829_gshared)(__this, method)
+// !0 System.Collections.Generic.List`1/Enumerator<SimpleMessage>::get_Current()
+#define Enumerator_get_Current_m2734703333(__this, method) ((  SimpleMessage_t1037894399 * (*) (Enumerator_t4236712501 *, const MethodInfo*))Enumerator_get_Current_m2577424081_gshared)(__this, method)
+// System.Void UnityEngine.GUILayout::BeginHorizontal(UnityEngine.GUILayoutOption[])
+extern "C"  void GUILayout_BeginHorizontal_m212592284 (Il2CppObject * __this /* static, unused */, GUILayoutOptionU5BU5D_t2108882777* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.GUI::set_contentColor(UnityEngine.Color)
+extern "C"  void GUI_set_contentColor_m4064322821 (Il2CppObject * __this /* static, unused */, Color_t2020392075  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.String::Concat(System.String,System.String,System.String)
+extern "C"  String_t* String_Concat_m612901809 (Il2CppObject * __this /* static, unused */, String_t* p0, String_t* p1, String_t* p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.GUILayout::EndHorizontal()
+extern "C"  void GUILayout_EndHorizontal_m4258536965 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Collections.Generic.List`1/Enumerator<SimpleMessage>::MoveNext()
+#define Enumerator_MoveNext_m4050449165(__this, method) ((  bool (*) (Enumerator_t4236712501 *, const MethodInfo*))Enumerator_MoveNext_m44995089_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1/Enumerator<SimpleMessage>::Dispose()
+#define Enumerator_Dispose_m2762253675(__this, method) ((  void (*) (Enumerator_t4236712501 *, const MethodInfo*))Enumerator_Dispose_m3736175406_gshared)(__this, method)
+// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<System.String>::GetEnumerator()
+#define List_1_GetEnumerator_m804483696(__this, method) ((  Enumerator_t933071039  (*) (List_1_t1398341365 *, const MethodInfo*))List_1_GetEnumerator_m2837081829_gshared)(__this, method)
+// !0 System.Collections.Generic.List`1/Enumerator<System.String>::get_Current()
+#define Enumerator_get_Current_m870713862(__this, method) ((  String_t* (*) (Enumerator_t933071039 *, const MethodInfo*))Enumerator_get_Current_m2577424081_gshared)(__this, method)
+// System.Boolean System.Collections.Generic.List`1/Enumerator<System.String>::MoveNext()
+#define Enumerator_MoveNext_m4175023932(__this, method) ((  bool (*) (Enumerator_t933071039 *, const MethodInfo*))Enumerator_MoveNext_m44995089_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1/Enumerator<System.String>::Dispose()
+#define Enumerator_Dispose_m2205157096(__this, method) ((  void (*) (Enumerator_t933071039 *, const MethodInfo*))Enumerator_Dispose_m3736175406_gshared)(__this, method)
+// System.Void UnityEngine.GUILayout::EndScrollView()
+extern "C"  void GUILayout_EndScrollView_m1883730923 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.GUILayout::EndVertical()
+extern "C"  void GUILayout_EndVertical_m297596185 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String UnityEngine.GUILayout::TextField(System.String,UnityEngine.GUILayoutOption[])
+extern "C"  String_t* GUILayout_TextField_m1976649007 (Il2CppObject * __this /* static, unused */, String_t* p0, GUILayoutOptionU5BU5D_t2108882777* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.GUILayout::Button(System.String,UnityEngine.GUILayoutOption[])
+extern "C"  bool GUILayout_Button_m3322709003 (Il2CppObject * __this /* static, unused */, String_t* p0, GUILayoutOptionU5BU5D_t2108882777* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Event UnityEngine.Event::get_current()
+extern "C"  Event_t3028476042 * Event_get_current_m2901774193 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.Event::get_isKey()
+extern "C"  bool Event_get_isKey_m1145918225 (Event_t3028476042 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.KeyCode UnityEngine.Event::get_keyCode()
+extern "C"  int32_t Event_get_keyCode_m3364681288 (Event_t3028476042 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void SimChat::sendMessage()
+extern "C"  void SimChat_sendMessage_m3528977650 (SimChat_t2635359255 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Collections.Generic.List`1<System.String>::Add(!0)
+#define List_1_Add_m4061286785(__this, p0, method) ((  void (*) (List_1_t1398341365 *, String_t*, const MethodInfo*))List_1_Add_m4157722533_gshared)(__this, p0, method)
+// System.Void UnityEngine.GUILayout::EndArea()
+extern "C"  void GUILayout_EndArea_m1904221074 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// !!0 UnityEngine.GameObject::GetComponent<UnityEngine.MonoBehaviour>()
+#define GameObject_GetComponent_TisMonoBehaviour_t1158329972_m3597292854(__this, method) ((  MonoBehaviour_t1158329972 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2812611596_gshared)(__this, method)
+// System.Int32 UnityEngine.Random::Range(System.Int32,System.Int32)
+extern "C"  int32_t Random_Range_m694320887 (Il2CppObject * __this /* static, unused */, int32_t p0, int32_t p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void SimpleChat::.ctor(System.String,UnityEngine.MonoBehaviour,System.String)
+extern "C"  void SimpleChat__ctor_m1147096138 (SimpleChat_t403391640 * __this, String_t* ___identifier0, MonoBehaviour_t1158329972 * ___currentMonoBehaviour1, String_t* ___senderName2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void SimpleChat::draw()
+extern "C"  void SimpleChat_draw_m869370447 (SimpleChat_t403391640 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.GUILayout::BeginHorizontal(UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])
+extern "C"  void GUILayout_BeginHorizontal_m926770085 (Il2CppObject * __this /* static, unused */, GUIStyle_t1799908754 * p0, GUILayoutOptionU5BU5D_t2108882777* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void SimChat::changeIdentifier(System.String)
+extern "C"  void SimChat_changeIdentifier_m2950911106 (SimChat_t2635359255 * __this, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void testTwoChat::displayChat(UnityEngine.Rect,SimChat,UnityEngine.Vector2,System.String)
+extern "C"  void testTwoChat_displayChat_m520120199 (testTwoChat_t1019399252 * __this, Rect_t3681755626  ___area0, SimChat_t2635359255 * ___sc1, Vector2_t2243707579  ___sp2, String_t* ___sender3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -1130,7 +1477,7 @@ extern "C"  void LoginGUI_Login_m3523772546 (LoginGUI_t4073642432 * __this, cons
 		bool L_11 = GUI_Button_m3054448581(NULL /*static, unused*/, L_10, _stringLiteral4283667535, /*hidden argument*/NULL);
 		if (!L_11)
 		{
-			goto IL_0168;
+			goto IL_0162;
 		}
 	}
 	{
@@ -1157,7 +1504,7 @@ extern "C"  void LoginGUI_Login_m3523772546 (LoginGUI_t4073642432 * __this, cons
 IL_0110:
 	{
 		__this->set_MenuText_9(_stringLiteral1747916857);
-		goto IL_0168;
+		goto IL_0162;
 	}
 
 IL_0120:
@@ -1174,33 +1521,31 @@ IL_0120:
 		NullCheck(L_21);
 		WWWForm_AddField_m1334606983(L_21, _stringLiteral3561732527, L_22, /*hidden argument*/NULL);
 		WWWForm_t3950226929 * L_23 = V_0;
-		MonoBehaviour_print_m3437620292(NULL /*static, unused*/, L_23, /*hidden argument*/NULL);
-		WWWForm_t3950226929 * L_24 = V_0;
-		WWW_t2919945039 * L_25 = (WWW_t2919945039 *)il2cpp_codegen_object_new(WWW_t2919945039_il2cpp_TypeInfo_var);
-		WWW__ctor_m578693146(L_25, _stringLiteral1879271242, L_24, /*hidden argument*/NULL);
-		V_1 = L_25;
-		WWW_t2919945039 * L_26 = V_1;
-		Il2CppObject * L_27 = LoginGUI_Login_m158678506(__this, L_26, /*hidden argument*/NULL);
-		MonoBehaviour_StartCoroutine_m2470621050(__this, L_27, /*hidden argument*/NULL);
+		WWW_t2919945039 * L_24 = (WWW_t2919945039 *)il2cpp_codegen_object_new(WWW_t2919945039_il2cpp_TypeInfo_var);
+		WWW__ctor_m578693146(L_24, _stringLiteral1879271242, L_23, /*hidden argument*/NULL);
+		V_1 = L_24;
+		WWW_t2919945039 * L_25 = V_1;
+		Il2CppObject * L_26 = LoginGUI_Login_m158678506(__this, L_25, /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2470621050(__this, L_26, /*hidden argument*/NULL);
 	}
 
-IL_0168:
+IL_0162:
 	{
-		Rect_t3681755626  L_28;
-		memset(&L_28, 0, sizeof(L_28));
-		Rect__ctor_m1220545469(&L_28, (200.0f), (400.0f), (200.0f), (25.0f), /*hidden argument*/NULL);
+		Rect_t3681755626  L_27;
+		memset(&L_27, 0, sizeof(L_27));
+		Rect__ctor_m1220545469(&L_27, (200.0f), (400.0f), (200.0f), (25.0f), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
-		bool L_29 = GUI_Button_m3054448581(NULL /*static, unused*/, L_28, _stringLiteral881699050, /*hidden argument*/NULL);
-		if (!L_29)
+		bool L_28 = GUI_Button_m3054448581(NULL /*static, unused*/, L_27, _stringLiteral881699050, /*hidden argument*/NULL);
+		if (!L_28)
 		{
-			goto IL_019b;
+			goto IL_0195;
 		}
 	}
 	{
 		__this->set_CurrentGameMenu_8(_stringLiteral231671529);
 	}
 
-IL_019b:
+IL_0195:
 	{
 		return;
 	}
@@ -1396,21 +1741,38 @@ extern "C"  Il2CppObject * LoginGUI_CreateAccount_m3064127964 (LoginGUI_t4073642
 		return L_4;
 	}
 }
-// System.Collections.IEnumerator LoginGUI::loadGame()
-extern "C"  Il2CppObject * LoginGUI_loadGame_m1332632965 (LoginGUI_t4073642432 * __this, const MethodInfo* method)
+// System.Void LoginGUI::loadGame()
+extern "C"  void LoginGUI_loadGame_m195638551 (LoginGUI_t4073642432 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (LoginGUI_loadGame_m1332632965_MetadataUsageId);
+		il2cpp_codegen_initialize_method (LoginGUI_loadGame_m195638551_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	U3CloadGameU3Ec__Iterator2_t431962752 * V_0 = NULL;
 	{
-		U3CloadGameU3Ec__Iterator2_t431962752 * L_0 = (U3CloadGameU3Ec__Iterator2_t431962752 *)il2cpp_codegen_object_new(U3CloadGameU3Ec__Iterator2_t431962752_il2cpp_TypeInfo_var);
-		U3CloadGameU3Ec__Iterator2__ctor_m1729965841(L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral2255930277, /*hidden argument*/NULL);
+		SceneManager_UnloadSceneAsync_m4016707407(NULL /*static, unused*/, _stringLiteral2640409048, /*hidden argument*/NULL);
+		SceneManager_LoadScene_m1386820036(NULL /*static, unused*/, _stringLiteral2640882096, 0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Collections.IEnumerator LoginGUI::loadGameAsync()
+extern "C"  Il2CppObject * LoginGUI_loadGameAsync_m1229451883 (LoginGUI_t4073642432 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (LoginGUI_loadGameAsync_m1229451883_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CloadGameAsyncU3Ec__Iterator2_t152900926 * V_0 = NULL;
+	{
+		U3CloadGameAsyncU3Ec__Iterator2_t152900926 * L_0 = (U3CloadGameAsyncU3Ec__Iterator2_t152900926 *)il2cpp_codegen_object_new(U3CloadGameAsyncU3Ec__Iterator2_t152900926_il2cpp_TypeInfo_var);
+		U3CloadGameAsyncU3Ec__Iterator2__ctor_m3228149975(L_0, /*hidden argument*/NULL);
 		V_0 = L_0;
-		U3CloadGameU3Ec__Iterator2_t431962752 * L_1 = V_0;
+		U3CloadGameAsyncU3Ec__Iterator2_t152900926 * L_1 = V_0;
 		return L_1;
 	}
 }
@@ -1559,21 +1921,21 @@ extern "C"  void U3CCreateAccountU3Ec__Iterator1_Reset_m866869412 (U3CCreateAcco
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
 	}
 }
-// System.Void LoginGUI/<loadGame>c__Iterator2::.ctor()
-extern "C"  void U3CloadGameU3Ec__Iterator2__ctor_m1729965841 (U3CloadGameU3Ec__Iterator2_t431962752 * __this, const MethodInfo* method)
+// System.Void LoginGUI/<loadGameAsync>c__Iterator2::.ctor()
+extern "C"  void U3CloadGameAsyncU3Ec__Iterator2__ctor_m3228149975 (U3CloadGameAsyncU3Ec__Iterator2_t152900926 * __this, const MethodInfo* method)
 {
 	{
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
 		return;
 	}
 }
-// System.Boolean LoginGUI/<loadGame>c__Iterator2::MoveNext()
-extern "C"  bool U3CloadGameU3Ec__Iterator2_MoveNext_m1900517239 (U3CloadGameU3Ec__Iterator2_t431962752 * __this, const MethodInfo* method)
+// System.Boolean LoginGUI/<loadGameAsync>c__Iterator2::MoveNext()
+extern "C"  bool U3CloadGameAsyncU3Ec__Iterator2_MoveNext_m2243395097 (U3CloadGameAsyncU3Ec__Iterator2_t152900926 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (U3CloadGameU3Ec__Iterator2_MoveNext_m1900517239_MetadataUsageId);
+		il2cpp_codegen_initialize_method (U3CloadGameAsyncU3Ec__Iterator2_MoveNext_m2243395097_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	uint32_t V_0 = 0;
@@ -1667,24 +2029,24 @@ IL_00bd:
 		return (bool)1;
 	}
 }
-// System.Object LoginGUI/<loadGame>c__Iterator2::System.Collections.Generic.IEnumerator<object>.get_Current()
-extern "C"  Il2CppObject * U3CloadGameU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1751166299 (U3CloadGameU3Ec__Iterator2_t431962752 * __this, const MethodInfo* method)
+// System.Object LoginGUI/<loadGameAsync>c__Iterator2::System.Collections.Generic.IEnumerator<object>.get_Current()
+extern "C"  Il2CppObject * U3CloadGameAsyncU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3057064109 (U3CloadGameAsyncU3Ec__Iterator2_t152900926 * __this, const MethodInfo* method)
 {
 	{
 		Il2CppObject * L_0 = __this->get_U24current_1();
 		return L_0;
 	}
 }
-// System.Object LoginGUI/<loadGame>c__Iterator2::System.Collections.IEnumerator.get_Current()
-extern "C"  Il2CppObject * U3CloadGameU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m4084526275 (U3CloadGameU3Ec__Iterator2_t431962752 * __this, const MethodInfo* method)
+// System.Object LoginGUI/<loadGameAsync>c__Iterator2::System.Collections.IEnumerator.get_Current()
+extern "C"  Il2CppObject * U3CloadGameAsyncU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m3285225317 (U3CloadGameAsyncU3Ec__Iterator2_t152900926 * __this, const MethodInfo* method)
 {
 	{
 		Il2CppObject * L_0 = __this->get_U24current_1();
 		return L_0;
 	}
 }
-// System.Void LoginGUI/<loadGame>c__Iterator2::Dispose()
-extern "C"  void U3CloadGameU3Ec__Iterator2_Dispose_m1808506722 (U3CloadGameU3Ec__Iterator2_t431962752 * __this, const MethodInfo* method)
+// System.Void LoginGUI/<loadGameAsync>c__Iterator2::Dispose()
+extern "C"  void U3CloadGameAsyncU3Ec__Iterator2_Dispose_m1408572684 (U3CloadGameAsyncU3Ec__Iterator2_t152900926 * __this, const MethodInfo* method)
 {
 	{
 		__this->set_U24disposing_2((bool)1);
@@ -1692,13 +2054,13 @@ extern "C"  void U3CloadGameU3Ec__Iterator2_Dispose_m1808506722 (U3CloadGameU3Ec
 		return;
 	}
 }
-// System.Void LoginGUI/<loadGame>c__Iterator2::Reset()
-extern "C"  void U3CloadGameU3Ec__Iterator2_Reset_m3487147748 (U3CloadGameU3Ec__Iterator2_t431962752 * __this, const MethodInfo* method)
+// System.Void LoginGUI/<loadGameAsync>c__Iterator2::Reset()
+extern "C"  void U3CloadGameAsyncU3Ec__Iterator2_Reset_m4147414 (U3CloadGameAsyncU3Ec__Iterator2_t152900926 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (U3CloadGameU3Ec__Iterator2_Reset_m3487147748_MetadataUsageId);
+		il2cpp_codegen_initialize_method (U3CloadGameAsyncU3Ec__Iterator2_Reset_m4147414_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -1743,7 +2105,7 @@ extern "C"  bool U3CLoginU3Ec__Iterator0_MoveNext_m4166444560 (U3CLoginU3Ec__Ite
 		}
 	}
 	{
-		goto IL_00ce;
+		goto IL_00cd;
 	}
 
 IL_0021:
@@ -1762,7 +2124,7 @@ IL_0021:
 
 IL_003c:
 	{
-		goto IL_00d0;
+		goto IL_00cf;
 	}
 
 IL_0041:
@@ -1772,7 +2134,7 @@ IL_0041:
 		String_t* L_5 = WWW_get_error_m3092701216(L_4, /*hidden argument*/NULL);
 		if (L_5)
 		{
-			goto IL_00a7;
+			goto IL_00a6;
 		}
 	}
 	{
@@ -1783,7 +2145,7 @@ IL_0041:
 		bool L_8 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_7, _stringLiteral3018578246, /*hidden argument*/NULL);
 		if (!L_8)
 		{
-			goto IL_008c;
+			goto IL_008b;
 		}
 	}
 	{
@@ -1792,11 +2154,11 @@ IL_0041:
 		L_9->set_MenuText_9(_stringLiteral3683487199);
 		LoginGUI_t4073642432 * L_10 = __this->get_U24this_1();
 		NullCheck(L_10);
-		LoginGUI_loadGame_m1332632965(L_10, /*hidden argument*/NULL);
-		goto IL_00a2;
+		LoginGUI_loadGame_m195638551(L_10, /*hidden argument*/NULL);
+		goto IL_00a1;
 	}
 
-IL_008c:
+IL_008b:
 	{
 		LoginGUI_t4073642432 * L_11 = __this->get_U24this_1();
 		WWW_t2919945039 * L_12 = __this->get__w_0();
@@ -1806,12 +2168,12 @@ IL_008c:
 		L_11->set_MenuText_9(L_13);
 	}
 
-IL_00a2:
+IL_00a1:
 	{
-		goto IL_00c7;
+		goto IL_00c6;
 	}
 
-IL_00a7:
+IL_00a6:
 	{
 		LoginGUI_t4073642432 * L_14 = __this->get_U24this_1();
 		WWW_t2919945039 * L_15 = __this->get__w_0();
@@ -1823,17 +2185,17 @@ IL_00a7:
 		L_14->set_MenuText_9(L_17);
 	}
 
-IL_00c7:
+IL_00c6:
 	{
 		__this->set_U24PC_4((-1));
 	}
 
-IL_00ce:
+IL_00cd:
 	{
 		return (bool)0;
 	}
 
-IL_00d0:
+IL_00cf:
 	{
 		return (bool)1;
 	}
@@ -2219,6 +2581,1000 @@ extern "C"  void U3CGetGoogleMapU3Ec__Iterator0_Reset_m2581645829 (U3CGetGoogleM
 		NotSupportedException_t1793819818 * L_0 = (NotSupportedException_t1793819818 *)il2cpp_codegen_object_new(NotSupportedException_t1793819818_il2cpp_TypeInfo_var);
 		NotSupportedException__ctor_m3232764727(L_0, /*hidden argument*/NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
+	}
+}
+// System.Void SimpleChat::.ctor(System.String,UnityEngine.MonoBehaviour,System.String)
+extern "C"  void SimpleChat__ctor_m1147096138 (SimpleChat_t403391640 * __this, String_t* ___identifier0, MonoBehaviour_t1158329972 * ___currentMonoBehaviour1, String_t* ___senderName2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SimpleChat__ctor_m1147096138_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		__this->set_show_10((bool)1);
+		int32_t L_0 = Screen_get_width_m41137238(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_1 = Screen_get_height_m1051800773(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_2 = Screen_get_width_m41137238(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_3 = Screen_get_height_m1051800773(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Rect_t3681755626  L_4;
+		memset(&L_4, 0, sizeof(L_4));
+		Rect__ctor_m1220545469(&L_4, ((float)((float)(((float)((float)L_0)))*(float)(0.6f))), ((float)((float)(((float)((float)L_1)))*(float)(0.6f))), ((float)((float)(((float)((float)L_2)))*(float)(0.4f))), ((float)((float)(((float)((float)L_3)))*(float)(0.4f))), /*hidden argument*/NULL);
+		__this->set_chatRect_11(L_4);
+		__this->set_messageTime_12((3.0f));
+		__this->set_textSize_14(((int32_t)17));
+		Color_t2020392075  L_5 = Color_get_red_m2410286591(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_myColor_15(L_5);
+		Color_t2020392075  L_6 = Color_get_green_m2671273823(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_theirColor_16(L_6);
+		Vector2_t2243707579  L_7 = Vector2_get_zero_m3966848876(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_sp_17(L_7);
+		List_1_t1398341365 * L_8 = (List_1_t1398341365 *)il2cpp_codegen_object_new(List_1_t1398341365_il2cpp_TypeInfo_var);
+		List_1__ctor_m3854603248(L_8, /*hidden argument*/List_1__ctor_m3854603248_MethodInfo_var);
+		__this->set_pending_19(L_8);
+		String_t* L_9 = ___identifier0;
+		MonoBehaviour_t1158329972 * L_10 = ___currentMonoBehaviour1;
+		String_t* L_11 = ___senderName2;
+		SimChat__ctor_m1036284394(__this, L_9, L_10, L_11, /*hidden argument*/NULL);
+		SimChat_continueCheckMessages_m1003954020(__this, /*hidden argument*/NULL);
+		float L_12 = __this->get_messageTime_12();
+		__this->set_rt_13(((-L_12)));
+		IntPtr_t L_13;
+		L_13.set_m_value_0((void*)(void*)SimpleChat_receive_m3000470043_MethodInfo_var);
+		Action_1_t2368512252 * L_14 = (Action_1_t2368512252 *)il2cpp_codegen_object_new(Action_1_t2368512252_il2cpp_TypeInfo_var);
+		Action_1__ctor_m4077604895(L_14, __this, L_13, /*hidden argument*/Action_1__ctor_m4077604895_MethodInfo_var);
+		SimChat_setReceiveFunction_m3855945349(__this, L_14, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SimpleChat::receive(SimpleMessage[])
+extern "C"  void SimpleChat_receive_m3000470043 (SimpleChat_t403391640 * __this, SimpleMessageU5BU5D_t2566712870* ___sma0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SimpleChat_receive_m3000470043_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		List_1_t407015531 * L_0 = ((SimChat_t2635359255 *)__this)->get_allMessages_1();
+		List_1_t407015531 * L_1 = ((SimChat_t2635359255 *)__this)->get_allMessages_1();
+		NullCheck(L_1);
+		int32_t L_2 = List_1_get_Count_m3828712489(L_1, /*hidden argument*/List_1_get_Count_m3828712489_MethodInfo_var);
+		NullCheck(L_0);
+		SimpleMessage_t1037894399 * L_3 = List_1_get_Item_m378422711(L_0, ((int32_t)((int32_t)L_2-(int32_t)1)), /*hidden argument*/List_1_get_Item_m378422711_MethodInfo_var);
+		NullCheck(L_3);
+		String_t* L_4 = L_3->get_sender_1();
+		String_t* L_5 = SimChat_get_senderName_m1698608763(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_6 = String_op_Inequality_m304203149(NULL /*static, unused*/, L_4, L_5, /*hidden argument*/NULL);
+		if (!L_6)
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		float L_7 = Time_get_time_m2216684562(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_rt_13(L_7);
+	}
+
+IL_0038:
+	{
+		Vector2_t2243707579 * L_8 = __this->get_address_of_sp_17();
+		L_8->set_y_1((std::numeric_limits<float>::infinity()));
+		List_1_t1398341365 * L_9 = (List_1_t1398341365 *)il2cpp_codegen_object_new(List_1_t1398341365_il2cpp_TypeInfo_var);
+		List_1__ctor_m3854603248(L_9, /*hidden argument*/List_1__ctor_m3854603248_MethodInfo_var);
+		__this->set_pending_19(L_9);
+		return;
+	}
+}
+// System.Void SimpleChat::draw()
+extern "C"  void SimpleChat_draw_m869370447 (SimpleChat_t403391640 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SimpleChat_draw_m869370447_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	SimpleMessage_t1037894399 * V_1 = NULL;
+	Enumerator_t4236712501  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	String_t* V_3 = NULL;
+	Enumerator_t933071039  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		float L_0 = Time_get_time_m2216684562(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_1 = __this->get_rt_13();
+		float L_2 = __this->get_messageTime_12();
+		if ((!(((float)((float)((float)L_0-(float)L_1))) < ((float)L_2))))
+		{
+			goto IL_0080;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
+		GUISkin_t1436893342 * L_3 = GUI_get_skin_m2309570990(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		GUIStyle_t1799908754 * L_4 = GUISkin_get_label_m2703078986(L_3, /*hidden argument*/NULL);
+		int32_t L_5 = __this->get_textSize_14();
+		NullCheck(L_4);
+		GUIStyle_set_fontSize_m4015341543(L_4, L_5, /*hidden argument*/NULL);
+		List_1_t407015531 * L_6 = ((SimChat_t2635359255 *)__this)->get_allMessages_1();
+		List_1_t407015531 * L_7 = ((SimChat_t2635359255 *)__this)->get_allMessages_1();
+		NullCheck(L_7);
+		int32_t L_8 = List_1_get_Count_m3828712489(L_7, /*hidden argument*/List_1_get_Count_m3828712489_MethodInfo_var);
+		NullCheck(L_6);
+		SimpleMessage_t1037894399 * L_9 = List_1_get_Item_m378422711(L_6, ((int32_t)((int32_t)L_8-(int32_t)1)), /*hidden argument*/List_1_get_Item_m378422711_MethodInfo_var);
+		NullCheck(L_9);
+		String_t* L_10 = L_9->get_sender_1();
+		List_1_t407015531 * L_11 = ((SimChat_t2635359255 *)__this)->get_allMessages_1();
+		List_1_t407015531 * L_12 = ((SimChat_t2635359255 *)__this)->get_allMessages_1();
+		NullCheck(L_12);
+		int32_t L_13 = List_1_get_Count_m3828712489(L_12, /*hidden argument*/List_1_get_Count_m3828712489_MethodInfo_var);
+		NullCheck(L_11);
+		SimpleMessage_t1037894399 * L_14 = List_1_get_Item_m378422711(L_11, ((int32_t)((int32_t)L_13-(int32_t)1)), /*hidden argument*/List_1_get_Item_m378422711_MethodInfo_var);
+		NullCheck(L_14);
+		String_t* L_15 = L_14->get_message_2();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_16 = String_Concat_m1561703559(NULL /*static, unused*/, _stringLiteral3918381725, L_10, _stringLiteral811305496, L_15, /*hidden argument*/NULL);
+		GUILayout_Label_m3466110979(NULL /*static, unused*/, L_16, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+	}
+
+IL_0080:
+	{
+		bool L_17 = __this->get_show_10();
+		if (!L_17)
+		{
+			goto IL_02e7;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
+		GUISkin_t1436893342 * L_18 = GUI_get_skin_m2309570990(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_18);
+		GUIStyle_t1799908754 * L_19 = GUISkin_get_textField_m757680403(L_18, /*hidden argument*/NULL);
+		int32_t L_20 = __this->get_textSize_14();
+		V_0 = L_20;
+		GUISkin_t1436893342 * L_21 = GUI_get_skin_m2309570990(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_21);
+		GUIStyle_t1799908754 * L_22 = GUISkin_get_label_m2703078986(L_21, /*hidden argument*/NULL);
+		int32_t L_23 = V_0;
+		NullCheck(L_22);
+		GUIStyle_set_fontSize_m4015341543(L_22, L_23, /*hidden argument*/NULL);
+		int32_t L_24 = V_0;
+		V_0 = L_24;
+		GUISkin_t1436893342 * L_25 = GUI_get_skin_m2309570990(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_25);
+		GUIStyle_t1799908754 * L_26 = GUISkin_get_button_m797402546(L_25, /*hidden argument*/NULL);
+		int32_t L_27 = V_0;
+		NullCheck(L_26);
+		GUIStyle_set_fontSize_m4015341543(L_26, L_27, /*hidden argument*/NULL);
+		int32_t L_28 = V_0;
+		NullCheck(L_19);
+		GUIStyle_set_fontSize_m4015341543(L_19, L_28, /*hidden argument*/NULL);
+		GUISkin_t1436893342 * L_29 = GUI_get_skin_m2309570990(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_29);
+		GUIStyle_t1799908754 * L_30 = GUISkin_get_label_m2703078986(L_29, /*hidden argument*/NULL);
+		NullCheck(L_30);
+		GUIStyle_set_wordWrap_m2043927261(L_30, (bool)0, /*hidden argument*/NULL);
+		Rect_t3681755626  L_31 = __this->get_chatRect_11();
+		GUILayout_BeginArea_m3297699023(NULL /*static, unused*/, L_31, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(GUIStyle_t1799908754_il2cpp_TypeInfo_var);
+		GUIStyle_t1799908754 * L_32 = GUIStyle_op_Implicit_m781448948(NULL /*static, unused*/, _stringLiteral1502598545, /*hidden argument*/NULL);
+		GUILayout_BeginVertical_m4288558889(NULL /*static, unused*/, L_32, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		GUIStyle_t1799908754 * L_33 = GUIStyle_op_Implicit_m781448948(NULL /*static, unused*/, _stringLiteral1502598545, /*hidden argument*/NULL);
+		GUILayout_BeginVertical_m4288558889(NULL /*static, unused*/, L_33, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		Vector2_t2243707579  L_34 = __this->get_sp_17();
+		Vector2_t2243707579  L_35 = GUILayout_BeginScrollView_m4280181007(NULL /*static, unused*/, L_34, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		__this->set_sp_17(L_35);
+		GUILayout_FlexibleSpace_m2019304577(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Color_t2020392075  L_36 = GUI_get_contentColor_m1106662582(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_c_18(L_36);
+		List_1_t407015531 * L_37 = ((SimChat_t2635359255 *)__this)->get_allMessages_1();
+		NullCheck(L_37);
+		Enumerator_t4236712501  L_38 = List_1_GetEnumerator_m2667932065(L_37, /*hidden argument*/List_1_GetEnumerator_m2667932065_MethodInfo_var);
+		V_2 = L_38;
+	}
+
+IL_013c:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_01c6;
+		}
+
+IL_0141:
+		{
+			SimpleMessage_t1037894399 * L_39 = Enumerator_get_Current_m2734703333((&V_2), /*hidden argument*/Enumerator_get_Current_m2734703333_MethodInfo_var);
+			V_1 = L_39;
+			GUILayout_BeginHorizontal_m212592284(NULL /*static, unused*/, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+			SimpleMessage_t1037894399 * L_40 = V_1;
+			NullCheck(L_40);
+			String_t* L_41 = L_40->get_sender_1();
+			String_t* L_42 = SimChat_get_senderName_m1698608763(__this, /*hidden argument*/NULL);
+			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+			bool L_43 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_41, L_42, /*hidden argument*/NULL);
+			if (!L_43)
+			{
+				goto IL_0190;
+			}
+		}
+
+IL_016a:
+		{
+			Color_t2020392075  L_44 = __this->get_myColor_15();
+			IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
+			GUI_set_contentColor_m4064322821(NULL /*static, unused*/, L_44, /*hidden argument*/NULL);
+			GUILayout_FlexibleSpace_m2019304577(NULL /*static, unused*/, /*hidden argument*/NULL);
+			SimpleMessage_t1037894399 * L_45 = V_1;
+			NullCheck(L_45);
+			String_t* L_46 = L_45->get_message_2();
+			GUILayout_Label_m3466110979(NULL /*static, unused*/, L_46, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+			goto IL_01c1;
+		}
+
+IL_0190:
+		{
+			Color_t2020392075  L_47 = __this->get_theirColor_16();
+			IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
+			GUI_set_contentColor_m4064322821(NULL /*static, unused*/, L_47, /*hidden argument*/NULL);
+			SimpleMessage_t1037894399 * L_48 = V_1;
+			NullCheck(L_48);
+			String_t* L_49 = L_48->get_sender_1();
+			SimpleMessage_t1037894399 * L_50 = V_1;
+			NullCheck(L_50);
+			String_t* L_51 = L_50->get_message_2();
+			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+			String_t* L_52 = String_Concat_m612901809(NULL /*static, unused*/, L_49, _stringLiteral811305496, L_51, /*hidden argument*/NULL);
+			GUILayout_Label_m3466110979(NULL /*static, unused*/, L_52, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+			GUILayout_FlexibleSpace_m2019304577(NULL /*static, unused*/, /*hidden argument*/NULL);
+		}
+
+IL_01c1:
+		{
+			GUILayout_EndHorizontal_m4258536965(NULL /*static, unused*/, /*hidden argument*/NULL);
+		}
+
+IL_01c6:
+		{
+			bool L_53 = Enumerator_MoveNext_m4050449165((&V_2), /*hidden argument*/Enumerator_MoveNext_m4050449165_MethodInfo_var);
+			if (L_53)
+			{
+				goto IL_0141;
+			}
+		}
+
+IL_01d2:
+		{
+			IL2CPP_LEAVE(0x1E5, FINALLY_01d7);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+		goto FINALLY_01d7;
+	}
+
+FINALLY_01d7:
+	{ // begin finally (depth: 1)
+		Enumerator_Dispose_m2762253675((&V_2), /*hidden argument*/Enumerator_Dispose_m2762253675_MethodInfo_var);
+		IL2CPP_END_FINALLY(471)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(471)
+	{
+		IL2CPP_JUMP_TBL(0x1E5, IL_01e5)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+	}
+
+IL_01e5:
+	{
+		Color_t2020392075  L_54 = __this->get_myColor_15();
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
+		GUI_set_contentColor_m4064322821(NULL /*static, unused*/, L_54, /*hidden argument*/NULL);
+		List_1_t1398341365 * L_55 = __this->get_pending_19();
+		NullCheck(L_55);
+		Enumerator_t933071039  L_56 = List_1_GetEnumerator_m804483696(L_55, /*hidden argument*/List_1_GetEnumerator_m804483696_MethodInfo_var);
+		V_4 = L_56;
+	}
+
+IL_01fd:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_022b;
+		}
+
+IL_0202:
+		{
+			String_t* L_57 = Enumerator_get_Current_m870713862((&V_4), /*hidden argument*/Enumerator_get_Current_m870713862_MethodInfo_var);
+			V_3 = L_57;
+			GUILayout_BeginHorizontal_m212592284(NULL /*static, unused*/, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+			GUILayout_FlexibleSpace_m2019304577(NULL /*static, unused*/, /*hidden argument*/NULL);
+			String_t* L_58 = V_3;
+			GUILayout_Label_m3466110979(NULL /*static, unused*/, L_58, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+			GUILayout_EndHorizontal_m4258536965(NULL /*static, unused*/, /*hidden argument*/NULL);
+		}
+
+IL_022b:
+		{
+			bool L_59 = Enumerator_MoveNext_m4175023932((&V_4), /*hidden argument*/Enumerator_MoveNext_m4175023932_MethodInfo_var);
+			if (L_59)
+			{
+				goto IL_0202;
+			}
+		}
+
+IL_0237:
+		{
+			IL2CPP_LEAVE(0x24A, FINALLY_023c);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+		goto FINALLY_023c;
+	}
+
+FINALLY_023c:
+	{ // begin finally (depth: 1)
+		Enumerator_Dispose_m2205157096((&V_4), /*hidden argument*/Enumerator_Dispose_m2205157096_MethodInfo_var);
+		IL2CPP_END_FINALLY(572)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(572)
+	{
+		IL2CPP_JUMP_TBL(0x24A, IL_024a)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+	}
+
+IL_024a:
+	{
+		Color_t2020392075  L_60 = __this->get_c_18();
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
+		GUI_set_contentColor_m4064322821(NULL /*static, unused*/, L_60, /*hidden argument*/NULL);
+		GUILayout_EndScrollView_m1883730923(NULL /*static, unused*/, /*hidden argument*/NULL);
+		GUILayout_EndVertical_m297596185(NULL /*static, unused*/, /*hidden argument*/NULL);
+		GUILayout_BeginHorizontal_m212592284(NULL /*static, unused*/, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		String_t* L_61 = ((SimChat_t2635359255 *)__this)->get_message_0();
+		String_t* L_62 = GUILayout_TextField_m1976649007(NULL /*static, unused*/, L_61, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		((SimChat_t2635359255 *)__this)->set_message_0(L_62);
+		bool L_63 = GUILayout_Button_m3322709003(NULL /*static, unused*/, _stringLiteral4136223372, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		if (L_63)
+		{
+			goto IL_02b6;
+		}
+	}
+	{
+		Event_t3028476042 * L_64 = Event_get_current_m2901774193(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_64);
+		bool L_65 = Event_get_isKey_m1145918225(L_64, /*hidden argument*/NULL);
+		if (!L_65)
+		{
+			goto IL_02d8;
+		}
+	}
+	{
+		Event_t3028476042 * L_66 = Event_get_current_m2901774193(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_66);
+		int32_t L_67 = Event_get_keyCode_m3364681288(L_66, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_67) == ((uint32_t)((int32_t)13)))))
+		{
+			goto IL_02d8;
+		}
+	}
+
+IL_02b6:
+	{
+		SimChat_sendMessage_m3528977650(__this, /*hidden argument*/NULL);
+		List_1_t1398341365 * L_68 = __this->get_pending_19();
+		String_t* L_69 = ((SimChat_t2635359255 *)__this)->get_message_0();
+		NullCheck(L_68);
+		List_1_Add_m4061286785(L_68, L_69, /*hidden argument*/List_1_Add_m4061286785_MethodInfo_var);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_70 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		((SimChat_t2635359255 *)__this)->set_message_0(L_70);
+	}
+
+IL_02d8:
+	{
+		GUILayout_EndHorizontal_m4258536965(NULL /*static, unused*/, /*hidden argument*/NULL);
+		GUILayout_EndVertical_m297596185(NULL /*static, unused*/, /*hidden argument*/NULL);
+		GUILayout_EndArea_m1904221074(NULL /*static, unused*/, /*hidden argument*/NULL);
+	}
+
+IL_02e7:
+	{
+		return;
+	}
+}
+// System.Void testExtendClass::.ctor()
+extern "C"  void testExtendClass__ctor_m3783322273 (testExtendClass_t3109871312 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void testExtendClass::Start()
+extern "C"  void testExtendClass_Start_m4225937281 (testExtendClass_t3109871312 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (testExtendClass_Start_m4225937281_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	StringU5BU5D_t1642385972* V_0 = NULL;
+	{
+		StringU5BU5D_t1642385972* L_0 = ((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)((int32_t)10)));
+		NullCheck(L_0);
+		ArrayElementTypeCheck (L_0, _stringLiteral3015944840);
+		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral3015944840);
+		StringU5BU5D_t1642385972* L_1 = L_0;
+		NullCheck(L_1);
+		ArrayElementTypeCheck (L_1, _stringLiteral1884851282);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteral1884851282);
+		StringU5BU5D_t1642385972* L_2 = L_1;
+		NullCheck(L_2);
+		ArrayElementTypeCheck (L_2, _stringLiteral1502599131);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral1502599131);
+		StringU5BU5D_t1642385972* L_3 = L_2;
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, _stringLiteral3989186809);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteral3989186809);
+		StringU5BU5D_t1642385972* L_4 = L_3;
+		NullCheck(L_4);
+		ArrayElementTypeCheck (L_4, _stringLiteral3542905434);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral3542905434);
+		StringU5BU5D_t1642385972* L_5 = L_4;
+		NullCheck(L_5);
+		ArrayElementTypeCheck (L_5, _stringLiteral2913846051);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)_stringLiteral2913846051);
+		StringU5BU5D_t1642385972* L_6 = L_5;
+		NullCheck(L_6);
+		ArrayElementTypeCheck (L_6, _stringLiteral1589616170);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteral1589616170);
+		StringU5BU5D_t1642385972* L_7 = L_6;
+		NullCheck(L_7);
+		ArrayElementTypeCheck (L_7, _stringLiteral3097239528);
+		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(7), (String_t*)_stringLiteral3097239528);
+		StringU5BU5D_t1642385972* L_8 = L_7;
+		NullCheck(L_8);
+		ArrayElementTypeCheck (L_8, _stringLiteral943704929);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(8), (String_t*)_stringLiteral943704929);
+		StringU5BU5D_t1642385972* L_9 = L_8;
+		NullCheck(L_9);
+		ArrayElementTypeCheck (L_9, _stringLiteral2959663652);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (String_t*)_stringLiteral2959663652);
+		V_0 = L_9;
+		GameObject_t1756533147 * L_10 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		MonoBehaviour_t1158329972 * L_11 = GameObject_GetComponent_TisMonoBehaviour_t1158329972_m3597292854(L_10, /*hidden argument*/GameObject_GetComponent_TisMonoBehaviour_t1158329972_m3597292854_MethodInfo_var);
+		StringU5BU5D_t1642385972* L_12 = V_0;
+		StringU5BU5D_t1642385972* L_13 = V_0;
+		NullCheck(L_13);
+		int32_t L_14 = Random_Range_m694320887(NULL /*static, unused*/, 0, (((int32_t)((int32_t)(((Il2CppArray *)L_13)->max_length)))), /*hidden argument*/NULL);
+		NullCheck(L_12);
+		int32_t L_15 = L_14;
+		String_t* L_16 = (L_12)->GetAt(static_cast<il2cpp_array_size_t>(L_15));
+		SimpleChat_t403391640 * L_17 = (SimpleChat_t403391640 *)il2cpp_codegen_object_new(SimpleChat_t403391640_il2cpp_TypeInfo_var);
+		SimpleChat__ctor_m1147096138(L_17, _stringLiteral3564902503, L_11, L_16, /*hidden argument*/NULL);
+		__this->set_sc_2(L_17);
+		return;
+	}
+}
+// System.Void testExtendClass::OnGUI()
+extern "C"  void testExtendClass_OnGUI_m134770207 (testExtendClass_t3109871312 * __this, const MethodInfo* method)
+{
+	{
+		SimpleChat_t403391640 * L_0 = __this->get_sc_2();
+		NullCheck(L_0);
+		SimpleChat_draw_m869370447(L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void testTwoChat::.ctor()
+extern "C"  void testTwoChat__ctor_m2988851851 (testTwoChat_t1019399252 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (testTwoChat__ctor_m2988851851_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Vector2_t2243707579  L_0 = Vector2_get_zero_m3966848876(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_sp_4(L_0);
+		Vector2_t2243707579  L_1 = Vector2_get_zero_m3966848876(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_sp2_5(L_1);
+		StringU5BU5D_t1642385972* L_2 = ((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)((int32_t)10)));
+		NullCheck(L_2);
+		ArrayElementTypeCheck (L_2, _stringLiteral3015944840);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral3015944840);
+		StringU5BU5D_t1642385972* L_3 = L_2;
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, _stringLiteral1884851282);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteral1884851282);
+		StringU5BU5D_t1642385972* L_4 = L_3;
+		NullCheck(L_4);
+		ArrayElementTypeCheck (L_4, _stringLiteral1502599131);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral1502599131);
+		StringU5BU5D_t1642385972* L_5 = L_4;
+		NullCheck(L_5);
+		ArrayElementTypeCheck (L_5, _stringLiteral3989186809);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteral3989186809);
+		StringU5BU5D_t1642385972* L_6 = L_5;
+		NullCheck(L_6);
+		ArrayElementTypeCheck (L_6, _stringLiteral3542905434);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral3542905434);
+		StringU5BU5D_t1642385972* L_7 = L_6;
+		NullCheck(L_7);
+		ArrayElementTypeCheck (L_7, _stringLiteral2913846051);
+		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)_stringLiteral2913846051);
+		StringU5BU5D_t1642385972* L_8 = L_7;
+		NullCheck(L_8);
+		ArrayElementTypeCheck (L_8, _stringLiteral1589616170);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteral1589616170);
+		StringU5BU5D_t1642385972* L_9 = L_8;
+		NullCheck(L_9);
+		ArrayElementTypeCheck (L_9, _stringLiteral3097239528);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(7), (String_t*)_stringLiteral3097239528);
+		StringU5BU5D_t1642385972* L_10 = L_9;
+		NullCheck(L_10);
+		ArrayElementTypeCheck (L_10, _stringLiteral943704929);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(8), (String_t*)_stringLiteral943704929);
+		StringU5BU5D_t1642385972* L_11 = L_10;
+		NullCheck(L_11);
+		ArrayElementTypeCheck (L_11, _stringLiteral2959663652);
+		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (String_t*)_stringLiteral2959663652);
+		__this->set_names_6(L_11);
+		__this->set_chatGroup_9(_stringLiteral3564902503);
+		__this->set_rt1_11((-3.0f));
+		__this->set_rt2_12((-3.0f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void testTwoChat::Start()
+extern "C"  void testTwoChat_Start_m819919023 (testTwoChat_t1019399252 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (testTwoChat_Start_m819919023_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	{
+		String_t* L_0 = __this->get_chatGroup_9();
+		__this->set_newGroup_10(L_0);
+		StringU5BU5D_t1642385972* L_1 = __this->get_names_6();
+		NullCheck(L_1);
+		int32_t L_2 = Random_Range_m694320887(NULL /*static, unused*/, 0, (((int32_t)((int32_t)(((Il2CppArray *)L_1)->max_length)))), /*hidden argument*/NULL);
+		V_0 = L_2;
+		StringU5BU5D_t1642385972* L_3 = __this->get_names_6();
+		NullCheck(L_3);
+		int32_t L_4 = Random_Range_m694320887(NULL /*static, unused*/, 0, (((int32_t)((int32_t)(((Il2CppArray *)L_3)->max_length)))), /*hidden argument*/NULL);
+		V_1 = L_4;
+		StringU5BU5D_t1642385972* L_5 = __this->get_names_6();
+		int32_t L_6 = V_0;
+		NullCheck(L_5);
+		int32_t L_7 = L_6;
+		String_t* L_8 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7));
+		__this->set_n1_7(L_8);
+		goto IL_004c;
+	}
+
+IL_003d:
+	{
+		StringU5BU5D_t1642385972* L_9 = __this->get_names_6();
+		NullCheck(L_9);
+		int32_t L_10 = Random_Range_m694320887(NULL /*static, unused*/, 0, (((int32_t)((int32_t)(((Il2CppArray *)L_9)->max_length)))), /*hidden argument*/NULL);
+		V_1 = L_10;
+	}
+
+IL_004c:
+	{
+		int32_t L_11 = V_0;
+		int32_t L_12 = V_1;
+		if ((((int32_t)L_11) == ((int32_t)L_12)))
+		{
+			goto IL_003d;
+		}
+	}
+	{
+		StringU5BU5D_t1642385972* L_13 = __this->get_names_6();
+		int32_t L_14 = V_1;
+		NullCheck(L_13);
+		int32_t L_15 = L_14;
+		String_t* L_16 = (L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_15));
+		__this->set_n2_8(L_16);
+		GameObject_t1756533147 * L_17 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		NullCheck(L_17);
+		MonoBehaviour_t1158329972 * L_18 = GameObject_GetComponent_TisMonoBehaviour_t1158329972_m3597292854(L_17, /*hidden argument*/GameObject_GetComponent_TisMonoBehaviour_t1158329972_m3597292854_MethodInfo_var);
+		String_t* L_19 = __this->get_n1_7();
+		SimChat_t2635359255 * L_20 = (SimChat_t2635359255 *)il2cpp_codegen_object_new(SimChat_t2635359255_il2cpp_TypeInfo_var);
+		SimChat__ctor_m1036284394(L_20, _stringLiteral3564902503, L_18, L_19, /*hidden argument*/NULL);
+		__this->set_sc_2(L_20);
+		GameObject_t1756533147 * L_21 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		NullCheck(L_21);
+		MonoBehaviour_t1158329972 * L_22 = GameObject_GetComponent_TisMonoBehaviour_t1158329972_m3597292854(L_21, /*hidden argument*/GameObject_GetComponent_TisMonoBehaviour_t1158329972_m3597292854_MethodInfo_var);
+		String_t* L_23 = __this->get_n2_8();
+		SimChat_t2635359255 * L_24 = (SimChat_t2635359255 *)il2cpp_codegen_object_new(SimChat_t2635359255_il2cpp_TypeInfo_var);
+		SimChat__ctor_m1036284394(L_24, _stringLiteral3564902503, L_22, L_23, /*hidden argument*/NULL);
+		__this->set_sc2_3(L_24);
+		SimChat_t2635359255 * L_25 = __this->get_sc_2();
+		NullCheck(L_25);
+		SimChat_continueCheckMessages_m1003954020(L_25, /*hidden argument*/NULL);
+		SimChat_t2635359255 * L_26 = __this->get_sc2_3();
+		NullCheck(L_26);
+		SimChat_continueCheckMessages_m1003954020(L_26, /*hidden argument*/NULL);
+		SimChat_t2635359255 * L_27 = __this->get_sc_2();
+		IntPtr_t L_28;
+		L_28.set_m_value_0((void*)(void*)testTwoChat_receiveMessage1_m1668380777_MethodInfo_var);
+		Action_1_t2368512252 * L_29 = (Action_1_t2368512252 *)il2cpp_codegen_object_new(Action_1_t2368512252_il2cpp_TypeInfo_var);
+		Action_1__ctor_m4077604895(L_29, __this, L_28, /*hidden argument*/Action_1__ctor_m4077604895_MethodInfo_var);
+		NullCheck(L_27);
+		SimChat_setReceiveFunction_m3855945349(L_27, L_29, /*hidden argument*/NULL);
+		SimChat_t2635359255 * L_30 = __this->get_sc2_3();
+		IntPtr_t L_31;
+		L_31.set_m_value_0((void*)(void*)testTwoChat_receiveMessage2_m2913369038_MethodInfo_var);
+		Action_1_t2368512252 * L_32 = (Action_1_t2368512252 *)il2cpp_codegen_object_new(Action_1_t2368512252_il2cpp_TypeInfo_var);
+		Action_1__ctor_m4077604895(L_32, __this, L_31, /*hidden argument*/Action_1__ctor_m4077604895_MethodInfo_var);
+		NullCheck(L_30);
+		SimChat_setReceiveFunction_m3855945349(L_30, L_32, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void testTwoChat::receiveMessage1(SimpleMessage[])
+extern "C"  void testTwoChat_receiveMessage1_m1668380777 (testTwoChat_t1019399252 * __this, SimpleMessageU5BU5D_t2566712870* ___sm0, const MethodInfo* method)
+{
+	{
+		float L_0 = Time_get_time_m2216684562(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_rt1_11(L_0);
+		return;
+	}
+}
+// System.Void testTwoChat::receiveMessage2(SimpleMessage[])
+extern "C"  void testTwoChat_receiveMessage2_m2913369038 (testTwoChat_t1019399252 * __this, SimpleMessageU5BU5D_t2566712870* ___sm0, const MethodInfo* method)
+{
+	{
+		float L_0 = Time_get_time_m2216684562(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_rt2_12(L_0);
+		return;
+	}
+}
+// System.Void testTwoChat::OnGUI()
+extern "C"  void testTwoChat_OnGUI_m3836617937 (testTwoChat_t1019399252 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (testTwoChat_OnGUI_m3836617937_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
+		GUISkin_t1436893342 * L_0 = GUI_get_skin_m2309570990(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		GUIStyle_t1799908754 * L_1 = GUISkin_get_textField_m757680403(L_0, /*hidden argument*/NULL);
+		V_0 = ((int32_t)17);
+		GUISkin_t1436893342 * L_2 = GUI_get_skin_m2309570990(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		GUIStyle_t1799908754 * L_3 = GUISkin_get_label_m2703078986(L_2, /*hidden argument*/NULL);
+		int32_t L_4 = V_0;
+		NullCheck(L_3);
+		GUIStyle_set_fontSize_m4015341543(L_3, L_4, /*hidden argument*/NULL);
+		int32_t L_5 = V_0;
+		V_0 = L_5;
+		GUISkin_t1436893342 * L_6 = GUI_get_skin_m2309570990(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_6);
+		GUIStyle_t1799908754 * L_7 = GUISkin_get_button_m797402546(L_6, /*hidden argument*/NULL);
+		int32_t L_8 = V_0;
+		NullCheck(L_7);
+		GUIStyle_set_fontSize_m4015341543(L_7, L_8, /*hidden argument*/NULL);
+		int32_t L_9 = V_0;
+		NullCheck(L_1);
+		GUIStyle_set_fontSize_m4015341543(L_1, L_9, /*hidden argument*/NULL);
+		GUISkin_t1436893342 * L_10 = GUI_get_skin_m2309570990(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		GUIStyle_t1799908754 * L_11 = GUISkin_get_label_m2703078986(L_10, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		GUIStyle_set_wordWrap_m2043927261(L_11, (bool)0, /*hidden argument*/NULL);
+		int32_t L_12 = Screen_get_width_m41137238(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Rect_t3681755626  L_13;
+		memset(&L_13, 0, sizeof(L_13));
+		Rect__ctor_m1220545469(&L_13, (0.0f), (0.0f), (((float)((float)L_12))), (40.0f), /*hidden argument*/NULL);
+		GUILayout_BeginArea_m3297699023(NULL /*static, unused*/, L_13, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(GUIStyle_t1799908754_il2cpp_TypeInfo_var);
+		GUIStyle_t1799908754 * L_14 = GUIStyle_op_Implicit_m781448948(NULL /*static, unused*/, _stringLiteral1502598545, /*hidden argument*/NULL);
+		GUILayout_BeginHorizontal_m926770085(NULL /*static, unused*/, L_14, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		GUILayout_FlexibleSpace_m2019304577(NULL /*static, unused*/, /*hidden argument*/NULL);
+		String_t* L_15 = __this->get_chatGroup_9();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_16 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral3170287199, L_15, /*hidden argument*/NULL);
+		GUILayout_Label_m3466110979(NULL /*static, unused*/, L_16, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		GUILayout_FlexibleSpace_m2019304577(NULL /*static, unused*/, /*hidden argument*/NULL);
+		String_t* L_17 = __this->get_newGroup_10();
+		String_t* L_18 = GUILayout_TextField_m1976649007(NULL /*static, unused*/, L_17, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		__this->set_newGroup_10(L_18);
+		bool L_19 = GUILayout_Button_m3322709003(NULL /*static, unused*/, _stringLiteral2413812957, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		if (!L_19)
+		{
+			goto IL_00f8;
+		}
+	}
+	{
+		SimChat_t2635359255 * L_20 = __this->get_sc_2();
+		String_t* L_21 = __this->get_newGroup_10();
+		NullCheck(L_20);
+		SimChat_changeIdentifier_m2950911106(L_20, L_21, /*hidden argument*/NULL);
+		SimChat_t2635359255 * L_22 = __this->get_sc2_3();
+		String_t* L_23 = __this->get_newGroup_10();
+		NullCheck(L_22);
+		SimChat_changeIdentifier_m2950911106(L_22, L_23, /*hidden argument*/NULL);
+		String_t* L_24 = __this->get_newGroup_10();
+		__this->set_chatGroup_9(L_24);
+	}
+
+IL_00f8:
+	{
+		GUILayout_FlexibleSpace_m2019304577(NULL /*static, unused*/, /*hidden argument*/NULL);
+		GUILayout_EndHorizontal_m4258536965(NULL /*static, unused*/, /*hidden argument*/NULL);
+		GUILayout_EndArea_m1904221074(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_25 = Screen_get_width_m41137238(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Rect_t3681755626  L_26;
+		memset(&L_26, 0, sizeof(L_26));
+		Rect__ctor_m1220545469(&L_26, (0.0f), (40.0f), (((float)((float)L_25))), (30.0f), /*hidden argument*/NULL);
+		GUILayout_BeginArea_m3297699023(NULL /*static, unused*/, L_26, /*hidden argument*/NULL);
+		GUILayout_BeginHorizontal_m212592284(NULL /*static, unused*/, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(GUIStyle_t1799908754_il2cpp_TypeInfo_var);
+		GUIStyle_t1799908754 * L_27 = GUIStyle_op_Implicit_m781448948(NULL /*static, unused*/, _stringLiteral1502598545, /*hidden argument*/NULL);
+		GUILayout_BeginHorizontal_m926770085(NULL /*static, unused*/, L_27, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		GUILayout_FlexibleSpace_m2019304577(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_28 = Time_get_time_m2216684562(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_29 = __this->get_rt1_11();
+		if ((!(((float)((float)((float)L_28-(float)L_29))) < ((float)(3.0f)))))
+		{
+			goto IL_0171;
+		}
+	}
+	{
+		GUILayout_Label_m3466110979(NULL /*static, unused*/, _stringLiteral4221026011, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+	}
+
+IL_0171:
+	{
+		GUILayout_FlexibleSpace_m2019304577(NULL /*static, unused*/, /*hidden argument*/NULL);
+		GUILayout_EndHorizontal_m4258536965(NULL /*static, unused*/, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(GUIStyle_t1799908754_il2cpp_TypeInfo_var);
+		GUIStyle_t1799908754 * L_30 = GUIStyle_op_Implicit_m781448948(NULL /*static, unused*/, _stringLiteral1502598545, /*hidden argument*/NULL);
+		GUILayout_BeginHorizontal_m926770085(NULL /*static, unused*/, L_30, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		GUILayout_FlexibleSpace_m2019304577(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_31 = Time_get_time_m2216684562(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_32 = __this->get_rt2_12();
+		if ((!(((float)((float)((float)L_31-(float)L_32))) < ((float)(3.0f)))))
+		{
+			goto IL_01bb;
+		}
+	}
+	{
+		GUILayout_Label_m3466110979(NULL /*static, unused*/, _stringLiteral4221026011, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+	}
+
+IL_01bb:
+	{
+		GUILayout_FlexibleSpace_m2019304577(NULL /*static, unused*/, /*hidden argument*/NULL);
+		GUILayout_EndHorizontal_m4258536965(NULL /*static, unused*/, /*hidden argument*/NULL);
+		GUILayout_EndHorizontal_m4258536965(NULL /*static, unused*/, /*hidden argument*/NULL);
+		GUILayout_EndArea_m1904221074(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_33 = Screen_get_width_m41137238(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_34 = Screen_get_height_m1051800773(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Rect_t3681755626  L_35;
+		memset(&L_35, 0, sizeof(L_35));
+		Rect__ctor_m1220545469(&L_35, (0.0f), (70.0f), (((float)((float)((int32_t)((int32_t)L_33/(int32_t)2))))), (((float)((float)((int32_t)((int32_t)L_34-(int32_t)((int32_t)70)))))), /*hidden argument*/NULL);
+		SimChat_t2635359255 * L_36 = __this->get_sc_2();
+		Vector2_t2243707579  L_37 = __this->get_sp_4();
+		String_t* L_38 = __this->get_n1_7();
+		testTwoChat_displayChat_m520120199(__this, L_35, L_36, L_37, L_38, /*hidden argument*/NULL);
+		int32_t L_39 = Screen_get_width_m41137238(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_40 = Screen_get_width_m41137238(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_41 = Screen_get_height_m1051800773(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Rect_t3681755626  L_42;
+		memset(&L_42, 0, sizeof(L_42));
+		Rect__ctor_m1220545469(&L_42, (((float)((float)((int32_t)((int32_t)L_39/(int32_t)2))))), (70.0f), (((float)((float)((int32_t)((int32_t)L_40/(int32_t)2))))), (((float)((float)((int32_t)((int32_t)L_41-(int32_t)((int32_t)70)))))), /*hidden argument*/NULL);
+		SimChat_t2635359255 * L_43 = __this->get_sc2_3();
+		Vector2_t2243707579  L_44 = __this->get_sp2_5();
+		String_t* L_45 = __this->get_n2_8();
+		testTwoChat_displayChat_m520120199(__this, L_42, L_43, L_44, L_45, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void testTwoChat::displayChat(UnityEngine.Rect,SimChat,UnityEngine.Vector2,System.String)
+extern "C"  void testTwoChat_displayChat_m520120199 (testTwoChat_t1019399252 * __this, Rect_t3681755626  ___area0, SimChat_t2635359255 * ___sc1, Vector2_t2243707579  ___sp2, String_t* ___sender3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (testTwoChat_displayChat_m520120199_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Color_t2020392075  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	SimpleMessage_t1037894399 * V_1 = NULL;
+	Enumerator_t4236712501  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		(&___sp2)->set_y_1((std::numeric_limits<float>::infinity()));
+		Rect_t3681755626  L_0 = ___area0;
+		GUILayout_BeginArea_m3297699023(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(GUIStyle_t1799908754_il2cpp_TypeInfo_var);
+		GUIStyle_t1799908754 * L_1 = GUIStyle_op_Implicit_m781448948(NULL /*static, unused*/, _stringLiteral1502598545, /*hidden argument*/NULL);
+		GUILayout_BeginHorizontal_m926770085(NULL /*static, unused*/, L_1, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		String_t* L_2 = ___sender3;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_3 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral2391892769, L_2, /*hidden argument*/NULL);
+		GUILayout_Label_m3466110979(NULL /*static, unused*/, L_3, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		GUILayout_EndHorizontal_m4258536965(NULL /*static, unused*/, /*hidden argument*/NULL);
+		GUIStyle_t1799908754 * L_4 = GUIStyle_op_Implicit_m781448948(NULL /*static, unused*/, _stringLiteral1502598545, /*hidden argument*/NULL);
+		GUILayout_BeginVertical_m4288558889(NULL /*static, unused*/, L_4, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		Vector2_t2243707579  L_5 = ___sp2;
+		Vector2_t2243707579  L_6 = GUILayout_BeginScrollView_m4280181007(NULL /*static, unused*/, L_5, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		___sp2 = L_6;
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
+		Color_t2020392075  L_7 = GUI_get_contentColor_m1106662582(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_0 = L_7;
+		SimChat_t2635359255 * L_8 = ___sc1;
+		NullCheck(L_8);
+		List_1_t407015531 * L_9 = L_8->get_allMessages_1();
+		NullCheck(L_9);
+		Enumerator_t4236712501  L_10 = List_1_GetEnumerator_m2667932065(L_9, /*hidden argument*/List_1_GetEnumerator_m2667932065_MethodInfo_var);
+		V_2 = L_10;
+	}
+
+IL_0078:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_00fc;
+		}
+
+IL_007d:
+		{
+			SimpleMessage_t1037894399 * L_11 = Enumerator_get_Current_m2734703333((&V_2), /*hidden argument*/Enumerator_get_Current_m2734703333_MethodInfo_var);
+			V_1 = L_11;
+			GUILayout_BeginHorizontal_m212592284(NULL /*static, unused*/, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+			SimpleMessage_t1037894399 * L_12 = V_1;
+			NullCheck(L_12);
+			String_t* L_13 = L_12->get_sender_1();
+			String_t* L_14 = ___sender3;
+			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+			bool L_15 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_13, L_14, /*hidden argument*/NULL);
+			if (!L_15)
+			{
+				goto IL_00c7;
+			}
+		}
+
+IL_00a2:
+		{
+			Color_t2020392075  L_16 = Color_get_red_m2410286591(NULL /*static, unused*/, /*hidden argument*/NULL);
+			IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
+			GUI_set_contentColor_m4064322821(NULL /*static, unused*/, L_16, /*hidden argument*/NULL);
+			GUILayout_FlexibleSpace_m2019304577(NULL /*static, unused*/, /*hidden argument*/NULL);
+			SimpleMessage_t1037894399 * L_17 = V_1;
+			NullCheck(L_17);
+			String_t* L_18 = L_17->get_message_2();
+			GUILayout_Label_m3466110979(NULL /*static, unused*/, L_18, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+			goto IL_00f7;
+		}
+
+IL_00c7:
+		{
+			Color_t2020392075  L_19 = Color_get_green_m2671273823(NULL /*static, unused*/, /*hidden argument*/NULL);
+			IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
+			GUI_set_contentColor_m4064322821(NULL /*static, unused*/, L_19, /*hidden argument*/NULL);
+			SimpleMessage_t1037894399 * L_20 = V_1;
+			NullCheck(L_20);
+			String_t* L_21 = L_20->get_sender_1();
+			SimpleMessage_t1037894399 * L_22 = V_1;
+			NullCheck(L_22);
+			String_t* L_23 = L_22->get_message_2();
+			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+			String_t* L_24 = String_Concat_m612901809(NULL /*static, unused*/, L_21, _stringLiteral811305496, L_23, /*hidden argument*/NULL);
+			GUILayout_Label_m3466110979(NULL /*static, unused*/, L_24, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+			GUILayout_FlexibleSpace_m2019304577(NULL /*static, unused*/, /*hidden argument*/NULL);
+		}
+
+IL_00f7:
+		{
+			GUILayout_EndHorizontal_m4258536965(NULL /*static, unused*/, /*hidden argument*/NULL);
+		}
+
+IL_00fc:
+		{
+			bool L_25 = Enumerator_MoveNext_m4050449165((&V_2), /*hidden argument*/Enumerator_MoveNext_m4050449165_MethodInfo_var);
+			if (L_25)
+			{
+				goto IL_007d;
+			}
+		}
+
+IL_0108:
+		{
+			IL2CPP_LEAVE(0x11B, FINALLY_010d);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+		goto FINALLY_010d;
+	}
+
+FINALLY_010d:
+	{ // begin finally (depth: 1)
+		Enumerator_Dispose_m2762253675((&V_2), /*hidden argument*/Enumerator_Dispose_m2762253675_MethodInfo_var);
+		IL2CPP_END_FINALLY(269)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(269)
+	{
+		IL2CPP_JUMP_TBL(0x11B, IL_011b)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+	}
+
+IL_011b:
+	{
+		Color_t2020392075  L_26 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
+		GUI_set_contentColor_m4064322821(NULL /*static, unused*/, L_26, /*hidden argument*/NULL);
+		GUILayout_EndScrollView_m1883730923(NULL /*static, unused*/, /*hidden argument*/NULL);
+		GUILayout_BeginHorizontal_m212592284(NULL /*static, unused*/, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		SimChat_t2635359255 * L_27 = ___sc1;
+		SimChat_t2635359255 * L_28 = ___sc1;
+		NullCheck(L_28);
+		String_t* L_29 = L_28->get_message_0();
+		String_t* L_30 = GUILayout_TextField_m1976649007(NULL /*static, unused*/, L_29, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		NullCheck(L_27);
+		L_27->set_message_0(L_30);
+		bool L_31 = GUILayout_Button_m3322709003(NULL /*static, unused*/, _stringLiteral4136223372, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		if (!L_31)
+		{
+			goto IL_016e;
+		}
+	}
+	{
+		SimChat_t2635359255 * L_32 = ___sc1;
+		NullCheck(L_32);
+		SimChat_sendMessage_m3528977650(L_32, /*hidden argument*/NULL);
+		SimChat_t2635359255 * L_33 = ___sc1;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_34 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		NullCheck(L_33);
+		L_33->set_message_0(L_34);
+	}
+
+IL_016e:
+	{
+		GUILayout_EndHorizontal_m4258536965(NULL /*static, unused*/, /*hidden argument*/NULL);
+		GUILayout_EndVertical_m297596185(NULL /*static, unused*/, /*hidden argument*/NULL);
+		GUILayout_EndArea_m1904221074(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return;
 	}
 }
 // System.Void UpdateGPS::.ctor()

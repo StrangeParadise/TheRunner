@@ -5,6 +5,11 @@
 <type fullname="Map" preserve="all"/>
 <type fullname="UpdateGPS" preserve="all"/>
 <type fullname="LoginGUI" preserve="all"/>
+<type fullname="testExtendClass" preserve="all"/>
+<type fullname="testTwoChat" preserve="all"/>
+</assembly>
+<assembly fullname="Assembly-UnityScript">
+<type fullname="testSingleChat" preserve="all"/>
 </assembly>
 <assembly fullname="UnityEngine.UI">
 <type fullname="UnityEngine.EventSystems.EventSystem" preserve="all"/>

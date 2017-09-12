@@ -124,6 +124,7 @@ UnityEngine.Event::get_clickCount
 UnityEngine.Event::get_commandName
 UnityEngine.Event::Cleanup
 UnityEngine.Event::Init
+UnityEngine.Event::Internal_GetMouseDelta
 UnityEngine.Event::Internal_GetMousePosition
 UnityEngine.Event::Internal_SetNativeEvent
 UnityEngine.Event::Internal_Use
@@ -133,6 +134,7 @@ UnityEngine.Event::set_keyCode
 UnityEngine.Event::set_modifiers
 UnityEngine.Event::set_type
 UnityEngine.Event::get_modifiers
+UnityEngine.Event::GetTypeForControl
 UnityEngine.Event::get_rawType
 UnityEngine.Event::get_type
 UnityEngine.Event::get_keyCode
@@ -205,6 +207,7 @@ UnityEngine.GameObject::SetActive
 UnityEngine.GameObject::set_layer
 UnityEngine.GameObject::set_tag
 UnityEngine.GameObject::GetComponent
+UnityEngine.GameObject::GetComponentByName
 UnityEngine.GameObject::GetComponentInChildren
 UnityEngine.GameObject::GetComponentInParent
 UnityEngine.GameObject::Internal_AddComponentWithType
@@ -212,8 +215,14 @@ UnityEngine.GameObject::get_transform
 UnityEngine.Gradient::Cleanup
 UnityEngine.Gradient::Init
 UnityEngine.GUI::INTERNAL_CALL_DoButton
+UnityEngine.GUI::get_usePageScrollbars
 UnityEngine.GUI::INTERNAL_CALL_DoLabel
+UnityEngine.GUI::INTERNAL_get_contentColor
+UnityEngine.GUI::INTERNAL_set_contentColor
+UnityEngine.GUI::InternalRepaintEditorWindow
 UnityEngine.GUI::set_changed
+UnityEngine.GUIClip::INTERNAL_CALL_Internal_Push
+UnityEngine.GUIClip::Internal_Pop
 UnityEngine.GUILayer::INTERNAL_CALL_HitTest
 UnityEngine.GUILayoutUtility::INTERNAL_CALL_Internal_GetWindowRect
 UnityEngine.GUILayoutUtility::INTERNAL_CALL_Internal_MoveWindow
@@ -277,6 +286,7 @@ UnityEngine.GUIStyleState::INTERNAL_set_textColor
 UnityEngine.GUIStyleState::Init
 UnityEngine.GUIStyleState::GetBackgroundInternal
 UnityEngine.GUIStyleState::GetBackgroundInternalFromDeserialization
+UnityEngine.GUIUtility::GetControlID
 UnityEngine.GUIUtility::INTERNAL_CALL_Internal_GetNextControlID2
 UnityEngine.GUIUtility::Internal_GetGUIDepth
 UnityEngine.GUIUtility::Internal_GetHotControl
@@ -286,6 +296,7 @@ UnityEngine.GUIUtility::get_systemCopyBuffer
 UnityEngine.GUIUtility::Internal_ExitGUI
 UnityEngine.GUIUtility::Internal_SetHotControl
 UnityEngine.GUIUtility::Internal_SetKeyboardControl
+UnityEngine.GUIUtility::set_mouseUsed
 UnityEngine.GUIUtility::set_systemCopyBuffer
 UnityEngine.GUIUtility::set_textFieldInput
 UnityEngine.GUIUtility::Internal_GetDefaultSkin
@@ -434,6 +445,7 @@ UnityEngine.RenderTexture::Internal_GetWidth
 UnityEngine.Resources::GetBuiltinResource
 UnityEngine.Resources::Load
 UnityEngine.SceneManagement.SceneManager::LoadSceneAsyncNameIndexInternal
+UnityEngine.SceneManagement.SceneManager::UnloadSceneNameIndexInternal
 UnityEngine.Screen::get_height
 UnityEngine.Screen::get_width
 UnityEngine.Screen::get_dpi

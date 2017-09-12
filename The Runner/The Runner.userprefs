@@ -1,6 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SimChat/testSingleChat.js">
+    <Files>
+      <File FileName="Assets/Scripts/login/LoginGUI.cs" Line="133" Column="2" />
+      <File FileName="Assets/SimChat/readme.txt" Line="7" Column="59" />
+      <File FileName="Assets/SimChat/testTwoChat.cs" Line="28" Column="21" />
+      <File FileName="Assets/SimChat/testExtendClass.cs" Line="37" Column="38" />
+      <File FileName="Assets/SimChat/testSingleChat.js" Line="99" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

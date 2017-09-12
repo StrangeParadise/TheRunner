@@ -1854,6 +1854,8 @@ extern "C"  void Event_Init_m3901382626 (Event_t3028476042 * __this, int32_t ___
 extern "C"  void Event_Cleanup_m1195902101 (Event_t3028476042 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Event::Internal_GetMousePosition(UnityEngine.Vector2&)
 extern "C"  void Event_Internal_GetMousePosition_m38523489 (Event_t3028476042 * __this, Vector2_t2243707579 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Event::Internal_GetMouseDelta(UnityEngine.Vector2&)
+extern "C"  void Event_Internal_GetMouseDelta_m2840326024 (Event_t3028476042 * __this, Vector2_t2243707579 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.EventModifiers UnityEngine.Event::get_modifiers()
 extern "C"  int32_t Event_get_modifiers_m430092210 (Event_t3028476042 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Event::.ctor(System.Int32)
@@ -7885,6 +7887,25 @@ IL_0020:
 		return L_1;
 	}
 }
+// UnityEngine.Color UnityEngine.Color::get_green()
+extern "C"  Color_t2020392075  Color_get_green_m2671273823 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	Color_t2020392075  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Color_t2020392075  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Color__ctor_m1909920690(&L_0, (0.0f), (1.0f), (0.0f), (1.0f), /*hidden argument*/NULL);
+		V_0 = L_0;
+		goto IL_0020;
+	}
+
+IL_0020:
+	{
+		Color_t2020392075  L_1 = V_0;
+		return L_1;
+	}
+}
 // UnityEngine.Color UnityEngine.Color::get_white()
 extern "C"  Color_t2020392075  Color_get_white_m3987539815 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -9736,6 +9757,26 @@ extern "C"  Vector2_t2243707579  Event_get_mousePosition_m3789571399 (Event_t302
 	memset(&V_1, 0, sizeof(V_1));
 	{
 		Event_Internal_GetMousePosition_m38523489(__this, (&V_0), /*hidden argument*/NULL);
+		Vector2_t2243707579  L_0 = V_0;
+		V_1 = L_0;
+		goto IL_0010;
+	}
+
+IL_0010:
+	{
+		Vector2_t2243707579  L_1 = V_1;
+		return L_1;
+	}
+}
+// UnityEngine.Vector2 UnityEngine.Event::get_delta()
+extern "C"  Vector2_t2243707579  Event_get_delta_m2710333371 (Event_t3028476042 * __this, const MethodInfo* method)
+{
+	Vector2_t2243707579  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector2_t2243707579  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		Event_Internal_GetMouseDelta_m2840326024(__this, (&V_0), /*hidden argument*/NULL);
 		Vector2_t2243707579  L_0 = V_0;
 		V_1 = L_0;
 		goto IL_0010;
@@ -11720,6 +11761,15 @@ extern "C"  void Event_set_type_m4059414571 (Event_t3028476042 * __this, int32_t
 	_il2cpp_icall_func = (Event_set_type_m4059414571_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Event::set_type(UnityEngine.EventType)");
 	_il2cpp_icall_func(__this, ___value0);
 }
+// UnityEngine.EventType UnityEngine.Event::GetTypeForControl(System.Int32)
+extern "C"  int32_t Event_GetTypeForControl_m3906355766 (Event_t3028476042 * __this, int32_t ___controlID0, const MethodInfo* method)
+{
+	typedef int32_t (*Event_GetTypeForControl_m3906355766_ftn) (Event_t3028476042 *, int32_t);
+	static Event_GetTypeForControl_m3906355766_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Event_GetTypeForControl_m3906355766_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Event::GetTypeForControl(System.Int32)");
+	return _il2cpp_icall_func(__this, ___controlID0);
+}
 // System.Void UnityEngine.Event::Internal_GetMousePosition(UnityEngine.Vector2&)
 extern "C"  void Event_Internal_GetMousePosition_m38523489 (Event_t3028476042 * __this, Vector2_t2243707579 * ___value0, const MethodInfo* method)
 {
@@ -11727,6 +11777,15 @@ extern "C"  void Event_Internal_GetMousePosition_m38523489 (Event_t3028476042 * 
 	static Event_Internal_GetMousePosition_m38523489_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Event_Internal_GetMousePosition_m38523489_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Event::Internal_GetMousePosition(UnityEngine.Vector2&)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.Event::Internal_GetMouseDelta(UnityEngine.Vector2&)
+extern "C"  void Event_Internal_GetMouseDelta_m2840326024 (Event_t3028476042 * __this, Vector2_t2243707579 * ___value0, const MethodInfo* method)
+{
+	typedef void (*Event_Internal_GetMouseDelta_m2840326024_ftn) (Event_t3028476042 *, Vector2_t2243707579 *);
+	static Event_Internal_GetMouseDelta_m2840326024_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Event_Internal_GetMouseDelta_m2840326024_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Event::Internal_GetMouseDelta(UnityEngine.Vector2&)");
 	_il2cpp_icall_func(__this, ___value0);
 }
 // UnityEngine.EventModifiers UnityEngine.Event::get_modifiers()
