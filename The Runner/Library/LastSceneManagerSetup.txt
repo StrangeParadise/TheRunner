@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/MainGameScene.unity
+- path: Assets/SimChat/tst.unity
   isLoaded: 1
   isActive: 1
