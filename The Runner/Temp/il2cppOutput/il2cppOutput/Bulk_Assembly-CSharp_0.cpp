@@ -54,6 +54,8 @@
 #include "mscorlib_System_Double4078015681.h"
 #include "mscorlib_System_NotSupportedException1793819818.h"
 #include "AssemblyU2DCSharp_LoginGUI4073642432.h"
+#include "UnityEngine_UnityEngine_GUISkin1436893342.h"
+#include "UnityEngine_UnityEngine_GUIStyle1799908754.h"
 #include "UnityEngine_UnityEngine_Rect3681755626.h"
 #include "UnityEngine_UnityEngine_WWWForm3950226929.h"
 #include "UnityEngine_UnityEngine_WWW2919945039.h"
@@ -76,12 +78,10 @@
 #include "wwwChat_SimpleMessage1037894399.h"
 #include "mscorlib_System_Action_1_gen2368512252.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen407015531.h"
-#include "UnityEngine_UnityEngine_GUIStyle1799908754.h"
 #include "mscorlib_System_Collections_Generic_List_1_Enumera4236712501.h"
 #include "mscorlib_System_Collections_Generic_List_1_Enumera1593300101.h"
 #include "mscorlib_System_Collections_Generic_List_1_Enumerat933071039.h"
 #include "UnityEngine_UnityEngine_KeyCode2283395152.h"
-#include "UnityEngine_UnityEngine_GUISkin1436893342.h"
 #include "UnityEngine_UnityEngine_GUILayoutOption4183744904.h"
 #include "UnityEngine_UnityEngine_Event3028476042.h"
 #include "AssemblyU2DCSharp_testExtendClass3109871312.h"
@@ -142,6 +142,10 @@ struct WaitForSeconds_t3839502067;
 struct NotSupportedException_t1793819818;
 // LoginGUI
 struct LoginGUI_t4073642432;
+// UnityEngine.GUISkin
+struct GUISkin_t1436893342;
+// UnityEngine.GUIStyle
+struct GUIStyle_t1799908754;
 // UnityEngine.WWWForm
 struct WWWForm_t3950226929;
 // UnityEngine.WWW
@@ -180,10 +184,6 @@ struct SimpleMessage_t1037894399;
 struct SimpleMessageU5BU5D_t2566712870;
 // System.Collections.Generic.List`1<SimpleMessage>
 struct List_1_t407015531;
-// UnityEngine.GUISkin
-struct GUISkin_t1436893342;
-// UnityEngine.GUIStyle
-struct GUIStyle_t1799908754;
 // UnityEngine.GUILayoutOption[]
 struct GUILayoutOptionU5BU5D_t2108882777;
 // UnityEngine.Event
@@ -226,9 +226,9 @@ extern Il2CppClass* NotSupportedException_t1793819818_il2cpp_TypeInfo_var;
 extern const uint32_t U3CStartLocationServiceU3Ec__Iterator0_Reset_m3534451030_MetadataUsageId;
 extern Il2CppCodeGenString* _stringLiteral4283667535;
 extern const uint32_t LoginGUI__ctor_m2417274611_MetadataUsageId;
+extern Il2CppClass* GUI_t4082743951_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral231671529;
 extern const uint32_t LoginGUI_OnGUI_m1178093773_MetadataUsageId;
-extern Il2CppClass* GUI_t4082743951_il2cpp_TypeInfo_var;
 extern Il2CppClass* WWWForm_t3950226929_il2cpp_TypeInfo_var;
 extern Il2CppClass* WWW_t2919945039_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral3425841713;
@@ -668,6 +668,12 @@ extern "C"  float LocationInfo_get_longitude_m306881672 (LocationInfo_t136472514
 extern "C"  String_t* String_Concat_m56707527 (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, Il2CppObject * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.NotSupportedException::.ctor()
 extern "C"  void NotSupportedException__ctor_m3232764727 (NotSupportedException_t1793819818 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.GUISkin UnityEngine.GUI::get_skin()
+extern "C"  GUISkin_t1436893342 * GUI_get_skin_m2309570990 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.GUIStyle UnityEngine.GUISkin::get_textField()
+extern "C"  GUIStyle_t1799908754 * GUISkin_get_textField_m757680403 (GUISkin_t1436893342 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.GUIStyle::set_fontSize(System.Int32)
+extern "C"  void GUIStyle_set_fontSize_m4015341543 (GUIStyle_t1799908754 * __this, int32_t p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.String::op_Equality(System.String,System.String)
 extern "C"  bool String_op_Equality_m1790663636 (Il2CppObject * __this /* static, unused */, String_t* p0, String_t* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void LoginGUI::Login()
@@ -768,16 +774,10 @@ extern "C"  void SimChat_setReceiveFunction_m3855945349 (SimChat_t2635359255 * _
 #define List_1_get_Item_m378422711(__this, p0, method) ((  SimpleMessage_t1037894399 * (*) (List_1_t407015531 *, int32_t, const MethodInfo*))List_1_get_Item_m2062981835_gshared)(__this, p0, method)
 // System.String SimChat::get_senderName()
 extern "C"  String_t* SimChat_get_senderName_m1698608763 (SimChat_t2635359255 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// UnityEngine.GUISkin UnityEngine.GUI::get_skin()
-extern "C"  GUISkin_t1436893342 * GUI_get_skin_m2309570990 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.GUIStyle UnityEngine.GUISkin::get_label()
 extern "C"  GUIStyle_t1799908754 * GUISkin_get_label_m2703078986 (GUISkin_t1436893342 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.GUIStyle::set_fontSize(System.Int32)
-extern "C"  void GUIStyle_set_fontSize_m4015341543 (GUIStyle_t1799908754 * __this, int32_t p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.GUILayout::Label(System.String,UnityEngine.GUILayoutOption[])
 extern "C"  void GUILayout_Label_m3466110979 (Il2CppObject * __this /* static, unused */, String_t* p0, GUILayoutOptionU5BU5D_t2108882777* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// UnityEngine.GUIStyle UnityEngine.GUISkin::get_textField()
-extern "C"  GUIStyle_t1799908754 * GUISkin_get_textField_m757680403 (GUISkin_t1436893342 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.GUIStyle UnityEngine.GUISkin::get_button()
 extern "C"  GUIStyle_t1799908754 * GUISkin_get_button_m797402546 (GUISkin_t1436893342 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.GUIStyle::set_wordWrap(System.Boolean)
@@ -1532,34 +1532,40 @@ extern "C"  void LoginGUI_OnGUI_m1178093773 (LoginGUI_t4073642432 * __this, cons
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		String_t* L_0 = __this->get_CurrentGameMenu_8();
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
+		GUISkin_t1436893342 * L_0 = GUI_get_skin_m2309570990(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		GUIStyle_t1799908754 * L_1 = GUISkin_get_textField_m757680403(L_0, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		GUIStyle_set_fontSize_m4015341543(L_1, ((int32_t)30), /*hidden argument*/NULL);
+		String_t* L_2 = __this->get_CurrentGameMenu_8();
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_1 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_0, _stringLiteral4283667535, /*hidden argument*/NULL);
-		if (!L_1)
+		bool L_3 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_2, _stringLiteral4283667535, /*hidden argument*/NULL);
+		if (!L_3)
 		{
-			goto IL_0020;
+			goto IL_0031;
 		}
 	}
 	{
 		LoginGUI_Login_m3523772546(__this, /*hidden argument*/NULL);
-		goto IL_003b;
+		goto IL_004c;
 	}
 
-IL_0020:
+IL_0031:
 	{
-		String_t* L_2 = __this->get_CurrentGameMenu_8();
+		String_t* L_4 = __this->get_CurrentGameMenu_8();
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_3 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_2, _stringLiteral231671529, /*hidden argument*/NULL);
-		if (!L_3)
+		bool L_5 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_4, _stringLiteral231671529, /*hidden argument*/NULL);
+		if (!L_5)
 		{
-			goto IL_003b;
+			goto IL_004c;
 		}
 	}
 	{
 		LoginGUI_CreateAccount_m4057997108(__this, /*hidden argument*/NULL);
 	}
 
-IL_003b:
+IL_004c:
 	{
 		return;
 	}
@@ -1578,33 +1584,33 @@ extern "C"  void LoginGUI_Login_m3523772546 (LoginGUI_t4073642432 * __this, cons
 	{
 		Rect_t3681755626  L_0;
 		memset(&L_0, 0, sizeof(L_0));
-		Rect__ctor_m1220545469(&L_0, (200.0f), (250.0f), (200.0f), (25.0f), /*hidden argument*/NULL);
+		Rect__ctor_m1220545469(&L_0, (200.0f), (250.0f), (300.0f), (50.0f), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
 		GUI_Label_m2412846501(NULL /*static, unused*/, L_0, _stringLiteral3425841713, /*hidden argument*/NULL);
 		Rect_t3681755626  L_1;
 		memset(&L_1, 0, sizeof(L_1));
-		Rect__ctor_m1220545469(&L_1, (200.0f), (275.0f), (200.0f), (25.0f), /*hidden argument*/NULL);
+		Rect__ctor_m1220545469(&L_1, (200.0f), (300.0f), (300.0f), (50.0f), /*hidden argument*/NULL);
 		String_t* L_2 = __this->get_Username_2();
 		String_t* L_3 = GUI_TextField_m1044694001(NULL /*static, unused*/, L_1, L_2, /*hidden argument*/NULL);
 		__this->set_Username_2(L_3);
 		Rect_t3681755626  L_4;
 		memset(&L_4, 0, sizeof(L_4));
-		Rect__ctor_m1220545469(&L_4, (200.0f), (300.0f), (200.0f), (25.0f), /*hidden argument*/NULL);
+		Rect__ctor_m1220545469(&L_4, (200.0f), (350.0f), (300.0f), (50.0f), /*hidden argument*/NULL);
 		GUI_Label_m2412846501(NULL /*static, unused*/, L_4, _stringLiteral2197382078, /*hidden argument*/NULL);
 		Rect_t3681755626  L_5;
 		memset(&L_5, 0, sizeof(L_5));
-		Rect__ctor_m1220545469(&L_5, (200.0f), (325.0f), (200.0f), (25.0f), /*hidden argument*/NULL);
+		Rect__ctor_m1220545469(&L_5, (200.0f), (400.0f), (300.0f), (50.0f), /*hidden argument*/NULL);
 		String_t* L_6 = __this->get_Password_3();
 		String_t* L_7 = GUI_TextField_m1044694001(NULL /*static, unused*/, L_5, L_6, /*hidden argument*/NULL);
 		__this->set_Password_3(L_7);
 		Rect_t3681755626  L_8;
 		memset(&L_8, 0, sizeof(L_8));
-		Rect__ctor_m1220545469(&L_8, (200.0f), (350.0f), (200.0f), (25.0f), /*hidden argument*/NULL);
+		Rect__ctor_m1220545469(&L_8, (200.0f), (450.0f), (300.0f), (50.0f), /*hidden argument*/NULL);
 		String_t* L_9 = __this->get_MenuText_9();
 		GUI_Label_m2412846501(NULL /*static, unused*/, L_8, L_9, /*hidden argument*/NULL);
 		Rect_t3681755626  L_10;
 		memset(&L_10, 0, sizeof(L_10));
-		Rect__ctor_m1220545469(&L_10, (200.0f), (375.0f), (200.0f), (25.0f), /*hidden argument*/NULL);
+		Rect__ctor_m1220545469(&L_10, (200.0f), (525.0f), (300.0f), (50.0f), /*hidden argument*/NULL);
 		bool L_11 = GUI_Button_m3054448581(NULL /*static, unused*/, L_10, _stringLiteral4283667535, /*hidden argument*/NULL);
 		if (!L_11)
 		{
@@ -1664,7 +1670,7 @@ IL_0162:
 	{
 		Rect_t3681755626  L_27;
 		memset(&L_27, 0, sizeof(L_27));
-		Rect__ctor_m1220545469(&L_27, (200.0f), (400.0f), (200.0f), (25.0f), /*hidden argument*/NULL);
+		Rect__ctor_m1220545469(&L_27, (200.0f), (600.0f), (300.0f), (50.0f), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
 		bool L_28 = GUI_Button_m3054448581(NULL /*static, unused*/, L_27, _stringLiteral881699050, /*hidden argument*/NULL);
 		if (!L_28)

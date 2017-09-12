@@ -10,7 +10,7 @@ public var chatName:String = "";
 public var show:boolean = true;
 //GUI variables
 private var sp:Vector2 = Vector2.zero;
-private var chatRect:Rect = Rect(Screen.width*0.6,Screen.height*0.6,Screen.width*0.4,Screen.height*0.4);
+private var chatRect:Rect = Rect(Screen.width*0.0,Screen.height*0.8,Screen.width*1.0,Screen.height*0.2);
 private var c:Color;
 //show new chat message
 private var rt:float = -3;
@@ -48,7 +48,7 @@ function OnGUI (){
 
 	//show chat area
 	if(show){
-		GUI.skin.textField.fontSize = GUI.skin.button.fontSize = GUI.skin.label.fontSize = 17;
+		GUI.skin.textField.fontSize = GUI.skin.button.fontSize = GUI.skin.label.fontSize = 20;
 		GUI.skin.label.wordWrap = false;
 		GUILayout.BeginArea(chatRect);
 		GUILayout.BeginVertical("box");
@@ -62,7 +62,7 @@ function OnGUI (){
 				GUILayout.BeginHorizontal();
 				//check if the sender had the same name as me, and change the color
 				if(sc.allMessages[sm].sender == chatName){
-					GUI.contentColor = Color.red;
+					GUI.contentColor = Color.white;
 					GUILayout.FlexibleSpace();
 					GUILayout.Label(sc.allMessages[sm].message);
 				}else{
@@ -74,7 +74,7 @@ function OnGUI (){
 				GUILayout.EndHorizontal();
 			}
 			//display the pending messages
-			GUI.contentColor = Color.red;
+			GUI.contentColor = Color.white;
 			for(var snm:int = 0;snm<sendingMessages.length;snm++){
 				GUILayout.BeginHorizontal();
 				GUILayout.FlexibleSpace();

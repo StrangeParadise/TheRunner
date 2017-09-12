@@ -18,6 +18,8 @@ public class LoginGUI : MonoBehaviour {
 	public string SecondMenuText = "";
 
 	void OnGUI () {
+		GUI.skin.textField.fontSize = 30;
+
 		if(CurrentGameMenu == "Login"){
 			Login();
 		}else if (CurrentGameMenu == "CreateAccount") {
@@ -25,15 +27,16 @@ public class LoginGUI : MonoBehaviour {
 		}
 	}
 	void Login () {
-		GUI.Label(new Rect(200, 250, 200, 25), "Enter your username:");
-		Username = GUI.TextField(new Rect(200, 275, 200, 25), Username);
 
-		GUI.Label(new Rect(200, 300, 200, 25), "Enter your password:");
-		Password = GUI.TextField(new Rect(200, 325, 200, 25), Password);
+		GUI.Label(new Rect(200, 250, 300, 50), "Enter your username:");
+		Username = GUI.TextField(new Rect(200, 300, 300, 50), Username);
 
-		GUI.Label(new Rect(200, 350, 200, 25), MenuText);
+		GUI.Label(new Rect(200, 350, 300, 50), "Enter your password:");
+		Password = GUI.TextField(new Rect(200, 400, 300, 50), Password);
 
-		if(GUI.Button(new Rect(200, 375, 200, 25), "Login")){
+		GUI.Label(new Rect(200, 450, 300, 50), MenuText);
+
+		if(GUI.Button(new Rect(200, 525, 300, 50), "Login")){
 			if(Username == "" || Password == ""){
 				MenuText = "Please fill in all info";
 			}else {
@@ -44,7 +47,7 @@ public class LoginGUI : MonoBehaviour {
 				StartCoroutine(Login(w));
 			}
 		}
-		if(GUI.Button(new Rect(200, 400, 200, 25), "Create an account")){
+		if(GUI.Button(new Rect(200, 600, 300, 50), "Create an account")){
 			CurrentGameMenu = "CreateAccount";
 		}
 	}

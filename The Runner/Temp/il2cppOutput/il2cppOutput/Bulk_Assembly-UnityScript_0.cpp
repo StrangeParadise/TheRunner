@@ -362,8 +362,8 @@ extern "C"  void GUILayout_FlexibleSpace_m2019304577 (Il2CppObject * __this /* s
 extern "C"  Color_t2020392075  GUI_get_contentColor_m1106662582 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.GUILayout::BeginHorizontal(UnityEngine.GUILayoutOption[])
 extern "C"  void GUILayout_BeginHorizontal_m212592284 (Il2CppObject * __this /* static, unused */, GUILayoutOptionU5BU5D_t2108882777* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// UnityEngine.Color UnityEngine.Color::get_red()
-extern "C"  Color_t2020392075  Color_get_red_m2410286591 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Color UnityEngine.Color::get_white()
+extern "C"  Color_t2020392075  Color_get_white_m3987539815 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.GUI::set_contentColor(UnityEngine.Color)
 extern "C"  void GUI_set_contentColor_m4064322821 (Il2CppObject * __this /* static, unused */, Color_t2020392075  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Color UnityEngine.Color::get_green()
@@ -534,7 +534,7 @@ extern "C"  void testSingleChat__ctor_m346963636 (testSingleChat_t1743952810 * _
 		int32_t L_9 = Screen_get_height_m1051800773(NULL /*static, unused*/, /*hidden argument*/NULL);
 		Rect_t3681755626  L_10;
 		memset(&L_10, 0, sizeof(L_10));
-		Rect__ctor_m1220545469(&L_10, ((float)((float)(((float)((float)L_6)))*(float)(0.6f))), ((float)((float)(((float)((float)L_7)))*(float)(0.6f))), ((float)((float)(((float)((float)L_8)))*(float)(0.4f))), ((float)((float)(((float)((float)L_9)))*(float)(0.4f))), /*hidden argument*/NULL);
+		Rect__ctor_m1220545469(&L_10, ((float)((float)(((float)((float)L_6)))*(float)(((float)((float)0))))), ((float)((float)(((float)((float)L_7)))*(float)(0.8f))), ((float)((float)(((float)((float)L_8)))*(float)(1.0f))), ((float)((float)(((float)((float)L_9)))*(float)(0.2f))), /*hidden argument*/NULL);
 		__this->set_chatRect_7(L_10);
 		__this->set_rt_9((((float)((float)((int32_t)-3)))));
 		Array_t1396575355 * L_11 = (Array_t1396575355 *)il2cpp_codegen_object_new(Array_t1396575355_il2cpp_TypeInfo_var);
@@ -719,7 +719,7 @@ IL_0096:
 		GUISkin_t1436893342 * L_26 = GUI_get_skin_m2309570990(NULL /*static, unused*/, /*hidden argument*/NULL);
 		NullCheck(L_26);
 		GUIStyle_t1799908754 * L_27 = GUISkin_get_label_m2703078986(L_26, /*hidden argument*/NULL);
-		int32_t L_28 = ((int32_t)17);
+		int32_t L_28 = ((int32_t)20);
 		V_2 = L_28;
 		NullCheck(L_27);
 		GUIStyle_set_fontSize_m4015341543(L_27, L_28, /*hidden argument*/NULL);
@@ -773,7 +773,7 @@ IL_0149:
 		}
 	}
 	{
-		Color_t2020392075  L_47 = Color_get_red_m2410286591(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Color_t2020392075  L_47 = Color_get_white_m3987539815(NULL /*static, unused*/, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
 		GUI_set_contentColor_m4064322821(NULL /*static, unused*/, L_47, /*hidden argument*/NULL);
 		GUILayout_FlexibleSpace_m2019304577(NULL /*static, unused*/, /*hidden argument*/NULL);
@@ -838,7 +838,7 @@ IL_020d:
 		}
 	}
 	{
-		Color_t2020392075  L_71 = Color_get_red_m2410286591(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Color_t2020392075  L_71 = Color_get_white_m3987539815(NULL /*static, unused*/, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
 		GUI_set_contentColor_m4064322821(NULL /*static, unused*/, L_71, /*hidden argument*/NULL);
 		V_1 = 0;
