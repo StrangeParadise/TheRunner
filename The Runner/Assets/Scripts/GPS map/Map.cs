@@ -6,8 +6,8 @@ public class Map : MonoBehaviour {
 
 	string url;
 
-	public double latitude;
-	public double longitude;
+	public float latitude;
+	public float longitude;
 	public int zoom;
 	public int mapWidth;
 	public int mapHeight;
@@ -33,7 +33,7 @@ public class Map : MonoBehaviour {
 		}
 	}
 
-	IEnumerator GetGoogleMap(double latitude, double longitude)
+	IEnumerator GetGoogleMap(float latitude, float longitude)
 	{
 		print ("latitude " + latitude);
 		print ("longitude " + longitude);

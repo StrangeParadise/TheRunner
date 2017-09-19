@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class UpdateGPS : MonoBehaviour {
 	public Text coordinate;
+	public Camera main;
 	private void Update() {
-		coordinate.text = "Lat" + GPS.Instance.latitude.ToString () + "    Lon" + GPS.Instance.longitude.ToString ();
+		coordinate.text = "x" + main.transform.localPosition.x + "    z" + main.transform.localPosition.z;
 
 	}
 
