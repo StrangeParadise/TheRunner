@@ -55,6 +55,7 @@ public class AR : MonoBehaviour {
         arReady = true;
     }
 
+	// Update
     private void Update()
     {
         if (arReady) {
