@@ -1,10 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LoginRegister/LoginGUI.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GPS map/Map.cs">
     <Files>
-      <File FileName="Assets/Scripts/Debug/testMoveScript.cs" Line="18" Column="6" />
-      <File FileName="Assets/Scripts/GPS map/Tools.cs" Line="38" Column="23" />
-      <File FileName="Assets/Scripts/LoginRegister/LoginGUI.cs" Line="79" Column="20" />
+      <File FileName="Assets/Scripts/GPS map/Map.cs" Line="23" Column="3" />
+      <File FileName="Assets/Scripts/Circle/HollowCircle.cs" Line="15" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

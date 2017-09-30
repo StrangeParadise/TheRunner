@@ -19,18 +19,12 @@ public class Map : MonoBehaviour {
 
 	private IEnumerator mapCoroutine;
 
-	private float nextActionTime = 0.0f;
-	public float period = 1f;
-
 	void Update () {
-		if (Time.time > nextActionTime ) {
-			nextActionTime += period;
-			latitude = GPS.Instance.latitude;
-			longitude = GPS.Instance.longitude;
-			coordinate.text = "Lat" + GPS.Instance.latitude.ToString () + " Long" + GPS.Instance.longitude.ToString ();
-			mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
-			StartCoroutine (mapCoroutine); //restart the coroutine
-		}
+		latitude = GPS.Instance.latitude;
+		longitude = GPS.Instance.longitude;
+		coordinate.text = "Lat" + GPS.Instance.latitude.ToString () + " Long" + GPS.Instance.longitude.ToString ();
+		mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
+		StartCoroutine (mapCoroutine); //restart the coroutine
 	}
 
 	IEnumerator GetGoogleMap(float latitude, float longitude)
@@ -42,8 +36,10 @@ public class Map : MonoBehaviour {
 			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyDK04pO2JEC4C01AQSW9dpuBDunvtuA-o8";
 		WWW www = new WWW(url);
 		yield return www;
-		myMap.GetComponent<RawImage>().texture = www.texture;
+		Texture mapTexture = www.texture;
+		myMap.GetComponent<RawImage>().texture = mapTexture;
+		yield return new WaitForSeconds(1);
+		Destroy (mapTexture);
 		StopCoroutine (mapCoroutine);
-
 	}
 }
