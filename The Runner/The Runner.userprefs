@@ -1,20 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GPS map/UpdateGPS.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LoginRegister/LoginGUI.cs">
     <Files>
-      <File FileName="Assets/Scripts/GPS map/Map.cs" Line="36" Column="48" />
-      <File FileName="Assets/Scripts/GPS map/UpdateGPS.cs" Line="18" Column="24" />
-      <File FileName="Assets/Scripts/login/LoginGUI.cs" Line="1" Column="1" />
-      <File FileName="Assets/SimChat/readme.txt" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GPS map/GPS.cs" Line="9" Column="14" />
-      <File FileName="Assets/Scripts/GameController/GameController.cs" Line="42" Column="3" />
-      <File FileName="Assets/Scripts/AR/AR.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Debug/testMoveScript.cs" Line="18" Column="6" />
+      <File FileName="Assets/Scripts/GPS map/Tools.cs" Line="38" Column="23" />
+      <File FileName="Assets/Scripts/LoginRegister/LoginGUI.cs" Line="79" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
->>>>>>> d0265974c5ddf46571435a99be5da561d42914cb
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
