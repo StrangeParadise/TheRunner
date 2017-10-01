@@ -23,15 +23,16 @@ public class Tools : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		float latitude = GPS.Instance.latitude;
+		float longitude = GPS.Instance.longitude;
 		if (firsttime) {
-			float latitude = GPS.Instance.latitude;
-			float longitude = GPS.Instance.longitude;
 			if (latitude != 0) {
 				latitudeO = latitude;
 				longitudeO = longitude;
 				firsttime = false;
 			}
 		}
+		mainCamera.transform.position = mapGPS (latitude, longitude);
 	}
 
 	public Vector3 mapGPS(float latitude, float longitude){

@@ -8,7 +8,6 @@ public class UpdateGPS : MonoBehaviour {
 	public Camera main;
 	private void Update() {
 		coordinate.text = "x" + main.transform.localPosition.x + "    z" + main.transform.localPosition.z;
-
 	}
 
 //	public int zoom;
