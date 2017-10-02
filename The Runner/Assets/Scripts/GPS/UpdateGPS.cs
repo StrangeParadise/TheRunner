@@ -11,7 +11,7 @@ public class UpdateGPS : MonoBehaviour {
 	public GPSController IGPSController;
 
 	private void Update() {
-		coordinate.text = "x" + IGPSController.gps.stablizedLati  + "    z" + IGPSController.gps.stablizedLong;
+//		coordinate.text = "x" + IGPSController.gps.latitude  + "    z" + IGPSController.gps.longtitude;
 	}
 
 //	public int zoom;

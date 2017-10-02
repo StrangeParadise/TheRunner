@@ -16,9 +16,20 @@ public class AR : MonoBehaviour {
 	public AspectRatioFitter fit;
 
 	private bool arReady = false;
+	public TextMesh terminal;
 
 	private void Start()
 	{
+
+		Input.compass.enabled = true;
+		Input.location.Start ();
+
+		transform.rotation = Quaternion.Euler (
+			transform.rotation.eulerAngles.x, 
+			Input.compass.trueHeading,
+			transform.rotation.eulerAngles.z
+		);
+
 		// Check if Gyro and Cam are supported in target device
 		// Supp Gyro?
 		if (!SystemInfo.supportsGyroscope) {
@@ -41,7 +52,9 @@ public class AR : MonoBehaviour {
 		}
 		cameraContainer = new GameObject("CameraContainer");
 		cameraContainer.transform.position = transform.position;
+		
 		transform.SetParent(cameraContainer.transform);
+
 
 		// Case: Gyros and BackCam are supported
 		gyro = Input.gyro;
@@ -58,9 +71,18 @@ public class AR : MonoBehaviour {
 	// Update
 	private void Update()
 	{
+
 		if (arReady) {
 			// Update Gyro
 			transform.localRotation = gyro.attitude * gyroRotation;
+
+//			float northFaceY = transform.localRotation.eulerAngles.y - Input.compass.trueHeading;
+//
+//			transform.eulerAngles = new Vector3 (
+//				transform.rotation.eulerAngles.x,
+//				Input.compass.trueHeading - 180 / 2,
+//				transform.rotation.eulerAngles.z
+//			);
 
 			// Update BackCam
 			// Mute the distortion

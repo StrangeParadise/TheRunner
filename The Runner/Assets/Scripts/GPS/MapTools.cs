@@ -34,7 +34,8 @@ public class MapTools : MonoBehaviour {
 				firsttime = false;
 			}
 		}
-		mainCamera.transform.position = mapGPS (latitude, longitude);
+//		mainCamera.transform.position = mapGPS (latitude, longitude);
+		mainCamera.transform.position = new Vector3 ((latitude-latitudeO)*50000, mainCamera.transform.position.y, - (longitude - longitudeO)*50000);
 	}
 
 	public Vector3 mapGPS(float latitude, float longitude){
