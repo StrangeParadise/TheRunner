@@ -4,10 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class UpdateGPS : MonoBehaviour {
+
 	public Text coordinate;
 	public Camera main;
+
+	public GPSController IGPSController;
+
 	private void Update() {
-		coordinate.text = "x" + main.transform.localPosition.x + "    z" + main.transform.localPosition.z;
+		coordinate.text = "x" + IGPSController.gps.stablizedLati  + "    z" + IGPSController.gps.stablizedLong;
 	}
 
 //	public int zoom;
@@ -20,7 +24,7 @@ public class UpdateGPS : MonoBehaviour {
 //	private LocationInfo info;
 //	public enum mapType { roadmap, satellite, hybrid, terrain };
 //	public mapType type;
-//
+//	
 //	private bool loading;
 //
 //	private IEnumerator mapCoroutine;

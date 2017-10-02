@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TheRunner.Tools;
 
-public class Tools : MonoBehaviour {
+public class MapTools : MonoBehaviour {
 
 	public int radius = 150;
 	public int range = 500;
@@ -14,6 +14,8 @@ public class Tools : MonoBehaviour {
 
 	private Camera mainCamera;
 
+	public GPSController IGPSController;
+
 	// Use this for initialization
 	void Start () {
 
@@ -23,8 +25,8 @@ public class Tools : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		float latitude = GPS.Instance.latitude;
-		float longitude = GPS.Instance.longitude;
+		float latitude = IGPSController.gps.latitude;
+		float longitude = IGPSController.gps.longtitude;
 		if (firsttime) {
 			if (latitude != 0) {
 				latitudeO = latitude;
@@ -37,7 +39,8 @@ public class Tools : MonoBehaviour {
 
 	public Vector3 mapGPS(float latitude, float longitude){
 		return new Vector3 (
-			TR_Toolbox.gps_transform (longitude, latitude, longitude, latitudeO) * radius / range, mainCamera.transform.position.y, 
+			-TR_Toolbox.gps_transform (longitude, latitude, longitude, latitudeO) * radius / range, 
+			mainCamera.transform.position.y, 
 			TR_Toolbox.gps_transform (longitude, latitude, longitudeO, latitude) * radius / range
 		);
 	}

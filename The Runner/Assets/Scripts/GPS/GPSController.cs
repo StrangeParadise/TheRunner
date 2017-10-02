@@ -3,11 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GPS : MonoBehaviour {
-	public static GPS Instance { get; set; }
 
-	public float latitude;
-	public float longitude;
+
+public class GPSController : MonoBehaviour {
+
+	public GPSData gps;
+
+	private int counter = 0;
+
+	void Start() {
+
+		// create a new gps data.
+		gps = new GPSData ();
+
+	}
 
 	private IEnumerator StartLocationService()
 	{
@@ -29,17 +38,26 @@ public class GPS : MonoBehaviour {
 			print("Unable determine device location!");
 			yield break;
 		}
-		latitude = Input.location.lastData.latitude;
-		longitude = Input.location.lastData.longitude;
-		print ("GPS LAT " + latitude);
-		print ("GPS LONGI " + longitude);
+
+		gps.updateGpsData(Input.location.lastData.latitude,Input.location.lastData.longitude);	
+
 		yield break;
 	}
 
 	// Update is called once per frame
 	void Update () {
-		Instance = this;
+		
 		DontDestroyOnLoad(gameObject);
+
 		StartCoroutine(StartLocationService());
+
+		Debug.Log ("GpsData | Longtitude: "    + gps.longtitude    + " , Latitude"        + gps.latitude      + " | count: " + counter);
+		Debug.Log ("GpsData | StablizedLong: " + gps.stablizedLong + " , StablizedLati: " + gps.stablizedLati + " | count: " + counter++);
+
 	}
+
+
+
 }
+
+

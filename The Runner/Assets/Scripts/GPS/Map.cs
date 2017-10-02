@@ -6,6 +6,8 @@ public class Map : MonoBehaviour {
 
 	string url;
 
+	public GPSController gpsController;
+
 	public float latitude;
 	public float longitude;
 	public int zoom;
@@ -20,17 +22,16 @@ public class Map : MonoBehaviour {
 	private IEnumerator mapCoroutine;
 
 	void Update () {
-		latitude = GPS.Instance.latitude;
-		longitude = GPS.Instance.longitude;
-		coordinate.text = "Lat" + GPS.Instance.latitude.ToString () + " Long" + GPS.Instance.longitude.ToString ();
-		mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
-		StartCoroutine (mapCoroutine); //restart the coroutine
+//		latitude  = gpsController.gps.latitude;
+//		longitude = gpsController.gps.longtitude;
+//		mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
+//		StartCoroutine (mapCoroutine); //restart the coroutine
 	}
 
 	IEnumerator GetGoogleMap(float latitude, float longitude)
 	{
-		print ("latitude " + latitude);
-		print ("longitude " + longitude);
+//		Debug.Log ("latitude " + latitude);
+//		Debug.Log ("longitude " + longitude);
 		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude +
 			"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected + 
 			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyDK04pO2JEC4C01AQSW9dpuBDunvtuA-o8";
