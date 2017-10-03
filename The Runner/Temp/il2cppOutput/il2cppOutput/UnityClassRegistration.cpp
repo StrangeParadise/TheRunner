@@ -17,6 +17,9 @@ void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_CloudWebServices();
 	RegisterModule_CloudWebServices();
 
+	void RegisterModule_ParticleSystem();
+	RegisterModule_ParticleSystem();
+
 	void RegisterModule_PerformanceReporting();
 	RegisterModule_PerformanceReporting();
 
@@ -148,15 +151,15 @@ class ParticleAnimator;
 class ParticleEmitter; 
 class EllipsoidParticleEmitter; 
 class MeshParticleEmitter; 
-class ParticleSystem; 
+class ParticleSystem; template <> void RegisterClass<ParticleSystem>();
 class Renderer; template <> void RegisterClass<Renderer>();
 class BillboardRenderer; 
 class LineRenderer; template <> void RegisterClass<LineRenderer>();
 class MeshRenderer; template <> void RegisterClass<MeshRenderer>();
 class ParticleRenderer; 
-class ParticleSystemRenderer; 
+class ParticleSystemRenderer; template <> void RegisterClass<ParticleSystemRenderer>();
 class SkinnedMeshRenderer; 
-class SpriteRenderer; 
+class SpriteRenderer; template <> void RegisterClass<SpriteRenderer>();
 class TrailRenderer; 
 class Rigidbody; template <> void RegisterClass<Rigidbody>();
 class Rigidbody2D; template <> void RegisterClass<Rigidbody2D>();
@@ -186,16 +189,16 @@ class LightProbes; template <> void RegisterClass<LightProbes>();
 class Material; template <> void RegisterClass<Material>();
 class ProceduralMaterial; 
 class Mesh; template <> void RegisterClass<Mesh>();
-class Motion; 
-class AnimationClip; 
+class Motion; template <> void RegisterClass<Motion>();
+class AnimationClip; template <> void RegisterClass<AnimationClip>();
 class PreviewAnimationClip; 
 class NavMeshData; 
 class OcclusionCullingData; 
 class PhysicMaterial; 
 class PhysicsMaterial2D; 
 class PreloadData; template <> void RegisterClass<PreloadData>();
-class RuntimeAnimatorController; 
-class AnimatorController; 
+class RuntimeAnimatorController; template <> void RegisterClass<RuntimeAnimatorController>();
+class AnimatorController; template <> void RegisterClass<AnimatorController>();
 class AnimatorOverrideController; 
 class SampleClip; template <> void RegisterClass<SampleClip>();
 class AudioClip; template <> void RegisterClass<AudioClip>();
@@ -260,7 +263,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 74 non stripped classes
+	//Total: 81 non stripped classes
 	//0. Behaviour
 	RegisterClass<Behaviour>();
 	//1. Unity::Component
@@ -395,19 +398,33 @@ RegisterBuiltinTypes();
 	RegisterClass<UnityConnectSettings>();
 	//66. LevelGameManager
 	RegisterClass<LevelGameManager>();
-	//67. AudioListener
+	//67. AnimationClip
+	RegisterClass<AnimationClip>();
+	//68. Motion
+	RegisterClass<Motion>();
+	//69. AudioListener
 	RegisterClass<AudioListener>();
-	//68. AudioBehaviour
+	//70. AudioBehaviour
 	RegisterClass<AudioBehaviour>();
-	//69. RenderSettings
+	//71. AnimatorController
+	RegisterClass<AnimatorController>();
+	//72. RuntimeAnimatorController
+	RegisterClass<RuntimeAnimatorController>();
+	//73. RenderSettings
 	RegisterClass<RenderSettings>();
-	//70. Light
-	RegisterClass<Light>();
-	//71. FlareLayer
+	//74. FlareLayer
 	RegisterClass<FlareLayer>();
-	//72. LightmapSettings
+	//75. LightmapSettings
 	RegisterClass<LightmapSettings>();
-	//73. LightProbes
+	//76. ParticleSystem
+	RegisterClass<ParticleSystem>();
+	//77. ParticleSystemRenderer
+	RegisterClass<ParticleSystemRenderer>();
+	//78. SpriteRenderer
+	RegisterClass<SpriteRenderer>();
+	//79. Light
+	RegisterClass<Light>();
+	//80. LightProbes
 	RegisterClass<LightProbes>();
 
 }

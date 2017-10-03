@@ -10107,6 +10107,13 @@ void* RuntimeInvoker_PersistentListenerMode_t857969000 (const MethodInfo* method
 	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
 }
 
+void* RuntimeInvoker_Vector2_t2243707579_Vector2_t2243707579_Vector2_t2243707579_Single_t2076509932 (const MethodInfo* method, void* obj, void** args)
+{
+	typedef Vector2_t2243707579  (*Func)(void* obj, Vector2_t2243707579  p1, Vector2_t2243707579  p2, float p3, const MethodInfo* method);
+	Vector2_t2243707579  ret = ((Func)method->methodPointer)(obj, *((Vector2_t2243707579 *)args[0]), *((Vector2_t2243707579 *)args[1]), *((float*)args[2]), method);
+	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
+}
+
 void* RuntimeInvoker_Vector2_t2243707579_Vector2_t2243707579_Vector2_t2243707579 (const MethodInfo* method, void* obj, void** args)
 {
 	typedef Vector2_t2243707579  (*Func)(void* obj, Vector2_t2243707579  p1, Vector2_t2243707579  p2, const MethodInfo* method);
@@ -17205,7 +17212,7 @@ void* RuntimeInvoker_Il2CppObject_FloatTween_t2986189219 (const MethodInfo* meth
 	return ret;
 }
 
-extern const InvokerMethod g_Il2CppInvokerPointers[2222] = 
+extern const InvokerMethod g_Il2CppInvokerPointers[2223] = 
 {
 	RuntimeInvoker_Void_t1841601450,
 	RuntimeInvoker_Boolean_t3825574718_Il2CppObject,
@@ -18415,6 +18422,7 @@ extern const InvokerMethod g_Il2CppInvokerPointers[2222] =
 	RuntimeInvoker_Boolean_t3825574718_Rect_t3681755626_Rect_t3681755626,
 	RuntimeInvoker_Void_t1841601450_Il2CppObject_StringU26_t638738783_StringU26_t638738783,
 	RuntimeInvoker_PersistentListenerMode_t857969000,
+	RuntimeInvoker_Vector2_t2243707579_Vector2_t2243707579_Vector2_t2243707579_Single_t2076509932,
 	RuntimeInvoker_Vector2_t2243707579_Vector2_t2243707579_Vector2_t2243707579,
 	RuntimeInvoker_Single_t2076509932_Vector2_t2243707579_Vector2_t2243707579,
 	RuntimeInvoker_Vector2_t2243707579_Vector2_t2243707579_Single_t2076509932,

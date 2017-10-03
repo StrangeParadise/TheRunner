@@ -99,9 +99,9 @@
 #include "AssemblyU2DCSharp_PlayerMove195622780.h"
 #include "AssemblyU2DCSharp_TheRunner_Tools_TR_Toolbox1175700236.h"
 #include "AssemblyU2DCSharp_UserInfo2259970173.h"
-#include "AssemblyU2DUnityScript_U3CModuleU3E3783534214.h"
-#include "AssemblyU2DUnityScript_testSingleChat1743952810.h"
-#include "AssemblyU2DUnityScript_CompilerGenerated___testSin2076937298.h"
+#include "AssemblyU2DCSharp_LoginController112609021.h"
+#include "AssemblyU2DCSharp_LoginController_U3CLoginU3Ec__It1873648316.h"
+#include "AssemblyU2DCSharp_LoginController_U3CCreateAccount3235856557.h"
 
 
 
@@ -557,10 +557,9 @@ extern const int32_t g_FieldOffsetTable1972[8] =
 	AR_t2523137185::get_offset_of_terminal_9(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1973 = { sizeof (TestRedManRotation_t2076822265), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1973[2] = 
+extern const int32_t g_FieldOffsetTable1973[1] = 
 {
 	TestRedManRotation_t2076822265::get_offset_of_loaded_2(),
-	TestRedManRotation_t2076822265::get_offset_of_confirmed_3(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1974 = { sizeof (ChatController_t2669781690), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1975 = { sizeof (testExtendClass_t3109871312), -1, 0, 0 };
@@ -749,21 +748,40 @@ extern const int32_t g_FieldOffsetTable1996[1] =
 {
 	UserInfo_t2259970173_StaticFields::get_offset_of_username_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1997 = { sizeof (U3CModuleU3E_t3783534226), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1998 = { sizeof (testSingleChat_t1743952810), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1998[9] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1997 = { sizeof (LoginController_t112609021), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1997[12] = 
 {
-	testSingleChat_t1743952810::get_offset_of_sc_2(),
-	testSingleChat_t1743952810::get_offset_of_names_3(),
-	testSingleChat_t1743952810::get_offset_of_chatName_4(),
-	testSingleChat_t1743952810::get_offset_of_show_5(),
-	testSingleChat_t1743952810::get_offset_of_sp_6(),
-	testSingleChat_t1743952810::get_offset_of_chatRect_7(),
-	testSingleChat_t1743952810::get_offset_of_c_8(),
-	testSingleChat_t1743952810::get_offset_of_rt_9(),
-	testSingleChat_t1743952810::get_offset_of_sendingMessages_10(),
+	LoginController_t112609021::get_offset_of_idText_2(),
+	LoginController_t112609021::get_offset_of_pwText_3(),
+	LoginController_t112609021::get_offset_of_reText_4(),
+	LoginController_t112609021::get_offset_of_Username_5(),
+	LoginController_t112609021::get_offset_of_Password_6(),
+	LoginController_t112609021::get_offset_of_CreateUsername_7(),
+	LoginController_t112609021::get_offset_of_CreatePassword_8(),
+	LoginController_t112609021::get_offset_of_ConfirmPassword_9(),
+	LoginController_t112609021::get_offset_of_PlayerEmail_10(),
+	LoginController_t112609021::get_offset_of_CurrentGameMenu_11(),
+	LoginController_t112609021::get_offset_of_MenuText_12(),
+	LoginController_t112609021::get_offset_of_SecondMenuText_13(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1999 = { sizeof (__testSingleChat_StartU24callable0U2431_31___t2076937298), sizeof(Il2CppMethodPointer), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1998 = { sizeof (U3CLoginU3Ec__Iterator0_t1873648316), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1998[5] = 
+{
+	U3CLoginU3Ec__Iterator0_t1873648316::get_offset_of__w_0(),
+	U3CLoginU3Ec__Iterator0_t1873648316::get_offset_of_U24this_1(),
+	U3CLoginU3Ec__Iterator0_t1873648316::get_offset_of_U24current_2(),
+	U3CLoginU3Ec__Iterator0_t1873648316::get_offset_of_U24disposing_3(),
+	U3CLoginU3Ec__Iterator0_t1873648316::get_offset_of_U24PC_4(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1999 = { sizeof (U3CCreateAccountU3Ec__Iterator1_t3235856557), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1999[5] = 
+{
+	U3CCreateAccountU3Ec__Iterator1_t3235856557::get_offset_of__w_0(),
+	U3CCreateAccountU3Ec__Iterator1_t3235856557::get_offset_of_U24this_1(),
+	U3CCreateAccountU3Ec__Iterator1_t3235856557::get_offset_of_U24current_2(),
+	U3CCreateAccountU3Ec__Iterator1_t3235856557::get_offset_of_U24disposing_3(),
+	U3CCreateAccountU3Ec__Iterator1_t3235856557::get_offset_of_U24PC_4(),
+};
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

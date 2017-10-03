@@ -10300,6 +10300,7 @@ extern "C" void UnityString_Format_m2949645127 ();
 extern "C" void Vector2__ctor_m3067419446_AdjustorThunk ();
 extern "C" void Vector2_get_Item_m2792130561_AdjustorThunk ();
 extern "C" void Vector2_set_Item_m3881967114_AdjustorThunk ();
+extern "C" void Vector2_Lerp_m1511850087 ();
 extern "C" void Vector2_Scale_m3228063809 ();
 extern "C" void Vector2_ToString_m775491729_AdjustorThunk ();
 extern "C" void Vector2_GetHashCode_m2353429373_AdjustorThunk ();
@@ -13393,6 +13394,32 @@ extern "C" void HandMapController_Update_m836850453 ();
 extern "C" void HollowCircle__ctor_m1560708842 ();
 extern "C" void HollowCircle_Start_m2284073694 ();
 extern "C" void HollowCircle_CreatePoints_m2954146693 ();
+extern "C" void LoginController__ctor_m502456888 ();
+extern "C" void LoginController_OnGUI_m1867659084 ();
+extern "C" void LoginController_Login_m2432314419 ();
+extern "C" void LoginController_CreateAccount_m2030621533 ();
+extern "C" void LoginController_Login_m2979741121 ();
+extern "C" void LoginController_CreateAccount_m2143445743 ();
+extern "C" void LoginController_loadGame_m1724943120 ();
+extern "C" void LoginController_loadGameAsync_m378967826 ();
+extern "C" void U3CCreateAccountU3Ec__Iterator1__ctor_m483380156 ();
+extern "C" void U3CCreateAccountU3Ec__Iterator1_MoveNext_m1149566504 ();
+extern "C" void U3CCreateAccountU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2760698462 ();
+extern "C" void U3CCreateAccountU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m2500956294 ();
+extern "C" void U3CCreateAccountU3Ec__Iterator1_Dispose_m414993863 ();
+extern "C" void U3CCreateAccountU3Ec__Iterator1_Reset_m2784646105 ();
+extern "C" void U3CloadGameAsyncU3Ec__Iterator2__ctor_m122795602 ();
+extern "C" void U3CloadGameAsyncU3Ec__Iterator2_MoveNext_m2738996562 ();
+extern "C" void U3CloadGameAsyncU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m4132680188 ();
+extern "C" void U3CloadGameAsyncU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m1464714132 ();
+extern "C" void U3CloadGameAsyncU3Ec__Iterator2_Dispose_m3696693539 ();
+extern "C" void U3CloadGameAsyncU3Ec__Iterator2_Reset_m543909445 ();
+extern "C" void U3CLoginU3Ec__Iterator0__ctor_m3330163823 ();
+extern "C" void U3CLoginU3Ec__Iterator0_MoveNext_m3780988629 ();
+extern "C" void U3CLoginU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1294965773 ();
+extern "C" void U3CLoginU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m906646645 ();
+extern "C" void U3CLoginU3Ec__Iterator0_Dispose_m134809238 ();
+extern "C" void U3CLoginU3Ec__Iterator0_Reset_m1456588996 ();
 extern "C" void LoginGUI__ctor_m2417274611 ();
 extern "C" void LoginGUI_OnGUI_m1178093773 ();
 extern "C" void LoginGUI_Login_m3523772546 ();
@@ -13464,6 +13491,9 @@ extern "C" void testTwoChat_displayChat_m520120199 ();
 extern "C" void TR_Toolbox__ctor_m3498229849 ();
 extern "C" void TR_Toolbox_rad_m831478589 ();
 extern "C" void TR_Toolbox_gps_transform_m2942405544 ();
+extern "C" void TiltWindow__ctor_m3071582230 ();
+extern "C" void TiltWindow_Start_m3112429194 ();
+extern "C" void TiltWindow_Update_m460467911 ();
 extern "C" void UpdateGPS__ctor_m1886973562 ();
 extern "C" void UpdateGPS_Update_m2320639175 ();
 extern "C" void UserInfo__ctor_m4058170710 ();
@@ -13482,7 +13512,7 @@ extern "C" void testSingleChat_Start_m1190730460 ();
 extern "C" void testSingleChat_receiveMessage_m3194079398 ();
 extern "C" void testSingleChat_OnGUI_m361319688 ();
 extern "C" void testSingleChat_Main_m1511507263 ();
-extern const Il2CppMethodPointer g_MethodPointers[13468] = 
+extern const Il2CppMethodPointer g_MethodPointers[13498] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -23770,6 +23800,7 @@ extern const Il2CppMethodPointer g_MethodPointers[13468] =
 	Vector2__ctor_m3067419446_AdjustorThunk,
 	Vector2_get_Item_m2792130561_AdjustorThunk,
 	Vector2_set_Item_m3881967114_AdjustorThunk,
+	Vector2_Lerp_m1511850087,
 	Vector2_Scale_m3228063809,
 	Vector2_ToString_m775491729_AdjustorThunk,
 	Vector2_GetHashCode_m2353429373_AdjustorThunk,
@@ -26863,6 +26894,32 @@ extern const Il2CppMethodPointer g_MethodPointers[13468] =
 	HollowCircle__ctor_m1560708842,
 	HollowCircle_Start_m2284073694,
 	HollowCircle_CreatePoints_m2954146693,
+	LoginController__ctor_m502456888,
+	LoginController_OnGUI_m1867659084,
+	LoginController_Login_m2432314419,
+	LoginController_CreateAccount_m2030621533,
+	LoginController_Login_m2979741121,
+	LoginController_CreateAccount_m2143445743,
+	LoginController_loadGame_m1724943120,
+	LoginController_loadGameAsync_m378967826,
+	U3CCreateAccountU3Ec__Iterator1__ctor_m483380156,
+	U3CCreateAccountU3Ec__Iterator1_MoveNext_m1149566504,
+	U3CCreateAccountU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2760698462,
+	U3CCreateAccountU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m2500956294,
+	U3CCreateAccountU3Ec__Iterator1_Dispose_m414993863,
+	U3CCreateAccountU3Ec__Iterator1_Reset_m2784646105,
+	U3CloadGameAsyncU3Ec__Iterator2__ctor_m122795602,
+	U3CloadGameAsyncU3Ec__Iterator2_MoveNext_m2738996562,
+	U3CloadGameAsyncU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m4132680188,
+	U3CloadGameAsyncU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m1464714132,
+	U3CloadGameAsyncU3Ec__Iterator2_Dispose_m3696693539,
+	U3CloadGameAsyncU3Ec__Iterator2_Reset_m543909445,
+	U3CLoginU3Ec__Iterator0__ctor_m3330163823,
+	U3CLoginU3Ec__Iterator0_MoveNext_m3780988629,
+	U3CLoginU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1294965773,
+	U3CLoginU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m906646645,
+	U3CLoginU3Ec__Iterator0_Dispose_m134809238,
+	U3CLoginU3Ec__Iterator0_Reset_m1456588996,
 	LoginGUI__ctor_m2417274611,
 	LoginGUI_OnGUI_m1178093773,
 	LoginGUI_Login_m3523772546,
@@ -26934,6 +26991,9 @@ extern const Il2CppMethodPointer g_MethodPointers[13468] =
 	TR_Toolbox__ctor_m3498229849,
 	TR_Toolbox_rad_m831478589,
 	TR_Toolbox_gps_transform_m2942405544,
+	TiltWindow__ctor_m3071582230,
+	TiltWindow_Start_m3112429194,
+	TiltWindow_Update_m460467911,
 	UpdateGPS__ctor_m1886973562,
 	UpdateGPS_Update_m2320639175,
 	UserInfo__ctor_m4058170710,

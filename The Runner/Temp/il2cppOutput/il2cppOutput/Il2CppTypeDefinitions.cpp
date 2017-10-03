@@ -18743,18 +18743,34 @@ extern const Il2CppType TR_Toolbox_t1175700236_1_0_0 = { (void*)1995, 0, IL2CPP_
 extern const Il2CppType UserInfo_t2259970173_0_0_0 = { (void*)1996, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType UserInfo_t2259970173_1_0_0 = { (void*)1996, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType U3CModuleU3E_t3783534226_0_0_0 = { (void*)1997, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType U3CModuleU3E_t3783534226_1_0_0 = { (void*)1997, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType LoginController_t112609021_0_0_0 = { (void*)1997, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType LoginController_t112609021_1_0_0 = { (void*)1997, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType LoginController_t112609021_0_0_3 = { (void*)1997, 3, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 
-extern const Il2CppType testSingleChat_t1743952810_0_0_0 = { (void*)1998, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType testSingleChat_t1743952810_1_0_0 = { (void*)1998, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType U3CLoginU3Ec__Iterator0_t1873648316_0_0_0 = { (void*)1998, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType U3CLoginU3Ec__Iterator0_t1873648316_1_0_0 = { (void*)1998, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType __testSingleChat_StartU24callable0U2431_31___t2076937298_0_0_0 = { (void*)1999, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType __testSingleChat_StartU24callable0U2431_31___t2076937298_1_0_0 = { (void*)1999, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
-extern const Il2CppType __testSingleChat_StartU24callable0U2431_31___t2076937298_0_0_4 = { (void*)1999, 4, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType U3CCreateAccountU3Ec__Iterator1_t3235856557_0_0_0 = { (void*)1999, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType U3CCreateAccountU3Ec__Iterator1_t3235856557_1_0_0 = { (void*)1999, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_t3950328187_0_0_0 = { (void*)2000, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_t3950328187_1_0_0 = { (void*)2000, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType U3CloadGameAsyncU3Ec__Iterator2_t1609687105_0_0_0 = { (void*)2000, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType U3CloadGameAsyncU3Ec__Iterator2_t1609687105_1_0_0 = { (void*)2000, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+
+extern const Il2CppType TiltWindow_t1839185375_0_0_0 = { (void*)2001, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType TiltWindow_t1839185375_1_0_0 = { (void*)2001, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+
+extern const Il2CppType U3CModuleU3E_t3783534226_0_0_0 = { (void*)2002, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType U3CModuleU3E_t3783534226_1_0_0 = { (void*)2002, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+
+extern const Il2CppType testSingleChat_t1743952810_0_0_0 = { (void*)2003, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType testSingleChat_t1743952810_1_0_0 = { (void*)2003, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+
+extern const Il2CppType __testSingleChat_StartU24callable0U2431_31___t2076937298_0_0_0 = { (void*)2004, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType __testSingleChat_StartU24callable0U2431_31___t2076937298_1_0_0 = { (void*)2004, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType __testSingleChat_StartU24callable0U2431_31___t2076937298_0_0_4 = { (void*)2004, 4, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+
+extern const Il2CppType U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_t3950328187_0_0_0 = { (void*)2005, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_t3950328187_1_0_0 = { (void*)2005, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
 Il2CppGenericClass IComparer_1_t1676750663_GenericClass = { 170, { &GenInst_DefaultComparer_t3074655092_gp_0_0_0_0, NULL }, NULL };
 extern const Il2CppType IComparer_1_t1676750663_0_0_0 = { &IComparer_1_t1676750663_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
@@ -18815,7 +18831,7 @@ extern const Il2CppType TypeTagU5BU5D_t582616213_0_0_0 = { (void*)&TypeTag_t1412
 
 extern const Il2CppType ITrackingHandler_t2759960940_0_0_0;
 extern const Il2CppType ITrackingHandlerU5BU5D_t194660197_0_0_0 = { (void*)&ITrackingHandler_t2759960940_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
-extern const Il2CppType* const  g_Il2CppTypeTable[9416] = 
+extern const Il2CppType* const  g_Il2CppTypeTable[9427] = 
 {
 	&IEnumerator_1_t164973122_0_0_0,
 	&Il2CppObject_0_0_0,
@@ -28150,6 +28166,17 @@ extern const Il2CppType* const  g_Il2CppTypeTable[9416] =
 	&TR_Toolbox_t1175700236_1_0_0,
 	&UserInfo_t2259970173_0_0_0,
 	&UserInfo_t2259970173_1_0_0,
+	&LoginController_t112609021_0_0_0,
+	&LoginController_t112609021_1_0_0,
+	&U3CLoginU3Ec__Iterator0_t1873648316_0_0_0,
+	&U3CLoginU3Ec__Iterator0_t1873648316_1_0_0,
+	&LoginController_t112609021_0_0_3,
+	&U3CCreateAccountU3Ec__Iterator1_t3235856557_0_0_0,
+	&U3CCreateAccountU3Ec__Iterator1_t3235856557_1_0_0,
+	&U3CloadGameAsyncU3Ec__Iterator2_t1609687105_0_0_0,
+	&U3CloadGameAsyncU3Ec__Iterator2_t1609687105_1_0_0,
+	&TiltWindow_t1839185375_0_0_0,
+	&TiltWindow_t1839185375_1_0_0,
 	&U3CModuleU3E_t3783534226_0_0_0,
 	&U3CModuleU3E_t3783534226_1_0_0,
 	&testSingleChat_t1743952810_0_0_0,

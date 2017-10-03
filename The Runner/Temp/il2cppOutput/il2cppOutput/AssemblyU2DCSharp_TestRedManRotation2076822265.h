@@ -28,8 +28,6 @@ struct  TestRedManRotation_t2076822265  : public MonoBehaviour_t1158329972
 public:
 	// System.Boolean TestRedManRotation::loaded
 	bool ___loaded_2;
-	// System.Boolean TestRedManRotation::confirmed
-	bool ___confirmed_3;
 
 public:
 	inline static int32_t get_offset_of_loaded_2() { return static_cast<int32_t>(offsetof(TestRedManRotation_t2076822265, ___loaded_2)); }
@@ -38,14 +36,6 @@ public:
 	inline void set_loaded_2(bool value)
 	{
 		___loaded_2 = value;
-	}
-
-	inline static int32_t get_offset_of_confirmed_3() { return static_cast<int32_t>(offsetof(TestRedManRotation_t2076822265, ___confirmed_3)); }
-	inline bool get_confirmed_3() const { return ___confirmed_3; }
-	inline bool* get_address_of_confirmed_3() { return &___confirmed_3; }
-	inline void set_confirmed_3(bool value)
-	{
-		___confirmed_3 = value;
 	}
 };
 

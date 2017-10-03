@@ -15,9 +15,30 @@
 <type fullname="HandMapController" preserve="all"/>
 <type fullname="LoginGUI" preserve="all"/>
 <type fullname="PlayerMove" preserve="all"/>
+<type fullname="LoginController" preserve="all"/>
+<type fullname="TiltWindow" preserve="all"/>
 </assembly>
 <assembly fullname="Assembly-UnityScript">
 <type fullname="testSingleChat" preserve="all"/>
+</assembly>
+<assembly fullname="UnityEngine.Analytics">
+<type fullname="UnityEngine.Analytics.AnalyticsTracker" preserve="all"/>
+</assembly>
+<assembly fullname="UnityEngine.Networking">
+<type fullname="UnityEngine.Networking.NetworkAnimator" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkBehaviour" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkDiscovery" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkIdentity" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkLobbyManager" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkLobbyPlayer" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkManager" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkManagerHUD" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkMigrationManager" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkProximityChecker" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkStartPosition" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkTransformChild" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkTransform" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkTransformVisualizer" preserve="all"/>
 </assembly>
 <assembly fullname="UnityEngine.UI">
 <type fullname="UnityEngine.EventSystems.EventSystem" preserve="all"/>
@@ -62,24 +83,5 @@
 <type fullname="UnityEngine.UI.Outline" preserve="all"/>
 <type fullname="UnityEngine.UI.PositionAsUV1" preserve="all"/>
 <type fullname="UnityEngine.UI.Shadow" preserve="all"/>
-</assembly>
-<assembly fullname="UnityEngine.Networking">
-<type fullname="UnityEngine.Networking.NetworkAnimator" preserve="all"/>
-<type fullname="UnityEngine.Networking.NetworkBehaviour" preserve="all"/>
-<type fullname="UnityEngine.Networking.NetworkDiscovery" preserve="all"/>
-<type fullname="UnityEngine.Networking.NetworkIdentity" preserve="all"/>
-<type fullname="UnityEngine.Networking.NetworkLobbyManager" preserve="all"/>
-<type fullname="UnityEngine.Networking.NetworkLobbyPlayer" preserve="all"/>
-<type fullname="UnityEngine.Networking.NetworkManager" preserve="all"/>
-<type fullname="UnityEngine.Networking.NetworkManagerHUD" preserve="all"/>
-<type fullname="UnityEngine.Networking.NetworkMigrationManager" preserve="all"/>
-<type fullname="UnityEngine.Networking.NetworkProximityChecker" preserve="all"/>
-<type fullname="UnityEngine.Networking.NetworkStartPosition" preserve="all"/>
-<type fullname="UnityEngine.Networking.NetworkTransformChild" preserve="all"/>
-<type fullname="UnityEngine.Networking.NetworkTransform" preserve="all"/>
-<type fullname="UnityEngine.Networking.NetworkTransformVisualizer" preserve="all"/>
-</assembly>
-<assembly fullname="UnityEngine.Analytics">
-<type fullname="UnityEngine.Analytics.AnalyticsTracker" preserve="all"/>
 </assembly>
 </linker>
