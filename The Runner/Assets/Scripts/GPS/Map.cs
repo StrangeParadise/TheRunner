@@ -22,23 +22,26 @@ public class Map : MonoBehaviour {
 	private IEnumerator mapCoroutine;
 
 	void Update () {
-//		latitude  = gpsController.gps.latitude;
-//		longitude = gpsController.gps.longtitude;
-//		mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
-//		StartCoroutine (mapCoroutine); //restart the coroutine
+		latitude  = gpsController.gps.latitude;
+		longitude = gpsController.gps.longtitude;
+		mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
+		StartCoroutine (mapCoroutine); //restart the coroutine
 
-		if (terminal != null && gpsController != null) {
-			terminal.text = "gps | long: " + gpsController.gps.longtitude.ToString() +'\n' + " lati: " + gpsController.gps.latitude.ToString();
-		}
+//		if (terminal != null && gpsController != null) {
+//			terminal.text = "gps | long: " + gpsController.gps.longtitude.ToString() +'\n' + " lati: " + gpsController.gps.latitude.ToString();
+//		}
 	}
 
 	IEnumerator GetGoogleMap(float latitude, float longitude)
 	{
 //		Debug.Log ("latitude " + latitude);
 //		Debug.Log ("longitude " + longitude);
+//		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude +
+//			"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected + 
+//			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyDK04pO2JEC4C01AQSW9dpuBDunvtuA-o8";
 		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude +
 			"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected + 
-			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyDK04pO2JEC4C01AQSW9dpuBDunvtuA-o8";
+			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyDkFTum1BgoY5gD92vkLlnavRQnnYQKKiM";
 		WWW www = new WWW(url);
 		yield return www;
 		Texture mapTexture = www.texture;

@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class UpdateGPS : MonoBehaviour {
 
-	public Text coordinate;
+	public TextMesh terminal;
 	public Camera main;
 
 	public GPSController IGPSController;
 
 	private void Update() {
-//		coordinate.text = "x" + IGPSController.gps.latitude  + "    z" + IGPSController.gps.longtitude;
+		terminal.text = "x" + main.transform.position.x + "    z" + main.transform.position.z;
 	}
 
 //	public int zoom;

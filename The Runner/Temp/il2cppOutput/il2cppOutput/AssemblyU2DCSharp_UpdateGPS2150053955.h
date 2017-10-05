@@ -12,8 +12,8 @@
 
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972.h"
 
-// UnityEngine.UI.Text
-struct Text_t356221433;
+// UnityEngine.TextMesh
+struct TextMesh_t1641806576;
 // UnityEngine.Camera
 struct Camera_t189460977;
 // GPSController
@@ -32,21 +32,21 @@ struct GPSController_t2272977524;
 struct  UpdateGPS_t2150053955  : public MonoBehaviour_t1158329972
 {
 public:
-	// UnityEngine.UI.Text UpdateGPS::coordinate
-	Text_t356221433 * ___coordinate_2;
+	// UnityEngine.TextMesh UpdateGPS::terminal
+	TextMesh_t1641806576 * ___terminal_2;
 	// UnityEngine.Camera UpdateGPS::main
 	Camera_t189460977 * ___main_3;
 	// GPSController UpdateGPS::IGPSController
 	GPSController_t2272977524 * ___IGPSController_4;
 
 public:
-	inline static int32_t get_offset_of_coordinate_2() { return static_cast<int32_t>(offsetof(UpdateGPS_t2150053955, ___coordinate_2)); }
-	inline Text_t356221433 * get_coordinate_2() const { return ___coordinate_2; }
-	inline Text_t356221433 ** get_address_of_coordinate_2() { return &___coordinate_2; }
-	inline void set_coordinate_2(Text_t356221433 * value)
+	inline static int32_t get_offset_of_terminal_2() { return static_cast<int32_t>(offsetof(UpdateGPS_t2150053955, ___terminal_2)); }
+	inline TextMesh_t1641806576 * get_terminal_2() const { return ___terminal_2; }
+	inline TextMesh_t1641806576 ** get_address_of_terminal_2() { return &___terminal_2; }
+	inline void set_terminal_2(TextMesh_t1641806576 * value)
 	{
-		___coordinate_2 = value;
-		Il2CppCodeGenWriteBarrier(&___coordinate_2, value);
+		___terminal_2 = value;
+		Il2CppCodeGenWriteBarrier(&___terminal_2, value);
 	}
 
 	inline static int32_t get_offset_of_main_3() { return static_cast<int32_t>(offsetof(UpdateGPS_t2150053955, ___main_3)); }

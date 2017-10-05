@@ -90,7 +90,7 @@
 #include "AssemblyU2DCSharp_Map_U3CGetGoogleMapU3Ec__Iterato1695079217.h"
 #include "AssemblyU2DCSharp_MapTools3308069217.h"
 #include "AssemblyU2DCSharp_UpdateGPS2150053955.h"
-#include "AssemblyU2DCSharp_PlayerController4148409433.h"
+#include "AssemblyU2DCSharp_GameController3607102586.h"
 #include "AssemblyU2DCSharp_HandMapController222498385.h"
 #include "AssemblyU2DCSharp_LoginGUI4073642432.h"
 #include "AssemblyU2DCSharp_LoginGUI_U3CLoginU3Ec__Iterator01563009217.h"
@@ -682,16 +682,16 @@ extern const int32_t g_FieldOffsetTable1986[7] =
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1987 = { sizeof (UpdateGPS_t2150053955), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable1987[3] = 
 {
-	UpdateGPS_t2150053955::get_offset_of_coordinate_2(),
+	UpdateGPS_t2150053955::get_offset_of_terminal_2(),
 	UpdateGPS_t2150053955::get_offset_of_main_3(),
 	UpdateGPS_t2150053955::get_offset_of_IGPSController_4(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1988 = { sizeof (PlayerController_t4148409433), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1988 = { sizeof (GameController_t3607102586), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable1988[3] = 
 {
-	PlayerController_t4148409433::get_offset_of_mapCanvas_2(),
-	PlayerController_t4148409433::get_offset_of_mainCamera_3(),
-	PlayerController_t4148409433::get_offset_of_IGPSController_4(),
+	GameController_t3607102586::get_offset_of_mapCanvas_2(),
+	GameController_t3607102586::get_offset_of_mainCamera_3(),
+	GameController_t3607102586::get_offset_of_IGPSController_4(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1989 = { sizeof (HandMapController_t222498385), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1990 = { sizeof (LoginGUI_t4073642432), -1, 0, 0 };

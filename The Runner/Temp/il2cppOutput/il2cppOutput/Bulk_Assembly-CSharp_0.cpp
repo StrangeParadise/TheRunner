@@ -20,28 +20,31 @@
 #include "AssemblyU2DCSharp_AR2523137185.h"
 #include "mscorlib_System_Void1841601450.h"
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972.h"
-#include "UnityEngine_UnityEngine_Quaternion4030073918.h"
-#include "UnityEngine_UnityEngine_Vector32243707580.h"
 #include "mscorlib_System_Object2689449295.h"
 #include "UnityEngine_UnityEngine_WebCamDevice3983871389.h"
 #include "mscorlib_System_String2029220233.h"
 #include "UnityEngine_UnityEngine_Object1021602117.h"
+#include "UnityEngine_UnityEngine_Vector32243707580.h"
 #include "UnityEngine_UnityEngine_Transform3275118058.h"
+#include "UnityEngine_UnityEngine_Quaternion4030073918.h"
 #include "UnityEngine_UnityEngine_Texture2243626319.h"
 #include "mscorlib_System_Int322071877448.h"
 #include "UnityEngine_UnityEngine_Compass2500694222.h"
 #include "mscorlib_System_Boolean3825574718.h"
 #include "UnityEngine_UnityEngine_LocationService1617852714.h"
-#include "UnityEngine_UnityEngine_Component3819376471.h"
-#include "mscorlib_System_Single2076509932.h"
 #include "UnityEngine_UnityEngine_WebCamTexture1079476942.h"
 #include "UnityEngine_UnityEngine_GameObject1756533147.h"
+#include "UnityEngine_UnityEngine_Component3819376471.h"
 #include "UnityEngine_UnityEngine_Gyroscope1705362817.h"
+#include "mscorlib_System_Single2076509932.h"
 #include "UnityEngine_UI_UnityEngine_UI_RawImage2749640213.h"
 #include "UnityEngine_UI_UnityEngine_UI_AspectRatioFitter3114550109.h"
 #include "UnityEngine_UI_UnityEngine_UI_Graphic2426225576.h"
 #include "UnityEngine_UnityEngine_RectTransform3349966182.h"
 #include "AssemblyU2DCSharp_ChatController2669781690.h"
+#include "AssemblyU2DCSharp_GameController3607102586.h"
+#include "UnityEngine_UnityEngine_Canvas209405766.h"
+#include "UnityEngine_UnityEngine_Camera189460977.h"
 #include "AssemblyU2DCSharp_GPSController2272977524.h"
 #include "AssemblyU2DCSharp_GPSData207763284.h"
 #include "AssemblyU2DCSharp_GPSController_U3CStartLocationSe2676618990.h"
@@ -70,15 +73,10 @@
 #include "AssemblyU2DCSharp_LoginGUI_U3CCreateAccountU3Ec__I4116917652.h"
 #include "AssemblyU2DCSharp_LoginGUI_U3CloadGameAsyncU3Ec__It152900926.h"
 #include "AssemblyU2DCSharp_Map4262919222.h"
-#include "UnityEngine_UnityEngine_TextMesh1641806576.h"
-#include "mscorlib_System_Char3454481338.h"
 #include "AssemblyU2DCSharp_Map_U3CGetGoogleMapU3Ec__Iterato1695079217.h"
 #include "AssemblyU2DCSharp_Map_mapType3017953257.h"
 #include "UnityEngine_UnityEngine_Texture2D3542995729.h"
 #include "AssemblyU2DCSharp_MapTools3308069217.h"
-#include "UnityEngine_UnityEngine_Camera189460977.h"
-#include "AssemblyU2DCSharp_PlayerController4148409433.h"
-#include "UnityEngine_UnityEngine_Canvas209405766.h"
 #include "AssemblyU2DCSharp_PlayerMove195622780.h"
 #include "UnityEngine_Networking_UnityEngine_Networking_Netw3873055601.h"
 #include "UnityEngine_Networking_UnityEngine_Networking_Netwo560143343.h"
@@ -107,6 +105,7 @@
 #include "AssemblyU2DCSharp_TheRunner_Tools_TR_Toolbox1175700236.h"
 #include "AssemblyU2DCSharp_TiltWindow1839185375.h"
 #include "AssemblyU2DCSharp_UpdateGPS2150053955.h"
+#include "UnityEngine_UnityEngine_TextMesh1641806576.h"
 #include "AssemblyU2DCSharp_UserInfo2259970173.h"
 
 // AR
@@ -117,10 +116,6 @@ struct MonoBehaviour_t1158329972;
 struct Compass_t2500694222;
 // UnityEngine.LocationService
 struct LocationService_t1617852714;
-// UnityEngine.Component
-struct Component_t3819376471;
-// UnityEngine.Transform
-struct Transform_t3275118058;
 // System.Object
 struct Il2CppObject;
 // UnityEngine.WebCamDevice[]
@@ -133,6 +128,10 @@ struct WebCamTexture_t1079476942;
 struct Object_t1021602117;
 // UnityEngine.GameObject
 struct GameObject_t1756533147;
+// UnityEngine.Transform
+struct Transform_t3275118058;
+// UnityEngine.Component
+struct Component_t3819376471;
 // UnityEngine.Gyroscope
 struct Gyroscope_t1705362817;
 // UnityEngine.UI.RawImage
@@ -147,6 +146,8 @@ struct Graphic_t2426225576;
 struct RectTransform_t3349966182;
 // ChatController
 struct ChatController_t2669781690;
+// GameController
+struct GameController_t3607102586;
 // GPSController
 struct GPSController_t2272977524;
 // GPSData
@@ -157,8 +158,6 @@ struct IEnumerator_t1466026749;
 struct U3CStartLocationServiceU3Ec__Iterator0_t2676618990;
 // UnityEngine.Coroutine
 struct Coroutine_t2299508840;
-// System.Object[]
-struct ObjectU5BU5D_t3614634134;
 // UnityEngine.WaitForSeconds
 struct WaitForSeconds_t3839502067;
 // System.NotSupportedException
@@ -197,18 +196,16 @@ struct U3CCreateAccountU3Ec__Iterator1_t4116917652;
 struct U3CloadGameAsyncU3Ec__Iterator2_t152900926;
 // Map
 struct Map_t4262919222;
-// UnityEngine.TextMesh
-struct TextMesh_t1641806576;
 // Map/<GetGoogleMap>c__Iterator0
 struct U3CGetGoogleMapU3Ec__Iterator0_t1695079217;
+// System.Object[]
+struct ObjectU5BU5D_t3614634134;
 // UnityEngine.Texture2D
 struct Texture2D_t3542995729;
 // MapTools
 struct MapTools_t3308069217;
 // UnityEngine.Camera
 struct Camera_t189460977;
-// PlayerController
-struct PlayerController_t4148409433;
 // PlayerMove
 struct PlayerMove_t195622780;
 // UnityEngine.Networking.NetworkBehaviour
@@ -259,6 +256,8 @@ struct TR_Toolbox_t1175700236;
 struct TiltWindow_t1839185375;
 // UpdateGPS
 struct UpdateGPS_t2150053955;
+// UnityEngine.TextMesh
+struct TextMesh_t1641806576;
 // UserInfo
 struct UserInfo_t2259970173;
 extern Il2CppClass* Input_t1785128008_il2cpp_TypeInfo_var;
@@ -269,20 +268,16 @@ extern Il2CppCodeGenString* _stringLiteral634607365;
 extern Il2CppCodeGenString* _stringLiteral335743509;
 extern Il2CppCodeGenString* _stringLiteral703727900;
 extern const uint32_t AR_Start_m1351794542_MetadataUsageId;
+extern Il2CppClass* Single_t2076509932_il2cpp_TypeInfo_var;
+extern const uint32_t AR_Update_m3244983845_MetadataUsageId;
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1890047662;
+extern Il2CppCodeGenString* _stringLiteral3619451924;
+extern const uint32_t GameController_rotateMapWithCamera_m4088657527_MetadataUsageId;
 extern Il2CppClass* GPSData_t207763284_il2cpp_TypeInfo_var;
 extern const uint32_t GPSController_Start_m4152392635_MetadataUsageId;
 extern Il2CppClass* U3CStartLocationServiceU3Ec__Iterator0_t2676618990_il2cpp_TypeInfo_var;
 extern const uint32_t GPSController_StartLocationService_m497030285_MetadataUsageId;
-extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
-extern Il2CppClass* Single_t2076509932_il2cpp_TypeInfo_var;
-extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
-extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral2213770037;
-extern Il2CppCodeGenString* _stringLiteral3827447842;
-extern Il2CppCodeGenString* _stringLiteral3107095397;
-extern Il2CppCodeGenString* _stringLiteral2351134056;
-extern Il2CppCodeGenString* _stringLiteral3109164642;
 extern const uint32_t GPSController_Update_m1670322258_MetadataUsageId;
 extern Il2CppClass* WaitForSeconds_t3839502067_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral172602210;
@@ -330,6 +325,7 @@ extern Il2CppClass* U3CLoginU3Ec__Iterator0_t1873648316_il2cpp_TypeInfo_var;
 extern const uint32_t LoginController_Login_m2979741121_MetadataUsageId;
 extern Il2CppClass* U3CCreateAccountU3Ec__Iterator1_t3235856557_il2cpp_TypeInfo_var;
 extern const uint32_t LoginController_CreateAccount_m2143445743_MetadataUsageId;
+extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2255930277;
 extern Il2CppCodeGenString* _stringLiteral1029228285;
 extern Il2CppCodeGenString* _stringLiteral2640882096;
@@ -371,12 +367,10 @@ extern const uint32_t U3CloadGameAsyncU3Ec__Iterator2_MoveNext_m2243395097_Metad
 extern const uint32_t U3CloadGameAsyncU3Ec__Iterator2_Reset_m4147414_MetadataUsageId;
 extern const uint32_t U3CLoginU3Ec__Iterator0_MoveNext_m4166444560_MetadataUsageId;
 extern const uint32_t U3CLoginU3Ec__Iterator0_Reset_m1737668657_MetadataUsageId;
-extern Il2CppClass* Char_t3454481338_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1555694406;
-extern Il2CppCodeGenString* _stringLiteral3068845616;
-extern const uint32_t Map_Update_m3867277220_MetadataUsageId;
 extern Il2CppClass* U3CGetGoogleMapU3Ec__Iterator0_t1695079217_il2cpp_TypeInfo_var;
 extern const uint32_t Map_GetGoogleMap_m3075677944_MetadataUsageId;
+extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
 extern Il2CppClass* mapType_t3017953257_il2cpp_TypeInfo_var;
 extern const MethodInfo* Component_GetComponent_TisRawImage_t2749640213_m1817787565_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2775107238;
@@ -386,10 +380,9 @@ extern Il2CppCodeGenString* _stringLiteral2334078884;
 extern Il2CppCodeGenString* _stringLiteral372029398;
 extern Il2CppCodeGenString* _stringLiteral93847055;
 extern Il2CppCodeGenString* _stringLiteral2313303675;
-extern Il2CppCodeGenString* _stringLiteral2328242528;
+extern Il2CppCodeGenString* _stringLiteral3779626262;
 extern const uint32_t U3CGetGoogleMapU3Ec__Iterator0_MoveNext_m2744658934_MetadataUsageId;
 extern const uint32_t U3CGetGoogleMapU3Ec__Iterator0_Reset_m2581645829_MetadataUsageId;
-extern const uint32_t PlayerController_rotateMapWithCamera_m1309297544_MetadataUsageId;
 extern Il2CppClass* NetworkBehaviour_t3873055601_il2cpp_TypeInfo_var;
 extern const uint32_t PlayerMove__ctor_m161887621_MetadataUsageId;
 extern Il2CppClass* List_1_t1398341365_il2cpp_TypeInfo_var;
@@ -457,6 +450,8 @@ extern Il2CppCodeGenString* _stringLiteral2391892769;
 extern const uint32_t testTwoChat_displayChat_m520120199_MetadataUsageId;
 extern const uint32_t TR_Toolbox_gps_transform_m2942405544_MetadataUsageId;
 extern const uint32_t TiltWindow_Update_m460467911_MetadataUsageId;
+extern Il2CppCodeGenString* _stringLiteral2615680472;
+extern const uint32_t UpdateGPS_Update_m2320639175_MetadataUsageId;
 
 // UnityEngine.WebCamDevice[]
 struct WebCamDeviceU5BU5D_t2903637840  : public Il2CppArray
@@ -686,18 +681,6 @@ extern "C"  void Compass_set_enabled_m3437382362 (Compass_t2500694222 * __this, 
 extern "C"  LocationService_t1617852714 * Input_get_location_m1390884443 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.LocationService::Start()
 extern "C"  void LocationService_Start_m3920984473 (LocationService_t1617852714 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// UnityEngine.Transform UnityEngine.Component::get_transform()
-extern "C"  Transform_t3275118058 * Component_get_transform_m2697483695 (Component_t3819376471 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// UnityEngine.Quaternion UnityEngine.Transform::get_rotation()
-extern "C"  Quaternion_t4030073918  Transform_get_rotation_m1033555130 (Transform_t3275118058 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// UnityEngine.Vector3 UnityEngine.Quaternion::get_eulerAngles()
-extern "C"  Vector3_t2243707580  Quaternion_get_eulerAngles_m3302573991 (Quaternion_t4030073918 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Single UnityEngine.Compass::get_trueHeading()
-extern "C"  float Compass_get_trueHeading_m3905498274 (Compass_t2500694222 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// UnityEngine.Quaternion UnityEngine.Quaternion::Euler(System.Single,System.Single,System.Single)
-extern "C"  Quaternion_t4030073918  Quaternion_Euler_m2887458175 (Il2CppObject * __this /* static, unused */, float p0, float p1, float p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Transform::set_rotation(UnityEngine.Quaternion)
-extern "C"  void Transform_set_rotation_m3411284563 (Transform_t3275118058 * __this, Quaternion_t4030073918  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.SystemInfo::get_supportsGyroscope()
 extern "C"  bool SystemInfo_get_supportsGyroscope_m2145709384 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.MonoBehaviour::print(System.Object)
@@ -720,6 +703,8 @@ extern "C"  bool Object_op_Equality_m3764089466 (Il2CppObject * __this /* static
 extern "C"  void GameObject__ctor_m962601984 (GameObject_t1756533147 * __this, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Transform UnityEngine.GameObject::get_transform()
 extern "C"  Transform_t3275118058 * GameObject_get_transform_m909382139 (GameObject_t1756533147 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Transform UnityEngine.Component::get_transform()
+extern "C"  Transform_t3275118058 * Component_get_transform_m2697483695 (Component_t3819376471 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Transform::get_position()
 extern "C"  Vector3_t2243707580  Transform_get_position_m1104419803 (Transform_t3275118058 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::set_position(UnityEngine.Vector3)
@@ -730,6 +715,10 @@ extern "C"  void Transform_SetParent_m4124909910 (Transform_t3275118058 * __this
 extern "C"  Gyroscope_t1705362817 * Input_get_gyro_m4027090408 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Gyroscope::set_enabled(System.Boolean)
 extern "C"  void Gyroscope_set_enabled_m487023127 (Gyroscope_t1705362817 * __this, bool p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Quaternion UnityEngine.Quaternion::Euler(System.Single,System.Single,System.Single)
+extern "C"  Quaternion_t4030073918  Quaternion_Euler_m2887458175 (Il2CppObject * __this /* static, unused */, float p0, float p1, float p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::set_rotation(UnityEngine.Quaternion)
+extern "C"  void Transform_set_rotation_m3411284563 (Transform_t3275118058 * __this, Quaternion_t4030073918  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Quaternion::.ctor(System.Single,System.Single,System.Single,System.Single)
 extern "C"  void Quaternion__ctor_m3196903881 (Quaternion_t4030073918 * __this, float p0, float p1, float p2, float p3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.WebCamTexture::Play()
@@ -742,20 +731,36 @@ extern "C"  Quaternion_t4030073918  Gyroscope_get_attitude_m3665233473 (Gyroscop
 extern "C"  Quaternion_t4030073918  Quaternion_op_Multiply_m2426727589 (Il2CppObject * __this /* static, unused */, Quaternion_t4030073918  p0, Quaternion_t4030073918  p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::set_localRotation(UnityEngine.Quaternion)
 extern "C"  void Transform_set_localRotation_m2055111962 (Transform_t3275118058 * __this, Quaternion_t4030073918  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Quaternion UnityEngine.Transform::get_rotation()
+extern "C"  Quaternion_t4030073918  Transform_get_rotation_m1033555130 (Transform_t3275118058 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Quaternion::get_eulerAngles()
+extern "C"  Vector3_t2243707580  Quaternion_get_eulerAngles_m3302573991 (Quaternion_t4030073918 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Compass::get_trueHeading()
+extern "C"  float Compass_get_trueHeading_m3905498274 (Compass_t2500694222 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Vector3::.ctor(System.Single,System.Single,System.Single)
+extern "C"  void Vector3__ctor_m2638739322 (Vector3_t2243707580 * __this, float p0, float p1, float p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::set_eulerAngles(UnityEngine.Vector3)
+extern "C"  void Transform_set_eulerAngles_m2881310872 (Transform_t3275118058 * __this, Vector3_t2243707580  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.UI.AspectRatioFitter::set_aspectRatio(System.Single)
 extern "C"  void AspectRatioFitter_set_aspectRatio_m4159324881 (AspectRatioFitter_t3114550109 * __this, float p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.WebCamTexture::get_videoVerticallyMirrored()
 extern "C"  bool WebCamTexture_get_videoVerticallyMirrored_m3184994578 (WebCamTexture_t1079476942 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.RectTransform UnityEngine.UI.Graphic::get_rectTransform()
 extern "C"  RectTransform_t3349966182 * Graphic_get_rectTransform_m2697395074 (Graphic_t2426225576 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Vector3::.ctor(System.Single,System.Single,System.Single)
-extern "C"  void Vector3__ctor_m2638739322 (Vector3_t2243707580 * __this, float p0, float p1, float p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::set_localScale(UnityEngine.Vector3)
 extern "C"  void Transform_set_localScale_m2325460848 (Transform_t3275118058 * __this, Vector3_t2243707580  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.WebCamTexture::get_videoRotationAngle()
 extern "C"  int32_t WebCamTexture_get_videoRotationAngle_m1556283588 (WebCamTexture_t1079476942 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::set_localEulerAngles(UnityEngine.Vector3)
 extern "C"  void Transform_set_localEulerAngles_m2927195985 (Transform_t3275118058 * __this, Vector3_t2243707580  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void GameController::rotateMapWithCamera()
+extern "C"  void GameController_rotateMapWithCamera_m4088657527 (GameController_t3607102586 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void GameController::positionMapWithCamera()
+extern "C"  void GameController_positionMapWithCamera_m3500126895 (GameController_t3607102586 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Transform::get_eulerAngles()
+extern "C"  Vector3_t2243707580  Transform_get_eulerAngles_m4066505159 (Transform_t3275118058 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.String::Concat(System.Object,System.Object)
+extern "C"  String_t* String_Concat_m56707527 (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, Il2CppObject * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GPSData::.ctor()
 extern "C"  void GPSData__ctor_m1606646883 (GPSData_t207763284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GPSController/<StartLocationService>c__Iterator0::.ctor()
@@ -768,14 +773,6 @@ extern "C"  void Object_DontDestroyOnLoad_m2330762974 (Il2CppObject * __this /* 
 extern "C"  Il2CppObject * GPSController_StartLocationService_m497030285 (GPSController_t2272977524 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Coroutine UnityEngine.MonoBehaviour::StartCoroutine(System.Collections.IEnumerator)
 extern "C"  Coroutine_t2299508840 * MonoBehaviour_StartCoroutine_m2470621050 (MonoBehaviour_t1158329972 * __this, Il2CppObject * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Single GPSData::get_longtitude()
-extern "C"  float GPSData_get_longtitude_m4025849247 (GPSData_t207763284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Single GPSData::get_latitude()
-extern "C"  float GPSData_get_latitude_m3986338616 (GPSData_t207763284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.String System.String::Concat(System.Object[])
-extern "C"  String_t* String_Concat_m3881798623 (Il2CppObject * __this /* static, unused */, ObjectU5BU5D_t3614634134* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Debug::Log(System.Object)
-extern "C"  void Debug_Log_m920475918 (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Object::.ctor()
 extern "C"  void Object__ctor_m2551263788 (Il2CppObject * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.LocationService::get_isEnabledByUser()
@@ -810,6 +807,10 @@ extern "C"  void GPSData_updateStack_m1223663578 (GPSData_t207763284 * __this, f
 #define List_1_Add_m913687102(__this, p0, method) ((  void (*) (List_1_t1445631064 *, float, const MethodInfo*))List_1_Add_m913687102_gshared)(__this, p0, method)
 // System.Void GPSData::stablizeGPSData()
 extern "C"  void GPSData_stablizeGPSData_m163515869 (GPSData_t207763284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single GPSData::get_longtitude()
+extern "C"  float GPSData_get_longtitude_m4025849247 (GPSData_t207763284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single GPSData::get_latitude()
+extern "C"  float GPSData_get_latitude_m3986338616 (GPSData_t207763284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // !0 System.Collections.Generic.List`1<System.Single>::get_Item(System.Int32)
 #define List_1_get_Item_m3254877171(__this, p0, method) ((  float (*) (List_1_t1445631064 *, int32_t, const MethodInfo*))List_1_get_Item_m3254877171_gshared)(__this, p0, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.LineRenderer>()
@@ -850,6 +851,8 @@ extern "C"  Il2CppObject * LoginController_CreateAccount_m2143445743 (LoginContr
 extern "C"  void U3CLoginU3Ec__Iterator0__ctor_m3330163823 (U3CLoginU3Ec__Iterator0_t1873648316 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void LoginController/<CreateAccount>c__Iterator1::.ctor()
 extern "C"  void U3CCreateAccountU3Ec__Iterator1__ctor_m483380156 (U3CCreateAccountU3Ec__Iterator1_t3235856557 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Debug::Log(System.Object)
+extern "C"  void Debug_Log_m920475918 (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.AsyncOperation UnityEngine.SceneManagement.SceneManager::UnloadSceneAsync(System.String)
 extern "C"  AsyncOperation_t3814632279 * SceneManager_UnloadSceneAsync_m4016707407 (Il2CppObject * __this /* static, unused */, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.SceneManagement.SceneManager::LoadScene(System.String,UnityEngine.SceneManagement.LoadSceneMode)
@@ -890,14 +893,12 @@ extern "C"  void U3CCreateAccountU3Ec__Iterator1__ctor_m1663879251 (U3CCreateAcc
 extern "C"  void U3CloadGameAsyncU3Ec__Iterator2__ctor_m3228149975 (U3CloadGameAsyncU3Ec__Iterator2_t152900926 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void LoginGUI::loadGame()
 extern "C"  void LoginGUI_loadGame_m195638551 (LoginGUI_t4073642432 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
-extern "C"  bool Object_op_Inequality_m2402264703 (Il2CppObject * __this /* static, unused */, Object_t1021602117 * p0, Object_t1021602117 * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.String System.Single::ToString()
-extern "C"  String_t* Single_ToString_m1813392066 (float* __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.TextMesh::set_text(System.String)
-extern "C"  void TextMesh_set_text_m3390063817 (TextMesh_t1641806576 * __this, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Collections.IEnumerator Map::GetGoogleMap(System.Single,System.Single)
+extern "C"  Il2CppObject * Map_GetGoogleMap_m3075677944 (Map_t4262919222 * __this, float ___latitude0, float ___longitude1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Map/<GetGoogleMap>c__Iterator0::.ctor()
 extern "C"  void U3CGetGoogleMapU3Ec__Iterator0__ctor_m3373241622 (U3CGetGoogleMapU3Ec__Iterator0_t1695079217 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.String::Concat(System.Object[])
+extern "C"  String_t* String_Concat_m3881798623 (Il2CppObject * __this /* static, unused */, ObjectU5BU5D_t3614634134* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.WWW::.ctor(System.String)
 extern "C"  void WWW__ctor_m2024029190 (WWW_t2919945039 * __this, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Texture2D UnityEngine.WWW::get_texture()
@@ -910,16 +911,10 @@ extern "C"  void Object_Destroy_m4145850038 (Il2CppObject * __this /* static, un
 extern "C"  void MonoBehaviour_StopCoroutine_m1170478282 (MonoBehaviour_t1158329972 * __this, Il2CppObject * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Camera UnityEngine.Camera::get_main()
 extern "C"  Camera_t189460977 * Camera_get_main_m475173995 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 MapTools::mapGPS(System.Single,System.Single)
+extern "C"  Vector3_t2243707580  MapTools_mapGPS_m2811930864 (MapTools_t3308069217 * __this, float ___latitude0, float ___longitude1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single TheRunner.Tools.TR_Toolbox::gps_transform(System.Single,System.Single,System.Single,System.Single)
 extern "C"  float TR_Toolbox_gps_transform_m2942405544 (Il2CppObject * __this /* static, unused */, float ___lat10, float ___lng11, float ___lat22, float ___lng23, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void PlayerController::rotateMapWithCamera()
-extern "C"  void PlayerController_rotateMapWithCamera_m1309297544 (PlayerController_t4148409433 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void PlayerController::positionMapWithCamera()
-extern "C"  void PlayerController_positionMapWithCamera_m2915694368 (PlayerController_t4148409433 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Single UnityEngine.Mathf::Clamp(System.Single,System.Single,System.Single)
-extern "C"  float Mathf_Clamp_m2354025655 (Il2CppObject * __this /* static, unused */, float p0, float p1, float p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// UnityEngine.Quaternion UnityEngine.Quaternion::Euler(UnityEngine.Vector3)
-extern "C"  Quaternion_t4030073918  Quaternion_Euler_m3586339259 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Networking.NetworkBehaviour::.ctor()
 extern "C"  void NetworkBehaviour__ctor_m483335596 (NetworkBehaviour_t3873055601 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Networking.NetworkBehaviour::get_isLocalPlayer()
@@ -1028,8 +1023,8 @@ extern "C"  int32_t Random_Range_m694320887 (Il2CppObject * __this /* static, un
 extern "C"  void SimpleChat__ctor_m1147096138 (SimpleChat_t403391640 * __this, String_t* ___identifier0, MonoBehaviour_t1158329972 * ___currentMonoBehaviour1, String_t* ___senderName2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void SimpleChat::draw()
 extern "C"  void SimpleChat_draw_m869370447 (SimpleChat_t403391640 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.String System.String::Concat(System.Object,System.Object)
-extern "C"  String_t* String_Concat_m56707527 (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, Il2CppObject * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Quaternion UnityEngine.Quaternion::Euler(UnityEngine.Vector3)
+extern "C"  Quaternion_t4030073918  Quaternion_Euler_m3586339259 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Vector3::get_zero()
 extern "C"  Vector3_t2243707580  Vector3_get_zero_m1527993324 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Vector3::get_up()
@@ -1050,10 +1045,14 @@ extern "C"  void Vector2__ctor_m3067419446 (Vector2_t2243707579 * __this, float 
 extern "C"  Quaternion_t4030073918  Transform_get_localRotation_m4001487205 (Transform_t3275118058 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Input::get_mousePosition()
 extern "C"  Vector3_t2243707580  Input_get_mousePosition_m146923508 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Mathf::Clamp(System.Single,System.Single,System.Single)
+extern "C"  float Mathf_Clamp_m2354025655 (Il2CppObject * __this /* static, unused */, float p0, float p1, float p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Time::get_deltaTime()
 extern "C"  float Time_get_deltaTime_m2233168104 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector2 UnityEngine.Vector2::Lerp(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
 extern "C"  Vector2_t2243707579  Vector2_Lerp_m1511850087 (Il2CppObject * __this /* static, unused */, Vector2_t2243707579  p0, Vector2_t2243707579  p1, float p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.TextMesh::set_text(System.String)
+extern "C"  void TextMesh_set_text_m3390063817 (TextMesh_t1641806576 * __this, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -1076,15 +1075,7 @@ extern "C"  void AR_Start_m1351794542 (AR_t2523137185 * __this, const MethodInfo
 		il2cpp_codegen_initialize_method (AR_Start_m1351794542_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	Quaternion_t4030073918  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	Vector3_t2243707580  V_1;
-	memset(&V_1, 0, sizeof(V_1));
-	Quaternion_t4030073918  V_2;
-	memset(&V_2, 0, sizeof(V_2));
-	Vector3_t2243707580  V_3;
-	memset(&V_3, 0, sizeof(V_3));
-	int32_t V_4 = 0;
+	int32_t V_0 = 0;
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
 		Compass_t2500694222 * L_0 = Input_get_compass_m630986328(NULL /*static, unused*/, /*hidden argument*/NULL);
@@ -1093,31 +1084,10 @@ extern "C"  void AR_Start_m1351794542 (AR_t2523137185 * __this, const MethodInfo
 		LocationService_t1617852714 * L_1 = Input_get_location_m1390884443(NULL /*static, unused*/, /*hidden argument*/NULL);
 		NullCheck(L_1);
 		LocationService_Start_m3920984473(L_1, /*hidden argument*/NULL);
-		Transform_t3275118058 * L_2 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		Transform_t3275118058 * L_3 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		NullCheck(L_3);
-		Quaternion_t4030073918  L_4 = Transform_get_rotation_m1033555130(L_3, /*hidden argument*/NULL);
-		V_0 = L_4;
-		Vector3_t2243707580  L_5 = Quaternion_get_eulerAngles_m3302573991((&V_0), /*hidden argument*/NULL);
-		V_1 = L_5;
-		float L_6 = (&V_1)->get_x_1();
-		Compass_t2500694222 * L_7 = Input_get_compass_m630986328(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_7);
-		float L_8 = Compass_get_trueHeading_m3905498274(L_7, /*hidden argument*/NULL);
-		Transform_t3275118058 * L_9 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		NullCheck(L_9);
-		Quaternion_t4030073918  L_10 = Transform_get_rotation_m1033555130(L_9, /*hidden argument*/NULL);
-		V_2 = L_10;
-		Vector3_t2243707580  L_11 = Quaternion_get_eulerAngles_m3302573991((&V_2), /*hidden argument*/NULL);
-		V_3 = L_11;
-		float L_12 = (&V_3)->get_z_3();
-		Quaternion_t4030073918  L_13 = Quaternion_Euler_m2887458175(NULL /*static, unused*/, L_6, L_8, L_12, /*hidden argument*/NULL);
-		NullCheck(L_2);
-		Transform_set_rotation_m3411284563(L_2, L_13, /*hidden argument*/NULL);
-		bool L_14 = SystemInfo_get_supportsGyroscope_m2145709384(NULL /*static, unused*/, /*hidden argument*/NULL);
-		if (L_14)
+		bool L_2 = SystemInfo_get_supportsGyroscope_m2145709384(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (L_2)
 		{
-			goto IL_007a;
+			goto IL_002a;
 		}
 	}
 	{
@@ -1125,58 +1095,58 @@ extern "C"  void AR_Start_m1351794542 (AR_t2523137185 * __this, const MethodInfo
 		return;
 	}
 
-IL_007a:
+IL_002a:
 	{
-		V_4 = 0;
-		goto IL_00c4;
+		V_0 = 0;
+		goto IL_006f;
 	}
 
-IL_0082:
+IL_0031:
 	{
-		WebCamDeviceU5BU5D_t2903637840* L_15 = WebCamTexture_get_devices_m4137524804(NULL /*static, unused*/, /*hidden argument*/NULL);
-		int32_t L_16 = V_4;
-		NullCheck(L_15);
-		bool L_17 = WebCamDevice_get_isFrontFacing_m4258709226(((L_15)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_16))), /*hidden argument*/NULL);
-		if (L_17)
+		WebCamDeviceU5BU5D_t2903637840* L_3 = WebCamTexture_get_devices_m4137524804(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_4 = V_0;
+		NullCheck(L_3);
+		bool L_5 = WebCamDevice_get_isFrontFacing_m4258709226(((L_3)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4))), /*hidden argument*/NULL);
+		if (L_5)
 		{
-			goto IL_00be;
+			goto IL_006b;
 		}
 	}
 	{
-		WebCamDeviceU5BU5D_t2903637840* L_18 = WebCamTexture_get_devices_m4137524804(NULL /*static, unused*/, /*hidden argument*/NULL);
-		int32_t L_19 = V_4;
-		NullCheck(L_18);
-		String_t* L_20 = WebCamDevice_get_name_m1117076425(((L_18)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_19))), /*hidden argument*/NULL);
-		int32_t L_21 = Screen_get_width_m41137238(NULL /*static, unused*/, /*hidden argument*/NULL);
-		int32_t L_22 = Screen_get_height_m1051800773(NULL /*static, unused*/, /*hidden argument*/NULL);
-		WebCamTexture_t1079476942 * L_23 = (WebCamTexture_t1079476942 *)il2cpp_codegen_object_new(WebCamTexture_t1079476942_il2cpp_TypeInfo_var);
-		WebCamTexture__ctor_m4161111579(L_23, L_20, L_21, L_22, /*hidden argument*/NULL);
-		__this->set_cam_5(L_23);
+		WebCamDeviceU5BU5D_t2903637840* L_6 = WebCamTexture_get_devices_m4137524804(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_7 = V_0;
+		NullCheck(L_6);
+		String_t* L_8 = WebCamDevice_get_name_m1117076425(((L_6)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7))), /*hidden argument*/NULL);
+		int32_t L_9 = Screen_get_width_m41137238(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_10 = Screen_get_height_m1051800773(NULL /*static, unused*/, /*hidden argument*/NULL);
+		WebCamTexture_t1079476942 * L_11 = (WebCamTexture_t1079476942 *)il2cpp_codegen_object_new(WebCamTexture_t1079476942_il2cpp_TypeInfo_var);
+		WebCamTexture__ctor_m4161111579(L_11, L_8, L_9, L_10, /*hidden argument*/NULL);
+		__this->set_cam_5(L_11);
 	}
 
-IL_00be:
+IL_006b:
 	{
-		int32_t L_24 = V_4;
-		V_4 = ((int32_t)((int32_t)L_24+(int32_t)1));
+		int32_t L_12 = V_0;
+		V_0 = ((int32_t)((int32_t)L_12+(int32_t)1));
 	}
 
-IL_00c4:
+IL_006f:
 	{
-		int32_t L_25 = V_4;
-		WebCamDeviceU5BU5D_t2903637840* L_26 = WebCamTexture_get_devices_m4137524804(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_26);
-		if ((((int32_t)L_25) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_26)->max_length)))))))
+		int32_t L_13 = V_0;
+		WebCamDeviceU5BU5D_t2903637840* L_14 = WebCamTexture_get_devices_m4137524804(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_14);
+		if ((((int32_t)L_13) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_14)->max_length)))))))
 		{
-			goto IL_0082;
+			goto IL_0031;
 		}
 	}
 	{
-		WebCamTexture_t1079476942 * L_27 = __this->get_cam_5();
+		WebCamTexture_t1079476942 * L_15 = __this->get_cam_5();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_28 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_27, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_28)
+		bool L_16 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_15, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_16)
 		{
-			goto IL_00ee;
+			goto IL_0098;
 		}
 	}
 	{
@@ -1184,48 +1154,48 @@ IL_00c4:
 		return;
 	}
 
-IL_00ee:
+IL_0098:
 	{
-		GameObject_t1756533147 * L_29 = (GameObject_t1756533147 *)il2cpp_codegen_object_new(GameObject_t1756533147_il2cpp_TypeInfo_var);
-		GameObject__ctor_m962601984(L_29, _stringLiteral703727900, /*hidden argument*/NULL);
-		__this->set_cameraContainer_3(L_29);
-		GameObject_t1756533147 * L_30 = __this->get_cameraContainer_3();
-		NullCheck(L_30);
-		Transform_t3275118058 * L_31 = GameObject_get_transform_m909382139(L_30, /*hidden argument*/NULL);
-		Transform_t3275118058 * L_32 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		NullCheck(L_32);
-		Vector3_t2243707580  L_33 = Transform_get_position_m1104419803(L_32, /*hidden argument*/NULL);
-		NullCheck(L_31);
-		Transform_set_position_m2469242620(L_31, L_33, /*hidden argument*/NULL);
-		Transform_t3275118058 * L_34 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_35 = __this->get_cameraContainer_3();
-		NullCheck(L_35);
-		Transform_t3275118058 * L_36 = GameObject_get_transform_m909382139(L_35, /*hidden argument*/NULL);
-		NullCheck(L_34);
-		Transform_SetParent_m4124909910(L_34, L_36, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_17 = (GameObject_t1756533147 *)il2cpp_codegen_object_new(GameObject_t1756533147_il2cpp_TypeInfo_var);
+		GameObject__ctor_m962601984(L_17, _stringLiteral703727900, /*hidden argument*/NULL);
+		__this->set_cameraContainer_3(L_17);
+		GameObject_t1756533147 * L_18 = __this->get_cameraContainer_3();
+		NullCheck(L_18);
+		Transform_t3275118058 * L_19 = GameObject_get_transform_m909382139(L_18, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_20 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_20);
+		Vector3_t2243707580  L_21 = Transform_get_position_m1104419803(L_20, /*hidden argument*/NULL);
+		NullCheck(L_19);
+		Transform_set_position_m2469242620(L_19, L_21, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_22 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_23 = __this->get_cameraContainer_3();
+		NullCheck(L_23);
+		Transform_t3275118058 * L_24 = GameObject_get_transform_m909382139(L_23, /*hidden argument*/NULL);
+		NullCheck(L_22);
+		Transform_SetParent_m4124909910(L_22, L_24, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
-		Gyroscope_t1705362817 * L_37 = Input_get_gyro_m4027090408(NULL /*static, unused*/, /*hidden argument*/NULL);
-		__this->set_gyro_2(L_37);
-		Gyroscope_t1705362817 * L_38 = __this->get_gyro_2();
-		NullCheck(L_38);
-		Gyroscope_set_enabled_m487023127(L_38, (bool)1, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_39 = __this->get_cameraContainer_3();
-		NullCheck(L_39);
-		Transform_t3275118058 * L_40 = GameObject_get_transform_m909382139(L_39, /*hidden argument*/NULL);
-		Quaternion_t4030073918  L_41 = Quaternion_Euler_m2887458175(NULL /*static, unused*/, (90.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
-		NullCheck(L_40);
-		Transform_set_rotation_m3411284563(L_40, L_41, /*hidden argument*/NULL);
-		Quaternion_t4030073918  L_42;
-		memset(&L_42, 0, sizeof(L_42));
-		Quaternion__ctor_m3196903881(&L_42, (0.0f), (0.0f), (1.0f), (0.0f), /*hidden argument*/NULL);
-		__this->set_gyroRotation_4(L_42);
-		WebCamTexture_t1079476942 * L_43 = __this->get_cam_5();
-		NullCheck(L_43);
-		WebCamTexture_Play_m1997372813(L_43, /*hidden argument*/NULL);
-		RawImage_t2749640213 * L_44 = __this->get_background_6();
-		WebCamTexture_t1079476942 * L_45 = __this->get_cam_5();
-		NullCheck(L_44);
-		RawImage_set_texture_m2400157626(L_44, L_45, /*hidden argument*/NULL);
+		Gyroscope_t1705362817 * L_25 = Input_get_gyro_m4027090408(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_gyro_2(L_25);
+		Gyroscope_t1705362817 * L_26 = __this->get_gyro_2();
+		NullCheck(L_26);
+		Gyroscope_set_enabled_m487023127(L_26, (bool)1, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_27 = __this->get_cameraContainer_3();
+		NullCheck(L_27);
+		Transform_t3275118058 * L_28 = GameObject_get_transform_m909382139(L_27, /*hidden argument*/NULL);
+		Quaternion_t4030073918  L_29 = Quaternion_Euler_m2887458175(NULL /*static, unused*/, (90.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_28);
+		Transform_set_rotation_m3411284563(L_28, L_29, /*hidden argument*/NULL);
+		Quaternion_t4030073918  L_30;
+		memset(&L_30, 0, sizeof(L_30));
+		Quaternion__ctor_m3196903881(&L_30, (0.0f), (0.0f), (1.0f), (0.0f), /*hidden argument*/NULL);
+		__this->set_gyroRotation_4(L_30);
+		WebCamTexture_t1079476942 * L_31 = __this->get_cam_5();
+		NullCheck(L_31);
+		WebCamTexture_Play_m1997372813(L_31, /*hidden argument*/NULL);
+		RawImage_t2749640213 * L_32 = __this->get_background_6();
+		WebCamTexture_t1079476942 * L_33 = __this->get_cam_5();
+		NullCheck(L_32);
+		RawImage_set_texture_m2400157626(L_32, L_33, /*hidden argument*/NULL);
 		__this->set_arReady_8((bool)1);
 		return;
 	}
@@ -1233,15 +1203,29 @@ IL_00ee:
 // System.Void AR::Update()
 extern "C"  void AR_Update_m3244983845 (AR_t2523137185 * __this, const MethodInfo* method)
 {
-	float V_0 = 0.0f;
-	float V_1 = 0.0f;
-	int32_t V_2 = 0;
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (AR_Update_m3244983845_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Quaternion_t4030073918  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Quaternion_t4030073918  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	Vector3_t2243707580  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	float V_4 = 0.0f;
+	float V_5 = 0.0f;
+	int32_t V_6 = 0;
 	float G_B4_0 = 0.0f;
 	{
 		bool L_0 = __this->get_arReady_8();
 		if (!L_0)
 		{
-			goto IL_00c0;
+			goto IL_012a;
 		}
 	}
 	{
@@ -1253,63 +1237,93 @@ extern "C"  void AR_Update_m3244983845 (AR_t2523137185 * __this, const MethodInf
 		Quaternion_t4030073918  L_5 = Quaternion_op_Multiply_m2426727589(NULL /*static, unused*/, L_3, L_4, /*hidden argument*/NULL);
 		NullCheck(L_1);
 		Transform_set_localRotation_m2055111962(L_1, L_5, /*hidden argument*/NULL);
-		WebCamTexture_t1079476942 * L_6 = __this->get_cam_5();
+		Transform_t3275118058 * L_6 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_7 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_7);
+		Quaternion_t4030073918  L_8 = Transform_get_rotation_m1033555130(L_7, /*hidden argument*/NULL);
+		V_0 = L_8;
+		Vector3_t2243707580  L_9 = Quaternion_get_eulerAngles_m3302573991((&V_0), /*hidden argument*/NULL);
+		V_1 = L_9;
+		float L_10 = (&V_1)->get_x_1();
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		Compass_t2500694222 * L_11 = Input_get_compass_m630986328(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		float L_12 = Compass_get_trueHeading_m3905498274(L_11, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_13 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_13);
+		Quaternion_t4030073918  L_14 = Transform_get_rotation_m1033555130(L_13, /*hidden argument*/NULL);
+		V_2 = L_14;
+		Vector3_t2243707580  L_15 = Quaternion_get_eulerAngles_m3302573991((&V_2), /*hidden argument*/NULL);
+		V_3 = L_15;
+		float L_16 = (&V_3)->get_z_3();
+		Vector3_t2243707580  L_17;
+		memset(&L_17, 0, sizeof(L_17));
+		Vector3__ctor_m2638739322(&L_17, L_10, L_12, L_16, /*hidden argument*/NULL);
 		NullCheck(L_6);
-		int32_t L_7 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_6);
-		WebCamTexture_t1079476942 * L_8 = __this->get_cam_5();
-		NullCheck(L_8);
-		int32_t L_9 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_height() */, L_8);
-		V_0 = ((float)((float)(((float)((float)L_7)))/(float)(((float)((float)L_9)))));
-		AspectRatioFitter_t3114550109 * L_10 = __this->get_fit_7();
-		float L_11 = V_0;
-		NullCheck(L_10);
-		AspectRatioFitter_set_aspectRatio_m4159324881(L_10, L_11, /*hidden argument*/NULL);
-		WebCamTexture_t1079476942 * L_12 = __this->get_cam_5();
-		NullCheck(L_12);
-		bool L_13 = WebCamTexture_get_videoVerticallyMirrored_m3184994578(L_12, /*hidden argument*/NULL);
-		if (!L_13)
+		Transform_set_eulerAngles_m2881310872(L_6, L_17, /*hidden argument*/NULL);
+		Compass_t2500694222 * L_18 = Input_get_compass_m630986328(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_18);
+		float L_19 = Compass_get_trueHeading_m3905498274(L_18, /*hidden argument*/NULL);
+		float L_20 = L_19;
+		Il2CppObject * L_21 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_20);
+		MonoBehaviour_print_m3437620292(NULL /*static, unused*/, L_21, /*hidden argument*/NULL);
+		WebCamTexture_t1079476942 * L_22 = __this->get_cam_5();
+		NullCheck(L_22);
+		int32_t L_23 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_22);
+		WebCamTexture_t1079476942 * L_24 = __this->get_cam_5();
+		NullCheck(L_24);
+		int32_t L_25 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_height() */, L_24);
+		V_4 = ((float)((float)(((float)((float)L_23)))/(float)(((float)((float)L_25)))));
+		AspectRatioFitter_t3114550109 * L_26 = __this->get_fit_7();
+		float L_27 = V_4;
+		NullCheck(L_26);
+		AspectRatioFitter_set_aspectRatio_m4159324881(L_26, L_27, /*hidden argument*/NULL);
+		WebCamTexture_t1079476942 * L_28 = __this->get_cam_5();
+		NullCheck(L_28);
+		bool L_29 = WebCamTexture_get_videoVerticallyMirrored_m3184994578(L_28, /*hidden argument*/NULL);
+		if (!L_29)
 		{
-			goto IL_006c;
+			goto IL_00d2;
 		}
 	}
 	{
 		G_B4_0 = (-1.0f);
-		goto IL_0071;
+		goto IL_00d7;
 	}
 
-IL_006c:
+IL_00d2:
 	{
 		G_B4_0 = (1.0f);
 	}
 
-IL_0071:
+IL_00d7:
 	{
-		V_1 = G_B4_0;
-		RawImage_t2749640213 * L_14 = __this->get_background_6();
-		NullCheck(L_14);
-		RectTransform_t3349966182 * L_15 = Graphic_get_rectTransform_m2697395074(L_14, /*hidden argument*/NULL);
-		float L_16 = V_1;
-		Vector3_t2243707580  L_17;
-		memset(&L_17, 0, sizeof(L_17));
-		Vector3__ctor_m2638739322(&L_17, (1.0f), L_16, (1.0f), /*hidden argument*/NULL);
-		NullCheck(L_15);
-		Transform_set_localScale_m2325460848(L_15, L_17, /*hidden argument*/NULL);
-		WebCamTexture_t1079476942 * L_18 = __this->get_cam_5();
-		NullCheck(L_18);
-		int32_t L_19 = WebCamTexture_get_videoRotationAngle_m1556283588(L_18, /*hidden argument*/NULL);
-		V_2 = ((-L_19));
-		RawImage_t2749640213 * L_20 = __this->get_background_6();
-		NullCheck(L_20);
-		RectTransform_t3349966182 * L_21 = Graphic_get_rectTransform_m2697395074(L_20, /*hidden argument*/NULL);
-		int32_t L_22 = V_2;
-		Vector3_t2243707580  L_23;
-		memset(&L_23, 0, sizeof(L_23));
-		Vector3__ctor_m2638739322(&L_23, (0.0f), (0.0f), (((float)((float)L_22))), /*hidden argument*/NULL);
-		NullCheck(L_21);
-		Transform_set_localEulerAngles_m2927195985(L_21, L_23, /*hidden argument*/NULL);
+		V_5 = G_B4_0;
+		RawImage_t2749640213 * L_30 = __this->get_background_6();
+		NullCheck(L_30);
+		RectTransform_t3349966182 * L_31 = Graphic_get_rectTransform_m2697395074(L_30, /*hidden argument*/NULL);
+		float L_32 = V_5;
+		Vector3_t2243707580  L_33;
+		memset(&L_33, 0, sizeof(L_33));
+		Vector3__ctor_m2638739322(&L_33, (1.0f), L_32, (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_31);
+		Transform_set_localScale_m2325460848(L_31, L_33, /*hidden argument*/NULL);
+		WebCamTexture_t1079476942 * L_34 = __this->get_cam_5();
+		NullCheck(L_34);
+		int32_t L_35 = WebCamTexture_get_videoRotationAngle_m1556283588(L_34, /*hidden argument*/NULL);
+		V_6 = ((-L_35));
+		RawImage_t2749640213 * L_36 = __this->get_background_6();
+		NullCheck(L_36);
+		RectTransform_t3349966182 * L_37 = Graphic_get_rectTransform_m2697395074(L_36, /*hidden argument*/NULL);
+		int32_t L_38 = V_6;
+		Vector3_t2243707580  L_39;
+		memset(&L_39, 0, sizeof(L_39));
+		Vector3__ctor_m2638739322(&L_39, (0.0f), (0.0f), (((float)((float)L_38))), /*hidden argument*/NULL);
+		NullCheck(L_37);
+		Transform_set_localEulerAngles_m2927195985(L_37, L_39, /*hidden argument*/NULL);
 	}
 
-IL_00c0:
+IL_012a:
 	{
 		return;
 	}
@@ -1333,6 +1347,150 @@ extern "C"  void ChatController_Start_m1354071973 (ChatController_t2669781690 * 
 extern "C"  void ChatController_Update_m1939549468 (ChatController_t2669781690 * __this, const MethodInfo* method)
 {
 	{
+		return;
+	}
+}
+// System.Void GameController::.ctor()
+extern "C"  void GameController__ctor_m1439649957 (GameController_t3607102586 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void GameController::Update()
+extern "C"  void GameController_Update_m1556003900 (GameController_t3607102586 * __this, const MethodInfo* method)
+{
+	{
+		GameController_rotateMapWithCamera_m4088657527(__this, /*hidden argument*/NULL);
+		GameController_positionMapWithCamera_m3500126895(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void GameController::rotateMapWithCamera()
+extern "C"  void GameController_rotateMapWithCamera_m4088657527 (GameController_t3607102586 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (GameController_rotateMapWithCamera_m4088657527_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Quaternion_t4030073918  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Quaternion_t4030073918  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	Vector3_t2243707580  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	Quaternion_t4030073918  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	Vector3_t2243707580  V_5;
+	memset(&V_5, 0, sizeof(V_5));
+	Vector3_t2243707580  V_6;
+	memset(&V_6, 0, sizeof(V_6));
+	Vector3_t2243707580  V_7;
+	memset(&V_7, 0, sizeof(V_7));
+	{
+		Canvas_t209405766 * L_0 = __this->get_mapCanvas_2();
+		NullCheck(L_0);
+		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(L_0, /*hidden argument*/NULL);
+		Canvas_t209405766 * L_2 = __this->get_mapCanvas_2();
+		NullCheck(L_2);
+		Transform_t3275118058 * L_3 = Component_get_transform_m2697483695(L_2, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		Quaternion_t4030073918  L_4 = Transform_get_rotation_m1033555130(L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		Vector3_t2243707580  L_5 = Quaternion_get_eulerAngles_m3302573991((&V_0), /*hidden argument*/NULL);
+		V_1 = L_5;
+		float L_6 = (&V_1)->get_x_1();
+		Camera_t189460977 * L_7 = __this->get_mainCamera_3();
+		NullCheck(L_7);
+		Transform_t3275118058 * L_8 = Component_get_transform_m2697483695(L_7, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		Quaternion_t4030073918  L_9 = Transform_get_rotation_m1033555130(L_8, /*hidden argument*/NULL);
+		V_2 = L_9;
+		Vector3_t2243707580  L_10 = Quaternion_get_eulerAngles_m3302573991((&V_2), /*hidden argument*/NULL);
+		V_3 = L_10;
+		float L_11 = (&V_3)->get_y_2();
+		Canvas_t209405766 * L_12 = __this->get_mapCanvas_2();
+		NullCheck(L_12);
+		Transform_t3275118058 * L_13 = Component_get_transform_m2697483695(L_12, /*hidden argument*/NULL);
+		NullCheck(L_13);
+		Quaternion_t4030073918  L_14 = Transform_get_rotation_m1033555130(L_13, /*hidden argument*/NULL);
+		V_4 = L_14;
+		Vector3_t2243707580  L_15 = Quaternion_get_eulerAngles_m3302573991((&V_4), /*hidden argument*/NULL);
+		V_5 = L_15;
+		float L_16 = (&V_5)->get_z_3();
+		Vector3_t2243707580  L_17;
+		memset(&L_17, 0, sizeof(L_17));
+		Vector3__ctor_m2638739322(&L_17, L_6, L_11, L_16, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Transform_set_eulerAngles_m2881310872(L_1, L_17, /*hidden argument*/NULL);
+		Canvas_t209405766 * L_18 = __this->get_mapCanvas_2();
+		NullCheck(L_18);
+		Transform_t3275118058 * L_19 = Component_get_transform_m2697483695(L_18, /*hidden argument*/NULL);
+		NullCheck(L_19);
+		Vector3_t2243707580  L_20 = Transform_get_eulerAngles_m4066505159(L_19, /*hidden argument*/NULL);
+		V_6 = L_20;
+		float L_21 = (&V_6)->get_y_2();
+		float L_22 = L_21;
+		Il2CppObject * L_23 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_22);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_24 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral1890047662, L_23, /*hidden argument*/NULL);
+		MonoBehaviour_print_m3437620292(NULL /*static, unused*/, L_24, /*hidden argument*/NULL);
+		Camera_t189460977 * L_25 = __this->get_mainCamera_3();
+		NullCheck(L_25);
+		Transform_t3275118058 * L_26 = Component_get_transform_m2697483695(L_25, /*hidden argument*/NULL);
+		NullCheck(L_26);
+		Vector3_t2243707580  L_27 = Transform_get_eulerAngles_m4066505159(L_26, /*hidden argument*/NULL);
+		V_7 = L_27;
+		float L_28 = (&V_7)->get_y_2();
+		float L_29 = L_28;
+		Il2CppObject * L_30 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_29);
+		String_t* L_31 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral3619451924, L_30, /*hidden argument*/NULL);
+		MonoBehaviour_print_m3437620292(NULL /*static, unused*/, L_31, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void GameController::initCameraAngle()
+extern "C"  void GameController_initCameraAngle_m1118920475 (GameController_t3607102586 * __this, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+// System.Void GameController::positionMapWithCamera()
+extern "C"  void GameController_positionMapWithCamera_m3500126895 (GameController_t3607102586 * __this, const MethodInfo* method)
+{
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		Canvas_t209405766 * L_0 = __this->get_mapCanvas_2();
+		NullCheck(L_0);
+		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(L_0, /*hidden argument*/NULL);
+		Camera_t189460977 * L_2 = __this->get_mainCamera_3();
+		NullCheck(L_2);
+		Transform_t3275118058 * L_3 = Component_get_transform_m2697483695(L_2, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		Vector3_t2243707580  L_4 = Transform_get_position_m1104419803(L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		float L_5 = (&V_0)->get_x_1();
+		Camera_t189460977 * L_6 = __this->get_mainCamera_3();
+		NullCheck(L_6);
+		Transform_t3275118058 * L_7 = Component_get_transform_m2697483695(L_6, /*hidden argument*/NULL);
+		NullCheck(L_7);
+		Vector3_t2243707580  L_8 = Transform_get_position_m1104419803(L_7, /*hidden argument*/NULL);
+		V_1 = L_8;
+		float L_9 = (&V_1)->get_z_3();
+		Vector3_t2243707580  L_10;
+		memset(&L_10, 0, sizeof(L_10));
+		Vector3__ctor_m2638739322(&L_10, L_5, (-635.0f), L_9, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Transform_set_position_m2469242620(L_1, L_10, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -1390,97 +1548,12 @@ extern "C"  void GPSController_Update_m1670322258 (GPSController_t2272977524 * _
 		il2cpp_codegen_initialize_method (GPSController_Update_m1670322258_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	int32_t V_0 = 0;
 	{
 		GameObject_t1756533147 * L_0 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		Object_DontDestroyOnLoad_m2330762974(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		Il2CppObject * L_1 = GPSController_StartLocationService_m497030285(__this, /*hidden argument*/NULL);
 		MonoBehaviour_StartCoroutine_m2470621050(__this, L_1, /*hidden argument*/NULL);
-		ObjectU5BU5D_t3614634134* L_2 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)6));
-		NullCheck(L_2);
-		ArrayElementTypeCheck (L_2, _stringLiteral2213770037);
-		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)_stringLiteral2213770037);
-		ObjectU5BU5D_t3614634134* L_3 = L_2;
-		GPSData_t207763284 * L_4 = __this->get_gps_2();
-		NullCheck(L_4);
-		float L_5 = GPSData_get_longtitude_m4025849247(L_4, /*hidden argument*/NULL);
-		float L_6 = L_5;
-		Il2CppObject * L_7 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_6);
-		NullCheck(L_3);
-		ArrayElementTypeCheck (L_3, L_7);
-		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_7);
-		ObjectU5BU5D_t3614634134* L_8 = L_3;
-		NullCheck(L_8);
-		ArrayElementTypeCheck (L_8, _stringLiteral3827447842);
-		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)_stringLiteral3827447842);
-		ObjectU5BU5D_t3614634134* L_9 = L_8;
-		GPSData_t207763284 * L_10 = __this->get_gps_2();
-		NullCheck(L_10);
-		float L_11 = GPSData_get_latitude_m3986338616(L_10, /*hidden argument*/NULL);
-		float L_12 = L_11;
-		Il2CppObject * L_13 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_12);
-		NullCheck(L_9);
-		ArrayElementTypeCheck (L_9, L_13);
-		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_13);
-		ObjectU5BU5D_t3614634134* L_14 = L_9;
-		NullCheck(L_14);
-		ArrayElementTypeCheck (L_14, _stringLiteral3107095397);
-		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(4), (Il2CppObject *)_stringLiteral3107095397);
-		ObjectU5BU5D_t3614634134* L_15 = L_14;
-		int32_t L_16 = __this->get_counter_3();
-		int32_t L_17 = L_16;
-		Il2CppObject * L_18 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_17);
-		NullCheck(L_15);
-		ArrayElementTypeCheck (L_15, L_18);
-		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(5), (Il2CppObject *)L_18);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_19 = String_Concat_m3881798623(NULL /*static, unused*/, L_15, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
-		Debug_Log_m920475918(NULL /*static, unused*/, L_19, /*hidden argument*/NULL);
-		ObjectU5BU5D_t3614634134* L_20 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)6));
-		NullCheck(L_20);
-		ArrayElementTypeCheck (L_20, _stringLiteral2351134056);
-		(L_20)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)_stringLiteral2351134056);
-		ObjectU5BU5D_t3614634134* L_21 = L_20;
-		GPSData_t207763284 * L_22 = __this->get_gps_2();
-		NullCheck(L_22);
-		float L_23 = L_22->get_stablizedLong_6();
-		float L_24 = L_23;
-		Il2CppObject * L_25 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_24);
-		NullCheck(L_21);
-		ArrayElementTypeCheck (L_21, L_25);
-		(L_21)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_25);
-		ObjectU5BU5D_t3614634134* L_26 = L_21;
-		NullCheck(L_26);
-		ArrayElementTypeCheck (L_26, _stringLiteral3109164642);
-		(L_26)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)_stringLiteral3109164642);
-		ObjectU5BU5D_t3614634134* L_27 = L_26;
-		GPSData_t207763284 * L_28 = __this->get_gps_2();
-		NullCheck(L_28);
-		float L_29 = L_28->get_stablizedLati_7();
-		float L_30 = L_29;
-		Il2CppObject * L_31 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_30);
-		NullCheck(L_27);
-		ArrayElementTypeCheck (L_27, L_31);
-		(L_27)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_31);
-		ObjectU5BU5D_t3614634134* L_32 = L_27;
-		NullCheck(L_32);
-		ArrayElementTypeCheck (L_32, _stringLiteral3107095397);
-		(L_32)->SetAt(static_cast<il2cpp_array_size_t>(4), (Il2CppObject *)_stringLiteral3107095397);
-		ObjectU5BU5D_t3614634134* L_33 = L_32;
-		int32_t L_34 = __this->get_counter_3();
-		int32_t L_35 = L_34;
-		V_0 = L_35;
-		__this->set_counter_3(((int32_t)((int32_t)L_35+(int32_t)1)));
-		int32_t L_36 = V_0;
-		int32_t L_37 = L_36;
-		Il2CppObject * L_38 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_37);
-		NullCheck(L_33);
-		ArrayElementTypeCheck (L_33, L_38);
-		(L_33)->SetAt(static_cast<il2cpp_array_size_t>(5), (Il2CppObject *)L_38);
-		String_t* L_39 = String_Concat_m3881798623(NULL /*static, unused*/, L_33, /*hidden argument*/NULL);
-		Debug_Log_m920475918(NULL /*static, unused*/, L_39, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -3710,78 +3783,25 @@ extern "C"  void Map__ctor_m2382724703 (Map_t4262919222 * __this, const MethodIn
 // System.Void Map::Update()
 extern "C"  void Map_Update_m3867277220 (Map_t4262919222 * __this, const MethodInfo* method)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (Map_Update_m3867277220_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	float V_0 = 0.0f;
-	float V_1 = 0.0f;
-	{
-		TextMesh_t1641806576 * L_0 = __this->get_terminal_11();
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_1)
-		{
-			goto IL_0094;
-		}
-	}
-	{
-		GPSController_t2272977524 * L_2 = __this->get_gpsController_3();
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_3 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_2, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_3)
-		{
-			goto IL_0094;
-		}
-	}
-	{
-		TextMesh_t1641806576 * L_4 = __this->get_terminal_11();
-		ObjectU5BU5D_t3614634134* L_5 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)5));
-		NullCheck(L_5);
-		ArrayElementTypeCheck (L_5, _stringLiteral1555694406);
-		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)_stringLiteral1555694406);
-		ObjectU5BU5D_t3614634134* L_6 = L_5;
-		GPSController_t2272977524 * L_7 = __this->get_gpsController_3();
-		NullCheck(L_7);
-		GPSData_t207763284 * L_8 = L_7->get_gps_2();
-		NullCheck(L_8);
-		float L_9 = GPSData_get_longtitude_m4025849247(L_8, /*hidden argument*/NULL);
-		V_0 = L_9;
-		String_t* L_10 = Single_ToString_m1813392066((&V_0), /*hidden argument*/NULL);
-		NullCheck(L_6);
-		ArrayElementTypeCheck (L_6, L_10);
-		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_10);
-		ObjectU5BU5D_t3614634134* L_11 = L_6;
-		Il2CppChar L_12 = ((Il2CppChar)((int32_t)10));
-		Il2CppObject * L_13 = Box(Char_t3454481338_il2cpp_TypeInfo_var, &L_12);
-		NullCheck(L_11);
-		ArrayElementTypeCheck (L_11, L_13);
-		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)L_13);
-		ObjectU5BU5D_t3614634134* L_14 = L_11;
-		NullCheck(L_14);
-		ArrayElementTypeCheck (L_14, _stringLiteral3068845616);
-		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)_stringLiteral3068845616);
-		ObjectU5BU5D_t3614634134* L_15 = L_14;
-		GPSController_t2272977524 * L_16 = __this->get_gpsController_3();
-		NullCheck(L_16);
-		GPSData_t207763284 * L_17 = L_16->get_gps_2();
-		NullCheck(L_17);
-		float L_18 = GPSData_get_latitude_m3986338616(L_17, /*hidden argument*/NULL);
-		V_1 = L_18;
-		String_t* L_19 = Single_ToString_m1813392066((&V_1), /*hidden argument*/NULL);
-		NullCheck(L_15);
-		ArrayElementTypeCheck (L_15, L_19);
-		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(4), (Il2CppObject *)L_19);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_20 = String_Concat_m3881798623(NULL /*static, unused*/, L_15, /*hidden argument*/NULL);
+		GPSController_t2272977524 * L_0 = __this->get_gpsController_3();
+		NullCheck(L_0);
+		GPSData_t207763284 * L_1 = L_0->get_gps_2();
+		NullCheck(L_1);
+		float L_2 = GPSData_get_latitude_m3986338616(L_1, /*hidden argument*/NULL);
+		__this->set_latitude_4(L_2);
+		GPSController_t2272977524 * L_3 = __this->get_gpsController_3();
+		NullCheck(L_3);
+		GPSData_t207763284 * L_4 = L_3->get_gps_2();
 		NullCheck(L_4);
-		TextMesh_set_text_m3390063817(L_4, L_20, /*hidden argument*/NULL);
-	}
-
-IL_0094:
-	{
+		float L_5 = GPSData_get_longtitude_m4025849247(L_4, /*hidden argument*/NULL);
+		__this->set_longitude_5(L_5);
+		float L_6 = __this->get_latitude_4();
+		float L_7 = __this->get_longitude_5();
+		Il2CppObject * L_8 = Map_GetGoogleMap_m3075677944(__this, L_6, L_7, /*hidden argument*/NULL);
+		__this->set_mapCoroutine_12(L_8);
+		Il2CppObject * L_9 = __this->get_mapCoroutine_12();
+		MonoBehaviour_StartCoroutine_m2470621050(__this, L_9, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -3958,8 +3978,8 @@ IL_0025:
 		(L_43)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)15)), (Il2CppObject *)L_46);
 		ObjectU5BU5D_t3614634134* L_47 = L_43;
 		NullCheck(L_47);
-		ArrayElementTypeCheck (L_47, _stringLiteral2328242528);
-		(L_47)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)16)), (Il2CppObject *)_stringLiteral2328242528);
+		ArrayElementTypeCheck (L_47, _stringLiteral3779626262);
+		(L_47)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)16)), (Il2CppObject *)_stringLiteral3779626262);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_48 = String_Concat_m3881798623(NULL /*static, unused*/, L_47, /*hidden argument*/NULL);
 		NullCheck(L_2);
@@ -4108,8 +4128,6 @@ extern "C"  void MapTools_Update_m2536679305 (MapTools_t3308069217 * __this, con
 {
 	float V_0 = 0.0f;
 	float V_1 = 0.0f;
-	Vector3_t2243707580  V_2;
-	memset(&V_2, 0, sizeof(V_2));
 	{
 		GPSController_t2272977524 * L_0 = __this->get_IGPSController_8();
 		NullCheck(L_0);
@@ -4150,21 +4168,10 @@ IL_004d:
 		NullCheck(L_10);
 		Transform_t3275118058 * L_11 = Component_get_transform_m2697483695(L_10, /*hidden argument*/NULL);
 		float L_12 = V_0;
-		float L_13 = __this->get_latitudeO_4();
-		Camera_t189460977 * L_14 = __this->get_mainCamera_7();
-		NullCheck(L_14);
-		Transform_t3275118058 * L_15 = Component_get_transform_m2697483695(L_14, /*hidden argument*/NULL);
-		NullCheck(L_15);
-		Vector3_t2243707580  L_16 = Transform_get_position_m1104419803(L_15, /*hidden argument*/NULL);
-		V_2 = L_16;
-		float L_17 = (&V_2)->get_y_2();
-		float L_18 = V_1;
-		float L_19 = __this->get_longitudeO_5();
-		Vector3_t2243707580  L_20;
-		memset(&L_20, 0, sizeof(L_20));
-		Vector3__ctor_m2638739322(&L_20, ((float)((float)((float)((float)L_12-(float)L_13))*(float)(50000.0f))), L_17, ((float)((float)((-((float)((float)L_18-(float)L_19))))*(float)(50000.0f))), /*hidden argument*/NULL);
+		float L_13 = V_1;
+		Vector3_t2243707580  L_14 = MapTools_mapGPS_m2811930864(__this, L_12, L_13, /*hidden argument*/NULL);
 		NullCheck(L_11);
-		Transform_set_position_m2469242620(L_11, L_20, /*hidden argument*/NULL);
+		Transform_set_position_m2469242620(L_11, L_14, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -4174,10 +4181,10 @@ extern "C"  Vector3_t2243707580  MapTools_mapGPS_m2811930864 (MapTools_t33080692
 	Vector3_t2243707580  V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	{
-		float L_0 = ___longitude1;
-		float L_1 = ___latitude0;
-		float L_2 = ___longitude1;
-		float L_3 = __this->get_latitudeO_4();
+		float L_0 = ___latitude0;
+		float L_1 = ___longitude1;
+		float L_2 = ___latitude0;
+		float L_3 = __this->get_longitudeO_5();
 		float L_4 = TR_Toolbox_gps_transform_m2942405544(NULL /*static, unused*/, L_0, L_1, L_2, L_3, /*hidden argument*/NULL);
 		int32_t L_5 = __this->get_radius_2();
 		int32_t L_6 = __this->get_range_3();
@@ -4188,185 +4195,17 @@ extern "C"  Vector3_t2243707580  MapTools_mapGPS_m2811930864 (MapTools_t33080692
 		Vector3_t2243707580  L_9 = Transform_get_position_m1104419803(L_8, /*hidden argument*/NULL);
 		V_0 = L_9;
 		float L_10 = (&V_0)->get_y_2();
-		float L_11 = ___longitude1;
-		float L_12 = ___latitude0;
-		float L_13 = __this->get_longitudeO_5();
-		float L_14 = ___latitude0;
+		float L_11 = ___latitude0;
+		float L_12 = ___longitude1;
+		float L_13 = __this->get_latitudeO_4();
+		float L_14 = ___longitude1;
 		float L_15 = TR_Toolbox_gps_transform_m2942405544(NULL /*static, unused*/, L_11, L_12, L_13, L_14, /*hidden argument*/NULL);
 		int32_t L_16 = __this->get_radius_2();
 		int32_t L_17 = __this->get_range_3();
 		Vector3_t2243707580  L_18;
 		memset(&L_18, 0, sizeof(L_18));
-		Vector3__ctor_m2638739322(&L_18, ((float)((float)((float)((float)((-L_4))*(float)(((float)((float)L_5)))))/(float)(((float)((float)L_6))))), L_10, ((float)((float)((float)((float)L_15*(float)(((float)((float)L_16)))))/(float)(((float)((float)L_17))))), /*hidden argument*/NULL);
+		Vector3__ctor_m2638739322(&L_18, ((float)((float)((float)((float)L_4*(float)(((float)((float)L_5)))))/(float)(((float)((float)L_6))))), L_10, ((float)((float)((float)((float)L_15*(float)(((float)((float)L_16)))))/(float)(((float)((float)L_17))))), /*hidden argument*/NULL);
 		return L_18;
-	}
-}
-// System.Void PlayerController::.ctor()
-extern "C"  void PlayerController__ctor_m3280132936 (PlayerController_t4148409433 * __this, const MethodInfo* method)
-{
-	{
-		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void PlayerController::Update()
-extern "C"  void PlayerController_Update_m4228472513 (PlayerController_t4148409433 * __this, const MethodInfo* method)
-{
-	{
-		PlayerController_rotateMapWithCamera_m1309297544(__this, /*hidden argument*/NULL);
-		PlayerController_positionMapWithCamera_m2915694368(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void PlayerController::rotateMapWithCamera()
-extern "C"  void PlayerController_rotateMapWithCamera_m1309297544 (PlayerController_t4148409433 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (PlayerController_rotateMapWithCamera_m1309297544_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	Quaternion_t4030073918  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	Vector3_t2243707580  V_1;
-	memset(&V_1, 0, sizeof(V_1));
-	Quaternion_t4030073918  V_2;
-	memset(&V_2, 0, sizeof(V_2));
-	Vector3_t2243707580  V_3;
-	memset(&V_3, 0, sizeof(V_3));
-	Quaternion_t4030073918  V_4;
-	memset(&V_4, 0, sizeof(V_4));
-	Vector3_t2243707580  V_5;
-	memset(&V_5, 0, sizeof(V_5));
-	Quaternion_t4030073918  V_6;
-	memset(&V_6, 0, sizeof(V_6));
-	Vector3_t2243707580  V_7;
-	memset(&V_7, 0, sizeof(V_7));
-	Quaternion_t4030073918  V_8;
-	memset(&V_8, 0, sizeof(V_8));
-	Vector3_t2243707580  V_9;
-	memset(&V_9, 0, sizeof(V_9));
-	Quaternion_t4030073918  V_10;
-	memset(&V_10, 0, sizeof(V_10));
-	Vector3_t2243707580  V_11;
-	memset(&V_11, 0, sizeof(V_11));
-	{
-		Camera_t189460977 * L_0 = __this->get_mainCamera_3();
-		NullCheck(L_0);
-		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(L_0, /*hidden argument*/NULL);
-		Camera_t189460977 * L_2 = __this->get_mainCamera_3();
-		NullCheck(L_2);
-		Transform_t3275118058 * L_3 = Component_get_transform_m2697483695(L_2, /*hidden argument*/NULL);
-		NullCheck(L_3);
-		Quaternion_t4030073918  L_4 = Transform_get_rotation_m1033555130(L_3, /*hidden argument*/NULL);
-		V_0 = L_4;
-		Vector3_t2243707580  L_5 = Quaternion_get_eulerAngles_m3302573991((&V_0), /*hidden argument*/NULL);
-		V_1 = L_5;
-		float L_6 = (&V_1)->get_x_1();
-		Camera_t189460977 * L_7 = __this->get_mainCamera_3();
-		NullCheck(L_7);
-		Transform_t3275118058 * L_8 = Component_get_transform_m2697483695(L_7, /*hidden argument*/NULL);
-		NullCheck(L_8);
-		Quaternion_t4030073918  L_9 = Transform_get_rotation_m1033555130(L_8, /*hidden argument*/NULL);
-		V_2 = L_9;
-		Vector3_t2243707580  L_10 = Quaternion_get_eulerAngles_m3302573991((&V_2), /*hidden argument*/NULL);
-		V_3 = L_10;
-		float L_11 = (&V_3)->get_y_2();
-		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
-		float L_12 = Mathf_Clamp_m2354025655(NULL /*static, unused*/, L_11, (0.0f), (180.0f), /*hidden argument*/NULL);
-		Camera_t189460977 * L_13 = __this->get_mainCamera_3();
-		NullCheck(L_13);
-		Transform_t3275118058 * L_14 = Component_get_transform_m2697483695(L_13, /*hidden argument*/NULL);
-		NullCheck(L_14);
-		Quaternion_t4030073918  L_15 = Transform_get_rotation_m1033555130(L_14, /*hidden argument*/NULL);
-		V_4 = L_15;
-		Vector3_t2243707580  L_16 = Quaternion_get_eulerAngles_m3302573991((&V_4), /*hidden argument*/NULL);
-		V_5 = L_16;
-		float L_17 = (&V_5)->get_z_3();
-		Vector3_t2243707580  L_18;
-		memset(&L_18, 0, sizeof(L_18));
-		Vector3__ctor_m2638739322(&L_18, L_6, L_12, L_17, /*hidden argument*/NULL);
-		Quaternion_t4030073918  L_19 = Quaternion_Euler_m3586339259(NULL /*static, unused*/, L_18, /*hidden argument*/NULL);
-		NullCheck(L_1);
-		Transform_set_rotation_m3411284563(L_1, L_19, /*hidden argument*/NULL);
-		Canvas_t209405766 * L_20 = __this->get_mapCanvas_2();
-		NullCheck(L_20);
-		Transform_t3275118058 * L_21 = Component_get_transform_m2697483695(L_20, /*hidden argument*/NULL);
-		Canvas_t209405766 * L_22 = __this->get_mapCanvas_2();
-		NullCheck(L_22);
-		Transform_t3275118058 * L_23 = Component_get_transform_m2697483695(L_22, /*hidden argument*/NULL);
-		NullCheck(L_23);
-		Quaternion_t4030073918  L_24 = Transform_get_rotation_m1033555130(L_23, /*hidden argument*/NULL);
-		V_6 = L_24;
-		Vector3_t2243707580  L_25 = Quaternion_get_eulerAngles_m3302573991((&V_6), /*hidden argument*/NULL);
-		V_7 = L_25;
-		float L_26 = (&V_7)->get_x_1();
-		Camera_t189460977 * L_27 = __this->get_mainCamera_3();
-		NullCheck(L_27);
-		Transform_t3275118058 * L_28 = Component_get_transform_m2697483695(L_27, /*hidden argument*/NULL);
-		NullCheck(L_28);
-		Quaternion_t4030073918  L_29 = Transform_get_rotation_m1033555130(L_28, /*hidden argument*/NULL);
-		V_8 = L_29;
-		Vector3_t2243707580  L_30 = Quaternion_get_eulerAngles_m3302573991((&V_8), /*hidden argument*/NULL);
-		V_9 = L_30;
-		float L_31 = (&V_9)->get_y_2();
-		Canvas_t209405766 * L_32 = __this->get_mapCanvas_2();
-		NullCheck(L_32);
-		Transform_t3275118058 * L_33 = Component_get_transform_m2697483695(L_32, /*hidden argument*/NULL);
-		NullCheck(L_33);
-		Quaternion_t4030073918  L_34 = Transform_get_rotation_m1033555130(L_33, /*hidden argument*/NULL);
-		V_10 = L_34;
-		Vector3_t2243707580  L_35 = Quaternion_get_eulerAngles_m3302573991((&V_10), /*hidden argument*/NULL);
-		V_11 = L_35;
-		float L_36 = (&V_11)->get_z_3();
-		Vector3_t2243707580  L_37;
-		memset(&L_37, 0, sizeof(L_37));
-		Vector3__ctor_m2638739322(&L_37, L_26, L_31, L_36, /*hidden argument*/NULL);
-		Quaternion_t4030073918  L_38 = Quaternion_Euler_m3586339259(NULL /*static, unused*/, L_37, /*hidden argument*/NULL);
-		NullCheck(L_21);
-		Transform_set_rotation_m3411284563(L_21, L_38, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void PlayerController::initCameraAngle()
-extern "C"  void PlayerController_initCameraAngle_m2110895828 (PlayerController_t4148409433 * __this, const MethodInfo* method)
-{
-	{
-		return;
-	}
-}
-// System.Void PlayerController::positionMapWithCamera()
-extern "C"  void PlayerController_positionMapWithCamera_m2915694368 (PlayerController_t4148409433 * __this, const MethodInfo* method)
-{
-	Vector3_t2243707580  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	Vector3_t2243707580  V_1;
-	memset(&V_1, 0, sizeof(V_1));
-	{
-		Canvas_t209405766 * L_0 = __this->get_mapCanvas_2();
-		NullCheck(L_0);
-		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(L_0, /*hidden argument*/NULL);
-		Camera_t189460977 * L_2 = __this->get_mainCamera_3();
-		NullCheck(L_2);
-		Transform_t3275118058 * L_3 = Component_get_transform_m2697483695(L_2, /*hidden argument*/NULL);
-		NullCheck(L_3);
-		Vector3_t2243707580  L_4 = Transform_get_position_m1104419803(L_3, /*hidden argument*/NULL);
-		V_0 = L_4;
-		float L_5 = (&V_0)->get_x_1();
-		Camera_t189460977 * L_6 = __this->get_mainCamera_3();
-		NullCheck(L_6);
-		Transform_t3275118058 * L_7 = Component_get_transform_m2697483695(L_6, /*hidden argument*/NULL);
-		NullCheck(L_7);
-		Vector3_t2243707580  L_8 = Transform_get_position_m1104419803(L_7, /*hidden argument*/NULL);
-		V_1 = L_8;
-		float L_9 = (&V_1)->get_z_3();
-		Vector3_t2243707580  L_10;
-		memset(&L_10, 0, sizeof(L_10));
-		Vector3__ctor_m2638739322(&L_10, L_5, (-635.0f), L_9, /*hidden argument*/NULL);
-		NullCheck(L_1);
-		Transform_set_position_m2469242620(L_1, L_10, /*hidden argument*/NULL);
-		return;
 	}
 }
 // System.Void PlayerMove::.ctor()
@@ -5808,7 +5647,56 @@ extern "C"  void UpdateGPS__ctor_m1886973562 (UpdateGPS_t2150053955 * __this, co
 // System.Void UpdateGPS::Update()
 extern "C"  void UpdateGPS_Update_m2320639175 (UpdateGPS_t2150053955 * __this, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_method (UpdateGPS_Update_m2320639175_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		TextMesh_t1641806576 * L_0 = __this->get_terminal_2();
+		ObjectU5BU5D_t3614634134* L_1 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)4));
+		NullCheck(L_1);
+		ArrayElementTypeCheck (L_1, _stringLiteral372029398);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)_stringLiteral372029398);
+		ObjectU5BU5D_t3614634134* L_2 = L_1;
+		Camera_t189460977 * L_3 = __this->get_main_3();
+		NullCheck(L_3);
+		Transform_t3275118058 * L_4 = Component_get_transform_m2697483695(L_3, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		Vector3_t2243707580  L_5 = Transform_get_position_m1104419803(L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		float L_6 = (&V_0)->get_x_1();
+		float L_7 = L_6;
+		Il2CppObject * L_8 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_7);
+		NullCheck(L_2);
+		ArrayElementTypeCheck (L_2, L_8);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_8);
+		ObjectU5BU5D_t3614634134* L_9 = L_2;
+		NullCheck(L_9);
+		ArrayElementTypeCheck (L_9, _stringLiteral2615680472);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)_stringLiteral2615680472);
+		ObjectU5BU5D_t3614634134* L_10 = L_9;
+		Camera_t189460977 * L_11 = __this->get_main_3();
+		NullCheck(L_11);
+		Transform_t3275118058 * L_12 = Component_get_transform_m2697483695(L_11, /*hidden argument*/NULL);
+		NullCheck(L_12);
+		Vector3_t2243707580  L_13 = Transform_get_position_m1104419803(L_12, /*hidden argument*/NULL);
+		V_1 = L_13;
+		float L_14 = (&V_1)->get_z_3();
+		float L_15 = L_14;
+		Il2CppObject * L_16 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_15);
+		NullCheck(L_10);
+		ArrayElementTypeCheck (L_10, L_16);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_16);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_17 = String_Concat_m3881798623(NULL /*static, unused*/, L_10, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		TextMesh_set_text_m3390063817(L_0, L_17, /*hidden argument*/NULL);
 		return;
 	}
 }

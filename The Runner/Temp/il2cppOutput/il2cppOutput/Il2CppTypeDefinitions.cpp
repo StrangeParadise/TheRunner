@@ -9281,7 +9281,6 @@ extern const Il2CppType Text_t356221433_0_0_0 = { (void*)1903, 0, IL2CPP_TYPE_CL
 extern const Il2CppType Text_t356221433_0_0_1 = { (void*)1903, 1, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType Text_t356221433_0_0_4 = { (void*)1903, 4, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType Text_t356221433_1_0_0 = { (void*)1903, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
-extern const Il2CppType Text_t356221433_0_0_6 = { (void*)1903, 6, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 
 Il2CppGenericClass Link_t2826872705_GenericClass = { 1211, { &GenInst_Text_t356221433_0_0_0, NULL }, NULL };
 extern const Il2CppType Link_t2826872705_0_0_0 = { &Link_t2826872705_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
@@ -18715,8 +18714,8 @@ extern const Il2CppType MapTools_t3308069217_1_0_0 = { (void*)1986, 0, IL2CPP_TY
 extern const Il2CppType UpdateGPS_t2150053955_0_0_0 = { (void*)1987, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType UpdateGPS_t2150053955_1_0_0 = { (void*)1987, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType PlayerController_t4148409433_0_0_0 = { (void*)1988, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType PlayerController_t4148409433_1_0_0 = { (void*)1988, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType GameController_t3607102586_0_0_0 = { (void*)1988, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType GameController_t3607102586_1_0_0 = { (void*)1988, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
 extern const Il2CppType HandMapController_t222498385_0_0_0 = { (void*)1989, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType HandMapController_t222498385_1_0_0 = { (void*)1989, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
@@ -18831,7 +18830,7 @@ extern const Il2CppType TypeTagU5BU5D_t582616213_0_0_0 = { (void*)&TypeTag_t1412
 
 extern const Il2CppType ITrackingHandler_t2759960940_0_0_0;
 extern const Il2CppType ITrackingHandlerU5BU5D_t194660197_0_0_0 = { (void*)&ITrackingHandler_t2759960940_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
-extern const Il2CppType* const  g_Il2CppTypeTable[9427] = 
+extern const Il2CppType* const  g_Il2CppTypeTable[9426] = 
 {
 	&IEnumerator_1_t164973122_0_0_0,
 	&Il2CppObject_0_0_0,
@@ -28144,9 +28143,8 @@ extern const Il2CppType* const  g_Il2CppTypeTable[9427] =
 	&Camera_t189460977_0_0_1,
 	&UpdateGPS_t2150053955_0_0_0,
 	&UpdateGPS_t2150053955_1_0_0,
-	&Text_t356221433_0_0_6,
-	&PlayerController_t4148409433_0_0_0,
-	&PlayerController_t4148409433_1_0_0,
+	&GameController_t3607102586_0_0_0,
+	&GameController_t3607102586_1_0_0,
 	&Canvas_t209405766_0_0_6,
 	&HandMapController_t222498385_0_0_0,
 	&HandMapController_t222498385_1_0_0,

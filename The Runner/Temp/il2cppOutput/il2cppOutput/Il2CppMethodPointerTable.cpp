@@ -10248,6 +10248,8 @@ extern "C" void Transform_get_localPosition_m2533925116 ();
 extern "C" void Transform_set_localPosition_m1026930133 ();
 extern "C" void Transform_INTERNAL_get_localPosition_m94028171 ();
 extern "C" void Transform_INTERNAL_set_localPosition_m432504087 ();
+extern "C" void Transform_get_eulerAngles_m4066505159 ();
+extern "C" void Transform_set_eulerAngles_m2881310872 ();
 extern "C" void Transform_set_localEulerAngles_m2927195985 ();
 extern "C" void Transform_get_right_m440863970 ();
 extern "C" void Transform_get_forward_m1833488937 ();
@@ -13370,6 +13372,11 @@ extern "C" void AR_Update_m3244983845 ();
 extern "C" void ChatController__ctor_m281900101 ();
 extern "C" void ChatController_Start_m1354071973 ();
 extern "C" void ChatController_Update_m1939549468 ();
+extern "C" void GameController__ctor_m1439649957 ();
+extern "C" void GameController_Update_m1556003900 ();
+extern "C" void GameController_rotateMapWithCamera_m4088657527 ();
+extern "C" void GameController_initCameraAngle_m1118920475 ();
+extern "C" void GameController_positionMapWithCamera_m3500126895 ();
 extern "C" void GPSController__ctor_m3430003991 ();
 extern "C" void GPSController_Start_m4152392635 ();
 extern "C" void GPSController_StartLocationService_m497030285 ();
@@ -13459,11 +13466,6 @@ extern "C" void MapTools__ctor_m632582472 ();
 extern "C" void MapTools_Start_m3847571680 ();
 extern "C" void MapTools_Update_m2536679305 ();
 extern "C" void MapTools_mapGPS_m2811930864 ();
-extern "C" void PlayerController__ctor_m3280132936 ();
-extern "C" void PlayerController_Update_m4228472513 ();
-extern "C" void PlayerController_rotateMapWithCamera_m1309297544 ();
-extern "C" void PlayerController_initCameraAngle_m2110895828 ();
-extern "C" void PlayerController_positionMapWithCamera_m2915694368 ();
 extern "C" void PlayerMove__ctor_m161887621 ();
 extern "C" void PlayerMove_Start_m490112797 ();
 extern "C" void PlayerMove_Update_m1466995334 ();
@@ -13512,7 +13514,7 @@ extern "C" void testSingleChat_Start_m1190730460 ();
 extern "C" void testSingleChat_receiveMessage_m3194079398 ();
 extern "C" void testSingleChat_OnGUI_m361319688 ();
 extern "C" void testSingleChat_Main_m1511507263 ();
-extern const Il2CppMethodPointer g_MethodPointers[13498] = 
+extern const Il2CppMethodPointer g_MethodPointers[13500] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -23748,6 +23750,8 @@ extern const Il2CppMethodPointer g_MethodPointers[13498] =
 	Transform_set_localPosition_m1026930133,
 	Transform_INTERNAL_get_localPosition_m94028171,
 	Transform_INTERNAL_set_localPosition_m432504087,
+	Transform_get_eulerAngles_m4066505159,
+	Transform_set_eulerAngles_m2881310872,
 	Transform_set_localEulerAngles_m2927195985,
 	Transform_get_right_m440863970,
 	Transform_get_forward_m1833488937,
@@ -26870,6 +26874,11 @@ extern const Il2CppMethodPointer g_MethodPointers[13498] =
 	ChatController__ctor_m281900101,
 	ChatController_Start_m1354071973,
 	ChatController_Update_m1939549468,
+	GameController__ctor_m1439649957,
+	GameController_Update_m1556003900,
+	GameController_rotateMapWithCamera_m4088657527,
+	GameController_initCameraAngle_m1118920475,
+	GameController_positionMapWithCamera_m3500126895,
 	GPSController__ctor_m3430003991,
 	GPSController_Start_m4152392635,
 	GPSController_StartLocationService_m497030285,
@@ -26959,11 +26968,6 @@ extern const Il2CppMethodPointer g_MethodPointers[13498] =
 	MapTools_Start_m3847571680,
 	MapTools_Update_m2536679305,
 	MapTools_mapGPS_m2811930864,
-	PlayerController__ctor_m3280132936,
-	PlayerController_Update_m4228472513,
-	PlayerController_rotateMapWithCamera_m1309297544,
-	PlayerController_initCameraAngle_m2110895828,
-	PlayerController_positionMapWithCamera_m2915694368,
 	PlayerMove__ctor_m161887621,
 	PlayerMove_Start_m490112797,
 	PlayerMove_Update_m1466995334,

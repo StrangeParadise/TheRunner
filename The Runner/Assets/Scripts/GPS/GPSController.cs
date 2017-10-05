@@ -50,10 +50,6 @@ public class GPSController : MonoBehaviour {
 		DontDestroyOnLoad(gameObject);
 
 		StartCoroutine(StartLocationService());
-
-		Debug.Log ("GpsData | Longtitude: "    + gps.longtitude    + " , Latitude"        + gps.latitude      + " | count: " + counter);
-		Debug.Log ("GpsData | StablizedLong: " + gps.stablizedLong + " , StablizedLati: " + gps.stablizedLati + " | count: " + counter++);
-
 	}
 
 
