@@ -39,6 +39,9 @@ public class Map : MonoBehaviour {
 		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude +
 			"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected + 
 			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyDK04pO2JEC4C01AQSW9dpuBDunvtuA-o8";
+		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude +
+			"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected + 
+			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyAid0yDInHB8tMek8Ndy6tHjpgu7AZAz-8";
 		WWW www = new WWW(url);
 		yield return www;
 		Texture mapTexture = www.texture;
