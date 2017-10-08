@@ -41,14 +41,7 @@ public class Map : MonoBehaviour {
 //			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyDK04pO2JEC4C01AQSW9dpuBDunvtuA-o8";
 		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude +
 			"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected + 
-<<<<<<< HEAD
-			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyDK04pO2JEC4C01AQSW9dpuBDunvtuA-o8";
-		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude +
-			"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected + 
-			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyAid0yDInHB8tMek8Ndy6tHjpgu7AZAz-8";
-=======
 			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyDkFTum1BgoY5gD92vkLlnavRQnnYQKKiM";
->>>>>>> 6af388413197c8ed21f236b48554064c816ade4a
 		WWW www = new WWW(url);
 		yield return www;
 		Texture mapTexture = www.texture;
