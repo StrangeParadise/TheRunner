@@ -34,8 +34,8 @@ public class GameController : MonoBehaviour {
 			mainCamera.transform.rotation.eulerAngles.y,
 			mapCanvas.transform.rotation.eulerAngles.z
 		);
-		print ("map canvas rotation" + mapCanvas.transform.eulerAngles.y);
-		print ("main camera rotation" + mainCamera.transform.eulerAngles.y);
+		//print ("map canvas rotation" + mapCanvas.transform.eulerAngles.y);
+		//print ("main camera rotation" + mainCamera.transform.eulerAngles.y);
 
 	}
 
