@@ -12,6 +12,7 @@ namespace UnityEngine.Networking {
         public GameObject nameText;
         public GameObject parent;
         public GameObject ui;
+		public GameObject chat;
         public Color color;
         // Use this for initialization
 
@@ -33,14 +34,15 @@ namespace UnityEngine.Networking {
                 {
                     MatchInfoSnapshot matchInfoSnapshot = this.manager.matches[i];
                     GUI.backgroundColor = color;
-                    if (GUI.Button(new Rect(parent.transform.position.x, parent.transform.position.y + num, 380f, 40f), "Join Match:" + matchInfoSnapshot.name))
+					if (GUI.Button(new Rect(Screen.width*0.26f, Screen.height*0.32f + num, Screen.width*0.6f, Screen.width*0.08f), "Join Match:" + matchInfoSnapshot.name))
                     {
                         this.manager.matchName = matchInfoSnapshot.name;
                         this.manager.matchMaker.JoinMatch(matchInfoSnapshot.networkId, string.Empty, string.Empty, string.Empty, 0, 0, new NetworkMatch.DataResponseDelegate<MatchInfo>(this.manager.OnMatchJoined));
                         ui.SetActive(false);
+						chat.SetActive(true);
                         finded = false;
                     }
-                    num += 45;
+					num += Screen.width*0.1f;
                 }
 
             }
