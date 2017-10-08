@@ -1,10 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-<<<<<<< HEAD
 # Visual Studio for Mac
-=======
-# Visual Studio 2017
->>>>>>> 283863fc66e8b75737885f92129d11af7f6f1d9d
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Runner", "The Runner.csproj", "{9F0B79FB-B7CD-CFEB-3CE7-A0B42FC5AAD7}"
 EndProject
 Global

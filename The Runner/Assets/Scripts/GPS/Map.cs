@@ -22,10 +22,10 @@ public class Map : MonoBehaviour {
 	private IEnumerator mapCoroutine;
 
 	void Update () {
-		latitude  = gpsController.gps.latitude;
-		longitude = gpsController.gps.longtitude;
-		mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
-		StartCoroutine (mapCoroutine); //restart the coroutine
+		//latitude  = gpsController.gps.latitude;
+		//longitude = gpsController.gps.longtitude;
+		//mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
+		//StartCoroutine (mapCoroutine); //restart the coroutine
 
 //		if (terminal != null && gpsController != null) {
 //			terminal.text = "gps | long: " + gpsController.gps.longtitude.ToString() +'\n' + " lati: " + gpsController.gps.latitude.ToString();
