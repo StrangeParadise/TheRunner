@@ -60,7 +60,9 @@
      <Compile Include="Assets\Scripts\GPS\UpdateGPS.cs" />
      <Compile Include="Assets\Scripts\GameController\GameController.cs" />
      <Compile Include="Assets\Scripts\HandMap\HandMapController.cs" />
+     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
+     <Compile Include="Assets\Scripts\Room.cs" />
      <Compile Include="Assets\Scripts\ToolBox_static\Toolbox.cs" />
      <Compile Include="Assets\Scripts\User\UserInfo.cs" />
      <Compile Include="Assets\login\LoginController.cs" />
