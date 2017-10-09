@@ -41,10 +41,14 @@ public:
 	GameObject_t1756533147 * ___ui_5;
 	// UnityEngine.GameObject UnityEngine.Networking.Room::chat
 	GameObject_t1756533147 * ___chat_6;
+	// UnityEngine.GameObject UnityEngine.Networking.Room::camera
+	GameObject_t1756533147 * ___camera_7;
+	// UnityEngine.GameObject UnityEngine.Networking.Room::arUI
+	GameObject_t1756533147 * ___arUI_8;
 	// UnityEngine.Color UnityEngine.Networking.Room::color
-	Color_t2020392075  ___color_7;
+	Color_t2020392075  ___color_9;
 	// System.Boolean UnityEngine.Networking.Room::finded
-	bool ___finded_8;
+	bool ___finded_10;
 
 public:
 	inline static int32_t get_offset_of_manager_2() { return static_cast<int32_t>(offsetof(Room_t3932855567, ___manager_2)); }
@@ -92,20 +96,38 @@ public:
 		Il2CppCodeGenWriteBarrier(&___chat_6, value);
 	}
 
-	inline static int32_t get_offset_of_color_7() { return static_cast<int32_t>(offsetof(Room_t3932855567, ___color_7)); }
-	inline Color_t2020392075  get_color_7() const { return ___color_7; }
-	inline Color_t2020392075 * get_address_of_color_7() { return &___color_7; }
-	inline void set_color_7(Color_t2020392075  value)
+	inline static int32_t get_offset_of_camera_7() { return static_cast<int32_t>(offsetof(Room_t3932855567, ___camera_7)); }
+	inline GameObject_t1756533147 * get_camera_7() const { return ___camera_7; }
+	inline GameObject_t1756533147 ** get_address_of_camera_7() { return &___camera_7; }
+	inline void set_camera_7(GameObject_t1756533147 * value)
 	{
-		___color_7 = value;
+		___camera_7 = value;
+		Il2CppCodeGenWriteBarrier(&___camera_7, value);
 	}
 
-	inline static int32_t get_offset_of_finded_8() { return static_cast<int32_t>(offsetof(Room_t3932855567, ___finded_8)); }
-	inline bool get_finded_8() const { return ___finded_8; }
-	inline bool* get_address_of_finded_8() { return &___finded_8; }
-	inline void set_finded_8(bool value)
+	inline static int32_t get_offset_of_arUI_8() { return static_cast<int32_t>(offsetof(Room_t3932855567, ___arUI_8)); }
+	inline GameObject_t1756533147 * get_arUI_8() const { return ___arUI_8; }
+	inline GameObject_t1756533147 ** get_address_of_arUI_8() { return &___arUI_8; }
+	inline void set_arUI_8(GameObject_t1756533147 * value)
 	{
-		___finded_8 = value;
+		___arUI_8 = value;
+		Il2CppCodeGenWriteBarrier(&___arUI_8, value);
+	}
+
+	inline static int32_t get_offset_of_color_9() { return static_cast<int32_t>(offsetof(Room_t3932855567, ___color_9)); }
+	inline Color_t2020392075  get_color_9() const { return ___color_9; }
+	inline Color_t2020392075 * get_address_of_color_9() { return &___color_9; }
+	inline void set_color_9(Color_t2020392075  value)
+	{
+		___color_9 = value;
+	}
+
+	inline static int32_t get_offset_of_finded_10() { return static_cast<int32_t>(offsetof(Room_t3932855567, ___finded_10)); }
+	inline bool get_finded_10() const { return ___finded_10; }
+	inline bool* get_address_of_finded_10() { return &___finded_10; }
+	inline void set_finded_10(bool value)
+	{
+		___finded_10 = value;
 	}
 };
 
