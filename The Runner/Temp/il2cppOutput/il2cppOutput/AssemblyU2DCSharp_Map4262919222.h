@@ -59,6 +59,8 @@ public:
 	TextMesh_t1641806576 * ___terminal_11;
 	// System.Collections.IEnumerator Map::mapCoroutine
 	Il2CppObject * ___mapCoroutine_12;
+	// System.Boolean Map::showMap
+	bool ___showMap_13;
 
 public:
 	inline static int32_t get_offset_of_url_2() { return static_cast<int32_t>(offsetof(Map_t4262919222, ___url_2)); }
@@ -152,6 +154,14 @@ public:
 	{
 		___mapCoroutine_12 = value;
 		Il2CppCodeGenWriteBarrier(&___mapCoroutine_12, value);
+	}
+
+	inline static int32_t get_offset_of_showMap_13() { return static_cast<int32_t>(offsetof(Map_t4262919222, ___showMap_13)); }
+	inline bool get_showMap_13() const { return ___showMap_13; }
+	inline bool* get_address_of_showMap_13() { return &___showMap_13; }
+	inline void set_showMap_13(bool value)
+	{
+		___showMap_13 = value;
 	}
 };
 

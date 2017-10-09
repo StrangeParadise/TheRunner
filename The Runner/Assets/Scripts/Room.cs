@@ -13,6 +13,8 @@ namespace UnityEngine.Networking {
         public GameObject parent;
         public GameObject ui;
 		public GameObject chat;
+		public GameObject camera;
+		public GameObject arUI;
         public Color color;
         // Use this for initialization
 
@@ -40,6 +42,8 @@ namespace UnityEngine.Networking {
                         this.manager.matchMaker.JoinMatch(matchInfoSnapshot.networkId, string.Empty, string.Empty, string.Empty, 0, 0, new NetworkMatch.DataResponseDelegate<MatchInfo>(this.manager.OnMatchJoined));
                         ui.SetActive(false);
 						chat.SetActive(true);
+						camera.SetActive(true);
+						arUI.SetActive(true);
                         finded = false;
                     }
 					num += Screen.width*0.1f;

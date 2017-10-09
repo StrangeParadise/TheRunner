@@ -3,6 +3,7 @@
 <type fullname="AR" preserve="all"/>
 <type fullname="TestRedManRotation" preserve="all"/>
 <type fullname="ChatController" preserve="all"/>
+<type fullname="ChatManager" preserve="all"/>
 <type fullname="testExtendClass" preserve="all"/>
 <type fullname="testTwoChat" preserve="all"/>
 <type fullname="HollowCircle" preserve="all"/>

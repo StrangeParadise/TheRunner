@@ -42,26 +42,29 @@
 #include "UnityEngine_UI_UnityEngine_UI_Graphic2426225576.h"
 #include "UnityEngine_UnityEngine_RectTransform3349966182.h"
 #include "AssemblyU2DCSharp_ChatController2669781690.h"
+#include "AssemblyU2DCSharp_ChatManager2792590695.h"
+#include "UnityEngine_UI_UnityEngine_UI_Text356221433.h"
+#include "UnityEngine_UnityEngine_WWWForm3950226929.h"
+#include "UnityEngine_UnityEngine_WWW2919945039.h"
+#include "UnityEngine_UnityEngine_Coroutine2299508840.h"
+#include "AssemblyU2DCSharp_ChatManager_U3CServerSendU3Ec__I2096387928.h"
+#include "mscorlib_System_Char3454481338.h"
+#include "mscorlib_System_UInt322149682021.h"
+#include "mscorlib_System_NotSupportedException1793819818.h"
 #include "AssemblyU2DCSharp_GameController3607102586.h"
 #include "UnityEngine_UnityEngine_Canvas209405766.h"
 #include "UnityEngine_UnityEngine_Camera189460977.h"
 #include "AssemblyU2DCSharp_GPSController2272977524.h"
 #include "AssemblyU2DCSharp_GPSData207763284.h"
 #include "AssemblyU2DCSharp_GPSController_U3CStartLocationSe2676618990.h"
-#include "UnityEngine_UnityEngine_Coroutine2299508840.h"
 #include "UnityEngine_UnityEngine_LocationServiceStatus2482073234.h"
 #include "UnityEngine_UnityEngine_LocationInfo1364725149.h"
-#include "mscorlib_System_UInt322149682021.h"
 #include "UnityEngine_UnityEngine_WaitForSeconds3839502067.h"
-#include "mscorlib_System_NotSupportedException1793819818.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen1445631064.h"
 #include "AssemblyU2DCSharp_HandMapController222498385.h"
 #include "AssemblyU2DCSharp_HollowCircle3041030259.h"
 #include "UnityEngine_UnityEngine_LineRenderer849157671.h"
 #include "AssemblyU2DCSharp_LoginController112609021.h"
-#include "UnityEngine_UI_UnityEngine_UI_Text356221433.h"
-#include "UnityEngine_UnityEngine_WWWForm3950226929.h"
-#include "UnityEngine_UnityEngine_WWW2919945039.h"
 #include "UnityEngine_UnityEngine_Rect3681755626.h"
 #include "AssemblyU2DCSharp_LoginController_U3CLoginU3Ec__It1873648316.h"
 #include "AssemblyU2DCSharp_LoginController_U3CCreateAccount3235856557.h"
@@ -158,22 +161,36 @@ struct Graphic_t2426225576;
 struct RectTransform_t3349966182;
 // ChatController
 struct ChatController_t2669781690;
+// ChatManager
+struct ChatManager_t2792590695;
+// UnityEngine.UI.Text
+struct Text_t356221433;
+// UnityEngine.WWWForm
+struct WWWForm_t3950226929;
+// UnityEngine.WWW
+struct WWW_t2919945039;
+// System.Collections.IEnumerator
+struct IEnumerator_t1466026749;
+// UnityEngine.Coroutine
+struct Coroutine_t2299508840;
+// ChatManager/<ServerSend>c__Iterator0
+struct U3CServerSendU3Ec__Iterator0_t2096387928;
+// System.String[]
+struct StringU5BU5D_t1642385972;
+// System.Char[]
+struct CharU5BU5D_t1328083999;
+// System.NotSupportedException
+struct NotSupportedException_t1793819818;
 // GameController
 struct GameController_t3607102586;
 // GPSController
 struct GPSController_t2272977524;
 // GPSData
 struct GPSData_t207763284;
-// System.Collections.IEnumerator
-struct IEnumerator_t1466026749;
 // GPSController/<StartLocationService>c__Iterator0
 struct U3CStartLocationServiceU3Ec__Iterator0_t2676618990;
-// UnityEngine.Coroutine
-struct Coroutine_t2299508840;
 // UnityEngine.WaitForSeconds
 struct WaitForSeconds_t3839502067;
-// System.NotSupportedException
-struct NotSupportedException_t1793819818;
 // System.Collections.Generic.List`1<System.Single>
 struct List_1_t1445631064;
 // HandMapController
@@ -184,12 +201,6 @@ struct HollowCircle_t3041030259;
 struct LineRenderer_t849157671;
 // LoginController
 struct LoginController_t112609021;
-// UnityEngine.UI.Text
-struct Text_t356221433;
-// UnityEngine.WWWForm
-struct WWWForm_t3950226929;
-// UnityEngine.WWW
-struct WWW_t2919945039;
 // LoginController/<Login>c__Iterator0
 struct U3CLoginU3Ec__Iterator0_t1873648316;
 // LoginController/<CreateAccount>c__Iterator1
@@ -301,20 +312,37 @@ extern const uint32_t AR_Start_m1351794542_MetadataUsageId;
 extern Il2CppClass* Single_t2076509932_il2cpp_TypeInfo_var;
 extern const uint32_t AR_Update_m3244983845_MetadataUsageId;
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1890047662;
-extern Il2CppCodeGenString* _stringLiteral3619451924;
-extern const uint32_t GameController_rotateMapWithCamera_m4088657527_MetadataUsageId;
+extern const uint32_t ChatManager__ctor_m3800112208_MetadataUsageId;
+extern const MethodInfo* GameObject_GetComponent_TisText_t356221433_m1217399699_MethodInfo_var;
+extern const uint32_t ChatManager_OnGUI_m1334155140_MetadataUsageId;
+extern Il2CppClass* WWWForm_t3950226929_il2cpp_TypeInfo_var;
+extern Il2CppClass* WWW_t2919945039_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3611321333;
+extern Il2CppCodeGenString* _stringLiteral3726277302;
+extern Il2CppCodeGenString* _stringLiteral3457518772;
+extern Il2CppCodeGenString* _stringLiteral1323228337;
+extern Il2CppCodeGenString* _stringLiteral3452664158;
+extern const uint32_t ChatManager_Send_m1864909104_MetadataUsageId;
+extern Il2CppClass* U3CServerSendU3Ec__Iterator0_t2096387928_il2cpp_TypeInfo_var;
+extern const uint32_t ChatManager_ServerSend_m2720164729_MetadataUsageId;
+extern Il2CppClass* CharU5BU5D_t1328083999_il2cpp_TypeInfo_var;
+extern Il2CppClass* Char_t3454481338_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral372029431;
+extern Il2CppCodeGenString* _stringLiteral2880467347;
+extern const uint32_t ChatManager_OutputToScreen_m177540504_MetadataUsageId;
+extern const uint32_t U3CServerSendU3Ec__Iterator0_MoveNext_m1173577137_MetadataUsageId;
+extern Il2CppClass* NotSupportedException_t1793819818_il2cpp_TypeInfo_var;
+extern const uint32_t U3CServerSendU3Ec__Iterator0_Reset_m2783850324_MetadataUsageId;
 extern Il2CppClass* GPSData_t207763284_il2cpp_TypeInfo_var;
 extern const uint32_t GPSController_Start_m4152392635_MetadataUsageId;
 extern Il2CppClass* U3CStartLocationServiceU3Ec__Iterator0_t2676618990_il2cpp_TypeInfo_var;
 extern const uint32_t GPSController_StartLocationService_m497030285_MetadataUsageId;
 extern const uint32_t GPSController_Update_m1670322258_MetadataUsageId;
 extern Il2CppClass* WaitForSeconds_t3839502067_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral172602210;
 extern Il2CppCodeGenString* _stringLiteral3795465923;
 extern Il2CppCodeGenString* _stringLiteral2305357508;
 extern const uint32_t U3CStartLocationServiceU3Ec__Iterator0_MoveNext_m2028891961_MetadataUsageId;
-extern Il2CppClass* NotSupportedException_t1793819818_il2cpp_TypeInfo_var;
 extern const uint32_t U3CStartLocationServiceU3Ec__Iterator0_Reset_m1312122602_MetadataUsageId;
 extern Il2CppClass* List_1_t1445631064_il2cpp_TypeInfo_var;
 extern const MethodInfo* List_1__ctor_m1509370154_MethodInfo_var;
@@ -331,12 +359,8 @@ extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
 extern const uint32_t HollowCircle_CreatePoints_m2954146693_MetadataUsageId;
 extern Il2CppCodeGenString* _stringLiteral4283667535;
 extern const uint32_t LoginController__ctor_m502456888_MetadataUsageId;
-extern const MethodInfo* GameObject_GetComponent_TisText_t356221433_m1217399699_MethodInfo_var;
 extern const uint32_t LoginController_OnGUI_m1867659084_MetadataUsageId;
-extern Il2CppClass* WWWForm_t3950226929_il2cpp_TypeInfo_var;
-extern Il2CppClass* WWW_t2919945039_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1747916857;
-extern Il2CppCodeGenString* _stringLiteral3726277302;
 extern Il2CppCodeGenString* _stringLiteral3561732527;
 extern Il2CppCodeGenString* _stringLiteral1879271242;
 extern const uint32_t LoginController_Login_m2432314419_MetadataUsageId;
@@ -355,7 +379,6 @@ extern Il2CppClass* U3CLoginU3Ec__Iterator0_t1873648316_il2cpp_TypeInfo_var;
 extern const uint32_t LoginController_Login_m2979741121_MetadataUsageId;
 extern Il2CppClass* U3CCreateAccountU3Ec__Iterator1_t3235856557_il2cpp_TypeInfo_var;
 extern const uint32_t LoginController_CreateAccount_m2143445743_MetadataUsageId;
-extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2255930277;
 extern Il2CppCodeGenString* _stringLiteral1029228285;
 extern Il2CppCodeGenString* _stringLiteral2640882096;
@@ -388,7 +411,7 @@ extern Il2CppCodeGenString* _stringLiteral2334078884;
 extern Il2CppCodeGenString* _stringLiteral372029398;
 extern Il2CppCodeGenString* _stringLiteral93847055;
 extern Il2CppCodeGenString* _stringLiteral2313303675;
-extern Il2CppCodeGenString* _stringLiteral2328242528;
+extern Il2CppCodeGenString* _stringLiteral3779626262;
 extern const uint32_t U3CGetGoogleMapU3Ec__Iterator0_MoveNext_m2744658934_MetadataUsageId;
 extern const uint32_t U3CGetGoogleMapU3Ec__Iterator0_Reset_m2581645829_MetadataUsageId;
 extern Il2CppClass* NetworkBehaviour_t3873055601_il2cpp_TypeInfo_var;
@@ -542,6 +565,78 @@ public:
 		m_Items[index] = value;
 	}
 };
+// System.String[]
+struct StringU5BU5D_t1642385972  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) String_t* m_Items[1];
+
+public:
+	inline String_t* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, String_t* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline String_t* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, String_t* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// System.Char[]
+struct CharU5BU5D_t1328083999  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Il2CppChar m_Items[1];
+
+public:
+	inline Il2CppChar GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Il2CppChar* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Il2CppChar value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Il2CppChar GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Il2CppChar* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Il2CppChar value)
+	{
+		m_Items[index] = value;
+	}
+};
 // System.Object[]
 struct ObjectU5BU5D_t3614634134  : public Il2CppArray
 {
@@ -653,45 +748,10 @@ public:
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
-// System.String[]
-struct StringU5BU5D_t1642385972  : public Il2CppArray
-{
-public:
-	ALIGN_FIELD (8) String_t* m_Items[1];
-
-public:
-	inline String_t* GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline String_t** GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, String_t* value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier(m_Items + index, value);
-	}
-	inline String_t* GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline String_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, String_t* value)
-	{
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier(m_Items + index, value);
-	}
-};
 
 
+// !!0 UnityEngine.GameObject::GetComponent<System.Object>()
+extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m900327904_gshared (GameObject_t1756533147 * __this, const MethodInfo* method);
 // System.Void System.Collections.Generic.List`1<System.Single>::.ctor()
 extern "C"  void List_1__ctor_m1509370154_gshared (List_1_t1445631064 * __this, const MethodInfo* method);
 // System.Int32 System.Collections.Generic.List`1<System.Single>::get_Count()
@@ -702,8 +762,6 @@ extern "C"  void List_1_RemoveAt_m3361987988_gshared (List_1_t1445631064 * __thi
 extern "C"  void List_1_Add_m913687102_gshared (List_1_t1445631064 * __this, float p0, const MethodInfo* method);
 // !0 System.Collections.Generic.List`1<System.Single>::get_Item(System.Int32)
 extern "C"  float List_1_get_Item_m3254877171_gshared (List_1_t1445631064 * __this, int32_t p0, const MethodInfo* method);
-// !!0 UnityEngine.GameObject::GetComponent<System.Object>()
-extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m900327904_gshared (GameObject_t1756533147 * __this, const MethodInfo* method);
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m4109961936_gshared (Component_t3819376471 * __this, const MethodInfo* method);
 // System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
@@ -809,14 +867,46 @@ extern "C"  void Transform_set_localScale_m2325460848 (Transform_t3275118058 * _
 extern "C"  int32_t WebCamTexture_get_videoRotationAngle_m1556283588 (WebCamTexture_t1079476942 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::set_localEulerAngles(UnityEngine.Vector3)
 extern "C"  void Transform_set_localEulerAngles_m2927195985 (Transform_t3275118058 * __this, Vector3_t2243707580  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// !!0 UnityEngine.GameObject::GetComponent<UnityEngine.UI.Text>()
+#define GameObject_GetComponent_TisText_t356221433_m1217399699(__this, method) ((  Text_t356221433 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m900327904_gshared)(__this, method)
+// System.Boolean System.String::op_Inequality(System.String,System.String)
+extern "C"  bool String_op_Inequality_m304203149 (Il2CppObject * __this /* static, unused */, String_t* p0, String_t* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.WWWForm::.ctor()
+extern "C"  void WWWForm__ctor_m2129424870 (WWWForm_t3950226929 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.WWWForm::AddField(System.String,System.String)
+extern "C"  void WWWForm_AddField_m1334606983 (WWWForm_t3950226929 * __this, String_t* p0, String_t* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.WWWForm::AddField(System.String,System.Int32)
+extern "C"  void WWWForm_AddField_m2260664476 (WWWForm_t3950226929 * __this, String_t* p0, int32_t p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.WWW::.ctor(System.String,UnityEngine.WWWForm)
+extern "C"  void WWW__ctor_m578693146 (WWW_t2919945039 * __this, String_t* p0, WWWForm_t3950226929 * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Collections.IEnumerator ChatManager::ServerSend(UnityEngine.WWW)
+extern "C"  Il2CppObject * ChatManager_ServerSend_m2720164729 (ChatManager_t2792590695 * __this, WWW_t2919945039 * ____w0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Coroutine UnityEngine.MonoBehaviour::StartCoroutine(System.Collections.IEnumerator)
+extern "C"  Coroutine_t2299508840 * MonoBehaviour_StartCoroutine_m2470621050 (MonoBehaviour_t1158329972 * __this, Il2CppObject * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void ChatManager/<ServerSend>c__Iterator0::.ctor()
+extern "C"  void U3CServerSendU3Ec__Iterator0__ctor_m1989518995 (U3CServerSendU3Ec__Iterator0_t2096387928 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String[] System.String::Split(System.Char[])
+extern "C"  StringU5BU5D_t1642385972* String_Split_m3326265864 (String_t* __this, CharU5BU5D_t1328083999* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.String::Concat(System.String,System.String,System.String,System.String)
+extern "C"  String_t* String_Concat_m1561703559 (Il2CppObject * __this /* static, unused */, String_t* p0, String_t* p1, String_t* p2, String_t* p3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.String::Concat(System.Object,System.Object,System.Object)
+extern "C"  String_t* String_Concat_m2000667605 (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, Il2CppObject * p1, Il2CppObject * p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Debug::Log(System.Object)
+extern "C"  void Debug_Log_m920475918 (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Object::.ctor()
+extern "C"  void Object__ctor_m2551263788 (Il2CppObject * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String UnityEngine.WWW::get_error()
+extern "C"  String_t* WWW_get_error_m3092701216 (WWW_t2919945039 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String UnityEngine.WWW::get_text()
+extern "C"  String_t* WWW_get_text_m1558985139 (WWW_t2919945039 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void ChatManager::OutputToScreen(System.String)
+extern "C"  void ChatManager_OutputToScreen_m177540504 (ChatManager_t2792590695 * __this, String_t* ___line0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.NotSupportedException::.ctor()
+extern "C"  void NotSupportedException__ctor_m3232764727 (NotSupportedException_t1793819818 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GameController::rotateMapWithCamera()
 extern "C"  void GameController_rotateMapWithCamera_m4088657527 (GameController_t3607102586 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GameController::positionMapWithCamera()
 extern "C"  void GameController_positionMapWithCamera_m3500126895 (GameController_t3607102586 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// UnityEngine.Vector3 UnityEngine.Transform::get_eulerAngles()
-extern "C"  Vector3_t2243707580  Transform_get_eulerAngles_m4066505159 (Transform_t3275118058 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.String System.String::Concat(System.Object,System.Object)
-extern "C"  String_t* String_Concat_m56707527 (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, Il2CppObject * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GPSData::.ctor()
 extern "C"  void GPSData__ctor_m1606646883 (GPSData_t207763284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GPSController/<StartLocationService>c__Iterator0::.ctor()
@@ -827,10 +917,6 @@ extern "C"  GameObject_t1756533147 * Component_get_gameObject_m3105766835 (Compo
 extern "C"  void Object_DontDestroyOnLoad_m2330762974 (Il2CppObject * __this /* static, unused */, Object_t1021602117 * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator GPSController::StartLocationService()
 extern "C"  Il2CppObject * GPSController_StartLocationService_m497030285 (GPSController_t2272977524 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// UnityEngine.Coroutine UnityEngine.MonoBehaviour::StartCoroutine(System.Collections.IEnumerator)
-extern "C"  Coroutine_t2299508840 * MonoBehaviour_StartCoroutine_m2470621050 (MonoBehaviour_t1158329972 * __this, Il2CppObject * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void System.Object::.ctor()
-extern "C"  void Object__ctor_m2551263788 (Il2CppObject * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.LocationService::get_isEnabledByUser()
 extern "C"  bool LocationService_get_isEnabledByUser_m840009485 (LocationService_t1617852714 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.WaitForSeconds::.ctor(System.Single)
@@ -845,8 +931,6 @@ extern "C"  float LocationInfo_get_latitude_m2482205269 (LocationInfo_t136472514
 extern "C"  float LocationInfo_get_longitude_m306881672 (LocationInfo_t1364725149 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GPSData::updateGpsData(System.Single,System.Single)
 extern "C"  void GPSData_updateGpsData_m284874942 (GPSData_t207763284 * __this, float ___latitude0, float ___longtitude1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void System.NotSupportedException::.ctor()
-extern "C"  void NotSupportedException__ctor_m3232764727 (NotSupportedException_t1793819818 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Generic.List`1<System.Single>::.ctor()
 #define List_1__ctor_m1509370154(__this, method) ((  void (*) (List_1_t1445631064 *, const MethodInfo*))List_1__ctor_m1509370154_gshared)(__this, method)
 // System.Void GPSData::set_latitude(System.Single)
@@ -879,16 +963,8 @@ extern "C"  void LineRenderer_set_useWorldSpace_m3177357953 (LineRenderer_t84915
 extern "C"  void HollowCircle_CreatePoints_m2954146693 (HollowCircle_t3041030259 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.LineRenderer::SetPosition(System.Int32,UnityEngine.Vector3)
 extern "C"  void LineRenderer_SetPosition_m4048451705 (LineRenderer_t849157671 * __this, int32_t p0, Vector3_t2243707580  p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// !!0 UnityEngine.GameObject::GetComponent<UnityEngine.UI.Text>()
-#define GameObject_GetComponent_TisText_t356221433_m1217399699(__this, method) ((  Text_t356221433 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m900327904_gshared)(__this, method)
 // System.Boolean System.String::op_Equality(System.String,System.String)
 extern "C"  bool String_op_Equality_m1790663636 (Il2CppObject * __this /* static, unused */, String_t* p0, String_t* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.WWWForm::.ctor()
-extern "C"  void WWWForm__ctor_m2129424870 (WWWForm_t3950226929 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.WWWForm::AddField(System.String,System.String)
-extern "C"  void WWWForm_AddField_m1334606983 (WWWForm_t3950226929 * __this, String_t* p0, String_t* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.WWW::.ctor(System.String,UnityEngine.WWWForm)
-extern "C"  void WWW__ctor_m578693146 (WWW_t2919945039 * __this, String_t* p0, WWWForm_t3950226929 * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator LoginController::Login(UnityEngine.WWW)
 extern "C"  Il2CppObject * LoginController_Login_m2979741121 (LoginController_t112609021 * __this, WWW_t2919945039 * ____w0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Rect::.ctor(System.Single,System.Single,System.Single,System.Single)
@@ -899,26 +975,18 @@ extern "C"  void GUI_Label_m2412846501 (Il2CppObject * __this /* static, unused 
 extern "C"  String_t* GUI_TextField_m1044694001 (Il2CppObject * __this /* static, unused */, Rect_t3681755626  p0, String_t* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.GUI::Button(UnityEngine.Rect,System.String)
 extern "C"  bool GUI_Button_m3054448581 (Il2CppObject * __this /* static, unused */, Rect_t3681755626  p0, String_t* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean System.String::op_Inequality(System.String,System.String)
-extern "C"  bool String_op_Inequality_m304203149 (Il2CppObject * __this /* static, unused */, String_t* p0, String_t* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator LoginController::CreateAccount(UnityEngine.WWW)
 extern "C"  Il2CppObject * LoginController_CreateAccount_m2143445743 (LoginController_t112609021 * __this, WWW_t2919945039 * ____w0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void LoginController/<Login>c__Iterator0::.ctor()
 extern "C"  void U3CLoginU3Ec__Iterator0__ctor_m3330163823 (U3CLoginU3Ec__Iterator0_t1873648316 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void LoginController/<CreateAccount>c__Iterator1::.ctor()
 extern "C"  void U3CCreateAccountU3Ec__Iterator1__ctor_m483380156 (U3CCreateAccountU3Ec__Iterator1_t3235856557 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Debug::Log(System.Object)
-extern "C"  void Debug_Log_m920475918 (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.AsyncOperation UnityEngine.SceneManagement.SceneManager::UnloadSceneAsync(System.String)
 extern "C"  AsyncOperation_t3814632279 * SceneManager_UnloadSceneAsync_m4016707407 (Il2CppObject * __this /* static, unused */, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.SceneManagement.SceneManager::LoadScene(System.String,UnityEngine.SceneManagement.LoadSceneMode)
 extern "C"  void SceneManager_LoadScene_m1386820036 (Il2CppObject * __this /* static, unused */, String_t* p0, int32_t p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void LoginController/<loadGameAsync>c__Iterator2::.ctor()
 extern "C"  void U3CloadGameAsyncU3Ec__Iterator2__ctor_m122795602 (U3CloadGameAsyncU3Ec__Iterator2_t1609687105 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.String UnityEngine.WWW::get_error()
-extern "C"  String_t* WWW_get_error_m3092701216 (WWW_t2919945039 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.String UnityEngine.WWW::get_text()
-extern "C"  String_t* WWW_get_text_m1558985139 (WWW_t2919945039 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.String::Concat(System.String,System.String)
 extern "C"  String_t* String_Concat_m2596409543 (Il2CppObject * __this /* static, unused */, String_t* p0, String_t* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.AsyncOperation UnityEngine.SceneManagement.SceneManager::LoadSceneAsync(System.String)
@@ -989,8 +1057,6 @@ extern "C"  GUISkin_t1436893342 * GUI_get_skin_m2309570990 (Il2CppObject * __thi
 extern "C"  GUIStyle_t1799908754 * GUISkin_get_label_m2703078986 (GUISkin_t1436893342 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.GUIStyle::set_fontSize(System.Int32)
 extern "C"  void GUIStyle_set_fontSize_m4015341543 (GUIStyle_t1799908754 * __this, int32_t p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.String System.String::Concat(System.String,System.String,System.String,System.String)
-extern "C"  String_t* String_Concat_m1561703559 (Il2CppObject * __this /* static, unused */, String_t* p0, String_t* p1, String_t* p2, String_t* p3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.GUILayout::Label(System.String,UnityEngine.GUILayoutOption[])
 extern "C"  void GUILayout_Label_m3466110979 (Il2CppObject * __this /* static, unused */, String_t* p0, GUILayoutOptionU5BU5D_t2108882777* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.GUIStyle UnityEngine.GUISkin::get_textField()
@@ -1065,6 +1131,8 @@ extern "C"  void SimpleChat__ctor_m1147096138 (SimpleChat_t403391640 * __this, S
 extern "C"  void SimpleChat_draw_m869370447 (SimpleChat_t403391640 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Quaternion UnityEngine.Quaternion::Euler(UnityEngine.Vector3)
 extern "C"  Quaternion_t4030073918  Quaternion_Euler_m3586339259 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.String::Concat(System.Object,System.Object)
+extern "C"  String_t* String_Concat_m56707527 (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, Il2CppObject * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Vector3::get_zero()
 extern "C"  Vector3_t2243707580  Vector3_get_zero_m1527993324 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Vector3::get_up()
@@ -1460,6 +1528,386 @@ extern "C"  void ChatController_Update_m1939549468 (ChatController_t2669781690 *
 		return;
 	}
 }
+// System.Void ChatManager::.ctor()
+extern "C"  void ChatManager__ctor_m3800112208 (ChatManager_t2792590695 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (ChatManager__ctor_m3800112208_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_0 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		__this->set_output_6(L_0);
+		String_t* L_1 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		__this->set_text_7(L_1);
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void ChatManager::OnGUI()
+extern "C"  void ChatManager_OnGUI_m1334155140 (ChatManager_t2792590695 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (ChatManager_OnGUI_m1334155140_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		GameObject_t1756533147 * L_0 = __this->get_textFieldUI_2();
+		NullCheck(L_0);
+		Text_t356221433 * L_1 = GameObject_GetComponent_TisText_t356221433_m1217399699(L_0, /*hidden argument*/GameObject_GetComponent_TisText_t356221433_m1217399699_MethodInfo_var);
+		__this->set_textField_4(L_1);
+		GameObject_t1756533147 * L_2 = __this->get_outputFieldUI_3();
+		NullCheck(L_2);
+		Text_t356221433 * L_3 = GameObject_GetComponent_TisText_t356221433_m1217399699(L_2, /*hidden argument*/GameObject_GetComponent_TisText_t356221433_m1217399699_MethodInfo_var);
+		__this->set_outputField_5(L_3);
+		return;
+	}
+}
+// System.Void ChatManager::Send()
+extern "C"  void ChatManager_Send_m1864909104 (ChatManager_t2792590695 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (ChatManager_Send_m1864909104_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	WWWForm_t3950226929 * V_1 = NULL;
+	WWW_t2919945039 * V_2 = NULL;
+	{
+		V_0 = _stringLiteral3611321333;
+		Text_t356221433 * L_0 = __this->get_textField_4();
+		NullCheck(L_0);
+		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(71 /* System.String UnityEngine.UI.Text::get_text() */, L_0);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_2 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		bool L_3 = String_op_Inequality_m304203149(NULL /*static, unused*/, L_1, L_2, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_007e;
+		}
+	}
+	{
+		WWWForm_t3950226929 * L_4 = (WWWForm_t3950226929 *)il2cpp_codegen_object_new(WWWForm_t3950226929_il2cpp_TypeInfo_var);
+		WWWForm__ctor_m2129424870(L_4, /*hidden argument*/NULL);
+		V_1 = L_4;
+		WWWForm_t3950226929 * L_5 = V_1;
+		String_t* L_6 = V_0;
+		NullCheck(L_5);
+		WWWForm_AddField_m1334606983(L_5, _stringLiteral3726277302, L_6, /*hidden argument*/NULL);
+		WWWForm_t3950226929 * L_7 = V_1;
+		Text_t356221433 * L_8 = __this->get_textField_4();
+		NullCheck(L_8);
+		String_t* L_9 = VirtFuncInvoker0< String_t* >::Invoke(71 /* System.String UnityEngine.UI.Text::get_text() */, L_8);
+		NullCheck(L_7);
+		WWWForm_AddField_m1334606983(L_7, _stringLiteral3457518772, L_9, /*hidden argument*/NULL);
+		WWWForm_t3950226929 * L_10 = V_1;
+		NullCheck(L_10);
+		WWWForm_AddField_m2260664476(L_10, _stringLiteral1323228337, 1, /*hidden argument*/NULL);
+		WWWForm_t3950226929 * L_11 = V_1;
+		WWW_t2919945039 * L_12 = (WWW_t2919945039 *)il2cpp_codegen_object_new(WWW_t2919945039_il2cpp_TypeInfo_var);
+		WWW__ctor_m578693146(L_12, _stringLiteral3452664158, L_11, /*hidden argument*/NULL);
+		V_2 = L_12;
+		Text_t356221433 * L_13 = __this->get_textField_4();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_14 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		NullCheck(L_13);
+		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_13, L_14);
+		WWW_t2919945039 * L_15 = V_2;
+		Il2CppObject * L_16 = ChatManager_ServerSend_m2720164729(__this, L_15, /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2470621050(__this, L_16, /*hidden argument*/NULL);
+	}
+
+IL_007e:
+	{
+		return;
+	}
+}
+// System.Collections.IEnumerator ChatManager::ServerSend(UnityEngine.WWW)
+extern "C"  Il2CppObject * ChatManager_ServerSend_m2720164729 (ChatManager_t2792590695 * __this, WWW_t2919945039 * ____w0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (ChatManager_ServerSend_m2720164729_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CServerSendU3Ec__Iterator0_t2096387928 * V_0 = NULL;
+	{
+		U3CServerSendU3Ec__Iterator0_t2096387928 * L_0 = (U3CServerSendU3Ec__Iterator0_t2096387928 *)il2cpp_codegen_object_new(U3CServerSendU3Ec__Iterator0_t2096387928_il2cpp_TypeInfo_var);
+		U3CServerSendU3Ec__Iterator0__ctor_m1989518995(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		U3CServerSendU3Ec__Iterator0_t2096387928 * L_1 = V_0;
+		WWW_t2919945039 * L_2 = ____w0;
+		NullCheck(L_1);
+		L_1->set__w_0(L_2);
+		U3CServerSendU3Ec__Iterator0_t2096387928 * L_3 = V_0;
+		NullCheck(L_3);
+		L_3->set_U24this_1(__this);
+		U3CServerSendU3Ec__Iterator0_t2096387928 * L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Void ChatManager::OutputToScreen(System.String)
+extern "C"  void ChatManager_OutputToScreen_m177540504 (ChatManager_t2792590695 * __this, String_t* ___line0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (ChatManager_OutputToScreen_m177540504_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	StringU5BU5D_t1642385972* V_0 = NULL;
+	String_t* V_1 = NULL;
+	int32_t V_2 = 0;
+	{
+		String_t* L_0 = ___line0;
+		CharU5BU5D_t1328083999* L_1 = ((CharU5BU5D_t1328083999*)SZArrayNew(CharU5BU5D_t1328083999_il2cpp_TypeInfo_var, (uint32_t)1));
+		NullCheck(L_1);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppChar)((int32_t)47));
+		NullCheck(L_0);
+		StringU5BU5D_t1642385972* L_2 = String_Split_m3326265864(L_0, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_3 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		V_1 = L_3;
+		V_2 = 0;
+		goto IL_005f;
+	}
+
+IL_001f:
+	{
+		int32_t L_4 = V_2;
+		if ((!(((uint32_t)((int32_t)((int32_t)L_4%(int32_t)4))) == ((uint32_t)1))))
+		{
+			goto IL_0041;
+		}
+	}
+	{
+		String_t* L_5 = V_1;
+		StringU5BU5D_t1642385972* L_6 = V_0;
+		int32_t L_7 = V_2;
+		NullCheck(L_6);
+		int32_t L_8 = L_7;
+		String_t* L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_10 = String_Concat_m1561703559(NULL /*static, unused*/, L_5, _stringLiteral372029431, L_9, _stringLiteral2880467347, /*hidden argument*/NULL);
+		V_1 = L_10;
+		goto IL_005b;
+	}
+
+IL_0041:
+	{
+		int32_t L_11 = V_2;
+		if ((!(((uint32_t)((int32_t)((int32_t)L_11%(int32_t)4))) == ((uint32_t)2))))
+		{
+			goto IL_005b;
+		}
+	}
+	{
+		String_t* L_12 = V_1;
+		StringU5BU5D_t1642385972* L_13 = V_0;
+		int32_t L_14 = V_2;
+		NullCheck(L_13);
+		int32_t L_15 = L_14;
+		String_t* L_16 = (L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_15));
+		Il2CppChar L_17 = ((Il2CppChar)((int32_t)10));
+		Il2CppObject * L_18 = Box(Char_t3454481338_il2cpp_TypeInfo_var, &L_17);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_19 = String_Concat_m2000667605(NULL /*static, unused*/, L_12, L_16, L_18, /*hidden argument*/NULL);
+		V_1 = L_19;
+	}
+
+IL_005b:
+	{
+		int32_t L_20 = V_2;
+		V_2 = ((int32_t)((int32_t)L_20+(int32_t)1));
+	}
+
+IL_005f:
+	{
+		int32_t L_21 = V_2;
+		StringU5BU5D_t1642385972* L_22 = V_0;
+		NullCheck(L_22);
+		if ((((int32_t)L_21) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_22)->max_length)))))))
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		Text_t356221433 * L_23 = __this->get_outputField_5();
+		String_t* L_24 = V_1;
+		NullCheck(L_23);
+		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_23, L_24);
+		String_t* L_25 = V_1;
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, L_25, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void ChatManager/<ServerSend>c__Iterator0::.ctor()
+extern "C"  void U3CServerSendU3Ec__Iterator0__ctor_m1989518995 (U3CServerSendU3Ec__Iterator0_t2096387928 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean ChatManager/<ServerSend>c__Iterator0::MoveNext()
+extern "C"  bool U3CServerSendU3Ec__Iterator0_MoveNext_m1173577137 (U3CServerSendU3Ec__Iterator0_t2096387928 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (U3CServerSendU3Ec__Iterator0_MoveNext_m1173577137_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	uint32_t V_0 = 0;
+	{
+		int32_t L_0 = __this->get_U24PC_4();
+		V_0 = L_0;
+		__this->set_U24PC_4((-1));
+		uint32_t L_1 = V_0;
+		switch (L_1)
+		{
+			case 0:
+			{
+				goto IL_0021;
+			}
+			case 1:
+			{
+				goto IL_0041;
+			}
+		}
+	}
+	{
+		goto IL_00a8;
+	}
+
+IL_0021:
+	{
+		WWW_t2919945039 * L_2 = __this->get__w_0();
+		__this->set_U24current_2(L_2);
+		bool L_3 = __this->get_U24disposing_3();
+		if (L_3)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		__this->set_U24PC_4(1);
+	}
+
+IL_003c:
+	{
+		goto IL_00aa;
+	}
+
+IL_0041:
+	{
+		WWW_t2919945039 * L_4 = __this->get__w_0();
+		NullCheck(L_4);
+		String_t* L_5 = WWW_get_error_m3092701216(L_4, /*hidden argument*/NULL);
+		if (L_5)
+		{
+			goto IL_00a1;
+		}
+	}
+	{
+		WWW_t2919945039 * L_6 = __this->get__w_0();
+		NullCheck(L_6);
+		String_t* L_7 = WWW_get_text_m1558985139(L_6, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_8 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		bool L_9 = String_op_Inequality_m304203149(NULL /*static, unused*/, L_7, L_8, /*hidden argument*/NULL);
+		if (!L_9)
+		{
+			goto IL_0086;
+		}
+	}
+	{
+		ChatManager_t2792590695 * L_10 = __this->get_U24this_1();
+		WWW_t2919945039 * L_11 = __this->get__w_0();
+		NullCheck(L_11);
+		String_t* L_12 = WWW_get_text_m1558985139(L_11, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		ChatManager_OutputToScreen_m177540504(L_10, L_12, /*hidden argument*/NULL);
+		goto IL_00a1;
+	}
+
+IL_0086:
+	{
+		ChatManager_t2792590695 * L_13 = __this->get_U24this_1();
+		NullCheck(L_13);
+		Text_t356221433 * L_14 = L_13->get_outputField_5();
+		WWW_t2919945039 * L_15 = __this->get__w_0();
+		NullCheck(L_15);
+		String_t* L_16 = WWW_get_error_m3092701216(L_15, /*hidden argument*/NULL);
+		NullCheck(L_14);
+		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_14, L_16);
+	}
+
+IL_00a1:
+	{
+		__this->set_U24PC_4((-1));
+	}
+
+IL_00a8:
+	{
+		return (bool)0;
+	}
+
+IL_00aa:
+	{
+		return (bool)1;
+	}
+}
+// System.Object ChatManager/<ServerSend>c__Iterator0::System.Collections.Generic.IEnumerator<object>.get_Current()
+extern "C"  Il2CppObject * U3CServerSendU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1936333717 (U3CServerSendU3Ec__Iterator0_t2096387928 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = __this->get_U24current_2();
+		return L_0;
+	}
+}
+// System.Object ChatManager/<ServerSend>c__Iterator0::System.Collections.IEnumerator.get_Current()
+extern "C"  Il2CppObject * U3CServerSendU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m1542290205 (U3CServerSendU3Ec__Iterator0_t2096387928 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = __this->get_U24current_2();
+		return L_0;
+	}
+}
+// System.Void ChatManager/<ServerSend>c__Iterator0::Dispose()
+extern "C"  void U3CServerSendU3Ec__Iterator0_Dispose_m1899960926 (U3CServerSendU3Ec__Iterator0_t2096387928 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_U24disposing_3((bool)1);
+		__this->set_U24PC_4((-1));
+		return;
+	}
+}
+// System.Void ChatManager/<ServerSend>c__Iterator0::Reset()
+extern "C"  void U3CServerSendU3Ec__Iterator0_Reset_m2783850324 (U3CServerSendU3Ec__Iterator0_t2096387928 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (U3CServerSendU3Ec__Iterator0_Reset_m2783850324_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		NotSupportedException_t1793819818 * L_0 = (NotSupportedException_t1793819818 *)il2cpp_codegen_object_new(NotSupportedException_t1793819818_il2cpp_TypeInfo_var);
+		NotSupportedException__ctor_m3232764727(L_0, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
+	}
+}
 // System.Void GameController::.ctor()
 extern "C"  void GameController__ctor_m1439649957 (GameController_t3607102586 * __this, const MethodInfo* method)
 {
@@ -1480,12 +1928,6 @@ extern "C"  void GameController_Update_m1556003900 (GameController_t3607102586 *
 // System.Void GameController::rotateMapWithCamera()
 extern "C"  void GameController_rotateMapWithCamera_m4088657527 (GameController_t3607102586 * __this, const MethodInfo* method)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (GameController_rotateMapWithCamera_m4088657527_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
 	Quaternion_t4030073918  V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	Vector3_t2243707580  V_1;
@@ -1498,10 +1940,6 @@ extern "C"  void GameController_rotateMapWithCamera_m4088657527 (GameController_
 	memset(&V_4, 0, sizeof(V_4));
 	Vector3_t2243707580  V_5;
 	memset(&V_5, 0, sizeof(V_5));
-	Vector3_t2243707580  V_6;
-	memset(&V_6, 0, sizeof(V_6));
-	Vector3_t2243707580  V_7;
-	memset(&V_7, 0, sizeof(V_7));
 	{
 		Canvas_t209405766 * L_0 = __this->get_mapCanvas_2();
 		NullCheck(L_0);
@@ -1538,29 +1976,6 @@ extern "C"  void GameController_rotateMapWithCamera_m4088657527 (GameController_
 		Vector3__ctor_m2638739322(&L_17, L_6, L_11, L_16, /*hidden argument*/NULL);
 		NullCheck(L_1);
 		Transform_set_eulerAngles_m2881310872(L_1, L_17, /*hidden argument*/NULL);
-		Canvas_t209405766 * L_18 = __this->get_mapCanvas_2();
-		NullCheck(L_18);
-		Transform_t3275118058 * L_19 = Component_get_transform_m2697483695(L_18, /*hidden argument*/NULL);
-		NullCheck(L_19);
-		Vector3_t2243707580  L_20 = Transform_get_eulerAngles_m4066505159(L_19, /*hidden argument*/NULL);
-		V_6 = L_20;
-		float L_21 = (&V_6)->get_y_2();
-		float L_22 = L_21;
-		Il2CppObject * L_23 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_22);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_24 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral1890047662, L_23, /*hidden argument*/NULL);
-		MonoBehaviour_print_m3437620292(NULL /*static, unused*/, L_24, /*hidden argument*/NULL);
-		Camera_t189460977 * L_25 = __this->get_mainCamera_3();
-		NullCheck(L_25);
-		Transform_t3275118058 * L_26 = Component_get_transform_m2697483695(L_25, /*hidden argument*/NULL);
-		NullCheck(L_26);
-		Vector3_t2243707580  L_27 = Transform_get_eulerAngles_m4066505159(L_26, /*hidden argument*/NULL);
-		V_7 = L_27;
-		float L_28 = (&V_7)->get_y_2();
-		float L_29 = L_28;
-		Il2CppObject * L_30 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_29);
-		String_t* L_31 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral3619451924, L_30, /*hidden argument*/NULL);
-		MonoBehaviour_print_m3437620292(NULL /*static, unused*/, L_31, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -1702,12 +2117,12 @@ extern "C"  bool U3CStartLocationServiceU3Ec__Iterator0_MoveNext_m2028891961 (U3
 			}
 			case 1:
 			{
-				goto IL_007a;
+				goto IL_0070;
 			}
 		}
 	}
 	{
-		goto IL_011e;
+		goto IL_0114;
 	}
 
 IL_0021:
@@ -1718,25 +2133,24 @@ IL_0021:
 		bool L_3 = LocationService_get_isEnabledByUser_m840009485(L_2, /*hidden argument*/NULL);
 		if (L_3)
 		{
-			goto IL_003f;
+			goto IL_0035;
 		}
 	}
 	{
-		MonoBehaviour_print_m3437620292(NULL /*static, unused*/, _stringLiteral172602210, /*hidden argument*/NULL);
-		goto IL_011e;
+		goto IL_0114;
 	}
 
-IL_003f:
+IL_0035:
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
 		LocationService_t1617852714 * L_4 = Input_get_location_m1390884443(NULL /*static, unused*/, /*hidden argument*/NULL);
 		NullCheck(L_4);
 		LocationService_Start_m3920984473(L_4, /*hidden argument*/NULL);
 		__this->set_U3CmaxWaitU3E__0_0(((int32_t)20));
-		goto IL_0088;
+		goto IL_007e;
 	}
 
-IL_0056:
+IL_004c:
 	{
 		WaitForSeconds_t3839502067 * L_5 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m1990515539(L_5, (1.0f), /*hidden argument*/NULL);
@@ -1744,25 +2158,25 @@ IL_0056:
 		bool L_6 = __this->get_U24disposing_3();
 		if (L_6)
 		{
-			goto IL_0075;
+			goto IL_006b;
 		}
 	}
 	{
 		__this->set_U24PC_4(1);
 	}
 
-IL_0075:
+IL_006b:
 	{
-		goto IL_0120;
+		goto IL_0116;
 	}
 
-IL_007a:
+IL_0070:
 	{
 		int32_t L_7 = __this->get_U3CmaxWaitU3E__0_0();
 		__this->set_U3CmaxWaitU3E__0_0(((int32_t)((int32_t)L_7-(int32_t)1)));
 	}
 
-IL_0088:
+IL_007e:
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
 		LocationService_t1617852714 * L_8 = Input_get_location_m1390884443(NULL /*static, unused*/, /*hidden argument*/NULL);
@@ -1770,31 +2184,31 @@ IL_0088:
 		int32_t L_9 = LocationService_get_status_m1865246926(L_8, /*hidden argument*/NULL);
 		if ((!(((uint32_t)L_9) == ((uint32_t)1))))
 		{
-			goto IL_00a4;
+			goto IL_009a;
 		}
 	}
 	{
 		int32_t L_10 = __this->get_U3CmaxWaitU3E__0_0();
 		if ((((int32_t)L_10) > ((int32_t)0)))
 		{
-			goto IL_0056;
+			goto IL_004c;
 		}
 	}
 
-IL_00a4:
+IL_009a:
 	{
 		int32_t L_11 = __this->get_U3CmaxWaitU3E__0_0();
 		if ((((int32_t)L_11) > ((int32_t)0)))
 		{
-			goto IL_00bf;
+			goto IL_00b5;
 		}
 	}
 	{
 		MonoBehaviour_print_m3437620292(NULL /*static, unused*/, _stringLiteral3795465923, /*hidden argument*/NULL);
-		goto IL_011e;
+		goto IL_0114;
 	}
 
-IL_00bf:
+IL_00b5:
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
 		LocationService_t1617852714 * L_12 = Input_get_location_m1390884443(NULL /*static, unused*/, /*hidden argument*/NULL);
@@ -1802,15 +2216,15 @@ IL_00bf:
 		int32_t L_13 = LocationService_get_status_m1865246926(L_12, /*hidden argument*/NULL);
 		if ((!(((uint32_t)L_13) == ((uint32_t)3))))
 		{
-			goto IL_00de;
+			goto IL_00d4;
 		}
 	}
 	{
 		MonoBehaviour_print_m3437620292(NULL /*static, unused*/, _stringLiteral2305357508, /*hidden argument*/NULL);
-		goto IL_011e;
+		goto IL_0114;
 	}
 
-IL_00de:
+IL_00d4:
 	{
 		GPSController_t2272977524 * L_14 = __this->get_U24this_1();
 		NullCheck(L_14);
@@ -1828,16 +2242,16 @@ IL_00de:
 		float L_21 = LocationInfo_get_longitude_m306881672((&V_2), /*hidden argument*/NULL);
 		NullCheck(L_15);
 		GPSData_updateGpsData_m284874942(L_15, L_18, L_21, /*hidden argument*/NULL);
-		goto IL_011e;
+		goto IL_0114;
 	}
-	// Dead block : IL_0117: ldarg.0
+	// Dead block : IL_010d: ldarg.0
 
-IL_011e:
+IL_0114:
 	{
 		return (bool)0;
 	}
 
-IL_0120:
+IL_0116:
 	{
 		return (bool)1;
 	}
@@ -3005,6 +3419,7 @@ extern "C"  void U3CLoginU3Ec__Iterator0_Reset_m1456588996 (U3CLoginU3Ec__Iterat
 extern "C"  void Map__ctor_m2382724703 (Map_t4262919222 * __this, const MethodInfo* method)
 {
 	{
+		__this->set_showMap_13((bool)1);
 		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -3025,12 +3440,24 @@ extern "C"  void Map_Update_m3867277220 (Map_t4262919222 * __this, const MethodI
 		NullCheck(L_4);
 		float L_5 = GPSData_get_longtitude_m4025849247(L_4, /*hidden argument*/NULL);
 		__this->set_longitude_5(L_5);
-		float L_6 = __this->get_latitude_4();
-		float L_7 = __this->get_longitude_5();
-		Il2CppObject * L_8 = Map_GetGoogleMap_m3075677944(__this, L_6, L_7, /*hidden argument*/NULL);
-		__this->set_mapCoroutine_12(L_8);
-		Il2CppObject * L_9 = __this->get_mapCoroutine_12();
-		MonoBehaviour_StartCoroutine_m2470621050(__this, L_9, /*hidden argument*/NULL);
+		bool L_6 = __this->get_showMap_13();
+		if (!L_6)
+		{
+			goto IL_0063;
+		}
+	}
+	{
+		__this->set_showMap_13((bool)0);
+		float L_7 = __this->get_latitude_4();
+		float L_8 = __this->get_longitude_5();
+		Il2CppObject * L_9 = Map_GetGoogleMap_m3075677944(__this, L_7, L_8, /*hidden argument*/NULL);
+		__this->set_mapCoroutine_12(L_9);
+		Il2CppObject * L_10 = __this->get_mapCoroutine_12();
+		MonoBehaviour_StartCoroutine_m2470621050(__this, L_10, /*hidden argument*/NULL);
+	}
+
+IL_0063:
+	{
 		return;
 	}
 }
@@ -3090,23 +3517,19 @@ extern "C"  bool U3CGetGoogleMapU3Ec__Iterator0_MoveNext_m2744658934 (U3CGetGoog
 		{
 			case 0:
 			{
-				goto IL_0025;
+				goto IL_0021;
 			}
 			case 1:
 			{
-				goto IL_0146;
-			}
-			case 2:
-			{
-				goto IL_0196;
+				goto IL_0142;
 			}
 		}
 	}
 	{
-		goto IL_01be;
+		goto IL_01a2;
 	}
 
-IL_0025:
+IL_0021:
 	{
 		Map_t4262919222 * L_2 = __this->get_U24this_4();
 		ObjectU5BU5D_t3614634134* L_3 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)((int32_t)17)));
@@ -3207,8 +3630,8 @@ IL_0025:
 		(L_43)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)15)), (Il2CppObject *)L_46);
 		ObjectU5BU5D_t3614634134* L_47 = L_43;
 		NullCheck(L_47);
-		ArrayElementTypeCheck (L_47, _stringLiteral2328242528);
-		(L_47)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)16)), (Il2CppObject *)_stringLiteral2328242528);
+		ArrayElementTypeCheck (L_47, _stringLiteral3779626262);
+		(L_47)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)16)), (Il2CppObject *)_stringLiteral3779626262);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_48 = String_Concat_m3881798623(NULL /*static, unused*/, L_47, /*hidden argument*/NULL);
 		NullCheck(L_2);
@@ -3224,19 +3647,19 @@ IL_0025:
 		bool L_53 = __this->get_U24disposing_6();
 		if (L_53)
 		{
-			goto IL_0141;
+			goto IL_013d;
 		}
 	}
 	{
 		__this->set_U24PC_7(1);
 	}
 
-IL_0141:
+IL_013d:
 	{
-		goto IL_01c0;
+		goto IL_01a4;
 	}
 
-IL_0146:
+IL_0142:
 	{
 		WWW_t2919945039 * L_54 = __this->get_U3CwwwU3E__0_2();
 		NullCheck(L_54);
@@ -3250,44 +3673,27 @@ IL_0146:
 		Texture_t2243626319 * L_59 = __this->get_U3CmapTextureU3E__0_3();
 		NullCheck(L_58);
 		RawImage_set_texture_m2400157626(L_58, L_59, /*hidden argument*/NULL);
-		WaitForSeconds_t3839502067 * L_60 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
-		WaitForSeconds__ctor_m1990515539(L_60, (1.0f), /*hidden argument*/NULL);
-		__this->set_U24current_5(L_60);
-		bool L_61 = __this->get_U24disposing_6();
-		if (L_61)
-		{
-			goto IL_0191;
-		}
-	}
-	{
-		__this->set_U24PC_7(2);
-	}
-
-IL_0191:
-	{
-		goto IL_01c0;
-	}
-
-IL_0196:
-	{
-		Texture_t2243626319 * L_62 = __this->get_U3CmapTextureU3E__0_3();
+		Texture_t2243626319 * L_60 = __this->get_U3CmapTextureU3E__0_3();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		Object_Destroy_m4145850038(NULL /*static, unused*/, L_62, /*hidden argument*/NULL);
-		Map_t4262919222 * L_63 = __this->get_U24this_4();
+		Object_Destroy_m4145850038(NULL /*static, unused*/, L_60, /*hidden argument*/NULL);
+		Map_t4262919222 * L_61 = __this->get_U24this_4();
+		Map_t4262919222 * L_62 = __this->get_U24this_4();
+		NullCheck(L_62);
+		Il2CppObject * L_63 = L_62->get_mapCoroutine_12();
+		NullCheck(L_61);
+		MonoBehaviour_StopCoroutine_m1170478282(L_61, L_63, /*hidden argument*/NULL);
 		Map_t4262919222 * L_64 = __this->get_U24this_4();
 		NullCheck(L_64);
-		Il2CppObject * L_65 = L_64->get_mapCoroutine_12();
-		NullCheck(L_63);
-		MonoBehaviour_StopCoroutine_m1170478282(L_63, L_65, /*hidden argument*/NULL);
+		L_64->set_showMap_13((bool)1);
 		__this->set_U24PC_7((-1));
 	}
 
-IL_01be:
+IL_01a2:
 	{
 		return (bool)0;
 	}
 
-IL_01c0:
+IL_01a4:
 	{
 		return (bool)1;
 	}
@@ -5972,7 +6378,7 @@ extern "C"  void Room__ctor_m3680590403 (Room_t3932855567 * __this, const Method
 extern "C"  void Room_Start_m1469232287 (Room_t3932855567 * __this, const MethodInfo* method)
 {
 	{
-		__this->set_finded_8((bool)0);
+		__this->set_finded_10((bool)0);
 		NetworkManager_t3335581469 * L_0 = __this->get_manager_2();
 		NullCheck(L_0);
 		NetworkManager_StartMatchMaker_m2816664551(L_0, /*hidden argument*/NULL);
@@ -5992,16 +6398,16 @@ extern "C"  void Room_OnGUI_m965253045 (Room_t3932855567 * __this, const MethodI
 	int32_t V_1 = 0;
 	MatchInfoSnapshot_t3179110907 * V_2 = NULL;
 	{
-		bool L_0 = __this->get_finded_8();
+		bool L_0 = __this->get_finded_10();
 		if (!L_0)
 		{
-			goto IL_0119;
+			goto IL_0131;
 		}
 	}
 	{
 		V_0 = (0.0f);
 		V_1 = 0;
-		goto IL_0103;
+		goto IL_011b;
 	}
 
 IL_0018:
@@ -6013,7 +6419,7 @@ IL_0018:
 		NullCheck(L_2);
 		MatchInfoSnapshot_t3179110907 * L_4 = List_1_get_Item_m2786681020(L_2, L_3, /*hidden argument*/List_1_get_Item_m2786681020_MethodInfo_var);
 		V_2 = L_4;
-		Color_t2020392075  L_5 = __this->get_color_7();
+		Color_t2020392075  L_5 = __this->get_color_9();
 		IL2CPP_RUNTIME_CLASS_INIT(GUI_t4082743951_il2cpp_TypeInfo_var);
 		GUI_set_backgroundColor_m1176185368(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
 		int32_t L_6 = Screen_get_width_m41137238(NULL /*static, unused*/, /*hidden argument*/NULL);
@@ -6032,7 +6438,7 @@ IL_0018:
 		bool L_15 = GUI_Button_m3054448581(NULL /*static, unused*/, L_11, L_14, /*hidden argument*/NULL);
 		if (!L_15)
 		{
-			goto IL_00f0;
+			goto IL_0108;
 		}
 	}
 	{
@@ -6066,33 +6472,39 @@ IL_0018:
 		GameObject_t1756533147 * L_31 = __this->get_chat_6();
 		NullCheck(L_31);
 		GameObject_SetActive_m2887581199(L_31, (bool)1, /*hidden argument*/NULL);
-		__this->set_finded_8((bool)0);
+		GameObject_t1756533147 * L_32 = __this->get_camera_7();
+		NullCheck(L_32);
+		GameObject_SetActive_m2887581199(L_32, (bool)1, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_33 = __this->get_arUI_8();
+		NullCheck(L_33);
+		GameObject_SetActive_m2887581199(L_33, (bool)1, /*hidden argument*/NULL);
+		__this->set_finded_10((bool)0);
 	}
 
-IL_00f0:
+IL_0108:
 	{
-		float L_32 = V_0;
-		int32_t L_33 = Screen_get_width_m41137238(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_0 = ((float)((float)L_32+(float)((float)((float)(((float)((float)L_33)))*(float)(0.1f)))));
-		int32_t L_34 = V_1;
-		V_1 = ((int32_t)((int32_t)L_34+(int32_t)1));
+		float L_34 = V_0;
+		int32_t L_35 = Screen_get_width_m41137238(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_0 = ((float)((float)L_34+(float)((float)((float)(((float)((float)L_35)))*(float)(0.1f)))));
+		int32_t L_36 = V_1;
+		V_1 = ((int32_t)((int32_t)L_36+(int32_t)1));
 	}
 
-IL_0103:
+IL_011b:
 	{
-		int32_t L_35 = V_1;
-		NetworkManager_t3335581469 * L_36 = __this->get_manager_2();
-		NullCheck(L_36);
-		List_1_t2548232039 * L_37 = L_36->get_matches_42();
-		NullCheck(L_37);
-		int32_t L_38 = List_1_get_Count_m3455948791(L_37, /*hidden argument*/List_1_get_Count_m3455948791_MethodInfo_var);
-		if ((((int32_t)L_35) < ((int32_t)L_38)))
+		int32_t L_37 = V_1;
+		NetworkManager_t3335581469 * L_38 = __this->get_manager_2();
+		NullCheck(L_38);
+		List_1_t2548232039 * L_39 = L_38->get_matches_42();
+		NullCheck(L_39);
+		int32_t L_40 = List_1_get_Count_m3455948791(L_39, /*hidden argument*/List_1_get_Count_m3455948791_MethodInfo_var);
+		if ((((int32_t)L_37) < ((int32_t)L_40)))
 		{
 			goto IL_0018;
 		}
 	}
 
-IL_0119:
+IL_0131:
 	{
 		return;
 	}
@@ -6162,7 +6574,7 @@ extern "C"  void Room_find_m3726969886 (Room_t3932855567 * __this, const MethodI
 		DataResponseDelegate_1__ctor_m1637775298(L_6, L_4, L_5, /*hidden argument*/DataResponseDelegate_1__ctor_m1637775298_MethodInfo_var);
 		NullCheck(L_1);
 		NetworkMatch_ListMatches_m4261638383(L_1, 0, ((int32_t)20), L_2, (bool)0, 0, 0, L_6, /*hidden argument*/NULL);
-		__this->set_finded_8((bool)1);
+		__this->set_finded_10((bool)1);
 		return;
 	}
 }
@@ -6173,7 +6585,7 @@ extern "C"  void Room_back_m3987274986 (Room_t3932855567 * __this, const MethodI
 		NetworkManager_t3335581469 * L_0 = __this->get_manager_2();
 		NullCheck(L_0);
 		L_0->set_matches_42((List_1_t2548232039 *)NULL);
-		__this->set_finded_8((bool)0);
+		__this->set_finded_10((bool)0);
 		return;
 	}
 }

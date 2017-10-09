@@ -10250,7 +10250,6 @@ extern "C" void Transform_get_localPosition_m2533925116 ();
 extern "C" void Transform_set_localPosition_m1026930133 ();
 extern "C" void Transform_INTERNAL_get_localPosition_m94028171 ();
 extern "C" void Transform_INTERNAL_set_localPosition_m432504087 ();
-extern "C" void Transform_get_eulerAngles_m4066505159 ();
 extern "C" void Transform_set_eulerAngles_m2881310872 ();
 extern "C" void Transform_set_localEulerAngles_m2927195985 ();
 extern "C" void Transform_get_right_m440863970 ();
@@ -13374,6 +13373,17 @@ extern "C" void AR_Update_m3244983845 ();
 extern "C" void ChatController__ctor_m281900101 ();
 extern "C" void ChatController_Start_m1354071973 ();
 extern "C" void ChatController_Update_m1939549468 ();
+extern "C" void ChatManager__ctor_m3800112208 ();
+extern "C" void ChatManager_OnGUI_m1334155140 ();
+extern "C" void ChatManager_Send_m1864909104 ();
+extern "C" void ChatManager_ServerSend_m2720164729 ();
+extern "C" void ChatManager_OutputToScreen_m177540504 ();
+extern "C" void U3CServerSendU3Ec__Iterator0__ctor_m1989518995 ();
+extern "C" void U3CServerSendU3Ec__Iterator0_MoveNext_m1173577137 ();
+extern "C" void U3CServerSendU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1936333717 ();
+extern "C" void U3CServerSendU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m1542290205 ();
+extern "C" void U3CServerSendU3Ec__Iterator0_Dispose_m1899960926 ();
+extern "C" void U3CServerSendU3Ec__Iterator0_Reset_m2783850324 ();
 extern "C" void GameController__ctor_m1439649957 ();
 extern "C" void GameController_Update_m1556003900 ();
 extern "C" void GameController_rotateMapWithCamera_m4088657527 ();
@@ -13500,7 +13510,7 @@ extern "C" void testSingleChat_Start_m1190730460 ();
 extern "C" void testSingleChat_receiveMessage_m3194079398 ();
 extern "C" void testSingleChat_OnGUI_m361319688 ();
 extern "C" void testSingleChat_Main_m1511507263 ();
-extern const Il2CppMethodPointer g_MethodPointers[13486] = 
+extern const Il2CppMethodPointer g_MethodPointers[13496] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -23738,7 +23748,6 @@ extern const Il2CppMethodPointer g_MethodPointers[13486] =
 	Transform_set_localPosition_m1026930133,
 	Transform_INTERNAL_get_localPosition_m94028171,
 	Transform_INTERNAL_set_localPosition_m432504087,
-	Transform_get_eulerAngles_m4066505159,
 	Transform_set_eulerAngles_m2881310872,
 	Transform_set_localEulerAngles_m2927195985,
 	Transform_get_right_m440863970,
@@ -26862,6 +26871,17 @@ extern const Il2CppMethodPointer g_MethodPointers[13486] =
 	ChatController__ctor_m281900101,
 	ChatController_Start_m1354071973,
 	ChatController_Update_m1939549468,
+	ChatManager__ctor_m3800112208,
+	ChatManager_OnGUI_m1334155140,
+	ChatManager_Send_m1864909104,
+	ChatManager_ServerSend_m2720164729,
+	ChatManager_OutputToScreen_m177540504,
+	U3CServerSendU3Ec__Iterator0__ctor_m1989518995,
+	U3CServerSendU3Ec__Iterator0_MoveNext_m1173577137,
+	U3CServerSendU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1936333717,
+	U3CServerSendU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m1542290205,
+	U3CServerSendU3Ec__Iterator0_Dispose_m1899960926,
+	U3CServerSendU3Ec__Iterator0_Reset_m2783850324,
 	GameController__ctor_m1439649957,
 	GameController_Update_m1556003900,
 	GameController_rotateMapWithCamera_m4088657527,
