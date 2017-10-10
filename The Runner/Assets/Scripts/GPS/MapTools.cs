@@ -28,14 +28,15 @@ public class MapTools : MonoBehaviour {
 		float latitude = IGPSController.gps.latitude;
 		float longitude = IGPSController.gps.longtitude;
 		if (firsttime) {
-			if (latitude != 0) {
+            if (latitude.Equals(0.0f)) {
 				latitudeO = latitude;
 				longitudeO = longitude;
 				firsttime = false;
 			}
 		}
+
 		mainCamera.transform.position = mapGPS (latitude, longitude);
-//		mainCamera.transform.position = new Vector3 ((latitude-latitudeO)*50000, mainCamera.transform.position.y, - (longitude - longitudeO)*50000);
+		//		mainCamera.transform.position = new Vector3 ((latitude-latitudeO)*50000, mainCamera.transform.position.y, - (longitude - longitudeO)*50000);
 	}
 
 	public Vector3 mapGPS(float latitude, float longitude){
