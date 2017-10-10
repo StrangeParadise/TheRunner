@@ -30,7 +30,7 @@ namespace UnityEngine.Networking {
         // Update is called once per frame
         void OnGUI()
         {
-            if (finded) {
+			if (finded && this.manager.matches != null) {
                 float num = 0;
                 for (int i = 0; i < this.manager.matches.Count; i++)
                 {
