@@ -5,34 +5,67 @@ using System.Collections;
 
 public class ChatManager : MonoBehaviour
 {
-    public GameObject textFieldUI;
+    public InputField textFieldUI;
     public GameObject outputFieldUI;
-
-
-    private Text textField;
     private Text outputField;
 
     public string output = "";
-    public string text = "";
+    public string textLine = "";
+
+    private float UPDATE_INTERVAL = 1.0f;
+    private float updateCount = 0.0f;
+    private bool needsUpdate = true;
+
+    // The static Player Data
+    public GameObject IPlayerData;
+
+    private void Start()
+    {
+        IPlayerData = GameObject.FindGameObjectWithTag("PlayerData");
+    }
 
     void OnGUI()
     {
-        textField = textFieldUI.GetComponent<Text>();
+        textLine = textFieldUI.GetComponent<InputField>().text;
         outputField = outputFieldUI.GetComponent<Text>();
 	}
 
-    public void Send()
-    {
-
-		string username = "test3";
+    void Update() {
         
-        if (textField.text != "") {
+        if (needsUpdate) {
+            updateCount = UPDATE_INTERVAL;
+            needsUpdate = false;
+            Download();
+            return;
+        }
+
+        updateCount -= Time.deltaTime;
+        if (updateCount <= 0.0f) {
+            needsUpdate = true;
+			
+		}
+    }
+
+    public void Download() 
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("username", "fake_download_client");
+        WWW w = new WWW("http://www.wuxixiang.com/server/runnergame/login/chat_download.php", form);
+
+        StartCoroutine(ServerSend(w));
+    }
+
+    public void Send()
+    {        
+        if (textLine != "") {
             WWWForm form = new WWWForm();
-            form.AddField("username", username);
-            form.AddField("line", textField.text);
+            form.AddField("username", IPlayerData.GetComponent<PlayerData>().m_PlayerName);
+            form.AddField("line", textLine);
             form.AddField("f_included", 1);
             WWW w = new WWW("http://www.wuxixiang.com/server/runnergame/login/chat_db_communication.php", form);
-            textField.text = "";
+
+			textFieldUI.Select();
+			textFieldUI.text = "";
 
             StartCoroutine(ServerSend(w));
         }
@@ -46,14 +79,18 @@ public class ChatManager : MonoBehaviour
         {
             if (_w.text != "")
             {
+                
                 OutputToScreen(_w.text);
             }
             else
             {
                 outputField.text = _w.error;
             }
+        } else {
+            Debug.Log(_w.error);
         }
-    }
+
+	}
 
     private void OutputToScreen(string line) {
 
@@ -77,8 +114,6 @@ public class ChatManager : MonoBehaviour
 		}
 
         outputField.text = finalOutput;
-        Debug.Log(finalOutput);
-
 	}
 
 }
