@@ -25,11 +25,19 @@ public class Map : MonoBehaviour {
 	void Update () {
 		latitude  = gpsController.gps.latitude;
 		longitude = gpsController.gps.longtitude;
+<<<<<<< HEAD
 		//if(showMap) {
 			showMap = false;
 			mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
 			StartCoroutine (mapCoroutine); //restart the coroutine
 		//}
+=======
+//		if(showMap) {
+			showMap = false;
+			mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
+			StartCoroutine (mapCoroutine); //restart the coroutine
+//		}
+>>>>>>> 796633ddad4cfa1811d921b932dced905f3448d1
 
 
 //		if (terminal != null && gpsController != null) {
@@ -44,9 +52,15 @@ public class Map : MonoBehaviour {
 		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude +
 			"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected + 
 			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyDK04pO2JEC4C01AQSW9dpuBDunvtuA-o8";
+<<<<<<< HEAD
 		//url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude +
 			//"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected + 
 			//"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyDkFTum1BgoY5gD92vkLlnavRQnnYQKKiM";
+=======
+//		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude +
+//			"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected + 
+//			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyDkFTum1BgoY5gD92vkLlnavRQnnYQKKiM";
+>>>>>>> 796633ddad4cfa1811d921b932dced905f3448d1
 		WWW www = new WWW(url);
 		yield return www;
 		Texture mapTexture = www.texture;
