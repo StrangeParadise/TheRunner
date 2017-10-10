@@ -26,7 +26,7 @@ public class Map : MonoBehaviour {
 		latitude  = gpsController.gps.latitude;
 		longitude = gpsController.gps.longtitude;
 //		if(showMap) {
-			showMap = false;
+//			showMap = false;
 			mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
 			StartCoroutine (mapCoroutine); //restart the coroutine
 //		}
@@ -47,6 +47,9 @@ public class Map : MonoBehaviour {
 //		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude +
 //			"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected + 
 //			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyDkFTum1BgoY5gD92vkLlnavRQnnYQKKiM";
+//		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude +
+//			"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected + 
+//			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyAF3ME45Jy1D8UMtK0evZeGNaUXICxGtdA“；
 		WWW www = new WWW(url);
 		yield return www;
 		Texture mapTexture = www.texture;

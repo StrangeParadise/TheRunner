@@ -24,7 +24,7 @@ public class ChatManager : MonoBehaviour
 
 	private void Start()
 	{
-		IPlayerData = GameObject.FindGameObjectWithTag("PlayerData");
+//		IPlayerData = GameObject.FindGameObjectWithTag("PlayerData");
 	}
 
 	void OnGUI()

@@ -86,6 +86,7 @@ public class LoginController : MonoBehaviour
         yield return _w;
         if (_w.error == null)
         {
+			reText.GetComponent<Text>().text = _w.error;
             if (_w.text == "Login Successfully :D ")
             {
                 // Login sccessfully! 
