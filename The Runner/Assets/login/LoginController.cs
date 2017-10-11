@@ -22,14 +22,10 @@ public class LoginController : MonoBehaviour
     public string MenuText = "";
     public string SecondMenuText = "";
 
-    // Store username for further usage.
-    public GameObject IPlayerData;
-
     void OnGUI()
     {
         reText.GetComponent<Text>().text = MenuText;
     }
-
     public void Login()
     {
         Username = idText.GetComponent<Text>().text;
@@ -90,12 +86,8 @@ public class LoginController : MonoBehaviour
         yield return _w;
         if (_w.error == null)
         {
-			reText.GetComponent<Text>().text = _w.error;
             if (_w.text == "Login Successfully :D ")
             {
-                // Save the name of the player to PlayerData for further usage.
-                IPlayerData.GetComponent<PlayerData>().m_PlayerName = Username;
-                IPlayerData.GetComponent<PlayerData>().login_succ   = true;
                 // Login sccessfully! 
                 MenuText = "Login Successfully! Now Loading..";
 
@@ -135,20 +127,20 @@ public class LoginController : MonoBehaviour
         SceneManager.LoadScene("Scene/MainGameScene", LoadSceneMode.Single);
     }
 
-    //private IEnumerator loadGameAsync()
-    //{
-    //    Debug.Log("about to load!");
-    //    AsyncOperation a;
-    //    a = SceneManager.LoadSceneAsync("Scene/MainGameScene");
-    //    a.allowSceneActivation = false;
-    //    while (!a.isDone)
-    //    {
-    //        Debug.Log("loading " + a.progress.ToString("n2"));
-    //        yield return null;
-    //    }
-    //    Debug.Log("loaded!!");
-    //    a.allowSceneActivation = true;
+    private IEnumerator loadGameAsync()
+    {
+        Debug.Log("about to load!");
+        AsyncOperation a;
+        a = SceneManager.LoadSceneAsync("Scene/MainGameScene");
+        a.allowSceneActivation = false;
+        while (!a.isDone)
+        {
+            Debug.Log("loading " + a.progress.ToString("n2"));
+            yield return null;
+        }
+        Debug.Log("loaded!!");
+        a.allowSceneActivation = true;
 
-    //}
+    }
 
 }

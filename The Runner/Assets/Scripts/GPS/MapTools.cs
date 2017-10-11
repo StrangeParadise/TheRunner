@@ -25,18 +25,17 @@ public class MapTools : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		float latitude = IGPSController.gps.latitude;
-		float longitude = IGPSController.gps.longtitude;
+		float latitude = IGPSController.getLatitude();
+		float longitude = IGPSController.getLongitude();
 		if (firsttime) {
-            if (latitude.Equals(0.0f)) {
+			if (latitude != 0) {
 				latitudeO = latitude;
 				longitudeO = longitude;
 				firsttime = false;
 			}
 		}
-
 		mainCamera.transform.position = mapGPS (latitude, longitude);
-		//		mainCamera.transform.position = new Vector3 ((latitude-latitudeO)*50000, mainCamera.transform.position.y, - (longitude - longitudeO)*50000);
+//		mainCamera.transform.position = new Vector3 ((latitude-latitudeO)*50000, mainCamera.transform.position.y, - (longitude - longitudeO)*50000);
 	}
 
 	public Vector3 mapGPS(float latitude, float longitude){

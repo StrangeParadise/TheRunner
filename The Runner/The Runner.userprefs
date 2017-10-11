@@ -1,31 +1,17 @@
-<<<<<<< HEAD
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GPS/Map.cs">
     <Files>
-      <File FileName="Assets/Scripts/Room.cs" Line="45" Column="29" />
-      <File FileName="Assets/Scripts/GPS/Map.cs" Line="26" Column="18" />
+      <File FileName="Assets/Scripts/GPS/Map.cs" Line="45" Column="19" />
+      <File FileName="Assets/Scripts/Room.cs" Line="33" Column="40" />
       <File FileName="Assets/Scripts/GPS/GPSController.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/GPS/GPSData.cs" Line="1" Column="1" />
-=======
-﻿<Properties StartupConfiguration="{9F0B79FB-B7CD-CFEB-3CE7-A0B42FC5AAD7}|">
-  <MonoDevelop.Ide.ItemProperties.The_220Runner PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GPS/Map.cs">
-    <Files>
-      <File FileName="Assets/Scripts/Player/PlayerController.cs" Line="86" Column="13" />
-      <File FileName="../../../Server_test/TANKS Network Demo/Assets/Scripts/Network/NetworkPlayer.cs" Line="41" Column="38" />
-      <File FileName="Assets/Scripts/Player/PlayerData.cs" Line="19" Column="18" />
-      <File FileName="Assets/login/LoginController.cs" Line="98" Column="39" />
-      <File FileName="Assets/Scripts/ChatController/ChatManager.cs" Line="27" Column="70" />
-      <File FileName="Assets/Scripts/GameController/GameController.cs" Line="28" Column="44" />
-      <File FileName="Assets/Scripts/GPS/Map.cs" Line="32" Column="6" />
->>>>>>> 9e66095eb90315d4175a75a5bc0f07136eb47dd3
+      <File FileName="Assets/Scripts/NewBehaviourScript.cs" Line="173" Column="57" />
+      <File FileName="Assets/Scripts/ChatController/ChatManager.cs" Line="32" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
 </Properties>
