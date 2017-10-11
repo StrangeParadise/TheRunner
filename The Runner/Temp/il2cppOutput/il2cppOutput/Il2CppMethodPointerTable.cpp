@@ -13394,6 +13394,13 @@ extern "C" void GameController_Update_m1556003900 ();
 extern "C" void GameController_rotateMapWithCamera_m4088657527 ();
 extern "C" void GameController_showMap_m4046211700 ();
 extern "C" void GameController_positionMapWithCamera_m3500126895 ();
+extern "C" void GameController_FadeTo_m2984478648 ();
+extern "C" void U3CFadeToU3Ec__Iterator0__ctor_m1969203514 ();
+extern "C" void U3CFadeToU3Ec__Iterator0_MoveNext_m3183119462 ();
+extern "C" void U3CFadeToU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m711732984 ();
+extern "C" void U3CFadeToU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m343063456 ();
+extern "C" void U3CFadeToU3Ec__Iterator0_Dispose_m3274358903 ();
+extern "C" void U3CFadeToU3Ec__Iterator0_Reset_m220640133 ();
 extern "C" void GPSController__ctor_m3430003991 ();
 extern "C" void GPSController_Start_m4152392635 ();
 extern "C" void GPSController_StartLocationService_m497030285 ();
@@ -13511,7 +13518,7 @@ extern "C" void testSingleChat_Start_m1190730460 ();
 extern "C" void testSingleChat_receiveMessage_m3194079398 ();
 extern "C" void testSingleChat_OnGUI_m361319688 ();
 extern "C" void testSingleChat_Main_m1511507263 ();
-extern const Il2CppMethodPointer g_MethodPointers[13497] = 
+extern const Il2CppMethodPointer g_MethodPointers[13504] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -26893,6 +26900,13 @@ extern const Il2CppMethodPointer g_MethodPointers[13497] =
 	GameController_rotateMapWithCamera_m4088657527,
 	GameController_showMap_m4046211700,
 	GameController_positionMapWithCamera_m3500126895,
+	GameController_FadeTo_m2984478648,
+	U3CFadeToU3Ec__Iterator0__ctor_m1969203514,
+	U3CFadeToU3Ec__Iterator0_MoveNext_m3183119462,
+	U3CFadeToU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m711732984,
+	U3CFadeToU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m343063456,
+	U3CFadeToU3Ec__Iterator0_Dispose_m3274358903,
+	U3CFadeToU3Ec__Iterator0_Reset_m220640133,
 	GPSController__ctor_m3430003991,
 	GPSController_Start_m4152392635,
 	GPSController_StartLocationService_m497030285,

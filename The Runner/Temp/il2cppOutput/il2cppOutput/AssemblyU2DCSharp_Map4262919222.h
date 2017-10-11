@@ -59,6 +59,10 @@ public:
 	TextMesh_t1641806576 * ___terminal_11;
 	// System.Collections.IEnumerator Map::mapCoroutine
 	Il2CppObject * ___mapCoroutine_12;
+	// System.String Map::key1
+	String_t* ___key1_13;
+	// System.String Map::key2
+	String_t* ___key2_14;
 
 public:
 	inline static int32_t get_offset_of_url_2() { return static_cast<int32_t>(offsetof(Map_t4262919222, ___url_2)); }
@@ -152,6 +156,24 @@ public:
 	{
 		___mapCoroutine_12 = value;
 		Il2CppCodeGenWriteBarrier(&___mapCoroutine_12, value);
+	}
+
+	inline static int32_t get_offset_of_key1_13() { return static_cast<int32_t>(offsetof(Map_t4262919222, ___key1_13)); }
+	inline String_t* get_key1_13() const { return ___key1_13; }
+	inline String_t** get_address_of_key1_13() { return &___key1_13; }
+	inline void set_key1_13(String_t* value)
+	{
+		___key1_13 = value;
+		Il2CppCodeGenWriteBarrier(&___key1_13, value);
+	}
+
+	inline static int32_t get_offset_of_key2_14() { return static_cast<int32_t>(offsetof(Map_t4262919222, ___key2_14)); }
+	inline String_t* get_key2_14() const { return ___key2_14; }
+	inline String_t** get_address_of_key2_14() { return &___key2_14; }
+	inline void set_key2_14(String_t* value)
+	{
+		___key2_14 = value;
+		Il2CppCodeGenWriteBarrier(&___key2_14, value);
 	}
 };
 

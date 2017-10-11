@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
 
 	// Canvas
 	public Canvas mapCanvas;
+
+	// Map Image
+	public GameObject map;
 
 	// Camera
 	public Camera mainCam;
@@ -20,7 +24,7 @@ public class GameController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//rotateMapWithCamera ();
-		positionMapWithCamera ();
+		//positionMapWithCamera ();
 		showMap ();
 	}
 		
@@ -44,20 +48,30 @@ public class GameController : MonoBehaviour {
 
 	void showMap () {
 		if (mainCam.transform.eulerAngles.x > 50 && mainCam.transform.eulerAngles.x < 130) {
+			map.GetComponent<RawImage>().color = new Color(1, 1, 1, 0);
 			mainCam.enabled = false;
 			backgroundCam.enabled = false;
 			mapCam.enabled = true;
+			StartCoroutine (FadeTo (1.0f, 1.0f));
 		} else {
 			mainCam.enabled = true;
 			backgroundCam.enabled = true;
 			mapCam.enabled = false;
 		}
 	}
-
-
-
 	void positionMapWithCamera() {
 		mapCanvas.transform.position = new Vector3(mainCam.transform.position.x, -635, mainCam.transform.position.z);
+	}
+
+	IEnumerator FadeTo(float aValue, float aTime)
+	{
+		float alpha = map.GetComponent<RawImage>().color.a;
+		for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
+		{
+			Color newColor = new Color(1, 1, 1, Mathf.Lerp(alpha,aValue,t));
+			map.GetComponent<RawImage>().color = newColor;
+			yield return null;
+		}
 	}
 
 }

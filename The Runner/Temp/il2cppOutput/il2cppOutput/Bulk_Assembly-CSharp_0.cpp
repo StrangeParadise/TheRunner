@@ -56,7 +56,9 @@
 #include "AssemblyU2DCSharp_GameController3607102586.h"
 #include "UnityEngine_UnityEngine_Canvas209405766.h"
 #include "UnityEngine_UnityEngine_Camera189460977.h"
+#include "UnityEngine_UnityEngine_Color2020392075.h"
 #include "UnityEngine_UnityEngine_Behaviour955675639.h"
+#include "AssemblyU2DCSharp_GameController_U3CFadeToU3Ec__It1141524637.h"
 #include "AssemblyU2DCSharp_GPSController2272977524.h"
 #include "AssemblyU2DCSharp_GPSData207763284.h"
 #include "AssemblyU2DCSharp_GPSController_U3CStartLocationSe2676618990.h"
@@ -85,7 +87,6 @@
 #include "UnityEngine_Networking_UnityEngine_Networking_Netwo560143343.h"
 #include "UnityEngine_Networking_UnityEngine_Networking_Netw3187690923.h"
 #include "AssemblyU2DCSharp_SimpleChat403391640.h"
-#include "UnityEngine_UnityEngine_Color2020392075.h"
 #include "mscorlib_System_IntPtr2504060609.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen1398341365.h"
 #include "wwwChat_SimChat2635359255.h"
@@ -190,6 +191,8 @@ struct NotSupportedException_t1793819818;
 struct GameController_t3607102586;
 // UnityEngine.Behaviour
 struct Behaviour_t955675639;
+// GameController/<FadeTo>c__Iterator0
+struct U3CFadeToU3Ec__Iterator0_t1141524637;
 // GPSController
 struct GPSController_t2272977524;
 // GPSData
@@ -345,6 +348,13 @@ extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
 extern const uint32_t U3CServerSendU3Ec__Iterator0_MoveNext_m1173577137_MetadataUsageId;
 extern Il2CppClass* NotSupportedException_t1793819818_il2cpp_TypeInfo_var;
 extern const uint32_t U3CServerSendU3Ec__Iterator0_Reset_m2783850324_MetadataUsageId;
+extern const MethodInfo* GameObject_GetComponent_TisRawImage_t2749640213_m2486045553_MethodInfo_var;
+extern const uint32_t GameController_showMap_m4046211700_MetadataUsageId;
+extern Il2CppClass* U3CFadeToU3Ec__Iterator0_t1141524637_il2cpp_TypeInfo_var;
+extern const uint32_t GameController_FadeTo_m2984478648_MetadataUsageId;
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern const uint32_t U3CFadeToU3Ec__Iterator0_MoveNext_m3183119462_MetadataUsageId;
+extern const uint32_t U3CFadeToU3Ec__Iterator0_Reset_m220640133_MetadataUsageId;
 extern Il2CppClass* GPSData_t207763284_il2cpp_TypeInfo_var;
 extern const uint32_t GPSController_Start_m4152392635_MetadataUsageId;
 extern Il2CppClass* U3CStartLocationServiceU3Ec__Iterator0_t2676618990_il2cpp_TypeInfo_var;
@@ -355,7 +365,6 @@ extern Il2CppCodeGenString* _stringLiteral3795465923;
 extern Il2CppCodeGenString* _stringLiteral2305357508;
 extern const uint32_t U3CStartLocationServiceU3Ec__Iterator0_MoveNext_m2028891961_MetadataUsageId;
 extern const uint32_t U3CStartLocationServiceU3Ec__Iterator0_Reset_m1312122602_MetadataUsageId;
-extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
 extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral707537103;
 extern const uint32_t HandMapController_Update_m836850453_MetadataUsageId;
@@ -403,9 +412,17 @@ extern Il2CppCodeGenString* _stringLiteral3018578246;
 extern Il2CppCodeGenString* _stringLiteral3683487199;
 extern const uint32_t U3CLoginU3Ec__Iterator0_MoveNext_m3780988629_MetadataUsageId;
 extern const uint32_t U3CLoginU3Ec__Iterator0_Reset_m1456588996_MetadataUsageId;
+extern Il2CppCodeGenString* _stringLiteral2328242528;
+extern Il2CppCodeGenString* _stringLiteral3779626262;
+extern const uint32_t Map__ctor_m2382724703_MetadataUsageId;
 extern Il2CppClass* U3CGetGoogleMapU3Ec__Iterator0_t1695079217_il2cpp_TypeInfo_var;
 extern const uint32_t Map_GetGoogleMap_m3075677944_MetadataUsageId;
+extern Il2CppClass* StringU5BU5D_t1642385972_il2cpp_TypeInfo_var;
 extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1403050043;
+extern Il2CppCodeGenString* _stringLiteral3996208733;
+extern const uint32_t Map_generateURL_m3793783533_MetadataUsageId;
+extern Il2CppClass* GPSDataU5BU5D_t4145052893_il2cpp_TypeInfo_var;
 extern Il2CppClass* mapType_t3017953257_il2cpp_TypeInfo_var;
 extern const MethodInfo* Component_GetComponent_TisRawImage_t2749640213_m1817787565_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2775107238;
@@ -415,7 +432,6 @@ extern Il2CppCodeGenString* _stringLiteral2334078884;
 extern Il2CppCodeGenString* _stringLiteral372029398;
 extern Il2CppCodeGenString* _stringLiteral93847055;
 extern Il2CppCodeGenString* _stringLiteral2313303675;
-extern Il2CppCodeGenString* _stringLiteral2328242528;
 extern const uint32_t U3CGetGoogleMapU3Ec__Iterator0_MoveNext_m2744658934_MetadataUsageId;
 extern const uint32_t U3CGetGoogleMapU3Ec__Iterator0_Reset_m2581645829_MetadataUsageId;
 extern Il2CppClass* NetworkBehaviour_t3873055601_il2cpp_TypeInfo_var;
@@ -445,7 +461,6 @@ extern Il2CppCodeGenString* _stringLiteral811305496;
 extern Il2CppCodeGenString* _stringLiteral1502598545;
 extern Il2CppCodeGenString* _stringLiteral4136223372;
 extern const uint32_t SimpleChat_draw_m869370447_MetadataUsageId;
-extern Il2CppClass* StringU5BU5D_t1642385972_il2cpp_TypeInfo_var;
 extern Il2CppClass* SimpleChat_t403391640_il2cpp_TypeInfo_var;
 extern const MethodInfo* GameObject_GetComponent_TisMonoBehaviour_t1158329972_m3597292854_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1193422747;
@@ -944,14 +959,22 @@ extern "C"  void ChatManager_OutputToScreen_m177540504 (ChatManager_t2792590695 
 extern "C"  void Debug_Log_m920475918 (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.NotSupportedException::.ctor()
 extern "C"  void NotSupportedException__ctor_m3232764727 (NotSupportedException_t1793819818 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void GameController::positionMapWithCamera()
-extern "C"  void GameController_positionMapWithCamera_m3500126895 (GameController_t3607102586 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GameController::showMap()
 extern "C"  void GameController_showMap_m4046211700 (GameController_t3607102586 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Transform::get_eulerAngles()
 extern "C"  Vector3_t2243707580  Transform_get_eulerAngles_m4066505159 (Transform_t3275118058 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// !!0 UnityEngine.GameObject::GetComponent<UnityEngine.UI.RawImage>()
+#define GameObject_GetComponent_TisRawImage_t2749640213_m2486045553(__this, method) ((  RawImage_t2749640213 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m900327904_gshared)(__this, method)
+// System.Void UnityEngine.Color::.ctor(System.Single,System.Single,System.Single,System.Single)
+extern "C"  void Color__ctor_m1909920690 (Color_t2020392075 * __this, float p0, float p1, float p2, float p3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Behaviour::set_enabled(System.Boolean)
 extern "C"  void Behaviour_set_enabled_m1796096907 (Behaviour_t955675639 * __this, bool p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Collections.IEnumerator GameController::FadeTo(System.Single,System.Single)
+extern "C"  Il2CppObject * GameController_FadeTo_m2984478648 (GameController_t3607102586 * __this, float ___aValue0, float ___aTime1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void GameController/<FadeTo>c__Iterator0::.ctor()
+extern "C"  void U3CFadeToU3Ec__Iterator0__ctor_m1969203514 (U3CFadeToU3Ec__Iterator0_t1141524637 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Mathf::Lerp(System.Single,System.Single,System.Single)
+extern "C"  float Mathf_Lerp_m1686556575 (Il2CppObject * __this /* static, unused */, float p0, float p1, float p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GPSData::.ctor()
 extern "C"  void GPSData__ctor_m1606646883 (GPSData_t207763284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GPSController/<StartLocationService>c__Iterator0::.ctor()
@@ -1052,6 +1075,8 @@ extern "C"  Il2CppObject * Map_GetGoogleMap_m3075677944 (Map_t4262919222 * __thi
 extern "C"  void U3CGetGoogleMapU3Ec__Iterator0__ctor_m3373241622 (U3CGetGoogleMapU3Ec__Iterator0_t1695079217 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.String::Concat(System.Object[])
 extern "C"  String_t* String_Concat_m3881798623 (Il2CppObject * __this /* static, unused */, ObjectU5BU5D_t3614634134* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Map::generateURL(GPSData[])
+extern "C"  void Map_generateURL_m3793783533 (Map_t4262919222 * __this, GPSDataU5BU5D_t4145052893* ___data0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.WWW::.ctor(System.String)
 extern "C"  void WWW__ctor_m2024029190 (WWW_t2919945039 * __this, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Texture2D UnityEngine.WWW::get_texture()
@@ -2045,7 +2070,6 @@ extern "C"  void GameController__ctor_m1439649957 (GameController_t3607102586 * 
 extern "C"  void GameController_Update_m1556003900 (GameController_t3607102586 * __this, const MethodInfo* method)
 {
 	{
-		GameController_positionMapWithCamera_m3500126895(__this, /*hidden argument*/NULL);
 		GameController_showMap_m4046211700(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -2078,7 +2102,7 @@ extern "C"  void GameController_rotateMapWithCamera_m4088657527 (GameController_
 		Vector3_t2243707580  L_5 = Quaternion_get_eulerAngles_m3302573991((&V_0), /*hidden argument*/NULL);
 		V_1 = L_5;
 		float L_6 = (&V_1)->get_x_1();
-		Camera_t189460977 * L_7 = __this->get_mainCam_3();
+		Camera_t189460977 * L_7 = __this->get_mainCam_4();
 		NullCheck(L_7);
 		Transform_t3275118058 * L_8 = Component_get_transform_m2697483695(L_7, /*hidden argument*/NULL);
 		NullCheck(L_8);
@@ -2107,12 +2131,18 @@ extern "C"  void GameController_rotateMapWithCamera_m4088657527 (GameController_
 // System.Void GameController::showMap()
 extern "C"  void GameController_showMap_m4046211700 (GameController_t3607102586 * __this, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (GameController_showMap_m4046211700_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
 	Vector3_t2243707580  V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	Vector3_t2243707580  V_1;
 	memset(&V_1, 0, sizeof(V_1));
 	{
-		Camera_t189460977 * L_0 = __this->get_mainCam_3();
+		Camera_t189460977 * L_0 = __this->get_mainCam_4();
 		NullCheck(L_0);
 		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(L_0, /*hidden argument*/NULL);
 		NullCheck(L_1);
@@ -2121,11 +2151,11 @@ extern "C"  void GameController_showMap_m4046211700 (GameController_t3607102586 
 		float L_3 = (&V_0)->get_x_1();
 		if ((!(((float)L_3) > ((float)(50.0f)))))
 		{
-			goto IL_006d;
+			goto IL_00ad;
 		}
 	}
 	{
-		Camera_t189460977 * L_4 = __this->get_mainCam_3();
+		Camera_t189460977 * L_4 = __this->get_mainCam_4();
 		NullCheck(L_4);
 		Transform_t3275118058 * L_5 = Component_get_transform_m2697483695(L_4, /*hidden argument*/NULL);
 		NullCheck(L_5);
@@ -2134,36 +2164,46 @@ extern "C"  void GameController_showMap_m4046211700 (GameController_t3607102586 
 		float L_7 = (&V_1)->get_x_1();
 		if ((!(((float)L_7) < ((float)(130.0f)))))
 		{
-			goto IL_006d;
+			goto IL_00ad;
 		}
 	}
 	{
-		Camera_t189460977 * L_8 = __this->get_mainCam_3();
+		GameObject_t1756533147 * L_8 = __this->get_map_3();
 		NullCheck(L_8);
-		Behaviour_set_enabled_m1796096907(L_8, (bool)0, /*hidden argument*/NULL);
-		Camera_t189460977 * L_9 = __this->get_backgroundCam_4();
+		RawImage_t2749640213 * L_9 = GameObject_GetComponent_TisRawImage_t2749640213_m2486045553(L_8, /*hidden argument*/GameObject_GetComponent_TisRawImage_t2749640213_m2486045553_MethodInfo_var);
+		Color_t2020392075  L_10;
+		memset(&L_10, 0, sizeof(L_10));
+		Color__ctor_m1909920690(&L_10, (1.0f), (1.0f), (1.0f), (0.0f), /*hidden argument*/NULL);
 		NullCheck(L_9);
-		Behaviour_set_enabled_m1796096907(L_9, (bool)0, /*hidden argument*/NULL);
-		Camera_t189460977 * L_10 = __this->get_mapCam_5();
-		NullCheck(L_10);
-		Behaviour_set_enabled_m1796096907(L_10, (bool)1, /*hidden argument*/NULL);
-		goto IL_0091;
-	}
-
-IL_006d:
-	{
-		Camera_t189460977 * L_11 = __this->get_mainCam_3();
+		VirtActionInvoker1< Color_t2020392075  >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_9, L_10);
+		Camera_t189460977 * L_11 = __this->get_mainCam_4();
 		NullCheck(L_11);
-		Behaviour_set_enabled_m1796096907(L_11, (bool)1, /*hidden argument*/NULL);
-		Camera_t189460977 * L_12 = __this->get_backgroundCam_4();
+		Behaviour_set_enabled_m1796096907(L_11, (bool)0, /*hidden argument*/NULL);
+		Camera_t189460977 * L_12 = __this->get_backgroundCam_5();
 		NullCheck(L_12);
-		Behaviour_set_enabled_m1796096907(L_12, (bool)1, /*hidden argument*/NULL);
-		Camera_t189460977 * L_13 = __this->get_mapCam_5();
+		Behaviour_set_enabled_m1796096907(L_12, (bool)0, /*hidden argument*/NULL);
+		Camera_t189460977 * L_13 = __this->get_mapCam_6();
 		NullCheck(L_13);
-		Behaviour_set_enabled_m1796096907(L_13, (bool)0, /*hidden argument*/NULL);
+		Behaviour_set_enabled_m1796096907(L_13, (bool)1, /*hidden argument*/NULL);
+		Il2CppObject * L_14 = GameController_FadeTo_m2984478648(__this, (1.0f), (1.0f), /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2470621050(__this, L_14, /*hidden argument*/NULL);
+		goto IL_00d1;
 	}
 
-IL_0091:
+IL_00ad:
+	{
+		Camera_t189460977 * L_15 = __this->get_mainCam_4();
+		NullCheck(L_15);
+		Behaviour_set_enabled_m1796096907(L_15, (bool)1, /*hidden argument*/NULL);
+		Camera_t189460977 * L_16 = __this->get_backgroundCam_5();
+		NullCheck(L_16);
+		Behaviour_set_enabled_m1796096907(L_16, (bool)1, /*hidden argument*/NULL);
+		Camera_t189460977 * L_17 = __this->get_mapCam_6();
+		NullCheck(L_17);
+		Behaviour_set_enabled_m1796096907(L_17, (bool)0, /*hidden argument*/NULL);
+	}
+
+IL_00d1:
 	{
 		return;
 	}
@@ -2179,14 +2219,14 @@ extern "C"  void GameController_positionMapWithCamera_m3500126895 (GameControlle
 		Canvas_t209405766 * L_0 = __this->get_mapCanvas_2();
 		NullCheck(L_0);
 		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(L_0, /*hidden argument*/NULL);
-		Camera_t189460977 * L_2 = __this->get_mainCam_3();
+		Camera_t189460977 * L_2 = __this->get_mainCam_4();
 		NullCheck(L_2);
 		Transform_t3275118058 * L_3 = Component_get_transform_m2697483695(L_2, /*hidden argument*/NULL);
 		NullCheck(L_3);
 		Vector3_t2243707580  L_4 = Transform_get_position_m1104419803(L_3, /*hidden argument*/NULL);
 		V_0 = L_4;
 		float L_5 = (&V_0)->get_x_1();
-		Camera_t189460977 * L_6 = __this->get_mainCam_3();
+		Camera_t189460977 * L_6 = __this->get_mainCam_4();
 		NullCheck(L_6);
 		Transform_t3275118058 * L_7 = Component_get_transform_m2697483695(L_6, /*hidden argument*/NULL);
 		NullCheck(L_7);
@@ -2199,6 +2239,197 @@ extern "C"  void GameController_positionMapWithCamera_m3500126895 (GameControlle
 		NullCheck(L_1);
 		Transform_set_position_m2469242620(L_1, L_10, /*hidden argument*/NULL);
 		return;
+	}
+}
+// System.Collections.IEnumerator GameController::FadeTo(System.Single,System.Single)
+extern "C"  Il2CppObject * GameController_FadeTo_m2984478648 (GameController_t3607102586 * __this, float ___aValue0, float ___aTime1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (GameController_FadeTo_m2984478648_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CFadeToU3Ec__Iterator0_t1141524637 * V_0 = NULL;
+	{
+		U3CFadeToU3Ec__Iterator0_t1141524637 * L_0 = (U3CFadeToU3Ec__Iterator0_t1141524637 *)il2cpp_codegen_object_new(U3CFadeToU3Ec__Iterator0_t1141524637_il2cpp_TypeInfo_var);
+		U3CFadeToU3Ec__Iterator0__ctor_m1969203514(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		U3CFadeToU3Ec__Iterator0_t1141524637 * L_1 = V_0;
+		float L_2 = ___aValue0;
+		NullCheck(L_1);
+		L_1->set_aValue_2(L_2);
+		U3CFadeToU3Ec__Iterator0_t1141524637 * L_3 = V_0;
+		float L_4 = ___aTime1;
+		NullCheck(L_3);
+		L_3->set_aTime_4(L_4);
+		U3CFadeToU3Ec__Iterator0_t1141524637 * L_5 = V_0;
+		NullCheck(L_5);
+		L_5->set_U24this_5(__this);
+		U3CFadeToU3Ec__Iterator0_t1141524637 * L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Void GameController/<FadeTo>c__Iterator0::.ctor()
+extern "C"  void U3CFadeToU3Ec__Iterator0__ctor_m1969203514 (U3CFadeToU3Ec__Iterator0_t1141524637 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean GameController/<FadeTo>c__Iterator0::MoveNext()
+extern "C"  bool U3CFadeToU3Ec__Iterator0_MoveNext_m3183119462 (U3CFadeToU3Ec__Iterator0_t1141524637 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (U3CFadeToU3Ec__Iterator0_MoveNext_m3183119462_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	uint32_t V_0 = 0;
+	Color_t2020392075  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		int32_t L_0 = __this->get_U24PC_8();
+		V_0 = L_0;
+		__this->set_U24PC_8((-1));
+		uint32_t L_1 = V_0;
+		switch (L_1)
+		{
+			case 0:
+			{
+				goto IL_0021;
+			}
+			case 1:
+			{
+				goto IL_00bb;
+			}
+		}
+	}
+	{
+		goto IL_00eb;
+	}
+
+IL_0021:
+	{
+		GameController_t3607102586 * L_2 = __this->get_U24this_5();
+		NullCheck(L_2);
+		GameObject_t1756533147 * L_3 = L_2->get_map_3();
+		NullCheck(L_3);
+		RawImage_t2749640213 * L_4 = GameObject_GetComponent_TisRawImage_t2749640213_m2486045553(L_3, /*hidden argument*/GameObject_GetComponent_TisRawImage_t2749640213_m2486045553_MethodInfo_var);
+		NullCheck(L_4);
+		Color_t2020392075  L_5 = VirtFuncInvoker0< Color_t2020392075  >::Invoke(22 /* UnityEngine.Color UnityEngine.UI.Graphic::get_color() */, L_4);
+		V_1 = L_5;
+		float L_6 = (&V_1)->get_a_3();
+		__this->set_U3CalphaU3E__0_0(L_6);
+		__this->set_U3CtU3E__1_1((0.0f));
+		goto IL_00d4;
+	}
+
+IL_0054:
+	{
+		float L_7 = __this->get_U3CalphaU3E__0_0();
+		float L_8 = __this->get_aValue_2();
+		float L_9 = __this->get_U3CtU3E__1_1();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_10 = Mathf_Lerp_m1686556575(NULL /*static, unused*/, L_7, L_8, L_9, /*hidden argument*/NULL);
+		Color_t2020392075  L_11;
+		memset(&L_11, 0, sizeof(L_11));
+		Color__ctor_m1909920690(&L_11, (1.0f), (1.0f), (1.0f), L_10, /*hidden argument*/NULL);
+		__this->set_U3CnewColorU3E__2_3(L_11);
+		GameController_t3607102586 * L_12 = __this->get_U24this_5();
+		NullCheck(L_12);
+		GameObject_t1756533147 * L_13 = L_12->get_map_3();
+		NullCheck(L_13);
+		RawImage_t2749640213 * L_14 = GameObject_GetComponent_TisRawImage_t2749640213_m2486045553(L_13, /*hidden argument*/GameObject_GetComponent_TisRawImage_t2749640213_m2486045553_MethodInfo_var);
+		Color_t2020392075  L_15 = __this->get_U3CnewColorU3E__2_3();
+		NullCheck(L_14);
+		VirtActionInvoker1< Color_t2020392075  >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_14, L_15);
+		__this->set_U24current_6(NULL);
+		bool L_16 = __this->get_U24disposing_7();
+		if (L_16)
+		{
+			goto IL_00b6;
+		}
+	}
+	{
+		__this->set_U24PC_8(1);
+	}
+
+IL_00b6:
+	{
+		goto IL_00ed;
+	}
+
+IL_00bb:
+	{
+		float L_17 = __this->get_U3CtU3E__1_1();
+		float L_18 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_19 = __this->get_aTime_4();
+		__this->set_U3CtU3E__1_1(((float)((float)L_17+(float)((float)((float)L_18/(float)L_19)))));
+	}
+
+IL_00d4:
+	{
+		float L_20 = __this->get_U3CtU3E__1_1();
+		if ((((float)L_20) < ((float)(1.0f))))
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		__this->set_U24PC_8((-1));
+	}
+
+IL_00eb:
+	{
+		return (bool)0;
+	}
+
+IL_00ed:
+	{
+		return (bool)1;
+	}
+}
+// System.Object GameController/<FadeTo>c__Iterator0::System.Collections.Generic.IEnumerator<object>.get_Current()
+extern "C"  Il2CppObject * U3CFadeToU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m711732984 (U3CFadeToU3Ec__Iterator0_t1141524637 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = __this->get_U24current_6();
+		return L_0;
+	}
+}
+// System.Object GameController/<FadeTo>c__Iterator0::System.Collections.IEnumerator.get_Current()
+extern "C"  Il2CppObject * U3CFadeToU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m343063456 (U3CFadeToU3Ec__Iterator0_t1141524637 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = __this->get_U24current_6();
+		return L_0;
+	}
+}
+// System.Void GameController/<FadeTo>c__Iterator0::Dispose()
+extern "C"  void U3CFadeToU3Ec__Iterator0_Dispose_m3274358903 (U3CFadeToU3Ec__Iterator0_t1141524637 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_U24disposing_7((bool)1);
+		__this->set_U24PC_8((-1));
+		return;
+	}
+}
+// System.Void GameController/<FadeTo>c__Iterator0::Reset()
+extern "C"  void U3CFadeToU3Ec__Iterator0_Reset_m220640133 (U3CFadeToU3Ec__Iterator0_t1141524637 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (U3CFadeToU3Ec__Iterator0_Reset_m220640133_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		NotSupportedException_t1793819818 * L_0 = (NotSupportedException_t1793819818 *)il2cpp_codegen_object_new(NotSupportedException_t1793819818_il2cpp_TypeInfo_var);
+		NotSupportedException__ctor_m3232764727(L_0, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
 	}
 }
 // System.Void GPSController::.ctor()
@@ -3567,7 +3798,15 @@ extern "C"  void U3CLoginU3Ec__Iterator0_Reset_m1456588996 (U3CLoginU3Ec__Iterat
 // System.Void Map::.ctor()
 extern "C"  void Map__ctor_m2382724703 (Map_t4262919222 * __this, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_method (Map__ctor_m2382724703_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		__this->set_key1_13(_stringLiteral2328242528);
+		__this->set_key2_14(_stringLiteral3779626262);
 		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -3614,14 +3853,14 @@ extern "C"  Il2CppObject * Map_GetGoogleMap_m3075677944 (Map_t4262919222 * __thi
 		U3CGetGoogleMapU3Ec__Iterator0_t1695079217 * L_1 = V_0;
 		float L_2 = ___latitude0;
 		NullCheck(L_1);
-		L_1->set_latitude_0(L_2);
+		L_1->set_latitude_1(L_2);
 		U3CGetGoogleMapU3Ec__Iterator0_t1695079217 * L_3 = V_0;
 		float L_4 = ___longitude1;
 		NullCheck(L_3);
-		L_3->set_longitude_1(L_4);
+		L_3->set_longitude_2(L_4);
 		U3CGetGoogleMapU3Ec__Iterator0_t1695079217 * L_5 = V_0;
 		NullCheck(L_5);
-		L_5->set_U24this_4(__this);
+		L_5->set_U24this_5(__this);
 		U3CGetGoogleMapU3Ec__Iterator0_t1695079217 * L_6 = V_0;
 		return L_6;
 	}
@@ -3629,7 +3868,104 @@ extern "C"  Il2CppObject * Map_GetGoogleMap_m3075677944 (Map_t4262919222 * __thi
 // System.Void Map::generateURL(GPSData[])
 extern "C"  void Map_generateURL_m3793783533 (Map_t4262919222 * __this, GPSDataU5BU5D_t4145052893* ___data0, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_method (Map_generateURL_m3793783533_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	StringU5BU5D_t1642385972* V_0 = NULL;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	{
+		GPSDataU5BU5D_t4145052893* L_0 = ___data0;
+		NullCheck(L_0);
+		V_0 = ((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_0)->max_length))))));
+		V_1 = ((int32_t)65);
+		V_2 = 0;
+		goto IL_0077;
+	}
+
+IL_0013:
+	{
+		StringU5BU5D_t1642385972* L_1 = V_0;
+		int32_t L_2 = V_2;
+		ObjectU5BU5D_t3614634134* L_3 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)5));
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, _stringLiteral1403050043);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)_stringLiteral1403050043);
+		ObjectU5BU5D_t3614634134* L_4 = L_3;
+		int32_t L_5 = V_1;
+		int32_t L_6 = ((int32_t)((int32_t)L_5+(int32_t)1));
+		V_1 = L_6;
+		Il2CppChar L_7 = ((Il2CppChar)(((int32_t)((uint16_t)L_6))));
+		Il2CppObject * L_8 = Box(Char_t3454481338_il2cpp_TypeInfo_var, &L_7);
+		NullCheck(L_4);
+		ArrayElementTypeCheck (L_4, L_8);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_8);
+		ObjectU5BU5D_t3614634134* L_9 = L_4;
+		NullCheck(L_9);
+		ArrayElementTypeCheck (L_9, _stringLiteral3996208733);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)_stringLiteral3996208733);
+		ObjectU5BU5D_t3614634134* L_10 = L_9;
+		GPSDataU5BU5D_t4145052893* L_11 = ___data0;
+		int32_t L_12 = V_2;
+		NullCheck(L_11);
+		int32_t L_13 = L_12;
+		GPSData_t207763284 * L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
+		NullCheck(L_14);
+		float L_15 = GPSData_getLatitude_m1301723475(L_14, /*hidden argument*/NULL);
+		float L_16 = L_15;
+		Il2CppObject * L_17 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_16);
+		NullCheck(L_10);
+		ArrayElementTypeCheck (L_10, L_17);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_17);
+		ObjectU5BU5D_t3614634134* L_18 = L_10;
+		GPSDataU5BU5D_t4145052893* L_19 = ___data0;
+		int32_t L_20 = V_2;
+		NullCheck(L_19);
+		int32_t L_21 = L_20;
+		GPSData_t207763284 * L_22 = (L_19)->GetAt(static_cast<il2cpp_array_size_t>(L_21));
+		NullCheck(L_22);
+		float L_23 = GPSData_getLongitude_m529963932(L_22, /*hidden argument*/NULL);
+		float L_24 = L_23;
+		Il2CppObject * L_25 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_24);
+		NullCheck(L_18);
+		ArrayElementTypeCheck (L_18, L_25);
+		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(4), (Il2CppObject *)L_25);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_26 = String_Concat_m3881798623(NULL /*static, unused*/, L_18, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		ArrayElementTypeCheck (L_1, L_26);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(L_2), (String_t*)L_26);
+		String_t* L_27 = __this->get_url_2();
+		StringU5BU5D_t1642385972* L_28 = V_0;
+		int32_t L_29 = V_2;
+		NullCheck(L_28);
+		int32_t L_30 = L_29;
+		String_t* L_31 = (L_28)->GetAt(static_cast<il2cpp_array_size_t>(L_30));
+		String_t* L_32 = String_Concat_m2596409543(NULL /*static, unused*/, L_27, L_31, /*hidden argument*/NULL);
+		__this->set_url_2(L_32);
+		int32_t L_33 = V_2;
+		V_2 = ((int32_t)((int32_t)L_33+(int32_t)1));
+	}
+
+IL_0077:
+	{
+		int32_t L_34 = V_2;
+		GPSDataU5BU5D_t4145052893* L_35 = ___data0;
+		NullCheck(L_35);
+		if ((((int32_t)L_34) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_35)->max_length)))))))
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		String_t* L_36 = __this->get_url_2();
+		String_t* L_37 = __this->get_key2_14();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_38 = String_Concat_m2596409543(NULL /*static, unused*/, L_36, L_37, /*hidden argument*/NULL);
+		__this->set_url_2(L_38);
 		return;
 	}
 }
@@ -3652,9 +3988,9 @@ extern "C"  bool U3CGetGoogleMapU3Ec__Iterator0_MoveNext_m2744658934 (U3CGetGoog
 	}
 	uint32_t V_0 = 0;
 	{
-		int32_t L_0 = __this->get_U24PC_7();
+		int32_t L_0 = __this->get_U24PC_8();
 		V_0 = L_0;
-		__this->set_U24PC_7((-1));
+		__this->set_U24PC_8((-1));
 		uint32_t L_1 = V_0;
 		switch (L_1)
 		{
@@ -3664,27 +4000,28 @@ extern "C"  bool U3CGetGoogleMapU3Ec__Iterator0_MoveNext_m2744658934 (U3CGetGoog
 			}
 			case 1:
 			{
-				goto IL_0146;
+				goto IL_015a;
 			}
 			case 2:
 			{
-				goto IL_0196;
+				goto IL_01aa;
 			}
 		}
 	}
 	{
-		goto IL_01be;
+		goto IL_01d2;
 	}
 
 IL_0025:
 	{
-		Map_t4262919222 * L_2 = __this->get_U24this_4();
-		ObjectU5BU5D_t3614634134* L_3 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)((int32_t)17)));
+		__this->set_U3CemptyDataU3E__0_0(((GPSDataU5BU5D_t4145052893*)SZArrayNew(GPSDataU5BU5D_t4145052893_il2cpp_TypeInfo_var, (uint32_t)0)));
+		Map_t4262919222 * L_2 = __this->get_U24this_5();
+		ObjectU5BU5D_t3614634134* L_3 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)((int32_t)16)));
 		NullCheck(L_3);
 		ArrayElementTypeCheck (L_3, _stringLiteral2775107238);
 		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)_stringLiteral2775107238);
 		ObjectU5BU5D_t3614634134* L_4 = L_3;
-		float L_5 = __this->get_latitude_0();
+		float L_5 = __this->get_latitude_1();
 		float L_6 = L_5;
 		Il2CppObject * L_7 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_6);
 		NullCheck(L_4);
@@ -3695,7 +4032,7 @@ IL_0025:
 		ArrayElementTypeCheck (L_8, _stringLiteral372029314);
 		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)_stringLiteral372029314);
 		ObjectU5BU5D_t3614634134* L_9 = L_8;
-		float L_10 = __this->get_longitude_1();
+		float L_10 = __this->get_longitude_2();
 		float L_11 = L_10;
 		Il2CppObject * L_12 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_11);
 		NullCheck(L_9);
@@ -3706,7 +4043,7 @@ IL_0025:
 		ArrayElementTypeCheck (L_13, _stringLiteral1960745698);
 		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(4), (Il2CppObject *)_stringLiteral1960745698);
 		ObjectU5BU5D_t3614634134* L_14 = L_13;
-		Map_t4262919222 * L_15 = __this->get_U24this_4();
+		Map_t4262919222 * L_15 = __this->get_U24this_5();
 		NullCheck(L_15);
 		int32_t L_16 = L_15->get_zoom_6();
 		int32_t L_17 = L_16;
@@ -3719,7 +4056,7 @@ IL_0025:
 		ArrayElementTypeCheck (L_19, _stringLiteral2334078884);
 		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(6), (Il2CppObject *)_stringLiteral2334078884);
 		ObjectU5BU5D_t3614634134* L_20 = L_19;
-		Map_t4262919222 * L_21 = __this->get_U24this_4();
+		Map_t4262919222 * L_21 = __this->get_U24this_5();
 		NullCheck(L_21);
 		int32_t L_22 = L_21->get_mapWidth_7();
 		int32_t L_23 = L_22;
@@ -3732,7 +4069,7 @@ IL_0025:
 		ArrayElementTypeCheck (L_25, _stringLiteral372029398);
 		(L_25)->SetAt(static_cast<il2cpp_array_size_t>(8), (Il2CppObject *)_stringLiteral372029398);
 		ObjectU5BU5D_t3614634134* L_26 = L_25;
-		Map_t4262919222 * L_27 = __this->get_U24this_4();
+		Map_t4262919222 * L_27 = __this->get_U24this_5();
 		NullCheck(L_27);
 		int32_t L_28 = L_27->get_mapHeight_8();
 		int32_t L_29 = L_28;
@@ -3745,7 +4082,7 @@ IL_0025:
 		ArrayElementTypeCheck (L_31, _stringLiteral93847055);
 		(L_31)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)10)), (Il2CppObject *)_stringLiteral93847055);
 		ObjectU5BU5D_t3614634134* L_32 = L_31;
-		Map_t4262919222 * L_33 = __this->get_U24this_4();
+		Map_t4262919222 * L_33 = __this->get_U24this_5();
 		NullCheck(L_33);
 		int32_t L_34 = L_33->get_mapSelected_9();
 		int32_t L_35 = L_34;
@@ -3758,7 +4095,7 @@ IL_0025:
 		ArrayElementTypeCheck (L_37, _stringLiteral2313303675);
 		(L_37)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)12)), (Il2CppObject *)_stringLiteral2313303675);
 		ObjectU5BU5D_t3614634134* L_38 = L_37;
-		float L_39 = __this->get_latitude_0();
+		float L_39 = __this->get_latitude_1();
 		float L_40 = L_39;
 		Il2CppObject * L_41 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_40);
 		NullCheck(L_38);
@@ -3769,95 +4106,95 @@ IL_0025:
 		ArrayElementTypeCheck (L_42, _stringLiteral372029314);
 		(L_42)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)14)), (Il2CppObject *)_stringLiteral372029314);
 		ObjectU5BU5D_t3614634134* L_43 = L_42;
-		float L_44 = __this->get_longitude_1();
+		float L_44 = __this->get_longitude_2();
 		float L_45 = L_44;
 		Il2CppObject * L_46 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_45);
 		NullCheck(L_43);
 		ArrayElementTypeCheck (L_43, L_46);
 		(L_43)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)15)), (Il2CppObject *)L_46);
-		ObjectU5BU5D_t3614634134* L_47 = L_43;
-		NullCheck(L_47);
-		ArrayElementTypeCheck (L_47, _stringLiteral2328242528);
-		(L_47)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)16)), (Il2CppObject *)_stringLiteral2328242528);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_48 = String_Concat_m3881798623(NULL /*static, unused*/, L_47, /*hidden argument*/NULL);
+		String_t* L_47 = String_Concat_m3881798623(NULL /*static, unused*/, L_43, /*hidden argument*/NULL);
 		NullCheck(L_2);
-		L_2->set_url_2(L_48);
-		Map_t4262919222 * L_49 = __this->get_U24this_4();
-		NullCheck(L_49);
-		String_t* L_50 = L_49->get_url_2();
-		WWW_t2919945039 * L_51 = (WWW_t2919945039 *)il2cpp_codegen_object_new(WWW_t2919945039_il2cpp_TypeInfo_var);
-		WWW__ctor_m2024029190(L_51, L_50, /*hidden argument*/NULL);
-		__this->set_U3CwwwU3E__0_2(L_51);
-		WWW_t2919945039 * L_52 = __this->get_U3CwwwU3E__0_2();
-		__this->set_U24current_5(L_52);
-		bool L_53 = __this->get_U24disposing_6();
-		if (L_53)
+		L_2->set_url_2(L_47);
+		Map_t4262919222 * L_48 = __this->get_U24this_5();
+		GPSDataU5BU5D_t4145052893* L_49 = __this->get_U3CemptyDataU3E__0_0();
+		NullCheck(L_48);
+		Map_generateURL_m3793783533(L_48, L_49, /*hidden argument*/NULL);
+		Map_t4262919222 * L_50 = __this->get_U24this_5();
+		NullCheck(L_50);
+		String_t* L_51 = L_50->get_url_2();
+		WWW_t2919945039 * L_52 = (WWW_t2919945039 *)il2cpp_codegen_object_new(WWW_t2919945039_il2cpp_TypeInfo_var);
+		WWW__ctor_m2024029190(L_52, L_51, /*hidden argument*/NULL);
+		__this->set_U3CwwwU3E__0_3(L_52);
+		WWW_t2919945039 * L_53 = __this->get_U3CwwwU3E__0_3();
+		__this->set_U24current_6(L_53);
+		bool L_54 = __this->get_U24disposing_7();
+		if (L_54)
 		{
-			goto IL_0141;
+			goto IL_0155;
 		}
 	}
 	{
-		__this->set_U24PC_7(1);
+		__this->set_U24PC_8(1);
 	}
 
-IL_0141:
+IL_0155:
 	{
-		goto IL_01c0;
+		goto IL_01d4;
 	}
 
-IL_0146:
+IL_015a:
 	{
-		WWW_t2919945039 * L_54 = __this->get_U3CwwwU3E__0_2();
-		NullCheck(L_54);
-		Texture2D_t3542995729 * L_55 = WWW_get_texture_m1121178301(L_54, /*hidden argument*/NULL);
-		__this->set_U3CmapTextureU3E__0_3(L_55);
-		Map_t4262919222 * L_56 = __this->get_U24this_4();
-		NullCheck(L_56);
-		RawImage_t2749640213 * L_57 = L_56->get_myMap_10();
+		WWW_t2919945039 * L_55 = __this->get_U3CwwwU3E__0_3();
+		NullCheck(L_55);
+		Texture2D_t3542995729 * L_56 = WWW_get_texture_m1121178301(L_55, /*hidden argument*/NULL);
+		__this->set_U3CmapTextureU3E__0_4(L_56);
+		Map_t4262919222 * L_57 = __this->get_U24this_5();
 		NullCheck(L_57);
-		RawImage_t2749640213 * L_58 = Component_GetComponent_TisRawImage_t2749640213_m1817787565(L_57, /*hidden argument*/Component_GetComponent_TisRawImage_t2749640213_m1817787565_MethodInfo_var);
-		Texture_t2243626319 * L_59 = __this->get_U3CmapTextureU3E__0_3();
+		RawImage_t2749640213 * L_58 = L_57->get_myMap_10();
 		NullCheck(L_58);
-		RawImage_set_texture_m2400157626(L_58, L_59, /*hidden argument*/NULL);
-		WaitForSeconds_t3839502067 * L_60 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
-		WaitForSeconds__ctor_m1990515539(L_60, (1.0f), /*hidden argument*/NULL);
-		__this->set_U24current_5(L_60);
-		bool L_61 = __this->get_U24disposing_6();
-		if (L_61)
+		RawImage_t2749640213 * L_59 = Component_GetComponent_TisRawImage_t2749640213_m1817787565(L_58, /*hidden argument*/Component_GetComponent_TisRawImage_t2749640213_m1817787565_MethodInfo_var);
+		Texture_t2243626319 * L_60 = __this->get_U3CmapTextureU3E__0_4();
+		NullCheck(L_59);
+		RawImage_set_texture_m2400157626(L_59, L_60, /*hidden argument*/NULL);
+		WaitForSeconds_t3839502067 * L_61 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m1990515539(L_61, (1.0f), /*hidden argument*/NULL);
+		__this->set_U24current_6(L_61);
+		bool L_62 = __this->get_U24disposing_7();
+		if (L_62)
 		{
-			goto IL_0191;
+			goto IL_01a5;
 		}
 	}
 	{
-		__this->set_U24PC_7(2);
+		__this->set_U24PC_8(2);
 	}
 
-IL_0191:
+IL_01a5:
 	{
-		goto IL_01c0;
+		goto IL_01d4;
 	}
 
-IL_0196:
+IL_01aa:
 	{
-		Texture_t2243626319 * L_62 = __this->get_U3CmapTextureU3E__0_3();
+		Texture_t2243626319 * L_63 = __this->get_U3CmapTextureU3E__0_4();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		Object_Destroy_m4145850038(NULL /*static, unused*/, L_62, /*hidden argument*/NULL);
-		Map_t4262919222 * L_63 = __this->get_U24this_4();
-		Map_t4262919222 * L_64 = __this->get_U24this_4();
+		Object_Destroy_m4145850038(NULL /*static, unused*/, L_63, /*hidden argument*/NULL);
+		Map_t4262919222 * L_64 = __this->get_U24this_5();
+		Map_t4262919222 * L_65 = __this->get_U24this_5();
+		NullCheck(L_65);
+		Il2CppObject * L_66 = L_65->get_mapCoroutine_12();
 		NullCheck(L_64);
-		Il2CppObject * L_65 = L_64->get_mapCoroutine_12();
-		NullCheck(L_63);
-		MonoBehaviour_StopCoroutine_m1170478282(L_63, L_65, /*hidden argument*/NULL);
-		__this->set_U24PC_7((-1));
+		MonoBehaviour_StopCoroutine_m1170478282(L_64, L_66, /*hidden argument*/NULL);
+		__this->set_U24PC_8((-1));
 	}
 
-IL_01be:
+IL_01d2:
 	{
 		return (bool)0;
 	}
 
-IL_01c0:
+IL_01d4:
 	{
 		return (bool)1;
 	}
@@ -3866,7 +4203,7 @@ IL_01c0:
 extern "C"  Il2CppObject * U3CGetGoogleMapU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m351240154 (U3CGetGoogleMapU3Ec__Iterator0_t1695079217 * __this, const MethodInfo* method)
 {
 	{
-		Il2CppObject * L_0 = __this->get_U24current_5();
+		Il2CppObject * L_0 = __this->get_U24current_6();
 		return L_0;
 	}
 }
@@ -3874,7 +4211,7 @@ extern "C"  Il2CppObject * U3CGetGoogleMapU3Ec__Iterator0_System_Collections_Gen
 extern "C"  Il2CppObject * U3CGetGoogleMapU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m3193681314 (U3CGetGoogleMapU3Ec__Iterator0_t1695079217 * __this, const MethodInfo* method)
 {
 	{
-		Il2CppObject * L_0 = __this->get_U24current_5();
+		Il2CppObject * L_0 = __this->get_U24current_6();
 		return L_0;
 	}
 }
@@ -3882,8 +4219,8 @@ extern "C"  Il2CppObject * U3CGetGoogleMapU3Ec__Iterator0_System_Collections_IEn
 extern "C"  void U3CGetGoogleMapU3Ec__Iterator0_Dispose_m1859913195 (U3CGetGoogleMapU3Ec__Iterator0_t1695079217 * __this, const MethodInfo* method)
 {
 	{
-		__this->set_U24disposing_6((bool)1);
-		__this->set_U24PC_7((-1));
+		__this->set_U24disposing_7((bool)1);
+		__this->set_U24PC_8((-1));
 		return;
 	}
 }
@@ -3918,7 +4255,7 @@ extern "C"  void MapTools_Start_m3847571680 (MapTools_t3308069217 * __this, cons
 	{
 		Camera_t189460977 * L_0 = Camera_get_main_m475173995(NULL /*static, unused*/, /*hidden argument*/NULL);
 		__this->set_mainCamera_7(L_0);
-		__this->set_firsttime_6((bool)1);
+		__this->set_firstTime_6((bool)1);
 		return;
 	}
 }
@@ -3940,7 +4277,7 @@ extern "C"  void MapTools_Update_m2536679305 (MapTools_t3308069217 * __this, con
 		NullCheck(L_4);
 		float L_5 = GPSData_getLongitude_m529963932(L_4, /*hidden argument*/NULL);
 		V_1 = L_5;
-		bool L_6 = __this->get_firsttime_6();
+		bool L_6 = __this->get_firstTime_6();
 		if (!L_6)
 		{
 			goto IL_004d;
@@ -3958,7 +4295,7 @@ extern "C"  void MapTools_Update_m2536679305 (MapTools_t3308069217 * __this, con
 		__this->set_latitudeO_4(L_8);
 		float L_9 = V_1;
 		__this->set_longitudeO_5(L_9);
-		__this->set_firsttime_6((bool)0);
+		__this->set_firstTime_6((bool)0);
 	}
 
 IL_004d:

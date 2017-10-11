@@ -62,6 +62,7 @@ public class Map : MonoBehaviour {
 			markers [i] = "&markers=color:red%7Clabel:" + (char)(++startLetter) + "%7C" + data[i].getLatitude() + data[i].getLongitude();
 			url += markers [i];
 		}
-		url += key1;
+//		url += key1;
+		url += key2;
 	}
 }

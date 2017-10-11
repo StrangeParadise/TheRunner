@@ -29150,6 +29150,55 @@ static void U3CGetGoogleMapU3Ec__Iterator0_t1695079217_CustomAttributesCacheGene
 		DebuggerHiddenAttribute__ctor_m2012788180(tmp, NULL);
 	}
 }
+static void GameController_t3607102586_CustomAttributesCacheGenerator_GameController_FadeTo_m2984478648(CustomAttributesCache* cache)
+{
+	{
+		DebuggerHiddenAttribute_t638884887 * tmp = (DebuggerHiddenAttribute_t638884887 *)cache->attributes[0];
+		DebuggerHiddenAttribute__ctor_m2012788180(tmp, NULL);
+	}
+}
+static void U3CFadeToU3Ec__Iterator0_t1141524637_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
+{
+	{
+		CompilerGeneratedAttribute_t497097752 * tmp = (CompilerGeneratedAttribute_t497097752 *)cache->attributes[0];
+		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
+	}
+}
+static void U3CFadeToU3Ec__Iterator0_t1141524637_CustomAttributesCacheGenerator_U3CFadeToU3Ec__Iterator0__ctor_m1969203514(CustomAttributesCache* cache)
+{
+	{
+		DebuggerHiddenAttribute_t638884887 * tmp = (DebuggerHiddenAttribute_t638884887 *)cache->attributes[0];
+		DebuggerHiddenAttribute__ctor_m2012788180(tmp, NULL);
+	}
+}
+static void U3CFadeToU3Ec__Iterator0_t1141524637_CustomAttributesCacheGenerator_U3CFadeToU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m711732984(CustomAttributesCache* cache)
+{
+	{
+		DebuggerHiddenAttribute_t638884887 * tmp = (DebuggerHiddenAttribute_t638884887 *)cache->attributes[0];
+		DebuggerHiddenAttribute__ctor_m2012788180(tmp, NULL);
+	}
+}
+static void U3CFadeToU3Ec__Iterator0_t1141524637_CustomAttributesCacheGenerator_U3CFadeToU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m343063456(CustomAttributesCache* cache)
+{
+	{
+		DebuggerHiddenAttribute_t638884887 * tmp = (DebuggerHiddenAttribute_t638884887 *)cache->attributes[0];
+		DebuggerHiddenAttribute__ctor_m2012788180(tmp, NULL);
+	}
+}
+static void U3CFadeToU3Ec__Iterator0_t1141524637_CustomAttributesCacheGenerator_U3CFadeToU3Ec__Iterator0_Dispose_m3274358903(CustomAttributesCache* cache)
+{
+	{
+		DebuggerHiddenAttribute_t638884887 * tmp = (DebuggerHiddenAttribute_t638884887 *)cache->attributes[0];
+		DebuggerHiddenAttribute__ctor_m2012788180(tmp, NULL);
+	}
+}
+static void U3CFadeToU3Ec__Iterator0_t1141524637_CustomAttributesCacheGenerator_U3CFadeToU3Ec__Iterator0_Reset_m220640133(CustomAttributesCache* cache)
+{
+	{
+		DebuggerHiddenAttribute_t638884887 * tmp = (DebuggerHiddenAttribute_t638884887 *)cache->attributes[0];
+		DebuggerHiddenAttribute__ctor_m2012788180(tmp, NULL);
+	}
+}
 static void NetworkManagerHUD_t1541348255_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -29163,12 +29212,12 @@ static void NetworkManagerHUD_t1541348255_CustomAttributesCacheGenerator(CustomA
 		EditorBrowsableAttribute__ctor_m2635501285(tmp, 1LL, NULL);
 	}
 	{
-		AddComponentMenu_t1099699699 * tmp = (AddComponentMenu_t1099699699 *)cache->attributes[1];
-		AddComponentMenu__ctor_m2231330368(tmp, il2cpp_codegen_string_new_wrapper("Network/NetworkManagerHUD"), NULL);
+		RequireComponent_t864575032 * tmp = (RequireComponent_t864575032 *)cache->attributes[1];
+		RequireComponent__ctor_m3475141952(tmp, il2cpp_codegen_type_get_object(NetworkManager_t3335581469_0_0_0_var), NULL);
 	}
 	{
-		RequireComponent_t864575032 * tmp = (RequireComponent_t864575032 *)cache->attributes[2];
-		RequireComponent__ctor_m3475141952(tmp, il2cpp_codegen_type_get_object(NetworkManager_t3335581469_0_0_0_var), NULL);
+		AddComponentMenu_t1099699699 * tmp = (AddComponentMenu_t1099699699 *)cache->attributes[2];
+		AddComponentMenu__ctor_m2231330368(tmp, il2cpp_codegen_string_new_wrapper("Network/NetworkManagerHUD"), NULL);
 	}
 }
 static void NetworkManagerHUD_t1541348255_CustomAttributesCacheGenerator_showGUI(CustomAttributesCache* cache)
@@ -29358,7 +29407,7 @@ static void __testSingleChat_StartU24callable0U2431_31___t2076937298_CustomAttri
 		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
 	}
 }
-extern const CustomAttributesCacheGenerator g_AttributeGenerators[3492] = 
+extern const CustomAttributesCacheGenerator g_AttributeGenerators[3499] = 
 {
 	NULL,
 	g_mscorlib_Assembly_CustomAttributesCacheGenerator,
@@ -32825,6 +32874,13 @@ extern const CustomAttributesCacheGenerator g_AttributeGenerators[3492] =
 	U3CGetGoogleMapU3Ec__Iterator0_t1695079217_CustomAttributesCacheGenerator_U3CGetGoogleMapU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m3193681314,
 	U3CGetGoogleMapU3Ec__Iterator0_t1695079217_CustomAttributesCacheGenerator_U3CGetGoogleMapU3Ec__Iterator0_Dispose_m1859913195,
 	U3CGetGoogleMapU3Ec__Iterator0_t1695079217_CustomAttributesCacheGenerator_U3CGetGoogleMapU3Ec__Iterator0_Reset_m2581645829,
+	GameController_t3607102586_CustomAttributesCacheGenerator_GameController_FadeTo_m2984478648,
+	U3CFadeToU3Ec__Iterator0_t1141524637_CustomAttributesCacheGenerator,
+	U3CFadeToU3Ec__Iterator0_t1141524637_CustomAttributesCacheGenerator_U3CFadeToU3Ec__Iterator0__ctor_m1969203514,
+	U3CFadeToU3Ec__Iterator0_t1141524637_CustomAttributesCacheGenerator_U3CFadeToU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m711732984,
+	U3CFadeToU3Ec__Iterator0_t1141524637_CustomAttributesCacheGenerator_U3CFadeToU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m343063456,
+	U3CFadeToU3Ec__Iterator0_t1141524637_CustomAttributesCacheGenerator_U3CFadeToU3Ec__Iterator0_Dispose_m3274358903,
+	U3CFadeToU3Ec__Iterator0_t1141524637_CustomAttributesCacheGenerator_U3CFadeToU3Ec__Iterator0_Reset_m220640133,
 	NetworkManagerHUD_t1541348255_CustomAttributesCacheGenerator,
 	NetworkManagerHUD_t1541348255_CustomAttributesCacheGenerator_showGUI,
 	NetworkManagerHUD_t1541348255_CustomAttributesCacheGenerator_offsetX,

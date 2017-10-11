@@ -38,8 +38,8 @@ public:
 	float ___latitudeO_4;
 	// System.Single MapTools::longitudeO
 	float ___longitudeO_5;
-	// System.Boolean MapTools::firsttime
-	bool ___firsttime_6;
+	// System.Boolean MapTools::firstTime
+	bool ___firstTime_6;
 	// UnityEngine.Camera MapTools::mainCamera
 	Camera_t189460977 * ___mainCamera_7;
 	// GPSController MapTools::IGPSController
@@ -78,12 +78,12 @@ public:
 		___longitudeO_5 = value;
 	}
 
-	inline static int32_t get_offset_of_firsttime_6() { return static_cast<int32_t>(offsetof(MapTools_t3308069217, ___firsttime_6)); }
-	inline bool get_firsttime_6() const { return ___firsttime_6; }
-	inline bool* get_address_of_firsttime_6() { return &___firsttime_6; }
-	inline void set_firsttime_6(bool value)
+	inline static int32_t get_offset_of_firstTime_6() { return static_cast<int32_t>(offsetof(MapTools_t3308069217, ___firstTime_6)); }
+	inline bool get_firstTime_6() const { return ___firstTime_6; }
+	inline bool* get_address_of_firstTime_6() { return &___firstTime_6; }
+	inline void set_firstTime_6(bool value)
 	{
-		___firsttime_6 = value;
+		___firstTime_6 = value;
 	}
 
 	inline static int32_t get_offset_of_mainCamera_7() { return static_cast<int32_t>(offsetof(MapTools_t3308069217, ___mainCamera_7)); }

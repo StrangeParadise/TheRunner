@@ -64,3 +64,5 @@
 /Users/ZoranLang/Documents/GitHub/Healthy-boys/The Runner/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/ZoranLang/Documents/GitHub/Healthy-boys/The Runner/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/ZoranLang/Documents/GitHub/Healthy-boys/The Runner/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/ZoranLang/Documents/GitHub/Healthy-boys/The Runner/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/ZoranLang/Documents/GitHub/Healthy-boys/The Runner/Temp/bin/Debug/Assembly-CSharp.dll
