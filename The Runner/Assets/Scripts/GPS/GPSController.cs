@@ -7,8 +7,11 @@ using UnityEngine;
 
 public class GPSController : MonoBehaviour {
 
-	private float latitude;
-	private float longitude;
+	public GPSData gps;
+
+	void Start() {
+		gps = new GPSData ();
+	}
 
 	private IEnumerator StartLocationService()
 	{
@@ -31,7 +34,7 @@ public class GPSController : MonoBehaviour {
 			yield break;
 		}
 
-		updateGpsData();	
+		gps.updateGpsData(Input.location.lastData.latitude, Input.location.lastData.longitude);	
 
 		yield break;
 	}
@@ -42,16 +45,6 @@ public class GPSController : MonoBehaviour {
 		DontDestroyOnLoad(gameObject);
 
 		StartCoroutine(StartLocationService());
-	}
-	void updateGpsData() {
-		latitude = Input.location.lastData.latitude;
-		longitude = Input.location.lastData.longitude;
-	}
-	public float getLatitude() {
-		return latitude;
-	}
-	public float getLongitude() {
-		return longitude;
 	}
 }
 

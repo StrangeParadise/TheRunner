@@ -22,8 +22,8 @@ public class Map : MonoBehaviour {
 	private IEnumerator mapCoroutine;
 
 	void Update () {
-		latitude  = gpsController.getLatitude();
-		longitude = gpsController.getLongitude();
+		latitude  = gpsController.gps.getLatitude();
+		longitude = gpsController.gps.getLongitude();
 		mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
 		StartCoroutine (mapCoroutine); //restart the coroutine
 
@@ -50,5 +50,8 @@ public class Map : MonoBehaviour {
 		yield return new WaitForSeconds(1);
 		Destroy (mapTexture);
 		StopCoroutine (mapCoroutine);
+	}
+	void generateURL(GPSData[] data) {
+
 	}
 }

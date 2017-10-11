@@ -25,8 +25,8 @@ public class MapTools : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		float latitude = IGPSController.getLatitude();
-		float longitude = IGPSController.getLongitude();
+		float latitude = IGPSController.gps.getLatitude();
+		float longitude = IGPSController.gps.getLongitude();
 		if (firsttime) {
 			if (latitude != 0) {
 				latitudeO = latitude;

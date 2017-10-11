@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Circle\HollowCircle.cs" />
      <Compile Include="Assets\Scripts\Debug\testMoveScript.cs" />
      <Compile Include="Assets\Scripts\GPS\GPSController.cs" />
+     <Compile Include="Assets\Scripts\GPS\GPSData.cs" />
      <Compile Include="Assets\Scripts\GPS\Map.cs" />
      <Compile Include="Assets\Scripts\GPS\MapTools.cs" />
      <Compile Include="Assets\Scripts\GPS\UpdateGPS.cs" />
@@ -91,7 +92,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="wwwChat">
- <HintPath>/Users/ZoranLang/Downloads/The Runner/Assets/Scripts/ChatController/wwwChat.dll</HintPath>
+ <HintPath>/Users/ZoranLang/Documents/GitHub/Healthy-boys/The Runner/Assets/Scripts/ChatController/wwwChat.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
