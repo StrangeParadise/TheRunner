@@ -52,7 +52,6 @@ public class GameController : MonoBehaviour {
 			backgroundCam.enabled = true;
 			mapCam.enabled = false;
 		}
-
 	}
 
 

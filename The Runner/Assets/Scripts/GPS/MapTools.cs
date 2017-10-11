@@ -10,7 +10,7 @@ public class MapTools : MonoBehaviour {
 
 	private float latitudeO;
 	private float longitudeO;
-	private bool firsttime;
+	private bool firstTime;
 
 	private Camera mainCamera;
 
@@ -20,22 +20,21 @@ public class MapTools : MonoBehaviour {
 	void Start () {
 
 		mainCamera = Camera.main;
-		firsttime = true;
+		firstTime = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		float latitude = IGPSController.gps.getLatitude();
 		float longitude = IGPSController.gps.getLongitude();
-		if (firsttime) {
+		if (firstTime) {
 			if (latitude != 0) {
 				latitudeO = latitude;
 				longitudeO = longitude;
-				firsttime = false;
+				firstTime = false;
 			}
 		}
 		mainCamera.transform.position = mapGPS (latitude, longitude);
-//		mainCamera.transform.position = new Vector3 ((latitude-latitudeO)*50000, mainCamera.transform.position.y, - (longitude - longitudeO)*50000);
 	}
 
 	public Vector3 mapGPS(float latitude, float longitude){

@@ -20,6 +20,8 @@ public class Map : MonoBehaviour {
 	public TextMesh terminal;
 
 	private IEnumerator mapCoroutine;
+	private string key1 = "&key=AIzaSyDK04pO2JEC4C01AQSW9dpuBDunvtuA-o8";
+	private string key2 = "&key=AIzaSyDkFTum1BgoY5gD92vkLlnavRQnnYQKKiM";
 
 	void Update () {
 		latitude  = gpsController.gps.getLatitude();
@@ -37,9 +39,11 @@ public class Map : MonoBehaviour {
 	{
 //		Debug.Log ("latitude " + latitude);
 //		Debug.Log ("longitude " + longitude);
+		GPSData[] emptyData = new GPSData[0];
 		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude +
 			"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected + 
-			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyDK04pO2JEC4C01AQSW9dpuBDunvtuA-o8";
+			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude;
+		generateURL (emptyData);
 //		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude +
 //			"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected + 
 //			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyDkFTum1BgoY5gD92vkLlnavRQnnYQKKiM";
@@ -52,6 +56,12 @@ public class Map : MonoBehaviour {
 		StopCoroutine (mapCoroutine);
 	}
 	void generateURL(GPSData[] data) {
-
+		string[] markers = new string[data.Length];
+		int startLetter = 65;
+		for (int i = 0; i < data.Length; i++) {
+			markers [i] = "&markers=color:red%7Clabel:" + (char)(++startLetter) + "%7C" + data[i].getLatitude() + data[i].getLongitude();
+			url += markers [i];
+		}
+		url += key1;
 	}
 }
