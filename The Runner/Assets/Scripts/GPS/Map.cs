@@ -23,11 +23,18 @@ public class Map : MonoBehaviour {
 	private string key1 = "&key=AIzaSyDK04pO2JEC4C01AQSW9dpuBDunvtuA-o8";
 	private string key2 = "&key=AIzaSyDkFTum1BgoY5gD92vkLlnavRQnnYQKKiM";
 
+	private float updatePerSecond = 0.1f;
+	private float time = 0.0f;
+
 	void Update () {
-		latitude  = gpsController.gps.getLatitude();
-		longitude = gpsController.gps.getLongitude();
-		mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
-		StartCoroutine (mapCoroutine); //restart the coroutine
+//		if ((time += Time.deltaTime) > updatePerSecond) {
+			
+			latitude  = gpsController.gps.getLatitude();
+			longitude = gpsController.gps.getLongitude();
+			mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
+			StartCoroutine (mapCoroutine); //restart the coroutine
+			time = 0.0f;
+//		}
 
 
 //		if (terminal != null && gpsController != null) {
@@ -39,11 +46,9 @@ public class Map : MonoBehaviour {
 	{
 //		Debug.Log ("latitude " + latitude);
 //		Debug.Log ("longitude " + longitude);
-		GPSData[] emptyData = new GPSData[0];
 		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude +
-			"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected + 
-			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude;
-		generateURL (emptyData);
+		"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected;
+		generateURL ();
 //		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude +
 //			"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected + 
 //			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyDkFTum1BgoY5gD92vkLlnavRQnnYQKKiM";
@@ -55,14 +60,18 @@ public class Map : MonoBehaviour {
 		Destroy (mapTexture);
 		StopCoroutine (mapCoroutine);
 	}
-	void generateURL(GPSData[] data) {
-		string[] markers = new string[data.Length];
+	void generateURL() {
+		GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+		string[] markers = new string[players.Length];
 		int startLetter = 65;
-		for (int i = 0; i < data.Length; i++) {
-			markers [i] = "&markers=color:red%7Clabel:" + (char)(++startLetter) + "%7C" + data[i].getLatitude() + data[i].getLongitude();
+		print (players.Length);
+		for (int i = 0; i < players.Length; i++) {
+			print ("精度" + i +players [i].GetComponent<PlayerMove> ().latitude);
+			print ("维度" + i + players [i].GetComponent<PlayerMove> ().longitude);
+			markers [i] = "&markers=color:red%7Clabel:" + (char)(startLetter++) + "%7C" + players[i].GetComponent<PlayerMove>().latitude + "," + players[i].GetComponent<PlayerMove>().longitude;
 			url += markers [i];
 		}
-//		url += key1;
-		url += key2;
+		url += key1;
+//		url += key2;
 	}
 }
