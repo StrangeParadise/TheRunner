@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TheRunner.Utilities;
 
-public class GPSData : MonoBehaviour {
+public class GPSData : Singleton<GPSData> {
 
 	private float latitude;
 	private float longitude;

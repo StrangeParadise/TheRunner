@@ -1493,12 +1493,18 @@ extern const Il2CppGenericInst GenInst_StringU5BU5D_t1642385972_0_0_0 = { 1, Gen
 extern const Il2CppType FieldWithTarget_t2256174789_0_0_0;
 static const Il2CppType* GenInst_FieldWithTarget_t2256174789_0_0_0_Types[] = { &FieldWithTarget_t2256174789_0_0_0 };
 extern const Il2CppGenericInst GenInst_FieldWithTarget_t2256174789_0_0_0 = { 1, GenInst_FieldWithTarget_t2256174789_0_0_0_Types };
+extern const Il2CppType PlayerDataManager_t3660452126_0_0_0;
+static const Il2CppType* GenInst_PlayerDataManager_t3660452126_0_0_0_Types[] = { &PlayerDataManager_t3660452126_0_0_0 };
+extern const Il2CppGenericInst GenInst_PlayerDataManager_t3660452126_0_0_0 = { 1, GenInst_PlayerDataManager_t3660452126_0_0_0_Types };
 extern const Il2CppType IComparable_1_t2869733622_0_0_0;
 static const Il2CppType* GenInst_IComparable_1_t2869733622_0_0_0_Types[] = { &IComparable_1_t2869733622_0_0_0 };
 extern const Il2CppGenericInst GenInst_IComparable_1_t2869733622_0_0_0 = { 1, GenInst_IComparable_1_t2869733622_0_0_0_Types };
 extern const Il2CppType GPSData_t207763284_0_0_0;
 static const Il2CppType* GenInst_GPSData_t207763284_0_0_0_Types[] = { &GPSData_t207763284_0_0_0 };
 extern const Il2CppGenericInst GenInst_GPSData_t207763284_0_0_0 = { 1, GenInst_GPSData_t207763284_0_0_0_Types };
+extern const Il2CppType Singleton_1_t342423049_0_0_0;
+static const Il2CppType* GenInst_Singleton_1_t342423049_0_0_0_Types[] = { &Singleton_1_t342423049_0_0_0 };
+extern const Il2CppGenericInst GenInst_Singleton_1_t342423049_0_0_0 = { 1, GenInst_Singleton_1_t342423049_0_0_0_Types };
 extern const Il2CppType IEnumerable_1_t4048664256_gp_0_0_0_0;
 static const Il2CppType* GenInst_IEnumerable_1_t4048664256_gp_0_0_0_0_Types[] = { &IEnumerable_1_t4048664256_gp_0_0_0_0 };
 extern const Il2CppGenericInst GenInst_IEnumerable_1_t4048664256_gp_0_0_0_0 = { 1, GenInst_IEnumerable_1_t4048664256_gp_0_0_0_0_Types };
@@ -2043,6 +2049,9 @@ extern const Il2CppGenericInst GenInst_List_1_t2000868992_0_0_0 = { 1, GenInst_L
 extern const Il2CppType ObjectPool_1_t4265859154_gp_0_0_0_0;
 static const Il2CppType* GenInst_ObjectPool_1_t4265859154_gp_0_0_0_0_Types[] = { &ObjectPool_1_t4265859154_gp_0_0_0_0 };
 extern const Il2CppGenericInst GenInst_ObjectPool_1_t4265859154_gp_0_0_0_0 = { 1, GenInst_ObjectPool_1_t4265859154_gp_0_0_0_0_Types };
+extern const Il2CppType Singleton_1_t2151129520_gp_0_0_0_0;
+static const Il2CppType* GenInst_Singleton_1_t2151129520_gp_0_0_0_0_Types[] = { &Singleton_1_t2151129520_gp_0_0_0_0 };
+extern const Il2CppGenericInst GenInst_Singleton_1_t2151129520_gp_0_0_0_0 = { 1, GenInst_Singleton_1_t2151129520_gp_0_0_0_0_Types };
 extern const Il2CppType DefaultExecutionOrder_t2717914595_0_0_0;
 static const Il2CppType* GenInst_DefaultExecutionOrder_t2717914595_0_0_0_Types[] = { &DefaultExecutionOrder_t2717914595_0_0_0 };
 extern const Il2CppGenericInst GenInst_DefaultExecutionOrder_t2717914595_0_0_0 = { 1, GenInst_DefaultExecutionOrder_t2717914595_0_0_0_Types };
@@ -2196,6 +2205,9 @@ extern const Il2CppGenericInst GenInst_AnimationTriggers_t3244928895_0_0_0 = { 1
 extern const Il2CppType Animator_t69676727_0_0_0;
 static const Il2CppType* GenInst_Animator_t69676727_0_0_0_Types[] = { &Animator_t69676727_0_0_0 };
 extern const Il2CppGenericInst GenInst_Animator_t69676727_0_0_0 = { 1, GenInst_Animator_t69676727_0_0_0_Types };
+extern const Il2CppType CountDownController_t1675675739_0_0_0;
+static const Il2CppType* GenInst_CountDownController_t1675675739_0_0_0_Types[] = { &CountDownController_t1675675739_0_0_0 };
+extern const Il2CppGenericInst GenInst_CountDownController_t1675675739_0_0_0 = { 1, GenInst_CountDownController_t1675675739_0_0_0_Types };
 extern const Il2CppType LineRenderer_t849157671_0_0_0;
 static const Il2CppType* GenInst_LineRenderer_t849157671_0_0_0_Types[] = { &LineRenderer_t849157671_0_0_0 };
 extern const Il2CppGenericInst GenInst_LineRenderer_t849157671_0_0_0 = { 1, GenInst_LineRenderer_t849157671_0_0_0_Types };
@@ -2329,7 +2341,7 @@ static const Il2CppType* GenInst_KeyValuePair_2_t3709506243_0_0_0_Il2CppObject_0
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t3709506243_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t3709506243_0_0_0_Il2CppObject_0_0_0_Types };
 static const Il2CppType* GenInst_NetworkID_t348058649_0_0_0_NetworkID_t348058649_0_0_0_Types[] = { &NetworkID_t348058649_0_0_0, &NetworkID_t348058649_0_0_0 };
 extern const Il2CppGenericInst GenInst_NetworkID_t348058649_0_0_0_NetworkID_t348058649_0_0_0 = { 2, GenInst_NetworkID_t348058649_0_0_0_NetworkID_t348058649_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[853] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[857] = 
 {
 	&GenInst_Il2CppObject_0_0_0,
 	&GenInst_Int32_t2071877448_0_0_0,
@@ -2881,8 +2893,10 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[853] =
 	&GenInst_SimpleMessageU5BU5D_t2566712870_0_0_0,
 	&GenInst_StringU5BU5D_t1642385972_0_0_0,
 	&GenInst_FieldWithTarget_t2256174789_0_0_0,
+	&GenInst_PlayerDataManager_t3660452126_0_0_0,
 	&GenInst_IComparable_1_t2869733622_0_0_0,
 	&GenInst_GPSData_t207763284_0_0_0,
+	&GenInst_Singleton_1_t342423049_0_0_0,
 	&GenInst_IEnumerable_1_t4048664256_gp_0_0_0_0,
 	&GenInst_Array_InternalArray__IEnumerable_GetEnumerator_m2949663298_gp_0_0_0_0,
 	&GenInst_Array_Sort_m1730553742_gp_0_0_0_0_Array_Sort_m1730553742_gp_0_0_0_0,
@@ -3067,6 +3081,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[853] =
 	&GenInst_ListPool_1_t1984115411_gp_0_0_0_0,
 	&GenInst_List_1_t2000868992_0_0_0,
 	&GenInst_ObjectPool_1_t4265859154_gp_0_0_0_0,
+	&GenInst_Singleton_1_t2151129520_gp_0_0_0_0,
 	&GenInst_DefaultExecutionOrder_t2717914595_0_0_0,
 	&GenInst_PlayerConnection_t3517219175_0_0_0,
 	&GenInst_GUILayer_t3254902478_0_0_0,
@@ -3118,6 +3133,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[853] =
 	&GenInst_TextAnchor_t112990806_0_0_0,
 	&GenInst_AnimationTriggers_t3244928895_0_0_0,
 	&GenInst_Animator_t69676727_0_0_0,
+	&GenInst_CountDownController_t1675675739_0_0_0,
 	&GenInst_LineRenderer_t849157671_0_0_0,
 	&GenInst_Boolean_t3825574718_0_0_0_Boolean_t3825574718_0_0_0,
 	&GenInst_CustomAttributeNamedArgument_t94157543_0_0_0_CustomAttributeNamedArgument_t94157543_0_0_0,

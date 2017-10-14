@@ -17,6 +17,9 @@ void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_CloudWebServices();
 	RegisterModule_CloudWebServices();
 
+	void RegisterModule_ParticleSystem();
+	RegisterModule_ParticleSystem();
+
 	void RegisterModule_PerformanceReporting();
 	RegisterModule_PerformanceReporting();
 
@@ -148,15 +151,15 @@ class ParticleAnimator;
 class ParticleEmitter; 
 class EllipsoidParticleEmitter; 
 class MeshParticleEmitter; 
-class ParticleSystem; 
+class ParticleSystem; template <> void RegisterClass<ParticleSystem>();
 class Renderer; template <> void RegisterClass<Renderer>();
 class BillboardRenderer; 
 class LineRenderer; template <> void RegisterClass<LineRenderer>();
 class MeshRenderer; template <> void RegisterClass<MeshRenderer>();
 class ParticleRenderer; 
-class ParticleSystemRenderer; 
+class ParticleSystemRenderer; template <> void RegisterClass<ParticleSystemRenderer>();
 class SkinnedMeshRenderer; 
-class SpriteRenderer; 
+class SpriteRenderer; template <> void RegisterClass<SpriteRenderer>();
 class TrailRenderer; 
 class Rigidbody; template <> void RegisterClass<Rigidbody>();
 class Rigidbody2D; template <> void RegisterClass<Rigidbody2D>();
@@ -176,7 +179,7 @@ class AudioMixerGroup;
 class AudioMixerGroupController; 
 class AudioMixerSnapshot; 
 class AudioMixerSnapshotController; 
-class Avatar; 
+class Avatar; template <> void RegisterClass<Avatar>();
 class AvatarMask; 
 class BillboardAsset; 
 class ComputeShader; 
@@ -260,7 +263,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 75 non stripped classes
+	//Total: 79 non stripped classes
 	//0. Behaviour
 	RegisterClass<Behaviour>();
 	//1. Unity::Component
@@ -395,21 +398,29 @@ RegisterBuiltinTypes();
 	RegisterClass<UnityConnectSettings>();
 	//66. LevelGameManager
 	RegisterClass<LevelGameManager>();
-	//67. BoxCollider
-	RegisterClass<BoxCollider>();
-	//68. AudioListener
+	//67. AudioListener
 	RegisterClass<AudioListener>();
-	//69. AudioBehaviour
+	//68. AudioBehaviour
 	RegisterClass<AudioBehaviour>();
-	//70. RenderSettings
+	//69. RenderSettings
 	RegisterClass<RenderSettings>();
-	//71. Light
-	RegisterClass<Light>();
-	//72. FlareLayer
+	//70. FlareLayer
 	RegisterClass<FlareLayer>();
-	//73. LightmapSettings
+	//71. LightmapSettings
 	RegisterClass<LightmapSettings>();
-	//74. LightProbes
+	//72. ParticleSystem
+	RegisterClass<ParticleSystem>();
+	//73. ParticleSystemRenderer
+	RegisterClass<ParticleSystemRenderer>();
+	//74. SpriteRenderer
+	RegisterClass<SpriteRenderer>();
+	//75. BoxCollider
+	RegisterClass<BoxCollider>();
+	//76. Avatar
+	RegisterClass<Avatar>();
+	//77. Light
+	RegisterClass<Light>();
+	//78. LightProbes
 	RegisterClass<LightProbes>();
 
 }

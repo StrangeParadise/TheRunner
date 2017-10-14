@@ -10,7 +10,7 @@
 
 #include <stdint.h>
 
-#include "UnityEngine_UnityEngine_MonoBehaviour1158329972.h"
+#include "AssemblyU2DCSharp_TheRunner_Utilities_Singleton_1_g342423049.h"
 
 
 
@@ -23,29 +23,29 @@
 #endif
 
 // GPSData
-struct  GPSData_t207763284  : public MonoBehaviour_t1158329972
+struct  GPSData_t207763284  : public Singleton_1_t342423049
 {
 public:
 	// System.Single GPSData::latitude
-	float ___latitude_2;
+	float ___latitude_4;
 	// System.Single GPSData::longitude
-	float ___longitude_3;
+	float ___longitude_5;
 
 public:
-	inline static int32_t get_offset_of_latitude_2() { return static_cast<int32_t>(offsetof(GPSData_t207763284, ___latitude_2)); }
-	inline float get_latitude_2() const { return ___latitude_2; }
-	inline float* get_address_of_latitude_2() { return &___latitude_2; }
-	inline void set_latitude_2(float value)
+	inline static int32_t get_offset_of_latitude_4() { return static_cast<int32_t>(offsetof(GPSData_t207763284, ___latitude_4)); }
+	inline float get_latitude_4() const { return ___latitude_4; }
+	inline float* get_address_of_latitude_4() { return &___latitude_4; }
+	inline void set_latitude_4(float value)
 	{
-		___latitude_2 = value;
+		___latitude_4 = value;
 	}
 
-	inline static int32_t get_offset_of_longitude_3() { return static_cast<int32_t>(offsetof(GPSData_t207763284, ___longitude_3)); }
-	inline float get_longitude_3() const { return ___longitude_3; }
-	inline float* get_address_of_longitude_3() { return &___longitude_3; }
-	inline void set_longitude_3(float value)
+	inline static int32_t get_offset_of_longitude_5() { return static_cast<int32_t>(offsetof(GPSData_t207763284, ___longitude_5)); }
+	inline float get_longitude_5() const { return ___longitude_5; }
+	inline float* get_address_of_longitude_5() { return &___longitude_5; }
+	inline void set_longitude_5(float value)
 	{
-		___longitude_3 = value;
+		___longitude_5 = value;
 	}
 };
 

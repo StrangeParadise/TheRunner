@@ -231,6 +231,7 @@ UnityEngine.GameObject::GetComponentByName
 UnityEngine.GameObject::GetComponentInChildren
 UnityEngine.GameObject::GetComponentInParent
 UnityEngine.GameObject::Internal_AddComponentWithType
+UnityEngine.GameObject::FindGameObjectWithTag
 UnityEngine.GameObject::get_transform
 UnityEngine.GL::BeginInternal
 UnityEngine.GL::End

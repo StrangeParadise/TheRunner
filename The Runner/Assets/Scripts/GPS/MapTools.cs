@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using TheRunner.Tools;
 
 public class MapTools : MonoBehaviour {
@@ -14,8 +12,6 @@ public class MapTools : MonoBehaviour {
 
 	private Camera mainCamera;
 
-	public GPSController IGPSController;
-
 	// Use this for initialization
 	void Start () {
 
@@ -25,8 +21,8 @@ public class MapTools : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		float latitude = IGPSController.gps.getLatitude();
-		float longitude = IGPSController.gps.getLongitude();
+        float latitude = GPSData.s_Instance.getLatitude();
+        float longitude = GPSData.s_Instance.getLongitude();
 		if (firstTime) {
 			if (latitude != 0) {
 				latitudeO = latitude;

@@ -14,8 +14,6 @@
 
 // UnityEngine.Camera
 struct Camera_t189460977;
-// GPSController
-struct GPSController_t2272977524;
 
 
 
@@ -42,8 +40,6 @@ public:
 	bool ___firstTime_6;
 	// UnityEngine.Camera MapTools::mainCamera
 	Camera_t189460977 * ___mainCamera_7;
-	// GPSController MapTools::IGPSController
-	GPSController_t2272977524 * ___IGPSController_8;
 
 public:
 	inline static int32_t get_offset_of_radius_2() { return static_cast<int32_t>(offsetof(MapTools_t3308069217, ___radius_2)); }
@@ -93,15 +89,6 @@ public:
 	{
 		___mainCamera_7 = value;
 		Il2CppCodeGenWriteBarrier(&___mainCamera_7, value);
-	}
-
-	inline static int32_t get_offset_of_IGPSController_8() { return static_cast<int32_t>(offsetof(MapTools_t3308069217, ___IGPSController_8)); }
-	inline GPSController_t2272977524 * get_IGPSController_8() const { return ___IGPSController_8; }
-	inline GPSController_t2272977524 ** get_address_of_IGPSController_8() { return &___IGPSController_8; }
-	inline void set_IGPSController_8(GPSController_t2272977524 * value)
-	{
-		___IGPSController_8 = value;
-		Il2CppCodeGenWriteBarrier(&___IGPSController_8, value);
 	}
 };
 

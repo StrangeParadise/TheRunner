@@ -24,10 +24,10 @@ public class Map : MonoBehaviour {
 	private string key2 = "&key=AIzaSyDkFTum1BgoY5gD92vkLlnavRQnnYQKKiM";
 
 	void Update () {
-		latitude  = gpsController.gps.getLatitude();
-		longitude = gpsController.gps.getLongitude();
-		mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
-		StartCoroutine (mapCoroutine); //restart the coroutine
+        latitude  = GPSData.s_Instance.getLatitude();
+        longitude = GPSData.s_Instance.getLongitude();
+		//mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
+		//StartCoroutine (mapCoroutine); //restart the coroutine
 
 
 //		if (terminal != null && gpsController != null) {

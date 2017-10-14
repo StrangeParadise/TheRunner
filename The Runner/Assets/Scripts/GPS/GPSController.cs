@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 
 
 
 public class GPSController : MonoBehaviour {
-
-	public GPSData gps;
-
+    
 	void Start() {
-		gps = new GPSData ();
 	}
 
 	private IEnumerator StartLocationService()
@@ -34,7 +29,7 @@ public class GPSController : MonoBehaviour {
 			yield break;
 		}
 
-		gps.updateGpsData(Input.location.lastData.latitude, Input.location.lastData.longitude);	
+        GPSData.s_Instance.updateGpsData(Input.location.lastData.latitude, Input.location.lastData.longitude);	
 
 		yield break;
 	}
@@ -47,5 +42,3 @@ public class GPSController : MonoBehaviour {
 		StartCoroutine(StartLocationService());
 	}
 }
-
-

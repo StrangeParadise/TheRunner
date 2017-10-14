@@ -12,8 +12,6 @@
 
 #include "mscorlib_System_Object2689449295.h"
 
-// GPSController
-struct GPSController_t2272977524;
 // System.Object
 struct Il2CppObject;
 
@@ -32,14 +30,12 @@ struct  U3CStartLocationServiceU3Ec__Iterator0_t2676618990  : public Il2CppObjec
 public:
 	// System.Int32 GPSController/<StartLocationService>c__Iterator0::<maxWait>__0
 	int32_t ___U3CmaxWaitU3E__0_0;
-	// GPSController GPSController/<StartLocationService>c__Iterator0::$this
-	GPSController_t2272977524 * ___U24this_1;
 	// System.Object GPSController/<StartLocationService>c__Iterator0::$current
-	Il2CppObject * ___U24current_2;
+	Il2CppObject * ___U24current_1;
 	// System.Boolean GPSController/<StartLocationService>c__Iterator0::$disposing
-	bool ___U24disposing_3;
+	bool ___U24disposing_2;
 	// System.Int32 GPSController/<StartLocationService>c__Iterator0::$PC
-	int32_t ___U24PC_4;
+	int32_t ___U24PC_3;
 
 public:
 	inline static int32_t get_offset_of_U3CmaxWaitU3E__0_0() { return static_cast<int32_t>(offsetof(U3CStartLocationServiceU3Ec__Iterator0_t2676618990, ___U3CmaxWaitU3E__0_0)); }
@@ -50,38 +46,29 @@ public:
 		___U3CmaxWaitU3E__0_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U24this_1() { return static_cast<int32_t>(offsetof(U3CStartLocationServiceU3Ec__Iterator0_t2676618990, ___U24this_1)); }
-	inline GPSController_t2272977524 * get_U24this_1() const { return ___U24this_1; }
-	inline GPSController_t2272977524 ** get_address_of_U24this_1() { return &___U24this_1; }
-	inline void set_U24this_1(GPSController_t2272977524 * value)
+	inline static int32_t get_offset_of_U24current_1() { return static_cast<int32_t>(offsetof(U3CStartLocationServiceU3Ec__Iterator0_t2676618990, ___U24current_1)); }
+	inline Il2CppObject * get_U24current_1() const { return ___U24current_1; }
+	inline Il2CppObject ** get_address_of_U24current_1() { return &___U24current_1; }
+	inline void set_U24current_1(Il2CppObject * value)
 	{
-		___U24this_1 = value;
-		Il2CppCodeGenWriteBarrier(&___U24this_1, value);
+		___U24current_1 = value;
+		Il2CppCodeGenWriteBarrier(&___U24current_1, value);
 	}
 
-	inline static int32_t get_offset_of_U24current_2() { return static_cast<int32_t>(offsetof(U3CStartLocationServiceU3Ec__Iterator0_t2676618990, ___U24current_2)); }
-	inline Il2CppObject * get_U24current_2() const { return ___U24current_2; }
-	inline Il2CppObject ** get_address_of_U24current_2() { return &___U24current_2; }
-	inline void set_U24current_2(Il2CppObject * value)
+	inline static int32_t get_offset_of_U24disposing_2() { return static_cast<int32_t>(offsetof(U3CStartLocationServiceU3Ec__Iterator0_t2676618990, ___U24disposing_2)); }
+	inline bool get_U24disposing_2() const { return ___U24disposing_2; }
+	inline bool* get_address_of_U24disposing_2() { return &___U24disposing_2; }
+	inline void set_U24disposing_2(bool value)
 	{
-		___U24current_2 = value;
-		Il2CppCodeGenWriteBarrier(&___U24current_2, value);
+		___U24disposing_2 = value;
 	}
 
-	inline static int32_t get_offset_of_U24disposing_3() { return static_cast<int32_t>(offsetof(U3CStartLocationServiceU3Ec__Iterator0_t2676618990, ___U24disposing_3)); }
-	inline bool get_U24disposing_3() const { return ___U24disposing_3; }
-	inline bool* get_address_of_U24disposing_3() { return &___U24disposing_3; }
-	inline void set_U24disposing_3(bool value)
+	inline static int32_t get_offset_of_U24PC_3() { return static_cast<int32_t>(offsetof(U3CStartLocationServiceU3Ec__Iterator0_t2676618990, ___U24PC_3)); }
+	inline int32_t get_U24PC_3() const { return ___U24PC_3; }
+	inline int32_t* get_address_of_U24PC_3() { return &___U24PC_3; }
+	inline void set_U24PC_3(int32_t value)
 	{
-		___U24disposing_3 = value;
-	}
-
-	inline static int32_t get_offset_of_U24PC_4() { return static_cast<int32_t>(offsetof(U3CStartLocationServiceU3Ec__Iterator0_t2676618990, ___U24PC_4)); }
-	inline int32_t get_U24PC_4() const { return ___U24PC_4; }
-	inline int32_t* get_address_of_U24PC_4() { return &___U24PC_4; }
-	inline void set_U24PC_4(int32_t value)
-	{
-		___U24PC_4 = value;
+		___U24PC_3 = value;
 	}
 };
 

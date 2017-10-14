@@ -16,7 +16,7 @@
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
-#include "UnityEngine_UnityEngine_Events_InvokableCall_2_gen3799696166.h"
+#include "UnityEngine_UnityEngine_Events_InvokableCall_1_gen438034436.h"
 #include "mscorlib_System_Object2689449295.h"
 #include "mscorlib_System_Reflection_MethodInfo3330546337.h"
 #include "mscorlib_System_Void1841601450.h"
@@ -24,10 +24,13 @@
 #include "mscorlib_System_Type1303803226.h"
 #include "UnityEngine_UnityEngine_Events_BaseInvokableCall2229564840.h"
 #include "mscorlib_System_Delegate3022476291.h"
-#include "UnityEngine_UnityEngine_Events_UnityAction_2_gen3784905282.h"
+#include "UnityEngine_UnityEngine_Events_UnityAction_1_gen3610293330.h"
 #include "mscorlib_System_String2029220233.h"
 #include "mscorlib_System_ArgumentException3259014390.h"
 #include "mscorlib_System_Boolean3825574718.h"
+#include "UnityEngine_UnityEngine_Vector22243707579.h"
+#include "UnityEngine_UnityEngine_Events_InvokableCall_2_gen3799696166.h"
+#include "UnityEngine_UnityEngine_Events_UnityAction_2_gen3784905282.h"
 #include "UnityEngine_UnityEngine_Events_InvokableCall_3_gen2191335654.h"
 #include "UnityEngine_UnityEngine_Events_UnityAction_3_gen3482433968.h"
 #include "UnityEngine_UnityEngine_Events_InvokableCall_4_gen2955480072.h"
@@ -44,8 +47,6 @@
 #include "UnityEngine_UnityEngine_Color2020392075.h"
 #include "UnityEngine_UnityEngine_Events_UnityAction_1_gen3051495417.h"
 #include "UnityEngine_UnityEngine_SceneManagement_Scene1684909666.h"
-#include "UnityEngine_UnityEngine_Events_UnityAction_1_gen3610293330.h"
-#include "UnityEngine_UnityEngine_Vector22243707579.h"
 #include "UnityEngine_UnityEngine_Events_UnityAction_2_gen1903595547.h"
 #include "UnityEngine_UnityEngine_SceneManagement_LoadSceneM2981886439.h"
 #include "UnityEngine_UnityEngine_Events_UnityAction_2_gen606618774.h"
@@ -61,7 +62,6 @@
 #include "UnityEngine_UnityEngine_Events_UnityEvent_1_gen2058742090.h"
 #include "UnityEngine_UnityEngine_Events_InvokableCall_1_gen214718932.h"
 #include "UnityEngine_UnityEngine_Events_UnityEvent_1_gen2282057594.h"
-#include "UnityEngine_UnityEngine_Events_InvokableCall_1_gen438034436.h"
 #include "UnityEngine_UnityEngine_Events_UnityEvent_2_gen1372135904.h"
 #include "UnityEngine_UnityEngine_Events_UnityEvent_3_gen3149477088.h"
 #include "UnityEngine_UnityEngine_Events_UnityEvent_4_gen2935245934.h"
@@ -153,8 +153,8 @@
 #include "UnityEngine_UI_UnityEngine_UI_ObjectPool_1_gen1235855446.h"
 #include "System_System_Collections_Generic_Stack_1_gen3777177449.h"
 
-// UnityEngine.Events.InvokableCall`2<System.Object,System.Object>
-struct InvokableCall_2_t3799696166;
+// UnityEngine.Events.InvokableCall`1<UnityEngine.Vector2>
+struct InvokableCall_1_t438034436;
 // System.Object
 struct Il2CppObject;
 // System.Reflection.MethodInfo
@@ -165,12 +165,16 @@ struct BaseInvokableCall_t2229564840;
 struct Type_t;
 // System.Delegate
 struct Delegate_t3022476291;
+// UnityEngine.Events.UnityAction`1<UnityEngine.Vector2>
+struct UnityAction_1_t3610293330;
 // System.Object[]
 struct ObjectU5BU5D_t3614634134;
 // System.ArgumentException
 struct ArgumentException_t3259014390;
 // System.String
 struct String_t;
+// UnityEngine.Events.InvokableCall`2<System.Object,System.Object>
+struct InvokableCall_2_t3799696166;
 // UnityEngine.Events.InvokableCall`3<System.Object,System.Object,System.Object>
 struct InvokableCall_3_t2191335654;
 // UnityEngine.Events.InvokableCall`4<System.Object,System.Object,System.Object,System.Object>
@@ -191,8 +195,6 @@ struct UnityAction_1_t3443095683;
 struct UnityAction_1_t3386977826;
 // UnityEngine.Events.UnityAction`1<UnityEngine.SceneManagement.Scene>
 struct UnityAction_1_t3051495417;
-// UnityEngine.Events.UnityAction`1<UnityEngine.Vector2>
-struct UnityAction_1_t3610293330;
 // UnityEngine.Events.UnityAction`2<System.Object,System.Object>
 struct UnityAction_2_t3784905282;
 // UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode>
@@ -332,9 +334,11 @@ struct List_1_t1612828713;
 // UnityEngine.UI.ObjectPool`1<System.Object>
 struct ObjectPool_1_t1235855446;
 extern Il2CppClass* Type_t_il2cpp_TypeInfo_var;
-extern const uint32_t InvokableCall_2__ctor_m974169948_MetadataUsageId;
+extern const uint32_t InvokableCall_1__ctor_m2837611051_MetadataUsageId;
 extern Il2CppClass* ArgumentException_t3259014390_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral3025533088;
+extern const uint32_t InvokableCall_1_Invoke_m3239892614_MetadataUsageId;
+extern const uint32_t InvokableCall_2__ctor_m974169948_MetadataUsageId;
 extern const uint32_t InvokableCall_2_Invoke_m1071013389_MetadataUsageId;
 extern const uint32_t InvokableCall_3__ctor_m3141607487_MetadataUsageId;
 extern const uint32_t InvokableCall_3_Invoke_m74557124_MetadataUsageId;
@@ -694,6 +698,12 @@ extern "C"  void BaseInvokableCall__ctor_m2877580597 (BaseInvokableCall_t2229564
 extern "C"  Type_t * Type_GetTypeFromHandle_m432505302 (Il2CppObject * __this /* static, unused */, RuntimeTypeHandle_t2330101084  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Delegate UnityEngineInternal.NetFxCoreExtensions::CreateDelegate(System.Reflection.MethodInfo,System.Type,System.Object)
 extern "C"  Delegate_t3022476291 * NetFxCoreExtensions_CreateDelegate_m2492743074 (Il2CppObject * __this /* static, unused */, MethodInfo_t * ___self0, Type_t * ___delegateType1, Il2CppObject * ___target2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Events.BaseInvokableCall::.ctor()
+extern "C"  void BaseInvokableCall__ctor_m1107507914 (BaseInvokableCall_t2229564840 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Delegate System.Delegate::Combine(System.Delegate,System.Delegate)
+extern "C"  Delegate_t3022476291 * Delegate_Combine_m3791207084 (Il2CppObject * __this /* static, unused */, Delegate_t3022476291 * p0, Delegate_t3022476291 * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Delegate System.Delegate::Remove(System.Delegate,System.Delegate)
+extern "C"  Delegate_t3022476291 * Delegate_Remove_m2626518725 (Il2CppObject * __this /* static, unused */, Delegate_t3022476291 * p0, Delegate_t3022476291 * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.ArgumentException::.ctor(System.String)
 extern "C"  void ArgumentException__ctor_m3739475201 (ArgumentException_t3259014390 * __this, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Events.BaseInvokableCall::AllowInvoke(System.Delegate)
@@ -855,6 +865,200 @@ extern "C"  bool Object_ReferenceEquals_m3900584722 (Il2CppObject * __this /* st
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void UnityEngine.Events.InvokableCall`1<UnityEngine.Vector2>::.ctor(System.Object,System.Reflection.MethodInfo)
+extern "C"  void InvokableCall_1__ctor_m2837611051_gshared (InvokableCall_1_t438034436 * __this, Il2CppObject * ___target0, MethodInfo_t * ___theFunction1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InvokableCall_1__ctor_m2837611051_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Il2CppObject * L_0 = ___target0;
+		MethodInfo_t * L_1 = ___theFunction1;
+		NullCheck((BaseInvokableCall_t2229564840 *)__this);
+		BaseInvokableCall__ctor_m2877580597((BaseInvokableCall_t2229564840 *)__this, (Il2CppObject *)L_0, (MethodInfo_t *)L_1, /*hidden argument*/NULL);
+		MethodInfo_t * L_2 = ___theFunction1;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_3 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, (RuntimeTypeHandle_t2330101084 )LoadTypeToken(IL2CPP_RGCTX_TYPE(method->declaring_type->rgctx_data, 0)), /*hidden argument*/NULL);
+		Il2CppObject * L_4 = ___target0;
+		Delegate_t3022476291 * L_5 = NetFxCoreExtensions_CreateDelegate_m2492743074(NULL /*static, unused*/, (MethodInfo_t *)L_2, (Type_t *)L_3, (Il2CppObject *)L_4, /*hidden argument*/NULL);
+		NullCheck((InvokableCall_1_t438034436 *)__this);
+		((  void (*) (InvokableCall_1_t438034436 *, UnityAction_1_t3610293330 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 2)->methodPointer)((InvokableCall_1_t438034436 *)__this, (UnityAction_1_t3610293330 *)((UnityAction_1_t3610293330 *)Castclass(L_5, IL2CPP_RGCTX_DATA(method->declaring_type->rgctx_data, 1))), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 2));
+		return;
+	}
+}
+// System.Void UnityEngine.Events.InvokableCall`1<UnityEngine.Vector2>::.ctor(UnityEngine.Events.UnityAction`1<T1>)
+extern "C"  void InvokableCall_1__ctor_m866952903_gshared (InvokableCall_1_t438034436 * __this, UnityAction_1_t3610293330 * ___action0, const MethodInfo* method)
+{
+	{
+		NullCheck((BaseInvokableCall_t2229564840 *)__this);
+		BaseInvokableCall__ctor_m1107507914((BaseInvokableCall_t2229564840 *)__this, /*hidden argument*/NULL);
+		UnityAction_1_t3610293330 * L_0 = ___action0;
+		NullCheck((InvokableCall_1_t438034436 *)__this);
+		((  void (*) (InvokableCall_1_t438034436 *, UnityAction_1_t3610293330 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 2)->methodPointer)((InvokableCall_1_t438034436 *)__this, (UnityAction_1_t3610293330 *)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 2));
+		return;
+	}
+}
+// System.Void UnityEngine.Events.InvokableCall`1<UnityEngine.Vector2>::add_Delegate(UnityEngine.Events.UnityAction`1<T1>)
+extern "C"  void InvokableCall_1_add_Delegate_m1013059220_gshared (InvokableCall_1_t438034436 * __this, UnityAction_1_t3610293330 * ___value0, const MethodInfo* method)
+{
+	UnityAction_1_t3610293330 * V_0 = NULL;
+	UnityAction_1_t3610293330 * V_1 = NULL;
+	{
+		UnityAction_1_t3610293330 * L_0 = (UnityAction_1_t3610293330 *)__this->get_Delegate_0();
+		V_0 = (UnityAction_1_t3610293330 *)L_0;
+	}
+
+IL_0007:
+	{
+		UnityAction_1_t3610293330 * L_1 = V_0;
+		V_1 = (UnityAction_1_t3610293330 *)L_1;
+		UnityAction_1_t3610293330 ** L_2 = (UnityAction_1_t3610293330 **)__this->get_address_of_Delegate_0();
+		UnityAction_1_t3610293330 * L_3 = V_1;
+		UnityAction_1_t3610293330 * L_4 = ___value0;
+		Delegate_t3022476291 * L_5 = Delegate_Combine_m3791207084(NULL /*static, unused*/, (Delegate_t3022476291 *)L_3, (Delegate_t3022476291 *)L_4, /*hidden argument*/NULL);
+		UnityAction_1_t3610293330 * L_6 = V_0;
+		UnityAction_1_t3610293330 * L_7 = InterlockedCompareExchangeImpl<UnityAction_1_t3610293330 *>((UnityAction_1_t3610293330 **)L_2, (UnityAction_1_t3610293330 *)((UnityAction_1_t3610293330 *)Castclass(L_5, IL2CPP_RGCTX_DATA(method->declaring_type->rgctx_data, 1))), (UnityAction_1_t3610293330 *)L_6);
+		V_0 = (UnityAction_1_t3610293330 *)L_7;
+		UnityAction_1_t3610293330 * L_8 = V_0;
+		UnityAction_1_t3610293330 * L_9 = V_1;
+		if ((!(((Il2CppObject*)(UnityAction_1_t3610293330 *)L_8) == ((Il2CppObject*)(UnityAction_1_t3610293330 *)L_9))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.Events.InvokableCall`1<UnityEngine.Vector2>::remove_Delegate(UnityEngine.Events.UnityAction`1<T1>)
+extern "C"  void InvokableCall_1_remove_Delegate_m3619329377_gshared (InvokableCall_1_t438034436 * __this, UnityAction_1_t3610293330 * ___value0, const MethodInfo* method)
+{
+	UnityAction_1_t3610293330 * V_0 = NULL;
+	UnityAction_1_t3610293330 * V_1 = NULL;
+	{
+		UnityAction_1_t3610293330 * L_0 = (UnityAction_1_t3610293330 *)__this->get_Delegate_0();
+		V_0 = (UnityAction_1_t3610293330 *)L_0;
+	}
+
+IL_0007:
+	{
+		UnityAction_1_t3610293330 * L_1 = V_0;
+		V_1 = (UnityAction_1_t3610293330 *)L_1;
+		UnityAction_1_t3610293330 ** L_2 = (UnityAction_1_t3610293330 **)__this->get_address_of_Delegate_0();
+		UnityAction_1_t3610293330 * L_3 = V_1;
+		UnityAction_1_t3610293330 * L_4 = ___value0;
+		Delegate_t3022476291 * L_5 = Delegate_Remove_m2626518725(NULL /*static, unused*/, (Delegate_t3022476291 *)L_3, (Delegate_t3022476291 *)L_4, /*hidden argument*/NULL);
+		UnityAction_1_t3610293330 * L_6 = V_0;
+		UnityAction_1_t3610293330 * L_7 = InterlockedCompareExchangeImpl<UnityAction_1_t3610293330 *>((UnityAction_1_t3610293330 **)L_2, (UnityAction_1_t3610293330 *)((UnityAction_1_t3610293330 *)Castclass(L_5, IL2CPP_RGCTX_DATA(method->declaring_type->rgctx_data, 1))), (UnityAction_1_t3610293330 *)L_6);
+		V_0 = (UnityAction_1_t3610293330 *)L_7;
+		UnityAction_1_t3610293330 * L_8 = V_0;
+		UnityAction_1_t3610293330 * L_9 = V_1;
+		if ((!(((Il2CppObject*)(UnityAction_1_t3610293330 *)L_8) == ((Il2CppObject*)(UnityAction_1_t3610293330 *)L_9))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.Events.InvokableCall`1<UnityEngine.Vector2>::Invoke(System.Object[])
+extern "C"  void InvokableCall_1_Invoke_m3239892614_gshared (InvokableCall_1_t438034436 * __this, ObjectU5BU5D_t3614634134* ___args0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InvokableCall_1_Invoke_m3239892614_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		ObjectU5BU5D_t3614634134* L_0 = ___args0;
+		NullCheck(L_0);
+		if ((((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_0)->max_length))))) == ((int32_t)1)))
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		ArgumentException_t3259014390 * L_1 = (ArgumentException_t3259014390 *)il2cpp_codegen_object_new(ArgumentException_t3259014390_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3739475201(L_1, (String_t*)_stringLiteral3025533088, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0015:
+	{
+		ObjectU5BU5D_t3614634134* L_2 = ___args0;
+		NullCheck(L_2);
+		int32_t L_3 = 0;
+		Il2CppObject * L_4 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
+		((  void (*) (Il2CppObject * /* static, unused */, Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4)->methodPointer)(NULL /*static, unused*/, (Il2CppObject *)L_4, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4));
+		UnityAction_1_t3610293330 * L_5 = (UnityAction_1_t3610293330 *)__this->get_Delegate_0();
+		bool L_6 = BaseInvokableCall_AllowInvoke_m88556325(NULL /*static, unused*/, (Delegate_t3022476291 *)L_5, /*hidden argument*/NULL);
+		if (!L_6)
+		{
+			goto IL_0040;
+		}
+	}
+	{
+		UnityAction_1_t3610293330 * L_7 = (UnityAction_1_t3610293330 *)__this->get_Delegate_0();
+		ObjectU5BU5D_t3614634134* L_8 = ___args0;
+		NullCheck(L_8);
+		int32_t L_9 = 0;
+		Il2CppObject * L_10 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		NullCheck((UnityAction_1_t3610293330 *)L_7);
+		((  void (*) (UnityAction_1_t3610293330 *, Vector2_t2243707579 , const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 6)->methodPointer)((UnityAction_1_t3610293330 *)L_7, (Vector2_t2243707579 )((*(Vector2_t2243707579 *)((Vector2_t2243707579 *)UnBox(L_10, IL2CPP_RGCTX_DATA(method->declaring_type->rgctx_data, 5))))), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 6));
+	}
+
+IL_0040:
+	{
+		return;
+	}
+}
+// System.Boolean UnityEngine.Events.InvokableCall`1<UnityEngine.Vector2>::Find(System.Object,System.Reflection.MethodInfo)
+extern "C"  bool InvokableCall_1_Find_m4182726010_gshared (InvokableCall_1_t438034436 * __this, Il2CppObject * ___targetObj0, MethodInfo_t * ___method1, const MethodInfo* method)
+{
+	bool V_0 = false;
+	int32_t G_B3_0 = 0;
+	{
+		UnityAction_1_t3610293330 * L_0 = (UnityAction_1_t3610293330 *)__this->get_Delegate_0();
+		NullCheck((Delegate_t3022476291 *)L_0);
+		Il2CppObject * L_1 = Delegate_get_Target_m896795953((Delegate_t3022476291 *)L_0, /*hidden argument*/NULL);
+		Il2CppObject * L_2 = ___targetObj0;
+		if ((!(((Il2CppObject*)(Il2CppObject *)L_1) == ((Il2CppObject*)(Il2CppObject *)L_2))))
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		UnityAction_1_t3610293330 * L_3 = (UnityAction_1_t3610293330 *)__this->get_Delegate_0();
+		MethodInfo_t * L_4 = NetFxCoreExtensions_GetMethodInfo_m2715372889(NULL /*static, unused*/, (Delegate_t3022476291 *)L_3, /*hidden argument*/NULL);
+		MethodInfo_t * L_5 = ___method1;
+		NullCheck((Il2CppObject *)L_4);
+		bool L_6 = VirtFuncInvoker1< bool, Il2CppObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, (Il2CppObject *)L_4, (Il2CppObject *)L_5);
+		G_B3_0 = ((int32_t)(L_6));
+		goto IL_0026;
+	}
+
+IL_0025:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_0026:
+	{
+		V_0 = (bool)G_B3_0;
+		goto IL_002c;
+	}
+
+IL_002c:
+	{
+		bool L_7 = V_0;
+		return L_7;
+	}
+}
 // System.Void UnityEngine.Events.InvokableCall`2<System.Object,System.Object>::.ctor(System.Object,System.Reflection.MethodInfo)
 extern "C"  void InvokableCall_2__ctor_m974169948_gshared (InvokableCall_2_t3799696166 * __this, Il2CppObject * ___target0, MethodInfo_t * ___theFunction1, const MethodInfo* method)
 {

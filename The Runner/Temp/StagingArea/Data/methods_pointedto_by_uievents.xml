@@ -17,10 +17,21 @@
 			<method name="SetActive"/>
 			<method name="SetActive"/>
 			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
 		</type>
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
-		<type fullname="ChatManager">
+		<type fullname="TheRunner.Login.LoginController">
+			<method name="Login"/>
+		</type>
+		<type fullname="TheRunner.Chat.ChatManager">
 			<method name="Send"/>
 		</type>
 		<type fullname="UnityEngine.Networking.Room">

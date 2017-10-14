@@ -7535,6 +7535,10 @@ extern "C" void SymmetricTransform_ThrowBadPaddingException_m2553969731 ();
 extern "C" void SymmetricTransform_FinalEncrypt_m952048093 ();
 extern "C" void SymmetricTransform_FinalDecrypt_m1391053911 ();
 extern "C" void SymmetricTransform_TransformFinalBlock_m631349995 ();
+extern "C" void Action__ctor_m2606471964 ();
+extern "C" void Action_Invoke_m3801112262 ();
+extern "C" void Action_BeginInvoke_m2008902573 ();
+extern "C" void Action_EndInvoke_m4281032350 ();
 extern "C" void Check_Source_m3385315029 ();
 extern "C" void Check_SourceAndPredicate_m2063478409 ();
 extern "C" void MonoTODOAttribute__ctor_m1425119999 ();
@@ -8483,6 +8487,7 @@ extern "C" void GameObject_get_activeSelf_m313590879 ();
 extern "C" void GameObject_get_activeInHierarchy_m4242915935 ();
 extern "C" void GameObject_get_tag_m1425941094 ();
 extern "C" void GameObject_set_tag_m717375123 ();
+extern "C" void GameObject_FindGameObjectWithTag_m829057129 ();
 extern "C" void GameObject_SendMessage_m71956653 ();
 extern "C" void GameObject_Internal_AddComponentWithType_m214735204 ();
 extern "C" void GameObject_AddComponent_m3757565614 ();
@@ -10328,6 +10333,7 @@ extern "C" void Vector2_get_right_m28012078 ();
 extern "C" void Vector3__ctor_m2638739322_AdjustorThunk ();
 extern "C" void Vector3__ctor_m2720820983_AdjustorThunk ();
 extern "C" void Vector3_Lerp_m2935648359 ();
+extern "C" void Vector3_MoveTowards_m1358638081 ();
 extern "C" void Vector3_get_Item_m3616014016_AdjustorThunk ();
 extern "C" void Vector3_set_Item_m499708011_AdjustorThunk ();
 extern "C" void Vector3_Set_m61618334_AdjustorThunk ();
@@ -13375,32 +13381,43 @@ extern "C" void AR_Update_m3244983845 ();
 extern "C" void ChatController__ctor_m281900101 ();
 extern "C" void ChatController_Start_m1354071973 ();
 extern "C" void ChatController_Update_m1939549468 ();
-extern "C" void ChatManager__ctor_m3800112208 ();
-extern "C" void ChatManager_Start_m242820332 ();
-extern "C" void ChatManager_OnGUI_m1334155140 ();
-extern "C" void ChatManager_Update_m2680425267 ();
-extern "C" void ChatManager_Download_m659343066 ();
-extern "C" void ChatManager_Send_m1864909104 ();
-extern "C" void ChatManager_ServerSend_m2720164729 ();
-extern "C" void ChatManager_OutputToScreen_m177540504 ();
-extern "C" void U3CServerSendU3Ec__Iterator0__ctor_m1989518995 ();
-extern "C" void U3CServerSendU3Ec__Iterator0_MoveNext_m1173577137 ();
-extern "C" void U3CServerSendU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1936333717 ();
-extern "C" void U3CServerSendU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m1542290205 ();
-extern "C" void U3CServerSendU3Ec__Iterator0_Dispose_m1899960926 ();
-extern "C" void U3CServerSendU3Ec__Iterator0_Reset_m2783850324 ();
+extern "C" void CountDownController__ctor_m3062782466 ();
+extern "C" void CountDownController_Start_m2361129142 ();
+extern "C" void CountDownController_RpcUpdateCountdown_m1433628092 ();
+extern "C" void CountDownController_UNetVersion_m1747352348 ();
+extern "C" void CountDownController_InvokeRpcRpcUpdateCountdown_m3870547662 ();
+extern "C" void CountDownController_CallRpcUpdateCountdown_m1742661568 ();
+extern "C" void CountDownController__cctor_m2695522193 ();
+extern "C" void CountDownController_OnSerialize_m2308357738 ();
+extern "C" void CountDownController_OnDeserialize_m1019881643 ();
+extern "C" void CountDownServer__ctor_m1457102563 ();
+extern "C" void CountDownServer_OnStartServer_m1487289155 ();
+extern "C" void CountDownServer_CountdownRoutine_m843258866 ();
+extern "C" void CountDownServer_UNetVersion_m290064347 ();
+extern "C" void CountDownServer_OnSerialize_m1852400537 ();
+extern "C" void CountDownServer_OnDeserialize_m3153445116 ();
+extern "C" void U3CCountdownRoutineU3Ec__Iterator0__ctor_m2998263110 ();
+extern "C" void U3CCountdownRoutineU3Ec__Iterator0_MoveNext_m3526668402 ();
+extern "C" void U3CCountdownRoutineU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m4028680062 ();
+extern "C" void U3CCountdownRoutineU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m1638849334 ();
+extern "C" void U3CCountdownRoutineU3Ec__Iterator0_Dispose_m2823084599 ();
+extern "C" void U3CCountdownRoutineU3Ec__Iterator0_Reset_m1277081309 ();
 extern "C" void GameController__ctor_m1439649957 ();
+extern "C" void GameController_OnStartServer_m2196495173 ();
+extern "C" void GameController_Start_m239487205 ();
 extern "C" void GameController_Update_m1556003900 ();
-extern "C" void GameController_rotateMapWithCamera_m4088657527 ();
-extern "C" void GameController_showMap_m4046211700 ();
-extern "C" void GameController_positionMapWithCamera_m3500126895 ();
-extern "C" void GameController_FadeTo_m2984478648 ();
-extern "C" void U3CFadeToU3Ec__Iterator0__ctor_m1969203514 ();
-extern "C" void U3CFadeToU3Ec__Iterator0_MoveNext_m3183119462 ();
-extern "C" void U3CFadeToU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m711732984 ();
-extern "C" void U3CFadeToU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m343063456 ();
-extern "C" void U3CFadeToU3Ec__Iterator0_Dispose_m3274358903 ();
-extern "C" void U3CFadeToU3Ec__Iterator0_Reset_m220640133 ();
+extern "C" void GameController_planeFlyBy_m1593041911 ();
+extern "C" void GameController_CountdownRoutine_m3066258260 ();
+extern "C" void GameController_getElapsedTime_m1186069389 ();
+extern "C" void GameController_UNetVersion_m52981577 ();
+extern "C" void GameController_OnSerialize_m2632041711 ();
+extern "C" void GameController_OnDeserialize_m2278417070 ();
+extern "C" void U3CCountdownRoutineU3Ec__Iterator0__ctor_m1595830836 ();
+extern "C" void U3CCountdownRoutineU3Ec__Iterator0_MoveNext_m3206239252 ();
+extern "C" void U3CCountdownRoutineU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3033006514 ();
+extern "C" void U3CCountdownRoutineU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m4255316378 ();
+extern "C" void U3CCountdownRoutineU3Ec__Iterator0_Dispose_m1588479185 ();
+extern "C" void U3CCountdownRoutineU3Ec__Iterator0_Reset_m2041010527 ();
 extern "C" void GPSController__ctor_m3430003991 ();
 extern "C" void GPSController_Start_m4152392635 ();
 extern "C" void GPSController_StartLocationService_m497030285 ();
@@ -13420,32 +13437,6 @@ extern "C" void HandMapController_Update_m836850453 ();
 extern "C" void HollowCircle__ctor_m1560708842 ();
 extern "C" void HollowCircle_Start_m2284073694 ();
 extern "C" void HollowCircle_CreatePoints_m2954146693 ();
-extern "C" void LoginController__ctor_m502456888 ();
-extern "C" void LoginController_OnGUI_m1867659084 ();
-extern "C" void LoginController_Login_m2432314419 ();
-extern "C" void LoginController_CreateAccount_m2030621533 ();
-extern "C" void LoginController_Login_m2979741121 ();
-extern "C" void LoginController_CreateAccount_m2143445743 ();
-extern "C" void LoginController_loadGame_m1724943120 ();
-extern "C" void LoginController_loadGameAsync_m378967826 ();
-extern "C" void U3CCreateAccountU3Ec__Iterator1__ctor_m483380156 ();
-extern "C" void U3CCreateAccountU3Ec__Iterator1_MoveNext_m1149566504 ();
-extern "C" void U3CCreateAccountU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2760698462 ();
-extern "C" void U3CCreateAccountU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m2500956294 ();
-extern "C" void U3CCreateAccountU3Ec__Iterator1_Dispose_m414993863 ();
-extern "C" void U3CCreateAccountU3Ec__Iterator1_Reset_m2784646105 ();
-extern "C" void U3CloadGameAsyncU3Ec__Iterator2__ctor_m122795602 ();
-extern "C" void U3CloadGameAsyncU3Ec__Iterator2_MoveNext_m2738996562 ();
-extern "C" void U3CloadGameAsyncU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m4132680188 ();
-extern "C" void U3CloadGameAsyncU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m1464714132 ();
-extern "C" void U3CloadGameAsyncU3Ec__Iterator2_Dispose_m3696693539 ();
-extern "C" void U3CloadGameAsyncU3Ec__Iterator2_Reset_m543909445 ();
-extern "C" void U3CLoginU3Ec__Iterator0__ctor_m3330163823 ();
-extern "C" void U3CLoginU3Ec__Iterator0_MoveNext_m3780988629 ();
-extern "C" void U3CLoginU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1294965773 ();
-extern "C" void U3CLoginU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m906646645 ();
-extern "C" void U3CLoginU3Ec__Iterator0_Dispose_m134809238 ();
-extern "C" void U3CLoginU3Ec__Iterator0_Reset_m1456588996 ();
 extern "C" void Map__ctor_m2382724703 ();
 extern "C" void Map_Update_m3867277220 ();
 extern "C" void Map_GetGoogleMap_m3075677944 ();
@@ -13460,6 +13451,36 @@ extern "C" void MapTools__ctor_m632582472 ();
 extern "C" void MapTools_Start_m3847571680 ();
 extern "C" void MapTools_Update_m2536679305 ();
 extern "C" void MapTools_mapGPS_m2811930864 ();
+extern "C" void PlaneMove__ctor_m3106900518 ();
+extern "C" void PlaneMove_Start_m78236054 ();
+extern "C" void PlaneMove_Update_m1957397273 ();
+extern "C" void PlaneMove_MoveOverSpeed_m2595278014 ();
+extern "C" void PlaneMove_MoveOverSeconds_m120187536 ();
+extern "C" void U3CMoveOverSecondsU3Ec__Iterator1__ctor_m1032001717 ();
+extern "C" void U3CMoveOverSecondsU3Ec__Iterator1_MoveNext_m4046610251 ();
+extern "C" void U3CMoveOverSecondsU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3572447311 ();
+extern "C" void U3CMoveOverSecondsU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m1799383927 ();
+extern "C" void U3CMoveOverSecondsU3Ec__Iterator1_Dispose_m3366350256 ();
+extern "C" void U3CMoveOverSecondsU3Ec__Iterator1_Reset_m1619962466 ();
+extern "C" void U3CMoveOverSpeedU3Ec__Iterator0__ctor_m1192160426 ();
+extern "C" void U3CMoveOverSpeedU3Ec__Iterator0_MoveNext_m4036221366 ();
+extern "C" void U3CMoveOverSpeedU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m690420336 ();
+extern "C" void U3CMoveOverSpeedU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m3379227208 ();
+extern "C" void U3CMoveOverSpeedU3Ec__Iterator0_Dispose_m2249884295 ();
+extern "C" void U3CMoveOverSpeedU3Ec__Iterator0_Reset_m2008917877 ();
+extern "C" void PlayerController__ctor_m3280132936 ();
+extern "C" void PlayerController_Start_m3606284888 ();
+extern "C" void PlayerController_Update_m4228472513 ();
+extern "C" void PlayerController_rotateMapWithCamera_m1309297544 ();
+extern "C" void PlayerController_showMap_m519413499 ();
+extern "C" void PlayerController_positionMapWithCamera_m2915694368 ();
+extern "C" void PlayerController_FadeTo_m525465523 ();
+extern "C" void U3CFadeToU3Ec__Iterator0__ctor_m2138504013 ();
+extern "C" void U3CFadeToU3Ec__Iterator0_MoveNext_m1667540883 ();
+extern "C" void U3CFadeToU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3804467607 ();
+extern "C" void U3CFadeToU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m2102700607 ();
+extern "C" void U3CFadeToU3Ec__Iterator0_Dispose_m3760671592 ();
+extern "C" void U3CFadeToU3Ec__Iterator0_Reset_m264949546 ();
 extern "C" void PlayerMove__ctor_m161887621 ();
 extern "C" void PlayerMove_Start_m490112797 ();
 extern "C" void PlayerMove_Update_m1466995334 ();
@@ -13472,9 +13493,6 @@ extern "C" void SimpleChat_draw_m869370447 ();
 extern "C" void testExtendClass__ctor_m3783322273 ();
 extern "C" void testExtendClass_Start_m4225937281 ();
 extern "C" void testExtendClass_OnGUI_m134770207 ();
-extern "C" void testMoveScript__ctor_m2105956303 ();
-extern "C" void testMoveScript_Start_m1820570707 ();
-extern "C" void testMoveScript_Update_m1868215872 ();
 extern "C" void TestRedManRotation__ctor_m1249793286 ();
 extern "C" void TestRedManRotation_Start_m2940920774 ();
 extern "C" void TestRedManRotation_Update_m2635126333 ();
@@ -13484,6 +13502,58 @@ extern "C" void testTwoChat_receiveMessage1_m1668380777 ();
 extern "C" void testTwoChat_receiveMessage2_m2913369038 ();
 extern "C" void testTwoChat_OnGUI_m3836617937 ();
 extern "C" void testTwoChat_displayChat_m520120199 ();
+extern "C" void ChatManager__ctor_m21360521 ();
+extern "C" void ChatManager_Start_m2655459449 ();
+extern "C" void ChatManager_OnGUI_m4222182063 ();
+extern "C" void ChatManager_Update_m3623541978 ();
+extern "C" void ChatManager_Download_m1287449121 ();
+extern "C" void ChatManager_Send_m3739575073 ();
+extern "C" void ChatManager_ServerSend_m2764951666 ();
+extern "C" void ChatManager_OutputToScreen_m63120787 ();
+extern "C" void U3CServerSendU3Ec__Iterator0__ctor_m4060427682 ();
+extern "C" void U3CServerSendU3Ec__Iterator0_MoveNext_m1402106978 ();
+extern "C" void U3CServerSendU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m4265144876 ();
+extern "C" void U3CServerSendU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m4291576724 ();
+extern "C" void U3CServerSendU3Ec__Iterator0_Dispose_m2660867187 ();
+extern "C" void U3CServerSendU3Ec__Iterator0_Reset_m1367363029 ();
+extern "C" void PlayerDataManager__ctor_m2042869838 ();
+extern "C" void PlayerDataManager_get_currency_m983127016 ();
+extern "C" void PlayerDataManager_set_currency_m2932109165 ();
+extern "C" void PlayerDataManager_get_playerName_m1339100262 ();
+extern "C" void PlayerDataManager_set_playerName_m3256406221 ();
+extern "C" void PlayerDataManager_get_playerID_m934422119 ();
+extern "C" void PlayerDataManager_set_playerID_m1239378652 ();
+extern "C" void PlayerDataManager_get_playerLvl_m3750379890 ();
+extern "C" void PlayerDataManager_set_playerLvl_m1917596875 ();
+extern "C" void PlayerDataManager_Awake_m2675031475 ();
+extern "C" void LoginController__ctor_m2584700424 ();
+extern "C" void LoginController_OnGUI_m3552871784 ();
+extern "C" void LoginController_Login_m634597185 ();
+extern "C" void LoginController_CreateAccount_m3827365843 ();
+extern "C" void LoginController_Login_m2247391335 ();
+extern "C" void LoginController_CreateAccount_m3323843469 ();
+extern "C" void LoginController_loadGame_m1849392964 ();
+extern "C" void LoginController_loadGameAsync_m619844426 ();
+extern "C" void U3CCreateAccountU3Ec__Iterator1__ctor_m1112323080 ();
+extern "C" void U3CCreateAccountU3Ec__Iterator1_MoveNext_m1160351444 ();
+extern "C" void U3CCreateAccountU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m4236186354 ();
+extern "C" void U3CCreateAccountU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m613362586 ();
+extern "C" void U3CCreateAccountU3Ec__Iterator1_Dispose_m2414036601 ();
+extern "C" void U3CCreateAccountU3Ec__Iterator1_Reset_m1725388443 ();
+extern "C" void U3CloadGameAsyncU3Ec__Iterator2__ctor_m2912016098 ();
+extern "C" void U3CloadGameAsyncU3Ec__Iterator2_MoveNext_m3887653754 ();
+extern "C" void U3CloadGameAsyncU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3264190052 ();
+extern "C" void U3CloadGameAsyncU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m4078377084 ();
+extern "C" void U3CloadGameAsyncU3Ec__Iterator2_Dispose_m735904909 ();
+extern "C" void U3CloadGameAsyncU3Ec__Iterator2_Reset_m2714835647 ();
+extern "C" void U3CLoginU3Ec__Iterator0__ctor_m2422693265 ();
+extern "C" void U3CLoginU3Ec__Iterator0_MoveNext_m1430905043 ();
+extern "C" void U3CLoginU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2280044551 ();
+extern "C" void U3CLoginU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m3918313967 ();
+extern "C" void U3CLoginU3Ec__Iterator0_Dispose_m1985665902 ();
+extern "C" void U3CLoginU3Ec__Iterator0_Reset_m3108249708 ();
+extern "C" void testMoveScript__ctor_m55875538 ();
+extern "C" void testMoveScript_Update_m2874387877 ();
 extern "C" void TR_Toolbox__ctor_m3498229849 ();
 extern "C" void TR_Toolbox_rad_m831478589 ();
 extern "C" void TR_Toolbox_gps_transform_m2942405544 ();
@@ -13518,7 +13588,7 @@ extern "C" void testSingleChat_Start_m1190730460 ();
 extern "C" void testSingleChat_receiveMessage_m3194079398 ();
 extern "C" void testSingleChat_OnGUI_m361319688 ();
 extern "C" void testSingleChat_Main_m1511507263 ();
-extern const Il2CppMethodPointer g_MethodPointers[13504] = 
+extern const Il2CppMethodPointer g_MethodPointers[13574] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -21041,6 +21111,10 @@ extern const Il2CppMethodPointer g_MethodPointers[13504] =
 	SymmetricTransform_FinalEncrypt_m952048093,
 	SymmetricTransform_FinalDecrypt_m1391053911,
 	SymmetricTransform_TransformFinalBlock_m631349995,
+	Action__ctor_m2606471964,
+	Action_Invoke_m3801112262,
+	Action_BeginInvoke_m2008902573,
+	Action_EndInvoke_m4281032350,
 	Check_Source_m3385315029,
 	Check_SourceAndPredicate_m2063478409,
 	MonoTODOAttribute__ctor_m1425119999,
@@ -21989,6 +22063,7 @@ extern const Il2CppMethodPointer g_MethodPointers[13504] =
 	GameObject_get_activeInHierarchy_m4242915935,
 	GameObject_get_tag_m1425941094,
 	GameObject_set_tag_m717375123,
+	GameObject_FindGameObjectWithTag_m829057129,
 	GameObject_SendMessage_m71956653,
 	GameObject_Internal_AddComponentWithType_m214735204,
 	GameObject_AddComponent_m3757565614,
@@ -23834,6 +23909,7 @@ extern const Il2CppMethodPointer g_MethodPointers[13504] =
 	Vector3__ctor_m2638739322_AdjustorThunk,
 	Vector3__ctor_m2720820983_AdjustorThunk,
 	Vector3_Lerp_m2935648359,
+	Vector3_MoveTowards_m1358638081,
 	Vector3_get_Item_m3616014016_AdjustorThunk,
 	Vector3_set_Item_m499708011_AdjustorThunk,
 	Vector3_Set_m61618334_AdjustorThunk,
@@ -26881,32 +26957,43 @@ extern const Il2CppMethodPointer g_MethodPointers[13504] =
 	ChatController__ctor_m281900101,
 	ChatController_Start_m1354071973,
 	ChatController_Update_m1939549468,
-	ChatManager__ctor_m3800112208,
-	ChatManager_Start_m242820332,
-	ChatManager_OnGUI_m1334155140,
-	ChatManager_Update_m2680425267,
-	ChatManager_Download_m659343066,
-	ChatManager_Send_m1864909104,
-	ChatManager_ServerSend_m2720164729,
-	ChatManager_OutputToScreen_m177540504,
-	U3CServerSendU3Ec__Iterator0__ctor_m1989518995,
-	U3CServerSendU3Ec__Iterator0_MoveNext_m1173577137,
-	U3CServerSendU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1936333717,
-	U3CServerSendU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m1542290205,
-	U3CServerSendU3Ec__Iterator0_Dispose_m1899960926,
-	U3CServerSendU3Ec__Iterator0_Reset_m2783850324,
+	CountDownController__ctor_m3062782466,
+	CountDownController_Start_m2361129142,
+	CountDownController_RpcUpdateCountdown_m1433628092,
+	CountDownController_UNetVersion_m1747352348,
+	CountDownController_InvokeRpcRpcUpdateCountdown_m3870547662,
+	CountDownController_CallRpcUpdateCountdown_m1742661568,
+	CountDownController__cctor_m2695522193,
+	CountDownController_OnSerialize_m2308357738,
+	CountDownController_OnDeserialize_m1019881643,
+	CountDownServer__ctor_m1457102563,
+	CountDownServer_OnStartServer_m1487289155,
+	CountDownServer_CountdownRoutine_m843258866,
+	CountDownServer_UNetVersion_m290064347,
+	CountDownServer_OnSerialize_m1852400537,
+	CountDownServer_OnDeserialize_m3153445116,
+	U3CCountdownRoutineU3Ec__Iterator0__ctor_m2998263110,
+	U3CCountdownRoutineU3Ec__Iterator0_MoveNext_m3526668402,
+	U3CCountdownRoutineU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m4028680062,
+	U3CCountdownRoutineU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m1638849334,
+	U3CCountdownRoutineU3Ec__Iterator0_Dispose_m2823084599,
+	U3CCountdownRoutineU3Ec__Iterator0_Reset_m1277081309,
 	GameController__ctor_m1439649957,
+	GameController_OnStartServer_m2196495173,
+	GameController_Start_m239487205,
 	GameController_Update_m1556003900,
-	GameController_rotateMapWithCamera_m4088657527,
-	GameController_showMap_m4046211700,
-	GameController_positionMapWithCamera_m3500126895,
-	GameController_FadeTo_m2984478648,
-	U3CFadeToU3Ec__Iterator0__ctor_m1969203514,
-	U3CFadeToU3Ec__Iterator0_MoveNext_m3183119462,
-	U3CFadeToU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m711732984,
-	U3CFadeToU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m343063456,
-	U3CFadeToU3Ec__Iterator0_Dispose_m3274358903,
-	U3CFadeToU3Ec__Iterator0_Reset_m220640133,
+	GameController_planeFlyBy_m1593041911,
+	GameController_CountdownRoutine_m3066258260,
+	GameController_getElapsedTime_m1186069389,
+	GameController_UNetVersion_m52981577,
+	GameController_OnSerialize_m2632041711,
+	GameController_OnDeserialize_m2278417070,
+	U3CCountdownRoutineU3Ec__Iterator0__ctor_m1595830836,
+	U3CCountdownRoutineU3Ec__Iterator0_MoveNext_m3206239252,
+	U3CCountdownRoutineU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3033006514,
+	U3CCountdownRoutineU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m4255316378,
+	U3CCountdownRoutineU3Ec__Iterator0_Dispose_m1588479185,
+	U3CCountdownRoutineU3Ec__Iterator0_Reset_m2041010527,
 	GPSController__ctor_m3430003991,
 	GPSController_Start_m4152392635,
 	GPSController_StartLocationService_m497030285,
@@ -26926,32 +27013,6 @@ extern const Il2CppMethodPointer g_MethodPointers[13504] =
 	HollowCircle__ctor_m1560708842,
 	HollowCircle_Start_m2284073694,
 	HollowCircle_CreatePoints_m2954146693,
-	LoginController__ctor_m502456888,
-	LoginController_OnGUI_m1867659084,
-	LoginController_Login_m2432314419,
-	LoginController_CreateAccount_m2030621533,
-	LoginController_Login_m2979741121,
-	LoginController_CreateAccount_m2143445743,
-	LoginController_loadGame_m1724943120,
-	LoginController_loadGameAsync_m378967826,
-	U3CCreateAccountU3Ec__Iterator1__ctor_m483380156,
-	U3CCreateAccountU3Ec__Iterator1_MoveNext_m1149566504,
-	U3CCreateAccountU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2760698462,
-	U3CCreateAccountU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m2500956294,
-	U3CCreateAccountU3Ec__Iterator1_Dispose_m414993863,
-	U3CCreateAccountU3Ec__Iterator1_Reset_m2784646105,
-	U3CloadGameAsyncU3Ec__Iterator2__ctor_m122795602,
-	U3CloadGameAsyncU3Ec__Iterator2_MoveNext_m2738996562,
-	U3CloadGameAsyncU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m4132680188,
-	U3CloadGameAsyncU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m1464714132,
-	U3CloadGameAsyncU3Ec__Iterator2_Dispose_m3696693539,
-	U3CloadGameAsyncU3Ec__Iterator2_Reset_m543909445,
-	U3CLoginU3Ec__Iterator0__ctor_m3330163823,
-	U3CLoginU3Ec__Iterator0_MoveNext_m3780988629,
-	U3CLoginU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1294965773,
-	U3CLoginU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m906646645,
-	U3CLoginU3Ec__Iterator0_Dispose_m134809238,
-	U3CLoginU3Ec__Iterator0_Reset_m1456588996,
 	Map__ctor_m2382724703,
 	Map_Update_m3867277220,
 	Map_GetGoogleMap_m3075677944,
@@ -26966,6 +27027,36 @@ extern const Il2CppMethodPointer g_MethodPointers[13504] =
 	MapTools_Start_m3847571680,
 	MapTools_Update_m2536679305,
 	MapTools_mapGPS_m2811930864,
+	PlaneMove__ctor_m3106900518,
+	PlaneMove_Start_m78236054,
+	PlaneMove_Update_m1957397273,
+	PlaneMove_MoveOverSpeed_m2595278014,
+	PlaneMove_MoveOverSeconds_m120187536,
+	U3CMoveOverSecondsU3Ec__Iterator1__ctor_m1032001717,
+	U3CMoveOverSecondsU3Ec__Iterator1_MoveNext_m4046610251,
+	U3CMoveOverSecondsU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3572447311,
+	U3CMoveOverSecondsU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m1799383927,
+	U3CMoveOverSecondsU3Ec__Iterator1_Dispose_m3366350256,
+	U3CMoveOverSecondsU3Ec__Iterator1_Reset_m1619962466,
+	U3CMoveOverSpeedU3Ec__Iterator0__ctor_m1192160426,
+	U3CMoveOverSpeedU3Ec__Iterator0_MoveNext_m4036221366,
+	U3CMoveOverSpeedU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m690420336,
+	U3CMoveOverSpeedU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m3379227208,
+	U3CMoveOverSpeedU3Ec__Iterator0_Dispose_m2249884295,
+	U3CMoveOverSpeedU3Ec__Iterator0_Reset_m2008917877,
+	PlayerController__ctor_m3280132936,
+	PlayerController_Start_m3606284888,
+	PlayerController_Update_m4228472513,
+	PlayerController_rotateMapWithCamera_m1309297544,
+	PlayerController_showMap_m519413499,
+	PlayerController_positionMapWithCamera_m2915694368,
+	PlayerController_FadeTo_m525465523,
+	U3CFadeToU3Ec__Iterator0__ctor_m2138504013,
+	U3CFadeToU3Ec__Iterator0_MoveNext_m1667540883,
+	U3CFadeToU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3804467607,
+	U3CFadeToU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m2102700607,
+	U3CFadeToU3Ec__Iterator0_Dispose_m3760671592,
+	U3CFadeToU3Ec__Iterator0_Reset_m264949546,
 	PlayerMove__ctor_m161887621,
 	PlayerMove_Start_m490112797,
 	PlayerMove_Update_m1466995334,
@@ -26978,9 +27069,6 @@ extern const Il2CppMethodPointer g_MethodPointers[13504] =
 	testExtendClass__ctor_m3783322273,
 	testExtendClass_Start_m4225937281,
 	testExtendClass_OnGUI_m134770207,
-	testMoveScript__ctor_m2105956303,
-	testMoveScript_Start_m1820570707,
-	testMoveScript_Update_m1868215872,
 	TestRedManRotation__ctor_m1249793286,
 	TestRedManRotation_Start_m2940920774,
 	TestRedManRotation_Update_m2635126333,
@@ -26990,6 +27078,58 @@ extern const Il2CppMethodPointer g_MethodPointers[13504] =
 	testTwoChat_receiveMessage2_m2913369038,
 	testTwoChat_OnGUI_m3836617937,
 	testTwoChat_displayChat_m520120199,
+	ChatManager__ctor_m21360521,
+	ChatManager_Start_m2655459449,
+	ChatManager_OnGUI_m4222182063,
+	ChatManager_Update_m3623541978,
+	ChatManager_Download_m1287449121,
+	ChatManager_Send_m3739575073,
+	ChatManager_ServerSend_m2764951666,
+	ChatManager_OutputToScreen_m63120787,
+	U3CServerSendU3Ec__Iterator0__ctor_m4060427682,
+	U3CServerSendU3Ec__Iterator0_MoveNext_m1402106978,
+	U3CServerSendU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m4265144876,
+	U3CServerSendU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m4291576724,
+	U3CServerSendU3Ec__Iterator0_Dispose_m2660867187,
+	U3CServerSendU3Ec__Iterator0_Reset_m1367363029,
+	PlayerDataManager__ctor_m2042869838,
+	PlayerDataManager_get_currency_m983127016,
+	PlayerDataManager_set_currency_m2932109165,
+	PlayerDataManager_get_playerName_m1339100262,
+	PlayerDataManager_set_playerName_m3256406221,
+	PlayerDataManager_get_playerID_m934422119,
+	PlayerDataManager_set_playerID_m1239378652,
+	PlayerDataManager_get_playerLvl_m3750379890,
+	PlayerDataManager_set_playerLvl_m1917596875,
+	PlayerDataManager_Awake_m2675031475,
+	LoginController__ctor_m2584700424,
+	LoginController_OnGUI_m3552871784,
+	LoginController_Login_m634597185,
+	LoginController_CreateAccount_m3827365843,
+	LoginController_Login_m2247391335,
+	LoginController_CreateAccount_m3323843469,
+	LoginController_loadGame_m1849392964,
+	LoginController_loadGameAsync_m619844426,
+	U3CCreateAccountU3Ec__Iterator1__ctor_m1112323080,
+	U3CCreateAccountU3Ec__Iterator1_MoveNext_m1160351444,
+	U3CCreateAccountU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m4236186354,
+	U3CCreateAccountU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m613362586,
+	U3CCreateAccountU3Ec__Iterator1_Dispose_m2414036601,
+	U3CCreateAccountU3Ec__Iterator1_Reset_m1725388443,
+	U3CloadGameAsyncU3Ec__Iterator2__ctor_m2912016098,
+	U3CloadGameAsyncU3Ec__Iterator2_MoveNext_m3887653754,
+	U3CloadGameAsyncU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3264190052,
+	U3CloadGameAsyncU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m4078377084,
+	U3CloadGameAsyncU3Ec__Iterator2_Dispose_m735904909,
+	U3CloadGameAsyncU3Ec__Iterator2_Reset_m2714835647,
+	U3CLoginU3Ec__Iterator0__ctor_m2422693265,
+	U3CLoginU3Ec__Iterator0_MoveNext_m1430905043,
+	U3CLoginU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2280044551,
+	U3CLoginU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m3918313967,
+	U3CLoginU3Ec__Iterator0_Dispose_m1985665902,
+	U3CLoginU3Ec__Iterator0_Reset_m3108249708,
+	testMoveScript__ctor_m55875538,
+	testMoveScript_Update_m2874387877,
 	TR_Toolbox__ctor_m3498229849,
 	TR_Toolbox_rad_m831478589,
 	TR_Toolbox_gps_transform_m2942405544,
