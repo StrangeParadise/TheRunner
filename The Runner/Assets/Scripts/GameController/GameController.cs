@@ -48,7 +48,7 @@ public class GameController : MonoBehaviour {
 
 	void showMap () {
 		
-		if (mainCam.transform.eulerAngles.x > 50 && mainCam.transform.eulerAngles.x < 130) {
+		if (mainCam.transform.eulerAngles.x > 70 && mainCam.transform.eulerAngles.x < 130) {
 			this.GetComponent<Map> ().enabled = true;
 			map.GetComponent<RawImage>().color = new Color(1, 1, 1, 0);
 			mainCam.enabled = false;

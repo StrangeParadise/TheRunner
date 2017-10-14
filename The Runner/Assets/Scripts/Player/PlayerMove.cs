@@ -27,12 +27,7 @@ public class PlayerMove : NetworkBehaviour
 
 		// Camera should always bound with the player cube.
 		mainCamera = Camera.main;
-		isSeeker = false;
 
-		if (isLocalPlayer && NetworkServer.connections.Count > 0) {
-			isSeeker = true;
-		}
-		print ("有几个连接？ " + NetworkServer.connections.Count);
 
 	}
 
@@ -40,12 +35,21 @@ public class PlayerMove : NetworkBehaviour
 	// the gps coordinate to a local coordiante and share with other players.
 	void Update()
 	{
+		
 		if (NetworkServer.connections.Count > 0) {
 			latitudeO = MapTools.getLatO();
 			longitudeO = MapTools.getLonO();
+			if (isLocalPlayer) {
+				isSeeker = true;
+
+			} else {
+				isSeeker = false;
+			}
 		}
-		if (isSeeker)
-		{
+		if (isSeeker) {
+			this.color = Color.red;
+			ui.changeToSeek ();
+		} else {
 			this.color = Color.white;
 			ui.changeToHide ();
 		}
@@ -60,7 +64,7 @@ public class PlayerMove : NetworkBehaviour
 			MapTools.setLatO(latitudeO);
 			MapTools.setLonO(longitudeO);
 		}
-
+		CmdSet (MapTools.getLat(), MapTools.getLon());
 		latitude = MapTools.getLat();
 		longitude = MapTools.getLon();
 
@@ -75,13 +79,14 @@ public class PlayerMove : NetworkBehaviour
 
 		transform.position = new Vector3(x,y,z);
 		transform.rotation = mainCamera.transform.rotation;
-		/*
-                 players = GameObject.FindGameObjectsWithTag("Player");
-         foreach(GameObject p in players) {
-             
-         }
-       */
 
 	}
+
+	[Command]  
+	public void CmdSet(float lat, float lon)  
+	{  
+		longitude = lon;
+		latitude = lat;
+	}  
 
 }
