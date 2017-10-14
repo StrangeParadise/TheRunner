@@ -231,11 +231,8 @@ UnityEngine.GameObject::GetComponentByName
 UnityEngine.GameObject::GetComponentInChildren
 UnityEngine.GameObject::GetComponentInParent
 UnityEngine.GameObject::Internal_AddComponentWithType
-<<<<<<< HEAD
 UnityEngine.GameObject::FindGameObjectWithTag
-=======
 UnityEngine.GameObject::FindGameObjectsWithTag
->>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 UnityEngine.GameObject::get_transform
 UnityEngine.GL::BeginInternal
 UnityEngine.GL::End
@@ -539,6 +536,7 @@ UnityEngine.Quaternion::INTERNAL_CALL_Internal_ToEulerRad
 UnityEngine.Quaternion::INTERNAL_CALL_Inverse
 UnityEngine.Quaternion::INTERNAL_CALL_Slerp
 UnityEngine.Random::RandomRangeInt
+UnityEngine.Random::Range
 UnityEngine.RectOffset::get_bottom
 UnityEngine.RectOffset::get_horizontal
 UnityEngine.RectOffset::get_left

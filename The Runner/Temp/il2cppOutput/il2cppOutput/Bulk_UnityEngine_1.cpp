@@ -7471,7 +7471,6 @@ extern "C"  void GameObject_set_tag_m717375123 (GameObject_t1756533147 * __this,
 	_il2cpp_icall_func = (GameObject_set_tag_m717375123_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GameObject::set_tag(System.String)");
 	_il2cpp_icall_func(__this, ___value0);
 }
-<<<<<<< HEAD
 // UnityEngine.GameObject UnityEngine.GameObject::FindGameObjectWithTag(System.String)
 extern "C"  GameObject_t1756533147 * GameObject_FindGameObjectWithTag_m829057129 (Il2CppObject * __this /* static, unused */, String_t* ___tag0, const MethodInfo* method)
 {
@@ -7479,7 +7478,8 @@ extern "C"  GameObject_t1756533147 * GameObject_FindGameObjectWithTag_m829057129
 	static GameObject_FindGameObjectWithTag_m829057129_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (GameObject_FindGameObjectWithTag_m829057129_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GameObject::FindGameObjectWithTag(System.String)");
-=======
+	return _il2cpp_icall_func(___tag0);
+}
 // UnityEngine.GameObject[] UnityEngine.GameObject::FindGameObjectsWithTag(System.String)
 extern "C"  GameObjectU5BU5D_t3057952154* GameObject_FindGameObjectsWithTag_m2154478296 (Il2CppObject * __this /* static, unused */, String_t* ___tag0, const MethodInfo* method)
 {
@@ -7487,7 +7487,6 @@ extern "C"  GameObjectU5BU5D_t3057952154* GameObject_FindGameObjectsWithTag_m215
 	static GameObject_FindGameObjectsWithTag_m2154478296_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (GameObject_FindGameObjectsWithTag_m2154478296_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GameObject::FindGameObjectsWithTag(System.String)");
->>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 	return _il2cpp_icall_func(___tag0);
 }
 // System.Void UnityEngine.GameObject::SendMessage(System.String,System.Object,UnityEngine.SendMessageOptions)

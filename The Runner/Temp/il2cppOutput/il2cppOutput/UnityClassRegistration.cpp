@@ -130,7 +130,7 @@ class VideoPlayer;
 class WindZone; 
 namespace UI { class CanvasRenderer; } template <> void RegisterClass<UI::CanvasRenderer>();
 class Collider; template <> void RegisterClass<Collider>();
-class BoxCollider; 
+class BoxCollider; template <> void RegisterClass<BoxCollider>();
 class CapsuleCollider; 
 class CharacterController; template <> void RegisterClass<CharacterController>();
 class MeshCollider; 
@@ -157,15 +157,9 @@ class BillboardRenderer;
 class LineRenderer; template <> void RegisterClass<LineRenderer>();
 class MeshRenderer; template <> void RegisterClass<MeshRenderer>();
 class ParticleRenderer; 
-<<<<<<< HEAD
 class ParticleSystemRenderer; template <> void RegisterClass<ParticleSystemRenderer>();
-class SkinnedMeshRenderer; 
-class SpriteRenderer; template <> void RegisterClass<SpriteRenderer>();
-=======
-class ParticleSystemRenderer; 
 class SkinnedMeshRenderer; template <> void RegisterClass<SkinnedMeshRenderer>();
-class SpriteRenderer; 
->>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
+class SpriteRenderer; template <> void RegisterClass<SpriteRenderer>();
 class TrailRenderer; 
 class Rigidbody; template <> void RegisterClass<Rigidbody>();
 class Rigidbody2D; template <> void RegisterClass<Rigidbody2D>();
@@ -195,8 +189,8 @@ class LightProbes; template <> void RegisterClass<LightProbes>();
 class Material; template <> void RegisterClass<Material>();
 class ProceduralMaterial; 
 class Mesh; template <> void RegisterClass<Mesh>();
-class Motion; template <> void RegisterClass<Motion>();
-class AnimationClip; template <> void RegisterClass<AnimationClip>();
+class Motion; 
+class AnimationClip; 
 class PreviewAnimationClip; 
 class NavMeshData; 
 class OcclusionCullingData; 
@@ -269,11 +263,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-<<<<<<< HEAD
-	//Total: 79 non stripped classes
-=======
-	//Total: 78 non stripped classes
->>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
+	//Total: 81 non stripped classes
 	//0. Behaviour
 	RegisterClass<Behaviour>();
 	//1. Unity::Component
@@ -410,51 +400,31 @@ RegisterBuiltinTypes();
 	RegisterClass<UnityConnectSettings>();
 	//67. LevelGameManager
 	RegisterClass<LevelGameManager>();
-<<<<<<< HEAD
-	//67. AudioListener
+	//68. AudioListener
 	RegisterClass<AudioListener>();
-	//68. AudioBehaviour
+	//69. AudioBehaviour
 	RegisterClass<AudioBehaviour>();
-	//69. RenderSettings
+	//70. RenderSettings
 	RegisterClass<RenderSettings>();
-	//70. FlareLayer
+	//71. FlareLayer
 	RegisterClass<FlareLayer>();
-	//71. LightmapSettings
+	//72. LightmapSettings
 	RegisterClass<LightmapSettings>();
-	//72. ParticleSystem
+	//73. ParticleSystem
 	RegisterClass<ParticleSystem>();
-	//73. ParticleSystemRenderer
+	//74. ParticleSystemRenderer
 	RegisterClass<ParticleSystemRenderer>();
-	//74. SpriteRenderer
+	//75. SpriteRenderer
 	RegisterClass<SpriteRenderer>();
-	//75. BoxCollider
+	//76. BoxCollider
 	RegisterClass<BoxCollider>();
-	//76. Avatar
+	//77. Avatar
 	RegisterClass<Avatar>();
-	//77. Light
+	//78. Light
 	RegisterClass<Light>();
-	//78. LightProbes
-=======
-	//68. AnimationClip
-	RegisterClass<AnimationClip>();
-	//69. Motion
-	RegisterClass<Motion>();
-	//70. AudioListener
-	RegisterClass<AudioListener>();
-	//71. AudioBehaviour
-	RegisterClass<AudioBehaviour>();
-	//72. RenderSettings
-	RegisterClass<RenderSettings>();
-	//73. Light
-	RegisterClass<Light>();
-	//74. Animation
+	//79. Animation
 	RegisterClass<Animation>();
-	//75. FlareLayer
-	RegisterClass<FlareLayer>();
-	//76. LightmapSettings
-	RegisterClass<LightmapSettings>();
-	//77. LightProbes
->>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
+	//80. LightProbes
 	RegisterClass<LightProbes>();
 
 }

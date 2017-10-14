@@ -1046,15 +1046,13 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_GameObject_Internal_AddComponentWithType();
 		Register_UnityEngine_GameObject_Internal_AddComponentWithType();
 
-<<<<<<< HEAD
 		//UnityEngine.GameObject UnityEngine.GameObject::FindGameObjectWithTag(System.String)
 		void Register_UnityEngine_GameObject_FindGameObjectWithTag();
 		Register_UnityEngine_GameObject_FindGameObjectWithTag();
-=======
+
 		//UnityEngine.GameObject[] UnityEngine.GameObject::FindGameObjectsWithTag(System.String)
 		void Register_UnityEngine_GameObject_FindGameObjectsWithTag();
 		Register_UnityEngine_GameObject_FindGameObjectsWithTag();
->>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 
 		//UnityEngine.Transform UnityEngine.GameObject::get_transform()
 		void Register_UnityEngine_GameObject_get_transform();
@@ -2383,6 +2381,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Int32 UnityEngine.Random::RandomRangeInt(System.Int32,System.Int32)
 		void Register_UnityEngine_Random_RandomRangeInt();
 		Register_UnityEngine_Random_RandomRangeInt();
+
+		//System.Single UnityEngine.Random::Range(System.Single,System.Single)
+		void Register_UnityEngine_Random_Range();
+		Register_UnityEngine_Random_Range();
 
 	//End Registrations for type : UnityEngine.Random
 

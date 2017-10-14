@@ -35,7 +35,7 @@ public class GameController : NetworkBehaviour {
     private bool sch_Runner_Runs = false;
     //
     // 2 Min: Game Starts, the first supply fall from plane.
-    private int time_Box_1_Fall = 19;
+    private int time_Box_1_Fall = 5;
     private bool sch_Box_1_Fall = false;
     //
     // 3 Min: Second supply fall from plane.

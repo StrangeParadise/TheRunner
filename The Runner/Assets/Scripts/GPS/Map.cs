@@ -31,8 +31,8 @@ public class Map : MonoBehaviour {
 			
         latitude  = GPSData.s_Instance.getLatitude();
         longitude = GPSData.s_Instance.getLongitude();
-		mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
-		StartCoroutine (mapCoroutine); //restart the coroutine
+		//mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
+		//StartCoroutine (mapCoroutine); //restart the coroutine
 		time = 0.0f;
 
 //		}

@@ -104,7 +104,6 @@
 #include "UnityEngine_UnityEngine_LocationService1617852714.h"
 #include "UnityEngine_UnityEngine_Compass2500694222.h"
 #include "UnityEngine_UnityEngine_Input1785128008.h"
-#include "UnityEngine_UnityEngine_LayerMask3188175821.h"
 
 
 
@@ -426,25 +425,22 @@ extern const int32_t g_FieldOffsetTable1278[1] =
 {
 	Gradient_t3600583008::get_offset_of_m_Ptr_0(),
 };
-<<<<<<< HEAD
-=======
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1278 = { sizeof (SkinnedMeshRenderer_t4220419316), -1, 0, 0 };
->>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1279 = { sizeof (Renderer_t257310565), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1280 = { sizeof (LineRenderer_t849157671), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1281 = { sizeof (Screen_t786852042), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1282 = { sizeof (GL_t1765937205), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1283 = { sizeof (MeshRenderer_t1268241104), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1284 = { sizeof (RectOffset_t3387826427), sizeof(RectOffset_t3387826427_marshaled_pinvoke), 0, 0 };
-extern const int32_t g_FieldOffsetTable1284[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1279 = { sizeof (SkinnedMeshRenderer_t4220419316), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1280 = { sizeof (Renderer_t257310565), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1281 = { sizeof (LineRenderer_t849157671), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1282 = { sizeof (Screen_t786852042), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1283 = { sizeof (GL_t1765937205), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1284 = { sizeof (MeshRenderer_t1268241104), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1285 = { sizeof (RectOffset_t3387826427), sizeof(RectOffset_t3387826427_marshaled_pinvoke), 0, 0 };
+extern const int32_t g_FieldOffsetTable1285[2] = 
 {
 	RectOffset_t3387826427::get_offset_of_m_Ptr_0(),
 	RectOffset_t3387826427::get_offset_of_m_SourceStyle_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1285 = { sizeof (GUIElement_t3381083099), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1286 = { sizeof (GUILayer_t3254902478), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1287 = { sizeof (TouchScreenKeyboard_InternalConstructorHelperArguments_t1040270188)+ sizeof (Il2CppObject), sizeof(TouchScreenKeyboard_InternalConstructorHelperArguments_t1040270188 ), 0, 0 };
-extern const int32_t g_FieldOffsetTable1287[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1286 = { sizeof (GUIElement_t3381083099), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1287 = { sizeof (GUILayer_t3254902478), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1288 = { sizeof (TouchScreenKeyboard_InternalConstructorHelperArguments_t1040270188)+ sizeof (Il2CppObject), sizeof(TouchScreenKeyboard_InternalConstructorHelperArguments_t1040270188 ), 0, 0 };
+extern const int32_t g_FieldOffsetTable1288[5] = 
 {
 	TouchScreenKeyboard_InternalConstructorHelperArguments_t1040270188::get_offset_of_keyboardType_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	TouchScreenKeyboard_InternalConstructorHelperArguments_t1040270188::get_offset_of_autocorrection_1() + static_cast<int32_t>(sizeof(Il2CppObject)),
@@ -452,13 +448,13 @@ extern const int32_t g_FieldOffsetTable1287[5] =
 	TouchScreenKeyboard_InternalConstructorHelperArguments_t1040270188::get_offset_of_secure_3() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	TouchScreenKeyboard_InternalConstructorHelperArguments_t1040270188::get_offset_of_alert_4() + static_cast<int32_t>(sizeof(Il2CppObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1288 = { sizeof (TouchScreenKeyboard_t601950206), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1288[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1289 = { sizeof (TouchScreenKeyboard_t601950206), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1289[1] = 
 {
 	TouchScreenKeyboard_t601950206::get_offset_of_m_Ptr_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1289 = { sizeof (TouchPhase_t2458120420)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1289[6] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1290 = { sizeof (TouchPhase_t2458120420)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1290[6] = 
 {
 	TouchPhase_t2458120420::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
@@ -467,24 +463,24 @@ extern const int32_t g_FieldOffsetTable1289[6] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1290 = { sizeof (IMECompositionMode_t1898275508)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1290[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1291 = { sizeof (IMECompositionMode_t1898275508)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1291[4] = 
 {
 	IMECompositionMode_t1898275508::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1291 = { sizeof (TouchType_t2732027771)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1291[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1292 = { sizeof (TouchType_t2732027771)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1292[4] = 
 {
 	TouchType_t2732027771::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1292 = { sizeof (Touch_t407273883)+ sizeof (Il2CppObject), sizeof(Touch_t407273883 ), 0, 0 };
-extern const int32_t g_FieldOffsetTable1292[14] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1293 = { sizeof (Touch_t407273883)+ sizeof (Il2CppObject), sizeof(Touch_t407273883 ), 0, 0 };
+extern const int32_t g_FieldOffsetTable1293[14] = 
 {
 	Touch_t407273883::get_offset_of_m_FingerId_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	Touch_t407273883::get_offset_of_m_Position_1() + static_cast<int32_t>(sizeof(Il2CppObject)),
@@ -501,13 +497,13 @@ extern const int32_t g_FieldOffsetTable1292[14] =
 	Touch_t407273883::get_offset_of_m_AltitudeAngle_12() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	Touch_t407273883::get_offset_of_m_AzimuthAngle_13() + static_cast<int32_t>(sizeof(Il2CppObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1293 = { sizeof (Gyroscope_t1705362817), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1293[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1294 = { sizeof (Gyroscope_t1705362817), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1294[1] = 
 {
 	Gyroscope_t1705362817::get_offset_of_m_GyroIndex_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1294 = { sizeof (LocationInfo_t1364725149)+ sizeof (Il2CppObject), sizeof(LocationInfo_t1364725149 ), 0, 0 };
-extern const int32_t g_FieldOffsetTable1294[6] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1295 = { sizeof (LocationInfo_t1364725149)+ sizeof (Il2CppObject), sizeof(LocationInfo_t1364725149 ), 0, 0 };
+extern const int32_t g_FieldOffsetTable1295[6] = 
 {
 	LocationInfo_t1364725149::get_offset_of_m_Timestamp_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	LocationInfo_t1364725149::get_offset_of_m_Latitude_1() + static_cast<int32_t>(sizeof(Il2CppObject)),
@@ -516,8 +512,8 @@ extern const int32_t g_FieldOffsetTable1294[6] =
 	LocationInfo_t1364725149::get_offset_of_m_HorizontalAccuracy_4() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	LocationInfo_t1364725149::get_offset_of_m_VerticalAccuracy_5() + static_cast<int32_t>(sizeof(Il2CppObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1295 = { sizeof (LocationServiceStatus_t2482073234)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1295[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1296 = { sizeof (LocationServiceStatus_t2482073234)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1296[5] = 
 {
 	LocationServiceStatus_t2482073234::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
@@ -525,19 +521,14 @@ extern const int32_t g_FieldOffsetTable1295[5] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1296 = { sizeof (LocationService_t1617852714), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1297 = { sizeof (Compass_t2500694222), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1298 = { sizeof (Input_t1785128008), -1, sizeof(Input_t1785128008_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1298[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1297 = { sizeof (LocationService_t1617852714), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1298 = { sizeof (Compass_t2500694222), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1299 = { sizeof (Input_t1785128008), -1, sizeof(Input_t1785128008_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1299[3] = 
 {
 	Input_t1785128008_StaticFields::get_offset_of_m_MainGyro_0(),
 	Input_t1785128008_StaticFields::get_offset_of_locationServiceInstance_1(),
 	Input_t1785128008_StaticFields::get_offset_of_compassInstance_2(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1299 = { sizeof (LayerMask_t3188175821)+ sizeof (Il2CppObject), sizeof(LayerMask_t3188175821 ), 0, 0 };
-extern const int32_t g_FieldOffsetTable1299[1] = 
-{
-	LayerMask_t3188175821::get_offset_of_m_Mask_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
 };
 #ifdef __clang__
 #pragma clang diagnostic pop

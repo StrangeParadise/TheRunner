@@ -24,9 +24,10 @@ GameObject:
   - component: {fileID: 114630500421672806}
   - component: {fileID: 114061837070159608}
   - component: {fileID: 114441302247862122}
+  - component: {fileID: 114202272490420748}
   m_Layer: 0
   m_Name: PlayerOld
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,12 +90,31 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1345618098264610}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79192ab91bae248cab7e8578547e3438, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 0}
+  player: {fileID: 0}
+  ui: {fileID: 0}
+  isSeeker: 0
+  latitudeO: 0
+  longitudeO: 0
+  latitude: 0
+  longitude: 0
+  name: 
+  color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &114202272490420748
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1345618098264610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0adb35022a0e8453d81392097e5dd0fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114441302247862122
 MonoBehaviour:
   m_ObjectHideFlags: 1

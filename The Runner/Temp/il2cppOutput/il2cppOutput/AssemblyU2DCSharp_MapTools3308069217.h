@@ -37,13 +37,7 @@ public:
 	// System.Boolean MapTools::firsttime
 	bool ___firsttime_9;
 	// UnityEngine.Camera MapTools::mainCamera
-<<<<<<< HEAD
-	Camera_t189460977 * ___mainCamera_7;
-=======
 	Camera_t189460977 * ___mainCamera_10;
-	// GPSController MapTools::IGPSController
-	GPSController_t2272977524 * ___IGPSController_11;
->>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 
 public:
 	inline static int32_t get_offset_of_radius_2() { return static_cast<int32_t>(offsetof(MapTools_t3308069217, ___radius_2)); }
@@ -86,15 +80,6 @@ public:
 		___mainCamera_10 = value;
 		Il2CppCodeGenWriteBarrier(&___mainCamera_10, value);
 	}
-
-	inline static int32_t get_offset_of_IGPSController_11() { return static_cast<int32_t>(offsetof(MapTools_t3308069217, ___IGPSController_11)); }
-	inline GPSController_t2272977524 * get_IGPSController_11() const { return ___IGPSController_11; }
-	inline GPSController_t2272977524 ** get_address_of_IGPSController_11() { return &___IGPSController_11; }
-	inline void set_IGPSController_11(GPSController_t2272977524 * value)
-	{
-		___IGPSController_11 = value;
-		Il2CppCodeGenWriteBarrier(&___IGPSController_11, value);
-	}
 };
 
 struct MapTools_t3308069217_StaticFields
@@ -133,8 +118,6 @@ public:
 	{
 		___latitude_7 = value;
 	}
-<<<<<<< HEAD
-=======
 
 	inline static int32_t get_offset_of_longitude_8() { return static_cast<int32_t>(offsetof(MapTools_t3308069217_StaticFields, ___longitude_8)); }
 	inline float get_longitude_8() const { return ___longitude_8; }
@@ -143,7 +126,6 @@ public:
 	{
 		___longitude_8 = value;
 	}
->>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 };
 
 #ifdef __clang__

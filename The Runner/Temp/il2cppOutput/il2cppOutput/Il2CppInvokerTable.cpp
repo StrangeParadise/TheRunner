@@ -17261,11 +17261,7 @@ void* RuntimeInvoker_Il2CppObject_FloatTween_t2986189219 (const MethodInfo* meth
 	return ret;
 }
 
-<<<<<<< HEAD
-extern const InvokerMethod g_Il2CppInvokerPointers[2224] = 
-=======
-extern const InvokerMethod g_Il2CppInvokerPointers[2229] = 
->>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
+extern const InvokerMethod g_Il2CppInvokerPointers[2230] = 
 {
 	RuntimeInvoker_Void_t1841601450,
 	RuntimeInvoker_Boolean_t3825574718_Il2CppObject,
