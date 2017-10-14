@@ -332,6 +332,8 @@ struct ComponentU5BU5D_t4136971630;
 struct Il2CppArray;
 // UnityEngine.Transform
 struct Transform_t3275118058;
+// UnityEngine.GameObject[]
+struct GameObjectU5BU5D_t3057952154;
 // UnityEngine.Gradient
 struct Gradient_t3600583008;
 // UnityEngineInternal.GenericStack
@@ -903,6 +905,8 @@ extern const uint32_t Logger_LogFormat_m193464629_MetadataUsageId;
 extern const uint32_t Logger_LogException_m206035446_MetadataUsageId;
 extern const uint32_t Material__ctor_m1897560860_MetadataUsageId;
 extern const uint32_t Material__ctor_m1440882780_MetadataUsageId;
+extern Il2CppCodeGenString* _stringLiteral895546098;
+extern const uint32_t Material_set_color_m577844242_MetadataUsageId;
 extern Il2CppCodeGenString* _stringLiteral4026354833;
 extern const uint32_t Material_get_mainTexture_m432794412_MetadataUsageId;
 extern const uint32_t Mathf_Lerp_m1686556575_MetadataUsageId;
@@ -1308,6 +1312,43 @@ public:
 		return m_Items + index;
 	}
 	inline void SetAtUnchecked(il2cpp_array_size_t index, Component_t3819376471 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// UnityEngine.GameObject[]
+struct GameObjectU5BU5D_t3057952154  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) GameObject_t1756533147 * m_Items[1];
+
+public:
+	inline GameObject_t1756533147 * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline GameObject_t1756533147 ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, GameObject_t1756533147 * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline GameObject_t1756533147 * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline GameObject_t1756533147 ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, GameObject_t1756533147 * value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
@@ -2793,8 +2834,12 @@ extern "C"  String_t* Logger_GetString_m4086587133 (Il2CppObject * __this /* sta
 extern "C"  void Material_Internal_CreateWithShader_m4029381963 (Il2CppObject * __this /* static, unused */, Material_t193706927 * ___mono0, Shader_t2430389951 * ___shader1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::Internal_CreateWithMaterial(UnityEngine.Material,UnityEngine.Material)
 extern "C"  void Material_Internal_CreateWithMaterial_m2907597451 (Il2CppObject * __this /* static, unused */, Material_t193706927 * ___mono0, Material_t193706927 * ___source1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Material::SetColor(System.String,UnityEngine.Color)
+extern "C"  void Material_SetColor_m650857509 (Material_t193706927 * __this, String_t* ___name0, Color_t2020392075  ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Texture UnityEngine.Material::GetTexture(System.String)
 extern "C"  Texture_t2243626319 * Material_GetTexture_m1257877102 (Material_t193706927 * __this, String_t* ___name0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Material::INTERNAL_CALL_SetColorImpl(UnityEngine.Material,System.Int32,UnityEngine.Color&)
+extern "C"  void Material_INTERNAL_CALL_SetColorImpl_m1235596565 (Il2CppObject * __this /* static, unused */, Material_t193706927 * ___self0, int32_t ___nameID1, Color_t2020392075 * ___value2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Shader::PropertyToID(System.String)
 extern "C"  int32_t Shader_PropertyToID_m678579425 (Il2CppObject * __this /* static, unused */, String_t* ___name0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Material::HasProperty(System.Int32)
@@ -2803,6 +2848,10 @@ extern "C"  bool Material_HasProperty_m3175512802 (Material_t193706927 * __this,
 extern "C"  void Material_SetInt_m977568583 (Material_t193706927 * __this, int32_t ___nameID0, int32_t ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::SetIntImpl(System.Int32,System.Int32)
 extern "C"  void Material_SetIntImpl_m4157631275 (Material_t193706927 * __this, int32_t ___nameID0, int32_t ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Material::SetColor(System.Int32,UnityEngine.Color)
+extern "C"  void Material_SetColor_m1191533068 (Material_t193706927 * __this, int32_t ___nameID0, Color_t2020392075  ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Material::SetColorImpl(System.Int32,UnityEngine.Color)
+extern "C"  void Material_SetColorImpl_m3789287710 (Material_t193706927 * __this, int32_t ___nameID0, Color_t2020392075  ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Texture UnityEngine.Material::GetTexture(System.Int32)
 extern "C"  Texture_t2243626319 * Material_GetTexture_m648312929 (Material_t193706927 * __this, int32_t ___nameID0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Texture UnityEngine.Material::GetTextureImpl(System.Int32)
@@ -7422,6 +7471,7 @@ extern "C"  void GameObject_set_tag_m717375123 (GameObject_t1756533147 * __this,
 	_il2cpp_icall_func = (GameObject_set_tag_m717375123_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GameObject::set_tag(System.String)");
 	_il2cpp_icall_func(__this, ___value0);
 }
+<<<<<<< HEAD
 // UnityEngine.GameObject UnityEngine.GameObject::FindGameObjectWithTag(System.String)
 extern "C"  GameObject_t1756533147 * GameObject_FindGameObjectWithTag_m829057129 (Il2CppObject * __this /* static, unused */, String_t* ___tag0, const MethodInfo* method)
 {
@@ -7429,6 +7479,15 @@ extern "C"  GameObject_t1756533147 * GameObject_FindGameObjectWithTag_m829057129
 	static GameObject_FindGameObjectWithTag_m829057129_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (GameObject_FindGameObjectWithTag_m829057129_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GameObject::FindGameObjectWithTag(System.String)");
+=======
+// UnityEngine.GameObject[] UnityEngine.GameObject::FindGameObjectsWithTag(System.String)
+extern "C"  GameObjectU5BU5D_t3057952154* GameObject_FindGameObjectsWithTag_m2154478296 (Il2CppObject * __this /* static, unused */, String_t* ___tag0, const MethodInfo* method)
+{
+	typedef GameObjectU5BU5D_t3057952154* (*GameObject_FindGameObjectsWithTag_m2154478296_ftn) (String_t*);
+	static GameObject_FindGameObjectsWithTag_m2154478296_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameObject_FindGameObjectsWithTag_m2154478296_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GameObject::FindGameObjectsWithTag(System.String)");
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 	return _il2cpp_icall_func(___tag0);
 }
 // System.Void UnityEngine.GameObject::SendMessage(System.String,System.Object,UnityEngine.SendMessageOptions)
@@ -25370,6 +25429,21 @@ extern "C"  void Material__ctor_m1440882780 (Material_t193706927 * __this, Mater
 		return;
 	}
 }
+// System.Void UnityEngine.Material::set_color(UnityEngine.Color)
+extern "C"  void Material_set_color_m577844242 (Material_t193706927 * __this, Color_t2020392075  ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Material_set_color_m577844242_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Color_t2020392075  L_0 = ___value0;
+		Material_SetColor_m650857509(__this, _stringLiteral895546098, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
 // UnityEngine.Texture UnityEngine.Material::get_mainTexture()
 extern "C"  Texture_t2243626319 * Material_get_mainTexture_m432794412 (Material_t193706927 * __this, const MethodInfo* method)
 {
@@ -25400,6 +25474,24 @@ extern "C"  void Material_SetIntImpl_m4157631275 (Material_t193706927 * __this, 
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Material_SetIntImpl_m4157631275_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Material::SetIntImpl(System.Int32,System.Int32)");
 	_il2cpp_icall_func(__this, ___nameID0, ___value1);
+}
+// System.Void UnityEngine.Material::SetColorImpl(System.Int32,UnityEngine.Color)
+extern "C"  void Material_SetColorImpl_m3789287710 (Material_t193706927 * __this, int32_t ___nameID0, Color_t2020392075  ___value1, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = ___nameID0;
+		Material_INTERNAL_CALL_SetColorImpl_m1235596565(NULL /*static, unused*/, __this, L_0, (&___value1), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Material::INTERNAL_CALL_SetColorImpl(UnityEngine.Material,System.Int32,UnityEngine.Color&)
+extern "C"  void Material_INTERNAL_CALL_SetColorImpl_m1235596565 (Il2CppObject * __this /* static, unused */, Material_t193706927 * ___self0, int32_t ___nameID1, Color_t2020392075 * ___value2, const MethodInfo* method)
+{
+	typedef void (*Material_INTERNAL_CALL_SetColorImpl_m1235596565_ftn) (Material_t193706927 *, int32_t, Color_t2020392075 *);
+	static Material_INTERNAL_CALL_SetColorImpl_m1235596565_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Material_INTERNAL_CALL_SetColorImpl_m1235596565_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Material::INTERNAL_CALL_SetColorImpl(UnityEngine.Material,System.Int32,UnityEngine.Color&)");
+	_il2cpp_icall_func(___self0, ___nameID1, ___value2);
 }
 // UnityEngine.Texture UnityEngine.Material::GetTextureImpl(System.Int32)
 extern "C"  Texture_t2243626319 * Material_GetTextureImpl_m623159197 (Material_t193706927 * __this, int32_t ___nameID0, const MethodInfo* method)
@@ -25500,6 +25592,27 @@ extern "C"  void Material_SetInt_m977568583 (Material_t193706927 * __this, int32
 		int32_t L_0 = ___nameID0;
 		int32_t L_1 = ___value1;
 		Material_SetIntImpl_m4157631275(__this, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Material::SetColor(System.String,UnityEngine.Color)
+extern "C"  void Material_SetColor_m650857509 (Material_t193706927 * __this, String_t* ___name0, Color_t2020392075  ___value1, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___name0;
+		int32_t L_1 = Shader_PropertyToID_m678579425(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		Color_t2020392075  L_2 = ___value1;
+		Material_SetColor_m1191533068(__this, L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Material::SetColor(System.Int32,UnityEngine.Color)
+extern "C"  void Material_SetColor_m1191533068 (Material_t193706927 * __this, int32_t ___nameID0, Color_t2020392075  ___value1, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = ___nameID0;
+		Color_t2020392075  L_1 = ___value1;
+		Material_SetColorImpl_m3789287710(__this, L_0, L_1, /*hidden argument*/NULL);
 		return;
 	}
 }

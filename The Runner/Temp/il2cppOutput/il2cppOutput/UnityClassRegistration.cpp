@@ -61,7 +61,7 @@ void RegisterStaticallyLinkedModulesGranular()
 class EditorExtension; template <> void RegisterClass<EditorExtension>();
 namespace Unity { class Component; } template <> void RegisterClass<Unity::Component>();
 class Behaviour; template <> void RegisterClass<Behaviour>();
-class Animation; 
+class Animation; template <> void RegisterClass<Animation>();
 class Animator; template <> void RegisterClass<Animator>();
 class AudioBehaviour; template <> void RegisterClass<AudioBehaviour>();
 class AudioListener; template <> void RegisterClass<AudioListener>();
@@ -130,7 +130,7 @@ class VideoPlayer;
 class WindZone; 
 namespace UI { class CanvasRenderer; } template <> void RegisterClass<UI::CanvasRenderer>();
 class Collider; template <> void RegisterClass<Collider>();
-class BoxCollider; template <> void RegisterClass<BoxCollider>();
+class BoxCollider; 
 class CapsuleCollider; 
 class CharacterController; template <> void RegisterClass<CharacterController>();
 class MeshCollider; 
@@ -157,9 +157,15 @@ class BillboardRenderer;
 class LineRenderer; template <> void RegisterClass<LineRenderer>();
 class MeshRenderer; template <> void RegisterClass<MeshRenderer>();
 class ParticleRenderer; 
+<<<<<<< HEAD
 class ParticleSystemRenderer; template <> void RegisterClass<ParticleSystemRenderer>();
 class SkinnedMeshRenderer; 
 class SpriteRenderer; template <> void RegisterClass<SpriteRenderer>();
+=======
+class ParticleSystemRenderer; 
+class SkinnedMeshRenderer; template <> void RegisterClass<SkinnedMeshRenderer>();
+class SpriteRenderer; 
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 class TrailRenderer; 
 class Rigidbody; template <> void RegisterClass<Rigidbody>();
 class Rigidbody2D; template <> void RegisterClass<Rigidbody2D>();
@@ -189,8 +195,8 @@ class LightProbes; template <> void RegisterClass<LightProbes>();
 class Material; template <> void RegisterClass<Material>();
 class ProceduralMaterial; 
 class Mesh; template <> void RegisterClass<Mesh>();
-class Motion; 
-class AnimationClip; 
+class Motion; template <> void RegisterClass<Motion>();
+class AnimationClip; template <> void RegisterClass<AnimationClip>();
 class PreviewAnimationClip; 
 class NavMeshData; 
 class OcclusionCullingData; 
@@ -263,7 +269,11 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
+<<<<<<< HEAD
 	//Total: 79 non stripped classes
+=======
+	//Total: 78 non stripped classes
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 	//0. Behaviour
 	RegisterClass<Behaviour>();
 	//1. Unity::Component
@@ -336,68 +346,71 @@ RegisterBuiltinTypes();
 	RegisterClass<GlobalGameManager>();
 	//35. GameManager
 	RegisterClass<GameManager>();
-	//36. Collider2D
+	//36. SkinnedMeshRenderer
+	RegisterClass<SkinnedMeshRenderer>();
+	//37. Collider2D
 	RegisterClass<Collider2D>();
-	//37. PreloadData
+	//38. PreloadData
 	RegisterClass<PreloadData>();
-	//38. Cubemap
+	//39. Cubemap
 	RegisterClass<Cubemap>();
-	//39. Texture3D
+	//40. Texture3D
 	RegisterClass<Texture3D>();
-	//40. Texture2DArray
+	//41. Texture2DArray
 	RegisterClass<Texture2DArray>();
-	//41. MeshFilter
+	//42. MeshFilter
 	RegisterClass<MeshFilter>();
-	//42. MeshRenderer
+	//43. MeshRenderer
 	RegisterClass<MeshRenderer>();
-	//43. LowerResBlitTexture
+	//44. LowerResBlitTexture
 	RegisterClass<LowerResBlitTexture>();
-	//44. TimeManager
+	//45. TimeManager
 	RegisterClass<TimeManager>();
-	//45. AudioManager
+	//46. AudioManager
 	RegisterClass<AudioManager>();
-	//46. InputManager
+	//47. InputManager
 	RegisterClass<InputManager>();
-	//47. Physics2DSettings
+	//48. Physics2DSettings
 	RegisterClass<Physics2DSettings>();
-	//48. GraphicsSettings
+	//49. GraphicsSettings
 	RegisterClass<GraphicsSettings>();
-	//49. QualitySettings
+	//50. QualitySettings
 	RegisterClass<QualitySettings>();
-	//50. TextAsset
+	//51. TextAsset
 	RegisterClass<TextAsset>();
-	//51. PhysicsManager
+	//52. PhysicsManager
 	RegisterClass<PhysicsManager>();
-	//52. TagManager
+	//53. TagManager
 	RegisterClass<TagManager>();
-	//53. ScriptMapper
+	//54. ScriptMapper
 	RegisterClass<ScriptMapper>();
-	//54. DelayedCallManager
+	//55. DelayedCallManager
 	RegisterClass<DelayedCallManager>();
-	//55. MonoScript
+	//56. MonoScript
 	RegisterClass<MonoScript>();
-	//56. MonoManager
+	//57. MonoManager
 	RegisterClass<MonoManager>();
-	//57. PlayerSettings
+	//58. PlayerSettings
 	RegisterClass<PlayerSettings>();
-	//58. BuildSettings
+	//59. BuildSettings
 	RegisterClass<BuildSettings>();
-	//59. ResourceManager
+	//60. ResourceManager
 	RegisterClass<ResourceManager>();
-	//60. MasterServerInterface
+	//61. MasterServerInterface
 	RegisterClass<MasterServerInterface>();
-	//61. RuntimeInitializeOnLoadManager
+	//62. RuntimeInitializeOnLoadManager
 	RegisterClass<RuntimeInitializeOnLoadManager>();
-	//62. CloudWebServicesManager
+	//63. CloudWebServicesManager
 	RegisterClass<CloudWebServicesManager>();
-	//63. UnityAnalyticsManager
+	//64. UnityAnalyticsManager
 	RegisterClass<UnityAnalyticsManager>();
-	//64. PerformanceReportingManager
+	//65. PerformanceReportingManager
 	RegisterClass<PerformanceReportingManager>();
-	//65. UnityConnectSettings
+	//66. UnityConnectSettings
 	RegisterClass<UnityConnectSettings>();
-	//66. LevelGameManager
+	//67. LevelGameManager
 	RegisterClass<LevelGameManager>();
+<<<<<<< HEAD
 	//67. AudioListener
 	RegisterClass<AudioListener>();
 	//68. AudioBehaviour
@@ -421,6 +434,27 @@ RegisterBuiltinTypes();
 	//77. Light
 	RegisterClass<Light>();
 	//78. LightProbes
+=======
+	//68. AnimationClip
+	RegisterClass<AnimationClip>();
+	//69. Motion
+	RegisterClass<Motion>();
+	//70. AudioListener
+	RegisterClass<AudioListener>();
+	//71. AudioBehaviour
+	RegisterClass<AudioBehaviour>();
+	//72. RenderSettings
+	RegisterClass<RenderSettings>();
+	//73. Light
+	RegisterClass<Light>();
+	//74. Animation
+	RegisterClass<Animation>();
+	//75. FlareLayer
+	RegisterClass<FlareLayer>();
+	//76. LightmapSettings
+	RegisterClass<LightmapSettings>();
+	//77. LightProbes
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 	RegisterClass<LightProbes>();
 
 }

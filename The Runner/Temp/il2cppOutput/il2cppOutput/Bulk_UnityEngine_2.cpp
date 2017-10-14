@@ -154,6 +154,7 @@
 #include "UnityEngine_UnityEngine_RemoteSettings392466225.h"
 #include "UnityEngine_UnityEngine_RemoteSettings_UpdatedEven3033456180.h"
 #include "UnityEngine_UnityEngine_Renderer257310565.h"
+#include "UnityEngine_UnityEngine_Material193706927.h"
 #include "UnityEngine_UnityEngine_Rendering_ColorWriteMask926634530.h"
 #include "UnityEngine_UnityEngine_Rendering_CompareFunction457874581.h"
 #include "UnityEngine_UnityEngine_Rendering_StencilOp2936374925.h"
@@ -195,6 +196,7 @@
 #include "UnityEngine_UnityEngine_Shader2430389951.h"
 #include "UnityEngine_UnityEngine_SharedBetweenAnimatorsAttr1565472209.h"
 #include "UnityEngine_UnityEngine_SkeletonBone345082847.h"
+#include "UnityEngine_UnityEngine_SkinnedMeshRenderer4220419316.h"
 #include "UnityEngine_UnityEngine_SliderHandler3550500579.h"
 #include "UnityEngine_UnityEngine_GUIStyle1799908754.h"
 #include "UnityEngine_UnityEngine_EventType3919834026.h"
@@ -450,6 +452,10 @@ struct Canvas_t209405766;
 struct UpdatedEventHandler_t3033456180;
 // UnityEngine.Renderer
 struct Renderer_t257310565;
+// UnityEngine.Material[]
+struct MaterialU5BU5D_t3123989686;
+// UnityEngine.Material
+struct Material_t193706927;
 // UnityEngine.RenderTexture
 struct RenderTexture_t2666733923;
 // UnityEngine.RequireComponent
@@ -1064,8 +1070,6 @@ extern const uint32_t GcAchievementData_ToAchievement_m962894180_MetadataUsageId
 extern Il2CppClass* AchievementDescription_t3110978151_il2cpp_TypeInfo_var;
 extern const uint32_t GcAchievementDescriptionData_ToAchievementDescription_m1135716620_MetadataUsageId;
 extern const uint32_t GcLeaderboard_SetScores_m695766380_MetadataUsageId;
-extern Il2CppClass* Score_t2307748940_il2cpp_TypeInfo_var;
-extern const uint32_t GcScoreData_ToScore_m3744988639_MetadataUsageId;
 
 // System.Object[]
 struct ObjectU5BU5D_t3614634134  : public Il2CppArray
@@ -1353,6 +1357,43 @@ public:
 	inline void SetAtUnchecked(il2cpp_array_size_t index, Vector3_t2243707580  value)
 	{
 		m_Items[index] = value;
+	}
+};
+// UnityEngine.Material[]
+struct MaterialU5BU5D_t3123989686  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Material_t193706927 * m_Items[1];
+
+public:
+	inline Material_t193706927 * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Material_t193706927 ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Material_t193706927 * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline Material_t193706927 * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Material_t193706927 ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Material_t193706927 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
 // UnityEngine.Camera[]
@@ -3282,8 +3323,6 @@ extern "C"  void Leaderboard_SetLocalUserScore_m1546635330 (Leaderboard_t4160680
 extern "C"  void Leaderboard_SetMaxRange_m255256830 (Leaderboard_t4160680639 * __this, uint32_t ___maxRange0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.SocialPlatforms.Impl.Leaderboard::SetTitle(System.String)
 extern "C"  void Leaderboard_SetTitle_m4056985215 (Leaderboard_t4160680639 * __this, String_t* ___title0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.SocialPlatforms.Impl.Score::.ctor(System.String,System.Int64,System.String,System.DateTime,System.String,System.Int32)
-extern "C"  void Score__ctor_m449446173 (Score_t2307748940 * __this, String_t* ___leaderboardID0, int64_t ___value1, String_t* ___userID2, DateTime_t693205669  ___date3, String_t* ___formattedValue4, int32_t ___rank5, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -16345,6 +16384,15 @@ extern "C"  void Renderer_set_enabled_m142717579 (Renderer_t257310565 * __this, 
 	_il2cpp_icall_func = (Renderer_set_enabled_m142717579_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Renderer::set_enabled(System.Boolean)");
 	_il2cpp_icall_func(__this, ___value0);
 }
+// UnityEngine.Material[] UnityEngine.Renderer::get_materials()
+extern "C"  MaterialU5BU5D_t3123989686* Renderer_get_materials_m810004692 (Renderer_t257310565 * __this, const MethodInfo* method)
+{
+	typedef MaterialU5BU5D_t3123989686* (*Renderer_get_materials_m810004692_ftn) (Renderer_t257310565 *);
+	static Renderer_get_materials_m810004692_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Renderer_get_materials_m810004692_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Renderer::get_materials()");
+	return _il2cpp_icall_func(__this);
+}
 // System.Int32 UnityEngine.Renderer::get_sortingLayerID()
 extern "C"  int32_t Renderer_get_sortingLayerID_m2403577271 (Renderer_t257310565 * __this, const MethodInfo* method)
 {
@@ -22839,123 +22887,6 @@ extern "C"  void GcLeaderboard_Dispose_m3243478693 (GcLeaderboard_t453887929 * _
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (GcLeaderboard_Dispose_m3243478693_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::Dispose()");
 	_il2cpp_icall_func(__this);
-}
-// Conversion methods for marshalling of: UnityEngine.SocialPlatforms.GameCenter.GcScoreData
-extern "C" void GcScoreData_t3676783238_marshal_pinvoke(const GcScoreData_t3676783238& unmarshaled, GcScoreData_t3676783238_marshaled_pinvoke& marshaled)
-{
-	marshaled.___m_Category_0 = il2cpp_codegen_marshal_string(unmarshaled.get_m_Category_0());
-	marshaled.___m_ValueLow_1 = unmarshaled.get_m_ValueLow_1();
-	marshaled.___m_ValueHigh_2 = unmarshaled.get_m_ValueHigh_2();
-	marshaled.___m_Date_3 = unmarshaled.get_m_Date_3();
-	marshaled.___m_FormattedValue_4 = il2cpp_codegen_marshal_string(unmarshaled.get_m_FormattedValue_4());
-	marshaled.___m_PlayerID_5 = il2cpp_codegen_marshal_string(unmarshaled.get_m_PlayerID_5());
-	marshaled.___m_Rank_6 = unmarshaled.get_m_Rank_6();
-}
-extern "C" void GcScoreData_t3676783238_marshal_pinvoke_back(const GcScoreData_t3676783238_marshaled_pinvoke& marshaled, GcScoreData_t3676783238& unmarshaled)
-{
-	unmarshaled.set_m_Category_0(il2cpp_codegen_marshal_string_result(marshaled.___m_Category_0));
-	uint32_t unmarshaled_m_ValueLow_temp_1 = 0;
-	unmarshaled_m_ValueLow_temp_1 = marshaled.___m_ValueLow_1;
-	unmarshaled.set_m_ValueLow_1(unmarshaled_m_ValueLow_temp_1);
-	int32_t unmarshaled_m_ValueHigh_temp_2 = 0;
-	unmarshaled_m_ValueHigh_temp_2 = marshaled.___m_ValueHigh_2;
-	unmarshaled.set_m_ValueHigh_2(unmarshaled_m_ValueHigh_temp_2);
-	int32_t unmarshaled_m_Date_temp_3 = 0;
-	unmarshaled_m_Date_temp_3 = marshaled.___m_Date_3;
-	unmarshaled.set_m_Date_3(unmarshaled_m_Date_temp_3);
-	unmarshaled.set_m_FormattedValue_4(il2cpp_codegen_marshal_string_result(marshaled.___m_FormattedValue_4));
-	unmarshaled.set_m_PlayerID_5(il2cpp_codegen_marshal_string_result(marshaled.___m_PlayerID_5));
-	int32_t unmarshaled_m_Rank_temp_6 = 0;
-	unmarshaled_m_Rank_temp_6 = marshaled.___m_Rank_6;
-	unmarshaled.set_m_Rank_6(unmarshaled_m_Rank_temp_6);
-}
-// Conversion method for clean up from marshalling of: UnityEngine.SocialPlatforms.GameCenter.GcScoreData
-extern "C" void GcScoreData_t3676783238_marshal_pinvoke_cleanup(GcScoreData_t3676783238_marshaled_pinvoke& marshaled)
-{
-	il2cpp_codegen_marshal_free(marshaled.___m_Category_0);
-	marshaled.___m_Category_0 = NULL;
-	il2cpp_codegen_marshal_free(marshaled.___m_FormattedValue_4);
-	marshaled.___m_FormattedValue_4 = NULL;
-	il2cpp_codegen_marshal_free(marshaled.___m_PlayerID_5);
-	marshaled.___m_PlayerID_5 = NULL;
-}
-// Conversion methods for marshalling of: UnityEngine.SocialPlatforms.GameCenter.GcScoreData
-extern "C" void GcScoreData_t3676783238_marshal_com(const GcScoreData_t3676783238& unmarshaled, GcScoreData_t3676783238_marshaled_com& marshaled)
-{
-	marshaled.___m_Category_0 = il2cpp_codegen_marshal_bstring(unmarshaled.get_m_Category_0());
-	marshaled.___m_ValueLow_1 = unmarshaled.get_m_ValueLow_1();
-	marshaled.___m_ValueHigh_2 = unmarshaled.get_m_ValueHigh_2();
-	marshaled.___m_Date_3 = unmarshaled.get_m_Date_3();
-	marshaled.___m_FormattedValue_4 = il2cpp_codegen_marshal_bstring(unmarshaled.get_m_FormattedValue_4());
-	marshaled.___m_PlayerID_5 = il2cpp_codegen_marshal_bstring(unmarshaled.get_m_PlayerID_5());
-	marshaled.___m_Rank_6 = unmarshaled.get_m_Rank_6();
-}
-extern "C" void GcScoreData_t3676783238_marshal_com_back(const GcScoreData_t3676783238_marshaled_com& marshaled, GcScoreData_t3676783238& unmarshaled)
-{
-	unmarshaled.set_m_Category_0(il2cpp_codegen_marshal_bstring_result(marshaled.___m_Category_0));
-	uint32_t unmarshaled_m_ValueLow_temp_1 = 0;
-	unmarshaled_m_ValueLow_temp_1 = marshaled.___m_ValueLow_1;
-	unmarshaled.set_m_ValueLow_1(unmarshaled_m_ValueLow_temp_1);
-	int32_t unmarshaled_m_ValueHigh_temp_2 = 0;
-	unmarshaled_m_ValueHigh_temp_2 = marshaled.___m_ValueHigh_2;
-	unmarshaled.set_m_ValueHigh_2(unmarshaled_m_ValueHigh_temp_2);
-	int32_t unmarshaled_m_Date_temp_3 = 0;
-	unmarshaled_m_Date_temp_3 = marshaled.___m_Date_3;
-	unmarshaled.set_m_Date_3(unmarshaled_m_Date_temp_3);
-	unmarshaled.set_m_FormattedValue_4(il2cpp_codegen_marshal_bstring_result(marshaled.___m_FormattedValue_4));
-	unmarshaled.set_m_PlayerID_5(il2cpp_codegen_marshal_bstring_result(marshaled.___m_PlayerID_5));
-	int32_t unmarshaled_m_Rank_temp_6 = 0;
-	unmarshaled_m_Rank_temp_6 = marshaled.___m_Rank_6;
-	unmarshaled.set_m_Rank_6(unmarshaled_m_Rank_temp_6);
-}
-// Conversion method for clean up from marshalling of: UnityEngine.SocialPlatforms.GameCenter.GcScoreData
-extern "C" void GcScoreData_t3676783238_marshal_com_cleanup(GcScoreData_t3676783238_marshaled_com& marshaled)
-{
-	il2cpp_codegen_marshal_free_bstring(marshaled.___m_Category_0);
-	marshaled.___m_Category_0 = NULL;
-	il2cpp_codegen_marshal_free_bstring(marshaled.___m_FormattedValue_4);
-	marshaled.___m_FormattedValue_4 = NULL;
-	il2cpp_codegen_marshal_free_bstring(marshaled.___m_PlayerID_5);
-	marshaled.___m_PlayerID_5 = NULL;
-}
-// UnityEngine.SocialPlatforms.Impl.Score UnityEngine.SocialPlatforms.GameCenter.GcScoreData::ToScore()
-extern "C"  Score_t2307748940 * GcScoreData_ToScore_m3744988639 (GcScoreData_t3676783238 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (GcScoreData_ToScore_m3744988639_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	DateTime_t693205669  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	Score_t2307748940 * V_1 = NULL;
-	{
-		String_t* L_0 = __this->get_m_Category_0();
-		int32_t L_1 = __this->get_m_ValueHigh_2();
-		uint32_t L_2 = __this->get_m_ValueLow_1();
-		String_t* L_3 = __this->get_m_PlayerID_5();
-		DateTime__ctor_m2857738939((&V_0), ((int32_t)1970), 1, 1, 0, 0, 0, 0, /*hidden argument*/NULL);
-		int32_t L_4 = __this->get_m_Date_3();
-		DateTime_t693205669  L_5 = DateTime_AddSeconds_m722082155((&V_0), (((double)((double)L_4))), /*hidden argument*/NULL);
-		String_t* L_6 = __this->get_m_FormattedValue_4();
-		int32_t L_7 = __this->get_m_Rank_6();
-		Score_t2307748940 * L_8 = (Score_t2307748940 *)il2cpp_codegen_object_new(Score_t2307748940_il2cpp_TypeInfo_var);
-		Score__ctor_m449446173(L_8, L_0, ((int64_t)((int64_t)((int64_t)((int64_t)(((int64_t)((int64_t)L_1)))<<(int32_t)((int32_t)32)))+(int64_t)(((int64_t)((uint64_t)L_2))))), L_3, L_5, L_6, L_7, /*hidden argument*/NULL);
-		V_1 = L_8;
-		goto IL_0056;
-	}
-
-IL_0056:
-	{
-		Score_t2307748940 * L_9 = V_1;
-		return L_9;
-	}
-}
-extern "C"  Score_t2307748940 * GcScoreData_ToScore_m3744988639_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
-{
-	GcScoreData_t3676783238 * _thisAdjusted = reinterpret_cast<GcScoreData_t3676783238 *>(__this + 1);
-	return GcScoreData_ToScore_m3744988639(_thisAdjusted, method);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

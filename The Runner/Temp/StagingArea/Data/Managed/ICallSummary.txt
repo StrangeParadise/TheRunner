@@ -231,7 +231,11 @@ UnityEngine.GameObject::GetComponentByName
 UnityEngine.GameObject::GetComponentInChildren
 UnityEngine.GameObject::GetComponentInParent
 UnityEngine.GameObject::Internal_AddComponentWithType
+<<<<<<< HEAD
 UnityEngine.GameObject::FindGameObjectWithTag
+=======
+UnityEngine.GameObject::FindGameObjectsWithTag
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 UnityEngine.GameObject::get_transform
 UnityEngine.GL::BeginInternal
 UnityEngine.GL::End
@@ -388,6 +392,7 @@ UnityEngine.Material::HasProperty
 UnityEngine.Material::SetPass
 UnityEngine.Material::DisableKeyword
 UnityEngine.Material::EnableKeyword
+UnityEngine.Material::INTERNAL_CALL_SetColorImpl
 UnityEngine.Material::Internal_CreateWithMaterial
 UnityEngine.Material::Internal_CreateWithShader
 UnityEngine.Material::SetIntImpl
@@ -564,6 +569,7 @@ UnityEngine.RectTransformUtility::INTERNAL_CALL_PixelAdjustRect
 UnityEngine.Renderer::get_sortingLayerID
 UnityEngine.Renderer::get_sortingOrder
 UnityEngine.Renderer::set_enabled
+UnityEngine.Renderer::get_materials
 UnityEngine.RenderTexture::Internal_GetHeight
 UnityEngine.RenderTexture::Internal_GetWidth
 UnityEngine.Resources::GetBuiltinResource
@@ -673,6 +679,7 @@ UnityEngine.TouchScreenKeyboard::set_text
 UnityEngine.Transform::IsChildOf
 UnityEngine.Transform::get_childCount
 UnityEngine.Transform::INTERNAL_CALL_InverseTransformPoint
+UnityEngine.Transform::INTERNAL_CALL_LookAt
 UnityEngine.Transform::INTERNAL_CALL_RotateAroundInternal
 UnityEngine.Transform::INTERNAL_CALL_TransformPoint
 UnityEngine.Transform::INTERNAL_get_localPosition

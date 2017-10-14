@@ -83,6 +83,7 @@
 #include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter_453887929.h"
 #include "UnityEngine_UnityEngine_GameObject1756533147.h"
 #include "UnityEngine_UnityEngine_Gradient3600583008.h"
+#include "UnityEngine_UnityEngine_SkinnedMeshRenderer4220419316.h"
 #include "UnityEngine_UnityEngine_Renderer257310565.h"
 #include "UnityEngine_UnityEngine_LineRenderer849157671.h"
 #include "UnityEngine_UnityEngine_Screen786852042.h"
@@ -425,6 +426,10 @@ extern const int32_t g_FieldOffsetTable1278[1] =
 {
 	Gradient_t3600583008::get_offset_of_m_Ptr_0(),
 };
+<<<<<<< HEAD
+=======
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1278 = { sizeof (SkinnedMeshRenderer_t4220419316), -1, 0, 0 };
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1279 = { sizeof (Renderer_t257310565), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1280 = { sizeof (LineRenderer_t849157671), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1281 = { sizeof (Screen_t786852042), -1, 0, 0 };

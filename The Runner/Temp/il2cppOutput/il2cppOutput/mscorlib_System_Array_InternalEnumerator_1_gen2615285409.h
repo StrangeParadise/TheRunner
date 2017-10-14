@@ -24,8 +24,8 @@ struct Il2CppArray;
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Array/InternalEnumerator`1<GPSData>
-struct  InternalEnumerator_1_t1066515546 
+// System.Array/InternalEnumerator`1<UnityEngine.GameObject>
+struct  InternalEnumerator_1_t2615285409 
 {
 public:
 	// System.Array System.Array/InternalEnumerator`1::array
@@ -34,7 +34,7 @@ public:
 	int32_t ___idx_1;
 
 public:
-	inline static int32_t get_offset_of_array_0() { return static_cast<int32_t>(offsetof(InternalEnumerator_1_t1066515546, ___array_0)); }
+	inline static int32_t get_offset_of_array_0() { return static_cast<int32_t>(offsetof(InternalEnumerator_1_t2615285409, ___array_0)); }
 	inline Il2CppArray * get_array_0() const { return ___array_0; }
 	inline Il2CppArray ** get_address_of_array_0() { return &___array_0; }
 	inline void set_array_0(Il2CppArray * value)
@@ -43,7 +43,7 @@ public:
 		Il2CppCodeGenWriteBarrier(&___array_0, value);
 	}
 
-	inline static int32_t get_offset_of_idx_1() { return static_cast<int32_t>(offsetof(InternalEnumerator_1_t1066515546, ___idx_1)); }
+	inline static int32_t get_offset_of_idx_1() { return static_cast<int32_t>(offsetof(InternalEnumerator_1_t2615285409, ___idx_1)); }
 	inline int32_t get_idx_1() const { return ___idx_1; }
 	inline int32_t* get_address_of_idx_1() { return &___idx_1; }
 	inline void set_idx_1(int32_t value)

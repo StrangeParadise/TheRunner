@@ -5,10 +5,15 @@ public class MapTools : MonoBehaviour {
 
 	public int radius = 150;
 	public int range = 500;
+	public float speed = 1f;
 
-	private float latitudeO;
-	private float longitudeO;
-	private bool firstTime;
+	private static float latitudeO = 0;
+	private static float longitudeO = 0;
+	private static float latitude;
+	private static float longitude;
+
+
+	private bool firsttime;
 
 	private Camera mainCamera;
 
@@ -16,21 +21,29 @@ public class MapTools : MonoBehaviour {
 	void Start () {
 
 		mainCamera = Camera.main;
-		firstTime = true;
+		firsttime = true;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
+<<<<<<< HEAD
         float latitude = GPSData.s_Instance.getLatitude();
         float longitude = GPSData.s_Instance.getLongitude();
 		if (firstTime) {
+=======
+		latitude = IGPSController.gps.getLatitude();
+		longitude = IGPSController.gps.getLongitude();
+		if (firsttime) {
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 			if (latitude != 0) {
 				latitudeO = latitude;
 				longitudeO = longitude;
-				firstTime = false;
+				firsttime = false;
 			}
 		}
-		mainCamera.transform.position = mapGPS (latitude, longitude);
+		mainCamera.transform.position = Vector3.MoveTowards(mainCamera.transform.position, mapGPS(latitude, longitude),speed * Time.deltaTime);
+		//mainCamera.transform.position = mapGPS (latitude, longitude);
+
 	}
 
 	public Vector3 mapGPS(float latitude, float longitude){
@@ -41,4 +54,28 @@ public class MapTools : MonoBehaviour {
 		);
 	}
 
+	public static float getLatO() {
+		return latitudeO;
+	}
+	public static void setLatO(float a)
+	{
+		latitudeO = a;
+	}
+	public static float getLonO()
+	{
+		return longitudeO;
+	}
+	public static void setLonO(float a)
+	{
+		longitudeO = a;
+	}
+	public static float getLat()
+	{
+		return latitude;
+
+	}
+	public static float getLon()
+	{
+		return longitude;
+	}
 }

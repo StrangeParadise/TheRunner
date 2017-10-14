@@ -10,8 +10,13 @@
 <type fullname="testExtendClass" preserve="all"/>
 <type fullname="testTwoChat" preserve="all"/>
 <type fullname="HollowCircle" preserve="all"/>
+<<<<<<< HEAD
 <type fullname="TheRunner.Data.PlayerDataManager" preserve="all"/>
 <type fullname="TheRunner.Test.testMoveScript" preserve="all"/>
+=======
+<type fullname="Compass" preserve="all"/>
+<type fullname="testMoveScript" preserve="all"/>
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 <type fullname="GPSController" preserve="all"/>
 <type fullname="GPSData" preserve="all"/>
 <type fullname="Map" preserve="all"/>
@@ -19,9 +24,11 @@
 <type fullname="UpdateGPS" preserve="all"/>
 <type fullname="GameController" preserve="all"/>
 <type fullname="HandMapController" preserve="all"/>
+<type fullname="HidePlayer" preserve="all"/>
 <type fullname="UnityEngine.Networking.NetworkManagerHUD" preserve="all"/>
 <type fullname="PlayerController" preserve="all"/>
 <type fullname="PlayerMove" preserve="all"/>
+<type fullname="PlayerUI" preserve="all"/>
 <type fullname="UnityEngine.Networking.Room" preserve="all"/>
 <type fullname="TheRunner.Utilities.Singleton`1" preserve="all"/>
 <type fullname="TheRunner.Login.LoginController" preserve="all"/>

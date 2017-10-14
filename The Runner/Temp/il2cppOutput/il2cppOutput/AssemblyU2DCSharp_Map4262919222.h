@@ -63,6 +63,10 @@ public:
 	String_t* ___key1_13;
 	// System.String Map::key2
 	String_t* ___key2_14;
+	// System.Single Map::updatePerSecond
+	float ___updatePerSecond_15;
+	// System.Single Map::time
+	float ___time_16;
 
 public:
 	inline static int32_t get_offset_of_url_2() { return static_cast<int32_t>(offsetof(Map_t4262919222, ___url_2)); }
@@ -174,6 +178,22 @@ public:
 	{
 		___key2_14 = value;
 		Il2CppCodeGenWriteBarrier(&___key2_14, value);
+	}
+
+	inline static int32_t get_offset_of_updatePerSecond_15() { return static_cast<int32_t>(offsetof(Map_t4262919222, ___updatePerSecond_15)); }
+	inline float get_updatePerSecond_15() const { return ___updatePerSecond_15; }
+	inline float* get_address_of_updatePerSecond_15() { return &___updatePerSecond_15; }
+	inline void set_updatePerSecond_15(float value)
+	{
+		___updatePerSecond_15 = value;
+	}
+
+	inline static int32_t get_offset_of_time_16() { return static_cast<int32_t>(offsetof(Map_t4262919222, ___time_16)); }
+	inline float get_time_16() const { return ___time_16; }
+	inline float* get_address_of_time_16() { return &___time_16; }
+	inline void set_time_16(float value)
+	{
+		___time_16 = value;
 	}
 };
 

@@ -861,7 +861,9 @@ extern Il2CppCodeGenString* _stringLiteral2910587606;
 extern Il2CppCodeGenString* _stringLiteral276930036;
 extern Il2CppCodeGenString* _stringLiteral811305585;
 extern Il2CppCodeGenString* _stringLiteral905413807;
-extern const uint32_t NetworkBehaviour_SetSyncVar_TisIl2CppObject_m2107323894_MetadataUsageId;
+extern const uint32_t NetworkBehaviour_SetSyncVar_TisBoolean_t3825574718_m1486885202_MetadataUsageId;
+extern const uint32_t NetworkBehaviour_SetSyncVar_TisIl2CppObject_m2365822605_MetadataUsageId;
+extern const uint32_t NetworkBehaviour_SetSyncVar_TisSingle_t2076509932_m3187144784_MetadataUsageId;
 extern const uint32_t NetworkClient_SetNetworkConnectionClass_TisIl2CppObject_m3971742624_MetadataUsageId;
 extern Il2CppClass* NetworkServer_t3779449791_il2cpp_TypeInfo_var;
 extern const uint32_t NetworkServer_SetNetworkConnectionClass_TisIl2CppObject_m746483868_MetadataUsageId;
@@ -2966,6 +2968,8 @@ extern "C"  void Mesh_SetSizedArrayForChannel_m299035387 (Mesh_t1356156583 * __t
 extern "C"  void Debug_LogError_m3715728798 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___message0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Mesh/InternalShaderChannel UnityEngine.Mesh::GetUVChannel(System.Int32)
 extern "C"  int32_t Mesh_GetUVChannel_m364477864 (Mesh_t1356156583 * __this, int32_t ___uvIndex0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Boolean::Equals(System.Object)
+extern "C"  bool Boolean_Equals_m2118901528 (bool* __this, Il2CppObject * ___obj0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Networking.LogFilter::get_logDev()
 extern "C"  bool LogFilter_get_logDev_m1227657219 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.String::Concat(System.Object[])
@@ -2974,16 +2978,14 @@ extern "C"  String_t* String_Concat_m3881798623 (Il2CppObject * __this /* static
 extern "C"  void Debug_Log_m920475918 (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Networking.NetworkBehaviour::SetDirtyBit(System.UInt32)
 extern "C"  void NetworkBehaviour_SetDirtyBit_m1587776433 (NetworkBehaviour_t3873055601 * __this, uint32_t ___dirtyBit0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Single::Equals(System.Object)
+extern "C"  bool Single_Equals_m3679433096 (float* __this, Il2CppObject * ___obj0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Networking.NetworkServer UnityEngine.Networking.NetworkServer::get_instance()
 extern "C"  NetworkServer_t3779449791 * NetworkServer_get_instance_m3472442485 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean System.Boolean::Equals(System.Object)
-extern "C"  bool Boolean_Equals_m2118901528 (bool* __this, Il2CppObject * ___obj0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.UI.LayoutGroup::SetDirty()
 extern "C"  void LayoutGroup_SetDirty_m3600378958 (LayoutGroup_t3962498969 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Int32::Equals(System.Object)
 extern "C"  bool Int32_Equals_m753832628 (int32_t* __this, Il2CppObject * ___obj0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean System.Single::Equals(System.Object)
-extern "C"  bool Single_Equals_m3679433096 (float* __this, Il2CppObject * ___obj0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Vector2::Equals(System.Object)
 extern "C"  bool Vector2_Equals_m1405920279 (Vector2_t2243707579 * __this, Il2CppObject * ___other0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Activator::CreateInstance(System.Type)
@@ -26184,13 +26186,130 @@ IL_002f:
 		return;
 	}
 }
-// System.Void UnityEngine.Networking.NetworkBehaviour::SetSyncVar<System.Object>(T,T&,System.UInt32)
-extern "C"  void NetworkBehaviour_SetSyncVar_TisIl2CppObject_m2107323894_gshared (NetworkBehaviour_t3873055601 * __this, Il2CppObject * ___value0, Il2CppObject ** ___fieldValue1, uint32_t ___dirtyBit2, const MethodInfo* method)
+// System.Void UnityEngine.Networking.NetworkBehaviour::SetSyncVar<System.Boolean>(T,T&,System.UInt32)
+extern "C"  void NetworkBehaviour_SetSyncVar_TisBoolean_t3825574718_m1486885202_gshared (NetworkBehaviour_t3873055601 * __this, bool ___value0, bool* ___fieldValue1, uint32_t ___dirtyBit2, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (NetworkBehaviour_SetSyncVar_TisIl2CppObject_m2107323894_MetadataUsageId);
+		il2cpp_codegen_initialize_method (NetworkBehaviour_SetSyncVar_TisBoolean_t3825574718_m1486885202_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		V_0 = (bool)0;
+		goto IL_0027;
+	}
+	{
+	}
+	{
+		V_0 = (bool)1;
+	}
+
+IL_0021:
+	{
+		goto IL_0045;
+	}
+
+IL_0027:
+	{
+		bool* L_2 = ___fieldValue1;
+		bool L_3 = (*(bool*)L_2);
+		Il2CppObject * L_4 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_3);
+		bool L_5 = Boolean_Equals_m2118901528((bool*)(&___value0), (Il2CppObject *)L_4, /*hidden argument*/NULL);
+		V_0 = (bool)((((int32_t)L_5) == ((int32_t)0))? 1 : 0);
+	}
+
+IL_0045:
+	{
+		bool L_6 = V_0;
+		if (!L_6)
+		{
+			goto IL_00c5;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(LogFilter_t2612395354_il2cpp_TypeInfo_var);
+		bool L_7 = LogFilter_get_logDev_m1227657219(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (!L_7)
+		{
+			goto IL_00b6;
+		}
+	}
+	{
+		ObjectU5BU5D_t3614634134* L_8 = (ObjectU5BU5D_t3614634134*)((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)8));
+		NullCheck(L_8);
+		ArrayElementTypeCheck (L_8, _stringLiteral2910587606);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)_stringLiteral2910587606);
+		ObjectU5BU5D_t3614634134* L_9 = (ObjectU5BU5D_t3614634134*)L_8;
+		NullCheck((Il2CppObject *)__this);
+		Type_t * L_10 = Object_GetType_m191970594((Il2CppObject *)__this, /*hidden argument*/NULL);
+		NullCheck((MemberInfo_t *)L_10);
+		String_t* L_11 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, (MemberInfo_t *)L_10);
+		NullCheck(L_9);
+		ArrayElementTypeCheck (L_9, L_11);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_11);
+		ObjectU5BU5D_t3614634134* L_12 = (ObjectU5BU5D_t3614634134*)L_9;
+		NullCheck(L_12);
+		ArrayElementTypeCheck (L_12, _stringLiteral276930036);
+		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)_stringLiteral276930036);
+		ObjectU5BU5D_t3614634134* L_13 = (ObjectU5BU5D_t3614634134*)L_12;
+		uint32_t L_14 = ___dirtyBit2;
+		uint32_t L_15 = L_14;
+		Il2CppObject * L_16 = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &L_15);
+		NullCheck(L_13);
+		ArrayElementTypeCheck (L_13, L_16);
+		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_16);
+		ObjectU5BU5D_t3614634134* L_17 = (ObjectU5BU5D_t3614634134*)L_13;
+		NullCheck(L_17);
+		ArrayElementTypeCheck (L_17, _stringLiteral811305585);
+		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(4), (Il2CppObject *)_stringLiteral811305585);
+		ObjectU5BU5D_t3614634134* L_18 = (ObjectU5BU5D_t3614634134*)L_17;
+		bool* L_19 = ___fieldValue1;
+		bool L_20 = (*(bool*)L_19);
+		Il2CppObject * L_21 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_20);
+		NullCheck(L_18);
+		ArrayElementTypeCheck (L_18, L_21);
+		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(5), (Il2CppObject *)L_21);
+		ObjectU5BU5D_t3614634134* L_22 = (ObjectU5BU5D_t3614634134*)L_18;
+		NullCheck(L_22);
+		ArrayElementTypeCheck (L_22, _stringLiteral905413807);
+		(L_22)->SetAt(static_cast<il2cpp_array_size_t>(6), (Il2CppObject *)_stringLiteral905413807);
+		ObjectU5BU5D_t3614634134* L_23 = (ObjectU5BU5D_t3614634134*)L_22;
+		bool L_24 = ___value0;
+		bool L_25 = L_24;
+		Il2CppObject * L_26 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_25);
+		NullCheck(L_23);
+		ArrayElementTypeCheck (L_23, L_26);
+		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(7), (Il2CppObject *)L_26);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_27 = String_Concat_m3881798623(NULL /*static, unused*/, (ObjectU5BU5D_t3614634134*)L_23, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, (Il2CppObject *)L_27, /*hidden argument*/NULL);
+	}
+
+IL_00b6:
+	{
+		uint32_t L_28 = ___dirtyBit2;
+		NullCheck((NetworkBehaviour_t3873055601 *)__this);
+		NetworkBehaviour_SetDirtyBit_m1587776433((NetworkBehaviour_t3873055601 *)__this, (uint32_t)L_28, /*hidden argument*/NULL);
+		bool* L_29 = ___fieldValue1;
+		bool L_30 = ___value0;
+		(*(bool*)L_29) = L_30;
+	}
+
+IL_00c5:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.Networking.NetworkBehaviour::SetSyncVar<System.Object>(T,T&,System.UInt32)
+extern "C"  void NetworkBehaviour_SetSyncVar_TisIl2CppObject_m2365822605_gshared (NetworkBehaviour_t3873055601 * __this, Il2CppObject * ___value0, Il2CppObject ** ___fieldValue1, uint32_t ___dirtyBit2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (NetworkBehaviour_SetSyncVar_TisIl2CppObject_m2365822605_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	bool V_0 = false;
@@ -26299,6 +26418,123 @@ IL_00b6:
 		Il2CppObject * L_24 = ___value0;
 		(*(Il2CppObject **)L_23) = L_24;
 		Il2CppCodeGenWriteBarrier((Il2CppObject **)L_23, L_24);
+	}
+
+IL_00c5:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.Networking.NetworkBehaviour::SetSyncVar<System.Single>(T,T&,System.UInt32)
+extern "C"  void NetworkBehaviour_SetSyncVar_TisSingle_t2076509932_m3187144784_gshared (NetworkBehaviour_t3873055601 * __this, float ___value0, float* ___fieldValue1, uint32_t ___dirtyBit2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (NetworkBehaviour_SetSyncVar_TisSingle_t2076509932_m3187144784_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		V_0 = (bool)0;
+		goto IL_0027;
+	}
+	{
+	}
+	{
+		V_0 = (bool)1;
+	}
+
+IL_0021:
+	{
+		goto IL_0045;
+	}
+
+IL_0027:
+	{
+		float* L_2 = ___fieldValue1;
+		float L_3 = (*(float*)L_2);
+		Il2CppObject * L_4 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_3);
+		bool L_5 = Single_Equals_m3679433096((float*)(&___value0), (Il2CppObject *)L_4, /*hidden argument*/NULL);
+		V_0 = (bool)((((int32_t)L_5) == ((int32_t)0))? 1 : 0);
+	}
+
+IL_0045:
+	{
+		bool L_6 = V_0;
+		if (!L_6)
+		{
+			goto IL_00c5;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(LogFilter_t2612395354_il2cpp_TypeInfo_var);
+		bool L_7 = LogFilter_get_logDev_m1227657219(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (!L_7)
+		{
+			goto IL_00b6;
+		}
+	}
+	{
+		ObjectU5BU5D_t3614634134* L_8 = (ObjectU5BU5D_t3614634134*)((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)8));
+		NullCheck(L_8);
+		ArrayElementTypeCheck (L_8, _stringLiteral2910587606);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)_stringLiteral2910587606);
+		ObjectU5BU5D_t3614634134* L_9 = (ObjectU5BU5D_t3614634134*)L_8;
+		NullCheck((Il2CppObject *)__this);
+		Type_t * L_10 = Object_GetType_m191970594((Il2CppObject *)__this, /*hidden argument*/NULL);
+		NullCheck((MemberInfo_t *)L_10);
+		String_t* L_11 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, (MemberInfo_t *)L_10);
+		NullCheck(L_9);
+		ArrayElementTypeCheck (L_9, L_11);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_11);
+		ObjectU5BU5D_t3614634134* L_12 = (ObjectU5BU5D_t3614634134*)L_9;
+		NullCheck(L_12);
+		ArrayElementTypeCheck (L_12, _stringLiteral276930036);
+		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)_stringLiteral276930036);
+		ObjectU5BU5D_t3614634134* L_13 = (ObjectU5BU5D_t3614634134*)L_12;
+		uint32_t L_14 = ___dirtyBit2;
+		uint32_t L_15 = L_14;
+		Il2CppObject * L_16 = Box(UInt32_t2149682021_il2cpp_TypeInfo_var, &L_15);
+		NullCheck(L_13);
+		ArrayElementTypeCheck (L_13, L_16);
+		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_16);
+		ObjectU5BU5D_t3614634134* L_17 = (ObjectU5BU5D_t3614634134*)L_13;
+		NullCheck(L_17);
+		ArrayElementTypeCheck (L_17, _stringLiteral811305585);
+		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(4), (Il2CppObject *)_stringLiteral811305585);
+		ObjectU5BU5D_t3614634134* L_18 = (ObjectU5BU5D_t3614634134*)L_17;
+		float* L_19 = ___fieldValue1;
+		float L_20 = (*(float*)L_19);
+		Il2CppObject * L_21 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_20);
+		NullCheck(L_18);
+		ArrayElementTypeCheck (L_18, L_21);
+		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(5), (Il2CppObject *)L_21);
+		ObjectU5BU5D_t3614634134* L_22 = (ObjectU5BU5D_t3614634134*)L_18;
+		NullCheck(L_22);
+		ArrayElementTypeCheck (L_22, _stringLiteral905413807);
+		(L_22)->SetAt(static_cast<il2cpp_array_size_t>(6), (Il2CppObject *)_stringLiteral905413807);
+		ObjectU5BU5D_t3614634134* L_23 = (ObjectU5BU5D_t3614634134*)L_22;
+		float L_24 = ___value0;
+		float L_25 = L_24;
+		Il2CppObject * L_26 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_25);
+		NullCheck(L_23);
+		ArrayElementTypeCheck (L_23, L_26);
+		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(7), (Il2CppObject *)L_26);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_27 = String_Concat_m3881798623(NULL /*static, unused*/, (ObjectU5BU5D_t3614634134*)L_23, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, (Il2CppObject *)L_27, /*hidden argument*/NULL);
+	}
+
+IL_00b6:
+	{
+		uint32_t L_28 = ___dirtyBit2;
+		NullCheck((NetworkBehaviour_t3873055601 *)__this);
+		NetworkBehaviour_SetDirtyBit_m1587776433((NetworkBehaviour_t3873055601 *)__this, (uint32_t)L_28, /*hidden argument*/NULL);
+		float* L_29 = ___fieldValue1;
+		float L_30 = ___value0;
+		(*(float*)L_29) = L_30;
 	}
 
 IL_00c5:

@@ -58,8 +58,18 @@
 #include "UnityEngine_UnityEngine_Coroutine2299508840.h"
 #include "AssemblyU2DCSharp_CountDownServer_U3CCountdownRout3374958917.h"
 #include "mscorlib_System_NotSupportedException1793819818.h"
+#include "AssemblyU2DCSharp_Compass4162012560.h"
+#include "UnityEngine_UnityEngine_Camera189460977.h"
 #include "AssemblyU2DCSharp_GameController3607102586.h"
+<<<<<<< HEAD
 #include "AssemblyU2DCSharp_GameController_U3CCountdownRoutin994124823.h"
+=======
+#include "UnityEngine_UnityEngine_Canvas209405766.h"
+#include "UnityEngine_UnityEngine_Color2020392075.h"
+#include "AssemblyU2DCSharp_Map4262919222.h"
+#include "UnityEngine_UnityEngine_Behaviour955675639.h"
+#include "AssemblyU2DCSharp_GameController_U3CFadeToU3Ec__It1141524637.h"
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 #include "AssemblyU2DCSharp_GPSController2272977524.h"
 #include "AssemblyU2DCSharp_GPSController_U3CStartLocationSe2676618990.h"
 #include "UnityEngine_UnityEngine_LocationServiceStatus2482073234.h"
@@ -70,17 +80,26 @@
 #include "AssemblyU2DCSharp_HandMapController222498385.h"
 #include "UnityEngine_UnityEngine_Touch407273883.h"
 #include "UnityEngine_UnityEngine_Vector22243707579.h"
+<<<<<<< HEAD
 #include "UnityEngine_UnityEngine_Camera189460977.h"
 #include "UnityEngine_UnityEngine_Behaviour955675639.h"
 #include "AssemblyU2DCSharp_Map4262919222.h"
+=======
+#include "AssemblyU2DCSharp_HidePlayer4016648077.h"
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 #include "AssemblyU2DCSharp_HollowCircle3041030259.h"
 #include "UnityEngine_UnityEngine_LineRenderer849157671.h"
 #include "AssemblyU2DCSharp_Map_U3CGetGoogleMapU3Ec__Iterato1695079217.h"
+<<<<<<< HEAD
 #include "mscorlib_System_Char3454481338.h"
+=======
+#include "AssemblyU2DCSharp_PlayerMove195622780.h"
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 #include "AssemblyU2DCSharp_Map_mapType3017953257.h"
 #include "UnityEngine_UnityEngine_WWW2919945039.h"
 #include "UnityEngine_UnityEngine_Texture2D3542995729.h"
 #include "AssemblyU2DCSharp_MapTools3308069217.h"
+<<<<<<< HEAD
 #include "AssemblyU2DCSharp_PlaneMove3901225937.h"
 #include "AssemblyU2DCSharp_PlaneMove_U3CMoveOverSpeedU3Ec__1987356629.h"
 #include "AssemblyU2DCSharp_PlaneMove_U3CMoveOverSecondsU3Ec2440393214.h"
@@ -92,6 +111,24 @@
 #include "AssemblyU2DCSharp_PlayerMove195622780.h"
 #include "AssemblyU2DCSharp_SimpleChat403391640.h"
 #include "UnityEngine_UnityEngine_Rect3681755626.h"
+=======
+#include "UnityEngine_Networking_UnityEngine_Networking_Netw3873055601.h"
+#include "mscorlib_System_Collections_ObjectModel_ReadOnlyCol293053598.h"
+#include "AssemblyU2DCSharp_PlayerUI3700805861.h"
+#include "UnityEngine_UnityEngine_SkinnedMeshRenderer4220419316.h"
+#include "UnityEngine_UnityEngine_Material193706927.h"
+#include "UnityEngine_UnityEngine_Renderer257310565.h"
+#include "UnityEngine_Networking_UnityEngine_Networking_Netw3187690923.h"
+#include "UnityEngine_Networking_UnityEngine_Networking_Networ33998832.h"
+#include "UnityEngine_Networking_UnityEngine_Networking_Netwo560143343.h"
+#include "mscorlib_System_Int164041245914.h"
+#include "UnityEngine_Networking_UnityEngine_Networking_Netw1766639790.h"
+#include "mscorlib_System_RuntimeTypeHandle2330101084.h"
+#include "mscorlib_System_IntPtr2504060609.h"
+#include "mscorlib_System_Type1303803226.h"
+#include "UnityEngine_Networking_UnityEngine_Networking_Netw2573314724.h"
+#include "AssemblyU2DCSharp_SimpleChat403391640.h"
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 #include "mscorlib_System_Collections_Generic_List_1_gen1398341365.h"
 #include "wwwChat_SimChat2635359255.h"
 #include "wwwChat_SimpleMessage1037894399.h"
@@ -206,10 +243,23 @@ struct Coroutine_t2299508840;
 struct U3CCountdownRoutineU3Ec__Iterator0_t3374958917;
 // System.NotSupportedException
 struct NotSupportedException_t1793819818;
+// Compass
+struct Compass_t4162012560;
+// UnityEngine.Camera
+struct Camera_t189460977;
 // GameController
 struct GameController_t3607102586;
+<<<<<<< HEAD
 // GameController/<CountdownRoutine>c__Iterator0
 struct U3CCountdownRoutineU3Ec__Iterator0_t994124823;
+=======
+// Map
+struct Map_t4262919222;
+// UnityEngine.Behaviour
+struct Behaviour_t955675639;
+// GameController/<FadeTo>c__Iterator0
+struct U3CFadeToU3Ec__Iterator0_t1141524637;
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 // GPSController
 struct GPSController_t2272977524;
 // GPSController/<StartLocationService>c__Iterator0
@@ -224,18 +274,38 @@ struct Singleton_1_t342423049;
 struct Singleton_1_t2824109060;
 // HandMapController
 struct HandMapController_t222498385;
+<<<<<<< HEAD
 // UnityEngine.Behaviour
 struct Behaviour_t955675639;
+=======
+// HidePlayer
+struct HidePlayer_t4016648077;
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 // HollowCircle
 struct HollowCircle_t3041030259;
 // UnityEngine.LineRenderer
 struct LineRenderer_t849157671;
+<<<<<<< HEAD
 // Map
 struct Map_t4262919222;
+=======
+// LoginController
+struct LoginController_t112609021;
+// LoginController/<Login>c__Iterator0
+struct U3CLoginU3Ec__Iterator0_t1873648316;
+// LoginController/<CreateAccount>c__Iterator1
+struct U3CCreateAccountU3Ec__Iterator1_t3235856557;
+// UnityEngine.AsyncOperation
+struct AsyncOperation_t3814632279;
+// LoginController/<loadGameAsync>c__Iterator2
+struct U3CloadGameAsyncU3Ec__Iterator2_t1609687105;
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 // Map/<GetGoogleMap>c__Iterator0
 struct U3CGetGoogleMapU3Ec__Iterator0_t1695079217;
-// GPSData[]
-struct GPSDataU5BU5D_t4145052893;
+// UnityEngine.GameObject[]
+struct GameObjectU5BU5D_t3057952154;
+// PlayerMove
+struct PlayerMove_t195622780;
 // System.Object[]
 struct ObjectU5BU5D_t3614634134;
 // UnityEngine.WWW
@@ -244,6 +314,7 @@ struct WWW_t2919945039;
 struct Texture2D_t3542995729;
 // MapTools
 struct MapTools_t3308069217;
+<<<<<<< HEAD
 // UnityEngine.Camera
 struct Camera_t189460977;
 // PlaneMove
@@ -260,6 +331,34 @@ struct PlayerController_t4148409433;
 struct U3CFadeToU3Ec__Iterator0_t1919832806;
 // PlayerMove
 struct PlayerMove_t195622780;
+=======
+// UnityEngine.Networking.NetworkBehaviour
+struct NetworkBehaviour_t3873055601;
+// System.Collections.ObjectModel.ReadOnlyCollection`1<UnityEngine.Networking.NetworkConnection>
+struct ReadOnlyCollection_1_t293053598;
+// System.Collections.ObjectModel.ReadOnlyCollection`1<System.Object>
+struct ReadOnlyCollection_1_t2875234987;
+// PlayerUI
+struct PlayerUI_t3700805861;
+// UnityEngine.SkinnedMeshRenderer
+struct SkinnedMeshRenderer_t4220419316;
+// UnityEngine.Renderer
+struct Renderer_t257310565;
+// UnityEngine.Material[]
+struct MaterialU5BU5D_t3123989686;
+// UnityEngine.Material
+struct Material_t193706927;
+// UnityEngine.Networking.NetworkReader
+struct NetworkReader_t3187690923;
+// UnityEngine.Networking.NetworkWriter
+struct NetworkWriter_t560143343;
+// UnityEngine.Networking.NetworkIdentity
+struct NetworkIdentity_t1766639790;
+// System.Type
+struct Type_t;
+// UnityEngine.Networking.NetworkBehaviour/CmdDelegate
+struct CmdDelegate_t2573314724;
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 // SimpleChat
 struct SimpleChat_t403391640;
 // System.Collections.Generic.List`1<System.String>
@@ -377,6 +476,7 @@ extern const uint32_t CountDownController_Start_m2361129142_MetadataUsageId;
 extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+<<<<<<< HEAD
 extern Il2CppCodeGenString* _stringLiteral474265194;
 extern const uint32_t CountDownController_RpcUpdateCountdown_m1433628092_MetadataUsageId;
 extern Il2CppClass* NetworkClient_t696867603_il2cpp_TypeInfo_var;
@@ -402,6 +502,16 @@ extern Il2CppCodeGenString* _stringLiteral219832625;
 extern const uint32_t CountDownServer_OnStartServer_m1487289155_MetadataUsageId;
 extern Il2CppClass* U3CCountdownRoutineU3Ec__Iterator0_t3374958917_il2cpp_TypeInfo_var;
 extern const uint32_t CountDownServer_CountdownRoutine_m843258866_MetadataUsageId;
+=======
+extern const uint32_t U3CServerSendU3Ec__Iterator0_MoveNext_m1173577137_MetadataUsageId;
+extern Il2CppClass* NotSupportedException_t1793819818_il2cpp_TypeInfo_var;
+extern const uint32_t U3CServerSendU3Ec__Iterator0_Reset_m2783850324_MetadataUsageId;
+extern const MethodInfo* Component_GetComponent_TisMap_t4262919222_m1952891835_MethodInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisRawImage_t2749640213_m2486045553_MethodInfo_var;
+extern const uint32_t GameController_showMap_m4046211700_MetadataUsageId;
+extern Il2CppClass* U3CFadeToU3Ec__Iterator0_t1141524637_il2cpp_TypeInfo_var;
+extern const uint32_t GameController_FadeTo_m2984478648_MetadataUsageId;
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
 extern const uint32_t U3CCountdownRoutineU3Ec__Iterator0_MoveNext_m3526668402_MetadataUsageId;
 extern Il2CppClass* NotSupportedException_t1793819818_il2cpp_TypeInfo_var;
@@ -431,6 +541,7 @@ extern const MethodInfo* Singleton_1__ctor_m1877856050_MethodInfo_var;
 extern const uint32_t GPSData__ctor_m1606646883_MetadataUsageId;
 extern Il2CppCodeGenString* _stringLiteral707537103;
 extern const uint32_t HandMapController_Update_m836850453_MetadataUsageId;
+extern const uint32_t HidePlayer_Update_m2363072953_MetadataUsageId;
 extern const MethodInfo* GameObject_GetComponent_TisLineRenderer_t849157671_m3748809323_MethodInfo_var;
 extern const uint32_t HollowCircle_Start_m2284073694_MetadataUsageId;
 extern const uint32_t HollowCircle_CreatePoints_m2954146693_MetadataUsageId;
@@ -442,23 +553,29 @@ extern Il2CppClass* U3CGetGoogleMapU3Ec__Iterator0_t1695079217_il2cpp_TypeInfo_v
 extern const uint32_t Map_GetGoogleMap_m3075677944_MetadataUsageId;
 extern Il2CppClass* StringU5BU5D_t1642385972_il2cpp_TypeInfo_var;
 extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+<<<<<<< HEAD
 extern Il2CppClass* Char_t3454481338_il2cpp_TypeInfo_var;
+=======
+extern const MethodInfo* GameObject_GetComponent_TisPlayerMove_t195622780_m1606063757_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1875862075;
+extern Il2CppCodeGenString* _stringLiteral1993089610;
+extern Il2CppCodeGenString* _stringLiteral1993090176;
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 extern Il2CppCodeGenString* _stringLiteral1403050043;
 extern Il2CppCodeGenString* _stringLiteral3996208733;
-extern const uint32_t Map_generateURL_m3793783533_MetadataUsageId;
-extern Il2CppClass* GPSDataU5BU5D_t4145052893_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral372029314;
+extern const uint32_t Map_generateURL_m309255195_MetadataUsageId;
 extern Il2CppClass* mapType_t3017953257_il2cpp_TypeInfo_var;
 extern Il2CppClass* WWW_t2919945039_il2cpp_TypeInfo_var;
 extern const MethodInfo* Component_GetComponent_TisRawImage_t2749640213_m1817787565_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2775107238;
-extern Il2CppCodeGenString* _stringLiteral372029314;
 extern Il2CppCodeGenString* _stringLiteral1960745698;
 extern Il2CppCodeGenString* _stringLiteral2334078884;
 extern Il2CppCodeGenString* _stringLiteral372029398;
 extern Il2CppCodeGenString* _stringLiteral93847055;
-extern Il2CppCodeGenString* _stringLiteral2313303675;
 extern const uint32_t U3CGetGoogleMapU3Ec__Iterator0_MoveNext_m2744658934_MetadataUsageId;
 extern const uint32_t U3CGetGoogleMapU3Ec__Iterator0_Reset_m2581645829_MetadataUsageId;
+<<<<<<< HEAD
 extern const uint32_t MapTools_Update_m2536679305_MetadataUsageId;
 extern Il2CppClass* U3CMoveOverSpeedU3Ec__Iterator0_t1987356629_il2cpp_TypeInfo_var;
 extern const uint32_t PlaneMove_MoveOverSpeed_m2595278014_MetadataUsageId;
@@ -475,7 +592,50 @@ extern Il2CppClass* U3CFadeToU3Ec__Iterator0_t1919832806_il2cpp_TypeInfo_var;
 extern const uint32_t PlayerController_FadeTo_m525465523_MetadataUsageId;
 extern const uint32_t U3CFadeToU3Ec__Iterator0_MoveNext_m1667540883_MetadataUsageId;
 extern const uint32_t U3CFadeToU3Ec__Iterator0_Reset_m264949546_MetadataUsageId;
+=======
+extern Il2CppClass* MapTools_t3308069217_il2cpp_TypeInfo_var;
+extern const uint32_t MapTools_Update_m2536679305_MetadataUsageId;
+extern const uint32_t MapTools_mapGPS_m2811930864_MetadataUsageId;
+extern const uint32_t MapTools_getLatO_m920183944_MetadataUsageId;
+extern const uint32_t MapTools_setLatO_m107961725_MetadataUsageId;
+extern const uint32_t MapTools_getLonO_m221025940_MetadataUsageId;
+extern const uint32_t MapTools_setLonO_m3229664229_MetadataUsageId;
+extern const uint32_t MapTools_getLat_m3613946993_MetadataUsageId;
+extern const uint32_t MapTools_getLon_m2914782753_MetadataUsageId;
+extern Il2CppClass* NetworkBehaviour_t3873055601_il2cpp_TypeInfo_var;
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 extern const uint32_t PlayerMove__ctor_m161887621_MetadataUsageId;
+extern Il2CppClass* NetworkServer_t3779449791_il2cpp_TypeInfo_var;
+extern const MethodInfo* ReadOnlyCollection_1_get_Count_m3739455198_MethodInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisSkinnedMeshRenderer_t4220419316_m2583831202_MethodInfo_var;
+extern const uint32_t PlayerMove_Update_m1466995334_MetadataUsageId;
+extern const MethodInfo* NetworkBehaviour_SetSyncVar_TisBoolean_t3825574718_m1486885202_MethodInfo_var;
+extern const uint32_t PlayerMove_set_NetworkisSeeker_m2861567716_MetadataUsageId;
+extern const MethodInfo* NetworkBehaviour_SetSyncVar_TisSingle_t2076509932_m3187144784_MethodInfo_var;
+extern const uint32_t PlayerMove_set_NetworklatitudeO_m369194098_MetadataUsageId;
+extern const uint32_t PlayerMove_set_NetworklongitudeO_m1015069171_MetadataUsageId;
+extern const uint32_t PlayerMove_set_Networklatitude_m3590327843_MetadataUsageId;
+extern const uint32_t PlayerMove_set_Networklongitude_m2526468526_MetadataUsageId;
+extern const MethodInfo* NetworkBehaviour_SetSyncVar_TisString_t_m4112167601_MethodInfo_var;
+extern const uint32_t PlayerMove_set_Networkname_m1750711975_MetadataUsageId;
+extern Il2CppClass* PlayerMove_t195622780_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral831894840;
+extern const uint32_t PlayerMove_InvokeCmdCmdSet_m434246307_MetadataUsageId;
+extern Il2CppClass* NetworkClient_t696867603_il2cpp_TypeInfo_var;
+extern Il2CppClass* NetworkWriter_t560143343_il2cpp_TypeInfo_var;
+extern const MethodInfo* Component_GetComponent_TisNetworkIdentity_t1766639790_m2950944169_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral865936330;
+extern Il2CppCodeGenString* _stringLiteral2225425874;
+extern const uint32_t PlayerMove_CallCmdSet_m3201218195_MetadataUsageId;
+extern const Il2CppType* PlayerMove_t195622780_0_0_0_var;
+extern Il2CppClass* Type_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* CmdDelegate_t2573314724_il2cpp_TypeInfo_var;
+extern const MethodInfo* PlayerMove_InvokeCmdCmdSet_m434246307_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral923701298;
+extern const uint32_t PlayerMove__cctor_m1129527734_MetadataUsageId;
+extern const uint32_t PlayerUI_Awake_m3335881061_MetadataUsageId;
+extern const uint32_t PlayerUI_changeToHide_m3507154501_MetadataUsageId;
+extern const uint32_t PlayerUI_changeToSeek_m1596641025_MetadataUsageId;
 extern Il2CppClass* List_1_t1398341365_il2cpp_TypeInfo_var;
 extern Il2CppClass* Action_1_t2368512252_il2cpp_TypeInfo_var;
 extern const MethodInfo* List_1__ctor_m3854603248_MethodInfo_var;
@@ -727,6 +887,7 @@ public:
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
+<<<<<<< HEAD
 // System.String[]
 struct StringU5BU5D_t1642385972  : public Il2CppArray
 {
@@ -735,21 +896,75 @@ public:
 
 public:
 	inline String_t* GetAt(il2cpp_array_size_t index) const
+=======
+// System.Char[]
+struct CharU5BU5D_t1328083999  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Il2CppChar m_Items[1];
+
+public:
+	inline Il2CppChar GetAt(il2cpp_array_size_t index) const
 	{
 		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
 		return m_Items[index];
 	}
-	inline String_t** GetAddressAt(il2cpp_array_size_t index)
+	inline Il2CppChar* GetAddressAt(il2cpp_array_size_t index)
 	{
 		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
 		return m_Items + index;
 	}
+	inline void SetAt(il2cpp_array_size_t index, Il2CppChar value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Il2CppChar GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Il2CppChar* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Il2CppChar value)
+	{
+		m_Items[index] = value;
+	}
+};
+// UnityEngine.GameObject[]
+struct GameObjectU5BU5D_t3057952154  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) GameObject_t1756533147 * m_Items[1];
+
+public:
+	inline GameObject_t1756533147 * GetAt(il2cpp_array_size_t index) const
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+<<<<<<< HEAD
+	inline String_t** GetAddressAt(il2cpp_array_size_t index)
+=======
+	inline GameObject_t1756533147 ** GetAddressAt(il2cpp_array_size_t index)
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+<<<<<<< HEAD
 	inline void SetAt(il2cpp_array_size_t index, String_t* value)
+=======
+	inline void SetAt(il2cpp_array_size_t index, GameObject_t1756533147 * value)
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 	{
 		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
+<<<<<<< HEAD
 	inline String_t* GetAtUnchecked(il2cpp_array_size_t index) const
 	{
 		return m_Items[index];
@@ -759,6 +974,17 @@ public:
 		return m_Items + index;
 	}
 	inline void SetAtUnchecked(il2cpp_array_size_t index, String_t* value)
+=======
+	inline GameObject_t1756533147 * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline GameObject_t1756533147 ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, GameObject_t1756533147 * value)
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
@@ -796,6 +1022,43 @@ public:
 		return m_Items + index;
 	}
 	inline void SetAtUnchecked(il2cpp_array_size_t index, Il2CppObject * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// UnityEngine.Material[]
+struct MaterialU5BU5D_t3123989686  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Material_t193706927 * m_Items[1];
+
+public:
+	inline Material_t193706927 * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Material_t193706927 ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Material_t193706927 * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline Material_t193706927 * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Material_t193706927 ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Material_t193706927 * value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
@@ -881,6 +1144,7 @@ struct CharU5BU5D_t1328083999  : public Il2CppArray
 public:
 	ALIGN_FIELD (8) Il2CppChar m_Items[1];
 
+<<<<<<< HEAD
 public:
 	inline Il2CppChar GetAt(il2cpp_array_size_t index) const
 	{
@@ -924,6 +1188,21 @@ extern "C"  Il2CppObject * Object_Instantiate_TisIl2CppObject_m214501219_gshared
 extern "C"  Il2CppObject * Singleton_1_get_s_Instance_m2448171769_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method);
 // System.Void TheRunner.Utilities.Singleton`1<System.Object>::.ctor()
 extern "C"  void Singleton_1__ctor_m271868968_gshared (Singleton_1_t2824109060 * __this, const MethodInfo* method);
+=======
+
+// !!0 UnityEngine.Component::GetComponent<System.Object>()
+extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m4109961936_gshared (Component_t3819376471 * __this, const MethodInfo* method);
+// !!0 UnityEngine.GameObject::GetComponent<System.Object>()
+extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m900327904_gshared (GameObject_t1756533147 * __this, const MethodInfo* method);
+// System.Int32 System.Collections.ObjectModel.ReadOnlyCollection`1<System.Object>::get_Count()
+extern "C"  int32_t ReadOnlyCollection_1_get_Count_m2562379905_gshared (ReadOnlyCollection_1_t2875234987 * __this, const MethodInfo* method);
+// System.Void UnityEngine.Networking.NetworkBehaviour::SetSyncVar<System.Boolean>(!!0,!!0&,System.UInt32)
+extern "C"  void NetworkBehaviour_SetSyncVar_TisBoolean_t3825574718_m1486885202_gshared (NetworkBehaviour_t3873055601 * __this, bool p0, bool* p1, uint32_t p2, const MethodInfo* method);
+// System.Void UnityEngine.Networking.NetworkBehaviour::SetSyncVar<System.Single>(!!0,!!0&,System.UInt32)
+extern "C"  void NetworkBehaviour_SetSyncVar_TisSingle_t2076509932_m3187144784_gshared (NetworkBehaviour_t3873055601 * __this, float p0, float* p1, uint32_t p2, const MethodInfo* method);
+// System.Void UnityEngine.Networking.NetworkBehaviour::SetSyncVar<System.Object>(!!0,!!0&,System.UInt32)
+extern "C"  void NetworkBehaviour_SetSyncVar_TisIl2CppObject_m2365822605_gshared (NetworkBehaviour_t3873055601 * __this, Il2CppObject * p0, Il2CppObject ** p1, uint32_t p2, const MethodInfo* method);
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 // System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
 extern "C"  void List_1__ctor_m310736118_gshared (List_1_t2058570427 * __this, const MethodInfo* method);
 // System.Void System.Action`1<System.Object>::.ctor(System.Object,System.IntPtr)
@@ -1091,6 +1370,7 @@ extern "C"  void CountDownController_CallRpcUpdateCountdown_m1742661568 (CountDo
 extern "C"  float Time_get_deltaTime_m2233168104 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.NotSupportedException::.ctor()
 extern "C"  void NotSupportedException__ctor_m3232764727 (NotSupportedException_t1793819818 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+<<<<<<< HEAD
 // System.Collections.IEnumerator GameController::CountdownRoutine()
 extern "C"  Il2CppObject * GameController_CountdownRoutine_m3066258260 (GameController_t3607102586 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Networking.NetworkBehaviour::get_isServer()
@@ -1103,6 +1383,30 @@ extern "C"  void GameController_planeFlyBy_m1593041911 (GameController_t36071025
 extern "C"  void U3CCountdownRoutineU3Ec__Iterator0__ctor_m1595830836 (U3CCountdownRoutineU3Ec__Iterator0_t994124823 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GameController::getElapsedTime(System.Int32)
 extern "C"  void GameController_getElapsedTime_m1186069389 (GameController_t3607102586 * __this, int32_t ___currentCountDown0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+=======
+// UnityEngine.Camera UnityEngine.Camera::get_main()
+extern "C"  Camera_t189460977 * Camera_get_main_m475173995 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void GameController::showMap()
+extern "C"  void GameController_showMap_m4046211700 (GameController_t3607102586 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Transform::get_eulerAngles()
+extern "C"  Vector3_t2243707580  Transform_get_eulerAngles_m4066505159 (Transform_t3275118058 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// !!0 UnityEngine.Component::GetComponent<Map>()
+#define Component_GetComponent_TisMap_t4262919222_m1952891835(__this, method) ((  Map_t4262919222 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m4109961936_gshared)(__this, method)
+// System.Void UnityEngine.Behaviour::set_enabled(System.Boolean)
+extern "C"  void Behaviour_set_enabled_m1796096907 (Behaviour_t955675639 * __this, bool p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// !!0 UnityEngine.GameObject::GetComponent<UnityEngine.UI.RawImage>()
+#define GameObject_GetComponent_TisRawImage_t2749640213_m2486045553(__this, method) ((  RawImage_t2749640213 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m900327904_gshared)(__this, method)
+// System.Void UnityEngine.Color::.ctor(System.Single,System.Single,System.Single,System.Single)
+extern "C"  void Color__ctor_m1909920690 (Color_t2020392075 * __this, float p0, float p1, float p2, float p3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Collections.IEnumerator GameController::FadeTo(System.Single,System.Single)
+extern "C"  Il2CppObject * GameController_FadeTo_m2984478648 (GameController_t3607102586 * __this, float ___aValue0, float ___aTime1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void GameController/<FadeTo>c__Iterator0::.ctor()
+extern "C"  void U3CFadeToU3Ec__Iterator0__ctor_m1969203514 (U3CFadeToU3Ec__Iterator0_t1141524637 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Mathf::Lerp(System.Single,System.Single,System.Single)
+extern "C"  float Mathf_Lerp_m1686556575 (Il2CppObject * __this /* static, unused */, float p0, float p1, float p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void GPSData::.ctor()
+extern "C"  void GPSData__ctor_m1606646883 (GPSData_t207763284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 // System.Void GPSController/<StartLocationService>c__Iterator0::.ctor()
 extern "C"  void U3CStartLocationServiceU3Ec__Iterator0__ctor_m3643367443 (U3CStartLocationServiceU3Ec__Iterator0_t2676618990 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.GameObject UnityEngine.Component::get_gameObject()
@@ -1145,6 +1449,13 @@ extern "C"  float Vector2_get_magnitude_m33802565 (Vector2_t2243707579 * __this,
 extern "C"  bool Behaviour_get_enabled_m4079055610 (Behaviour_t955675639 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Mathf::RoundToInt(System.Single)
 extern "C"  int32_t Mathf_RoundToInt_m2927198556 (Il2CppObject * __this /* static, unused */, float p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+<<<<<<< HEAD
+=======
+// System.String System.String::Concat(System.Object,System.Object)
+extern "C"  String_t* String_Concat_m56707527 (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, Il2CppObject * p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.GameObject::SetActive(System.Boolean)
+extern "C"  void GameObject_SetActive_m2887581199 (GameObject_t1756533147 * __this, bool p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.LineRenderer>()
 #define GameObject_GetComponent_TisLineRenderer_t849157671_m3748809323(__this, method) ((  LineRenderer_t849157671 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m900327904_gshared)(__this, method)
 // System.Void UnityEngine.LineRenderer::SetVertexCount(System.Int32)
@@ -1161,12 +1472,21 @@ extern "C"  float GPSData_getLatitude_m1301723475 (GPSData_t207763284 * __this, 
 extern "C"  float GPSData_getLongitude_m529963932 (GPSData_t207763284 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Map/<GetGoogleMap>c__Iterator0::.ctor()
 extern "C"  void U3CGetGoogleMapU3Ec__Iterator0__ctor_m3373241622 (U3CGetGoogleMapU3Ec__Iterator0_t1695079217 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.GameObject[] UnityEngine.GameObject::FindGameObjectsWithTag(System.String)
+extern "C"  GameObjectU5BU5D_t3057952154* GameObject_FindGameObjectsWithTag_m2154478296 (Il2CppObject * __this /* static, unused */, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// !!0 UnityEngine.GameObject::GetComponent<PlayerMove>()
+#define GameObject_GetComponent_TisPlayerMove_t195622780_m1606063757(__this, method) ((  PlayerMove_t195622780 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m900327904_gshared)(__this, method)
 // System.String System.String::Concat(System.Object[])
 extern "C"  String_t* String_Concat_m3881798623 (Il2CppObject * __this /* static, unused */, ObjectU5BU5D_t3614634134* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+<<<<<<< HEAD
 // System.String System.String::Concat(System.String,System.String)
 extern "C"  String_t* String_Concat_m2596409543 (Il2CppObject * __this /* static, unused */, String_t* p0, String_t* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Map::generateURL(GPSData[])
 extern "C"  void Map_generateURL_m3793783533 (Map_t4262919222 * __this, GPSDataU5BU5D_t4145052893* ___data0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+=======
+// System.Void Map::generateURL()
+extern "C"  void Map_generateURL_m309255195 (Map_t4262919222 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 // System.Void UnityEngine.WWW::.ctor(System.String)
 extern "C"  void WWW__ctor_m2024029190 (WWW_t2919945039 * __this, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Texture2D UnityEngine.WWW::get_texture()
@@ -1177,12 +1497,13 @@ extern "C"  Texture2D_t3542995729 * WWW_get_texture_m1121178301 (WWW_t2919945039
 extern "C"  void Object_Destroy_m4145850038 (Il2CppObject * __this /* static, unused */, Object_t1021602117 * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.MonoBehaviour::StopCoroutine(System.Collections.IEnumerator)
 extern "C"  void MonoBehaviour_StopCoroutine_m1170478282 (MonoBehaviour_t1158329972 * __this, Il2CppObject * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// UnityEngine.Camera UnityEngine.Camera::get_main()
-extern "C"  Camera_t189460977 * Camera_get_main_m475173995 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 MapTools::mapGPS(System.Single,System.Single)
 extern "C"  Vector3_t2243707580  MapTools_mapGPS_m2811930864 (MapTools_t3308069217 * __this, float ___latitude0, float ___longitude1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Vector3::MoveTowards(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+extern "C"  Vector3_t2243707580  Vector3_MoveTowards_m1358638081 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580  p0, Vector3_t2243707580  p1, float p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single TheRunner.Tools.TR_Toolbox::gps_transform(System.Single,System.Single,System.Single,System.Single)
 extern "C"  float TR_Toolbox_gps_transform_m2942405544 (Il2CppObject * __this /* static, unused */, float ___lat10, float ___lng11, float ___lat22, float ___lng23, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+<<<<<<< HEAD
 // System.Collections.IEnumerator PlaneMove::MoveOverSeconds(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)
 extern "C"  Il2CppObject * PlaneMove_MoveOverSeconds_m120187536 (PlaneMove_t3901225937 * __this, GameObject_t1756533147 * ___objectToMove0, Vector3_t2243707580  ___end1, float ___seconds2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void PlaneMove/<MoveOverSpeed>c__Iterator0::.ctor()
@@ -1217,8 +1538,110 @@ extern "C"  float Mathf_Lerp_m1686556575 (Il2CppObject * __this /* static, unuse
 extern "C"  bool NetworkBehaviour_get_isLocalPlayer_m3726148987 (NetworkBehaviour_t3873055601 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Rect::.ctor(System.Single,System.Single,System.Single,System.Single)
 extern "C"  void Rect__ctor_m1220545469 (Rect_t3681755626 * __this, float p0, float p1, float p2, float p3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+=======
+// System.Void UnityEngine.Networking.NetworkBehaviour::.ctor()
+extern "C"  void NetworkBehaviour__ctor_m483335596 (NetworkBehaviour_t3873055601 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Collections.ObjectModel.ReadOnlyCollection`1<UnityEngine.Networking.NetworkConnection> UnityEngine.Networking.NetworkServer::get_connections()
+extern "C"  ReadOnlyCollection_1_t293053598 * NetworkServer_get_connections_m2326618173 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 System.Collections.ObjectModel.ReadOnlyCollection`1<UnityEngine.Networking.NetworkConnection>::get_Count()
+#define ReadOnlyCollection_1_get_Count_m3739455198(__this, method) ((  int32_t (*) (ReadOnlyCollection_1_t293053598 *, const MethodInfo*))ReadOnlyCollection_1_get_Count_m2562379905_gshared)(__this, method)
+// System.Single MapTools::getLatO()
+extern "C"  float MapTools_getLatO_m920183944 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerMove::set_NetworklatitudeO(System.Single)
+extern "C"  void PlayerMove_set_NetworklatitudeO_m369194098 (PlayerMove_t195622780 * __this, float ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single MapTools::getLonO()
+extern "C"  float MapTools_getLonO_m221025940 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerMove::set_NetworklongitudeO(System.Single)
+extern "C"  void PlayerMove_set_NetworklongitudeO_m1015069171 (PlayerMove_t195622780 * __this, float ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.Networking.NetworkBehaviour::get_isLocalPlayer()
+extern "C"  bool NetworkBehaviour_get_isLocalPlayer_m3726148987 (NetworkBehaviour_t3873055601 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerMove::set_NetworkisSeeker(System.Boolean)
+extern "C"  void PlayerMove_set_NetworkisSeeker_m2861567716 (PlayerMove_t195622780 * __this, bool ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 // UnityEngine.Color UnityEngine.Color::get_red()
 extern "C"  Color_t2020392075  Color_get_red_m2410286591 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerUI::changeToSeek()
+extern "C"  void PlayerUI_changeToSeek_m1596641025 (PlayerUI_t3700805861 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Color UnityEngine.Color::get_white()
+extern "C"  Color_t2020392075  Color_get_white_m3987539815 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerUI::changeToHide()
+extern "C"  void PlayerUI_changeToHide_m3507154501 (PlayerUI_t3700805861 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// !!0 UnityEngine.GameObject::GetComponent<UnityEngine.SkinnedMeshRenderer>()
+#define GameObject_GetComponent_TisSkinnedMeshRenderer_t4220419316_m2583831202(__this, method) ((  SkinnedMeshRenderer_t4220419316 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m900327904_gshared)(__this, method)
+// UnityEngine.Material[] UnityEngine.Renderer::get_materials()
+extern "C"  MaterialU5BU5D_t3123989686* Renderer_get_materials_m810004692 (Renderer_t257310565 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Material::set_color(UnityEngine.Color)
+extern "C"  void Material_set_color_m577844242 (Material_t193706927 * __this, Color_t2020392075  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void MapTools::setLatO(System.Single)
+extern "C"  void MapTools_setLatO_m107961725 (Il2CppObject * __this /* static, unused */, float ___a0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void MapTools::setLonO(System.Single)
+extern "C"  void MapTools_setLonO_m3229664229 (Il2CppObject * __this /* static, unused */, float ___a0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single MapTools::getLat()
+extern "C"  float MapTools_getLat_m3613946993 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single MapTools::getLon()
+extern "C"  float MapTools_getLon_m2914782753 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerMove::CallCmdSet(System.Single,System.Single)
+extern "C"  void PlayerMove_CallCmdSet_m3201218195 (PlayerMove_t195622780 * __this, float ___lat0, float ___lon1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerMove::set_Networklatitude(System.Single)
+extern "C"  void PlayerMove_set_Networklatitude_m3590327843 (PlayerMove_t195622780 * __this, float ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerMove::set_Networklongitude(System.Single)
+extern "C"  void PlayerMove_set_Networklongitude_m2526468526 (PlayerMove_t195622780 * __this, float ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Networking.NetworkBehaviour::SetSyncVar<System.Boolean>(!!0,!!0&,System.UInt32)
+#define NetworkBehaviour_SetSyncVar_TisBoolean_t3825574718_m1486885202(__this, p0, p1, p2, method) ((  void (*) (NetworkBehaviour_t3873055601 *, bool, bool*, uint32_t, const MethodInfo*))NetworkBehaviour_SetSyncVar_TisBoolean_t3825574718_m1486885202_gshared)(__this, p0, p1, p2, method)
+// System.Void UnityEngine.Networking.NetworkBehaviour::SetSyncVar<System.Single>(!!0,!!0&,System.UInt32)
+#define NetworkBehaviour_SetSyncVar_TisSingle_t2076509932_m3187144784(__this, p0, p1, p2, method) ((  void (*) (NetworkBehaviour_t3873055601 *, float, float*, uint32_t, const MethodInfo*))NetworkBehaviour_SetSyncVar_TisSingle_t2076509932_m3187144784_gshared)(__this, p0, p1, p2, method)
+// System.Void UnityEngine.Networking.NetworkBehaviour::SetSyncVar<System.String>(!!0,!!0&,System.UInt32)
+#define NetworkBehaviour_SetSyncVar_TisString_t_m4112167601(__this, p0, p1, p2, method) ((  void (*) (NetworkBehaviour_t3873055601 *, String_t*, String_t**, uint32_t, const MethodInfo*))NetworkBehaviour_SetSyncVar_TisIl2CppObject_m2365822605_gshared)(__this, p0, p1, p2, method)
+// System.Boolean UnityEngine.Networking.NetworkServer::get_active()
+extern "C"  bool NetworkServer_get_active_m3093993255 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Debug::LogError(System.Object)
+extern "C"  void Debug_LogError_m3715728798 (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Networking.NetworkReader::ReadSingle()
+extern "C"  float NetworkReader_ReadSingle_m3965937584 (NetworkReader_t3187690923 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerMove::CmdSet(System.Single,System.Single)
+extern "C"  void PlayerMove_CmdSet_m4083172977 (PlayerMove_t195622780 * __this, float ___lat0, float ___lon1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.Networking.NetworkClient::get_active()
+extern "C"  bool NetworkClient_get_active_m1622797787 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.Networking.NetworkBehaviour::get_isServer()
+extern "C"  bool NetworkBehaviour_get_isServer_m3866369296 (NetworkBehaviour_t3873055601 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Networking.NetworkWriter::.ctor()
+extern "C"  void NetworkWriter__ctor_m2809346428 (NetworkWriter_t560143343 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Networking.NetworkWriter::Write(System.Int16)
+extern "C"  void NetworkWriter_Write_m1323472300 (NetworkWriter_t560143343 * __this, int16_t p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Networking.NetworkWriter::WritePackedUInt32(System.UInt32)
+extern "C"  void NetworkWriter_WritePackedUInt32_m2634533176 (NetworkWriter_t560143343 * __this, uint32_t p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// !!0 UnityEngine.Component::GetComponent<UnityEngine.Networking.NetworkIdentity>()
+#define Component_GetComponent_TisNetworkIdentity_t1766639790_m2950944169(__this, method) ((  NetworkIdentity_t1766639790 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m4109961936_gshared)(__this, method)
+// UnityEngine.Networking.NetworkInstanceId UnityEngine.Networking.NetworkIdentity::get_netId()
+extern "C"  NetworkInstanceId_t33998832  NetworkIdentity_get_netId_m1164915858 (NetworkIdentity_t1766639790 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Networking.NetworkWriter::Write(UnityEngine.Networking.NetworkInstanceId)
+extern "C"  void NetworkWriter_Write_m688344706 (NetworkWriter_t560143343 * __this, NetworkInstanceId_t33998832  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Networking.NetworkWriter::Write(System.Single)
+extern "C"  void NetworkWriter_Write_m3536413208 (NetworkWriter_t560143343 * __this, float p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Networking.NetworkBehaviour::SendCommandInternal(UnityEngine.Networking.NetworkWriter,System.Int32,System.String)
+extern "C"  void NetworkBehaviour_SendCommandInternal_m230047279 (NetworkBehaviour_t3873055601 * __this, NetworkWriter_t560143343 * p0, int32_t p1, String_t* p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
+extern "C"  Type_t * Type_GetTypeFromHandle_m432505302 (Il2CppObject * __this /* static, unused */, RuntimeTypeHandle_t2330101084  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Networking.NetworkBehaviour/CmdDelegate::.ctor(System.Object,System.IntPtr)
+extern "C"  void CmdDelegate__ctor_m905155896 (CmdDelegate_t2573314724 * __this, Il2CppObject * p0, IntPtr_t p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Networking.NetworkBehaviour::RegisterCommandDelegate(System.Type,System.Int32,UnityEngine.Networking.NetworkBehaviour/CmdDelegate)
+extern "C"  void NetworkBehaviour_RegisterCommandDelegate_m4196994987 (Il2CppObject * __this /* static, unused */, Type_t * p0, int32_t p1, CmdDelegate_t2573314724 * p2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Networking.NetworkCRC::RegisterBehaviour(System.String,System.Int32)
+extern "C"  void NetworkCRC_RegisterBehaviour_m3146466018 (Il2CppObject * __this /* static, unused */, String_t* p0, int32_t p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Networking.NetworkWriter::Write(System.Boolean)
+extern "C"  void NetworkWriter_Write_m2448218134 (NetworkWriter_t560143343 * __this, bool p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Networking.NetworkWriter::Write(System.String)
+extern "C"  void NetworkWriter_Write_m1047077131 (NetworkWriter_t560143343 * __this, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 UnityEngine.Networking.NetworkBehaviour::get_syncVarDirtyBits()
+extern "C"  uint32_t NetworkBehaviour_get_syncVarDirtyBits_m1228195332 (NetworkBehaviour_t3873055601 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.Networking.NetworkReader::ReadBoolean()
+extern "C"  bool NetworkReader_ReadBoolean_m3418091832 (NetworkReader_t3187690923 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String UnityEngine.Networking.NetworkReader::ReadString()
+extern "C"  String_t* NetworkReader_ReadString_m172969450 (NetworkReader_t3187690923 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.UInt32 UnityEngine.Networking.NetworkReader::ReadPackedUInt32()
+extern "C"  uint32_t NetworkReader_ReadPackedUInt32_m3078633978 (NetworkReader_t3187690923 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::LookAt(UnityEngine.Transform)
+extern "C"  void Transform_LookAt_m2514033256 (Transform_t3275118058 * __this, Transform_t3275118058 * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Color UnityEngine.Color::get_green()
 extern "C"  Color_t2020392075  Color_get_green_m2671273823 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector2 UnityEngine.Vector2::get_zero()
@@ -1491,8 +1914,6 @@ extern "C"  Uri_t19570940 * NetworkMatch_get_baseUri_m375696653 (NetworkMatch_t2
 extern "C"  void NetworkManager_StopMatchMaker_m2890915983 (NetworkManager_t3335581469 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.GUI::set_backgroundColor(UnityEngine.Color)
 extern "C"  void GUI_set_backgroundColor_m1176185368 (Il2CppObject * __this /* static, unused */, Color_t2020392075  p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.GameObject::SetActive(System.Boolean)
-extern "C"  void GameObject_SetActive_m2887581199 (GameObject_t1756533147 * __this, bool p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.TextMesh::set_text(System.String)
 extern "C"  void TextMesh_set_text_m3390063817 (TextMesh_t1641806576 * __this, String_t* p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 #ifdef __clang__
@@ -2223,6 +2644,61 @@ extern "C"  void U3CCountdownRoutineU3Ec__Iterator0_Reset_m1277081309 (U3CCountd
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
 	}
 }
+// System.Void Compass::.ctor()
+extern "C"  void Compass__ctor_m57594855 (Compass_t4162012560 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Compass::Start()
+extern "C"  void Compass_Start_m4155426795 (Compass_t4162012560 * __this, const MethodInfo* method)
+{
+	{
+		Camera_t189460977 * L_0 = Camera_get_main_m475173995(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_mcamera_2(L_0);
+		return;
+	}
+}
+// System.Void Compass::Update()
+extern "C"  void Compass_Update_m1486543666 (Compass_t4162012560 * __this, const MethodInfo* method)
+{
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Vector3_t2243707580  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	{
+		Transform_t3275118058 * L_0 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Camera_t189460977 * L_1 = __this->get_mcamera_2();
+		NullCheck(L_1);
+		Transform_t3275118058 * L_2 = Component_get_transform_m2697483695(L_1, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		Vector3_t2243707580  L_3 = Transform_get_position_m1104419803(L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		float L_4 = (&V_0)->get_x_1();
+		Transform_t3275118058 * L_5 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		Vector3_t2243707580  L_6 = Transform_get_position_m1104419803(L_5, /*hidden argument*/NULL);
+		V_1 = L_6;
+		float L_7 = (&V_1)->get_y_2();
+		Camera_t189460977 * L_8 = __this->get_mcamera_2();
+		NullCheck(L_8);
+		Transform_t3275118058 * L_9 = Component_get_transform_m2697483695(L_8, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		Vector3_t2243707580  L_10 = Transform_get_position_m1104419803(L_9, /*hidden argument*/NULL);
+		V_2 = L_10;
+		float L_11 = (&V_2)->get_x_1();
+		Vector3_t2243707580  L_12;
+		memset(&L_12, 0, sizeof(L_12));
+		Vector3__ctor_m2638739322(&L_12, L_4, L_7, L_11, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		Transform_set_position_m2469242620(L_0, L_12, /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void GameController::.ctor()
 extern "C"  void GameController__ctor_m1439649957 (GameController_t3607102586 * __this, const MethodInfo* method)
 {
@@ -2300,17 +2776,31 @@ extern "C"  void GameController_Update_m1556003900 (GameController_t3607102586 *
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+<<<<<<< HEAD
 		int32_t L_0 = __this->get_elapsedTime_9();
 		int32_t L_1 = __this->get_time_Runner_Runs_14();
 		if ((((int32_t)L_0) < ((int32_t)L_1)))
 		{
 			goto IL_002d;
+=======
+		Camera_t189460977 * L_0 = __this->get_mainCam_4();
+		NullCheck(L_0);
+		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(L_0, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Vector3_t2243707580  L_2 = Transform_get_eulerAngles_m4066505159(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		float L_3 = (&V_0)->get_x_1();
+		if ((!(((float)L_3) > ((float)(70.0f)))))
+		{
+			goto IL_00b9;
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 		}
 	}
 	{
 		bool L_2 = __this->get_sch_Runner_Runs_15();
 		if (L_2)
 		{
+<<<<<<< HEAD
 			goto IL_002d;
 		}
 	}
@@ -2413,6 +2903,54 @@ IL_00c6:
 	}
 
 IL_00f9:
+=======
+			goto IL_00b9;
+		}
+	}
+	{
+		Map_t4262919222 * L_8 = Component_GetComponent_TisMap_t4262919222_m1952891835(__this, /*hidden argument*/Component_GetComponent_TisMap_t4262919222_m1952891835_MethodInfo_var);
+		NullCheck(L_8);
+		Behaviour_set_enabled_m1796096907(L_8, (bool)1, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_9 = __this->get_map_3();
+		NullCheck(L_9);
+		RawImage_t2749640213 * L_10 = GameObject_GetComponent_TisRawImage_t2749640213_m2486045553(L_9, /*hidden argument*/GameObject_GetComponent_TisRawImage_t2749640213_m2486045553_MethodInfo_var);
+		Color_t2020392075  L_11;
+		memset(&L_11, 0, sizeof(L_11));
+		Color__ctor_m1909920690(&L_11, (1.0f), (1.0f), (1.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_10);
+		VirtActionInvoker1< Color_t2020392075  >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_10, L_11);
+		Camera_t189460977 * L_12 = __this->get_mainCam_4();
+		NullCheck(L_12);
+		Behaviour_set_enabled_m1796096907(L_12, (bool)0, /*hidden argument*/NULL);
+		Camera_t189460977 * L_13 = __this->get_backgroundCam_5();
+		NullCheck(L_13);
+		Behaviour_set_enabled_m1796096907(L_13, (bool)0, /*hidden argument*/NULL);
+		Camera_t189460977 * L_14 = __this->get_mapCam_6();
+		NullCheck(L_14);
+		Behaviour_set_enabled_m1796096907(L_14, (bool)1, /*hidden argument*/NULL);
+		Il2CppObject * L_15 = GameController_FadeTo_m2984478648(__this, (1.0f), (1.0f), /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2470621050(__this, L_15, /*hidden argument*/NULL);
+		goto IL_00e9;
+	}
+
+IL_00b9:
+	{
+		Map_t4262919222 * L_16 = Component_GetComponent_TisMap_t4262919222_m1952891835(__this, /*hidden argument*/Component_GetComponent_TisMap_t4262919222_m1952891835_MethodInfo_var);
+		NullCheck(L_16);
+		Behaviour_set_enabled_m1796096907(L_16, (bool)0, /*hidden argument*/NULL);
+		Camera_t189460977 * L_17 = __this->get_mainCam_4();
+		NullCheck(L_17);
+		Behaviour_set_enabled_m1796096907(L_17, (bool)1, /*hidden argument*/NULL);
+		Camera_t189460977 * L_18 = __this->get_backgroundCam_5();
+		NullCheck(L_18);
+		Behaviour_set_enabled_m1796096907(L_18, (bool)1, /*hidden argument*/NULL);
+		Camera_t189460977 * L_19 = __this->get_mapCam_6();
+		NullCheck(L_19);
+		Behaviour_set_enabled_m1796096907(L_19, (bool)0, /*hidden argument*/NULL);
+	}
+
+IL_00e9:
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 	{
 		return;
 	}
@@ -3094,6 +3632,102 @@ IL_00e9:
 	}
 
 IL_0108:
+	{
+		return;
+	}
+}
+// System.Void HidePlayer::.ctor()
+extern "C"  void HidePlayer__ctor_m277116656 (HidePlayer_t4016648077 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_range_2((0.3f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void HidePlayer::Start()
+extern "C"  void HidePlayer_Start_m2708321144 (HidePlayer_t4016648077 * __this, const MethodInfo* method)
+{
+	{
+		Camera_t189460977 * L_0 = Camera_get_main_m475173995(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_mcamera_3(L_0);
+		return;
+	}
+}
+// System.Void HidePlayer::Update()
+extern "C"  void HidePlayer_Update_m2363072953 (HidePlayer_t4016648077 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (HidePlayer_Update_m2363072953_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Vector3_t2243707580  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	Vector3_t2243707580  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	{
+		Transform_t3275118058 * L_0 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		Vector3_t2243707580  L_1 = Transform_get_position_m1104419803(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		float L_2 = (&V_0)->get_x_1();
+		Camera_t189460977 * L_3 = __this->get_mcamera_3();
+		NullCheck(L_3);
+		Transform_t3275118058 * L_4 = Component_get_transform_m2697483695(L_3, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		Vector3_t2243707580  L_5 = Transform_get_position_m1104419803(L_4, /*hidden argument*/NULL);
+		V_1 = L_5;
+		float L_6 = (&V_1)->get_x_1();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_7 = fabsf(((float)((float)L_2-(float)L_6)));
+		float L_8 = __this->get_range_2();
+		if ((!(((float)L_7) < ((float)L_8))))
+		{
+			goto IL_0089;
+		}
+	}
+	{
+		Transform_t3275118058 * L_9 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		Vector3_t2243707580  L_10 = Transform_get_position_m1104419803(L_9, /*hidden argument*/NULL);
+		V_2 = L_10;
+		float L_11 = (&V_2)->get_z_3();
+		Camera_t189460977 * L_12 = __this->get_mcamera_3();
+		NullCheck(L_12);
+		Transform_t3275118058 * L_13 = Component_get_transform_m2697483695(L_12, /*hidden argument*/NULL);
+		NullCheck(L_13);
+		Vector3_t2243707580  L_14 = Transform_get_position_m1104419803(L_13, /*hidden argument*/NULL);
+		V_3 = L_14;
+		float L_15 = (&V_3)->get_z_3();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		float L_16 = fabsf(((float)((float)L_11-(float)L_15)));
+		float L_17 = __this->get_range_2();
+		if ((!(((float)L_16) < ((float)L_17))))
+		{
+			goto IL_0089;
+		}
+	}
+	{
+		GameObject_t1756533147 * L_18 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		NullCheck(L_18);
+		GameObject_SetActive_m2887581199(L_18, (bool)0, /*hidden argument*/NULL);
+		goto IL_0095;
+	}
+
+IL_0089:
+	{
+		GameObject_t1756533147 * L_19 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		NullCheck(L_19);
+		GameObject_SetActive_m2887581199(L_19, (bool)1, /*hidden argument*/NULL);
+	}
+
+IL_0095:
 	{
 		return;
 	}
@@ -4131,6 +4765,12 @@ extern "C"  void U3CMoveOverSpeedU3Ec__Iterator0_Reset_m2008917877 (U3CMoveOverS
 extern "C"  void PlayerController__ctor_m3280132936 (PlayerController_t4148409433 * __this, const MethodInfo* method)
 {
 	{
+<<<<<<< HEAD
+=======
+		__this->set_key1_13(_stringLiteral2328242528);
+		__this->set_key2_14(_stringLiteral3779626262);
+		__this->set_updatePerSecond_15((0.1f));
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -4139,6 +4779,28 @@ extern "C"  void PlayerController__ctor_m3280132936 (PlayerController_t414840943
 extern "C"  void PlayerController_Start_m3606284888 (PlayerController_t4148409433 * __this, const MethodInfo* method)
 {
 	{
+<<<<<<< HEAD
+=======
+		GPSController_t2272977524 * L_0 = __this->get_gpsController_3();
+		NullCheck(L_0);
+		GPSData_t207763284 * L_1 = L_0->get_gps_2();
+		NullCheck(L_1);
+		float L_2 = GPSData_getLatitude_m1301723475(L_1, /*hidden argument*/NULL);
+		__this->set_latitude_4(L_2);
+		GPSController_t2272977524 * L_3 = __this->get_gpsController_3();
+		NullCheck(L_3);
+		GPSData_t207763284 * L_4 = L_3->get_gps_2();
+		NullCheck(L_4);
+		float L_5 = GPSData_getLongitude_m529963932(L_4, /*hidden argument*/NULL);
+		__this->set_longitude_5(L_5);
+		float L_6 = __this->get_latitude_4();
+		float L_7 = __this->get_longitude_5();
+		Il2CppObject * L_8 = Map_GetGoogleMap_m3075677944(__this, L_6, L_7, /*hidden argument*/NULL);
+		__this->set_mapCoroutine_12(L_8);
+		Il2CppObject * L_9 = __this->get_mapCoroutine_12();
+		MonoBehaviour_StartCoroutine_m2470621050(__this, L_9, /*hidden argument*/NULL);
+		__this->set_time_16((0.0f));
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 		return;
 	}
 }
@@ -4166,6 +4828,7 @@ extern "C"  void PlayerController_rotateMapWithCamera_m1309297544 (PlayerControl
 	Vector3_t2243707580  V_5;
 	memset(&V_5, 0, sizeof(V_5));
 	{
+<<<<<<< HEAD
 		Canvas_t209405766 * L_0 = __this->get_mapCanvas_2();
 		NullCheck(L_0);
 		Transform_t3275118058 * L_1 = Component_get_transform_m2697483695(L_0, /*hidden argument*/NULL);
@@ -4206,10 +4869,33 @@ extern "C"  void PlayerController_rotateMapWithCamera_m1309297544 (PlayerControl
 }
 // System.Void PlayerController::showMap()
 extern "C"  void PlayerController_showMap_m519413499 (PlayerController_t4148409433 * __this, const MethodInfo* method)
+=======
+		U3CGetGoogleMapU3Ec__Iterator0_t1695079217 * L_0 = (U3CGetGoogleMapU3Ec__Iterator0_t1695079217 *)il2cpp_codegen_object_new(U3CGetGoogleMapU3Ec__Iterator0_t1695079217_il2cpp_TypeInfo_var);
+		U3CGetGoogleMapU3Ec__Iterator0__ctor_m3373241622(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		U3CGetGoogleMapU3Ec__Iterator0_t1695079217 * L_1 = V_0;
+		float L_2 = ___latitude0;
+		NullCheck(L_1);
+		L_1->set_latitude_0(L_2);
+		U3CGetGoogleMapU3Ec__Iterator0_t1695079217 * L_3 = V_0;
+		float L_4 = ___longitude1;
+		NullCheck(L_3);
+		L_3->set_longitude_1(L_4);
+		U3CGetGoogleMapU3Ec__Iterator0_t1695079217 * L_5 = V_0;
+		NullCheck(L_5);
+		L_5->set_U24this_4(__this);
+		U3CGetGoogleMapU3Ec__Iterator0_t1695079217 * L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Void Map::generateURL()
+extern "C"  void Map_generateURL_m309255195 (Map_t4262919222 * __this, const MethodInfo* method)
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+<<<<<<< HEAD
 		il2cpp_codegen_initialize_method (PlayerController_showMap_m519413499_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -4277,10 +4963,156 @@ IL_00ad:
 		Camera_t189460977 * L_17 = __this->get_mapCam_6();
 		NullCheck(L_17);
 		Behaviour_set_enabled_m1796096907(L_17, (bool)0, /*hidden argument*/NULL);
+=======
+		il2cpp_codegen_initialize_method (Map_generateURL_m309255195_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	GameObjectU5BU5D_t3057952154* V_0 = NULL;
+	StringU5BU5D_t1642385972* V_1 = NULL;
+	int32_t V_2 = 0;
+	int32_t V_3 = 0;
+	{
+		GameObjectU5BU5D_t3057952154* L_0 = GameObject_FindGameObjectsWithTag_m2154478296(NULL /*static, unused*/, _stringLiteral1875862075, /*hidden argument*/NULL);
+		V_0 = L_0;
+		GameObjectU5BU5D_t3057952154* L_1 = V_0;
+		NullCheck(L_1);
+		V_1 = ((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_1)->max_length))))));
+		V_2 = ((int32_t)65);
+		GameObjectU5BU5D_t3057952154* L_2 = V_0;
+		NullCheck(L_2);
+		int32_t L_3 = (((int32_t)((int32_t)(((Il2CppArray *)L_2)->max_length))));
+		Il2CppObject * L_4 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_3);
+		MonoBehaviour_print_m3437620292(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		V_3 = 0;
+		goto IL_00ef;
+	}
+
+IL_002b:
+	{
+		int32_t L_5 = V_3;
+		int32_t L_6 = L_5;
+		Il2CppObject * L_7 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_6);
+		GameObjectU5BU5D_t3057952154* L_8 = V_0;
+		int32_t L_9 = V_3;
+		NullCheck(L_8);
+		int32_t L_10 = L_9;
+		GameObject_t1756533147 * L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
+		NullCheck(L_11);
+		PlayerMove_t195622780 * L_12 = GameObject_GetComponent_TisPlayerMove_t195622780_m1606063757(L_11, /*hidden argument*/GameObject_GetComponent_TisPlayerMove_t195622780_m1606063757_MethodInfo_var);
+		NullCheck(L_12);
+		float L_13 = L_12->get_latitude_14();
+		float L_14 = L_13;
+		Il2CppObject * L_15 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_14);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_16 = String_Concat_m2000667605(NULL /*static, unused*/, _stringLiteral1993089610, L_7, L_15, /*hidden argument*/NULL);
+		MonoBehaviour_print_m3437620292(NULL /*static, unused*/, L_16, /*hidden argument*/NULL);
+		int32_t L_17 = V_3;
+		int32_t L_18 = L_17;
+		Il2CppObject * L_19 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_18);
+		GameObjectU5BU5D_t3057952154* L_20 = V_0;
+		int32_t L_21 = V_3;
+		NullCheck(L_20);
+		int32_t L_22 = L_21;
+		GameObject_t1756533147 * L_23 = (L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_22));
+		NullCheck(L_23);
+		PlayerMove_t195622780 * L_24 = GameObject_GetComponent_TisPlayerMove_t195622780_m1606063757(L_23, /*hidden argument*/GameObject_GetComponent_TisPlayerMove_t195622780_m1606063757_MethodInfo_var);
+		NullCheck(L_24);
+		float L_25 = L_24->get_longitude_15();
+		float L_26 = L_25;
+		Il2CppObject * L_27 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_26);
+		String_t* L_28 = String_Concat_m2000667605(NULL /*static, unused*/, _stringLiteral1993090176, L_19, L_27, /*hidden argument*/NULL);
+		MonoBehaviour_print_m3437620292(NULL /*static, unused*/, L_28, /*hidden argument*/NULL);
+		StringU5BU5D_t1642385972* L_29 = V_1;
+		int32_t L_30 = V_3;
+		ObjectU5BU5D_t3614634134* L_31 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)6));
+		NullCheck(L_31);
+		ArrayElementTypeCheck (L_31, _stringLiteral1403050043);
+		(L_31)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)_stringLiteral1403050043);
+		ObjectU5BU5D_t3614634134* L_32 = L_31;
+		int32_t L_33 = V_2;
+		int32_t L_34 = L_33;
+		V_2 = ((int32_t)((int32_t)L_34+(int32_t)1));
+		Il2CppChar L_35 = ((Il2CppChar)(((int32_t)((uint16_t)L_34))));
+		Il2CppObject * L_36 = Box(Char_t3454481338_il2cpp_TypeInfo_var, &L_35);
+		NullCheck(L_32);
+		ArrayElementTypeCheck (L_32, L_36);
+		(L_32)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_36);
+		ObjectU5BU5D_t3614634134* L_37 = L_32;
+		NullCheck(L_37);
+		ArrayElementTypeCheck (L_37, _stringLiteral3996208733);
+		(L_37)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)_stringLiteral3996208733);
+		ObjectU5BU5D_t3614634134* L_38 = L_37;
+		GameObjectU5BU5D_t3057952154* L_39 = V_0;
+		int32_t L_40 = V_3;
+		NullCheck(L_39);
+		int32_t L_41 = L_40;
+		GameObject_t1756533147 * L_42 = (L_39)->GetAt(static_cast<il2cpp_array_size_t>(L_41));
+		NullCheck(L_42);
+		PlayerMove_t195622780 * L_43 = GameObject_GetComponent_TisPlayerMove_t195622780_m1606063757(L_42, /*hidden argument*/GameObject_GetComponent_TisPlayerMove_t195622780_m1606063757_MethodInfo_var);
+		NullCheck(L_43);
+		float L_44 = L_43->get_latitude_14();
+		float L_45 = L_44;
+		Il2CppObject * L_46 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_45);
+		NullCheck(L_38);
+		ArrayElementTypeCheck (L_38, L_46);
+		(L_38)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_46);
+		ObjectU5BU5D_t3614634134* L_47 = L_38;
+		NullCheck(L_47);
+		ArrayElementTypeCheck (L_47, _stringLiteral372029314);
+		(L_47)->SetAt(static_cast<il2cpp_array_size_t>(4), (Il2CppObject *)_stringLiteral372029314);
+		ObjectU5BU5D_t3614634134* L_48 = L_47;
+		GameObjectU5BU5D_t3057952154* L_49 = V_0;
+		int32_t L_50 = V_3;
+		NullCheck(L_49);
+		int32_t L_51 = L_50;
+		GameObject_t1756533147 * L_52 = (L_49)->GetAt(static_cast<il2cpp_array_size_t>(L_51));
+		NullCheck(L_52);
+		PlayerMove_t195622780 * L_53 = GameObject_GetComponent_TisPlayerMove_t195622780_m1606063757(L_52, /*hidden argument*/GameObject_GetComponent_TisPlayerMove_t195622780_m1606063757_MethodInfo_var);
+		NullCheck(L_53);
+		float L_54 = L_53->get_longitude_15();
+		float L_55 = L_54;
+		Il2CppObject * L_56 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_55);
+		NullCheck(L_48);
+		ArrayElementTypeCheck (L_48, L_56);
+		(L_48)->SetAt(static_cast<il2cpp_array_size_t>(5), (Il2CppObject *)L_56);
+		String_t* L_57 = String_Concat_m3881798623(NULL /*static, unused*/, L_48, /*hidden argument*/NULL);
+		NullCheck(L_29);
+		ArrayElementTypeCheck (L_29, L_57);
+		(L_29)->SetAt(static_cast<il2cpp_array_size_t>(L_30), (String_t*)L_57);
+		String_t* L_58 = __this->get_url_2();
+		StringU5BU5D_t1642385972* L_59 = V_1;
+		int32_t L_60 = V_3;
+		NullCheck(L_59);
+		int32_t L_61 = L_60;
+		String_t* L_62 = (L_59)->GetAt(static_cast<il2cpp_array_size_t>(L_61));
+		String_t* L_63 = String_Concat_m2596409543(NULL /*static, unused*/, L_58, L_62, /*hidden argument*/NULL);
+		__this->set_url_2(L_63);
+		int32_t L_64 = V_3;
+		V_3 = ((int32_t)((int32_t)L_64+(int32_t)1));
+	}
+
+IL_00ef:
+	{
+		int32_t L_65 = V_3;
+		GameObjectU5BU5D_t3057952154* L_66 = V_0;
+		NullCheck(L_66);
+		if ((((int32_t)L_65) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_66)->max_length)))))))
+		{
+			goto IL_002b;
+		}
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 	}
 
 IL_00d1:
 	{
+<<<<<<< HEAD
+=======
+		String_t* L_67 = __this->get_url_2();
+		String_t* L_68 = __this->get_key1_13();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_69 = String_Concat_m2596409543(NULL /*static, unused*/, L_67, L_68, /*hidden argument*/NULL);
+		__this->set_url_2(L_69);
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 		return;
 	}
 }
@@ -4367,9 +5199,9 @@ extern "C"  bool U3CFadeToU3Ec__Iterator0_MoveNext_m1667540883 (U3CFadeToU3Ec__I
 	Color_t2020392075  V_1;
 	memset(&V_1, 0, sizeof(V_1));
 	{
-		int32_t L_0 = __this->get_U24PC_8();
+		int32_t L_0 = __this->get_U24PC_7();
 		V_0 = L_0;
-		__this->set_U24PC_8((-1));
+		__this->set_U24PC_7((-1));
 		uint32_t L_1 = V_0;
 		switch (L_1)
 		{
@@ -4379,16 +5211,29 @@ extern "C"  bool U3CFadeToU3Ec__Iterator0_MoveNext_m1667540883 (U3CFadeToU3Ec__I
 			}
 			case 1:
 			{
+<<<<<<< HEAD
 				goto IL_00bb;
+=======
+				goto IL_0118;
+			}
+			case 2:
+			{
+				goto IL_0168;
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 			}
 		}
 	}
 	{
+<<<<<<< HEAD
 		goto IL_00eb;
+=======
+		goto IL_0190;
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 	}
 
 IL_0021:
 	{
+<<<<<<< HEAD
 		PlayerController_t4148409433 * L_2 = __this->get_U24this_5();
 		NullCheck(L_2);
 		GameObject_t1756533147 * L_3 = L_2->get_map_3();
@@ -4427,12 +5272,109 @@ IL_0054:
 		if (L_16)
 		{
 			goto IL_00b6;
+=======
+		Map_t4262919222 * L_2 = __this->get_U24this_4();
+		ObjectU5BU5D_t3614634134* L_3 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)((int32_t)12)));
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, _stringLiteral2775107238);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)_stringLiteral2775107238);
+		ObjectU5BU5D_t3614634134* L_4 = L_3;
+		float L_5 = __this->get_latitude_0();
+		float L_6 = L_5;
+		Il2CppObject * L_7 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_6);
+		NullCheck(L_4);
+		ArrayElementTypeCheck (L_4, L_7);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_7);
+		ObjectU5BU5D_t3614634134* L_8 = L_4;
+		NullCheck(L_8);
+		ArrayElementTypeCheck (L_8, _stringLiteral372029314);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)_stringLiteral372029314);
+		ObjectU5BU5D_t3614634134* L_9 = L_8;
+		float L_10 = __this->get_longitude_1();
+		float L_11 = L_10;
+		Il2CppObject * L_12 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_11);
+		NullCheck(L_9);
+		ArrayElementTypeCheck (L_9, L_12);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_12);
+		ObjectU5BU5D_t3614634134* L_13 = L_9;
+		NullCheck(L_13);
+		ArrayElementTypeCheck (L_13, _stringLiteral1960745698);
+		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(4), (Il2CppObject *)_stringLiteral1960745698);
+		ObjectU5BU5D_t3614634134* L_14 = L_13;
+		Map_t4262919222 * L_15 = __this->get_U24this_4();
+		NullCheck(L_15);
+		int32_t L_16 = L_15->get_zoom_6();
+		int32_t L_17 = L_16;
+		Il2CppObject * L_18 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_17);
+		NullCheck(L_14);
+		ArrayElementTypeCheck (L_14, L_18);
+		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(5), (Il2CppObject *)L_18);
+		ObjectU5BU5D_t3614634134* L_19 = L_14;
+		NullCheck(L_19);
+		ArrayElementTypeCheck (L_19, _stringLiteral2334078884);
+		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(6), (Il2CppObject *)_stringLiteral2334078884);
+		ObjectU5BU5D_t3614634134* L_20 = L_19;
+		Map_t4262919222 * L_21 = __this->get_U24this_4();
+		NullCheck(L_21);
+		int32_t L_22 = L_21->get_mapWidth_7();
+		int32_t L_23 = L_22;
+		Il2CppObject * L_24 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_23);
+		NullCheck(L_20);
+		ArrayElementTypeCheck (L_20, L_24);
+		(L_20)->SetAt(static_cast<il2cpp_array_size_t>(7), (Il2CppObject *)L_24);
+		ObjectU5BU5D_t3614634134* L_25 = L_20;
+		NullCheck(L_25);
+		ArrayElementTypeCheck (L_25, _stringLiteral372029398);
+		(L_25)->SetAt(static_cast<il2cpp_array_size_t>(8), (Il2CppObject *)_stringLiteral372029398);
+		ObjectU5BU5D_t3614634134* L_26 = L_25;
+		Map_t4262919222 * L_27 = __this->get_U24this_4();
+		NullCheck(L_27);
+		int32_t L_28 = L_27->get_mapHeight_8();
+		int32_t L_29 = L_28;
+		Il2CppObject * L_30 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_29);
+		NullCheck(L_26);
+		ArrayElementTypeCheck (L_26, L_30);
+		(L_26)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (Il2CppObject *)L_30);
+		ObjectU5BU5D_t3614634134* L_31 = L_26;
+		NullCheck(L_31);
+		ArrayElementTypeCheck (L_31, _stringLiteral93847055);
+		(L_31)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)10)), (Il2CppObject *)_stringLiteral93847055);
+		ObjectU5BU5D_t3614634134* L_32 = L_31;
+		Map_t4262919222 * L_33 = __this->get_U24this_4();
+		NullCheck(L_33);
+		int32_t L_34 = L_33->get_mapSelected_9();
+		int32_t L_35 = L_34;
+		Il2CppObject * L_36 = Box(mapType_t3017953257_il2cpp_TypeInfo_var, &L_35);
+		NullCheck(L_32);
+		ArrayElementTypeCheck (L_32, L_36);
+		(L_32)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)11)), (Il2CppObject *)L_36);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_37 = String_Concat_m3881798623(NULL /*static, unused*/, L_32, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		L_2->set_url_2(L_37);
+		Map_t4262919222 * L_38 = __this->get_U24this_4();
+		NullCheck(L_38);
+		Map_generateURL_m309255195(L_38, /*hidden argument*/NULL);
+		Map_t4262919222 * L_39 = __this->get_U24this_4();
+		NullCheck(L_39);
+		String_t* L_40 = L_39->get_url_2();
+		WWW_t2919945039 * L_41 = (WWW_t2919945039 *)il2cpp_codegen_object_new(WWW_t2919945039_il2cpp_TypeInfo_var);
+		WWW__ctor_m2024029190(L_41, L_40, /*hidden argument*/NULL);
+		__this->set_U3CwwwU3E__0_2(L_41);
+		WWW_t2919945039 * L_42 = __this->get_U3CwwwU3E__0_2();
+		__this->set_U24current_5(L_42);
+		bool L_43 = __this->get_U24disposing_6();
+		if (L_43)
+		{
+			goto IL_0113;
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 		}
 	}
 	{
-		__this->set_U24PC_8(1);
+		__this->set_U24PC_7(1);
 	}
 
+<<<<<<< HEAD
 IL_00b6:
 	{
 		goto IL_00ed;
@@ -4459,11 +5401,69 @@ IL_00d4:
 	}
 
 IL_00eb:
+=======
+IL_0113:
+	{
+		goto IL_0192;
+	}
+
+IL_0118:
+	{
+		WWW_t2919945039 * L_44 = __this->get_U3CwwwU3E__0_2();
+		NullCheck(L_44);
+		Texture2D_t3542995729 * L_45 = WWW_get_texture_m1121178301(L_44, /*hidden argument*/NULL);
+		__this->set_U3CmapTextureU3E__0_3(L_45);
+		Map_t4262919222 * L_46 = __this->get_U24this_4();
+		NullCheck(L_46);
+		RawImage_t2749640213 * L_47 = L_46->get_myMap_10();
+		NullCheck(L_47);
+		RawImage_t2749640213 * L_48 = Component_GetComponent_TisRawImage_t2749640213_m1817787565(L_47, /*hidden argument*/Component_GetComponent_TisRawImage_t2749640213_m1817787565_MethodInfo_var);
+		Texture_t2243626319 * L_49 = __this->get_U3CmapTextureU3E__0_3();
+		NullCheck(L_48);
+		RawImage_set_texture_m2400157626(L_48, L_49, /*hidden argument*/NULL);
+		WaitForSeconds_t3839502067 * L_50 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m1990515539(L_50, (1.0f), /*hidden argument*/NULL);
+		__this->set_U24current_5(L_50);
+		bool L_51 = __this->get_U24disposing_6();
+		if (L_51)
+		{
+			goto IL_0163;
+		}
+	}
+	{
+		__this->set_U24PC_7(2);
+	}
+
+IL_0163:
+	{
+		goto IL_0192;
+	}
+
+IL_0168:
+	{
+		Texture_t2243626319 * L_52 = __this->get_U3CmapTextureU3E__0_3();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		Object_Destroy_m4145850038(NULL /*static, unused*/, L_52, /*hidden argument*/NULL);
+		Map_t4262919222 * L_53 = __this->get_U24this_4();
+		Map_t4262919222 * L_54 = __this->get_U24this_4();
+		NullCheck(L_54);
+		Il2CppObject * L_55 = L_54->get_mapCoroutine_12();
+		NullCheck(L_53);
+		MonoBehaviour_StopCoroutine_m1170478282(L_53, L_55, /*hidden argument*/NULL);
+		__this->set_U24PC_7((-1));
+	}
+
+IL_0190:
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 	{
 		return (bool)0;
 	}
 
+<<<<<<< HEAD
 IL_00ed:
+=======
+IL_0192:
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 	{
 		return (bool)1;
 	}
@@ -4472,7 +5472,7 @@ IL_00ed:
 extern "C"  Il2CppObject * U3CFadeToU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3804467607 (U3CFadeToU3Ec__Iterator0_t1919832806 * __this, const MethodInfo* method)
 {
 	{
-		Il2CppObject * L_0 = __this->get_U24current_6();
+		Il2CppObject * L_0 = __this->get_U24current_5();
 		return L_0;
 	}
 }
@@ -4480,7 +5480,7 @@ extern "C"  Il2CppObject * U3CFadeToU3Ec__Iterator0_System_Collections_Generic_I
 extern "C"  Il2CppObject * U3CFadeToU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m2102700607 (U3CFadeToU3Ec__Iterator0_t1919832806 * __this, const MethodInfo* method)
 {
 	{
-		Il2CppObject * L_0 = __this->get_U24current_6();
+		Il2CppObject * L_0 = __this->get_U24current_5();
 		return L_0;
 	}
 }
@@ -4488,8 +5488,8 @@ extern "C"  Il2CppObject * U3CFadeToU3Ec__Iterator0_System_Collections_IEnumerat
 extern "C"  void U3CFadeToU3Ec__Iterator0_Dispose_m3760671592 (U3CFadeToU3Ec__Iterator0_t1919832806 * __this, const MethodInfo* method)
 {
 	{
-		__this->set_U24disposing_7((bool)1);
-		__this->set_U24PC_8((-1));
+		__this->set_U24disposing_6((bool)1);
+		__this->set_U24PC_7((-1));
 		return;
 	}
 }
@@ -4506,6 +5506,269 @@ extern "C"  void U3CFadeToU3Ec__Iterator0_Reset_m264949546 (U3CFadeToU3Ec__Itera
 		NotSupportedException_t1793819818 * L_0 = (NotSupportedException_t1793819818 *)il2cpp_codegen_object_new(NotSupportedException_t1793819818_il2cpp_TypeInfo_var);
 		NotSupportedException__ctor_m3232764727(L_0, /*hidden argument*/NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
+	}
+}
+// System.Void PlayerMove::.ctor()
+extern "C"  void PlayerMove__ctor_m161887621 (PlayerMove_t195622780 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+<<<<<<< HEAD
+		il2cpp_codegen_initialize_method (PlayerMove__ctor_m161887621_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(NetworkBehaviour_t3873055601_il2cpp_TypeInfo_var);
+		NetworkBehaviour__ctor_m483335596(__this, /*hidden argument*/NULL);
+=======
+		__this->set_radius_2(((int32_t)150));
+		__this->set_range_3(((int32_t)500));
+		__this->set_speed_4((1.0f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
+		return;
+	}
+}
+// System.Void PlayerMove::Start()
+extern "C"  void PlayerMove_Start_m490112797 (PlayerMove_t195622780 * __this, const MethodInfo* method)
+{
+	{
+		Camera_t189460977 * L_0 = Camera_get_main_m475173995(NULL /*static, unused*/, /*hidden argument*/NULL);
+<<<<<<< HEAD
+		__this->set_mainCamera_8(L_0);
+=======
+		__this->set_mainCamera_10(L_0);
+		__this->set_firsttime_9((bool)1);
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
+		return;
+	}
+}
+// System.Void PlayerMove::Update()
+extern "C"  void PlayerMove_Update_m1466995334 (PlayerMove_t195622780 * __this, const MethodInfo* method)
+{
+<<<<<<< HEAD
+	float V_0 = 0.0f;
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	float V_2 = 0.0f;
+	Vector3_t2243707580  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	float V_4 = 0.0f;
+	Vector3_t2243707580  V_5;
+	memset(&V_5, 0, sizeof(V_5));
+	{
+		bool L_0 = NetworkBehaviour_get_isLocalPlayer_m3726148987(__this, /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_000c;
+		}
+	}
+	{
+		return;
+=======
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (MapTools_Update_m2536679305_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		GPSController_t2272977524 * L_0 = __this->get_IGPSController_11();
+		NullCheck(L_0);
+		GPSData_t207763284 * L_1 = L_0->get_gps_2();
+		NullCheck(L_1);
+		float L_2 = GPSData_getLatitude_m1301723475(L_1, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(MapTools_t3308069217_il2cpp_TypeInfo_var);
+		((MapTools_t3308069217_StaticFields*)MapTools_t3308069217_il2cpp_TypeInfo_var->static_fields)->set_latitude_7(L_2);
+		GPSController_t2272977524 * L_3 = __this->get_IGPSController_11();
+		NullCheck(L_3);
+		GPSData_t207763284 * L_4 = L_3->get_gps_2();
+		NullCheck(L_4);
+		float L_5 = GPSData_getLongitude_m529963932(L_4, /*hidden argument*/NULL);
+		((MapTools_t3308069217_StaticFields*)MapTools_t3308069217_il2cpp_TypeInfo_var->static_fields)->set_longitude_8(L_5);
+		bool L_6 = __this->get_firsttime_9();
+		if (!L_6)
+		{
+			goto IL_005f;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(MapTools_t3308069217_il2cpp_TypeInfo_var);
+		float L_7 = ((MapTools_t3308069217_StaticFields*)MapTools_t3308069217_il2cpp_TypeInfo_var->static_fields)->get_latitude_7();
+		if ((((float)L_7) == ((float)(0.0f))))
+		{
+			goto IL_005f;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(MapTools_t3308069217_il2cpp_TypeInfo_var);
+		float L_8 = ((MapTools_t3308069217_StaticFields*)MapTools_t3308069217_il2cpp_TypeInfo_var->static_fields)->get_latitude_7();
+		((MapTools_t3308069217_StaticFields*)MapTools_t3308069217_il2cpp_TypeInfo_var->static_fields)->set_latitudeO_5(L_8);
+		float L_9 = ((MapTools_t3308069217_StaticFields*)MapTools_t3308069217_il2cpp_TypeInfo_var->static_fields)->get_longitude_8();
+		((MapTools_t3308069217_StaticFields*)MapTools_t3308069217_il2cpp_TypeInfo_var->static_fields)->set_longitudeO_6(L_9);
+		__this->set_firsttime_9((bool)0);
+	}
+
+IL_005f:
+	{
+		Camera_t189460977 * L_10 = __this->get_mainCamera_10();
+		NullCheck(L_10);
+		Transform_t3275118058 * L_11 = Component_get_transform_m2697483695(L_10, /*hidden argument*/NULL);
+		Camera_t189460977 * L_12 = __this->get_mainCamera_10();
+		NullCheck(L_12);
+		Transform_t3275118058 * L_13 = Component_get_transform_m2697483695(L_12, /*hidden argument*/NULL);
+		NullCheck(L_13);
+		Vector3_t2243707580  L_14 = Transform_get_position_m1104419803(L_13, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(MapTools_t3308069217_il2cpp_TypeInfo_var);
+		float L_15 = ((MapTools_t3308069217_StaticFields*)MapTools_t3308069217_il2cpp_TypeInfo_var->static_fields)->get_latitude_7();
+		float L_16 = ((MapTools_t3308069217_StaticFields*)MapTools_t3308069217_il2cpp_TypeInfo_var->static_fields)->get_longitude_8();
+		Vector3_t2243707580  L_17 = MapTools_mapGPS_m2811930864(__this, L_15, L_16, /*hidden argument*/NULL);
+		float L_18 = __this->get_speed_4();
+		float L_19 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_20 = Vector3_MoveTowards_m1358638081(NULL /*static, unused*/, L_14, L_17, ((float)((float)L_18*(float)L_19)), /*hidden argument*/NULL);
+		NullCheck(L_11);
+		Transform_set_position_m2469242620(L_11, L_20, /*hidden argument*/NULL);
+		return;
+	}
+}
+// UnityEngine.Vector3 MapTools::mapGPS(System.Single,System.Single)
+extern "C"  Vector3_t2243707580  MapTools_mapGPS_m2811930864 (MapTools_t3308069217 * __this, float ___latitude0, float ___longitude1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (MapTools_mapGPS_m2811930864_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		float L_0 = ___latitude0;
+		float L_1 = ___longitude1;
+		float L_2 = ___latitude0;
+		IL2CPP_RUNTIME_CLASS_INIT(MapTools_t3308069217_il2cpp_TypeInfo_var);
+		float L_3 = ((MapTools_t3308069217_StaticFields*)MapTools_t3308069217_il2cpp_TypeInfo_var->static_fields)->get_longitudeO_6();
+		float L_4 = TR_Toolbox_gps_transform_m2942405544(NULL /*static, unused*/, L_0, L_1, L_2, L_3, /*hidden argument*/NULL);
+		int32_t L_5 = __this->get_radius_2();
+		int32_t L_6 = __this->get_range_3();
+		Camera_t189460977 * L_7 = __this->get_mainCamera_10();
+		NullCheck(L_7);
+		Transform_t3275118058 * L_8 = Component_get_transform_m2697483695(L_7, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		Vector3_t2243707580  L_9 = Transform_get_position_m1104419803(L_8, /*hidden argument*/NULL);
+		V_0 = L_9;
+		float L_10 = (&V_0)->get_y_2();
+		float L_11 = ___latitude0;
+		float L_12 = ___longitude1;
+		float L_13 = ((MapTools_t3308069217_StaticFields*)MapTools_t3308069217_il2cpp_TypeInfo_var->static_fields)->get_latitudeO_5();
+		float L_14 = ___longitude1;
+		float L_15 = TR_Toolbox_gps_transform_m2942405544(NULL /*static, unused*/, L_11, L_12, L_13, L_14, /*hidden argument*/NULL);
+		int32_t L_16 = __this->get_radius_2();
+		int32_t L_17 = __this->get_range_3();
+		Vector3_t2243707580  L_18;
+		memset(&L_18, 0, sizeof(L_18));
+		Vector3__ctor_m2638739322(&L_18, ((float)((float)((float)((float)L_4*(float)(((float)((float)L_5)))))/(float)(((float)((float)L_6))))), L_10, ((float)((float)((float)((float)L_15*(float)(((float)((float)L_16)))))/(float)(((float)((float)L_17))))), /*hidden argument*/NULL);
+		return L_18;
+	}
+}
+// System.Single MapTools::getLatO()
+extern "C"  float MapTools_getLatO_m920183944 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (MapTools_getLatO_m920183944_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(MapTools_t3308069217_il2cpp_TypeInfo_var);
+		float L_0 = ((MapTools_t3308069217_StaticFields*)MapTools_t3308069217_il2cpp_TypeInfo_var->static_fields)->get_latitudeO_5();
+		return L_0;
+	}
+}
+// System.Void MapTools::setLatO(System.Single)
+extern "C"  void MapTools_setLatO_m107961725 (Il2CppObject * __this /* static, unused */, float ___a0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (MapTools_setLatO_m107961725_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		float L_0 = ___a0;
+		IL2CPP_RUNTIME_CLASS_INIT(MapTools_t3308069217_il2cpp_TypeInfo_var);
+		((MapTools_t3308069217_StaticFields*)MapTools_t3308069217_il2cpp_TypeInfo_var->static_fields)->set_latitudeO_5(L_0);
+		return;
+	}
+}
+// System.Single MapTools::getLonO()
+extern "C"  float MapTools_getLonO_m221025940 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (MapTools_getLonO_m221025940_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(MapTools_t3308069217_il2cpp_TypeInfo_var);
+		float L_0 = ((MapTools_t3308069217_StaticFields*)MapTools_t3308069217_il2cpp_TypeInfo_var->static_fields)->get_longitudeO_6();
+		return L_0;
+	}
+}
+// System.Void MapTools::setLonO(System.Single)
+extern "C"  void MapTools_setLonO_m3229664229 (Il2CppObject * __this /* static, unused */, float ___a0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (MapTools_setLonO_m3229664229_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		float L_0 = ___a0;
+		IL2CPP_RUNTIME_CLASS_INIT(MapTools_t3308069217_il2cpp_TypeInfo_var);
+		((MapTools_t3308069217_StaticFields*)MapTools_t3308069217_il2cpp_TypeInfo_var->static_fields)->set_longitudeO_6(L_0);
+		return;
+	}
+}
+// System.Single MapTools::getLat()
+extern "C"  float MapTools_getLat_m3613946993 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (MapTools_getLat_m3613946993_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(MapTools_t3308069217_il2cpp_TypeInfo_var);
+		float L_0 = ((MapTools_t3308069217_StaticFields*)MapTools_t3308069217_il2cpp_TypeInfo_var->static_fields)->get_latitude_7();
+		return L_0;
+	}
+}
+// System.Single MapTools::getLon()
+extern "C"  float MapTools_getLon_m2914782753 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (MapTools_getLon_m2914782753_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(MapTools_t3308069217_il2cpp_TypeInfo_var);
+		float L_0 = ((MapTools_t3308069217_StaticFields*)MapTools_t3308069217_il2cpp_TypeInfo_var->static_fields)->get_longitude_8();
+		return L_0;
+	}
+}
+// System.Void MapTools::.cctor()
+extern "C"  void MapTools__cctor_m3108219 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	{
+		return;
 	}
 }
 // System.Void PlayerMove::.ctor()
@@ -4535,6 +5798,12 @@ extern "C"  void PlayerMove_Start_m490112797 (PlayerMove_t195622780 * __this, co
 // System.Void PlayerMove::Update()
 extern "C"  void PlayerMove_Update_m1466995334 (PlayerMove_t195622780 * __this, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerMove_Update_m1466995334_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
 	float V_0 = 0.0f;
 	Vector3_t2243707580  V_1;
 	memset(&V_1, 0, sizeof(V_1));
@@ -4545,51 +5814,183 @@ extern "C"  void PlayerMove_Update_m1466995334 (PlayerMove_t195622780 * __this, 
 	Vector3_t2243707580  V_5;
 	memset(&V_5, 0, sizeof(V_5));
 	{
-		bool L_0 = NetworkBehaviour_get_isLocalPlayer_m3726148987(__this, /*hidden argument*/NULL);
-		if (L_0)
+		IL2CPP_RUNTIME_CLASS_INIT(NetworkServer_t3779449791_il2cpp_TypeInfo_var);
+		ReadOnlyCollection_1_t293053598 * L_0 = NetworkServer_get_connections_m2326618173(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		int32_t L_1 = ReadOnlyCollection_1_get_Count_m3739455198(L_0, /*hidden argument*/ReadOnlyCollection_1_get_Count_m3739455198_MethodInfo_var);
+		if ((((int32_t)L_1) <= ((int32_t)0)))
 		{
-			goto IL_000c;
+			goto IL_0044;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(MapTools_t3308069217_il2cpp_TypeInfo_var);
+		float L_2 = MapTools_getLatO_m920183944(NULL /*static, unused*/, /*hidden argument*/NULL);
+		PlayerMove_set_NetworklatitudeO_m369194098(__this, L_2, /*hidden argument*/NULL);
+		float L_3 = MapTools_getLonO_m221025940(NULL /*static, unused*/, /*hidden argument*/NULL);
+		PlayerMove_set_NetworklongitudeO_m1015069171(__this, L_3, /*hidden argument*/NULL);
+		bool L_4 = NetworkBehaviour_get_isLocalPlayer_m3726148987(__this, /*hidden argument*/NULL);
+		if (!L_4)
+		{
+			goto IL_003d;
+		}
+	}
+	{
+		PlayerMove_set_NetworkisSeeker_m2861567716(__this, (bool)1, /*hidden argument*/NULL);
+		goto IL_0044;
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
+	}
+
+IL_003d:
+	{
+		PlayerMove_set_NetworkisSeeker_m2861567716(__this, (bool)0, /*hidden argument*/NULL);
+	}
+
+IL_0044:
+	{
+		bool L_5 = __this->get_isSeeker_11();
+		if (!L_5)
+		{
+			goto IL_006a;
+		}
+	}
+	{
+		Color_t2020392075  L_6 = Color_get_red_m2410286591(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_color_17(L_6);
+		PlayerUI_t3700805861 * L_7 = __this->get_ui_10();
+		NullCheck(L_7);
+		PlayerUI_changeToSeek_m1596641025(L_7, /*hidden argument*/NULL);
+		goto IL_0080;
+	}
+
+IL_006a:
+	{
+		Color_t2020392075  L_8 = Color_get_white_m3987539815(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_color_17(L_8);
+		PlayerUI_t3700805861 * L_9 = __this->get_ui_10();
+		NullCheck(L_9);
+		PlayerUI_changeToHide_m3507154501(L_9, /*hidden argument*/NULL);
+	}
+
+IL_0080:
+	{
+		GameObject_t1756533147 * L_10 = __this->get_player_9();
+		NullCheck(L_10);
+		SkinnedMeshRenderer_t4220419316 * L_11 = GameObject_GetComponent_TisSkinnedMeshRenderer_t4220419316_m2583831202(L_10, /*hidden argument*/GameObject_GetComponent_TisSkinnedMeshRenderer_t4220419316_m2583831202_MethodInfo_var);
+		NullCheck(L_11);
+		MaterialU5BU5D_t3123989686* L_12 = Renderer_get_materials_m810004692(L_11, /*hidden argument*/NULL);
+		NullCheck(L_12);
+		int32_t L_13 = 0;
+		Material_t193706927 * L_14 = (L_12)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
+		Color_t2020392075  L_15 = __this->get_color_17();
+		NullCheck(L_14);
+		Material_set_color_m577844242(L_14, L_15, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_16 = __this->get_player_9();
+		NullCheck(L_16);
+		SkinnedMeshRenderer_t4220419316 * L_17 = GameObject_GetComponent_TisSkinnedMeshRenderer_t4220419316_m2583831202(L_16, /*hidden argument*/GameObject_GetComponent_TisSkinnedMeshRenderer_t4220419316_m2583831202_MethodInfo_var);
+		NullCheck(L_17);
+		MaterialU5BU5D_t3123989686* L_18 = Renderer_get_materials_m810004692(L_17, /*hidden argument*/NULL);
+		NullCheck(L_18);
+		int32_t L_19 = 1;
+		Material_t193706927 * L_20 = (L_18)->GetAt(static_cast<il2cpp_array_size_t>(L_19));
+		Color_t2020392075  L_21 = __this->get_color_17();
+		NullCheck(L_20);
+		Material_set_color_m577844242(L_20, L_21, /*hidden argument*/NULL);
+		bool L_22 = NetworkBehaviour_get_isLocalPlayer_m3726148987(__this, /*hidden argument*/NULL);
+		if (L_22)
+		{
+			goto IL_00c6;
 		}
 	}
 	{
 		return;
 	}
 
-IL_000c:
+IL_00c6:
 	{
-		Camera_t189460977 * L_1 = __this->get_mainCamera_8();
-		NullCheck(L_1);
-		Transform_t3275118058 * L_2 = Component_get_transform_m2697483695(L_1, /*hidden argument*/NULL);
-		NullCheck(L_2);
-		Vector3_t2243707580  L_3 = Transform_get_position_m1104419803(L_2, /*hidden argument*/NULL);
-		V_1 = L_3;
-		float L_4 = (&V_1)->get_x_1();
-		V_0 = L_4;
-		Camera_t189460977 * L_5 = __this->get_mainCamera_8();
-		NullCheck(L_5);
-		Transform_t3275118058 * L_6 = Component_get_transform_m2697483695(L_5, /*hidden argument*/NULL);
-		NullCheck(L_6);
-		Vector3_t2243707580  L_7 = Transform_get_position_m1104419803(L_6, /*hidden argument*/NULL);
-		V_3 = L_7;
-		float L_8 = (&V_3)->get_y_2();
-		V_2 = L_8;
-		Camera_t189460977 * L_9 = __this->get_mainCamera_8();
-		NullCheck(L_9);
-		Transform_t3275118058 * L_10 = Component_get_transform_m2697483695(L_9, /*hidden argument*/NULL);
-		NullCheck(L_10);
-		Vector3_t2243707580  L_11 = Transform_get_position_m1104419803(L_10, /*hidden argument*/NULL);
-		V_5 = L_11;
-		float L_12 = (&V_5)->get_z_3();
-		V_4 = L_12;
-		Transform_t3275118058 * L_13 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		float L_14 = V_0;
-		float L_15 = V_2;
-		float L_16 = V_4;
-		Vector3_t2243707580  L_17;
-		memset(&L_17, 0, sizeof(L_17));
-		Vector3__ctor_m2638739322(&L_17, L_14, L_15, L_16, /*hidden argument*/NULL);
-		NullCheck(L_13);
-		Transform_set_position_m2469242620(L_13, L_17, /*hidden argument*/NULL);
+		bool L_23 = __this->get_isSeeker_11();
+		if (L_23)
+		{
+			goto IL_00f7;
+		}
+	}
+	{
+		float L_24 = __this->get_latitudeO_12();
+		if ((((float)L_24) == ((float)(0.0f))))
+		{
+			goto IL_00f7;
+		}
+	}
+	{
+		float L_25 = __this->get_latitudeO_12();
+		IL2CPP_RUNTIME_CLASS_INIT(MapTools_t3308069217_il2cpp_TypeInfo_var);
+		MapTools_setLatO_m107961725(NULL /*static, unused*/, L_25, /*hidden argument*/NULL);
+		float L_26 = __this->get_longitudeO_13();
+		MapTools_setLonO_m3229664229(NULL /*static, unused*/, L_26, /*hidden argument*/NULL);
+	}
+
+IL_00f7:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(MapTools_t3308069217_il2cpp_TypeInfo_var);
+		float L_27 = MapTools_getLat_m3613946993(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_28 = MapTools_getLon_m2914782753(NULL /*static, unused*/, /*hidden argument*/NULL);
+		PlayerMove_CallCmdSet_m3201218195(__this, L_27, L_28, /*hidden argument*/NULL);
+		float L_29 = MapTools_getLat_m3613946993(NULL /*static, unused*/, /*hidden argument*/NULL);
+		PlayerMove_set_Networklatitude_m3590327843(__this, L_29, /*hidden argument*/NULL);
+		float L_30 = MapTools_getLon_m2914782753(NULL /*static, unused*/, /*hidden argument*/NULL);
+		PlayerMove_set_Networklongitude_m2526468526(__this, L_30, /*hidden argument*/NULL);
+		Camera_t189460977 * L_31 = __this->get_mainCamera_8();
+		NullCheck(L_31);
+		Transform_t3275118058 * L_32 = Component_get_transform_m2697483695(L_31, /*hidden argument*/NULL);
+		NullCheck(L_32);
+		Vector3_t2243707580  L_33 = Transform_get_position_m1104419803(L_32, /*hidden argument*/NULL);
+		V_1 = L_33;
+		float L_34 = (&V_1)->get_x_1();
+		V_0 = L_34;
+		Camera_t189460977 * L_35 = __this->get_mainCamera_8();
+		NullCheck(L_35);
+		Transform_t3275118058 * L_36 = Component_get_transform_m2697483695(L_35, /*hidden argument*/NULL);
+		NullCheck(L_36);
+		Vector3_t2243707580  L_37 = Transform_get_position_m1104419803(L_36, /*hidden argument*/NULL);
+		V_3 = L_37;
+		float L_38 = (&V_3)->get_y_2();
+		V_2 = L_38;
+		Camera_t189460977 * L_39 = __this->get_mainCamera_8();
+		NullCheck(L_39);
+		Transform_t3275118058 * L_40 = Component_get_transform_m2697483695(L_39, /*hidden argument*/NULL);
+		NullCheck(L_40);
+		Vector3_t2243707580  L_41 = Transform_get_position_m1104419803(L_40, /*hidden argument*/NULL);
+		V_5 = L_41;
+		float L_42 = (&V_5)->get_z_3();
+		V_4 = L_42;
+		Transform_t3275118058 * L_43 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		float L_44 = V_0;
+		float L_45 = V_2;
+		float L_46 = V_4;
+		Vector3_t2243707580  L_47;
+		memset(&L_47, 0, sizeof(L_47));
+		Vector3__ctor_m2638739322(&L_47, L_44, L_45, L_46, /*hidden argument*/NULL);
+		NullCheck(L_43);
+		Transform_set_position_m2469242620(L_43, L_47, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_48 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Camera_t189460977 * L_49 = __this->get_mainCamera_8();
+		NullCheck(L_49);
+		Transform_t3275118058 * L_50 = Component_get_transform_m2697483695(L_49, /*hidden argument*/NULL);
+		NullCheck(L_50);
+		Quaternion_t4030073918  L_51 = Transform_get_rotation_m1033555130(L_50, /*hidden argument*/NULL);
+		NullCheck(L_48);
+		Transform_set_rotation_m3411284563(L_48, L_51, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void PlayerMove::CmdSet(System.Single,System.Single)
+extern "C"  void PlayerMove_CmdSet_m4083172977 (PlayerMove_t195622780 * __this, float ___lat0, float ___lon1, const MethodInfo* method)
+{
+	{
+		float L_0 = ___lon1;
+		PlayerMove_set_Networklongitude_m2526468526(__this, L_0, /*hidden argument*/NULL);
+		float L_1 = ___lat0;
+		PlayerMove_set_Networklatitude_m3590327843(__this, L_1, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -4600,19 +6001,766 @@ extern "C"  void PlayerMove_UNetVersion_m2938967785 (PlayerMove_t195622780 * __t
 		return;
 	}
 }
+// System.Boolean PlayerMove::get_NetworkisSeeker()
+extern "C"  bool PlayerMove_get_NetworkisSeeker_m1277202251 (PlayerMove_t195622780 * __this, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		bool L_0 = __this->get_isSeeker_11();
+		return L_0;
+	}
+}
+// System.Void PlayerMove::set_NetworkisSeeker(System.Boolean)
+extern "C"  void PlayerMove_set_NetworkisSeeker_m2861567716 (PlayerMove_t195622780 * __this, bool ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerMove_set_NetworkisSeeker_m2861567716_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		bool L_0 = ___value0;
+		bool* L_1 = __this->get_address_of_isSeeker_11();
+		NetworkBehaviour_SetSyncVar_TisBoolean_t3825574718_m1486885202(__this, L_0, L_1, ((int32_t)1), /*hidden argument*/NetworkBehaviour_SetSyncVar_TisBoolean_t3825574718_m1486885202_MethodInfo_var);
+		return;
+	}
+}
+// System.Single PlayerMove::get_NetworklatitudeO()
+extern "C"  float PlayerMove_get_NetworklatitudeO_m2539807631 (PlayerMove_t195622780 * __this, const MethodInfo* method)
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = __this->get_latitudeO_12();
+		return L_0;
+	}
+}
+// System.Void PlayerMove::set_NetworklatitudeO(System.Single)
+extern "C"  void PlayerMove_set_NetworklatitudeO_m369194098 (PlayerMove_t195622780 * __this, float ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerMove_set_NetworklatitudeO_m369194098_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		float L_0 = ___value0;
+		float* L_1 = __this->get_address_of_latitudeO_12();
+		NetworkBehaviour_SetSyncVar_TisSingle_t2076509932_m3187144784(__this, L_0, L_1, ((int32_t)2), /*hidden argument*/NetworkBehaviour_SetSyncVar_TisSingle_t2076509932_m3187144784_MethodInfo_var);
+		return;
+	}
+}
+// System.Single PlayerMove::get_NetworklongitudeO()
+extern "C"  float PlayerMove_get_NetworklongitudeO_m3209996230 (PlayerMove_t195622780 * __this, const MethodInfo* method)
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = __this->get_longitudeO_13();
+		return L_0;
+	}
+}
+// System.Void PlayerMove::set_NetworklongitudeO(System.Single)
+extern "C"  void PlayerMove_set_NetworklongitudeO_m1015069171 (PlayerMove_t195622780 * __this, float ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerMove_set_NetworklongitudeO_m1015069171_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		float L_0 = ___value0;
+		float* L_1 = __this->get_address_of_longitudeO_13();
+		NetworkBehaviour_SetSyncVar_TisSingle_t2076509932_m3187144784(__this, L_0, L_1, ((int32_t)4), /*hidden argument*/NetworkBehaviour_SetSyncVar_TisSingle_t2076509932_m3187144784_MethodInfo_var);
+		return;
+	}
+}
+// System.Single PlayerMove::get_Networklatitude()
+extern "C"  float PlayerMove_get_Networklatitude_m1621644328 (PlayerMove_t195622780 * __this, const MethodInfo* method)
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = __this->get_latitude_14();
+		return L_0;
+	}
+}
+// System.Void PlayerMove::set_Networklatitude(System.Single)
+extern "C"  void PlayerMove_set_Networklatitude_m3590327843 (PlayerMove_t195622780 * __this, float ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerMove_set_Networklatitude_m3590327843_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		float L_0 = ___value0;
+		float* L_1 = __this->get_address_of_latitude_14();
+		NetworkBehaviour_SetSyncVar_TisSingle_t2076509932_m3187144784(__this, L_0, L_1, ((int32_t)8), /*hidden argument*/NetworkBehaviour_SetSyncVar_TisSingle_t2076509932_m3187144784_MethodInfo_var);
+		return;
+	}
+}
+// System.Single PlayerMove::get_Networklongitude()
+extern "C"  float PlayerMove_get_Networklongitude_m2315781347 (PlayerMove_t195622780 * __this, const MethodInfo* method)
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = __this->get_longitude_15();
+		return L_0;
+	}
+}
+// System.Void PlayerMove::set_Networklongitude(System.Single)
+extern "C"  void PlayerMove_set_Networklongitude_m2526468526 (PlayerMove_t195622780 * __this, float ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerMove_set_Networklongitude_m2526468526_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		float L_0 = ___value0;
+		float* L_1 = __this->get_address_of_longitude_15();
+		NetworkBehaviour_SetSyncVar_TisSingle_t2076509932_m3187144784(__this, L_0, L_1, ((int32_t)16), /*hidden argument*/NetworkBehaviour_SetSyncVar_TisSingle_t2076509932_m3187144784_MethodInfo_var);
+		return;
+	}
+}
+// System.String PlayerMove::get_Networkname()
+extern "C"  String_t* PlayerMove_get_Networkname_m2445510958 (PlayerMove_t195622780 * __this, const MethodInfo* method)
+{
+	String_t* V_0 = NULL;
+	{
+		String_t* L_0 = __this->get_name_16();
+		return L_0;
+	}
+}
+// System.Void PlayerMove::set_Networkname(System.String)
+extern "C"  void PlayerMove_set_Networkname_m1750711975 (PlayerMove_t195622780 * __this, String_t* ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerMove_set_Networkname_m1750711975_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___value0;
+		String_t** L_1 = __this->get_address_of_name_16();
+		NetworkBehaviour_SetSyncVar_TisString_t_m4112167601(__this, L_0, L_1, ((int32_t)32), /*hidden argument*/NetworkBehaviour_SetSyncVar_TisString_t_m4112167601_MethodInfo_var);
+		return;
+	}
+}
+// System.Void PlayerMove::InvokeCmdCmdSet(UnityEngine.Networking.NetworkBehaviour,UnityEngine.Networking.NetworkReader)
+extern "C"  void PlayerMove_InvokeCmdCmdSet_m434246307 (Il2CppObject * __this /* static, unused */, NetworkBehaviour_t3873055601 * ___obj0, NetworkReader_t3187690923 * ___reader1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerMove_InvokeCmdCmdSet_m434246307_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(NetworkServer_t3779449791_il2cpp_TypeInfo_var);
+		bool L_0 = NetworkServer_get_active_m3093993255(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_LogError_m3715728798(NULL /*static, unused*/, _stringLiteral831894840, /*hidden argument*/NULL);
+		return;
+	}
+
+IL_0015:
+	{
+		NetworkBehaviour_t3873055601 * L_1 = ___obj0;
+		NetworkReader_t3187690923 * L_2 = ___reader1;
+		NullCheck(L_2);
+		float L_3 = NetworkReader_ReadSingle_m3965937584(L_2, /*hidden argument*/NULL);
+		NetworkReader_t3187690923 * L_4 = ___reader1;
+		NullCheck(L_4);
+		float L_5 = NetworkReader_ReadSingle_m3965937584(L_4, /*hidden argument*/NULL);
+		NullCheck(((PlayerMove_t195622780 *)CastclassClass(L_1, PlayerMove_t195622780_il2cpp_TypeInfo_var)));
+		PlayerMove_CmdSet_m4083172977(((PlayerMove_t195622780 *)CastclassClass(L_1, PlayerMove_t195622780_il2cpp_TypeInfo_var)), (((float)((float)L_3))), (((float)((float)L_5))), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void PlayerMove::CallCmdSet(System.Single,System.Single)
+extern "C"  void PlayerMove_CallCmdSet_m3201218195 (PlayerMove_t195622780 * __this, float ___lat0, float ___lon1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerMove_CallCmdSet_m3201218195_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	NetworkWriter_t560143343 * V_0 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(NetworkClient_t696867603_il2cpp_TypeInfo_var);
+		bool L_0 = NetworkClient_get_active_m1622797787(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_LogError_m3715728798(NULL /*static, unused*/, _stringLiteral865936330, /*hidden argument*/NULL);
+		return;
+	}
+
+IL_0015:
+	{
+		bool L_1 = NetworkBehaviour_get_isServer_m3866369296(__this, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0030;
+		}
+	}
+	{
+		float L_2 = ___lat0;
+		float L_3 = ___lon1;
+		PlayerMove_CmdSet_m4083172977(__this, L_2, L_3, /*hidden argument*/NULL);
+		return;
+	}
+
+IL_0030:
+	{
+		NetworkWriter_t560143343 * L_4 = (NetworkWriter_t560143343 *)il2cpp_codegen_object_new(NetworkWriter_t560143343_il2cpp_TypeInfo_var);
+		NetworkWriter__ctor_m2809346428(L_4, /*hidden argument*/NULL);
+		V_0 = L_4;
+		NetworkWriter_t560143343 * L_5 = V_0;
+		NullCheck(L_5);
+		NetworkWriter_Write_m1323472300(L_5, (int16_t)0, /*hidden argument*/NULL);
+		NetworkWriter_t560143343 * L_6 = V_0;
+		NullCheck(L_6);
+		NetworkWriter_Write_m1323472300(L_6, (int16_t)(((int32_t)((uint16_t)((int32_t)5)))), /*hidden argument*/NULL);
+		NetworkWriter_t560143343 * L_7 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(PlayerMove_t195622780_il2cpp_TypeInfo_var);
+		int32_t L_8 = ((PlayerMove_t195622780_StaticFields*)PlayerMove_t195622780_il2cpp_TypeInfo_var->static_fields)->get_kCmdCmdSet_18();
+		NullCheck(L_7);
+		NetworkWriter_WritePackedUInt32_m2634533176(L_7, L_8, /*hidden argument*/NULL);
+		NetworkWriter_t560143343 * L_9 = V_0;
+		NetworkIdentity_t1766639790 * L_10 = Component_GetComponent_TisNetworkIdentity_t1766639790_m2950944169(__this, /*hidden argument*/Component_GetComponent_TisNetworkIdentity_t1766639790_m2950944169_MethodInfo_var);
+		NullCheck(L_10);
+		NetworkInstanceId_t33998832  L_11 = NetworkIdentity_get_netId_m1164915858(L_10, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		NetworkWriter_Write_m688344706(L_9, L_11, /*hidden argument*/NULL);
+		NetworkWriter_t560143343 * L_12 = V_0;
+		float L_13 = ___lat0;
+		NullCheck(L_12);
+		NetworkWriter_Write_m3536413208(L_12, L_13, /*hidden argument*/NULL);
+		NetworkWriter_t560143343 * L_14 = V_0;
+		float L_15 = ___lon1;
+		NullCheck(L_14);
+		NetworkWriter_Write_m3536413208(L_14, L_15, /*hidden argument*/NULL);
+		NetworkWriter_t560143343 * L_16 = V_0;
+		NetworkBehaviour_SendCommandInternal_m230047279(__this, L_16, ((int32_t)0), _stringLiteral2225425874, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void PlayerMove::.cctor()
+extern "C"  void PlayerMove__cctor_m1129527734 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerMove__cctor_m1129527734_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		((PlayerMove_t195622780_StaticFields*)PlayerMove_t195622780_il2cpp_TypeInfo_var->static_fields)->set_kCmdCmdSet_18(((int32_t)-1996303024));
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_0 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(PlayerMove_t195622780_0_0_0_var), /*hidden argument*/NULL);
+		int32_t L_1 = ((PlayerMove_t195622780_StaticFields*)PlayerMove_t195622780_il2cpp_TypeInfo_var->static_fields)->get_kCmdCmdSet_18();
+		IntPtr_t L_2;
+		L_2.set_m_value_0((void*)(void*)PlayerMove_InvokeCmdCmdSet_m434246307_MethodInfo_var);
+		CmdDelegate_t2573314724 * L_3 = (CmdDelegate_t2573314724 *)il2cpp_codegen_object_new(CmdDelegate_t2573314724_il2cpp_TypeInfo_var);
+		CmdDelegate__ctor_m905155896(L_3, NULL, L_2, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(NetworkBehaviour_t3873055601_il2cpp_TypeInfo_var);
+		NetworkBehaviour_RegisterCommandDelegate_m4196994987(NULL /*static, unused*/, L_0, L_1, L_3, /*hidden argument*/NULL);
+		NetworkCRC_RegisterBehaviour_m3146466018(NULL /*static, unused*/, _stringLiteral923701298, ((int32_t)0), /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Boolean PlayerMove::OnSerialize(UnityEngine.Networking.NetworkWriter,System.Boolean)
 extern "C"  bool PlayerMove_OnSerialize_m406728147 (PlayerMove_t195622780 * __this, NetworkWriter_t560143343 * ___writer0, bool ___forceAll1, const MethodInfo* method)
 {
 	bool V_0 = false;
 	{
-		bool L_0 = V_0;
-		return L_0;
+		bool L_0 = ___forceAll1;
+		if (!L_0)
+		{
+			goto IL_0050;
+		}
+	}
+	{
+		NetworkWriter_t560143343 * L_1 = ___writer0;
+		bool L_2 = __this->get_isSeeker_11();
+		NullCheck(L_1);
+		NetworkWriter_Write_m2448218134(L_1, L_2, /*hidden argument*/NULL);
+		NetworkWriter_t560143343 * L_3 = ___writer0;
+		float L_4 = __this->get_latitudeO_12();
+		NullCheck(L_3);
+		NetworkWriter_Write_m3536413208(L_3, L_4, /*hidden argument*/NULL);
+		NetworkWriter_t560143343 * L_5 = ___writer0;
+		float L_6 = __this->get_longitudeO_13();
+		NullCheck(L_5);
+		NetworkWriter_Write_m3536413208(L_5, L_6, /*hidden argument*/NULL);
+		NetworkWriter_t560143343 * L_7 = ___writer0;
+		float L_8 = __this->get_latitude_14();
+		NullCheck(L_7);
+		NetworkWriter_Write_m3536413208(L_7, L_8, /*hidden argument*/NULL);
+		NetworkWriter_t560143343 * L_9 = ___writer0;
+		float L_10 = __this->get_longitude_15();
+		NullCheck(L_9);
+		NetworkWriter_Write_m3536413208(L_9, L_10, /*hidden argument*/NULL);
+		NetworkWriter_t560143343 * L_11 = ___writer0;
+		String_t* L_12 = __this->get_name_16();
+		NullCheck(L_11);
+		NetworkWriter_Write_m1047077131(L_11, L_12, /*hidden argument*/NULL);
+		return (bool)1;
+	}
+
+IL_0050:
+	{
+		V_0 = (bool)0;
+		uint32_t L_13 = NetworkBehaviour_get_syncVarDirtyBits_m1228195332(__this, /*hidden argument*/NULL);
+		if (!((int32_t)((int32_t)L_13&(int32_t)((int32_t)1))))
+		{
+			goto IL_0085;
+		}
+	}
+	{
+		bool L_14 = V_0;
+		if (L_14)
+		{
+			goto IL_0078;
+		}
+	}
+	{
+		NetworkWriter_t560143343 * L_15 = ___writer0;
+		uint32_t L_16 = NetworkBehaviour_get_syncVarDirtyBits_m1228195332(__this, /*hidden argument*/NULL);
+		NullCheck(L_15);
+		NetworkWriter_WritePackedUInt32_m2634533176(L_15, L_16, /*hidden argument*/NULL);
+		V_0 = (bool)1;
+	}
+
+IL_0078:
+	{
+		NetworkWriter_t560143343 * L_17 = ___writer0;
+		bool L_18 = __this->get_isSeeker_11();
+		NullCheck(L_17);
+		NetworkWriter_Write_m2448218134(L_17, L_18, /*hidden argument*/NULL);
+	}
+
+IL_0085:
+	{
+		uint32_t L_19 = NetworkBehaviour_get_syncVarDirtyBits_m1228195332(__this, /*hidden argument*/NULL);
+		if (!((int32_t)((int32_t)L_19&(int32_t)((int32_t)2))))
+		{
+			goto IL_00b8;
+		}
+	}
+	{
+		bool L_20 = V_0;
+		if (L_20)
+		{
+			goto IL_00ab;
+		}
+	}
+	{
+		NetworkWriter_t560143343 * L_21 = ___writer0;
+		uint32_t L_22 = NetworkBehaviour_get_syncVarDirtyBits_m1228195332(__this, /*hidden argument*/NULL);
+		NullCheck(L_21);
+		NetworkWriter_WritePackedUInt32_m2634533176(L_21, L_22, /*hidden argument*/NULL);
+		V_0 = (bool)1;
+	}
+
+IL_00ab:
+	{
+		NetworkWriter_t560143343 * L_23 = ___writer0;
+		float L_24 = __this->get_latitudeO_12();
+		NullCheck(L_23);
+		NetworkWriter_Write_m3536413208(L_23, L_24, /*hidden argument*/NULL);
+	}
+
+IL_00b8:
+	{
+		uint32_t L_25 = NetworkBehaviour_get_syncVarDirtyBits_m1228195332(__this, /*hidden argument*/NULL);
+		if (!((int32_t)((int32_t)L_25&(int32_t)((int32_t)4))))
+		{
+			goto IL_00eb;
+		}
+	}
+	{
+		bool L_26 = V_0;
+		if (L_26)
+		{
+			goto IL_00de;
+		}
+	}
+	{
+		NetworkWriter_t560143343 * L_27 = ___writer0;
+		uint32_t L_28 = NetworkBehaviour_get_syncVarDirtyBits_m1228195332(__this, /*hidden argument*/NULL);
+		NullCheck(L_27);
+		NetworkWriter_WritePackedUInt32_m2634533176(L_27, L_28, /*hidden argument*/NULL);
+		V_0 = (bool)1;
+	}
+
+IL_00de:
+	{
+		NetworkWriter_t560143343 * L_29 = ___writer0;
+		float L_30 = __this->get_longitudeO_13();
+		NullCheck(L_29);
+		NetworkWriter_Write_m3536413208(L_29, L_30, /*hidden argument*/NULL);
+	}
+
+IL_00eb:
+	{
+		uint32_t L_31 = NetworkBehaviour_get_syncVarDirtyBits_m1228195332(__this, /*hidden argument*/NULL);
+		if (!((int32_t)((int32_t)L_31&(int32_t)((int32_t)8))))
+		{
+			goto IL_011e;
+		}
+	}
+	{
+		bool L_32 = V_0;
+		if (L_32)
+		{
+			goto IL_0111;
+		}
+	}
+	{
+		NetworkWriter_t560143343 * L_33 = ___writer0;
+		uint32_t L_34 = NetworkBehaviour_get_syncVarDirtyBits_m1228195332(__this, /*hidden argument*/NULL);
+		NullCheck(L_33);
+		NetworkWriter_WritePackedUInt32_m2634533176(L_33, L_34, /*hidden argument*/NULL);
+		V_0 = (bool)1;
+	}
+
+IL_0111:
+	{
+		NetworkWriter_t560143343 * L_35 = ___writer0;
+		float L_36 = __this->get_latitude_14();
+		NullCheck(L_35);
+		NetworkWriter_Write_m3536413208(L_35, L_36, /*hidden argument*/NULL);
+	}
+
+IL_011e:
+	{
+		uint32_t L_37 = NetworkBehaviour_get_syncVarDirtyBits_m1228195332(__this, /*hidden argument*/NULL);
+		if (!((int32_t)((int32_t)L_37&(int32_t)((int32_t)16))))
+		{
+			goto IL_0151;
+		}
+	}
+	{
+		bool L_38 = V_0;
+		if (L_38)
+		{
+			goto IL_0144;
+		}
+	}
+	{
+		NetworkWriter_t560143343 * L_39 = ___writer0;
+		uint32_t L_40 = NetworkBehaviour_get_syncVarDirtyBits_m1228195332(__this, /*hidden argument*/NULL);
+		NullCheck(L_39);
+		NetworkWriter_WritePackedUInt32_m2634533176(L_39, L_40, /*hidden argument*/NULL);
+		V_0 = (bool)1;
+	}
+
+IL_0144:
+	{
+		NetworkWriter_t560143343 * L_41 = ___writer0;
+		float L_42 = __this->get_longitude_15();
+		NullCheck(L_41);
+		NetworkWriter_Write_m3536413208(L_41, L_42, /*hidden argument*/NULL);
+	}
+
+IL_0151:
+	{
+		uint32_t L_43 = NetworkBehaviour_get_syncVarDirtyBits_m1228195332(__this, /*hidden argument*/NULL);
+		if (!((int32_t)((int32_t)L_43&(int32_t)((int32_t)32))))
+		{
+			goto IL_0184;
+		}
+	}
+	{
+		bool L_44 = V_0;
+		if (L_44)
+		{
+			goto IL_0177;
+		}
+	}
+	{
+		NetworkWriter_t560143343 * L_45 = ___writer0;
+		uint32_t L_46 = NetworkBehaviour_get_syncVarDirtyBits_m1228195332(__this, /*hidden argument*/NULL);
+		NullCheck(L_45);
+		NetworkWriter_WritePackedUInt32_m2634533176(L_45, L_46, /*hidden argument*/NULL);
+		V_0 = (bool)1;
+	}
+
+IL_0177:
+	{
+		NetworkWriter_t560143343 * L_47 = ___writer0;
+		String_t* L_48 = __this->get_name_16();
+		NullCheck(L_47);
+		NetworkWriter_Write_m1047077131(L_47, L_48, /*hidden argument*/NULL);
+	}
+
+IL_0184:
+	{
+		bool L_49 = V_0;
+		if (L_49)
+		{
+			goto IL_0197;
+		}
+	}
+	{
+		NetworkWriter_t560143343 * L_50 = ___writer0;
+		uint32_t L_51 = NetworkBehaviour_get_syncVarDirtyBits_m1228195332(__this, /*hidden argument*/NULL);
+		NullCheck(L_50);
+		NetworkWriter_WritePackedUInt32_m2634533176(L_50, L_51, /*hidden argument*/NULL);
+	}
+
+IL_0197:
+	{
+		bool L_52 = V_0;
+		return L_52;
 	}
 }
 // System.Void PlayerMove::OnDeserialize(UnityEngine.Networking.NetworkReader,System.Boolean)
 extern "C"  void PlayerMove_OnDeserialize_m887318788 (PlayerMove_t195622780 * __this, NetworkReader_t3187690923 * ___reader0, bool ___initialState1, const MethodInfo* method)
 {
+	int32_t V_0 = 0;
 	{
+		bool L_0 = ___initialState1;
+		if (!L_0)
+		{
+			goto IL_004f;
+		}
+	}
+	{
+		NetworkReader_t3187690923 * L_1 = ___reader0;
+		NullCheck(L_1);
+		bool L_2 = NetworkReader_ReadBoolean_m3418091832(L_1, /*hidden argument*/NULL);
+		__this->set_isSeeker_11(L_2);
+		NetworkReader_t3187690923 * L_3 = ___reader0;
+		NullCheck(L_3);
+		float L_4 = NetworkReader_ReadSingle_m3965937584(L_3, /*hidden argument*/NULL);
+		__this->set_latitudeO_12(L_4);
+		NetworkReader_t3187690923 * L_5 = ___reader0;
+		NullCheck(L_5);
+		float L_6 = NetworkReader_ReadSingle_m3965937584(L_5, /*hidden argument*/NULL);
+		__this->set_longitudeO_13(L_6);
+		NetworkReader_t3187690923 * L_7 = ___reader0;
+		NullCheck(L_7);
+		float L_8 = NetworkReader_ReadSingle_m3965937584(L_7, /*hidden argument*/NULL);
+		__this->set_latitude_14(L_8);
+		NetworkReader_t3187690923 * L_9 = ___reader0;
+		NullCheck(L_9);
+		float L_10 = NetworkReader_ReadSingle_m3965937584(L_9, /*hidden argument*/NULL);
+		__this->set_longitude_15(L_10);
+		NetworkReader_t3187690923 * L_11 = ___reader0;
+		NullCheck(L_11);
+		String_t* L_12 = NetworkReader_ReadString_m172969450(L_11, /*hidden argument*/NULL);
+		__this->set_name_16(L_12);
+		return;
+	}
+
+IL_004f:
+	{
+		NetworkReader_t3187690923 * L_13 = ___reader0;
+		NullCheck(L_13);
+		uint32_t L_14 = NetworkReader_ReadPackedUInt32_m3078633978(L_13, /*hidden argument*/NULL);
+		V_0 = L_14;
+		int32_t L_15 = V_0;
+		if (!((int32_t)((int32_t)L_15&(int32_t)((int32_t)1))))
+		{
+			goto IL_006f;
+		}
+	}
+	{
+		NetworkReader_t3187690923 * L_16 = ___reader0;
+		NullCheck(L_16);
+		bool L_17 = NetworkReader_ReadBoolean_m3418091832(L_16, /*hidden argument*/NULL);
+		__this->set_isSeeker_11(L_17);
+	}
+
+IL_006f:
+	{
+		int32_t L_18 = V_0;
+		if (!((int32_t)((int32_t)L_18&(int32_t)((int32_t)2))))
+		{
+			goto IL_0088;
+		}
+	}
+	{
+		NetworkReader_t3187690923 * L_19 = ___reader0;
+		NullCheck(L_19);
+		float L_20 = NetworkReader_ReadSingle_m3965937584(L_19, /*hidden argument*/NULL);
+		__this->set_latitudeO_12(L_20);
+	}
+
+IL_0088:
+	{
+		int32_t L_21 = V_0;
+		if (!((int32_t)((int32_t)L_21&(int32_t)((int32_t)4))))
+		{
+			goto IL_00a1;
+		}
+	}
+	{
+		NetworkReader_t3187690923 * L_22 = ___reader0;
+		NullCheck(L_22);
+		float L_23 = NetworkReader_ReadSingle_m3965937584(L_22, /*hidden argument*/NULL);
+		__this->set_longitudeO_13(L_23);
+	}
+
+IL_00a1:
+	{
+		int32_t L_24 = V_0;
+		if (!((int32_t)((int32_t)L_24&(int32_t)((int32_t)8))))
+		{
+			goto IL_00ba;
+		}
+	}
+	{
+		NetworkReader_t3187690923 * L_25 = ___reader0;
+		NullCheck(L_25);
+		float L_26 = NetworkReader_ReadSingle_m3965937584(L_25, /*hidden argument*/NULL);
+		__this->set_latitude_14(L_26);
+	}
+
+IL_00ba:
+	{
+		int32_t L_27 = V_0;
+		if (!((int32_t)((int32_t)L_27&(int32_t)((int32_t)16))))
+		{
+			goto IL_00d3;
+		}
+	}
+	{
+		NetworkReader_t3187690923 * L_28 = ___reader0;
+		NullCheck(L_28);
+		float L_29 = NetworkReader_ReadSingle_m3965937584(L_28, /*hidden argument*/NULL);
+		__this->set_longitude_15(L_29);
+	}
+
+IL_00d3:
+	{
+		int32_t L_30 = V_0;
+		if (!((int32_t)((int32_t)L_30&(int32_t)((int32_t)32))))
+		{
+			goto IL_00ec;
+		}
+	}
+	{
+		NetworkReader_t3187690923 * L_31 = ___reader0;
+		NullCheck(L_31);
+		String_t* L_32 = NetworkReader_ReadString_m172969450(L_31, /*hidden argument*/NULL);
+		__this->set_name_16(L_32);
+	}
+
+IL_00ec:
+	{
+		return;
+	}
+}
+// System.Void PlayerUI::.ctor()
+extern "C"  void PlayerUI__ctor_m2704063226 (PlayerUI_t3700805861 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void PlayerUI::Awake()
+extern "C"  void PlayerUI_Awake_m3335881061 (PlayerUI_t3700805861 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerUI_Awake_m3335881061_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Camera_t189460977 * L_0 = Camera_get_main_m475173995(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_mcamera_5(L_0);
+		RawImage_t2749640213 * L_1 = __this->get_image_2();
+		NullCheck(L_1);
+		RawImage_t2749640213 * L_2 = Component_GetComponent_TisRawImage_t2749640213_m1817787565(L_1, /*hidden argument*/Component_GetComponent_TisRawImage_t2749640213_m1817787565_MethodInfo_var);
+		Texture_t2243626319 * L_3 = __this->get_seek_4();
+		NullCheck(L_2);
+		RawImage_set_texture_m2400157626(L_2, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void PlayerUI::Update()
+extern "C"  void PlayerUI_Update_m2308955209 (PlayerUI_t3700805861 * __this, const MethodInfo* method)
+{
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Transform_t3275118058 * L_0 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Camera_t189460977 * L_1 = __this->get_mcamera_5();
+		NullCheck(L_1);
+		Transform_t3275118058 * L_2 = Component_get_transform_m2697483695(L_1, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		Transform_LookAt_m2514033256(L_0, L_2, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_3 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_4 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		Vector3_t2243707580  L_5 = Transform_get_eulerAngles_m4066505159(L_4, /*hidden argument*/NULL);
+		V_0 = L_5;
+		float L_6 = (&V_0)->get_y_2();
+		Vector3_t2243707580  L_7;
+		memset(&L_7, 0, sizeof(L_7));
+		Vector3__ctor_m2638739322(&L_7, (0.0f), L_6, (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_3);
+		Transform_set_eulerAngles_m2881310872(L_3, L_7, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void PlayerUI::changeToHide()
+extern "C"  void PlayerUI_changeToHide_m3507154501 (PlayerUI_t3700805861 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerUI_changeToHide_m3507154501_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RawImage_t2749640213 * L_0 = __this->get_image_2();
+		NullCheck(L_0);
+		RawImage_t2749640213 * L_1 = Component_GetComponent_TisRawImage_t2749640213_m1817787565(L_0, /*hidden argument*/Component_GetComponent_TisRawImage_t2749640213_m1817787565_MethodInfo_var);
+		Texture_t2243626319 * L_2 = __this->get_hide_3();
+		NullCheck(L_1);
+		RawImage_set_texture_m2400157626(L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void PlayerUI::changeToSeek()
+extern "C"  void PlayerUI_changeToSeek_m1596641025 (PlayerUI_t3700805861 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerUI_changeToSeek_m1596641025_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RawImage_t2749640213 * L_0 = __this->get_image_2();
+		NullCheck(L_0);
+		RawImage_t2749640213 * L_1 = Component_GetComponent_TisRawImage_t2749640213_m1817787565(L_0, /*hidden argument*/Component_GetComponent_TisRawImage_t2749640213_m1817787565_MethodInfo_var);
+		Texture_t2243626319 * L_2 = __this->get_seek_4();
+		NullCheck(L_1);
+		RawImage_set_texture_m2400157626(L_1, L_2, /*hidden argument*/NULL);
 		return;
 	}
 }

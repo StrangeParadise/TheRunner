@@ -8487,7 +8487,11 @@ extern "C" void GameObject_get_activeSelf_m313590879 ();
 extern "C" void GameObject_get_activeInHierarchy_m4242915935 ();
 extern "C" void GameObject_get_tag_m1425941094 ();
 extern "C" void GameObject_set_tag_m717375123 ();
+<<<<<<< HEAD
 extern "C" void GameObject_FindGameObjectWithTag_m829057129 ();
+=======
+extern "C" void GameObject_FindGameObjectsWithTag_m2154478296 ();
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 extern "C" void GameObject_SendMessage_m71956653 ();
 extern "C" void GameObject_Internal_AddComponentWithType_m214735204 ();
 extern "C" void GameObject_AddComponent_m3757565614 ();
@@ -9014,8 +9018,11 @@ extern "C" void Logger_LogFormat_m193464629 ();
 extern "C" void Logger_LogException_m206035446 ();
 extern "C" void Material__ctor_m1897560860 ();
 extern "C" void Material__ctor_m1440882780 ();
+extern "C" void Material_set_color_m577844242 ();
 extern "C" void Material_get_mainTexture_m432794412 ();
 extern "C" void Material_SetIntImpl_m4157631275 ();
+extern "C" void Material_SetColorImpl_m3789287710 ();
+extern "C" void Material_INTERNAL_CALL_SetColorImpl_m1235596565 ();
 extern "C" void Material_GetTextureImpl_m623159197 ();
 extern "C" void Material_HasProperty_m3511389613 ();
 extern "C" void Material_HasProperty_m3175512802 ();
@@ -9026,6 +9033,8 @@ extern "C" void Material_EnableKeyword_m3724752646 ();
 extern "C" void Material_DisableKeyword_m1204728089 ();
 extern "C" void Material_SetInt_m522302436 ();
 extern "C" void Material_SetInt_m977568583 ();
+extern "C" void Material_SetColor_m650857509 ();
+extern "C" void Material_SetColor_m1191533068 ();
 extern "C" void Material_GetTexture_m1257877102 ();
 extern "C" void Material_GetTexture_m648312929 ();
 extern "C" void Mathf_Sin_m831310046 ();
@@ -9769,6 +9778,7 @@ extern "C" void UpdatedEventHandler_Invoke_m159598802 ();
 extern "C" void UpdatedEventHandler_BeginInvoke_m4238510153 ();
 extern "C" void UpdatedEventHandler_EndInvoke_m224684362 ();
 extern "C" void Renderer_set_enabled_m142717579 ();
+extern "C" void Renderer_get_materials_m810004692 ();
 extern "C" void Renderer_get_sortingLayerID_m2403577271 ();
 extern "C" void Renderer_get_sortingOrder_m1544525007 ();
 extern "C" void RenderTexture_Internal_GetWidth_m2317917654 ();
@@ -10284,6 +10294,10 @@ extern "C" void Transform_INTERNAL_get_worldToLocalMatrix_m3394773201 ();
 extern "C" void Transform_RotateAroundInternal_m2303097692 ();
 extern "C" void Transform_INTERNAL_CALL_RotateAroundInternal_m552507884 ();
 extern "C" void Transform_RotateAround_m3410686872 ();
+extern "C" void Transform_LookAt_m2514033256 ();
+extern "C" void Transform_LookAt_m335101033 ();
+extern "C" void Transform_LookAt_m3392147815 ();
+extern "C" void Transform_INTERNAL_CALL_LookAt_m1443061981 ();
 extern "C" void Transform_TransformPoint_m3272254198 ();
 extern "C" void Transform_INTERNAL_CALL_TransformPoint_m4114689647 ();
 extern "C" void Transform_InverseTransformPoint_m2648491174 ();
@@ -13381,6 +13395,7 @@ extern "C" void AR_Update_m3244983845 ();
 extern "C" void ChatController__ctor_m281900101 ();
 extern "C" void ChatController_Start_m1354071973 ();
 extern "C" void ChatController_Update_m1939549468 ();
+<<<<<<< HEAD
 extern "C" void CountDownController__ctor_m3062782466 ();
 extern "C" void CountDownController_Start_m2361129142 ();
 extern "C" void CountDownController_RpcUpdateCountdown_m1433628092 ();
@@ -13402,6 +13417,25 @@ extern "C" void U3CCountdownRoutineU3Ec__Iterator0_System_Collections_Generic_IE
 extern "C" void U3CCountdownRoutineU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m1638849334 ();
 extern "C" void U3CCountdownRoutineU3Ec__Iterator0_Dispose_m2823084599 ();
 extern "C" void U3CCountdownRoutineU3Ec__Iterator0_Reset_m1277081309 ();
+=======
+extern "C" void ChatManager__ctor_m3800112208 ();
+extern "C" void ChatManager_Start_m242820332 ();
+extern "C" void ChatManager_OnGUI_m1334155140 ();
+extern "C" void ChatManager_Update_m2680425267 ();
+extern "C" void ChatManager_Download_m659343066 ();
+extern "C" void ChatManager_Send_m1864909104 ();
+extern "C" void ChatManager_ServerSend_m2720164729 ();
+extern "C" void ChatManager_OutputToScreen_m177540504 ();
+extern "C" void U3CServerSendU3Ec__Iterator0__ctor_m1989518995 ();
+extern "C" void U3CServerSendU3Ec__Iterator0_MoveNext_m1173577137 ();
+extern "C" void U3CServerSendU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1936333717 ();
+extern "C" void U3CServerSendU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m1542290205 ();
+extern "C" void U3CServerSendU3Ec__Iterator0_Dispose_m1899960926 ();
+extern "C" void U3CServerSendU3Ec__Iterator0_Reset_m2783850324 ();
+extern "C" void Compass__ctor_m57594855 ();
+extern "C" void Compass_Start_m4155426795 ();
+extern "C" void Compass_Update_m1486543666 ();
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 extern "C" void GameController__ctor_m1439649957 ();
 extern "C" void GameController_OnStartServer_m2196495173 ();
 extern "C" void GameController_Start_m239487205 ();
@@ -13434,13 +13468,16 @@ extern "C" void GPSData_getLatitude_m1301723475 ();
 extern "C" void GPSData_getLongitude_m529963932 ();
 extern "C" void HandMapController__ctor_m1968396896 ();
 extern "C" void HandMapController_Update_m836850453 ();
+extern "C" void HidePlayer__ctor_m277116656 ();
+extern "C" void HidePlayer_Start_m2708321144 ();
+extern "C" void HidePlayer_Update_m2363072953 ();
 extern "C" void HollowCircle__ctor_m1560708842 ();
 extern "C" void HollowCircle_Start_m2284073694 ();
 extern "C" void HollowCircle_CreatePoints_m2954146693 ();
 extern "C" void Map__ctor_m2382724703 ();
 extern "C" void Map_Update_m3867277220 ();
 extern "C" void Map_GetGoogleMap_m3075677944 ();
-extern "C" void Map_generateURL_m3793783533 ();
+extern "C" void Map_generateURL_m309255195 ();
 extern "C" void U3CGetGoogleMapU3Ec__Iterator0__ctor_m3373241622 ();
 extern "C" void U3CGetGoogleMapU3Ec__Iterator0_MoveNext_m2744658934 ();
 extern "C" void U3CGetGoogleMapU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m351240154 ();
@@ -13451,6 +13488,7 @@ extern "C" void MapTools__ctor_m632582472 ();
 extern "C" void MapTools_Start_m3847571680 ();
 extern "C" void MapTools_Update_m2536679305 ();
 extern "C" void MapTools_mapGPS_m2811930864 ();
+<<<<<<< HEAD
 extern "C" void PlaneMove__ctor_m3106900518 ();
 extern "C" void PlaneMove_Start_m78236054 ();
 extern "C" void PlaneMove_Update_m1957397273 ();
@@ -13481,12 +13519,42 @@ extern "C" void U3CFadeToU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU
 extern "C" void U3CFadeToU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m2102700607 ();
 extern "C" void U3CFadeToU3Ec__Iterator0_Dispose_m3760671592 ();
 extern "C" void U3CFadeToU3Ec__Iterator0_Reset_m264949546 ();
+=======
+extern "C" void MapTools_getLatO_m920183944 ();
+extern "C" void MapTools_setLatO_m107961725 ();
+extern "C" void MapTools_getLonO_m221025940 ();
+extern "C" void MapTools_setLonO_m3229664229 ();
+extern "C" void MapTools_getLat_m3613946993 ();
+extern "C" void MapTools_getLon_m2914782753 ();
+extern "C" void MapTools__cctor_m3108219 ();
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 extern "C" void PlayerMove__ctor_m161887621 ();
 extern "C" void PlayerMove_Start_m490112797 ();
 extern "C" void PlayerMove_Update_m1466995334 ();
+extern "C" void PlayerMove_CmdSet_m4083172977 ();
 extern "C" void PlayerMove_UNetVersion_m2938967785 ();
+extern "C" void PlayerMove_get_NetworkisSeeker_m1277202251 ();
+extern "C" void PlayerMove_set_NetworkisSeeker_m2861567716 ();
+extern "C" void PlayerMove_get_NetworklatitudeO_m2539807631 ();
+extern "C" void PlayerMove_set_NetworklatitudeO_m369194098 ();
+extern "C" void PlayerMove_get_NetworklongitudeO_m3209996230 ();
+extern "C" void PlayerMove_set_NetworklongitudeO_m1015069171 ();
+extern "C" void PlayerMove_get_Networklatitude_m1621644328 ();
+extern "C" void PlayerMove_set_Networklatitude_m3590327843 ();
+extern "C" void PlayerMove_get_Networklongitude_m2315781347 ();
+extern "C" void PlayerMove_set_Networklongitude_m2526468526 ();
+extern "C" void PlayerMove_get_Networkname_m2445510958 ();
+extern "C" void PlayerMove_set_Networkname_m1750711975 ();
+extern "C" void PlayerMove_InvokeCmdCmdSet_m434246307 ();
+extern "C" void PlayerMove_CallCmdSet_m3201218195 ();
+extern "C" void PlayerMove__cctor_m1129527734 ();
 extern "C" void PlayerMove_OnSerialize_m406728147 ();
 extern "C" void PlayerMove_OnDeserialize_m887318788 ();
+extern "C" void PlayerUI__ctor_m2704063226 ();
+extern "C" void PlayerUI_Awake_m3335881061 ();
+extern "C" void PlayerUI_Update_m2308955209 ();
+extern "C" void PlayerUI_changeToHide_m3507154501 ();
+extern "C" void PlayerUI_changeToSeek_m1596641025 ();
 extern "C" void SimpleChat__ctor_m1147096138 ();
 extern "C" void SimpleChat_receive_m3000470043 ();
 extern "C" void SimpleChat_draw_m869370447 ();
@@ -13588,7 +13656,11 @@ extern "C" void testSingleChat_Start_m1190730460 ();
 extern "C" void testSingleChat_receiveMessage_m3194079398 ();
 extern "C" void testSingleChat_OnGUI_m361319688 ();
 extern "C" void testSingleChat_Main_m1511507263 ();
+<<<<<<< HEAD
 extern const Il2CppMethodPointer g_MethodPointers[13574] = 
+=======
+extern const Il2CppMethodPointer g_MethodPointers[13550] = 
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -22063,7 +22135,11 @@ extern const Il2CppMethodPointer g_MethodPointers[13574] =
 	GameObject_get_activeInHierarchy_m4242915935,
 	GameObject_get_tag_m1425941094,
 	GameObject_set_tag_m717375123,
+<<<<<<< HEAD
 	GameObject_FindGameObjectWithTag_m829057129,
+=======
+	GameObject_FindGameObjectsWithTag_m2154478296,
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 	GameObject_SendMessage_m71956653,
 	GameObject_Internal_AddComponentWithType_m214735204,
 	GameObject_AddComponent_m3757565614,
@@ -22590,8 +22666,11 @@ extern const Il2CppMethodPointer g_MethodPointers[13574] =
 	Logger_LogException_m206035446,
 	Material__ctor_m1897560860,
 	Material__ctor_m1440882780,
+	Material_set_color_m577844242,
 	Material_get_mainTexture_m432794412,
 	Material_SetIntImpl_m4157631275,
+	Material_SetColorImpl_m3789287710,
+	Material_INTERNAL_CALL_SetColorImpl_m1235596565,
 	Material_GetTextureImpl_m623159197,
 	Material_HasProperty_m3511389613,
 	Material_HasProperty_m3175512802,
@@ -22602,6 +22681,8 @@ extern const Il2CppMethodPointer g_MethodPointers[13574] =
 	Material_DisableKeyword_m1204728089,
 	Material_SetInt_m522302436,
 	Material_SetInt_m977568583,
+	Material_SetColor_m650857509,
+	Material_SetColor_m1191533068,
 	Material_GetTexture_m1257877102,
 	Material_GetTexture_m648312929,
 	Mathf_Sin_m831310046,
@@ -23345,6 +23426,7 @@ extern const Il2CppMethodPointer g_MethodPointers[13574] =
 	UpdatedEventHandler_BeginInvoke_m4238510153,
 	UpdatedEventHandler_EndInvoke_m224684362,
 	Renderer_set_enabled_m142717579,
+	Renderer_get_materials_m810004692,
 	Renderer_get_sortingLayerID_m2403577271,
 	Renderer_get_sortingOrder_m1544525007,
 	RenderTexture_Internal_GetWidth_m2317917654,
@@ -23860,6 +23942,10 @@ extern const Il2CppMethodPointer g_MethodPointers[13574] =
 	Transform_RotateAroundInternal_m2303097692,
 	Transform_INTERNAL_CALL_RotateAroundInternal_m552507884,
 	Transform_RotateAround_m3410686872,
+	Transform_LookAt_m2514033256,
+	Transform_LookAt_m335101033,
+	Transform_LookAt_m3392147815,
+	Transform_INTERNAL_CALL_LookAt_m1443061981,
 	Transform_TransformPoint_m3272254198,
 	Transform_INTERNAL_CALL_TransformPoint_m4114689647,
 	Transform_InverseTransformPoint_m2648491174,
@@ -26957,6 +27043,7 @@ extern const Il2CppMethodPointer g_MethodPointers[13574] =
 	ChatController__ctor_m281900101,
 	ChatController_Start_m1354071973,
 	ChatController_Update_m1939549468,
+<<<<<<< HEAD
 	CountDownController__ctor_m3062782466,
 	CountDownController_Start_m2361129142,
 	CountDownController_RpcUpdateCountdown_m1433628092,
@@ -26978,6 +27065,25 @@ extern const Il2CppMethodPointer g_MethodPointers[13574] =
 	U3CCountdownRoutineU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m1638849334,
 	U3CCountdownRoutineU3Ec__Iterator0_Dispose_m2823084599,
 	U3CCountdownRoutineU3Ec__Iterator0_Reset_m1277081309,
+=======
+	ChatManager__ctor_m3800112208,
+	ChatManager_Start_m242820332,
+	ChatManager_OnGUI_m1334155140,
+	ChatManager_Update_m2680425267,
+	ChatManager_Download_m659343066,
+	ChatManager_Send_m1864909104,
+	ChatManager_ServerSend_m2720164729,
+	ChatManager_OutputToScreen_m177540504,
+	U3CServerSendU3Ec__Iterator0__ctor_m1989518995,
+	U3CServerSendU3Ec__Iterator0_MoveNext_m1173577137,
+	U3CServerSendU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1936333717,
+	U3CServerSendU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m1542290205,
+	U3CServerSendU3Ec__Iterator0_Dispose_m1899960926,
+	U3CServerSendU3Ec__Iterator0_Reset_m2783850324,
+	Compass__ctor_m57594855,
+	Compass_Start_m4155426795,
+	Compass_Update_m1486543666,
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 	GameController__ctor_m1439649957,
 	GameController_OnStartServer_m2196495173,
 	GameController_Start_m239487205,
@@ -27010,13 +27116,16 @@ extern const Il2CppMethodPointer g_MethodPointers[13574] =
 	GPSData_getLongitude_m529963932,
 	HandMapController__ctor_m1968396896,
 	HandMapController_Update_m836850453,
+	HidePlayer__ctor_m277116656,
+	HidePlayer_Start_m2708321144,
+	HidePlayer_Update_m2363072953,
 	HollowCircle__ctor_m1560708842,
 	HollowCircle_Start_m2284073694,
 	HollowCircle_CreatePoints_m2954146693,
 	Map__ctor_m2382724703,
 	Map_Update_m3867277220,
 	Map_GetGoogleMap_m3075677944,
-	Map_generateURL_m3793783533,
+	Map_generateURL_m309255195,
 	U3CGetGoogleMapU3Ec__Iterator0__ctor_m3373241622,
 	U3CGetGoogleMapU3Ec__Iterator0_MoveNext_m2744658934,
 	U3CGetGoogleMapU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m351240154,
@@ -27027,6 +27136,7 @@ extern const Il2CppMethodPointer g_MethodPointers[13574] =
 	MapTools_Start_m3847571680,
 	MapTools_Update_m2536679305,
 	MapTools_mapGPS_m2811930864,
+<<<<<<< HEAD
 	PlaneMove__ctor_m3106900518,
 	PlaneMove_Start_m78236054,
 	PlaneMove_Update_m1957397273,
@@ -27057,12 +27167,42 @@ extern const Il2CppMethodPointer g_MethodPointers[13574] =
 	U3CFadeToU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m2102700607,
 	U3CFadeToU3Ec__Iterator0_Dispose_m3760671592,
 	U3CFadeToU3Ec__Iterator0_Reset_m264949546,
+=======
+	MapTools_getLatO_m920183944,
+	MapTools_setLatO_m107961725,
+	MapTools_getLonO_m221025940,
+	MapTools_setLonO_m3229664229,
+	MapTools_getLat_m3613946993,
+	MapTools_getLon_m2914782753,
+	MapTools__cctor_m3108219,
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 	PlayerMove__ctor_m161887621,
 	PlayerMove_Start_m490112797,
 	PlayerMove_Update_m1466995334,
+	PlayerMove_CmdSet_m4083172977,
 	PlayerMove_UNetVersion_m2938967785,
+	PlayerMove_get_NetworkisSeeker_m1277202251,
+	PlayerMove_set_NetworkisSeeker_m2861567716,
+	PlayerMove_get_NetworklatitudeO_m2539807631,
+	PlayerMove_set_NetworklatitudeO_m369194098,
+	PlayerMove_get_NetworklongitudeO_m3209996230,
+	PlayerMove_set_NetworklongitudeO_m1015069171,
+	PlayerMove_get_Networklatitude_m1621644328,
+	PlayerMove_set_Networklatitude_m3590327843,
+	PlayerMove_get_Networklongitude_m2315781347,
+	PlayerMove_set_Networklongitude_m2526468526,
+	PlayerMove_get_Networkname_m2445510958,
+	PlayerMove_set_Networkname_m1750711975,
+	PlayerMove_InvokeCmdCmdSet_m434246307,
+	PlayerMove_CallCmdSet_m3201218195,
+	PlayerMove__cctor_m1129527734,
 	PlayerMove_OnSerialize_m406728147,
 	PlayerMove_OnDeserialize_m887318788,
+	PlayerUI__ctor_m2704063226,
+	PlayerUI_Awake_m3335881061,
+	PlayerUI_Update_m2308955209,
+	PlayerUI_changeToHide_m3507154501,
+	PlayerUI_changeToSeek_m1596641025,
 	SimpleChat__ctor_m1147096138,
 	SimpleChat_receive_m3000470043,
 	SimpleChat_draw_m869370447,

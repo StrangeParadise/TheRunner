@@ -32,14 +32,18 @@ public:
 	int32_t ___radius_2;
 	// System.Int32 MapTools::range
 	int32_t ___range_3;
-	// System.Single MapTools::latitudeO
-	float ___latitudeO_4;
-	// System.Single MapTools::longitudeO
-	float ___longitudeO_5;
-	// System.Boolean MapTools::firstTime
-	bool ___firstTime_6;
+	// System.Single MapTools::speed
+	float ___speed_4;
+	// System.Boolean MapTools::firsttime
+	bool ___firsttime_9;
 	// UnityEngine.Camera MapTools::mainCamera
+<<<<<<< HEAD
 	Camera_t189460977 * ___mainCamera_7;
+=======
+	Camera_t189460977 * ___mainCamera_10;
+	// GPSController MapTools::IGPSController
+	GPSController_t2272977524 * ___IGPSController_11;
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 
 public:
 	inline static int32_t get_offset_of_radius_2() { return static_cast<int32_t>(offsetof(MapTools_t3308069217, ___radius_2)); }
@@ -58,38 +62,88 @@ public:
 		___range_3 = value;
 	}
 
-	inline static int32_t get_offset_of_latitudeO_4() { return static_cast<int32_t>(offsetof(MapTools_t3308069217, ___latitudeO_4)); }
-	inline float get_latitudeO_4() const { return ___latitudeO_4; }
-	inline float* get_address_of_latitudeO_4() { return &___latitudeO_4; }
-	inline void set_latitudeO_4(float value)
+	inline static int32_t get_offset_of_speed_4() { return static_cast<int32_t>(offsetof(MapTools_t3308069217, ___speed_4)); }
+	inline float get_speed_4() const { return ___speed_4; }
+	inline float* get_address_of_speed_4() { return &___speed_4; }
+	inline void set_speed_4(float value)
 	{
-		___latitudeO_4 = value;
+		___speed_4 = value;
 	}
 
-	inline static int32_t get_offset_of_longitudeO_5() { return static_cast<int32_t>(offsetof(MapTools_t3308069217, ___longitudeO_5)); }
-	inline float get_longitudeO_5() const { return ___longitudeO_5; }
-	inline float* get_address_of_longitudeO_5() { return &___longitudeO_5; }
-	inline void set_longitudeO_5(float value)
+	inline static int32_t get_offset_of_firsttime_9() { return static_cast<int32_t>(offsetof(MapTools_t3308069217, ___firsttime_9)); }
+	inline bool get_firsttime_9() const { return ___firsttime_9; }
+	inline bool* get_address_of_firsttime_9() { return &___firsttime_9; }
+	inline void set_firsttime_9(bool value)
 	{
-		___longitudeO_5 = value;
+		___firsttime_9 = value;
 	}
 
-	inline static int32_t get_offset_of_firstTime_6() { return static_cast<int32_t>(offsetof(MapTools_t3308069217, ___firstTime_6)); }
-	inline bool get_firstTime_6() const { return ___firstTime_6; }
-	inline bool* get_address_of_firstTime_6() { return &___firstTime_6; }
-	inline void set_firstTime_6(bool value)
+	inline static int32_t get_offset_of_mainCamera_10() { return static_cast<int32_t>(offsetof(MapTools_t3308069217, ___mainCamera_10)); }
+	inline Camera_t189460977 * get_mainCamera_10() const { return ___mainCamera_10; }
+	inline Camera_t189460977 ** get_address_of_mainCamera_10() { return &___mainCamera_10; }
+	inline void set_mainCamera_10(Camera_t189460977 * value)
 	{
-		___firstTime_6 = value;
+		___mainCamera_10 = value;
+		Il2CppCodeGenWriteBarrier(&___mainCamera_10, value);
 	}
 
-	inline static int32_t get_offset_of_mainCamera_7() { return static_cast<int32_t>(offsetof(MapTools_t3308069217, ___mainCamera_7)); }
-	inline Camera_t189460977 * get_mainCamera_7() const { return ___mainCamera_7; }
-	inline Camera_t189460977 ** get_address_of_mainCamera_7() { return &___mainCamera_7; }
-	inline void set_mainCamera_7(Camera_t189460977 * value)
+	inline static int32_t get_offset_of_IGPSController_11() { return static_cast<int32_t>(offsetof(MapTools_t3308069217, ___IGPSController_11)); }
+	inline GPSController_t2272977524 * get_IGPSController_11() const { return ___IGPSController_11; }
+	inline GPSController_t2272977524 ** get_address_of_IGPSController_11() { return &___IGPSController_11; }
+	inline void set_IGPSController_11(GPSController_t2272977524 * value)
 	{
-		___mainCamera_7 = value;
-		Il2CppCodeGenWriteBarrier(&___mainCamera_7, value);
+		___IGPSController_11 = value;
+		Il2CppCodeGenWriteBarrier(&___IGPSController_11, value);
 	}
+};
+
+struct MapTools_t3308069217_StaticFields
+{
+public:
+	// System.Single MapTools::latitudeO
+	float ___latitudeO_5;
+	// System.Single MapTools::longitudeO
+	float ___longitudeO_6;
+	// System.Single MapTools::latitude
+	float ___latitude_7;
+	// System.Single MapTools::longitude
+	float ___longitude_8;
+
+public:
+	inline static int32_t get_offset_of_latitudeO_5() { return static_cast<int32_t>(offsetof(MapTools_t3308069217_StaticFields, ___latitudeO_5)); }
+	inline float get_latitudeO_5() const { return ___latitudeO_5; }
+	inline float* get_address_of_latitudeO_5() { return &___latitudeO_5; }
+	inline void set_latitudeO_5(float value)
+	{
+		___latitudeO_5 = value;
+	}
+
+	inline static int32_t get_offset_of_longitudeO_6() { return static_cast<int32_t>(offsetof(MapTools_t3308069217_StaticFields, ___longitudeO_6)); }
+	inline float get_longitudeO_6() const { return ___longitudeO_6; }
+	inline float* get_address_of_longitudeO_6() { return &___longitudeO_6; }
+	inline void set_longitudeO_6(float value)
+	{
+		___longitudeO_6 = value;
+	}
+
+	inline static int32_t get_offset_of_latitude_7() { return static_cast<int32_t>(offsetof(MapTools_t3308069217_StaticFields, ___latitude_7)); }
+	inline float get_latitude_7() const { return ___latitude_7; }
+	inline float* get_address_of_latitude_7() { return &___latitude_7; }
+	inline void set_latitude_7(float value)
+	{
+		___latitude_7 = value;
+	}
+<<<<<<< HEAD
+=======
+
+	inline static int32_t get_offset_of_longitude_8() { return static_cast<int32_t>(offsetof(MapTools_t3308069217_StaticFields, ___longitude_8)); }
+	inline float get_longitude_8() const { return ___longitude_8; }
+	inline float* get_address_of_longitude_8() { return &___longitude_8; }
+	inline void set_longitude_8(float value)
+	{
+		___longitude_8 = value;
+	}
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 };
 
 #ifdef __clang__

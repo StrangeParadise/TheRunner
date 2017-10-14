@@ -1046,9 +1046,15 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_GameObject_Internal_AddComponentWithType();
 		Register_UnityEngine_GameObject_Internal_AddComponentWithType();
 
+<<<<<<< HEAD
 		//UnityEngine.GameObject UnityEngine.GameObject::FindGameObjectWithTag(System.String)
 		void Register_UnityEngine_GameObject_FindGameObjectWithTag();
 		Register_UnityEngine_GameObject_FindGameObjectWithTag();
+=======
+		//UnityEngine.GameObject[] UnityEngine.GameObject::FindGameObjectsWithTag(System.String)
+		void Register_UnityEngine_GameObject_FindGameObjectsWithTag();
+		Register_UnityEngine_GameObject_FindGameObjectsWithTag();
+>>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 
 		//UnityEngine.Transform UnityEngine.GameObject::get_transform()
 		void Register_UnityEngine_GameObject_get_transform();
@@ -1741,6 +1747,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Material::EnableKeyword(System.String)
 		void Register_UnityEngine_Material_EnableKeyword();
 		Register_UnityEngine_Material_EnableKeyword();
+
+		//System.Void UnityEngine.Material::INTERNAL_CALL_SetColorImpl(UnityEngine.Material,System.Int32,UnityEngine.Color&)
+		void Register_UnityEngine_Material_INTERNAL_CALL_SetColorImpl();
+		Register_UnityEngine_Material_INTERNAL_CALL_SetColorImpl();
 
 		//System.Void UnityEngine.Material::Internal_CreateWithMaterial(UnityEngine.Material,UnityEngine.Material)
 		void Register_UnityEngine_Material_Internal_CreateWithMaterial();
@@ -2510,6 +2520,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Renderer_set_enabled();
 		Register_UnityEngine_Renderer_set_enabled();
 
+		//UnityEngine.Material[] UnityEngine.Renderer::get_materials()
+		void Register_UnityEngine_Renderer_get_materials();
+		Register_UnityEngine_Renderer_get_materials();
+
 	//End Registrations for type : UnityEngine.Renderer
 
 	//Start Registrations for type : UnityEngine.RenderTexture
@@ -3033,6 +3047,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Transform::INTERNAL_CALL_InverseTransformPoint(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
 		void Register_UnityEngine_Transform_INTERNAL_CALL_InverseTransformPoint();
 		Register_UnityEngine_Transform_INTERNAL_CALL_InverseTransformPoint();
+
+		//System.Void UnityEngine.Transform::INTERNAL_CALL_LookAt(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
+		void Register_UnityEngine_Transform_INTERNAL_CALL_LookAt();
+		Register_UnityEngine_Transform_INTERNAL_CALL_LookAt();
 
 		//System.Void UnityEngine.Transform::INTERNAL_CALL_RotateAroundInternal(UnityEngine.Transform,UnityEngine.Vector3&,System.Single)
 		void Register_UnityEngine_Transform_INTERNAL_CALL_RotateAroundInternal();
