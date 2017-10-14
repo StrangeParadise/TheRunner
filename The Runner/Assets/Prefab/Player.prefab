@@ -94,7 +94,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79192ab91bae248cab7e8578547e3438, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 0}
+  player: {fileID: 100002, guid: df0777a2e75ec7048b28e7c394efbd53, type: 3}
+  ui: {fileID: 0}
+  isSeeker: 1
+  latitudeO: 0
+  longitudeO: 0
+  latitude: 0
+  longitude: 0
+  name: 
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &114441302247862122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -130,21 +138,21 @@ MonoBehaviour:
   m_SceneId:
     m_Value: 0
   m_AssetId:
-    i0: 108
-    i1: 156
-    i2: 123
-    i3: 220
-    i4: 224
-    i5: 240
-    i6: 180
-    i7: 231
-    i8: 72
-    i9: 67
-    i10: 42
-    i11: 226
-    i12: 100
-    i13: 176
-    i14: 175
-    i15: 223
+    i0: 22
+    i1: 145
+    i2: 87
+    i3: 187
+    i4: 119
+    i5: 129
+    i6: 20
+    i7: 17
+    i8: 27
+    i9: 64
+    i10: 185
+    i11: 32
+    i12: 92
+    i13: 178
+    i14: 75
+    i15: 81
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1

@@ -118,6 +118,7 @@
     <Compile Include="Assets\Scripts\ChatController\testExtendClass.cs" />
     <Compile Include="Assets\Scripts\ChatController\testTwoChat.cs" />
     <Compile Include="Assets\Scripts\Circle\HollowCircle.cs" />
+    <Compile Include="Assets\Scripts\Compass.cs" />
     <Compile Include="Assets\Scripts\Data\PlayerDataManager.cs" />
     <Compile Include="Assets\Scripts\Debug\testMoveScript.cs" />
     <Compile Include="Assets\Scripts\GPS\GPSController.cs" />
@@ -127,9 +128,11 @@
     <Compile Include="Assets\Scripts\GPS\UpdateGPS.cs" />
     <Compile Include="Assets\Scripts\GameManager\GameController.cs" />
     <Compile Include="Assets\Scripts\HandMap\HandMapController.cs" />
+    <Compile Include="Assets\Scripts\HidePlayer.cs" />
     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
+    <Compile Include="Assets\Scripts\PlayerUI.cs" />
     <Compile Include="Assets\Scripts\Room.cs" />
     <Compile Include="Assets\Scripts\Tool\Toolbox.cs" />
     <Compile Include="Assets\Scripts\User\UserInfo.cs" />

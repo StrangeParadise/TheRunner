@@ -2,7 +2,7 @@
 using UnityEngine.Networking;
 public class PlayerMove : NetworkBehaviour
 {
-	public Camera mainCamera;
+	private Camera mainCamera;
 	public GameObject player;
 	public PlayerUI ui;
 
@@ -28,7 +28,6 @@ public class PlayerMove : NetworkBehaviour
 		// Camera should always bound with the player cube.
 		mainCamera = Camera.main;
 
-
 	}
 
 	// Player move is based on the movement in real world. So we basically transform
@@ -48,10 +47,12 @@ public class PlayerMove : NetworkBehaviour
 		}
 		if (isSeeker) {
 			this.color = Color.red;
-			ui.changeToSeek ();
+            // TODO: UI for seeker
+			//ui.changeToSeek ();
 		} else {
 			this.color = Color.white;
-			ui.changeToHide ();
+            // TODO: UI For Hide
+			//ui.changeToHide ();
 		}
 		player.GetComponent<SkinnedMeshRenderer>().materials[0].color = color;
 		player.GetComponent<SkinnedMeshRenderer>().materials[1].color = color;

@@ -39,6 +39,5 @@ public class PlaneMove : MonoBehaviour {
         objectToMove.transform.position = end;
     }
 
-    public 
-
+    // TODO: Throw Boxes
 }

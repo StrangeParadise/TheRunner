@@ -27,21 +27,15 @@ public class Map : MonoBehaviour {
 	private float time = 0.0f;
 
 	void Update () {
-<<<<<<< HEAD
+        //if ((time += Time.deltaTime) > updatePerSecond) {
+			
         latitude  = GPSData.s_Instance.getLatitude();
         longitude = GPSData.s_Instance.getLongitude();
-		//mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
-		//StartCoroutine (mapCoroutine); //restart the coroutine
-=======
-//		if ((time += Time.deltaTime) > updatePerSecond) {
-			
-			latitude  = gpsController.gps.getLatitude();
-			longitude = gpsController.gps.getLongitude();
-			mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
-			StartCoroutine (mapCoroutine); //restart the coroutine
-			time = 0.0f;
+		mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
+		StartCoroutine (mapCoroutine); //restart the coroutine
+		time = 0.0f;
+
 //		}
->>>>>>> 00dcca50e86f78f16c60d6aece5144d58660c469
 
 
 //		if (terminal != null && gpsController != null) {
@@ -71,7 +65,7 @@ public class Map : MonoBehaviour {
 		GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
 		string[] markers = new string[players.Length];
 		int startLetter = 65;
-		print (players.Length);
+		//print (players.Length);
 		for (int i = 0; i < players.Length; i++) {
 			print ("精度" + i +players [i].GetComponent<PlayerMove> ().latitude);
 			print ("维度" + i + players [i].GetComponent<PlayerMove> ().longitude);
