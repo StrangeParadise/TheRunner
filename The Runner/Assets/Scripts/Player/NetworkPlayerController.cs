@@ -23,9 +23,13 @@ namespace TheRunner.Player
 
         }
 
-        void unlocking(SupplyController sc)
+        public void unlocking(SupplyController sc)
         {
-            Debug.Log("[" + playerName + "]: Unlocking!");
+            Debug.Log("[" + playerName + "]: Unlocking " + sc.boxName);
+        }
+
+        public Transform getTransform() {
+            return transform;
         }
 
     }

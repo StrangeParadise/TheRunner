@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
-using 
+using TheRunner.Player;
 
 public class SupplyController : NetworkBehaviour {
 
+    public string boxName;
 
     private float fallRange;
 
+    private float unlockSpeed = 1.0f; // per second
     private float progress = 0.0f;
     private float MAX_PROGRESS = 100f;
 
@@ -17,6 +19,8 @@ public class SupplyController : NetworkBehaviour {
     void Start()
     {
 
+        boxName = "[ Box: " + Random.Range(1000,9999).ToString() + " ]";
+
         // Throw the box. 
         StartCoroutine(MoveOverSeconds(
             gameObject, new Vector3(
@@ -24,14 +28,15 @@ public class SupplyController : NetworkBehaviour {
                 0, 
                 transform.position.z + Random.Range(-fallRange, fallRange)), 10f));
 
+        Debug.Log(boxName + " dropped from the sky!");
     }
 	
 	// Update is called once per frame
 	void Update () {
-
-
+        
         // Check is there any player nearby.
         checkPlayerNearby();
+
 	}
 
     public IEnumerator MoveOverSpeed(GameObject objectToMove, Vector3 end, float speed)
@@ -62,6 +67,19 @@ public class SupplyController : NetworkBehaviour {
 
     void checkPlayerNearby() {
 
+        GameObject[] playerPrefabList = GameObject.FindGameObjectsWithTag("Player");
+        for (int i = 0; i < playerPrefabList.Length; i++)
+        {
+            NetworkPlayerController tnpc = playerPrefabList[i].GetComponent<NetworkPlayerController>();
+            Transform tempTransform = tnpc.transform;
+
+            if (Vector3.Distance(tempTransform.position, transform.position) <= 10.0f)
+            {
+                progress += unlockSpeed;
+                tnpc.unlocking(this);
+            }
+                                   
+        }
 
     }
 
