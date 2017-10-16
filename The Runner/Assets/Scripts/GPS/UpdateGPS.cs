@@ -8,8 +8,6 @@ public class UpdateGPS : MonoBehaviour {
 	public TextMesh terminal;
 	public Camera main;
 
-	public GPSController IGPSController;
-
 	private void Update() {
 		terminal.text = "x" + main.transform.position.x + "    z" + main.transform.position.z;
 	}

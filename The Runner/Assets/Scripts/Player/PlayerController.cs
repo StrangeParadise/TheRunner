@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
         if (!PlayerDataManager.s_Instance)
         {
             // Create a fake Player.
-            GameObject.Instantiate(PlayerDataPrefab);
+            Instantiate(PlayerDataPrefab);
             PlayerDataManager.s_Instance.playerName = "UNITY_EDITOR";
             PlayerDataManager.s_Instance.playerLvl = 100;
             PlayerDataManager.s_Instance.playerID = 1;

@@ -60,6 +60,7 @@ public class PlayerMove : NetworkBehaviour
 
 		if (!isLocalPlayer)
 			return;
+        
 		if (!isSeeker && latitudeO != 0)
 		{
 			MapTools.setLatO(latitudeO);

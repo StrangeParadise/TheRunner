@@ -37,7 +37,9 @@ public class MapTools : MonoBehaviour {
 				firsttime = false;
 			}
 		}
-		mainCamera.transform.position = Vector3.MoveTowards(mainCamera.transform.position, mapGPS(latitude, longitude),speed * Time.deltaTime);
+		//mainCamera.transform.position = Vector3.MoveTowards(mainCamera.transform.position, mapGPS(latitude, longitude),speed * Time.deltaTime);
+
+        mainCamera.transform.position = mapGPS(latitude, longitude);
 		//mainCamera.transform.position = mapGPS (latitude, longitude);
 
 	}
