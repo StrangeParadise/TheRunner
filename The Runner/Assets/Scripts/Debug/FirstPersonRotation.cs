@@ -17,6 +17,10 @@ public class FirstPersonRotation : MonoBehaviour {
 
     private bool onOff = false;
 
+    public float speed = 1.5f;
+    public float spacing = 1.0f;
+    private Vector3 pos;
+
     void Update()
     {
         if (Input.GetKeyDown("space")) {
@@ -36,6 +40,17 @@ public class FirstPersonRotation : MonoBehaviour {
 
             //总体设置一下相机角度  
             transform.localEulerAngles = new Vector3(-rotationY, rotationX, 0);
+
+            if (Input.GetKeyDown(KeyCode.W))
+                pos.y += spacing;
+            if (Input.GetKeyDown(KeyCode.S))
+                pos.y -= spacing;
+            if (Input.GetKeyDown(KeyCode.A))
+                pos.x -= spacing;
+            if (Input.GetKeyDown(KeyCode.D))
+                pos.x += spacing;
+
+            transform.position = Vector3.MoveTowards(transform.position, pos, speed * Time.deltaTime);
         }
     }
 

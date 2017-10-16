@@ -111,6 +111,28 @@
     <Compile Include="Assets\CountDownController.cs" />
     <Compile Include="Assets\CountDownServer.cs" />
     <Compile Include="Assets\PlaneMove.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Components\DragComponent.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Core\HUDNode.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Core\HUDWidget.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Core\NodeType.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Extensions\ColorExt.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Extensions\ListExtPF.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\HUDDelegate.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Nodes\Root\ConsoleNode.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Nodes\Root\FpsNode.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Nodes\Root\HeapNode.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Nodes\Root\MemoryNode.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Nodes\Root\OrientationNode.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Nodes\Root\ScreenInfoNode.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Sample\MainMock.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Widgets\Console\ConsoleItem.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Widgets\Console\ConsoleItemView.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Widgets\Console\EConsoleType.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Widgets\ConsoleWidget.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Widgets\FpsWidget.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Widgets\HeapWidget.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Widgets\MemoryWidget.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Widgets\ScreenInfoWidget.cs" />
     <Compile Include="Assets\Scripts\AR\AR.cs" />
     <Compile Include="Assets\Scripts\AR\TestRedManRotation.cs" />
     <Compile Include="Assets\Scripts\ChatController\ChatController.cs" />
@@ -144,6 +166,7 @@
     <Compile Include="Assets\login\TiltWindow.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\PlayFlock_Utils\HUDDebug\ReadMe.txt" />
     <None Include="Assets\Shader\DepthMask.shader" />
     <None Include="Assets\login\Fonts\Jupiter\LICENSE.txt" />
   </ItemGroup>

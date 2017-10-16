@@ -20,12 +20,17 @@ public class PlayerController : MonoBehaviour
     // Prefab for test usage.
     public GameObject PlayerDataPrefab;
 
+    // DEBUG: Check if this game is running in a none mobile devices.
+    private bool debug_RunningEnv_Mobile = true;
 
     //***************************************************************************
     private void Start()
     {
-        
-#if UNITY_EDITOR
+
+        #if UNITY_EDITOR
+            debug_RunningEnv_Mobile = false;
+        #endif
+
 
         // Directly load game scene in unity editor 
         if (!PlayerDataManager.s_Instance)
@@ -39,8 +44,6 @@ public class PlayerController : MonoBehaviour
 
             Debug.Log("[UNITY_EDITOR] A Fake Player is loaded in Editor mode.");
         }
-        
-#endif
 
     }
 

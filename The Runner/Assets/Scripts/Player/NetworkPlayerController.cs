@@ -18,11 +18,13 @@ namespace TheRunner.Player
 
 
         [NonSerialized] private string _PlayerName;
-        [NonSerialized] private string _PlayerLvl;
+        [NonSerialized] private int _PlayerLvl;
 
         
         [NonSerialized] private float _Health;
-        [NonSerialized] private float MAX_HEALTH;
+        [NonSerialized] private const float MAX_HEALTH = 100f;
+
+        [NonSerialized] private bool _isDead;
         #endregion
 
         #region Properties
@@ -40,21 +42,47 @@ namespace TheRunner.Player
             set { _Health = value; }
         }
 
-        public string playerlvl
+        public int playerlvl
         {
             get { return _PlayerLvl; }
             set { _PlayerLvl = value; }
         }
 
+        public bool isDead
+        {
+            get { return _isDead; }
+            set { _isDead = value; }
+        }
+
         #endregion
 
 
+        /// <summary>
+        /// Player is damaged. 
+        /// </summary>
+        /// <param name="damage">Damage.</param>
         public void getDamage(float damage) {
-            
+
+            if (damage > health)
+            {
+                health = 0.0f;
+            } else {
+                health -= damage;
+            }
+            checkDeath();
         }
 
-        public void getHealed(float health) {
-            
+        /// <summary>
+        /// Player is healed.
+        /// </summary>
+        /// <param name="health">Health.</param>
+        public void getHealed(float recovery) {
+
+            if (recovery+health>MAX_HEALTH) {
+                health = MAX_HEALTH;
+            } else {
+                health += recovery;
+            }
         }
 
 
@@ -65,14 +93,18 @@ namespace TheRunner.Player
         {
             // Load basic data of player.
             playerName = PlayerDataManager.s_Instance.playerName;
-            health = MAX_HEALTH;
+            playerlvl = PlayerDataManager.s_Instance.playerLvl;
 
+            // Load the game basic data
+            health = MAX_HEALTH;
+            isDead = false;
         }
 
         // Update is called once per frame
         void Update()
         {
-
+            // Check the death of this player.
+            checkDeath();
         }
 
         public void unlocking(SupplyController sc)
@@ -82,6 +114,14 @@ namespace TheRunner.Player
 
         public Transform getTransform() {
             return transform;
+        }
+
+        /// <summary>
+        /// Check the death of a player. 
+        /// </summary>
+        private void checkDeath() {
+            if (health <= 0.0f)
+                isDead = true;
         }
 
     }

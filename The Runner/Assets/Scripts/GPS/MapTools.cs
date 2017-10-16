@@ -1,48 +1,53 @@
 ﻿using UnityEngine;
 using TheRunner.Tools;
 
-public class MapTools : MonoBehaviour {
+public class MapTools : MonoBehaviour
+{
 
-	public int radius = 150;
-	public int range = 500;
-	public float speed = 1f;
+    public int radius = 150;
+    public int range = 500;
+    public float speed = 1f;
 
-	private static float latitudeO = 0;
-	private static float longitudeO = 0;
-	private static float latitude;
-	private static float longitude;
+    private static float latitudeO = 0;
+    private static float longitudeO = 0;
+    private static float latitude;
+    private static float longitude;
 
 
-	private bool firsttime;
+    private bool firsttime;
 
-	private Camera mainCamera;
+    private Camera mainCamera;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
 
-		mainCamera = Camera.main;
-		firsttime = true;
-	}
+        mainCamera = Camera.main;
+        firsttime = true;
+    }
 
-	// Update is called once per frame
-	void Update () {
-        
-        float latitude = GPSData.s_Instance.getLatitude();
-        float longitude = GPSData.s_Instance.getLongitude();
-        if (firsttime) {
+    // Update is called once per frame
+    void Update()
+    {
 
-			if (latitude != 0) {
-				latitudeO = latitude;
-				longitudeO = longitude;
-				firsttime = false;
-			}
-		}
-		//mainCamera.transform.position = Vector3.MoveTowards(mainCamera.transform.position, mapGPS(latitude, longitude),speed * Time.deltaTime);
+        if (firsttime)
+        {
 
+            if (latitude.Equals(0))
+            {
+                latitudeO = GPSData.s_Instance.getLatitude();
+                longitudeO = GPSData.s_Instance.getLongitude();
+                firsttime = false;
+            }
+        }
+        //mainCamera.transform.position = Vector3.MoveTowards(mainCamera.transform.position, mapGPS(latitude, longitude),speed * Time.deltaTime);
+
+#if !UNITY_EDITOR
         mainCamera.transform.position = mapGPS(latitude, longitude);
-		//mainCamera.transform.position = mapGPS (latitude, longitude);
+#endif
+        //mainCamera.transform.position = mapGPS (latitude, longitude);
 
-	}
+    }
 
 	public Vector3 mapGPS(float latitude, float longitude){
 		return new Vector3 (

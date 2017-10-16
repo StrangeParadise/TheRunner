@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.Networking;
 using TheRunner.Player;
+using UnityEngine.Assertions;
 
 public class GameController : NetworkBehaviour {
 
@@ -68,7 +69,7 @@ public class GameController : NetworkBehaviour {
 
     private int time_Run = 0;
     private bool b_Run = false;
-    private int time_PlaneFliesBy_1 = 5;
+    private int time_PlaneFliesBy_1 = 13;
     private bool b_PFB_1 = false;
     private int time_BoxDrops_1 = 20;
     private bool b_BP_1 = false;
@@ -134,7 +135,9 @@ public class GameController : NetworkBehaviour {
         //          Default Size: radius = 1000f;
         initHollowCircle(1000f);
 
-         
+        //============================
+        // Debug purpose:
+        Debug.Assert(GPSData.s_Instance);
 
 	}
 
@@ -195,15 +198,18 @@ public class GameController : NetworkBehaviour {
         // Decide which state is the game in.
         stateDecider();
 
-        // Debug: 
-        foreach (GameObject player in onlinePlayerList) {
-            Debug.Log(player.GetComponent<NetworkPlayerController>().playerName);
-        }
 
-        // =========================================
-        // State 2: Find Boxes.
-        // =========================================
-        // First plane fly pass.
+        // TODO: HUD Notifies
+
+
+
+        // TODO: Visibility
+
+
+
+        // TODO: DEBUG
+        // debug_RunHealthTest();  // Ready to be tested.
+
         switch (gameState)
         {
 
@@ -375,10 +381,18 @@ public class GameController : NetworkBehaviour {
     }
 
 
-    private void getElapsedTime(int currentCountDown) {
+    /// <summary>
+    /// Update the game time.
+    /// </summary>
+    /// <param name="currentCountDown">Countdown clock synced from Prefab Countdown</param>
+    private void getElapsedTime(int currentCountDown) 
+    {
         elapsedTime = COUNTDOWN_TIME - currentCountDown;
     }
 
+    /// <summary>
+    /// Pop up when Game Over.
+    /// </summary>
     private void GameOver() {
         Debug.Log("GameOver!");
     }
@@ -388,4 +402,116 @@ public class GameController : NetworkBehaviour {
         onlinePlayerList = GameObject.FindGameObjectsWithTag("Player");
     }
 
+
+    ///=========================================================================
+    // DEBUG: Validation
+    ///=========================================================================
+   
+
+
+    /// <summary>
+    /// This needs to be run in "Update()"
+    /// </summary>
+    private void debug_RunHealthTest() {
+    /// This part of the code is used for testing the validation of the health control
+    /// system.
+
+        testPlayerGetDamaged("UNITY_EDITOR", 99.0f);
+        checkPlayerHealth("UNITY_EDITOR", 1.0f);
+
+        testPlayerGetHealed("UNITY_EDITOR", 99.0f);
+        checkPlayerHealth("UNITY_EDITOR", 100.0f);
+
+        testPlayerGetDamaged("UNITY_EDITOR", 100.0f);
+        testPlayerDied("UNITY_EDITOR");
+
+        Debug.Log(" debug_RunHealthTest | Successful! ");
+
+    }
+
+    private void checkPlayerHealth(string playerName_, float healthChecked) {
+
+        foreach (GameObject player in onlinePlayerList)
+        {
+
+            NetworkPlayerController tempNPC = player.GetComponent<NetworkPlayerController>();
+
+            if (tempNPC.playerName == playerName_)
+            {
+                Debug.Assert(tempNPC.health.Equals(healthChecked));
+                break;
+            }
+            
+            break;
+        }
+    }
+
+    private void testPlayerDied(string playerName_) {
+
+        foreach (GameObject player in onlinePlayerList) {
+
+            NetworkPlayerController tempNPC = player.GetComponent<NetworkPlayerController>();
+
+            if (tempNPC.playerName == playerName_ && tempNPC.isDead) {
+                Debug.Log(tempNPC.playerName + " is dead!");
+            }
+            Debug.Assert(tempNPC.isDead);
+            break;
+        }
+
+
+    }
+
+    private void testPlayerGetHealed(string playerName_, float recovery)
+    {
+        foreach (GameObject player in onlinePlayerList)
+        {
+            NetworkPlayerController tempNPC = player.GetComponent<NetworkPlayerController>();
+
+            // Debug record
+            float cHealth = tempNPC.health;
+
+            if (tempNPC.playerName == playerName_)
+            {
+                tempNPC.getHealed(recovery);
+                Debug.Log(tempNPC.playerName + " is healed! Recovery: " + recovery);
+            }
+
+            if (recovery + cHealth > 100.0f) {
+                Debug.Assert(tempNPC.health.Equals(100.0f));
+            } else {
+                Debug.Assert(tempNPC.health.Equals(cHealth + recovery));
+            }
+                
+            break;
+        }
+    }
+
+    private void testPlayerGetDamaged(string playerName_, float damage)
+    {
+        foreach (GameObject player in onlinePlayerList)
+        {
+            NetworkPlayerController tempNPC = player.GetComponent<NetworkPlayerController>();
+
+            // Debug record
+            float cHealth = tempNPC.health;
+
+            if (tempNPC.playerName == playerName_)
+            {
+                tempNPC.getDamage(damage);
+                Debug.Log(tempNPC.playerName + " is hit! Damage: " + damage);
+            }
+
+            if (cHealth - damage < 0.0f)
+            {
+                Debug.Assert(tempNPC.health.Equals(0.0f));
+            }
+            else
+            {
+                Debug.Assert(tempNPC.health.Equals(cHealth - damage));
+            }
+
+            break;
+        }
+    }
 }
