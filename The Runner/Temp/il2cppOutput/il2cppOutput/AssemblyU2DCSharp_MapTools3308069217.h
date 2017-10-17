@@ -12,8 +12,6 @@
 
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972.h"
 
-// UnityEngine.Camera
-struct Camera_t189460977;
 
 
 
@@ -36,8 +34,6 @@ public:
 	float ___speed_4;
 	// System.Boolean MapTools::firsttime
 	bool ___firsttime_9;
-	// UnityEngine.Camera MapTools::mainCamera
-	Camera_t189460977 * ___mainCamera_10;
 
 public:
 	inline static int32_t get_offset_of_radius_2() { return static_cast<int32_t>(offsetof(MapTools_t3308069217, ___radius_2)); }
@@ -70,15 +66,6 @@ public:
 	inline void set_firsttime_9(bool value)
 	{
 		___firsttime_9 = value;
-	}
-
-	inline static int32_t get_offset_of_mainCamera_10() { return static_cast<int32_t>(offsetof(MapTools_t3308069217, ___mainCamera_10)); }
-	inline Camera_t189460977 * get_mainCamera_10() const { return ___mainCamera_10; }
-	inline Camera_t189460977 ** get_address_of_mainCamera_10() { return &___mainCamera_10; }
-	inline void set_mainCamera_10(Camera_t189460977 * value)
-	{
-		___mainCamera_10 = value;
-		Il2CppCodeGenWriteBarrier(&___mainCamera_10, value);
 	}
 };
 

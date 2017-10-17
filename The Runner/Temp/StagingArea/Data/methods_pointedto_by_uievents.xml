@@ -39,5 +39,8 @@
 			<method name="find"/>
 			<method name="back"/>
 		</type>
+		<type fullname="Catch">
+			<method name="doCatch"/>
+		</type>
 	</assembly>
 </linker>

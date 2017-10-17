@@ -1,78 +1,1 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
-using System.Collections;
-
-public class Map : MonoBehaviour {
-
-	string url;
-
-	public GPSController gpsController;
-
-	public float latitude;
-	public float longitude;
-	public int zoom;
-	public int mapWidth;
-	public int mapHeight;
-	public enum mapType { roadmap, satellite, hybrid, terrain };
-	public mapType mapSelected;
-	public RawImage myMap;
-
-	public TextMesh terminal;
-
-	private IEnumerator mapCoroutine;
-	private string key1 = "&key=AIzaSyDK04pO2JEC4C01AQSW9dpuBDunvtuA-o8";
-	private string key2 = "&key=AIzaSyDkFTum1BgoY5gD92vkLlnavRQnnYQKKiM";
-
-	private float updatePerSecond = 0.1f;
-	private float time = 0.0f;
-
-	void Update () {
-        //if ((time += Time.deltaTime) > updatePerSecond) {
-			
-        latitude  = GPSData.s_Instance.getLatitude();
-        longitude = GPSData.s_Instance.getLongitude();
-		//mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
-		//StartCoroutine (mapCoroutine); //restart the coroutine
-		time = 0.0f;
-
-//		}
-
-
-//		if (terminal != null && gpsController != null) {
-//			terminal.text = "gps | long: " + gpsController.gps.longtitude.ToString() +'\n' + " lati: " + gpsController.gps.latitude.ToString();
-//		}
-	}
-
-	IEnumerator GetGoogleMap(float latitude, float longitude)
-	{
-//		Debug.Log ("latitude " + latitude);
-//		Debug.Log ("longitude " + longitude);
-		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude +
-		"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected;
-		generateURL ();
-//		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude +
-//			"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected + 
-//			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyDkFTum1BgoY5gD92vkLlnavRQnnYQKKiM";
-		WWW www = new WWW(url);
-		yield return www;
-		Texture mapTexture = www.texture;
-		myMap.GetComponent<RawImage>().texture = mapTexture;
-		yield return new WaitForSeconds(1);
-		Destroy (mapTexture);
-		StopCoroutine (mapCoroutine);
-	}
-	void generateURL() {
-		GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-		string[] markers = new string[players.Length];
-		int startLetter = 65;
-		//print (players.Length);
-		for (int i = 0; i < players.Length; i++) {
-			print ("精度" + i +players [i].GetComponent<PlayerMove> ().latitude);
-			print ("维度" + i + players [i].GetComponent<PlayerMove> ().longitude);
-			markers [i] = "&markers=color:red%7Clabel:" + (char)(startLetter++) + "%7C" + players[i].GetComponent<PlayerMove>().latitude + "," + players[i].GetComponent<PlayerMove>().longitude;
-			url += markers [i];
-		}
-		url += key1;
-//		url += key2;
-	}
-}
+﻿using UnityEngine; using UnityEngine.UI; using System.Collections; using UnityEngine.Networking;  public class Map : MonoBehaviour {  	string url;  	public float latitude; 	public float longitude; 	public int zoom; 	public int mapWidth; 	public int mapHeight; 	public enum mapType { roadmap, satellite, hybrid, terrain }; 	public mapType mapSelected; 	public RawImage myMap;  	public TextMesh terminal;  	public int range; 	private IEnumerator mapCoroutine; 	private string key1 = "&key=AIzaSyDK04pO2JEC4C01AQSW9dpuBDunvtuA-o8"; 	private string key2 = "&key=AIzaSyDkFTum1BgoY5gD92vkLlnavRQnnYQKKiM"; 	private string key3 = "&key=AIzaSyD1McLuBZCI9Ueu6XJ3lU6r_AZTPmi1asQ";  	private bool showMap; 	private float time = 0.0f; 	private int updatePerSecond = 10; 	private Texture mapTexture;  	void Start() { 		latitude  = GPSData.s_Instance.getLatitude(); 		longitude = GPSData.s_Instance.getLongitude(); 		mapCoroutine = GetGoogleMap (latitude, longitude);  		StartCoroutine (mapCoroutine);  	}  	void Update () { 		if ((time += Time.deltaTime) > 1.0f/updatePerSecond) { 			time = 0.0f; //		if(showMap) { //			showMap = false; 			latitude  = GPSData.s_Instance.getLatitude(); 			longitude = GPSData.s_Instance.getLongitude(); 			print ("妈1"+latitude); 			print ("妈2"+longitude); 			mapCoroutine = GetGoogleMap (latitude, longitude); 			StartCoroutine (mapCoroutine);  //		}  		}   		//		if (terminal != null && gpsController != null) { 		//			terminal.text = "gps | long: " + gpsController.gps.longtitude.ToString() +'\n' + " lati: " + gpsController.gps.latitude.ToString(); 		//		} 	}  	IEnumerator GetGoogleMap(float latitude, float longitude) 	{ 		print ("妈2.5"); 		//		Debug.Log ("latitude " + latitude); 		//		Debug.Log ("longitude " + longitude); 		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + 			"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected; 		generateURL (); 		drawCircle (); 		url += key1; 		//			url += key2; 		//		url += key3;  		//		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + 		//			"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected +  		//			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyDkFTum1BgoY5gD92vkLlnavRQnnYQKKiM"; 		WWW www = new WWW(url); 		yield return www; 		Destroy (mapTexture); 		print ("妈3"+url); 		print ("妈4"+www.error); 		if (www.error == null) { 			mapTexture = www.texture; 			myMap.GetComponent<RawImage>().texture = mapTexture; //			yield return new WaitForSeconds(1);  //			Destroy (mapTexture); //			showMap = true; 			StopCoroutine (mapCoroutine); 		} 	}  	void generateURL() { 		GameObject[] players = GameObject.FindGameObjectsWithTag("Player"); 		string[] markers = new string[players.Length]; 		//		int startLetter = 65; 		//print (players.Length); 		for (int i = 0; i < players.Length; i++) { 			print ("精度" + i +players [i].GetComponent<PlayerMove> ().latitude); 			print ("维度" + i + players [i].GetComponent<PlayerMove> ().longitude); 			if (players [i].GetComponent<PlayerMove> ().isSeeker) { 				markers [i] = "&markers=color:red%7Clabel:" + players [i].GetComponent<PlayerMove> ().name [0].ToString ().ToUpper () + "%7C" + players [i].GetComponent<PlayerMove> ().latitude + "," + players [i].GetComponent<PlayerMove> ().longitude; 			}  else { 				markers [i] = "&markers=color:green%7Clabel:" + players[i].GetComponent<PlayerMove> ().name[0].ToString().ToUpper() + "%7C" + players[i].GetComponent<PlayerMove>().latitude + "," + players[i].GetComponent<PlayerMove>().longitude; 			} 			url += markers [i]; 		} 	}  	void drawCircle(){ 		float lat = MapTools.getLatO(); 		float lng = MapTools.getLonO(); 		int rad = range; 		int detail = 5;  		url += "&path=color:blue%7Cfillcolor:yellow%7Cweight:4";  		float r = 6378.137f;  		float pi = Mathf.PI;  		float _lat = (lat * pi) / 180f; 		float _lng = (lng * pi) / 180f; 		float d = (rad / 1000f) / r;  		int i = 0;  		for (i = 0; i <= 360; i += detail) { 			float brng = i * pi / 180f; 			float pLat = Mathf.Asin (Mathf.Sin (_lat) * Mathf.Cos (d) + Mathf.Cos (_lat) * Mathf.Sin (d) * Mathf.Cos (brng)); 			float pLng = ((_lng + Mathf.Atan2 (Mathf.Sin (brng) * Mathf.Sin (d) * Mathf.Cos (_lat), Mathf.Cos (d) - Mathf.Sin (_lat) * Mathf.Sin (pLat))) * 180f) / pi; 			pLat = (pLat * 180f) / pi;  			url += "%7C" + pLat + "," + pLng; 		} 	} 		 } 

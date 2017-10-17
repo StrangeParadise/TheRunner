@@ -16,8 +16,10 @@
 struct RawImage_t2749640213;
 // UnityEngine.Texture
 struct Texture_t2243626319;
-// UnityEngine.Camera
-struct Camera_t189460977;
+// PlayerMove
+struct PlayerMove_t195622780;
+// UnityEngine.GameObject
+struct GameObject_t1756533147;
 
 
 
@@ -38,8 +40,10 @@ public:
 	Texture_t2243626319 * ___hide_3;
 	// UnityEngine.Texture PlayerUI::seek
 	Texture_t2243626319 * ___seek_4;
-	// UnityEngine.Camera PlayerUI::mcamera
-	Camera_t189460977 * ___mcamera_5;
+	// PlayerMove PlayerUI::player
+	PlayerMove_t195622780 * ___player_5;
+	// UnityEngine.GameObject PlayerUI::text
+	GameObject_t1756533147 * ___text_6;
 
 public:
 	inline static int32_t get_offset_of_image_2() { return static_cast<int32_t>(offsetof(PlayerUI_t3700805861, ___image_2)); }
@@ -69,13 +73,22 @@ public:
 		Il2CppCodeGenWriteBarrier(&___seek_4, value);
 	}
 
-	inline static int32_t get_offset_of_mcamera_5() { return static_cast<int32_t>(offsetof(PlayerUI_t3700805861, ___mcamera_5)); }
-	inline Camera_t189460977 * get_mcamera_5() const { return ___mcamera_5; }
-	inline Camera_t189460977 ** get_address_of_mcamera_5() { return &___mcamera_5; }
-	inline void set_mcamera_5(Camera_t189460977 * value)
+	inline static int32_t get_offset_of_player_5() { return static_cast<int32_t>(offsetof(PlayerUI_t3700805861, ___player_5)); }
+	inline PlayerMove_t195622780 * get_player_5() const { return ___player_5; }
+	inline PlayerMove_t195622780 ** get_address_of_player_5() { return &___player_5; }
+	inline void set_player_5(PlayerMove_t195622780 * value)
 	{
-		___mcamera_5 = value;
-		Il2CppCodeGenWriteBarrier(&___mcamera_5, value);
+		___player_5 = value;
+		Il2CppCodeGenWriteBarrier(&___player_5, value);
+	}
+
+	inline static int32_t get_offset_of_text_6() { return static_cast<int32_t>(offsetof(PlayerUI_t3700805861, ___text_6)); }
+	inline GameObject_t1756533147 * get_text_6() const { return ___text_6; }
+	inline GameObject_t1756533147 ** get_address_of_text_6() { return &___text_6; }
+	inline void set_text_6(GameObject_t1756533147 * value)
+	{
+		___text_6 = value;
+		Il2CppCodeGenWriteBarrier(&___text_6, value);
 	}
 };
 

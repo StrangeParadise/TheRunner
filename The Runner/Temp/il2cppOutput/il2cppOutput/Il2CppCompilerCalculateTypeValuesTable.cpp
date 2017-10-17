@@ -1319,46 +1319,49 @@ extern const int32_t g_FieldOffsetTable1978[6];
 extern const int32_t g_FieldOffsetTable1979[8];
 extern const int32_t g_FieldOffsetTable1980[8];
 extern const int32_t g_FieldOffsetTable1981[1];
-extern const int32_t g_FieldOffsetTable1983[9];
-extern const int32_t g_FieldOffsetTable1984[5];
-extern const int32_t g_FieldOffsetTable1985[1];
-extern const int32_t g_FieldOffsetTable1986[10];
-extern const int32_t g_FieldOffsetTable1987[11];
-extern const int32_t g_FieldOffsetTable1988[4];
-extern const int32_t g_FieldOffsetTable1989[1];
-extern const int32_t g_FieldOffsetTable1990[4];
-extern const int32_t g_FieldOffsetTable1993[4];
-extern const int32_t g_FieldOffsetTable1994[2];
-extern const int32_t g_FieldOffsetTable1995[15];
-extern const int32_t g_FieldOffsetTable1996[5];
-extern const int32_t g_FieldOffsetTable1997[8];
-extern const int32_t g_FieldOffsetTable1998[9];
-extern const int32_t g_FieldOffsetTable1999[3];
-extern const int32_t g_FieldOffsetTable2000[16];
-extern const int32_t g_FieldOffsetTable2001[7];
-extern const int32_t g_FieldOffsetTable2002[4];
-extern const int32_t g_FieldOffsetTable2003[2];
-extern const int32_t g_FieldOffsetTable2004[5];
-extern const int32_t g_FieldOffsetTable2005[6];
-extern const int32_t g_FieldOffsetTable2006[9];
-extern const int32_t g_FieldOffsetTable2007[11];
-extern const int32_t g_FieldOffsetTable2008[4];
+extern const int32_t g_FieldOffsetTable1982[3];
+extern const int32_t g_FieldOffsetTable1984[9];
+extern const int32_t g_FieldOffsetTable1985[5];
+extern const int32_t g_FieldOffsetTable1986[1];
+extern const int32_t g_FieldOffsetTable1987[10];
+extern const int32_t g_FieldOffsetTable1988[11];
+extern const int32_t g_FieldOffsetTable1989[4];
+extern const int32_t g_FieldOffsetTable1990[1];
+extern const int32_t g_FieldOffsetTable1991[4];
+extern const int32_t g_FieldOffsetTable1992[1];
+extern const int32_t g_FieldOffsetTable1995[4];
+extern const int32_t g_FieldOffsetTable1996[2];
+extern const int32_t g_FieldOffsetTable1997[18];
+extern const int32_t g_FieldOffsetTable1998[5];
+extern const int32_t g_FieldOffsetTable1999[7];
+extern const int32_t g_FieldOffsetTable2000[8];
+extern const int32_t g_FieldOffsetTable2001[2];
+extern const int32_t g_FieldOffsetTable2002[16];
+extern const int32_t g_FieldOffsetTable2003[7];
+extern const int32_t g_FieldOffsetTable2004[6];
+extern const int32_t g_FieldOffsetTable2005[4];
+extern const int32_t g_FieldOffsetTable2006[5];
+extern const int32_t g_FieldOffsetTable2007[1];
+extern const int32_t g_FieldOffsetTable2008[6];
 extern const int32_t g_FieldOffsetTable2009[9];
-extern const int32_t g_FieldOffsetTable2010[1];
-extern const int32_t g_FieldOffsetTable2011[1];
-extern const int32_t g_FieldOffsetTable2012[2];
-extern const int32_t g_FieldOffsetTable2013[1];
+extern const int32_t g_FieldOffsetTable2010[12];
+extern const int32_t g_FieldOffsetTable2011[5];
+extern const int32_t g_FieldOffsetTable2012[9];
+extern const int32_t g_FieldOffsetTable2013[5];
 extern const int32_t g_FieldOffsetTable2014[6];
 extern const int32_t g_FieldOffsetTable2015[8];
-extern const int32_t g_FieldOffsetTable2016[13];
-extern const int32_t g_FieldOffsetTable2017[5];
-extern const int32_t g_FieldOffsetTable2018[5];
-extern const int32_t g_FieldOffsetTable2019[4];
-extern const int32_t g_FieldOffsetTable2020[4];
-extern const int32_t g_FieldOffsetTable2022[9];
-extern const int32_t g_FieldOffsetTable2024[1];
+extern const int32_t g_FieldOffsetTable2016[1];
+extern const int32_t g_FieldOffsetTable2017[1];
+extern const int32_t g_FieldOffsetTable2018[2];
+extern const int32_t g_FieldOffsetTable2019[13];
+extern const int32_t g_FieldOffsetTable2020[5];
+extern const int32_t g_FieldOffsetTable2021[5];
+extern const int32_t g_FieldOffsetTable2022[4];
+extern const int32_t g_FieldOffsetTable2023[4];
+extern const int32_t g_FieldOffsetTable2025[9];
+extern const int32_t g_FieldOffsetTable2027[1];
 
-extern const int32_t* g_FieldOffsetTable[2025] = 
+extern const int32_t* g_FieldOffsetTable[2028] = 
 {
 	NULL,
 	NULL,
@@ -3342,8 +3345,8 @@ extern const int32_t* g_FieldOffsetTable[2025] =
 	g_FieldOffsetTable1979,
 	g_FieldOffsetTable1980,
 	g_FieldOffsetTable1981,
+	g_FieldOffsetTable1982,
 	NULL,
-	g_FieldOffsetTable1983,
 	g_FieldOffsetTable1984,
 	g_FieldOffsetTable1985,
 	g_FieldOffsetTable1986,
@@ -3351,10 +3354,10 @@ extern const int32_t* g_FieldOffsetTable[2025] =
 	g_FieldOffsetTable1988,
 	g_FieldOffsetTable1989,
 	g_FieldOffsetTable1990,
+	g_FieldOffsetTable1991,
+	g_FieldOffsetTable1992,
 	NULL,
 	NULL,
-	g_FieldOffsetTable1993,
-	g_FieldOffsetTable1994,
 	g_FieldOffsetTable1995,
 	g_FieldOffsetTable1996,
 	g_FieldOffsetTable1997,
@@ -3381,10 +3384,13 @@ extern const int32_t* g_FieldOffsetTable[2025] =
 	g_FieldOffsetTable2018,
 	g_FieldOffsetTable2019,
 	g_FieldOffsetTable2020,
-	NULL,
+	g_FieldOffsetTable2021,
 	g_FieldOffsetTable2022,
+	g_FieldOffsetTable2023,
 	NULL,
-	g_FieldOffsetTable2024,
+	g_FieldOffsetTable2025,
+	NULL,
+	g_FieldOffsetTable2027,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize0;
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1;
@@ -5411,7 +5417,10 @@ extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2021;
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2022;
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2023;
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2024;
-extern const Il2CppTypeDefinitionSizes* g_Il2CppTypeDefinitionSizesTable[2025] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2025;
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2026;
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2027;
+extern const Il2CppTypeDefinitionSizes* g_Il2CppTypeDefinitionSizesTable[2028] = 
 {
 	&g_typeDefinitionSize0,
 	&g_typeDefinitionSize1,
@@ -7438,4 +7447,7 @@ extern const Il2CppTypeDefinitionSizes* g_Il2CppTypeDefinitionSizesTable[2025] =
 	&g_typeDefinitionSize2022,
 	&g_typeDefinitionSize2023,
 	&g_typeDefinitionSize2024,
+	&g_typeDefinitionSize2025,
+	&g_typeDefinitionSize2026,
+	&g_typeDefinitionSize2027,
 };

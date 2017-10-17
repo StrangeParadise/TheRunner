@@ -896,14 +896,14 @@ extern const uint32_t Dictionary_2_ToTValue_m3329182590_MetadataUsageId;
 extern const uint32_t Dictionary_2__ctor_m2413657491_MetadataUsageId;
 extern const uint32_t Dictionary_2_System_Collections_IDictionary_Remove_m189853969_MetadataUsageId;
 extern const uint32_t Dictionary_2_System_Collections_ICollection_CopyTo_m2784181332_MetadataUsageId;
-extern const uint32_t Dictionary_2_get_Item_m2455494681_MetadataUsageId;
-extern const uint32_t Dictionary_2_set_Item_m3758499254_MetadataUsageId;
+extern const uint32_t Dictionary_2_get_Item_m2522967366_MetadataUsageId;
+extern const uint32_t Dictionary_2_set_Item_m353126835_MetadataUsageId;
 extern const uint32_t Dictionary_2_Init_m3784457680_MetadataUsageId;
 extern const uint32_t Dictionary_2_InitArrays_m4237030359_MetadataUsageId;
 extern const uint32_t Dictionary_2_CopyToCheck_m1638253305_MetadataUsageId;
 extern const uint32_t Dictionary_2_Resize_m2807616086_MetadataUsageId;
 extern const uint32_t Dictionary_2_Add_m3435012856_MetadataUsageId;
-extern const uint32_t Dictionary_2_ContainsKey_m1385349577_MetadataUsageId;
+extern const uint32_t Dictionary_2_ContainsKey_m2024407803_MetadataUsageId;
 extern const uint32_t Dictionary_2_GetObjectData_m3012471448_MetadataUsageId;
 extern const uint32_t Dictionary_2_OnDeserialization_m2870692686_MetadataUsageId;
 extern Il2CppClass* Boolean_t3825574718_il2cpp_TypeInfo_var;
@@ -14000,12 +14000,12 @@ extern "C"  int32_t Dictionary_2_get_Count_m802888472_gshared (Dictionary_2_t341
 	}
 }
 // TValue System.Collections.Generic.Dictionary`2<System.Object,System.Boolean>::get_Item(TKey)
-extern "C"  bool Dictionary_2_get_Item_m2455494681_gshared (Dictionary_2_t3417634846 * __this, Il2CppObject * ___key0, const MethodInfo* method)
+extern "C"  bool Dictionary_2_get_Item_m2522967366_gshared (Dictionary_2_t3417634846 * __this, Il2CppObject * ___key0, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (Dictionary_2_get_Item_m2455494681_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Dictionary_2_get_Item_m2522967366_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
@@ -14101,12 +14101,12 @@ IL_009b:
 	}
 }
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Boolean>::set_Item(TKey,TValue)
-extern "C"  void Dictionary_2_set_Item_m3758499254_gshared (Dictionary_2_t3417634846 * __this, Il2CppObject * ___key0, bool ___value1, const MethodInfo* method)
+extern "C"  void Dictionary_2_set_Item_m353126835_gshared (Dictionary_2_t3417634846 * __this, Il2CppObject * ___key0, bool ___value1, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (Dictionary_2_set_Item_m3758499254_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Dictionary_2_set_Item_m353126835_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
@@ -14926,12 +14926,12 @@ extern "C"  void Dictionary_2_Clear_m3504688039_gshared (Dictionary_2_t341763484
 	}
 }
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Boolean>::ContainsKey(TKey)
-extern "C"  bool Dictionary_2_ContainsKey_m1385349577_gshared (Dictionary_2_t3417634846 * __this, Il2CppObject * ___key0, const MethodInfo* method)
+extern "C"  bool Dictionary_2_ContainsKey_m2024407803_gshared (Dictionary_2_t3417634846 * __this, Il2CppObject * ___key0, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (Dictionary_2_ContainsKey_m1385349577_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Dictionary_2_ContainsKey_m2024407803_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;

@@ -14,8 +14,6 @@
 
 // UnityEngine.TextMesh
 struct TextMesh_t1641806576;
-// UnityEngine.Camera
-struct Camera_t189460977;
 // GPSController
 struct GPSController_t2272977524;
 
@@ -34,10 +32,8 @@ struct  UpdateGPS_t2150053955  : public MonoBehaviour_t1158329972
 public:
 	// UnityEngine.TextMesh UpdateGPS::terminal
 	TextMesh_t1641806576 * ___terminal_2;
-	// UnityEngine.Camera UpdateGPS::main
-	Camera_t189460977 * ___main_3;
 	// GPSController UpdateGPS::IGPSController
-	GPSController_t2272977524 * ___IGPSController_4;
+	GPSController_t2272977524 * ___IGPSController_3;
 
 public:
 	inline static int32_t get_offset_of_terminal_2() { return static_cast<int32_t>(offsetof(UpdateGPS_t2150053955, ___terminal_2)); }
@@ -49,22 +45,13 @@ public:
 		Il2CppCodeGenWriteBarrier(&___terminal_2, value);
 	}
 
-	inline static int32_t get_offset_of_main_3() { return static_cast<int32_t>(offsetof(UpdateGPS_t2150053955, ___main_3)); }
-	inline Camera_t189460977 * get_main_3() const { return ___main_3; }
-	inline Camera_t189460977 ** get_address_of_main_3() { return &___main_3; }
-	inline void set_main_3(Camera_t189460977 * value)
+	inline static int32_t get_offset_of_IGPSController_3() { return static_cast<int32_t>(offsetof(UpdateGPS_t2150053955, ___IGPSController_3)); }
+	inline GPSController_t2272977524 * get_IGPSController_3() const { return ___IGPSController_3; }
+	inline GPSController_t2272977524 ** get_address_of_IGPSController_3() { return &___IGPSController_3; }
+	inline void set_IGPSController_3(GPSController_t2272977524 * value)
 	{
-		___main_3 = value;
-		Il2CppCodeGenWriteBarrier(&___main_3, value);
-	}
-
-	inline static int32_t get_offset_of_IGPSController_4() { return static_cast<int32_t>(offsetof(UpdateGPS_t2150053955, ___IGPSController_4)); }
-	inline GPSController_t2272977524 * get_IGPSController_4() const { return ___IGPSController_4; }
-	inline GPSController_t2272977524 ** get_address_of_IGPSController_4() { return &___IGPSController_4; }
-	inline void set_IGPSController_4(GPSController_t2272977524 * value)
-	{
-		___IGPSController_4 = value;
-		Il2CppCodeGenWriteBarrier(&___IGPSController_4, value);
+		___IGPSController_3 = value;
+		Il2CppCodeGenWriteBarrier(&___IGPSController_3, value);
 	}
 };
 

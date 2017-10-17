@@ -130,7 +130,7 @@ class VideoPlayer;
 class WindZone; 
 namespace UI { class CanvasRenderer; } template <> void RegisterClass<UI::CanvasRenderer>();
 class Collider; template <> void RegisterClass<Collider>();
-class BoxCollider; template <> void RegisterClass<BoxCollider>();
+class BoxCollider; 
 class CapsuleCollider; 
 class CharacterController; template <> void RegisterClass<CharacterController>();
 class MeshCollider; 
@@ -189,8 +189,8 @@ class LightProbes; template <> void RegisterClass<LightProbes>();
 class Material; template <> void RegisterClass<Material>();
 class ProceduralMaterial; 
 class Mesh; template <> void RegisterClass<Mesh>();
-class Motion; 
-class AnimationClip; 
+class Motion; template <> void RegisterClass<Motion>();
+class AnimationClip; template <> void RegisterClass<AnimationClip>();
 class PreviewAnimationClip; 
 class NavMeshData; 
 class OcclusionCullingData; 
@@ -263,7 +263,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 81 non stripped classes
+	//Total: 82 non stripped classes
 	//0. Behaviour
 	RegisterClass<Behaviour>();
 	//1. Unity::Component
@@ -416,15 +416,17 @@ RegisterBuiltinTypes();
 	RegisterClass<ParticleSystemRenderer>();
 	//75. SpriteRenderer
 	RegisterClass<SpriteRenderer>();
-	//76. BoxCollider
-	RegisterClass<BoxCollider>();
-	//77. Avatar
+	//76. AnimationClip
+	RegisterClass<AnimationClip>();
+	//77. Motion
+	RegisterClass<Motion>();
+	//78. Avatar
 	RegisterClass<Avatar>();
-	//78. Light
+	//79. Light
 	RegisterClass<Light>();
-	//79. Animation
+	//80. Animation
 	RegisterClass<Animation>();
-	//80. LightProbes
+	//81. LightProbes
 	RegisterClass<LightProbes>();
 
 }

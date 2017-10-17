@@ -8,22 +8,23 @@ public class PlayerUI : MonoBehaviour
     public RawImage image;
     public Texture hide;
     public Texture seek;
+	public PlayerMove player;
+	public GameObject text;
 
-    private Camera mcamera;
 
     // Use this for initialization
     void Awake()
     {
-        mcamera = Camera.main;
+        
         image.GetComponent<RawImage>().texture = seek;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+		text.GetComponent<Text> ().text = player.name;
         //this.transform.position = new Vector3(mcamera.transform.position.x, this.transform.position.y, mcamera.transform.position.x);
-        this.transform.LookAt(mcamera.transform);
+		this.transform.LookAt(Camera.main.transform);
         this.transform.eulerAngles = new Vector3(0, this.transform.eulerAngles.y, 0);
     }
 

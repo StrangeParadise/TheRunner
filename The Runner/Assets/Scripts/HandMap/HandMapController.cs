@@ -7,7 +7,7 @@ public class HandMapController : MonoBehaviour
 	public Camera mapCam;
 	public Map mapScript;
 
-	void Update()
+	void FixedUpdate()
 	{
 		// If there are two touches on the device...
 		if (Input.touchCount == 2)
@@ -29,11 +29,11 @@ public class HandMapController : MonoBehaviour
 
 			if (mapCam.enabled == true) {
 				mapScript.zoom -= Mathf.RoundToInt(deltaMagnitudeDiff * orthoZoomSpeed);
-				if (mapScript.zoom <= 5) {
-					mapScript.zoom = 5;
+				if (mapScript.zoom <= 10) {
+					mapScript.zoom = 10;
 				}
-				else if(mapScript.zoom >= 30) {
-					mapScript.zoom = 30;
+				else if(mapScript.zoom >= 25) {
+					mapScript.zoom = 25;
 				}
 				print ("zoom ====================== " + mapScript.zoom);
 			}

@@ -6,12 +6,13 @@ using UnityEngine.UI;
 public class UpdateGPS : MonoBehaviour {
 
 	public TextMesh terminal;
-	public Camera main;
 
 	public GPSController IGPSController;
 
 	private void Update() {
-		terminal.text = "x" + main.transform.position.x + "    z" + main.transform.position.z;
+		if(Camera.main) {
+			terminal.text = "Network connected!";
+		}
 	}
 
 //	public int zoom;

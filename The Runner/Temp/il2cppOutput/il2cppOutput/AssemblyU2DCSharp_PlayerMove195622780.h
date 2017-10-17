@@ -13,8 +13,6 @@
 #include "UnityEngine_Networking_UnityEngine_Networking_Netw3873055601.h"
 #include "UnityEngine_UnityEngine_Color2020392075.h"
 
-// UnityEngine.Camera
-struct Camera_t189460977;
 // UnityEngine.GameObject
 struct GameObject_t1756533147;
 // PlayerUI
@@ -35,14 +33,14 @@ struct String_t;
 struct  PlayerMove_t195622780  : public NetworkBehaviour_t3873055601
 {
 public:
-	// UnityEngine.Camera PlayerMove::mainCamera
-	Camera_t189460977 * ___mainCamera_8;
 	// UnityEngine.GameObject PlayerMove::player
-	GameObject_t1756533147 * ___player_9;
+	GameObject_t1756533147 * ___player_8;
 	// PlayerUI PlayerMove::ui
-	PlayerUI_t3700805861 * ___ui_10;
+	PlayerUI_t3700805861 * ___ui_9;
 	// System.Boolean PlayerMove::isSeeker
-	bool ___isSeeker_11;
+	bool ___isSeeker_10;
+	// System.Boolean PlayerMove::isDead
+	bool ___isDead_11;
 	// System.Single PlayerMove::latitudeO
 	float ___latitudeO_12;
 	// System.Single PlayerMove::longitudeO
@@ -57,39 +55,38 @@ public:
 	Color_t2020392075  ___color_17;
 
 public:
-	inline static int32_t get_offset_of_mainCamera_8() { return static_cast<int32_t>(offsetof(PlayerMove_t195622780, ___mainCamera_8)); }
-	inline Camera_t189460977 * get_mainCamera_8() const { return ___mainCamera_8; }
-	inline Camera_t189460977 ** get_address_of_mainCamera_8() { return &___mainCamera_8; }
-	inline void set_mainCamera_8(Camera_t189460977 * value)
+	inline static int32_t get_offset_of_player_8() { return static_cast<int32_t>(offsetof(PlayerMove_t195622780, ___player_8)); }
+	inline GameObject_t1756533147 * get_player_8() const { return ___player_8; }
+	inline GameObject_t1756533147 ** get_address_of_player_8() { return &___player_8; }
+	inline void set_player_8(GameObject_t1756533147 * value)
 	{
-		___mainCamera_8 = value;
-		Il2CppCodeGenWriteBarrier(&___mainCamera_8, value);
+		___player_8 = value;
+		Il2CppCodeGenWriteBarrier(&___player_8, value);
 	}
 
-	inline static int32_t get_offset_of_player_9() { return static_cast<int32_t>(offsetof(PlayerMove_t195622780, ___player_9)); }
-	inline GameObject_t1756533147 * get_player_9() const { return ___player_9; }
-	inline GameObject_t1756533147 ** get_address_of_player_9() { return &___player_9; }
-	inline void set_player_9(GameObject_t1756533147 * value)
+	inline static int32_t get_offset_of_ui_9() { return static_cast<int32_t>(offsetof(PlayerMove_t195622780, ___ui_9)); }
+	inline PlayerUI_t3700805861 * get_ui_9() const { return ___ui_9; }
+	inline PlayerUI_t3700805861 ** get_address_of_ui_9() { return &___ui_9; }
+	inline void set_ui_9(PlayerUI_t3700805861 * value)
 	{
-		___player_9 = value;
-		Il2CppCodeGenWriteBarrier(&___player_9, value);
+		___ui_9 = value;
+		Il2CppCodeGenWriteBarrier(&___ui_9, value);
 	}
 
-	inline static int32_t get_offset_of_ui_10() { return static_cast<int32_t>(offsetof(PlayerMove_t195622780, ___ui_10)); }
-	inline PlayerUI_t3700805861 * get_ui_10() const { return ___ui_10; }
-	inline PlayerUI_t3700805861 ** get_address_of_ui_10() { return &___ui_10; }
-	inline void set_ui_10(PlayerUI_t3700805861 * value)
+	inline static int32_t get_offset_of_isSeeker_10() { return static_cast<int32_t>(offsetof(PlayerMove_t195622780, ___isSeeker_10)); }
+	inline bool get_isSeeker_10() const { return ___isSeeker_10; }
+	inline bool* get_address_of_isSeeker_10() { return &___isSeeker_10; }
+	inline void set_isSeeker_10(bool value)
 	{
-		___ui_10 = value;
-		Il2CppCodeGenWriteBarrier(&___ui_10, value);
+		___isSeeker_10 = value;
 	}
 
-	inline static int32_t get_offset_of_isSeeker_11() { return static_cast<int32_t>(offsetof(PlayerMove_t195622780, ___isSeeker_11)); }
-	inline bool get_isSeeker_11() const { return ___isSeeker_11; }
-	inline bool* get_address_of_isSeeker_11() { return &___isSeeker_11; }
-	inline void set_isSeeker_11(bool value)
+	inline static int32_t get_offset_of_isDead_11() { return static_cast<int32_t>(offsetof(PlayerMove_t195622780, ___isDead_11)); }
+	inline bool get_isDead_11() const { return ___isDead_11; }
+	inline bool* get_address_of_isDead_11() { return &___isDead_11; }
+	inline void set_isDead_11(bool value)
 	{
-		___isSeeker_11 = value;
+		___isDead_11 = value;
 	}
 
 	inline static int32_t get_offset_of_latitudeO_12() { return static_cast<int32_t>(offsetof(PlayerMove_t195622780, ___latitudeO_12)); }
@@ -145,16 +142,26 @@ public:
 struct PlayerMove_t195622780_StaticFields
 {
 public:
-	// System.Int32 PlayerMove::kCmdCmdSet
-	int32_t ___kCmdCmdSet_18;
+	// System.Int32 PlayerMove::kCmdCmdSetP
+	int32_t ___kCmdCmdSetP_18;
+	// System.Int32 PlayerMove::kCmdCmdSetName
+	int32_t ___kCmdCmdSetName_19;
 
 public:
-	inline static int32_t get_offset_of_kCmdCmdSet_18() { return static_cast<int32_t>(offsetof(PlayerMove_t195622780_StaticFields, ___kCmdCmdSet_18)); }
-	inline int32_t get_kCmdCmdSet_18() const { return ___kCmdCmdSet_18; }
-	inline int32_t* get_address_of_kCmdCmdSet_18() { return &___kCmdCmdSet_18; }
-	inline void set_kCmdCmdSet_18(int32_t value)
+	inline static int32_t get_offset_of_kCmdCmdSetP_18() { return static_cast<int32_t>(offsetof(PlayerMove_t195622780_StaticFields, ___kCmdCmdSetP_18)); }
+	inline int32_t get_kCmdCmdSetP_18() const { return ___kCmdCmdSetP_18; }
+	inline int32_t* get_address_of_kCmdCmdSetP_18() { return &___kCmdCmdSetP_18; }
+	inline void set_kCmdCmdSetP_18(int32_t value)
 	{
-		___kCmdCmdSet_18 = value;
+		___kCmdCmdSetP_18 = value;
+	}
+
+	inline static int32_t get_offset_of_kCmdCmdSetName_19() { return static_cast<int32_t>(offsetof(PlayerMove_t195622780_StaticFields, ___kCmdCmdSetName_19)); }
+	inline int32_t get_kCmdCmdSetName_19() const { return ___kCmdCmdSetName_19; }
+	inline int32_t* get_address_of_kCmdCmdSetName_19() { return &___kCmdCmdSetName_19; }
+	inline void set_kCmdCmdSetName_19(int32_t value)
+	{
+		___kCmdCmdSetName_19 = value;
 	}
 };
 

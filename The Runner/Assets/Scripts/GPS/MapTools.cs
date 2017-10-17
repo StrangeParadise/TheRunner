@@ -15,20 +15,18 @@ public class MapTools : MonoBehaviour {
 
 	private bool firsttime;
 
-	private Camera mainCamera;
 
 	// Use this for initialization
 	void Start () {
 
-		mainCamera = Camera.main;
 		firsttime = true;
 	}
 
 	// Update is called once per frame
 	void Update () {
         
-        float latitude = GPSData.s_Instance.getLatitude();
-        float longitude = GPSData.s_Instance.getLongitude();
+        latitude = GPSData.s_Instance.getLatitude();
+        longitude = GPSData.s_Instance.getLongitude();
         if (firsttime) {
 
 			if (latitude != 0) {
@@ -37,7 +35,7 @@ public class MapTools : MonoBehaviour {
 				firsttime = false;
 			}
 		}
-		mainCamera.transform.position = Vector3.MoveTowards(mainCamera.transform.position, mapGPS(latitude, longitude),speed * Time.deltaTime);
+		Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, mapGPS(latitude, longitude),speed * Time.deltaTime);
 		//mainCamera.transform.position = mapGPS (latitude, longitude);
 
 	}
@@ -45,7 +43,7 @@ public class MapTools : MonoBehaviour {
 	public Vector3 mapGPS(float latitude, float longitude){
 		return new Vector3 (
 			TR_Toolbox.gps_transform (latitude, longitude, latitude, longitudeO) * radius / range, 
-			mainCamera.transform.position.y, 
+			Camera.main.transform.position.y, 
 			TR_Toolbox.gps_transform (latitude, longitude, latitudeO, longitude) * radius / range
 		);
 	}

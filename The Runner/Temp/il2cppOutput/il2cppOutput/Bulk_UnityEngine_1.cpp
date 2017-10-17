@@ -25718,6 +25718,24 @@ IL_000f:
 		return L_2;
 	}
 }
+// System.Single UnityEngine.Mathf::Atan2(System.Single,System.Single)
+extern "C"  float Mathf_Atan2_m496071197 (Il2CppObject * __this /* static, unused */, float ___y0, float ___x1, const MethodInfo* method)
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = ___y0;
+		float L_1 = ___x1;
+		double L_2 = atan2((((double)((double)L_0))), (((double)((double)L_1))));
+		V_0 = (((float)((float)L_2)));
+		goto IL_0011;
+	}
+
+IL_0011:
+	{
+		float L_3 = V_0;
+		return L_3;
+	}
+}
 // System.Single UnityEngine.Mathf::Sqrt(System.Single)
 extern "C"  float Mathf_Sqrt_m2213915910 (Il2CppObject * __this /* static, unused */, float ___f0, const MethodInfo* method)
 {

@@ -1,14 +1,16 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;
+using TheRunner.Data;
+
 public class PlayerMove : NetworkBehaviour
 {
-	private Camera mainCamera;
 	public GameObject player;
 	public PlayerUI ui;
 
-
 	[SyncVar]
 	public bool isSeeker;
+	[SyncVar]
+	public bool isDead;
 	[SyncVar]
 	public float latitudeO;
 	[SyncVar]
@@ -24,9 +26,10 @@ public class PlayerMove : NetworkBehaviour
 	public Color color;
 
 	void Start() {
-
-		// Camera should always bound with the player cube.
-		mainCamera = Camera.main;
+		isDead = false;
+		if (isLocalPlayer) {
+			player.GetComponent<SkinnedMeshRenderer> ().enabled = false;
+		}
 
 	}
 
@@ -34,7 +37,8 @@ public class PlayerMove : NetworkBehaviour
 	// the gps coordinate to a local coordiante and share with other players.
 	void Update()
 	{
-		
+		print("catch:"+name+",seeker"+isSeeker+",dead"+isDead);
+
 		if (NetworkServer.connections.Count > 0) {
 			latitudeO = MapTools.getLatO();
 			longitudeO = MapTools.getLonO();
@@ -44,50 +48,60 @@ public class PlayerMove : NetworkBehaviour
 			} else {
 				isSeeker = false;
 			}
+			if(name != null){
+				SaveData.add (name);
+			}
+			if (SaveData.isDead (name)) {
+				isDead = true;
+			}
+		}
+		if (isDead) {
+			if (isLocalPlayer) {
+				WinLose.lose();
+			}
+			this.gameObject.SetActive (false);
+			return;
 		}
 		if (isSeeker) {
 			this.color = Color.red;
             // TODO: UI for seeker
-			//ui.changeToSeek ();
+			ui.changeToSeek ();
 		} else {
 			this.color = Color.white;
             // TODO: UI For Hide
-			//ui.changeToHide ();
+			ui.changeToHide ();
 		}
 		player.GetComponent<SkinnedMeshRenderer>().materials[0].color = color;
 		player.GetComponent<SkinnedMeshRenderer>().materials[1].color = color;
 
-
-		if (!isLocalPlayer)
+		if (!isLocalPlayer) {
 			return;
+		}
 		if (!isSeeker && latitudeO != 0)
 		{
 			MapTools.setLatO(latitudeO);
 			MapTools.setLonO(longitudeO);
 		}
-		CmdSet (MapTools.getLat(), MapTools.getLon());
+		CmdSetName (PlayerDataManager.s_Instance.playerName);
+		CmdSetP (MapTools.getLat(), MapTools.getLon());
 		latitude = MapTools.getLat();
 		longitude = MapTools.getLon();
-
-
-
-
-		var x = mainCamera.transform.position.x;
-		var y = mainCamera.transform.position.y;
-		var z = mainCamera.transform.position.z;
-		//		var x = Input.GetAxis("Horizontal")*0.1f;
-		//		var z = Input.GetAxis("Vertical")*0.1f;
-
-		transform.position = new Vector3(x,y,z);
-		transform.rotation = mainCamera.transform.rotation;
+		name = PlayerDataManager.s_Instance.playerName;
+		transform.position = new Vector3(Camera.main.transform.position.x, 0, Camera.main.transform.position.z);
+		transform.rotation = Camera.main.transform.rotation;
 
 	}
 
 	[Command]  
-	public void CmdSet(float lat, float lon)  
+	public void CmdSetP(float lat, float lon)  
 	{  
 		longitude = lon;
 		latitude = lat;
 	}  
+	[Command]  
+	public void CmdSetName(string n)  
+	{  
+		this.name = n;
 
+	}  
 }

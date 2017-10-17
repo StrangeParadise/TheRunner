@@ -2564,6 +2564,7 @@ extern "C" void Math_Sin_m2320256962 ();
 extern "C" void Math_Cos_m43596019 ();
 extern "C" void Math_Acos_m2218287828 ();
 extern "C" void Math_Asin_m347297897 ();
+extern "C" void Math_Atan2_m792822848 ();
 extern "C" void Math_Log_m3371716878 ();
 extern "C" void Math_Pow_m3099781906 ();
 extern "C" void Math_Sqrt_m932242488 ();
@@ -9038,6 +9039,7 @@ extern "C" void Mathf_Sin_m831310046 ();
 extern "C" void Mathf_Cos_m238853451 ();
 extern "C" void Mathf_Asin_m1367675601 ();
 extern "C" void Mathf_Acos_m3800958570 ();
+extern "C" void Mathf_Atan2_m496071197 ();
 extern "C" void Mathf_Sqrt_m2213915910 ();
 extern "C" void Mathf_Abs_m1942863256 ();
 extern "C" void Mathf_Abs_m1192949464 ();
@@ -13390,6 +13392,13 @@ extern "C" void FieldWithTarget_GetValue_m3773769385 ();
 extern "C" void AR__ctor_m4196075462 ();
 extern "C" void AR_Start_m1351794542 ();
 extern "C" void AR_Update_m3244983845 ();
+extern "C" void Catch__ctor_m1849730978 ();
+extern "C" void Catch_Start_m555970414 ();
+extern "C" void Catch_Update_m1957431783 ();
+extern "C" void Catch_doCatch_m2609790350 ();
+extern "C" void Catch_UNetVersion_m4226676532 ();
+extern "C" void Catch_OnSerialize_m1174332054 ();
+extern "C" void Catch_OnDeserialize_m34574787 ();
 extern "C" void ChatController__ctor_m281900101 ();
 extern "C" void ChatController_Start_m1354071973 ();
 extern "C" void ChatController_Update_m1939549468 ();
@@ -13448,17 +13457,16 @@ extern "C" void GPSData_updateGpsData_m284874942 ();
 extern "C" void GPSData_getLatitude_m1301723475 ();
 extern "C" void GPSData_getLongitude_m529963932 ();
 extern "C" void HandMapController__ctor_m1968396896 ();
-extern "C" void HandMapController_Update_m836850453 ();
-extern "C" void HidePlayer__ctor_m277116656 ();
-extern "C" void HidePlayer_Start_m2708321144 ();
-extern "C" void HidePlayer_Update_m2363072953 ();
+extern "C" void HandMapController_FixedUpdate_m3449610759 ();
 extern "C" void HollowCircle__ctor_m1560708842 ();
 extern "C" void HollowCircle_Start_m2284073694 ();
 extern "C" void HollowCircle_CreatePoints_m2954146693 ();
 extern "C" void Map__ctor_m2382724703 ();
+extern "C" void Map_Start_m2127671355 ();
 extern "C" void Map_Update_m3867277220 ();
 extern "C" void Map_GetGoogleMap_m3075677944 ();
 extern "C" void Map_generateURL_m309255195 ();
+extern "C" void Map_drawCircle_m2491503309 ();
 extern "C" void U3CGetGoogleMapU3Ec__Iterator0__ctor_m3373241622 ();
 extern "C" void U3CGetGoogleMapU3Ec__Iterator0_MoveNext_m2744658934 ();
 extern "C" void U3CGetGoogleMapU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m351240154 ();
@@ -13510,10 +13518,13 @@ extern "C" void U3CFadeToU3Ec__Iterator0_Reset_m264949546 ();
 extern "C" void PlayerMove__ctor_m161887621 ();
 extern "C" void PlayerMove_Start_m490112797 ();
 extern "C" void PlayerMove_Update_m1466995334 ();
-extern "C" void PlayerMove_CmdSet_m4083172977 ();
+extern "C" void PlayerMove_CmdSetP_m1321541477 ();
+extern "C" void PlayerMove_CmdSetName_m2890444306 ();
 extern "C" void PlayerMove_UNetVersion_m2938967785 ();
 extern "C" void PlayerMove_get_NetworkisSeeker_m1277202251 ();
 extern "C" void PlayerMove_set_NetworkisSeeker_m2861567716 ();
+extern "C" void PlayerMove_get_NetworkisDead_m1206552734 ();
+extern "C" void PlayerMove_set_NetworkisDead_m3175222907 ();
 extern "C" void PlayerMove_get_NetworklatitudeO_m2539807631 ();
 extern "C" void PlayerMove_set_NetworklatitudeO_m369194098 ();
 extern "C" void PlayerMove_get_NetworklongitudeO_m3209996230 ();
@@ -13524,8 +13535,10 @@ extern "C" void PlayerMove_get_Networklongitude_m2315781347 ();
 extern "C" void PlayerMove_set_Networklongitude_m2526468526 ();
 extern "C" void PlayerMove_get_Networkname_m2445510958 ();
 extern "C" void PlayerMove_set_Networkname_m1750711975 ();
-extern "C" void PlayerMove_InvokeCmdCmdSet_m434246307 ();
-extern "C" void PlayerMove_CallCmdSet_m3201218195 ();
+extern "C" void PlayerMove_InvokeCmdCmdSetP_m143761655 ();
+extern "C" void PlayerMove_InvokeCmdCmdSetName_m800431158 ();
+extern "C" void PlayerMove_CallCmdSetP_m804709407 ();
+extern "C" void PlayerMove_CallCmdSetName_m1468337426 ();
 extern "C" void PlayerMove__cctor_m1129527734 ();
 extern "C" void PlayerMove_OnSerialize_m406728147 ();
 extern "C" void PlayerMove_OnDeserialize_m887318788 ();
@@ -13534,29 +13547,36 @@ extern "C" void PlayerUI_Awake_m3335881061 ();
 extern "C" void PlayerUI_Update_m2308955209 ();
 extern "C" void PlayerUI_changeToHide_m3507154501 ();
 extern "C" void PlayerUI_changeToSeek_m1596641025 ();
+extern "C" void SaveData__ctor_m2204262988 ();
+extern "C" void SaveData_add_m3607203981 ();
+extern "C" void SaveData_death_m503914396 ();
+extern "C" void SaveData_isDead_m3841064424 ();
+extern "C" void SaveData__cctor_m416364793 ();
 extern "C" void SimpleChat__ctor_m1147096138 ();
 extern "C" void SimpleChat_receive_m3000470043 ();
 extern "C" void SimpleChat_draw_m869370447 ();
-extern "C" void SupplyFall__ctor_m1902289851 ();
-extern "C" void SupplyFall_Start_m1693412591 ();
-extern "C" void SupplyFall_Update_m2521190524 ();
-extern "C" void SupplyFall_MoveOverSpeed_m2960066085 ();
-extern "C" void SupplyFall_MoveOverSeconds_m1902476977 ();
-extern "C" void SupplyFall_UNetVersion_m3695382227 ();
-extern "C" void SupplyFall_OnSerialize_m1760451369 ();
-extern "C" void SupplyFall_OnDeserialize_m3582709646 ();
-extern "C" void U3CMoveOverSecondsU3Ec__Iterator1__ctor_m1467994234 ();
-extern "C" void U3CMoveOverSecondsU3Ec__Iterator1_MoveNext_m1311114410 ();
-extern "C" void U3CMoveOverSecondsU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1024803466 ();
-extern "C" void U3CMoveOverSecondsU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m4196292482 ();
-extern "C" void U3CMoveOverSecondsU3Ec__Iterator1_Dispose_m1416492473 ();
-extern "C" void U3CMoveOverSecondsU3Ec__Iterator1_Reset_m631940531 ();
-extern "C" void U3CMoveOverSpeedU3Ec__Iterator0__ctor_m1449031623 ();
-extern "C" void U3CMoveOverSpeedU3Ec__Iterator0_MoveNext_m1622909045 ();
-extern "C" void U3CMoveOverSpeedU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3035022753 ();
-extern "C" void U3CMoveOverSpeedU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m980582825 ();
-extern "C" void U3CMoveOverSpeedU3Ec__Iterator0_Dispose_m3555914000 ();
-extern "C" void U3CMoveOverSpeedU3Ec__Iterator0_Reset_m1631923382 ();
+extern "C" void SupplyController__ctor_m3018969434 ();
+extern "C" void SupplyController_Start_m4090492690 ();
+extern "C" void SupplyController_Update_m108121737 ();
+extern "C" void SupplyController_MoveOverSpeed_m2161404430 ();
+extern "C" void SupplyController_MoveOverSeconds_m3940559792 ();
+extern "C" void SupplyController_checkPlayerNearby_m3357120952 ();
+extern "C" void SupplyController_unlockingBox_m1451616265 ();
+extern "C" void SupplyController_UNetVersion_m2005514956 ();
+extern "C" void SupplyController_OnSerialize_m1520282814 ();
+extern "C" void SupplyController_OnDeserialize_m675316225 ();
+extern "C" void U3CMoveOverSecondsU3Ec__Iterator1__ctor_m4183312997 ();
+extern "C" void U3CMoveOverSecondsU3Ec__Iterator1_MoveNext_m3072383095 ();
+extern "C" void U3CMoveOverSecondsU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m870276615 ();
+extern "C" void U3CMoveOverSecondsU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m3503036879 ();
+extern "C" void U3CMoveOverSecondsU3Ec__Iterator1_Dispose_m2654728776 ();
+extern "C" void U3CMoveOverSecondsU3Ec__Iterator1_Reset_m1331234686 ();
+extern "C" void U3CMoveOverSpeedU3Ec__Iterator0__ctor_m1259284206 ();
+extern "C" void U3CMoveOverSpeedU3Ec__Iterator0_MoveNext_m2434679678 ();
+extern "C" void U3CMoveOverSpeedU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2571474530 ();
+extern "C" void U3CMoveOverSpeedU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m3128674138 ();
+extern "C" void U3CMoveOverSpeedU3Ec__Iterator0_Dispose_m1147770947 ();
+extern "C" void U3CMoveOverSpeedU3Ec__Iterator0_Reset_m2977733037 ();
 extern "C" void testExtendClass__ctor_m3783322273 ();
 extern "C" void testExtendClass_Start_m4225937281 ();
 extern "C" void testExtendClass_OnGUI_m134770207 ();
@@ -13619,6 +13639,14 @@ extern "C" void U3CLoginU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3
 extern "C" void U3CLoginU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m3918313967 ();
 extern "C" void U3CLoginU3Ec__Iterator0_Dispose_m1985665902 ();
 extern "C" void U3CLoginU3Ec__Iterator0_Reset_m3108249708 ();
+extern "C" void NetworkPlayerController__ctor_m3963105608 ();
+extern "C" void NetworkPlayerController_Start_m2098868096 ();
+extern "C" void NetworkPlayerController_Update_m2151611585 ();
+extern "C" void NetworkPlayerController_unlocking_m1343055751 ();
+extern "C" void NetworkPlayerController_getTransform_m48517844 ();
+extern "C" void NetworkPlayerController_UNetVersion_m3944994622 ();
+extern "C" void NetworkPlayerController_OnSerialize_m1349246256 ();
+extern "C" void NetworkPlayerController_OnDeserialize_m679315305 ();
 extern "C" void testMoveScript__ctor_m55875538 ();
 extern "C" void testMoveScript_Update_m2874387877 ();
 extern "C" void TR_Toolbox__ctor_m3498229849 ();
@@ -13642,6 +13670,13 @@ extern "C" void UpdateGPS_Update_m2320639175 ();
 extern "C" void UserInfo__ctor_m4058170710 ();
 extern "C" void UserInfo_Start_m3702512862 ();
 extern "C" void UserInfo_Update_m2989846877 ();
+extern "C" void WinLose__ctor_m2038143890 ();
+extern "C" void WinLose_Start_m3995391782 ();
+extern "C" void WinLose_Update_m1453661215 ();
+extern "C" void WinLose_lose_m3911432323 ();
+extern "C" void WinLose_UNetVersion_m842289772 ();
+extern "C" void WinLose_OnSerialize_m22037422 ();
+extern "C" void WinLose_OnDeserialize_m4158360619 ();
 extern "C" void U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240__ctor_m2495576693 ();
 extern "C" void U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_Invoke_m3726459120 ();
 extern "C" void U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_Adapt_m3815301171 ();
@@ -13655,7 +13690,7 @@ extern "C" void testSingleChat_Start_m1190730460 ();
 extern "C" void testSingleChat_receiveMessage_m3194079398 ();
 extern "C" void testSingleChat_OnGUI_m361319688 ();
 extern "C" void testSingleChat_Main_m1511507263 ();
-extern const Il2CppMethodPointer g_MethodPointers[13641] = 
+extern const Il2CppMethodPointer g_MethodPointers[13676] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -16207,6 +16242,7 @@ extern const Il2CppMethodPointer g_MethodPointers[13641] =
 	Math_Cos_m43596019,
 	Math_Acos_m2218287828,
 	Math_Asin_m347297897,
+	Math_Atan2_m792822848,
 	Math_Log_m3371716878,
 	Math_Pow_m3099781906,
 	Math_Sqrt_m932242488,
@@ -22681,6 +22717,7 @@ extern const Il2CppMethodPointer g_MethodPointers[13641] =
 	Mathf_Cos_m238853451,
 	Mathf_Asin_m1367675601,
 	Mathf_Acos_m3800958570,
+	Mathf_Atan2_m496071197,
 	Mathf_Sqrt_m2213915910,
 	Mathf_Abs_m1942863256,
 	Mathf_Abs_m1192949464,
@@ -27033,6 +27070,13 @@ extern const Il2CppMethodPointer g_MethodPointers[13641] =
 	AR__ctor_m4196075462,
 	AR_Start_m1351794542,
 	AR_Update_m3244983845,
+	Catch__ctor_m1849730978,
+	Catch_Start_m555970414,
+	Catch_Update_m1957431783,
+	Catch_doCatch_m2609790350,
+	Catch_UNetVersion_m4226676532,
+	Catch_OnSerialize_m1174332054,
+	Catch_OnDeserialize_m34574787,
 	ChatController__ctor_m281900101,
 	ChatController_Start_m1354071973,
 	ChatController_Update_m1939549468,
@@ -27091,17 +27135,16 @@ extern const Il2CppMethodPointer g_MethodPointers[13641] =
 	GPSData_getLatitude_m1301723475,
 	GPSData_getLongitude_m529963932,
 	HandMapController__ctor_m1968396896,
-	HandMapController_Update_m836850453,
-	HidePlayer__ctor_m277116656,
-	HidePlayer_Start_m2708321144,
-	HidePlayer_Update_m2363072953,
+	HandMapController_FixedUpdate_m3449610759,
 	HollowCircle__ctor_m1560708842,
 	HollowCircle_Start_m2284073694,
 	HollowCircle_CreatePoints_m2954146693,
 	Map__ctor_m2382724703,
+	Map_Start_m2127671355,
 	Map_Update_m3867277220,
 	Map_GetGoogleMap_m3075677944,
 	Map_generateURL_m309255195,
+	Map_drawCircle_m2491503309,
 	U3CGetGoogleMapU3Ec__Iterator0__ctor_m3373241622,
 	U3CGetGoogleMapU3Ec__Iterator0_MoveNext_m2744658934,
 	U3CGetGoogleMapU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m351240154,
@@ -27153,10 +27196,13 @@ extern const Il2CppMethodPointer g_MethodPointers[13641] =
 	PlayerMove__ctor_m161887621,
 	PlayerMove_Start_m490112797,
 	PlayerMove_Update_m1466995334,
-	PlayerMove_CmdSet_m4083172977,
+	PlayerMove_CmdSetP_m1321541477,
+	PlayerMove_CmdSetName_m2890444306,
 	PlayerMove_UNetVersion_m2938967785,
 	PlayerMove_get_NetworkisSeeker_m1277202251,
 	PlayerMove_set_NetworkisSeeker_m2861567716,
+	PlayerMove_get_NetworkisDead_m1206552734,
+	PlayerMove_set_NetworkisDead_m3175222907,
 	PlayerMove_get_NetworklatitudeO_m2539807631,
 	PlayerMove_set_NetworklatitudeO_m369194098,
 	PlayerMove_get_NetworklongitudeO_m3209996230,
@@ -27167,8 +27213,10 @@ extern const Il2CppMethodPointer g_MethodPointers[13641] =
 	PlayerMove_set_Networklongitude_m2526468526,
 	PlayerMove_get_Networkname_m2445510958,
 	PlayerMove_set_Networkname_m1750711975,
-	PlayerMove_InvokeCmdCmdSet_m434246307,
-	PlayerMove_CallCmdSet_m3201218195,
+	PlayerMove_InvokeCmdCmdSetP_m143761655,
+	PlayerMove_InvokeCmdCmdSetName_m800431158,
+	PlayerMove_CallCmdSetP_m804709407,
+	PlayerMove_CallCmdSetName_m1468337426,
 	PlayerMove__cctor_m1129527734,
 	PlayerMove_OnSerialize_m406728147,
 	PlayerMove_OnDeserialize_m887318788,
@@ -27177,29 +27225,36 @@ extern const Il2CppMethodPointer g_MethodPointers[13641] =
 	PlayerUI_Update_m2308955209,
 	PlayerUI_changeToHide_m3507154501,
 	PlayerUI_changeToSeek_m1596641025,
+	SaveData__ctor_m2204262988,
+	SaveData_add_m3607203981,
+	SaveData_death_m503914396,
+	SaveData_isDead_m3841064424,
+	SaveData__cctor_m416364793,
 	SimpleChat__ctor_m1147096138,
 	SimpleChat_receive_m3000470043,
 	SimpleChat_draw_m869370447,
-	SupplyFall__ctor_m1902289851,
-	SupplyFall_Start_m1693412591,
-	SupplyFall_Update_m2521190524,
-	SupplyFall_MoveOverSpeed_m2960066085,
-	SupplyFall_MoveOverSeconds_m1902476977,
-	SupplyFall_UNetVersion_m3695382227,
-	SupplyFall_OnSerialize_m1760451369,
-	SupplyFall_OnDeserialize_m3582709646,
-	U3CMoveOverSecondsU3Ec__Iterator1__ctor_m1467994234,
-	U3CMoveOverSecondsU3Ec__Iterator1_MoveNext_m1311114410,
-	U3CMoveOverSecondsU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1024803466,
-	U3CMoveOverSecondsU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m4196292482,
-	U3CMoveOverSecondsU3Ec__Iterator1_Dispose_m1416492473,
-	U3CMoveOverSecondsU3Ec__Iterator1_Reset_m631940531,
-	U3CMoveOverSpeedU3Ec__Iterator0__ctor_m1449031623,
-	U3CMoveOverSpeedU3Ec__Iterator0_MoveNext_m1622909045,
-	U3CMoveOverSpeedU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3035022753,
-	U3CMoveOverSpeedU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m980582825,
-	U3CMoveOverSpeedU3Ec__Iterator0_Dispose_m3555914000,
-	U3CMoveOverSpeedU3Ec__Iterator0_Reset_m1631923382,
+	SupplyController__ctor_m3018969434,
+	SupplyController_Start_m4090492690,
+	SupplyController_Update_m108121737,
+	SupplyController_MoveOverSpeed_m2161404430,
+	SupplyController_MoveOverSeconds_m3940559792,
+	SupplyController_checkPlayerNearby_m3357120952,
+	SupplyController_unlockingBox_m1451616265,
+	SupplyController_UNetVersion_m2005514956,
+	SupplyController_OnSerialize_m1520282814,
+	SupplyController_OnDeserialize_m675316225,
+	U3CMoveOverSecondsU3Ec__Iterator1__ctor_m4183312997,
+	U3CMoveOverSecondsU3Ec__Iterator1_MoveNext_m3072383095,
+	U3CMoveOverSecondsU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m870276615,
+	U3CMoveOverSecondsU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m3503036879,
+	U3CMoveOverSecondsU3Ec__Iterator1_Dispose_m2654728776,
+	U3CMoveOverSecondsU3Ec__Iterator1_Reset_m1331234686,
+	U3CMoveOverSpeedU3Ec__Iterator0__ctor_m1259284206,
+	U3CMoveOverSpeedU3Ec__Iterator0_MoveNext_m2434679678,
+	U3CMoveOverSpeedU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2571474530,
+	U3CMoveOverSpeedU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m3128674138,
+	U3CMoveOverSpeedU3Ec__Iterator0_Dispose_m1147770947,
+	U3CMoveOverSpeedU3Ec__Iterator0_Reset_m2977733037,
 	testExtendClass__ctor_m3783322273,
 	testExtendClass_Start_m4225937281,
 	testExtendClass_OnGUI_m134770207,
@@ -27262,6 +27317,14 @@ extern const Il2CppMethodPointer g_MethodPointers[13641] =
 	U3CLoginU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m3918313967,
 	U3CLoginU3Ec__Iterator0_Dispose_m1985665902,
 	U3CLoginU3Ec__Iterator0_Reset_m3108249708,
+	NetworkPlayerController__ctor_m3963105608,
+	NetworkPlayerController_Start_m2098868096,
+	NetworkPlayerController_Update_m2151611585,
+	NetworkPlayerController_unlocking_m1343055751,
+	NetworkPlayerController_getTransform_m48517844,
+	NetworkPlayerController_UNetVersion_m3944994622,
+	NetworkPlayerController_OnSerialize_m1349246256,
+	NetworkPlayerController_OnDeserialize_m679315305,
 	testMoveScript__ctor_m55875538,
 	testMoveScript_Update_m2874387877,
 	TR_Toolbox__ctor_m3498229849,
@@ -27285,6 +27348,13 @@ extern const Il2CppMethodPointer g_MethodPointers[13641] =
 	UserInfo__ctor_m4058170710,
 	UserInfo_Start_m3702512862,
 	UserInfo_Update_m2989846877,
+	WinLose__ctor_m2038143890,
+	WinLose_Start_m3995391782,
+	WinLose_Update_m1453661215,
+	WinLose_lose_m3911432323,
+	WinLose_UNetVersion_m842289772,
+	WinLose_OnSerialize_m22037422,
+	WinLose_OnDeserialize_m4158360619,
 	U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240__ctor_m2495576693,
 	U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_Invoke_m3726459120,
 	U24adaptorU24__testSingleChat_StartU24callable0U2431_31__U24ActionU240_Adapt_m3815301171,

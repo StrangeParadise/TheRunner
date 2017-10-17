@@ -2205,21 +2205,24 @@ extern const Il2CppGenericInst GenInst_AnimationTriggers_t3244928895_0_0_0 = { 1
 extern const Il2CppType Animator_t69676727_0_0_0;
 static const Il2CppType* GenInst_Animator_t69676727_0_0_0_Types[] = { &Animator_t69676727_0_0_0 };
 extern const Il2CppGenericInst GenInst_Animator_t69676727_0_0_0 = { 1, GenInst_Animator_t69676727_0_0_0_Types };
+extern const Il2CppType PlayerMove_t195622780_0_0_0;
+static const Il2CppType* GenInst_PlayerMove_t195622780_0_0_0_Types[] = { &PlayerMove_t195622780_0_0_0 };
+extern const Il2CppGenericInst GenInst_PlayerMove_t195622780_0_0_0 = { 1, GenInst_PlayerMove_t195622780_0_0_0_Types };
 extern const Il2CppType CountDownController_t1675675739_0_0_0;
 static const Il2CppType* GenInst_CountDownController_t1675675739_0_0_0_Types[] = { &CountDownController_t1675675739_0_0_0 };
 extern const Il2CppGenericInst GenInst_CountDownController_t1675675739_0_0_0 = { 1, GenInst_CountDownController_t1675675739_0_0_0_Types };
 extern const Il2CppType LineRenderer_t849157671_0_0_0;
 static const Il2CppType* GenInst_LineRenderer_t849157671_0_0_0_Types[] = { &LineRenderer_t849157671_0_0_0 };
 extern const Il2CppGenericInst GenInst_LineRenderer_t849157671_0_0_0 = { 1, GenInst_LineRenderer_t849157671_0_0_0_Types };
-extern const Il2CppType PlayerMove_t195622780_0_0_0;
-static const Il2CppType* GenInst_PlayerMove_t195622780_0_0_0_Types[] = { &PlayerMove_t195622780_0_0_0 };
-extern const Il2CppGenericInst GenInst_PlayerMove_t195622780_0_0_0 = { 1, GenInst_PlayerMove_t195622780_0_0_0_Types };
 extern const Il2CppType Map_t4262919222_0_0_0;
 static const Il2CppType* GenInst_Map_t4262919222_0_0_0_Types[] = { &Map_t4262919222_0_0_0 };
 extern const Il2CppGenericInst GenInst_Map_t4262919222_0_0_0 = { 1, GenInst_Map_t4262919222_0_0_0_Types };
 extern const Il2CppType SkinnedMeshRenderer_t4220419316_0_0_0;
 static const Il2CppType* GenInst_SkinnedMeshRenderer_t4220419316_0_0_0_Types[] = { &SkinnedMeshRenderer_t4220419316_0_0_0 };
 extern const Il2CppGenericInst GenInst_SkinnedMeshRenderer_t4220419316_0_0_0 = { 1, GenInst_SkinnedMeshRenderer_t4220419316_0_0_0_Types };
+extern const Il2CppType NetworkPlayerController_t3968973161_0_0_0;
+static const Il2CppType* GenInst_NetworkPlayerController_t3968973161_0_0_0_Types[] = { &NetworkPlayerController_t3968973161_0_0_0 };
+extern const Il2CppGenericInst GenInst_NetworkPlayerController_t3968973161_0_0_0 = { 1, GenInst_NetworkPlayerController_t3968973161_0_0_0_Types };
 static const Il2CppType* GenInst_Boolean_t3825574718_0_0_0_Boolean_t3825574718_0_0_0_Types[] = { &Boolean_t3825574718_0_0_0, &Boolean_t3825574718_0_0_0 };
 extern const Il2CppGenericInst GenInst_Boolean_t3825574718_0_0_0_Boolean_t3825574718_0_0_0 = { 2, GenInst_Boolean_t3825574718_0_0_0_Boolean_t3825574718_0_0_0_Types };
 static const Il2CppType* GenInst_CustomAttributeNamedArgument_t94157543_0_0_0_CustomAttributeNamedArgument_t94157543_0_0_0_Types[] = { &CustomAttributeNamedArgument_t94157543_0_0_0, &CustomAttributeNamedArgument_t94157543_0_0_0 };
@@ -2350,7 +2353,7 @@ static const Il2CppType* GenInst_KeyValuePair_2_t3709506243_0_0_0_Il2CppObject_0
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t3709506243_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t3709506243_0_0_0_Il2CppObject_0_0_0_Types };
 static const Il2CppType* GenInst_NetworkID_t348058649_0_0_0_NetworkID_t348058649_0_0_0_Types[] = { &NetworkID_t348058649_0_0_0, &NetworkID_t348058649_0_0_0 };
 extern const Il2CppGenericInst GenInst_NetworkID_t348058649_0_0_0_NetworkID_t348058649_0_0_0 = { 2, GenInst_NetworkID_t348058649_0_0_0_NetworkID_t348058649_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[860] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[861] = 
 {
 	&GenInst_Il2CppObject_0_0_0,
 	&GenInst_Int32_t2071877448_0_0_0,
@@ -3142,11 +3145,12 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[860] =
 	&GenInst_TextAnchor_t112990806_0_0_0,
 	&GenInst_AnimationTriggers_t3244928895_0_0_0,
 	&GenInst_Animator_t69676727_0_0_0,
+	&GenInst_PlayerMove_t195622780_0_0_0,
 	&GenInst_CountDownController_t1675675739_0_0_0,
 	&GenInst_LineRenderer_t849157671_0_0_0,
-	&GenInst_PlayerMove_t195622780_0_0_0,
 	&GenInst_Map_t4262919222_0_0_0,
 	&GenInst_SkinnedMeshRenderer_t4220419316_0_0_0,
+	&GenInst_NetworkPlayerController_t3968973161_0_0_0,
 	&GenInst_Boolean_t3825574718_0_0_0_Boolean_t3825574718_0_0_0,
 	&GenInst_CustomAttributeNamedArgument_t94157543_0_0_0_CustomAttributeNamedArgument_t94157543_0_0_0,
 	&GenInst_CustomAttributeTypedArgument_t1498197914_0_0_0_CustomAttributeTypedArgument_t1498197914_0_0_0,
