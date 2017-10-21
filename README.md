@@ -25,8 +25,9 @@ This game have two different server，
 the first server is responsible for login ，store user information ， all the chat function.
 The second server is responsible for all the game function nad gps location. 
 
-# Self Evaluation
+# Self Evaluation/testing
 
+all test files are located in Healthy-boys/The Runner/Assets/Editor 
 Open the editor tests ruuner （already build in unity 5.6.2）
 select the particular test you would like to run
 press the run to check the unit test for each function
