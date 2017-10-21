@@ -50,14 +50,9 @@
      <Compile Include="Assets\CountDownServer.cs" />
      <Compile Include="Assets\PlaneMove.cs" />
      <Compile Include="Assets\Scripts\AR\AR.cs" />
-     <Compile Include="Assets\Scripts\AR\TestRedManRotation.cs" />
      <Compile Include="Assets\Scripts\Catch\Catch.cs" />
-     <Compile Include="Assets\Scripts\ChatController\ChatController.cs" />
      <Compile Include="Assets\Scripts\ChatController\ChatManager.cs" />
-     <Compile Include="Assets\Scripts\ChatController\testExtendClass.cs" />
-     <Compile Include="Assets\Scripts\ChatController\testTwoChat.cs" />
      <Compile Include="Assets\Scripts\Circle\HollowCircle.cs" />
-     <Compile Include="Assets\Scripts\Compass.cs" />
      <Compile Include="Assets\Scripts\Data\PlayerDataManager.cs" />
      <Compile Include="Assets\Scripts\Data\SaveData.cs" />
      <Compile Include="Assets\Scripts\Debug\testMoveScript.cs" />
@@ -69,15 +64,13 @@
      <Compile Include="Assets\Scripts\GameManager\GameController.cs" />
      <Compile Include="Assets\Scripts\GameManager\WinLose.cs" />
      <Compile Include="Assets\Scripts\HandMap\HandMapController.cs" />
-     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\Player\NetworkPlayerController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
-     <Compile Include="Assets\Scripts\PlayerUI.cs" />
-     <Compile Include="Assets\Scripts\Room.cs" />
      <Compile Include="Assets\Scripts\Supply\SupplyController.cs" />
      <Compile Include="Assets\Scripts\Tool\Toolbox.cs" />
-     <Compile Include="Assets\Scripts\User\UserInfo.cs" />
+     <Compile Include="Assets\Scripts\UI\PlayerUI.cs" />
+     <Compile Include="Assets\Scripts\UI\Room.cs" />
      <Compile Include="Assets\Scripts\Utilities\Singleton.cs" />
      <Compile Include="Assets\login\LoginController.cs" />
      <Compile Include="Assets\login\TiltWindow.cs" />
@@ -103,9 +96,6 @@
  </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
- </Reference>
- <Reference Include="wwwChat">
- <HintPath>/Users/ZoranLang/Documents/GitHub/Healthy-boys/The Runner/Assets/Scripts/ChatController/wwwChat.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

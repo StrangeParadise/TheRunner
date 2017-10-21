@@ -7,6 +7,7 @@ public class PlayerMove : NetworkBehaviour
 	public GameObject player;
 	public PlayerUI ui;
 
+	// Always sync those variables
 	[SyncVar]
 	public bool isSeeker;
 	[SyncVar]
@@ -27,24 +28,22 @@ public class PlayerMove : NetworkBehaviour
 
 	void Start() {
 		isDead = false;
+		// Do not render "myself"
 		if (isLocalPlayer) {
 			player.GetComponent<SkinnedMeshRenderer> ().enabled = false;
 		}
-
 	}
 
 	// Player move is based on the movement in real world. So we basically transform
 	// the gps coordinate to a local coordiante and share with other players.
 	void Update()
 	{
-		print("catch:"+name+",seeker"+isSeeker+",dead"+isDead);
-
+		// Setup the bool values for each player. Determine if the player is seeker or runner
 		if (NetworkServer.connections.Count > 0) {
 			latitudeO = MapTools.getLatO();
 			longitudeO = MapTools.getLonO();
 			if (isLocalPlayer) {
 				isSeeker = true;
-
 			} else {
 				isSeeker = false;
 			}
@@ -55,6 +54,8 @@ public class PlayerMove : NetworkBehaviour
 				isDead = true;
 			}
 		}
+
+		// If "I am dead"
 		if (isDead) {
 			if (isLocalPlayer) {
 				WinLose.lose();
@@ -62,13 +63,13 @@ public class PlayerMove : NetworkBehaviour
 			this.gameObject.SetActive (false);
 			return;
 		}
+
+		// If "I am a seeker", set my color to red
 		if (isSeeker) {
 			this.color = Color.red;
-            // TODO: UI for seeker
 			ui.changeToSeek ();
 		} else {
 			this.color = Color.white;
-            // TODO: UI For Hide
 			ui.changeToHide ();
 		}
 		player.GetComponent<SkinnedMeshRenderer>().materials[0].color = color;
@@ -82,6 +83,8 @@ public class PlayerMove : NetworkBehaviour
 			MapTools.setLatO(latitudeO);
 			MapTools.setLonO(longitudeO);
 		}
+
+		// Syc the name and the location. Move the model
 		CmdSetName (PlayerDataManager.s_Instance.playerName);
 		CmdSetP (MapTools.getLat(), MapTools.getLon());
 		latitude = MapTools.getLat();
@@ -92,6 +95,7 @@ public class PlayerMove : NetworkBehaviour
 
 	}
 
+	// Sync the variable with the sever using command
 	[Command]  
 	public void CmdSetP(float lat, float lon)  
 	{  
@@ -102,6 +106,5 @@ public class PlayerMove : NetworkBehaviour
 	public void CmdSetName(string n)  
 	{  
 		this.name = n;
-
 	}  
 }

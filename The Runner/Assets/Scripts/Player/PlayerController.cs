@@ -46,40 +46,34 @@ public class PlayerController : MonoBehaviour
 
     // Update is called once per frame
     void Update () {
-
-
-
         // update the map.
 		showMap ();
-
 	}
 		
+	// Make the map rotate with the camera(Old version of map)
 	void rotateMapWithCamera() {
-
-//		mainCamera.transform.rotation = Quaternion.Euler(new Vector3(
-//			mainCamera.transform.rotation.eulerAngles.x,
-//			Mathf.Clamp(mainCamera.transform.rotation.eulerAngles.y, 0, 180),
-//			mainCamera.transform.rotation.eulerAngles.z
-//		));
-
 		mapCanvas.transform.eulerAngles = new Vector3(
 			mapCanvas.transform.rotation.eulerAngles.x,
 			mainCam.transform.rotation.eulerAngles.y,
 			mapCanvas.transform.rotation.eulerAngles.z
 		);
-		//print ("map canvas rotation" + mapCanvas.transform.eulerAngles.y);
-		//print ("main camera rotation" + mainCamera.transform.eulerAngles.y);
-
 	}
 
+	// Make the map move with the camera(Old version of map)
+	void positionMapWithCamera() {
+		mapCanvas.transform.position = new Vector3(mainCam.transform.position.x, -635, mainCam.transform.position.z);
+	}
+
+	// If the device is put to around horizontal, then the map is showed
 	void showMap () {
-		
 		if (mainCam.transform.eulerAngles.x > 60 && mainCam.transform.eulerAngles.x < 130) {
-			this.GetComponent<Map> ().enabled = true;
+			this.GetComponent<Map>().enabled = true;
 			map.GetComponent<RawImage>().color = new Color(1, 1, 1, 0);
 			mainCam.enabled = false;
 			backgroundCam.enabled = false;
 			mapCam.enabled = true;
+
+			// Fade effect of the map
 			StartCoroutine (FadeTo (1.0f, 1.0f));
 		} else {
 			this.GetComponent<Map> ().enabled = false;
@@ -88,10 +82,8 @@ public class PlayerController : MonoBehaviour
 			mapCam.enabled = false;
 		}
 	}
-	void positionMapWithCamera() {
-		mapCanvas.transform.position = new Vector3(mainCam.transform.position.x, -635, mainCam.transform.position.z);
-	}
 
+	// A fade to effct of the map 
 	IEnumerator FadeTo(float aValue, float aTime)
 	{
 		float alpha = map.GetComponent<RawImage>().color.a;

@@ -27,11 +27,16 @@ public class HandMapController : MonoBehaviour
 			// Find the difference in the distances between each frame.
 			float deltaMagnitudeDiff = prevTouchDeltaMag - touchDeltaMag;
 
+			// Change the zoom value as u zoom the screen
 			if (mapCam.enabled == true) {
 				mapScript.zoom -= Mathf.RoundToInt(deltaMagnitudeDiff * orthoZoomSpeed);
+
+				// The zoom value cannot less than 10
 				if (mapScript.zoom <= 10) {
 					mapScript.zoom = 10;
 				}
+
+				// The zoom value cannot exceed 25
 				else if(mapScript.zoom >= 25) {
 					mapScript.zoom = 25;
 				}

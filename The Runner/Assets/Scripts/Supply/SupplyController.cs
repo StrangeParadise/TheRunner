@@ -77,14 +77,7 @@ public class SupplyController : NetworkBehaviour {
             {
                 progress += unlockSpeed;
                 tnpc.unlocking(this);
-            }
-                                   
+            }                       
         }
-
     }
-
-    void unlockingBox() {
-        
-    }
-
 }

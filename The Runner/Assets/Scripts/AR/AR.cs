@@ -24,12 +24,6 @@ public class AR : MonoBehaviour {
 		Input.compass.enabled = true;
 		Input.location.Start ();
 
-//		transform.rotation = Quaternion.Euler (
-//			transform.rotation.eulerAngles.x, 
-//			Input.compass.trueHeading,
-//			transform.rotation.eulerAngles.z
-//		);
-
 		// Check if Gyro and Cam are supported in target device
 		// Supp Gyro?
 		if (!SystemInfo.supportsGyroscope) {

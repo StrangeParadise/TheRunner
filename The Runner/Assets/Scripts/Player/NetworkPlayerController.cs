@@ -17,12 +17,6 @@ namespace TheRunner.Player
             playerName = PlayerDataManager.s_Instance.playerName;
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
-
         public void unlocking(SupplyController sc)
         {
             Debug.Log("[" + playerName + "]: Unlocking " + sc.boxName);
