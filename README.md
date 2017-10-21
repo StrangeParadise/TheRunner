@@ -14,10 +14,10 @@ build in to your device
 
 IMPORTATANT RIGHT NOW ONLY 4 AVAVAIBLE ACCOUNT SAVE IN THE SERVER
 Account name ： Password
-wxx             1234
-zoran           1234
-Ryner           1234
-lanyu           1234
+wxx：1234
+zoran：1234
+Ryner：1234
+lanyu：1234
 
 # Server 
 
