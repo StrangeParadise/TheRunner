@@ -3,13 +3,17 @@ using System.Collections;
 
 public class HollowCircle : MonoBehaviour
 {
+	// The number of segements compose the circle
 	public int segments;
+
 	public float xradius;
 	public float yradius;
+
 	LineRenderer line;
 
 	void Start ()
 	{
+		// Initialize the line
 		line = gameObject.GetComponent<LineRenderer>();
 
 		line.SetVertexCount (segments + 1);
@@ -26,13 +30,14 @@ public class HollowCircle : MonoBehaviour
 
 		float angle = 20f;
 
+		// For each segment create a line
 		for (int i = 0; i < (segments + 1); i++)
 		{
 			x = Mathf.Sin (Mathf.Deg2Rad * angle) * xradius;
 			y = Mathf.Cos (Mathf.Deg2Rad * angle) * yradius;
 
-			line.SetPosition (i,new Vector3(x,y,z) );
-
+			// Setup the line
+			line.SetPosition (i, new Vector3(x,y,z));
 			angle += (360f / segments);
 		}
 	}

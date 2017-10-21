@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TheRunner.Utilities;
 
+
+// This class stores the data of all the players
 namespace TheRunner.Data
 {
 

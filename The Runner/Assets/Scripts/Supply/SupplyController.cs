@@ -101,14 +101,15 @@ public class SupplyController : NetworkBehaviour
             {
                 unlockingBox();
                 tnpc.unlocking(this);
-            }
-                                   
+            }                       
         }
-
     }
+<<<<<<< HEAD
 
     void unlockingBox() {
         progress += unlockSpeed;
     }
 
+=======
+>>>>>>> 7b948da39e48bd0cba1cb12eb0e93df26bce7497
 }

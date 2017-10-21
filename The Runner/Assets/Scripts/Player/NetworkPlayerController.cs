@@ -100,6 +100,7 @@ namespace TheRunner.Player
             isDead = false;
         }
 
+<<<<<<< HEAD
         // Update is called once per frame
         void Update()
         {
@@ -107,6 +108,8 @@ namespace TheRunner.Player
             checkDeath();
         }
 
+=======
+>>>>>>> 7b948da39e48bd0cba1cb12eb0e93df26bce7497
         public void unlocking(SupplyController sc)
         {
             Debug.Log("[" + playerName + "]: Unlocking " + sc.boxName);

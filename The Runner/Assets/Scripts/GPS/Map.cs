@@ -1,78 +1,1 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
-using System.Collections;
-
-public class Map : MonoBehaviour {
-
-	string url;
-
-	public GPSController gpsController;
-
-	public float latitude;
-	public float longitude;
-	public int zoom;
-	public int mapWidth;
-	public int mapHeight;
-	public enum mapType { roadmap, satellite, hybrid, terrain };
-	public mapType mapSelected;
-	public RawImage myMap;
-
-	public TextMesh terminal;
-
-	private IEnumerator mapCoroutine;
-	private string key1 = "&key=AIzaSyDK04pO2JEC4C01AQSW9dpuBDunvtuA-o8";
-	private string key2 = "&key=AIzaSyDkFTum1BgoY5gD92vkLlnavRQnnYQKKiM";
-
-	private float updatePerSecond = 0.1f;
-	private float time = 0.0f;
-
-	void Update () {
-        //if ((time += Time.deltaTime) > updatePerSecond) {
-			
-        latitude  = GPSData.s_Instance.getLatitude();
-        longitude = GPSData.s_Instance.getLongitude();
-		//mapCoroutine = GetGoogleMap (latitude, longitude); //redefine the coroutine with the new map coordinates (might be a better way to do this...let me know!)
-		//StartCoroutine (mapCoroutine); //restart the coroutine
-		time = 0.0f;
-
-//		}
-
-
-//		if (terminal != null && gpsController != null) {
-//			terminal.text = "gps | long: " + gpsController.gps.longtitude.ToString() +'\n' + " lati: " + gpsController.gps.latitude.ToString();
-//		}
-	}
-
-	IEnumerator GetGoogleMap(float latitude, float longitude)
-	{
-//		Debug.Log ("latitude " + latitude);
-//		Debug.Log ("longitude " + longitude);
-		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude +
-		"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected;
-		generateURL ();
-//		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude +
-//			"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected + 
-//			"&markers=color:red%7Clabel:A%7C" + latitude + "," + longitude + "&key=AIzaSyDkFTum1BgoY5gD92vkLlnavRQnnYQKKiM";
-		WWW www = new WWW(url);
-		yield return www;
-		Texture mapTexture = www.texture;
-		myMap.GetComponent<RawImage>().texture = mapTexture;
-		yield return new WaitForSeconds(1);
-		Destroy (mapTexture);
-		StopCoroutine (mapCoroutine);
-	}
-	void generateURL() {
-		GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-		string[] markers = new string[players.Length];
-		int startLetter = 65;
-		//print (players.Length);
-		for (int i = 0; i < players.Length; i++) {
-			print ("精度" + i +players [i].GetComponent<PlayerMove> ().latitude);
-			print ("维度" + i + players [i].GetComponent<PlayerMove> ().longitude);
-			markers [i] = "&markers=color:red%7Clabel:" + (char)(startLetter++) + "%7C" + players[i].GetComponent<PlayerMove>().latitude + "," + players[i].GetComponent<PlayerMove>().longitude;
-			url += markers [i];
-		}
-		url += key1;
-//		url += key2;
-	}
-}
+﻿using UnityEngine; using UnityEngine.UI; using System.Collections; using UnityEngine.Networking;  public class Map : MonoBehaviour {  	// Stores the google static map url 	string url;  	// Current latitude 	public float latitude;  	// Current longitude 	public float longitude;  	// The zoom value of the map 	public int zoom;  	// Width of the map texture 	public int mapWidth;  	// Height of the map texture 	public int mapHeight;  	// Four types of map to choose from 	public enum mapType { roadmap, satellite, hybrid, terrain }; 	public mapType mapSelected;  	// The Image component to show the map 	public RawImage myMap;  	// The range used in the circle on the map 	public int range;  	private IEnumerator mapCoroutine;  	// API Keys we are using for test 	private string key1 = "&key=AIzaSyDK04pO2JEC4C01AQSW9dpuBDunvtuA-o8"; 	private string key2 = "&key=AIzaSyDkFTum1BgoY5gD92vkLlnavRQnnYQKKiM"; 	private string key3 = "&key=AIzaSyD1McLuBZCI9Ueu6XJ3lU6r_AZTPmi1asQ";  	// Stores the time passed 	private float time = 0.0f;  	// Update frequency of the map (10 times per second) 	private int updatePerSecond = 10;  	// Stores the map texture downloaded 	private Texture mapTexture;  	void Start() { 		latitude  = GPSData.s_Instance.getLatitude(); 		longitude = GPSData.s_Instance.getLongitude(); 		mapCoroutine = GetGoogleMap (latitude, longitude);  		StartCoroutine (mapCoroutine);  	}  	void Update () { 		// Start the coroutine updatePerSecond times per second 		if ((time += Time.deltaTime) > 1.0f/updatePerSecond) { 			time = 0.0f; 			latitude  = GPSData.s_Instance.getLatitude(); 			longitude = GPSData.s_Instance.getLongitude(); 			mapCoroutine = GetGoogleMap (latitude, longitude); 			StartCoroutine (mapCoroutine);  		} 	}  	IEnumerator GetGoogleMap(float latitude, float longitude) 	{ 		// Generate the complete url 		url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + 			"&zoom=" + zoom + "&size=" + mapWidth + "x" + mapHeight + "&maptype=" + mapSelected; 		generateURL ();  		// Draw a play circle on the map 		drawCircle ();  		// Add the key at the tail of the url 		url += key1; 		// url += key2; 		// url += key3;  		WWW www = new WWW(url); 		yield return www; 		Destroy (mapTexture);  		// Catch the error if there is one 		if (www.error == null) { 			// Get the texture downloaded 			mapTexture = www.texture; 			// Assign it to the UI 			myMap.GetComponent<RawImage> ().texture = mapTexture; 			StopCoroutine (mapCoroutine); 		} 	}  	void generateURL() {  		// Stores all the players 		GameObject[] players = GameObject.FindGameObjectsWithTag("Player");  		// Stores the markers in the map 		string[] markers = new string[players.Length];  		// Setup the markers show all the players position 		for (int i = 0; i < players.Length; i++) { 			if (players [i].GetComponent<PlayerMove> ().isSeeker) { 				// Seeker's mark will be in red 				markers [i] = "&markers=color:red%7Clabel:" + players [i].GetComponent<PlayerMove> ().name [0].ToString ().ToUpper () + "%7C" + players [i].GetComponent<PlayerMove> ().latitude + "," + players [i].GetComponent<PlayerMove> ().longitude; 			}  else { 				// Runner's mark will be in green 				markers [i] = "&markers=color:green%7Clabel:" + players[i].GetComponent<PlayerMove> ().name[0].ToString().ToUpper() + "%7C" + players[i].GetComponent<PlayerMove>().latitude + "," + players[i].GetComponent<PlayerMove>().longitude; 			} 			url += markers [i]; 		} 	}  	// Draw the play range on the map 	// This algorithm is similar to the one we use to transfer the latitude and longitude to the unity coordinate 	void drawCircle(){ 		float lat = MapTools.getLatO(); 		float lng = MapTools.getLonO(); 		int rad = range; 		int detail = 5;  		url += "&path=color:blue%7Cfillcolor:yellow%7Cweight:4";  		float r = 6378.137f;  		float pi = Mathf.PI;  		float _lat = (lat * pi) / 180f; 		float _lng = (lng * pi) / 180f; 		float d = (rad / 1000f) / r;  		int i = 0;  		for (i = 0; i <= 360; i += detail) { 			float brng = i * pi / 180f; 			float pLat = Mathf.Asin (Mathf.Sin (_lat) * Mathf.Cos (d) + Mathf.Cos (_lat) * Mathf.Sin (d) * Mathf.Cos (brng)); 			float pLng = ((_lng + Mathf.Atan2 (Mathf.Sin (brng) * Mathf.Sin (d) * Mathf.Cos (_lat), Mathf.Cos (d) - Mathf.Sin (_lat) * Mathf.Sin (pLat))) * 180f) / pi; 			pLat = (pLat * 180f) / pi;  			url += "%7C" + pLat + "," + pLng; 		} 	} } 
