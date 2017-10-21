@@ -3,8 +3,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 public class PlaneMove : NetworkBehaviour {
-
-    private int planeEndX = 300;
+    
     private int planeFlyTime = 20;
 
     // Use this for initialization
@@ -16,8 +15,18 @@ public class PlaneMove : NetworkBehaviour {
             return;
         }
 
-        // Plane starts to fly. 
-        StartCoroutine(MoveOverSeconds(gameObject, new Vector3(planeEndX, 300f, 0f), 20f));
+    }
+
+
+
+    /// <summary>
+    /// Make the plane flies by.
+    /// </summary>
+    /// <returns>The fly.</returns>
+    /// <param name="planeEndX">Plane end x.</param>
+    /// <param name="flyTime">Fly time.</param>
+    public void Fly(Vector3 PlaneEnd, float flyTime) {
+        StartCoroutine(MoveOverSeconds(gameObject, PlaneEnd, flyTime));
     }
 
 

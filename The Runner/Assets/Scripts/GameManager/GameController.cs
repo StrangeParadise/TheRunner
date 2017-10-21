@@ -10,6 +10,7 @@ public class GameController : NetworkBehaviour {
     // This is the time of this round of game. (Default: 10min/round).
     public const int COUNTDOWN_TIME = 600;
     private int elapsedTime = 0;
+    private float arenaRadius = 1000;
 
     // Use a prefab to in charge with all the staff related to countdown
     [SerializeField] GameObject countDownPrefab;
@@ -30,6 +31,8 @@ public class GameController : NetworkBehaviour {
 	public GameObject PlaneFlyingPrefab;
     public GameObject BoxPrefab;
     public GameObject HollowCirclePrefab;
+
+
 
 
     // All clients list. (NetworkPlayerController for scripts.)
@@ -69,7 +72,7 @@ public class GameController : NetworkBehaviour {
 
     private int time_Run = 0;
     private bool b_Run = false;
-    private int time_PlaneFliesBy_1 = 13;
+    private int time_PlaneFliesBy_1 = 12;
     private bool b_PFB_1 = false;
     private int time_BoxDrops_1 = 20;
     private bool b_BP_1 = false;
@@ -133,7 +136,8 @@ public class GameController : NetworkBehaviour {
         //      Range indicates the arena of the game play, players cannon go beyond this 
         //      bounded area or they will receive the health punishment.
         //          Default Size: radius = 1000f;
-        initHollowCircle(1000f);
+        arenaRadius = 1000f;
+        initHollowCircle();
 
         //============================
         // Debug purpose:
@@ -216,7 +220,6 @@ public class GameController : NetworkBehaviour {
             case GameState.Run:
                 // ================================================
                 // - Runners, Let's move!
-                Debug.Log("[Game] State 1: Runners, Let's move! ");
                 b_Run = true;
                 break;
 
@@ -297,27 +300,94 @@ public class GameController : NetworkBehaviour {
 
 	}
 
+
+    private Vector2 getPointOnBoundary(float angleDegrees) {
+
+        // initialize calculation variables
+        float _x = 0;
+        float _y = 0;
+        float angleRadians = 0;
+        Vector2 _returnVector;
+        // convert degrees to radians
+        angleRadians = angleDegrees * Mathf.PI / 180.0f;
+        // get the 2D dimensional coordinates
+        _x = arenaRadius * Mathf.Cos(angleRadians);
+        _y = arenaRadius * Mathf.Sin(angleRadians);
+        // derive the 2D vector
+        _returnVector = new Vector2(_x, _y);
+        // return the vector info
+        return _returnVector;
+    }
+
+    private Vector3 generatePlaneStartPoint(float angleDegrees) {
+
+        Vector2 boundaryPoint = getPointOnBoundary(angleDegrees);
+
+        return new Vector3(
+            boundaryPoint.x,
+            300.0f + Random.Range(-20,20),
+            boundaryPoint.y
+        );
+    }
+
+    private Vector3 generatePlaneEndPoint(Vector3 startpoint) {
+        return new Vector3(
+            -startpoint.x,
+            startpoint.y + Random.Range(-20,20),
+            -startpoint.z            
+        );
+    }
+
+
+    /// <summary>
+    /// Plane Flies by
+    /// </summary>
     private void plane1FlyBy() {
 
-        planePrefab1 = Instantiate(PlaneFlyingPrefab, new Vector3(-500, 200, 0), Quaternion.Euler(-90,0,-90)) as GameObject;
+        float angleDegrees = Random.Range(0, 360);
+        Vector3 startPoint = generatePlaneStartPoint(angleDegrees);
+
+        Vector3 endPoint = generatePlaneEndPoint(startPoint);
+
+        planePrefab1 = Instantiate(PlaneFlyingPrefab, 
+                                   startPoint, 
+                                   Quaternion.Euler(-90, 180-angleDegrees, -90)) as GameObject;
         NetworkServer.Spawn(planePrefab1);
+        planePrefab1.GetComponent<PlaneMove>().Fly(endPoint, 40f);
     
     }
 
     private void plane2FlyBy()
     {
+        float angleDegrees = Random.Range(0, 360);
+        Vector3 startPoint = generatePlaneStartPoint(angleDegrees);
+        Vector3 endPoint = generatePlaneEndPoint(startPoint);
 
-        planePrefab2 = Instantiate(PlaneFlyingPrefab, new Vector3(-500, 200, 0), Quaternion.Euler(-90, 0, -90)) as GameObject;
+        planePrefab2 = Instantiate(PlaneFlyingPrefab,
+                                   startPoint,
+                                   Quaternion.Euler(-90, 180-angleDegrees, -90)) as GameObject;
         NetworkServer.Spawn(planePrefab2);
-
-        Debug.Log(planePrefab2.transform.position);
+        planePrefab2.GetComponent<PlaneMove>().Fly(endPoint, 40f);
+    
     }
 
     private void plane3FlyBy()
     {
 
-        planePrefab3 = Instantiate(PlaneFlyingPrefab, new Vector3(-500, 200, 0), Quaternion.Euler(-90, 0, -90)) as GameObject;
+        float angleDegrees = Random.Range(0, 360);
+        Vector3 startPoint = generatePlaneStartPoint(angleDegrees);
+        Vector3 endPoint = generatePlaneEndPoint(startPoint);
+
+        float towardAngle = Vector2.Angle(
+            new Vector2(1, 0),
+            new Vector2(endPoint.x, endPoint.z)
+        );
+
+        planePrefab3 = Instantiate(PlaneFlyingPrefab,
+                                   startPoint,
+                                   Quaternion.Euler(-90, 180-angleDegrees, -90)) as GameObject;
         NetworkServer.Spawn(planePrefab3);
+        planePrefab3.GetComponent<PlaneMove>().Fly(endPoint, 40f);
 
     }
 
@@ -372,11 +442,11 @@ public class GameController : NetworkBehaviour {
         // 
     }
 
-    private void initHollowCircle(float radius) 
+    private void initHollowCircle() 
     {
         GameObject hc = Instantiate(HollowCirclePrefab, Vector3.zero, Quaternion.Euler(90.0f, 0f, 0f));
-        hc.GetComponent<HollowCircle>().xradius = radius;
-        hc.GetComponent<HollowCircle>().yradius = radius;
+        hc.GetComponent<HollowCircle>().xradius = arenaRadius;
+        hc.GetComponent<HollowCircle>().yradius = arenaRadius;
         NetworkServer.Spawn(hc);
     }
 
