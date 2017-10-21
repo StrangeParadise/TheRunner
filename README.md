@@ -13,21 +13,31 @@ login in your own account （setting the environment）
 build in to your device
 
 IMPORTATANT RIGHT NOW ONLY 4 AVAVAIBLE ACCOUNT SAVE IN THE SERVER
+
 Account name ： Password
+
 wxx：1234
+
 zoran：1234
+
 Ryner：1234
+
 lanyu：1234
 
 # Server 
 
 This game have two different server， 
+
 the first server is responsible for login ，store user information ， all the chat function.
+
 The second server is responsible for all the game function nad gps location. 
 
 # Self Evaluation/testing
 
 all test files are located in Healthy-boys/The Runner/Assets/Editor 
+
 Open the editor tests ruuner （already build in unity 5.6.2）
+
 select the particular test you would like to run
+
 press the run to check the unit test for each function
