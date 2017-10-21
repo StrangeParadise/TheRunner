@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using TheRunner.Utilities;
 
-
-// This class stores the GPS Data information
 public class GPSData : Singleton<GPSData> {
 
 	private float latitude = 0;

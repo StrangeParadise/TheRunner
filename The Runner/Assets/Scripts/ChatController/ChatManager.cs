@@ -7,8 +7,6 @@ namespace TheRunner.Chat
 {
     public class ChatManager : MonoBehaviour
     {
-
-		// Two UIs one shows text and the other show the input bar
         public InputField textFieldUI;
         public GameObject outputFieldUI;
 
@@ -19,25 +17,27 @@ namespace TheRunner.Chat
         public string output = "";
         public string textLine = "";
 
-		// Update frequency
         private float UPDATE_INTERVAL = 1.0f;
         private float updateCount = 0.0f;
         private bool needsUpdate = true;
 
+        private void Start()
+        {
+        }
+
         void OnGUI()
         {
-			// Initialize textLine and outputField
             textLine = textFieldUI.GetComponent<InputField>().text;
             outputField = outputFieldUI.GetComponent<Text>();
         }
 
         void Update()
         {
+
             if (needsUpdate)
             {
                 updateCount = UPDATE_INTERVAL;
                 needsUpdate = false;
-				// Download the chat history every UPDATE_INTERVAL time
                 Download();
                 return;
             }
@@ -61,7 +61,6 @@ namespace TheRunner.Chat
 
         public void Send()
         {
-			// If the input is not empty, upload the text input
             if (textLine != "")
             {
                 WWWForm form = new WWWForm();
@@ -102,7 +101,7 @@ namespace TheRunner.Chat
 
         private void OutputToScreen(string line)
         {
-			// The process that the server send back the info to the screen
+
             string[] textList = line.Split('/');
 
 
@@ -121,7 +120,9 @@ namespace TheRunner.Chat
                 }
 
             }
+
             outputField.text = finalOutput;
         }
+
     }
 }

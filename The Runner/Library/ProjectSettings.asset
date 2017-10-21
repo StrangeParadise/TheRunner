@@ -224,13 +224,7 @@ PlayerSettings:
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
   resolutionDialogBanner: {fileID: 0}
-  m_BuildTargetIcons:
-  - m_BuildTarget: 
-    m_Icons:
-    - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 0f40f0920853a4610b05a5bc2edbb7cb, type: 3}
-      m_Width: 128
-      m_Height: 128
+  m_BuildTargetIcons: []
   m_BuildTargetBatching: []
   m_BuildTargetGraphicsAPIs: []
   m_BuildTargetVRSettings: []
@@ -588,14 +582,14 @@ PlayerSettings:
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
     Build: 0
-    Collab: 0
+    Collab: 1
     ErrorHub: 0
     Hub: 0
     UNet: 1
   facebookSdkVersion: 7.9.1
   apiCompatibilityLevel: 2
-  cloudProjectId: e22ee5e6-2fa6-43ef-9b3c-44d7f9176ed0
-  projectName: The Runner (7)
-  organizationId: brainoverflow
+  cloudProjectId: 729e91b7-b7a1-4b0b-8650-90586d62265e
+  projectName: The Runner
+  organizationId: xixiangwu
   cloudEnabled: 0
   enableNewInputSystem: 0

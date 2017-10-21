@@ -2,36 +2,22 @@
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class PlaneMove : MonoBehaviour {
-
-    public GameObject BoxPrefab;
-
-    private bool isBoxThrew = false;
-    private int boxThrowX;
+public class PlaneMove : NetworkBehaviour {
 
     private int planeEndX = 300;
     private int planeFlyTime = 20;
 
-	// Use this for initialization
-	void Start () {
-
-        // Plane starts to fly. 
-        StartCoroutine(MoveOverSeconds(gameObject, new Vector3(planeEndX, 200f, 0f), 20f));
-
-        // generate a random box throw time.
-        boxThrowX = Random.Range(-planeEndX, planeEndX);
-
-	}
-
-    public void Update()
+    // Use this for initialization
+    void Start()
     {
-        if (transform.position.x >= boxThrowX && !isBoxThrew)
+
+        if (!GameObject.FindGameObjectWithTag("GameManager"))
         {
-            // Generate a box.
-            generateBox();
-            isBoxThrew = true;
+            return;
         }
 
+        // Plane starts to fly. 
+        StartCoroutine(MoveOverSeconds(gameObject, new Vector3(planeEndX, 300f, 0f), 20f));
     }
 
 
@@ -61,10 +47,4 @@ public class PlaneMove : MonoBehaviour {
         objectToMove.transform.position = end;
     }
 
-    // TODO: Throw Boxes
-    private void generateBox() {
-
-        GameObject Box = (GameObject)Instantiate(BoxPrefab,transform.position,Quaternion.Euler(90,0,0));
-        NetworkServer.Spawn(Box);
-    }
 }

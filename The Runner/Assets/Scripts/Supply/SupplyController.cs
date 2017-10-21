@@ -4,36 +4,56 @@ using UnityEngine;
 using UnityEngine.Networking;
 using TheRunner.Player;
 
-public class SupplyController : NetworkBehaviour {
+public class SupplyController : NetworkBehaviour
+{
 
+    [SyncVar]
     public string boxName;
 
     private float fallRange;
 
     private float unlockSpeed = 1.0f; // per second
-    private float progress = 0.0f;
-    private float MAX_PROGRESS = 100f;
+
+    [SyncVar] private float progress = 0.0f;
+    private float MAX_PROGRESS = 600f;
+
+    [SyncVar] private Vector3 endPosition;
+
 
     // This script controls the supply falls from sky.
-	// Use this for initialization
+    // Use this for initialization
+
     void Start()
     {
 
-        boxName = "[ Box: " + Random.Range(1000,9999).ToString() + " ]";
 
-        // Throw the box. 
-        StartCoroutine(MoveOverSeconds(
-            gameObject, new Vector3(
-                transform.position.x + Random.Range(-fallRange, fallRange), 
-                0, 
-                transform.position.z + Random.Range(-fallRange, fallRange)), 10f));
+        if (!GameObject.FindGameObjectWithTag("GameManager"))
+        {
+            return;
+        }
 
-        Debug.Log(boxName + " dropped from the sky!");
+        //endPosition = new Vector3(0, 10f, 10f);
+
+        boxName = "[ Box: " + Random.Range(1000, 9999).ToString() + " ]";
+
+        StartCoroutine(MoveOverSeconds(gameObject, 
+                                       new Vector3(
+                                           transform.position.x + Random.Range(-100,100),
+                                           0,
+                                           transform.position.z + Random.Range(-100, 100)),
+                                       20f));
+
     }
 	
 	// Update is called once per frame
 	void Update () {
-        
+
+        if (progress >= MAX_PROGRESS) {
+            Debug.Log(boxName + " is unlocked!");
+            Network.Destroy(gameObject);
+            return;
+        }
+
         // Check is there any player nearby.
         checkPlayerNearby();
 
@@ -65,6 +85,10 @@ public class SupplyController : NetworkBehaviour {
         objectToMove.transform.position = end;
     }
 
+
+    /// <summary>
+    /// This function is used for check if there is a user unlocking the box.
+    /// </summary>
     void checkPlayerNearby() {
 
         GameObject[] playerPrefabList = GameObject.FindGameObjectsWithTag("Player");
@@ -73,11 +97,18 @@ public class SupplyController : NetworkBehaviour {
             NetworkPlayerController tnpc = playerPrefabList[i].GetComponent<NetworkPlayerController>();
             Transform tempTransform = tnpc.transform;
 
-            if (Vector3.Distance(tempTransform.position, transform.position) <= 10.0f)
+            if (Vector3.Distance(tempTransform.position, transform.position) <= 20.0f)
             {
-                progress += unlockSpeed;
+                unlockingBox();
                 tnpc.unlocking(this);
-            }                       
+            }
+                                   
         }
+
     }
+
+    void unlockingBox() {
+        progress += unlockSpeed;
+    }
+
 }

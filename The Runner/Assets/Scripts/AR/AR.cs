@@ -3,70 +3,80 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AR : MonoBehaviour {
-	// Variables
-	// Gyro
-	private Gyroscope gyro;
-	private GameObject cameraContainer;
-	private Quaternion gyroRotation;
+public class AR : MonoBehaviour
+{
+    // Variables
+    // Gyro
+    private Gyroscope gyro;
+    private GameObject cameraContainer;
+    private Quaternion gyroRotation;
 
-	// Cam
-	private WebCamTexture cam;
-	public RawImage background;
-	public AspectRatioFitter fit;
+    // Cam
+    private WebCamTexture cam;
+    public RawImage background;
+    public AspectRatioFitter fit;
 
-	private bool arReady = false;
-	public TextMesh terminal;
+    private bool arReady = false;
+    public TextMesh terminal;
 
-	private void Start()
-	{
+    private void Start()
+    {
 
-		Input.compass.enabled = true;
-		Input.location.Start ();
+        Input.location.Start();
+        Input.compass.enabled = true;
 
-		// Check if Gyro and Cam are supported in target device
-		// Supp Gyro?
-		if (!SystemInfo.supportsGyroscope) {
-			print("Gyroscope is not supported!");
-			return;
-		}
+        //		transform.rotation = Quaternion.Euler (
+        //			transform.rotation.eulerAngles.x, 
+        //			Input.compass.trueHeading,
+        //			transform.rotation.eulerAngles.z
+        //		);
 
-		// Supp BackCam?
-		for (int i = 0; i < WebCamTexture.devices.Length; i++) {
-			if (!WebCamTexture.devices[i].isFrontFacing)
-			{
-				cam = new WebCamTexture(WebCamTexture.devices[i].name, Screen.width, Screen.height);
-			}
-		}
+        // Check if Gyro and Cam are supported in target device
+        // Supp Gyro?
+        if (!SystemInfo.supportsGyroscope)
+        {
+            print("Gyroscope is not supported!");
+            return;
+        }
 
-		// If no BackCam detected
-		if (cam == null) {
-			print("Camera is not supported!");
-			return;
-		}
-		cameraContainer = new GameObject("CameraContainer");
-		cameraContainer.transform.position = transform.position;
-		
-		transform.SetParent(cameraContainer.transform);
+        // Supp BackCam?
+        for (int i = 0; i < WebCamTexture.devices.Length; i++)
+        {
+            if (!WebCamTexture.devices[i].isFrontFacing)
+            {
+                cam = new WebCamTexture(WebCamTexture.devices[i].name, Screen.width, Screen.height);
+            }
+        }
+
+        // If no BackCam detected
+        if (cam == null)
+        {
+            print("Camera is not supported!");
+            return;
+        }
+        cameraContainer = new GameObject("CameraContainer");
+        cameraContainer.transform.position = transform.position;
+
+        transform.SetParent(cameraContainer.transform);
 
 
-		// Case: Gyros and BackCam are supported
-		gyro = Input.gyro;
-		gyro.enabled = true;
-		cameraContainer.transform.rotation = Quaternion.Euler(90f, 0, 0);
-		gyroRotation = new Quaternion(0, 0, 1, 0);
+        // Case: Gyros and BackCam are supported
+        gyro = Input.gyro;
+        gyro.enabled = true;
+        cameraContainer.transform.rotation = Quaternion.Euler(90f, 0, 0);
+        gyroRotation = new Quaternion(0, 0, 1, 0);
 
-		cam.Play();
-		background.texture = cam;
+        cam.Play();
+        background.texture = cam;
 
-		arReady = true;
-	}
+        arReady = true;
+    }
 
-	// Update
-	private void Update()
-	{
+    // Update
+    private void Update()
+    {
 
-		if (arReady) {
+        if (arReady) {
 			// Update Gyro
 			transform.localRotation = gyro.attitude * gyroRotation;
 //			transform.localRotation = gyro.attitude;
@@ -76,7 +86,6 @@ public class AR : MonoBehaviour {
 				Input.compass.trueHeading,
 				transform.rotation.eulerAngles.z
 			);
-			print (Input.compass.trueHeading);
 
 			// Update BackCam
 			// Mute the distortion
@@ -91,5 +100,7 @@ public class AR : MonoBehaviour {
 			int orient = -cam.videoRotationAngle;
 			background.rectTransform.localEulerAngles = new Vector3(0, 0, orient);
 		}
-	}
+
+    }
+
 }
