@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio for Mac
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Runner", "The Runner.csproj", "{9F0B79FB-B7CD-CFEB-3CE7-A0B42FC5AAD7}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Runner", "Assembly-CSharp.csproj", "{8B7D529A-E003-AF3F-9545-83C83F0CF255}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Runner.Editor", "The Runner.Editor.csproj", "{111963E5-DB6D-DCF5-CF34-323E009E3607}"
 EndProject
@@ -11,6 +11,7 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
 		{9F0B79FB-B7CD-CFEB-3CE7-A0B42FC5AAD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9F0B79FB-B7CD-CFEB-3CE7-A0B42FC5AAD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F0B79FB-B7CD-CFEB-3CE7-A0B42FC5AAD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -19,8 +20,17 @@ Global
 		{111963E5-DB6D-DCF5-CF34-323E009E3607}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{111963E5-DB6D-DCF5-CF34-323E009E3607}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{111963E5-DB6D-DCF5-CF34-323E009E3607}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{8B7D529A-E003-AF3F-9545-83C83F0CF255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B7D529A-E003-AF3F-9545-83C83F0CF255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B7D529A-E003-AF3F-9545-83C83F0CF255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B7D529A-E003-AF3F-9545-83C83F0CF255}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> parent of d907116... merge version
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

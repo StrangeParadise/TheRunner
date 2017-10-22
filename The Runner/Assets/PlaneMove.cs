@@ -2,45 +2,39 @@
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class PlaneMove : NetworkBehaviour
-{
+public class PlaneMove : MonoBehaviour {
 
+    public GameObject BoxPrefab;
+
+    private bool isBoxThrew = false;
+    private int boxThrowX;
+
+    private int planeEndX = 300;
     private int planeFlyTime = 20;
 
-    /// <summary>
-    /// Create a plane in the Server.
-    /// </summary>
-    void Start()
-    {
+	// Use this for initialization
+	void Start () {
 
-        // Check if this is on a server device or a client.
-        if (!GameObject.FindGameObjectWithTag("GameManager")) {
-            return;
+        // Plane starts to fly. 
+        StartCoroutine(MoveOverSeconds(gameObject, new Vector3(planeEndX, 200f, 0f), 20f));
+
+        // generate a random box throw time.
+        boxThrowX = Random.Range(-planeEndX, planeEndX);
+
+	}
+
+    public void Update()
+    {
+        if (transform.position.x >= boxThrowX && !isBoxThrew)
+        {
+            // Generate a box.
+            generateBox();
+            isBoxThrew = true;
         }
 
-        // For further plane movement.
-
-    }
-
-    /// <summary>
-    /// Make the plane flies by.
-    /// </summary>
-    /// <returns>The fly.</returns>
-    /// <param name="PlaneEnd">Plane end x.</param>
-    /// <param name="flyTime">Fly time.</param>
-    public void Fly(Vector3 PlaneEnd, float flyTime)
-    {
-        StartCoroutine(MoveOverSeconds(gameObject, PlaneEnd, flyTime));
     }
 
 
-    /// <summary>
-    /// This is used for changing the moving speed of the plane.
-    /// </summary>
-    /// <returns>The over speed.</returns>
-    /// <param name="objectToMove">Object to move.</param>
-    /// <param name="end">End.</param>
-    /// <param name="speed">Speed.</param>
     public IEnumerator MoveOverSpeed(GameObject objectToMove, Vector3 end, float speed)
     {
         // speed should be 1 unit per second
@@ -51,21 +45,13 @@ public class PlaneMove : NetworkBehaviour
         }
     }
 
-    /// <summary>
-    /// Move the plane over seconds.
-    /// </summary>
-    /// <returns>The over seconds.</returns>
-    /// <param name="objectToMove">This is the object to move.</param>
-    /// <param name="end">End.</param>
-    /// <param name="seconds">Seconds.</param>
     public IEnumerator MoveOverSeconds(GameObject objectToMove, Vector3 end, float seconds)
     {
 
-        // Create a elapsed time for deciding the moving pattern.
         float elapsedTime = 0;
         Vector3 startingPos = objectToMove.transform.position;
 
-
+       
         while (elapsedTime < seconds)
         {
             objectToMove.transform.position = Vector3.Lerp(startingPos, end, (elapsedTime / seconds));
@@ -75,4 +61,10 @@ public class PlaneMove : NetworkBehaviour
         objectToMove.transform.position = end;
     }
 
+    // TODO: Throw Boxes
+    private void generateBox() {
+
+        GameObject Box = (GameObject)Instantiate(BoxPrefab,transform.position,Quaternion.Euler(90,0,0));
+        NetworkServer.Spawn(Box);
+    }
 }
