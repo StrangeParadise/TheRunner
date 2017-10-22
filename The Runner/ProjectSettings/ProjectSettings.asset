@@ -594,8 +594,8 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.1
   apiCompatibilityLevel: 2
-  cloudProjectId: e22ee5e6-2fa6-43ef-9b3c-44d7f9176ed0
-  projectName: The Runner (7)
-  organizationId: brainoverflow
+  cloudProjectId: 
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   enableNewInputSystem: 0
