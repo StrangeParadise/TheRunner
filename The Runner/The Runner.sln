@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio for Mac
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Runner", "The Runner.csproj", "{9F0B79FB-B7CD-CFEB-3CE7-A0B42FC5AAD7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Runner.Editor", "The Runner.Editor.csproj", "{111963E5-DB6D-DCF5-CF34-323E009E3607}"
