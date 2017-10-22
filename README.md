@@ -26,11 +26,11 @@ lanyu：1234
 
 # Server 
 
-This game have two different server， 
+This game has two different server， 
 
 the first server is responsible for login ，store user information ， all the chat function.
 
-The second server is responsible for all the game function nad gps location. 
+The second server is responsible for store data for all the game function and gps location. 
 
 # Self Evaluation/testing
 
