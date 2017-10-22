@@ -76,20 +76,11 @@
     <Reference Include="UnityEditor">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.Advertisements">
-      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Networking">
-      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+    <Reference Include="UnityEditor.Analytics">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
@@ -100,14 +91,23 @@
     <Reference Include="nunit.framework">
       <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.TreeEditor">
       <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Analytics">
-      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.HoloLens">
       <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
@@ -127,14 +127,14 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.Android.Extensions">
-      <HintPath>/Applications/Unity/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions">
       <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.OSXStandalone.Extensions">
       <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="wwwChat">
+      <HintPath>Assets/Scripts/ChatController/wwwChat.dll</HintPath>
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
@@ -151,15 +151,27 @@
       <Project>{9F0B79FB-B7CD-CFEB-3CE7-A0B42FC5AAD7}</Project>
       <Name>The Runner</Name>
     </ProjectReference>
+    <ProjectReference Include="The Runner.unityproj">
+      <Project>{9F0B79FB-B7CD-CFEB-3CE7-A0B42FC5AAD7}</Project>
+      <Name>The Runner</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Editor\BasicTest.cs" />
-    <Compile Include="Assets\Editor\SaveDataTest.cs" />
-    <Compile Include="Assets\Editor\ServerTest.cs" />
-    <Compile Include="Assets\Editor\UrlTest.cs" />
+    <Compile Include="Assets\Fork Particle Variety Pack FX\Assets\Editor\PSBImporter.cs" />
+    <Compile Include="Assets\Fork Particle Variety Pack FX\Assets\Editor\PSBPostprocessor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Shader\DepthMask.shader" />
+    <None Include="Assets\Fork Particle Variety Pack FX\Assets\Resources\ForkFX\Alien_Fire_PSK.xml" />
+    <None Include="Assets\Fork Particle Variety Pack FX\Assets\Resources\ForkFX\Cartoon_Blast_PSK.xml" />
+    <None Include="Assets\Fork Particle Variety Pack FX\Assets\Resources\ForkFX\Confetti_Cartoon_PSK.xml" />
+    <None Include="Assets\Fork Particle Variety Pack FX\Assets\Resources\ForkFX\Firework_Celebretion_PSK.xml" />
+    <None Include="Assets\Fork Particle Variety Pack FX\Assets\Resources\ForkFX\ForkParticle.shader" />
+    <None Include="Assets\Fork Particle Variety Pack FX\Assets\Resources\ForkFX\Magic_Spiral_PSK.xml" />
+    <None Include="Assets\Fork Particle Variety Pack FX\Assets\Resources\ForkFX\Magic_Twister_PSK.xml" />
+    <None Include="Assets\Fork Particle Variety Pack FX\Assets\Resources\ForkFX\Snow_Cartoon_PSK.xml" />
+    <None Include="Assets\Fork Particle Variety Pack FX\Assets\Resources\ForkFX\Stylized_Blast_PSK.xml" />
+    <None Include="Assets\Fork Particle Variety Pack FX\Assets\Resources\ForkFX\Stylized_Space_Explosion_PSK.xml" />
+    <None Include="Assets\Fork Particle Variety Pack FX\Assets\Resources\ForkFX\Thunder_Cloud_PSK.xml" />
     <None Include="Assets\login\Fonts\Jupiter\LICENSE.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

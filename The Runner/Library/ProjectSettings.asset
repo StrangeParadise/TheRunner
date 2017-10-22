@@ -594,8 +594,8 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.1
   apiCompatibilityLevel: 2
-  cloudProjectId: 729e91b7-b7a1-4b0b-8650-90586d62265e
-  projectName: The Runner
-  organizationId: xixiangwu
+  cloudProjectId: 
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   enableNewInputSystem: 0
